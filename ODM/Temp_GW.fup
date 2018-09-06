@@ -1,0 +1,3447 @@
+[FILEHEADER]
+Version=529
+Compiler=310
+Bues=1
+VisiPlus=0
+PrjID=43020
+UpdateGlobals=0
+DnldInRun=0
+FuplaVersion=V2.1.310
+CodePage=1252
+MacroID=32386
+ModuleVersion=
+AdjustLog=0
+Author=
+Comment=
+LastPageID=1
+[BLOCK]
+BlockSym=1
+COBSupTime=0
+PageDisabled=0
+ConditinalFunction=0
+ConditionalSymbol=
+ConditionalValue=0
+PageColor=16777215
+PageBackColor=0
+[PAGEDEF]
+PageLen=10074
+[PAGE]
+Name=Temp. Grenzwerte
+Comment=UV1 Feld 1
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=1279
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_IDIV 32163=
+_HEAALRT2 32144=
+_HEAALRT2 32145=
+_IMUL 32160=
+_DDC_SPGENERAL22 32159=
+_HEALIMIT 32161=
+_HEALIMIT 32156=
+_HEALIMIT 32155=
+_IABS 32152=
+_DDC_SPGENERAL22 32151=
+_ISUB 32153=
+_ICMPSE 32154=
+_DDC_SPGENERAL22 32150=
+_FLISRNDY2 32162=
+_ONDEL 32158=
+_ICMPGE 32146=
+_CWM_SEND_CMAIL 308=
+_DDC_ALGENERAL05 32195=
+_HEAMANB3 32196=
+_HEAMANB3 32197=
+_HEAMANB3 32198=
+_HEAMANB3 32199=
+_IDIV 32201=
+_DDC_ALGENERAL05 32249=
+_CWM_SEND_CMAIL 32250=
+[_IDIV 32163]
+Fam=sfupinte
+Face=Div
+Width=6
+Init=n
+In=A_I B_I 
+Out=A/B_I A%B_I 
+Language=de
+Posi=67 12
+[_HEAALRT2 32144]
+Fam=heavac
+Face=AlarmT
+Width=7
+Init=y
+In=Ala_B Qit_EB 
+Out=s1_B s2_B 
+S=Fs_8F Rs_8R=52 
+av0=a op %s =2 {1,2} 
+av1=v Rs 0 %s 
+av2=v Rs 1 %0D 
+av3=v Rs 2 %0H 
+av4=v Rs 3 %0D 
+av5=v Rs 4 %0H 
+av6=v Rs 5 %0D 
+av7=v Rs 6 %0H 
+AcceptName=3
+Language=de
+Posi=46 51
+[_HEAALRT2 32145]
+Fam=heavac
+Face=AlarmT
+Width=7
+Init=y
+In=Ala_B Qit_EB 
+Out=s1_B s2_B 
+S=Fs_8F Rs_8R=46 
+av0=a op %s =2 {1,2} 
+av1=v Rs 0 %s 
+av2=v Rs 1 %0D 
+av3=v Rs 2 %0H 
+av4=v Rs 3 %0D 
+av5=v Rs 4 %0H 
+av6=v Rs 5 %0D 
+av7=v Rs 6 %0H 
+AcceptName=3
+Language=de
+Posi=46 39
+[_IMUL 32160]
+Fam=sfupinte
+Face=x
+Width=2
+Init=n
+In=_I _I 
+Out=_I 
+Language=de
+Posi=38 26
+[_DDC_SPGENERAL22 32159]
+Fam=DDC Sollwerte
+Width=5
+Init=y
+Vers=200000
+Out=Val_I 
+S=Value_R=109 
+av0=c cs =0 \nabs 
+av1=a BACnet %s =0 {0..1} 
+av2=c c0 =0 \nabs 
+av3=a Value 0 %1p =210:300 
+av4=c cc =0 \nabs 
+AcceptName=1
+Folder=Sollwerte.Integer?
+Variables0=Value Register;(4) Integerwert
+Language=de
+Posi=21 26
+[_HEALIMIT 32161]
+Fam=heavfilt
+Face=Limit
+FacePosi=l
+Width=7
+Init=y
+In=_I 
+Out=_I 
+S=Rs_2R LED_F 
+D=Fd_4F 
+av0=c c1 =0 \nabs 
+av1=a Rs 0 %1p =0 {-2000000..2000000} 
+av2=a Rs 1 %1p =1000:300 {-2000000..2000000} 
+AcceptName=3
+Language=de
+Posi=44 24
+[_HEALIMIT 32156]
+Fam=heavfilt
+Face=Limit
+FacePosi=l
+Width=7
+Init=y
+In=_I 
+Out=_I 
+S=Rs_2R LED_F 
+D=Fd_4F 
+av0=c c1 =0 \nabs 
+av1=a Rs 0 %1p =0 {-2000000..2000000} 
+av2=a Rs 1 %1p =1000:100 {-2000000..2000000} 
+AcceptName=3
+Language=de
+Posi=44 21
+[_HEALIMIT 32155]
+Fam=heavfilt
+Face=Limit
+FacePosi=l
+Width=7
+Init=y
+In=_I 
+Out=_I 
+S=Rs_2R LED_F 
+D=Fd_4F 
+av0=c c1 =0 \nabs 
+av1=a Rs 0 %1p =0:75 {-2000000..2000000} 
+av2=a Rs 1 %1p =1000:450 {-2000000..2000000} 
+AcceptName=3
+Language=de
+Posi=44 18
+[_IABS 32152]
+Fam=sfupinte
+Face=Abs
+Width=4
+Init=n
+In=_I 
+Out=_I 
+Language=de
+Posi=28 15
+[_DDC_SPGENERAL22 32151]
+Fam=DDC Sollwerte
+Width=5
+Init=y
+Vers=200000
+Out=Val_I 
+S=Value_R=75 
+av0=c cs =0 \nabs 
+av1=a BACnet %s =0 {0..1} 
+av2=c c0 =0 \nabs 
+av3=a Value 0 %1p =210:10 
+av4=c cc =0 \nabs 
+AcceptName=1
+Folder=Sollwerte.Integer?
+Variables0=Value Register;(4) Integerwert
+Language=de
+Posi=21 15
+[_ISUB 32153]
+Fam=sfupinte
+Face=-
+Width=2
+Init=n
+In=_I _I 
+Out=_I 
+Language=de
+Posi=38 14
+[_ICMPSE 32154]
+Fam=sfupinte
+Face=Cmp
+Width=4
+Init=n
+In=_I _I 
+Out=<=_B 
+Language=de
+Posi=47 12
+[_DDC_SPGENERAL22 32150]
+Fam=DDC Sollwerte
+Width=5
+Init=y
+Vers=200000
+Out=Val_I 
+S=Value_R=84 
+av0=c cs =0 \nabs 
+av1=a BACnet %s =0 {0..1} 
+av2=c c0 =0 \nabs 
+av3=a Value 0 %1p =210:300 
+av4=c cc =0 \nabs 
+AcceptName=1
+Folder=Sollwerte.Integer?
+Variables0=Value Register;(4) Integerwert
+Language=de
+Posi=21 10
+[_FLISRNDY2 32162]
+Fam=sfupflip
+Width=4
+Init=y
+In=S_B R_B 
+Out=Q_B 
+S=Sta_F 
+av0=a opt %s =2 {0,1,2} 
+av1=b Sta 0 %s =0 
+av2=b Sta 0 %s =1 
+Language=de
+Posi=67 7
+[_ONDEL 32158]
+Fam=sfuptime
+Face=T|-|0
+Width=6
+Init=y
+In=In_EB TV_I 
+Out=Q_B t_I 
+S=Tim_T Sta_F 
+Language=de
+Posi=56 7
+[_ICMPGE 32146]
+Fam=sfupinte
+Face=Cmp
+Width=4
+Init=n
+In=_I _I 
+Out=>=_B 
+Language=de
+Posi=47 7
+[_CWM_SEND_CMAIL 308]
+Fam=Communication Email
+Face=AMail Send
+FacePosi=l
+Width=16
+Init=y
+Vers=104300
+In=Send_EB 
+Out=Busy_B 
+C=Subject_Dx=5 Text_Dx=106 File_Dx=73 
+S=To_R LED_F Flags_3F Texts_2^X Priority_R 
+D=Register_2R 
+av0=a To 0 =1 {1..5} 
+av1=a Priority 0 =1 {1..5} 
+av2=a Format %s =0 {0..1} 
+AcceptName=1
+aRef=2
+Ref=WebMail
+Folder=Communication.AMailSend?
+Variables0=To Recipient;Nummer der Empfänger/-liste, die in der FBox "Text Mail Init" definiert wurde
+Variables1=Priority Priority;Mail Priorität (1...5, wichtig...normal)
+Language=de
+Posi=41 64
+[_DDC_ALGENERAL05 32195]
+Fam=DDC Stoerungen
+Width=4
+Init=y
+Vers=105000
+In=Us_B 
+Out=e_B 
+S=Verwende_F=26 
+av0=a Verwende 0 %s =0:1 {0,1} 
+av1=c cc =0 \nabs 
+AcceptName=1
+Folder=Stoerungen.Verwenden?
+Variables0=Verwende Verwenden;(4) Vorwahl ob die am Eingang anliegende Meldung am Ausgang weitergeleitet werd
+Language=de
+Posi=32 66
+[_HEAMANB3 32196]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=32 41
+[_HEAMANB3 32197]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=32 44
+[_HEAMANB3 32198]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=33 53
+[_HEAMANB3 32199]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=33 56
+[_IDIV 32201]
+Fam=sfupinte
+Face=Div
+Width=6
+Init=n
+In=A_I B_I 
+Out=A/B_I A%B_I 
+Language=de
+Posi=46 31
+[_DDC_ALGENERAL05 32249]
+Fam=DDC Stoerungen
+Width=4
+Init=y
+Vers=105000
+In=Us_B 
+Out=e_B 
+S=Verwende_F=25 
+av0=a Verwende 0 %s =0:1 {0,1} 
+av1=c cc =0 \nabs 
+AcceptName=1
+Folder=Stoerungen.Verwenden?
+Variables0=Verwende Verwenden;(4) Vorwahl ob die am Eingang anliegende Meldung am Ausgang weitergeleitet werd
+Language=de
+Posi=32 78
+[_CWM_SEND_CMAIL 32250]
+Fam=Communication Email
+Face=AMail Send
+FacePosi=l
+Width=16
+Init=y
+Vers=104300
+In=Send_EB 
+Out=Busy_B 
+C=Subject_Dx=5 Text_Dx=39 File_Dx=15 
+S=To_R LED_F Flags_3F Texts_2^X Priority_R 
+D=Register_2R 
+av0=a To 0 =1 {1..5} 
+av1=a Priority 0 =1 {1..5} 
+av2=a Format %s =0 {0..1} 
+AcceptName=1
+aRef=2
+Ref=WebMail
+Folder=Communication.AMailSend?
+Variables0=To Recipient;Nummer der Empfänger/-liste, die in der FBox "Text Mail Init" definiert wurde
+Variables1=Priority Priority;Mail Priorität (1...5, wichtig...normal)
+Language=de
+Posi=41 76
+[HLINE]
+H0=8 27 47)63 67)71 76
+H1=9 45 47
+H2=10 51 56)62 63)64 67
+H3=11 26 45
+H4=12 55 56)62 65
+H5=13 39 47
+H6=14 46 47
+H7=15 34 38)40 46)51 64)65 67)73 76
+H8=16 26 28)32 38
+H9=17 56 67)73 74
+H10=19 35 44)51 76
+H11=22 34 44)51 76
+H12=25 35 44)51 76
+H13=27 26 38)40 55
+H14=28 35 38
+H15=30 27 56
+H16=34 27 46)52 76
+H17=36 27 46)52 76
+H18=42 27 32)38 46)53 76
+H19=44 41 46)53 76
+H20=45 27 32)38 41
+H21=54 27 33)39 46)53 76
+H22=56 41 46)53 76
+H23=57 27 33)39 41
+H24=67 27 32)36 41)57 76
+H25=79 27 32)36 41)57 76
+H26=92 43 49
+H27=94 43 49
+H28=96 43 49
+H29=98 43 49
+[VLINE]
+V0=34 11 15)16 22
+V1=35 11 19)25 27)28 30
+V2=39 8 13
+V3=41 44 45)56 57
+V4=45 9 11
+V5=46 14 15
+V6=55 12 27
+V7=56 17 30
+V8=63 8 10
+V9=64 10 15
+V10=65 12 15
+[NETWORK]
+N0=Io 27 8)if 47 8)if 47 13
+N1=Bif 67 8)of 62 10
+N2=Bof 71 8)i 76 8
+N3=Iif 47 9)of 26 11)if 38 15)if 44 19
+N4=Bof 51 10)if 56 10
+N5=Bif 67 10)of 51 15
+N6=Iif 56 12)of 40 27
+N7=Iof 62 12)if 67 15
+N8=Iif 47 14)of 40 15
+N9=Iof 73 15)i 76 15
+N10=Iof 26 16)if 28 16
+N11=Iof 32 16)if 38 16)if 44 22
+N12=Iif 67 17)o 27 30)if 38 28
+N13=Iof 73 17
+N14=Iof 51 19)i 76 19
+N15=Iof 51 22)i 76 22
+N16=Iif 44 25)if 38 27)of 26 27
+N17=Iof 51 25)i 76 25
+N18=Io 27 34)if 46 34
+N19=Iof 52 34)i 76 34
+N20=Io 27 36)if 46 36
+N21=Iof 52 36)i 76 36
+N22=Bo 27 42)if 32 42
+N23=Bof 38 42)if 46 42
+N24=Bof 53 42)i 76 42
+N25=Bif 46 44)of 38 45
+N26=Bof 53 44)i 76 44
+N27=Bo 27 45)if 32 45
+N28=Io 68 47
+N29=Bo 27 54)if 33 54
+N30=Bof 39 54)if 46 54
+N31=Bof 53 54)i 76 54
+N32=Bif 46 56)of 39 57
+N33=Bof 53 56)i 76 56
+N34=Bo 27 57)if 33 57
+N35=Io 68 59
+N36=Bo 27 67)if 32 67
+N37=Bof 36 67)if 41 67
+N38=Bof 57 67
+N39=Bo 27 79)if 32 79
+N40=Bof 36 79)if 41 79
+N41=Bof 57 79
+N42=Io 17 92
+N43=Io 43 92
+N44=Bo 17 94
+N45=Io 43 94
+N46=Io 43 96
+N47=Io 43 98
+[COMMENT]
+Text0=12 11-0 Grenzwert
+Text1=7 16-0 Hysterese (negativ)
+Text2=8 27-0 Verzoegerung (Sek)
+Text3=71 46-0 0=OK / 1= Unquittiert verschwunden
+Text4=71 48-0 2 = Quittiert aber noch anliegend
+Text5=71 50-0 3 = Alarm unquittiert anliegend
+Text6=71 58-0 0=OK / 1= Unquittiert verschwunden
+Text7=71 60-0 2 = Quittiert aber noch anliegend
+Text8=71 62-0 3 = Alarm unquittiert anliegend
+Text9=10 87-0 "Hallo<10>Hier ist die Saja-PCD3.M5340 des GV der JVA in Giessen<10>Der Wert des Registers ",iEMonth," ist $",iEMonth.04T "<10><10>MfG<10>Gundacker"
+Text10=10 89-0 "SL1FLASH:/WEBPAGES/DATA/C004GEVZHZG00_M$",iEMonth.04T,".csv"
+[CONNS]
+Conn0=27 8 126 34 20
+Conn1=76 8 97 33 21
+Conn2=76 15 34 33 20
+Conn3=76 19 84 33 20
+Conn4=76 22 75 33 16
+Conn5=76 25 109 33 15
+Conn6=27 30 16 34 3
+Conn7=27 34 126 34 20
+Conn8=76 34 28 33 21
+Conn9=27 36 16 34 3
+Conn10=76 36 125 33 19
+Conn11=27 42 97 34 21
+Conn12=76 42 60 33 23
+Conn13=76 44 68 33 23
+Conn14=27 45 108 34 21
+Conn15=68 47 46 34 21
+Conn16=27 54 6 34 24
+Conn17=76 54 83 33 23
+Conn18=76 56 74 33 23
+Conn19=27 57 108 34 21
+Conn20=68 59 52 34 21
+Conn21=27 67 60 34 23
+Conn22=27 79 83 34 23
+Conn23=17 92 33 34 13
+Conn24=43 92 27 34 16
+Conn25=17 94 40 34 14
+Conn26=43 94 67 34 16
+Conn27=43 96 107 34 16
+Conn28=43 98 59 34 16
+[PAGEDEF]
+PageLen=10082
+[PAGE]
+Name=Temp. Grenzwerte
+Comment=UV1 Feld 2
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=1299
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_IDIV 32252=
+_HEAALRT2 32253=
+_HEAALRT2 32254=
+_IMUL 32255=
+_HEALIMIT 32257=
+_HEALIMIT 32258=
+_HEALIMIT 32259=
+_IABS 32260=
+_DDC_SPGENERAL22 32382=
+_ISUB 32262=
+_ICMPSE 32263=
+_DDC_SPGENERAL22 32264=
+_FLISRNDY2 32265=
+_ONDEL 32266=
+_ICMPGE 32267=
+_CWM_SEND_CMAIL 32268=
+_DDC_ALGENERAL05 32269=
+_HEAMANB3 32270=
+_HEAMANB3 32271=
+_HEAMANB3 32272=
+_HEAMANB3 32273=
+_IDIV 32274=
+_DDC_ALGENERAL05 32275=
+_CWM_SEND_CMAIL 32276=
+_DDC_SPGENERAL22 32377=
+[_IDIV 32252]
+Fam=sfupinte
+Face=Div
+Width=6
+Init=n
+In=A_I B_I 
+Out=A/B_I A%B_I 
+Language=de
+Posi=67 12
+[_HEAALRT2 32253]
+Fam=heavac
+Face=AlarmT
+Width=7
+Init=y
+In=Ala_B Qit_EB 
+Out=s1_B s2_B 
+S=Fs_8F Rs_8R=4 
+av0=a op %s =2 {1,2} 
+av1=v Rs 0 %s 
+av2=v Rs 1 %0D 
+av3=v Rs 2 %0H 
+av4=v Rs 3 %0D 
+av5=v Rs 4 %0H 
+av6=v Rs 5 %0D 
+av7=v Rs 6 %0H 
+AcceptName=3
+Language=de
+Posi=46 51
+[_HEAALRT2 32254]
+Fam=heavac
+Face=AlarmT
+Width=7
+Init=y
+In=Ala_B Qit_EB 
+Out=s1_B s2_B 
+S=Fs_8F Rs_8R=14 
+av0=a op %s =2 {1,2} 
+av1=v Rs 0 %s 
+av2=v Rs 1 %0D 
+av3=v Rs 2 %0H 
+av4=v Rs 3 %0D 
+av5=v Rs 4 %0H 
+av6=v Rs 5 %0D 
+av7=v Rs 6 %0H 
+AcceptName=3
+Language=de
+Posi=46 39
+[_IMUL 32255]
+Fam=sfupinte
+Face=x
+Width=2
+Init=n
+In=_I _I 
+Out=_I 
+Language=de
+Posi=38 26
+[_HEALIMIT 32257]
+Fam=heavfilt
+Face=Limit
+FacePosi=l
+Width=7
+Init=y
+In=_I 
+Out=_I 
+S=Rs_2R LED_F 
+D=Fd_4F 
+av0=c c1 =0 \nabs 
+av1=a Rs 0 %1p =0 {-2000000..2000000} 
+av2=a Rs 1 %1p =1000:300 {-2000000..2000000} 
+AcceptName=3
+Language=de
+Posi=44 24
+[_HEALIMIT 32258]
+Fam=heavfilt
+Face=Limit
+FacePosi=l
+Width=7
+Init=y
+In=_I 
+Out=_I 
+S=Rs_2R LED_F 
+D=Fd_4F 
+av0=c c1 =0 \nabs 
+av1=a Rs 0 %1p =0 {-2000000..2000000} 
+av2=a Rs 1 %1p =1000:100 {-2000000..2000000} 
+AcceptName=3
+Language=de
+Posi=44 21
+[_HEALIMIT 32259]
+Fam=heavfilt
+Face=Limit
+FacePosi=l
+Width=7
+Init=y
+In=_I 
+Out=_I 
+S=Rs_2R LED_F 
+D=Fd_4F 
+av0=c c1 =0 \nabs 
+av1=a Rs 0 %1p =0:75 {-2000000..2000000} 
+av2=a Rs 1 %1p =1000:450 {-2000000..2000000} 
+AcceptName=3
+Language=de
+Posi=44 18
+[_IABS 32260]
+Fam=sfupinte
+Face=Abs
+Width=4
+Init=n
+In=_I 
+Out=_I 
+Language=de
+Posi=28 15
+[_DDC_SPGENERAL22 32382]
+Fam=DDC Sollwerte
+Width=5
+Init=y
+Vers=200000
+Out=Val_I 
+S=Value_R=75 
+av0=c cs =0 \nabs 
+av1=a BACnet %s =0 {0..1} 
+av2=c c0 =0 \nabs 
+av3=a Value 0 %1p =210:10 
+av4=c cc =0 \nabs 
+AcceptName=1
+Folder=Sollwerte.Integer?
+Variables0=Value Register;(4) Integerwert
+Language=de
+Posi=21 15
+[_ISUB 32262]
+Fam=sfupinte
+Face=-
+Width=2
+Init=n
+In=_I _I 
+Out=_I 
+Language=de
+Posi=38 14
+[_ICMPSE 32263]
+Fam=sfupinte
+Face=Cmp
+Width=4
+Init=n
+In=_I _I 
+Out=<=_B 
+Language=de
+Posi=47 12
+[_DDC_SPGENERAL22 32264]
+Fam=DDC Sollwerte
+Width=5
+Init=y
+Vers=200000
+Out=Val_I 
+S=Value_R=72 
+av0=c cs =0 \nabs 
+av1=a BACnet %s =0 {0..1} 
+av2=c c0 =0 \nabs 
+av3=a Value 0 %1p =210:300 
+av4=c cc =0 \nabs 
+AcceptName=1
+Folder=Sollwerte.Integer?
+Variables0=Value Register;(4) Integerwert
+Language=de
+Posi=21 10
+[_FLISRNDY2 32265]
+Fam=sfupflip
+Width=4
+Init=y
+In=S_B R_B 
+Out=Q_B 
+S=Sta_F 
+av0=a opt %s =2 {0,1,2} 
+av1=b Sta 0 %s =0 
+av2=b Sta 0 %s =1 
+Language=de
+Posi=67 7
+[_ONDEL 32266]
+Fam=sfuptime
+Face=T|-|0
+Width=6
+Init=y
+In=In_EB TV_I 
+Out=Q_B t_I 
+S=Tim_T Sta_F 
+Language=de
+Posi=56 7
+[_ICMPGE 32267]
+Fam=sfupinte
+Face=Cmp
+Width=4
+Init=n
+In=_I _I 
+Out=>=_B 
+Language=de
+Posi=47 7
+[_CWM_SEND_CMAIL 32268]
+Fam=Communication Email
+Face=AMail Send
+FacePosi=l
+Width=16
+Init=y
+Vers=104300
+In=Send_EB 
+Out=Busy_B 
+C=Subject_Dx=5 Text_Dx=119 File_Dx=114 
+S=To_R LED_F Flags_3F Texts_2^X Priority_R 
+D=Register_2R 
+av0=a To 0 =1 {1..5} 
+av1=a Priority 0 =1 {1..5} 
+av2=a Format %s =0 {0..1} 
+AcceptName=1
+aRef=2
+Ref=WebMail
+Folder=Communication.AMailSend?
+Variables0=To Recipient;Nummer der Empfänger/-liste, die in der FBox "Text Mail Init" definiert wurde
+Variables1=Priority Priority;Mail Priorität (1...5, wichtig...normal)
+Language=de
+Posi=41 64
+[_DDC_ALGENERAL05 32269]
+Fam=DDC Stoerungen
+Width=4
+Init=y
+Vers=105000
+In=Us_B 
+Out=e_B 
+S=Verwende_F=26 
+av0=a Verwende 0 %s =0:1 {0,1} 
+av1=c cc =0 \nabs 
+AcceptName=1
+Folder=Stoerungen.Verwenden?
+Variables0=Verwende Verwenden;(4) Vorwahl ob die am Eingang anliegende Meldung am Ausgang weitergeleitet werd
+Language=de
+Posi=32 66
+[_HEAMANB3 32270]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=32 41
+[_HEAMANB3 32271]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=32 44
+[_HEAMANB3 32272]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=33 53
+[_HEAMANB3 32273]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=33 56
+[_IDIV 32274]
+Fam=sfupinte
+Face=Div
+Width=6
+Init=n
+In=A_I B_I 
+Out=A/B_I A%B_I 
+Language=de
+Posi=46 31
+[_DDC_ALGENERAL05 32275]
+Fam=DDC Stoerungen
+Width=4
+Init=y
+Vers=105000
+In=Us_B 
+Out=e_B 
+S=Verwende_F=25 
+av0=a Verwende 0 %s =0:1 {0,1} 
+av1=c cc =0 \nabs 
+AcceptName=1
+Folder=Stoerungen.Verwenden?
+Variables0=Verwende Verwenden;(4) Vorwahl ob die am Eingang anliegende Meldung am Ausgang weitergeleitet werd
+Language=de
+Posi=32 78
+[_CWM_SEND_CMAIL 32276]
+Fam=Communication Email
+Face=AMail Send
+FacePosi=l
+Width=16
+Init=y
+Vers=104300
+In=Send_EB 
+Out=Busy_B 
+C=Subject_Dx=5 Text_Dx=23 File_Dx=13 
+S=To_R LED_F Flags_3F Texts_2^X Priority_R 
+D=Register_2R 
+av0=a To 0 =1 {1..5} 
+av1=a Priority 0 =1 {1..5} 
+av2=a Format %s =0 {0..1} 
+AcceptName=1
+aRef=2
+Ref=WebMail
+Folder=Communication.AMailSend?
+Variables0=To Recipient;Nummer der Empfänger/-liste, die in der FBox "Text Mail Init" definiert wurde
+Variables1=Priority Priority;Mail Priorität (1...5, wichtig...normal)
+Language=de
+Posi=41 76
+[_DDC_SPGENERAL22 32377]
+Fam=DDC Sollwerte
+Width=5
+Init=y
+Vers=200000
+Out=Val_I 
+S=Value_R=109 
+av0=c cs =0 \nabs 
+av1=a BACnet %s =0 {0..1} 
+av2=c c0 =0 \nabs 
+av3=a Value 0 %1p =210:300 
+av4=c cc =0 \nabs 
+AcceptName=1
+Folder=Sollwerte.Integer?
+Variables0=Value Register;(4) Integerwert
+Language=de
+Posi=21 26
+[HLINE]
+H0=8 27 47)63 67)71 76
+H1=9 45 47
+H2=10 51 56)62 63)64 67
+H3=11 26 45
+H4=12 55 56)62 65
+H5=13 39 47
+H6=14 46 47
+H7=15 34 38)40 46)51 64)65 67)73 76
+H8=16 26 28)32 38
+H9=17 56 67)73 74
+H10=19 35 44)51 76
+H11=22 34 44)51 76
+H12=25 35 44)51 76
+H13=27 26 38)40 55
+H14=28 35 38
+H15=30 27 56
+H16=34 27 46)52 76
+H17=36 27 46)52 76
+H18=42 27 32)38 46)53 76
+H19=44 41 46)53 76
+H20=45 27 32)38 41
+H21=54 27 33)39 46)53 76
+H22=56 41 46)53 76
+H23=57 27 33)39 41
+H24=67 27 32)36 41)57 76
+H25=79 27 32)36 41)57 76
+H26=92 43 49
+H27=94 43 49
+H28=96 43 49
+H29=98 43 49
+[VLINE]
+V0=34 11 15)16 22
+V1=35 11 19)25 27)28 30
+V2=39 8 13
+V3=41 44 45)56 57
+V4=45 9 11
+V5=46 14 15
+V6=55 12 27
+V7=56 17 30
+V8=63 8 10
+V9=64 10 15
+V10=65 12 15
+[NETWORK]
+N0=Io 27 8)if 47 8)if 47 13
+N1=Bif 67 8)of 62 10
+N2=Bof 71 8)i 76 8
+N3=Iif 47 9)of 26 11)if 38 15)if 44 19
+N4=Bof 51 10)if 56 10
+N5=Bif 67 10)of 51 15
+N6=Iif 56 12)of 40 27
+N7=Iof 62 12)if 67 15
+N8=Iif 47 14)of 40 15
+N9=Iof 73 15)i 76 15
+N10=Iof 26 16)if 28 16
+N11=Iof 32 16)if 38 16)if 44 22
+N12=Iif 67 17)o 27 30)if 38 28
+N13=Iof 73 17
+N14=Iof 51 19)i 76 19
+N15=Iof 51 22)i 76 22
+N16=Iif 44 25)if 38 27)of 26 27
+N17=Iof 51 25)i 76 25
+N18=Io 27 34)if 46 34
+N19=Iof 52 34)i 76 34
+N20=Io 27 36)if 46 36
+N21=Iof 52 36)i 76 36
+N22=Bo 27 42)if 32 42
+N23=Bof 38 42)if 46 42
+N24=Bof 53 42)i 76 42
+N25=Bif 46 44)of 38 45
+N26=Bof 53 44)i 76 44
+N27=Bo 27 45)if 32 45
+N28=Io 68 47
+N29=Bo 27 54)if 33 54
+N30=Bof 39 54)if 46 54
+N31=Bof 53 54)i 76 54
+N32=Bif 46 56)of 39 57
+N33=Bof 53 56)i 76 56
+N34=Bo 27 57)if 33 57
+N35=Io 68 59
+N36=Bo 27 67)if 32 67
+N37=Bof 36 67)if 41 67
+N38=Bof 57 67
+N39=Bo 27 79)if 32 79
+N40=Bof 36 79)if 41 79
+N41=Bof 57 79
+N42=Io 17 92
+N43=Io 43 92
+N44=Bo 17 94
+N45=Io 43 94
+N46=Io 43 96
+N47=Io 43 98
+[COMMENT]
+Text0=12 11-0 Grenzwert
+Text1=7 16-0 Hysterese (negativ)
+Text2=8 27-0 Verzoegerung (Sek)
+Text3=71 46-0 0=OK / 1= Unquittiert verschwunden
+Text4=71 48-0 2 = Quittiert aber noch anliegend
+Text5=71 50-0 3 = Alarm unquittiert anliegend
+Text6=71 58-0 0=OK / 1= Unquittiert verschwunden
+Text7=71 60-0 2 = Quittiert aber noch anliegend
+Text8=71 62-0 3 = Alarm unquittiert anliegend
+Text9=10 87-0 "Hallo<10>Hier ist die Saja-PCD3.M5340 des GV der JVA in Giessen<10>Der Wert des Registers ",iEMonth," ist $",iEMonth.04T "<10><10>MfG<10>Gundacker"
+Text10=10 89-0 "SL1FLASH:/WEBPAGES/DATA/C004GEVZHZG00_M$",iEMonth.04T,".csv"
+[CONNS]
+Conn0=27 8 58 34 20
+Conn1=76 8 115 33 21
+Conn2=76 15 105 33 20
+Conn3=76 19 72 33 20
+Conn4=76 22 96 33 19
+Conn5=76 25 95 33 18
+Conn6=27 30 16 34 3
+Conn7=27 34 58 34 20
+Conn8=76 34 24 33 21
+Conn9=27 36 16 34 3
+Conn10=76 36 104 33 19
+Conn11=27 42 115 34 21
+Conn12=76 42 124 33 23
+Conn13=76 44 120 33 23
+Conn14=27 45 108 34 21
+Conn15=68 47 14 34 21
+Conn16=27 54 82 34 24
+Conn17=76 54 81 33 23
+Conn18=76 56 103 33 23
+Conn19=27 57 108 34 21
+Conn20=68 59 4 34 21
+Conn21=27 67 124 34 23
+Conn22=27 79 81 34 23
+Conn23=17 92 33 34 13
+Conn24=43 92 27 34 16
+Conn25=17 94 40 34 14
+Conn26=43 94 67 34 16
+Conn27=43 96 107 34 16
+Conn28=43 98 59 34 16
+[PAGEDEF]
+PageLen=10078
+[PAGE]
+Name=Temp. Grenzwerte
+Comment=UV2 Feld 1
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=1300
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_IDIV 32277=
+_HEAALRT2 32278=
+_HEAALRT2 32279=
+_IMUL 32280=
+_DDC_SPGENERAL22 32378=
+_HEALIMIT 32282=
+_HEALIMIT 32283=
+_HEALIMIT 32284=
+_IABS 32285=
+_DDC_SPGENERAL22 32383=
+_ISUB 32287=
+_ICMPSE 32288=
+_DDC_SPGENERAL22 32289=
+_FLISRNDY2 32290=
+_ONDEL 32291=
+_ICMPGE 32292=
+_CWM_SEND_CMAIL 32293=
+_DDC_ALGENERAL05 32294=
+_HEAMANB3 32295=
+_HEAMANB3 32296=
+_HEAMANB3 32297=
+_HEAMANB3 32298=
+_IDIV 32299=
+_DDC_ALGENERAL05 32300=
+_CWM_SEND_CMAIL 32301=
+[_IDIV 32277]
+Fam=sfupinte
+Face=Div
+Width=6
+Init=n
+In=A_I B_I 
+Out=A/B_I A%B_I 
+Language=de
+Posi=67 12
+[_HEAALRT2 32278]
+Fam=heavac
+Face=AlarmT
+Width=7
+Init=y
+In=Ala_B Qit_EB 
+Out=s1_B s2_B 
+S=Fs_8F Rs_8R=45 
+av0=a op %s =2 {1,2} 
+av1=v Rs 0 %s 
+av2=v Rs 1 %0D 
+av3=v Rs 2 %0H 
+av4=v Rs 3 %0D 
+av5=v Rs 4 %0H 
+av6=v Rs 5 %0D 
+av7=v Rs 6 %0H 
+AcceptName=3
+Language=de
+Posi=46 51
+[_HEAALRT2 32279]
+Fam=heavac
+Face=AlarmT
+Width=7
+Init=y
+In=Ala_B Qit_EB 
+Out=s1_B s2_B 
+S=Fs_8F Rs_8R=50 
+av0=a op %s =2 {1,2} 
+av1=v Rs 0 %s 
+av2=v Rs 1 %0D 
+av3=v Rs 2 %0H 
+av4=v Rs 3 %0D 
+av5=v Rs 4 %0H 
+av6=v Rs 5 %0D 
+av7=v Rs 6 %0H 
+AcceptName=3
+Language=de
+Posi=46 39
+[_IMUL 32280]
+Fam=sfupinte
+Face=x
+Width=2
+Init=n
+In=_I _I 
+Out=_I 
+Language=de
+Posi=38 26
+[_DDC_SPGENERAL22 32378]
+Fam=DDC Sollwerte
+Width=5
+Init=y
+Vers=200000
+Out=Val_I 
+S=Value_R=109 
+av0=c cs =0 \nabs 
+av1=a BACnet %s =0 {0..1} 
+av2=c c0 =0 \nabs 
+av3=a Value 0 %1p =210:300 
+av4=c cc =0 \nabs 
+AcceptName=1
+Folder=Sollwerte.Integer?
+Variables0=Value Register;(4) Integerwert
+Language=de
+Posi=21 26
+[_HEALIMIT 32282]
+Fam=heavfilt
+Face=Limit
+FacePosi=l
+Width=7
+Init=y
+In=_I 
+Out=_I 
+S=Rs_2R LED_F 
+D=Fd_4F 
+av0=c c1 =0 \nabs 
+av1=a Rs 0 %1p =0 {-2000000..2000000} 
+av2=a Rs 1 %1p =1000:300 {-2000000..2000000} 
+AcceptName=3
+Language=de
+Posi=44 24
+[_HEALIMIT 32283]
+Fam=heavfilt
+Face=Limit
+FacePosi=l
+Width=7
+Init=y
+In=_I 
+Out=_I 
+S=Rs_2R LED_F 
+D=Fd_4F 
+av0=c c1 =0 \nabs 
+av1=a Rs 0 %1p =0 {-2000000..2000000} 
+av2=a Rs 1 %1p =1000:100 {-2000000..2000000} 
+AcceptName=3
+Language=de
+Posi=44 21
+[_HEALIMIT 32284]
+Fam=heavfilt
+Face=Limit
+FacePosi=l
+Width=7
+Init=y
+In=_I 
+Out=_I 
+S=Rs_2R LED_F 
+D=Fd_4F 
+av0=c c1 =0 \nabs 
+av1=a Rs 0 %1p =0:75 {-2000000..2000000} 
+av2=a Rs 1 %1p =1000:450 {-2000000..2000000} 
+AcceptName=3
+Language=de
+Posi=44 18
+[_IABS 32285]
+Fam=sfupinte
+Face=Abs
+Width=4
+Init=n
+In=_I 
+Out=_I 
+Language=de
+Posi=28 15
+[_DDC_SPGENERAL22 32383]
+Fam=DDC Sollwerte
+Width=5
+Init=y
+Vers=200000
+Out=Val_I 
+S=Value_R=75 
+av0=c cs =0 \nabs 
+av1=a BACnet %s =0 {0..1} 
+av2=c c0 =0 \nabs 
+av3=a Value 0 %1p =210:10 
+av4=c cc =0 \nabs 
+AcceptName=1
+Folder=Sollwerte.Integer?
+Variables0=Value Register;(4) Integerwert
+Language=de
+Posi=21 15
+[_ISUB 32287]
+Fam=sfupinte
+Face=-
+Width=2
+Init=n
+In=_I _I 
+Out=_I 
+Language=de
+Posi=38 14
+[_ICMPSE 32288]
+Fam=sfupinte
+Face=Cmp
+Width=4
+Init=n
+In=_I _I 
+Out=<=_B 
+Language=de
+Posi=47 12
+[_DDC_SPGENERAL22 32289]
+Fam=DDC Sollwerte
+Width=5
+Init=y
+Vers=200000
+Out=Val_I 
+S=Value_R=113 
+av0=c cs =0 \nabs 
+av1=a BACnet %s =0 {0..1} 
+av2=c c0 =0 \nabs 
+av3=a Value 0 %1p =210:300 
+av4=c cc =0 \nabs 
+AcceptName=1
+Folder=Sollwerte.Integer?
+Variables0=Value Register;(4) Integerwert
+Language=de
+Posi=21 10
+[_FLISRNDY2 32290]
+Fam=sfupflip
+Width=4
+Init=y
+In=S_B R_B 
+Out=Q_B 
+S=Sta_F 
+av0=a opt %s =2 {0,1,2} 
+av1=b Sta 0 %s =0 
+av2=b Sta 0 %s =1 
+Language=de
+Posi=67 7
+[_ONDEL 32291]
+Fam=sfuptime
+Face=T|-|0
+Width=6
+Init=y
+In=In_EB TV_I 
+Out=Q_B t_I 
+S=Tim_T Sta_F 
+Language=de
+Posi=56 7
+[_ICMPGE 32292]
+Fam=sfupinte
+Face=Cmp
+Width=4
+Init=n
+In=_I _I 
+Out=>=_B 
+Language=de
+Posi=47 7
+[_CWM_SEND_CMAIL 32293]
+Fam=Communication Email
+Face=AMail Send
+FacePosi=l
+Width=16
+Init=y
+Vers=104300
+In=Send_EB 
+Out=Busy_B 
+C=Subject_Dx=5 Text_Dx=11 File_Dx=80 
+S=To_R LED_F Flags_3F Texts_2^X Priority_R 
+D=Register_2R 
+av0=a To 0 =1 {1..5} 
+av1=a Priority 0 =1 {1..5} 
+av2=a Format %s =0 {0..1} 
+AcceptName=1
+aRef=2
+Ref=WebMail
+Folder=Communication.AMailSend?
+Variables0=To Recipient;Nummer der Empfänger/-liste, die in der FBox "Text Mail Init" definiert wurde
+Variables1=Priority Priority;Mail Priorität (1...5, wichtig...normal)
+Language=de
+Posi=41 64
+[_DDC_ALGENERAL05 32294]
+Fam=DDC Stoerungen
+Width=4
+Init=y
+Vers=105000
+In=Us_B 
+Out=e_B 
+S=Verwende_F=26 
+av0=a Verwende 0 %s =0:1 {0,1} 
+av1=c cc =0 \nabs 
+AcceptName=1
+Folder=Stoerungen.Verwenden?
+Variables0=Verwende Verwenden;(4) Vorwahl ob die am Eingang anliegende Meldung am Ausgang weitergeleitet werd
+Language=de
+Posi=32 66
+[_HEAMANB3 32295]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=32 41
+[_HEAMANB3 32296]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=32 44
+[_HEAMANB3 32297]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=33 53
+[_HEAMANB3 32298]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=33 56
+[_IDIV 32299]
+Fam=sfupinte
+Face=Div
+Width=6
+Init=n
+In=A_I B_I 
+Out=A/B_I A%B_I 
+Language=de
+Posi=46 31
+[_DDC_ALGENERAL05 32300]
+Fam=DDC Stoerungen
+Width=4
+Init=y
+Vers=105000
+In=Us_B 
+Out=e_B 
+S=Verwende_F=25 
+av0=a Verwende 0 %s =0:1 {0,1} 
+av1=c cc =0 \nabs 
+AcceptName=1
+Folder=Stoerungen.Verwenden?
+Variables0=Verwende Verwenden;(4) Vorwahl ob die am Eingang anliegende Meldung am Ausgang weitergeleitet werd
+Language=de
+Posi=32 78
+[_CWM_SEND_CMAIL 32301]
+Fam=Communication Email
+Face=AMail Send
+FacePosi=l
+Width=16
+Init=y
+Vers=104300
+In=Send_EB 
+Out=Busy_B 
+C=Subject_Dx=5 Text_Dx=56 File_Dx=79 
+S=To_R LED_F Flags_3F Texts_2^X Priority_R 
+D=Register_2R 
+av0=a To 0 =1 {1..5} 
+av1=a Priority 0 =1 {1..5} 
+av2=a Format %s =0 {0..1} 
+AcceptName=1
+aRef=2
+Ref=WebMail
+Folder=Communication.AMailSend?
+Variables0=To Recipient;Nummer der Empfänger/-liste, die in der FBox "Text Mail Init" definiert wurde
+Variables1=Priority Priority;Mail Priorität (1...5, wichtig...normal)
+Language=de
+Posi=41 76
+[HLINE]
+H0=8 27 47)63 67)71 76
+H1=9 45 47
+H2=10 51 56)62 63)64 67
+H3=11 26 45
+H4=12 55 56)62 65
+H5=13 39 47
+H6=14 46 47
+H7=15 34 38)40 46)51 64)65 67)73 76
+H8=16 26 28)32 38
+H9=17 56 67)73 74
+H10=19 35 44)51 76
+H11=22 34 44)51 76
+H12=25 35 44)51 76
+H13=27 26 38)40 55
+H14=28 35 38
+H15=30 27 56
+H16=34 27 46)52 76
+H17=36 27 46)52 76
+H18=42 27 32)38 46)53 76
+H19=44 41 46)53 76
+H20=45 27 32)38 41
+H21=54 27 33)39 46)53 76
+H22=56 41 46)53 76
+H23=57 27 33)39 41
+H24=67 27 32)36 41)57 76
+H25=79 27 32)36 41)57 76
+H26=92 43 49
+H27=94 43 49
+H28=96 43 49
+H29=98 43 49
+[VLINE]
+V0=34 11 15)16 22
+V1=35 11 19)25 27)28 30
+V2=39 8 13
+V3=41 44 45)56 57
+V4=45 9 11
+V5=46 14 15
+V6=55 12 27
+V7=56 17 30
+V8=63 8 10
+V9=64 10 15
+V10=65 12 15
+[NETWORK]
+N0=Io 27 8)if 47 8)if 47 13
+N1=Bif 67 8)of 62 10
+N2=Bof 71 8)i 76 8
+N3=Iif 47 9)of 26 11)if 38 15)if 44 19
+N4=Bof 51 10)if 56 10
+N5=Bif 67 10)of 51 15
+N6=Iif 56 12)of 40 27
+N7=Iof 62 12)if 67 15
+N8=Iif 47 14)of 40 15
+N9=Iof 73 15)i 76 15
+N10=Iof 26 16)if 28 16
+N11=Iof 32 16)if 38 16)if 44 22
+N12=Iif 67 17)o 27 30)if 38 28
+N13=Iof 73 17
+N14=Iof 51 19)i 76 19
+N15=Iof 51 22)i 76 22
+N16=Iif 44 25)if 38 27)of 26 27
+N17=Iof 51 25)i 76 25
+N18=Io 27 34)if 46 34
+N19=Iof 52 34)i 76 34
+N20=Io 27 36)if 46 36
+N21=Iof 52 36)i 76 36
+N22=Bo 27 42)if 32 42
+N23=Bof 38 42)if 46 42
+N24=Bof 53 42)i 76 42
+N25=Bif 46 44)of 38 45
+N26=Bof 53 44)i 76 44
+N27=Bo 27 45)if 32 45
+N28=Io 68 47
+N29=Bo 27 54)if 33 54
+N30=Bof 39 54)if 46 54
+N31=Bof 53 54)i 76 54
+N32=Bif 46 56)of 39 57
+N33=Bof 53 56)i 76 56
+N34=Bo 27 57)if 33 57
+N35=Io 68 59
+N36=Bo 27 67)if 32 67
+N37=Bof 36 67)if 41 67
+N38=Bof 57 67
+N39=Bo 27 79)if 32 79
+N40=Bof 36 79)if 41 79
+N41=Bof 57 79
+N42=Io 17 92
+N43=Io 43 92
+N44=Bo 17 94
+N45=Io 43 94
+N46=Io 43 96
+N47=Io 43 98
+[COMMENT]
+Text0=12 11-0 Grenzwert
+Text1=7 16-0 Hysterese (negativ)
+Text2=8 27-0 Verzoegerung (Sek)
+Text3=71 46-0 0=OK / 1= Unquittiert verschwunden
+Text4=71 48-0 2 = Quittiert aber noch anliegend
+Text5=71 50-0 3 = Alarm unquittiert anliegend
+Text6=71 58-0 0=OK / 1= Unquittiert verschwunden
+Text7=71 60-0 2 = Quittiert aber noch anliegend
+Text8=71 62-0 3 = Alarm unquittiert anliegend
+Text9=10 87-0 "Hallo<10>Hier ist die Saja-PCD3.M5340 des GV der JVA in Giessen<10>Der Wert des Registers ",iEMonth," ist $",iEMonth.04T "<10><10>MfG<10>Gundacker"
+Text10=10 89-0 "SL1FLASH:/WEBPAGES/DATA/C004GEVZHZG00_M$",iEMonth.04T,".csv"
+[CONNS]
+Conn0=27 8 12 34 20
+Conn1=76 8 102 33 21
+Conn2=76 15 51 33 20
+Conn3=76 19 113 33 20
+Conn4=76 22 94 33 19
+Conn5=76 25 22 33 18
+Conn6=27 30 16 34 3
+Conn7=27 34 12 34 20
+Conn8=76 34 90 33 21
+Conn9=27 36 16 34 3
+Conn10=76 36 32 33 19
+Conn11=27 42 102 34 21
+Conn12=76 42 66 33 23
+Conn13=76 44 57 33 23
+Conn14=27 45 108 34 21
+Conn15=68 47 50 34 21
+Conn16=27 54 21 34 24
+Conn17=76 54 89 33 23
+Conn18=76 56 71 33 23
+Conn19=27 57 108 34 21
+Conn20=68 59 45 34 21
+Conn21=27 67 66 34 23
+Conn22=27 79 89 34 23
+Conn23=17 92 33 34 13
+Conn24=43 92 27 34 16
+Conn25=17 94 40 34 14
+Conn26=43 94 67 34 16
+Conn27=43 96 107 34 16
+Conn28=43 98 59 34 16
+[PAGEDEF]
+PageLen=10078
+[PAGE]
+Name=Temp. Grenzwerte
+Comment=UV2 Feld 2
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=1301
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_IDIV 32302=
+_HEAALRT2 32303=
+_HEAALRT2 32304=
+_IMUL 32305=
+_DDC_SPGENERAL22 32379=
+_HEALIMIT 32307=
+_HEALIMIT 32308=
+_HEALIMIT 32309=
+_IABS 32310=
+_DDC_SPGENERAL22 32384=
+_ISUB 32312=
+_ICMPSE 32313=
+_DDC_SPGENERAL22 32314=
+_FLISRNDY2 32315=
+_ONDEL 32316=
+_ICMPGE 32317=
+_CWM_SEND_CMAIL 32318=
+_DDC_ALGENERAL05 32319=
+_HEAMANB3 32320=
+_HEAMANB3 32321=
+_HEAMANB3 32322=
+_HEAMANB3 32323=
+_IDIV 32324=
+_DDC_ALGENERAL05 32325=
+_CWM_SEND_CMAIL 32326=
+[_IDIV 32302]
+Fam=sfupinte
+Face=Div
+Width=6
+Init=n
+In=A_I B_I 
+Out=A/B_I A%B_I 
+Language=de
+Posi=67 12
+[_HEAALRT2 32303]
+Fam=heavac
+Face=AlarmT
+Width=7
+Init=y
+In=Ala_B Qit_EB 
+Out=s1_B s2_B 
+S=Fs_8F Rs_8R=123 
+av0=a op %s =2 {1,2} 
+av1=v Rs 0 %s 
+av2=v Rs 1 %0D 
+av3=v Rs 2 %0H 
+av4=v Rs 3 %0D 
+av5=v Rs 4 %0H 
+av6=v Rs 5 %0D 
+av7=v Rs 6 %0H 
+AcceptName=3
+Language=de
+Posi=46 51
+[_HEAALRT2 32304]
+Fam=heavac
+Face=AlarmT
+Width=7
+Init=y
+In=Ala_B Qit_EB 
+Out=s1_B s2_B 
+S=Fs_8F Rs_8R=88 
+av0=a op %s =2 {1,2} 
+av1=v Rs 0 %s 
+av2=v Rs 1 %0D 
+av3=v Rs 2 %0H 
+av4=v Rs 3 %0D 
+av5=v Rs 4 %0H 
+av6=v Rs 5 %0D 
+av7=v Rs 6 %0H 
+AcceptName=3
+Language=de
+Posi=46 39
+[_IMUL 32305]
+Fam=sfupinte
+Face=x
+Width=2
+Init=n
+In=_I _I 
+Out=_I 
+Language=de
+Posi=38 26
+[_DDC_SPGENERAL22 32379]
+Fam=DDC Sollwerte
+Width=5
+Init=y
+Vers=200000
+Out=Val_I 
+S=Value_R=109 
+av0=c cs =0 \nabs 
+av1=a BACnet %s =0 {0..1} 
+av2=c c0 =0 \nabs 
+av3=a Value 0 %1p =210:300 
+av4=c cc =0 \nabs 
+AcceptName=1
+Folder=Sollwerte.Integer?
+Variables0=Value Register;(4) Integerwert
+Language=de
+Posi=21 26
+[_HEALIMIT 32307]
+Fam=heavfilt
+Face=Limit
+FacePosi=l
+Width=7
+Init=y
+In=_I 
+Out=_I 
+S=Rs_2R LED_F 
+D=Fd_4F 
+av0=c c1 =0 \nabs 
+av1=a Rs 0 %1p =0 {-2000000..2000000} 
+av2=a Rs 1 %1p =1000:300 {-2000000..2000000} 
+AcceptName=3
+Language=de
+Posi=44 24
+[_HEALIMIT 32308]
+Fam=heavfilt
+Face=Limit
+FacePosi=l
+Width=7
+Init=y
+In=_I 
+Out=_I 
+S=Rs_2R LED_F 
+D=Fd_4F 
+av0=c c1 =0 \nabs 
+av1=a Rs 0 %1p =0 {-2000000..2000000} 
+av2=a Rs 1 %1p =1000:100 {-2000000..2000000} 
+AcceptName=3
+Language=de
+Posi=44 21
+[_HEALIMIT 32309]
+Fam=heavfilt
+Face=Limit
+FacePosi=l
+Width=7
+Init=y
+In=_I 
+Out=_I 
+S=Rs_2R LED_F 
+D=Fd_4F 
+av0=c c1 =0 \nabs 
+av1=a Rs 0 %1p =0:75 {-2000000..2000000} 
+av2=a Rs 1 %1p =1000:450 {-2000000..2000000} 
+AcceptName=3
+Language=de
+Posi=44 18
+[_IABS 32310]
+Fam=sfupinte
+Face=Abs
+Width=4
+Init=n
+In=_I 
+Out=_I 
+Language=de
+Posi=28 15
+[_DDC_SPGENERAL22 32384]
+Fam=DDC Sollwerte
+Width=5
+Init=y
+Vers=200000
+Out=Val_I 
+S=Value_R=75 
+av0=c cs =0 \nabs 
+av1=a BACnet %s =0 {0..1} 
+av2=c c0 =0 \nabs 
+av3=a Value 0 %1p =210:10 
+av4=c cc =0 \nabs 
+AcceptName=1
+Folder=Sollwerte.Integer?
+Variables0=Value Register;(4) Integerwert
+Language=de
+Posi=21 15
+[_ISUB 32312]
+Fam=sfupinte
+Face=-
+Width=2
+Init=n
+In=_I _I 
+Out=_I 
+Language=de
+Posi=38 14
+[_ICMPSE 32313]
+Fam=sfupinte
+Face=Cmp
+Width=4
+Init=n
+In=_I _I 
+Out=<=_B 
+Language=de
+Posi=47 12
+[_DDC_SPGENERAL22 32314]
+Fam=DDC Sollwerte
+Width=5
+Init=y
+Vers=200000
+Out=Val_I 
+S=Value_R=2 
+av0=c cs =0 \nabs 
+av1=a BACnet %s =0 {0..1} 
+av2=c c0 =0 \nabs 
+av3=a Value 0 %1p =210:300 
+av4=c cc =0 \nabs 
+AcceptName=1
+Folder=Sollwerte.Integer?
+Variables0=Value Register;(4) Integerwert
+Language=de
+Posi=21 10
+[_FLISRNDY2 32315]
+Fam=sfupflip
+Width=4
+Init=y
+In=S_B R_B 
+Out=Q_B 
+S=Sta_F 
+av0=a opt %s =2 {0,1,2} 
+av1=b Sta 0 %s =0 
+av2=b Sta 0 %s =1 
+Language=de
+Posi=67 7
+[_ONDEL 32316]
+Fam=sfuptime
+Face=T|-|0
+Width=6
+Init=y
+In=In_EB TV_I 
+Out=Q_B t_I 
+S=Tim_T Sta_F 
+Language=de
+Posi=56 7
+[_ICMPGE 32317]
+Fam=sfupinte
+Face=Cmp
+Width=4
+Init=n
+In=_I _I 
+Out=>=_B 
+Language=de
+Posi=47 7
+[_CWM_SEND_CMAIL 32318]
+Fam=Communication Email
+Face=AMail Send
+FacePosi=l
+Width=16
+Init=y
+Vers=104300
+In=Send_EB 
+Out=Busy_B 
+C=Subject_Dx=5 Text_Dx=55 File_Dx=100 
+S=To_R LED_F Flags_3F Texts_2^X Priority_R 
+D=Register_2R 
+av0=a To 0 =1 {1..5} 
+av1=a Priority 0 =1 {1..5} 
+av2=a Format %s =0 {0..1} 
+AcceptName=1
+aRef=2
+Ref=WebMail
+Folder=Communication.AMailSend?
+Variables0=To Recipient;Nummer der Empfänger/-liste, die in der FBox "Text Mail Init" definiert wurde
+Variables1=Priority Priority;Mail Priorität (1...5, wichtig...normal)
+Language=de
+Posi=41 64
+[_DDC_ALGENERAL05 32319]
+Fam=DDC Stoerungen
+Width=4
+Init=y
+Vers=105000
+In=Us_B 
+Out=e_B 
+S=Verwende_F=26 
+av0=a Verwende 0 %s =0:1 {0,1} 
+av1=c cc =0 \nabs 
+AcceptName=1
+Folder=Stoerungen.Verwenden?
+Variables0=Verwende Verwenden;(4) Vorwahl ob die am Eingang anliegende Meldung am Ausgang weitergeleitet werd
+Language=de
+Posi=32 66
+[_HEAMANB3 32320]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=32 41
+[_HEAMANB3 32321]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=32 44
+[_HEAMANB3 32322]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=33 53
+[_HEAMANB3 32323]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=33 56
+[_IDIV 32324]
+Fam=sfupinte
+Face=Div
+Width=6
+Init=n
+In=A_I B_I 
+Out=A/B_I A%B_I 
+Language=de
+Posi=46 31
+[_DDC_ALGENERAL05 32325]
+Fam=DDC Stoerungen
+Width=4
+Init=y
+Vers=105000
+In=Us_B 
+Out=e_B 
+S=Verwende_F=25 
+av0=a Verwende 0 %s =0:1 {0,1} 
+av1=c cc =0 \nabs 
+AcceptName=1
+Folder=Stoerungen.Verwenden?
+Variables0=Verwende Verwenden;(4) Vorwahl ob die am Eingang anliegende Meldung am Ausgang weitergeleitet werd
+Language=de
+Posi=32 78
+[_CWM_SEND_CMAIL 32326]
+Fam=Communication Email
+Face=AMail Send
+FacePosi=l
+Width=16
+Init=y
+Vers=104300
+In=Send_EB 
+Out=Busy_B 
+C=Subject_Dx=5 Text_Dx=78 File_Dx=38 
+S=To_R LED_F Flags_3F Texts_2^X Priority_R 
+D=Register_2R 
+av0=a To 0 =1 {1..5} 
+av1=a Priority 0 =1 {1..5} 
+av2=a Format %s =0 {0..1} 
+AcceptName=1
+aRef=2
+Ref=WebMail
+Folder=Communication.AMailSend?
+Variables0=To Recipient;Nummer der Empfänger/-liste, die in der FBox "Text Mail Init" definiert wurde
+Variables1=Priority Priority;Mail Priorität (1...5, wichtig...normal)
+Language=de
+Posi=41 76
+[HLINE]
+H0=8 27 47)63 67)71 76
+H1=9 45 47
+H2=10 51 56)62 63)64 67
+H3=11 26 45
+H4=12 55 56)62 65
+H5=13 39 47
+H6=14 46 47
+H7=15 34 38)40 46)51 64)65 67)73 76
+H8=16 26 28)32 38
+H9=17 56 67)73 74
+H10=19 35 44)51 76
+H11=22 34 44)51 76
+H12=25 35 44)51 76
+H13=27 26 38)40 55
+H14=28 35 38
+H15=30 27 56
+H16=34 27 46)52 76
+H17=36 27 46)52 76
+H18=42 27 32)38 46)53 76
+H19=44 41 46)53 76
+H20=45 27 32)38 41
+H21=54 27 33)39 46)53 76
+H22=56 41 46)53 76
+H23=57 27 33)39 41
+H24=67 27 32)36 41)57 76
+H25=79 27 32)36 41)57 76
+H26=92 43 49
+H27=94 43 49
+H28=96 43 49
+H29=98 43 49
+[VLINE]
+V0=34 11 15)16 22
+V1=35 11 19)25 27)28 30
+V2=39 8 13
+V3=41 44 45)56 57
+V4=45 9 11
+V5=46 14 15
+V6=55 12 27
+V7=56 17 30
+V8=63 8 10
+V9=64 10 15
+V10=65 12 15
+[NETWORK]
+N0=Io 27 8)if 47 8)if 47 13
+N1=Bif 67 8)of 62 10
+N2=Bof 71 8)i 76 8
+N3=Iif 47 9)of 26 11)if 38 15)if 44 19
+N4=Bof 51 10)if 56 10
+N5=Bif 67 10)of 51 15
+N6=Iif 56 12)of 40 27
+N7=Iof 62 12)if 67 15
+N8=Iif 47 14)of 40 15
+N9=Iof 73 15)i 76 15
+N10=Iof 26 16)if 28 16
+N11=Iof 32 16)if 38 16)if 44 22
+N12=Iif 67 17)o 27 30)if 38 28
+N13=Iof 73 17
+N14=Iof 51 19)i 76 19
+N15=Iof 51 22)i 76 22
+N16=Iif 44 25)if 38 27)of 26 27
+N17=Iof 51 25)i 76 25
+N18=Io 27 34)if 46 34
+N19=Iof 52 34)i 76 34
+N20=Io 27 36)if 46 36
+N21=Iof 52 36)i 76 36
+N22=Bo 27 42)if 32 42
+N23=Bof 38 42)if 46 42
+N24=Bof 53 42)i 76 42
+N25=Bif 46 44)of 38 45
+N26=Bof 53 44)i 76 44
+N27=Bo 27 45)if 32 45
+N28=Io 68 47
+N29=Bo 27 54)if 33 54
+N30=Bof 39 54)if 46 54
+N31=Bof 53 54)i 76 54
+N32=Bif 46 56)of 39 57
+N33=Bof 53 56)i 76 56
+N34=Bo 27 57)if 33 57
+N35=Io 68 59
+N36=Bo 27 67)if 32 67
+N37=Bof 36 67)if 41 67
+N38=Bof 57 67
+N39=Bo 27 79)if 32 79
+N40=Bof 36 79)if 41 79
+N41=Bof 57 79
+N42=Io 17 92
+N43=Io 43 92
+N44=Bo 17 94
+N45=Io 43 94
+N46=Io 43 96
+N47=Io 43 98
+[COMMENT]
+Text0=12 11-0 Grenzwert
+Text1=7 16-0 Hysterese (negativ)
+Text2=8 27-0 Verzoegerung (Sek)
+Text3=71 46-0 0=OK / 1= Unquittiert verschwunden
+Text4=71 48-0 2 = Quittiert aber noch anliegend
+Text5=71 50-0 3 = Alarm unquittiert anliegend
+Text6=71 58-0 0=OK / 1= Unquittiert verschwunden
+Text7=71 60-0 2 = Quittiert aber noch anliegend
+Text8=71 62-0 3 = Alarm unquittiert anliegend
+Text9=10 87-0 "Hallo<10>Hier ist die Saja-PCD3.M5340 des GV der JVA in Giessen<10>Der Wert des Registers ",iEMonth," ist $",iEMonth.04T "<10><10>MfG<10>Gundacker"
+Text10=10 89-0 "SL1FLASH:/WEBPAGES/DATA/C004GEVZHZG00_M$",iEMonth.04T,".csv"
+[CONNS]
+Conn0=27 8 3 34 20
+Conn1=76 8 65 33 21
+Conn2=76 15 64 33 20
+Conn3=76 19 2 33 20
+Conn4=76 22 20 33 19
+Conn5=76 25 101 33 18
+Conn6=27 30 16 34 3
+Conn7=27 34 3 34 20
+Conn8=76 34 44 33 21
+Conn9=27 36 16 34 3
+Conn10=76 36 112 33 19
+Conn11=27 42 65 34 21
+Conn12=76 42 118 33 23
+Conn13=76 44 111 33 23
+Conn14=27 45 108 34 21
+Conn15=68 47 88 34 21
+Conn16=27 54 31 34 24
+Conn17=76 54 10 33 23
+Conn18=76 56 30 33 23
+Conn19=27 57 108 34 21
+Conn20=68 59 123 34 21
+Conn21=27 67 118 34 23
+Conn22=27 79 10 34 23
+Conn23=17 92 33 34 13
+Conn24=43 92 27 34 16
+Conn25=17 94 40 34 14
+Conn26=43 94 67 34 16
+Conn27=43 96 107 34 16
+Conn28=43 98 59 34 16
+[PAGEDEF]
+PageLen=10074
+[PAGE]
+Name=Temp. Grenzwerte
+Comment=HVT Feld 1
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=1303
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_IDIV 32327=
+_HEAALRT2 32328=
+_HEAALRT2 32329=
+_IMUL 32330=
+_DDC_SPGENERAL22 32380=
+_HEALIMIT 32332=
+_HEALIMIT 32333=
+_HEALIMIT 32334=
+_IABS 32335=
+_DDC_SPGENERAL22 32385=
+_ISUB 32337=
+_ICMPSE 32338=
+_DDC_SPGENERAL22 32339=
+_FLISRNDY2 32340=
+_ONDEL 32341=
+_ICMPGE 32342=
+_CWM_SEND_CMAIL 32343=
+_DDC_ALGENERAL05 32344=
+_HEAMANB3 32345=
+_HEAMANB3 32346=
+_HEAMANB3 32347=
+_HEAMANB3 32348=
+_IDIV 32349=
+_DDC_ALGENERAL05 32350=
+_CWM_SEND_CMAIL 32351=
+[_IDIV 32327]
+Fam=sfupinte
+Face=Div
+Width=6
+Init=n
+In=A_I B_I 
+Out=A/B_I A%B_I 
+Language=de
+Posi=67 12
+[_HEAALRT2 32328]
+Fam=heavac
+Face=AlarmT
+Width=7
+Init=y
+In=Ala_B Qit_EB 
+Out=s1_B s2_B 
+S=Fs_8F Rs_8R=43 
+av0=a op %s =2 {1,2} 
+av1=v Rs 0 %s 
+av2=v Rs 1 %0D 
+av3=v Rs 2 %0H 
+av4=v Rs 3 %0D 
+av5=v Rs 4 %0H 
+av6=v Rs 5 %0D 
+av7=v Rs 6 %0H 
+AcceptName=3
+Language=de
+Posi=46 51
+[_HEAALRT2 32329]
+Fam=heavac
+Face=AlarmT
+Width=7
+Init=y
+In=Ala_B Qit_EB 
+Out=s1_B s2_B 
+S=Fs_8F Rs_8R=36 
+av0=a op %s =2 {1,2} 
+av1=v Rs 0 %s 
+av2=v Rs 1 %0D 
+av3=v Rs 2 %0H 
+av4=v Rs 3 %0D 
+av5=v Rs 4 %0H 
+av6=v Rs 5 %0D 
+av7=v Rs 6 %0H 
+AcceptName=3
+Language=de
+Posi=46 39
+[_IMUL 32330]
+Fam=sfupinte
+Face=x
+Width=2
+Init=n
+In=_I _I 
+Out=_I 
+Language=de
+Posi=38 26
+[_DDC_SPGENERAL22 32380]
+Fam=DDC Sollwerte
+Width=5
+Init=y
+Vers=200000
+Out=Val_I 
+S=Value_R=109 
+av0=c cs =0 \nabs 
+av1=a BACnet %s =0 {0..1} 
+av2=c c0 =0 \nabs 
+av3=a Value 0 %1p =210:300 
+av4=c cc =0 \nabs 
+AcceptName=1
+Folder=Sollwerte.Integer?
+Variables0=Value Register;(4) Integerwert
+Language=de
+Posi=21 26
+[_HEALIMIT 32332]
+Fam=heavfilt
+Face=Limit
+FacePosi=l
+Width=7
+Init=y
+In=_I 
+Out=_I 
+S=Rs_2R LED_F 
+D=Fd_4F 
+av0=c c1 =0 \nabs 
+av1=a Rs 0 %1p =0 {-2000000..2000000} 
+av2=a Rs 1 %1p =1000:300 {-2000000..2000000} 
+AcceptName=3
+Language=de
+Posi=44 24
+[_HEALIMIT 32333]
+Fam=heavfilt
+Face=Limit
+FacePosi=l
+Width=7
+Init=y
+In=_I 
+Out=_I 
+S=Rs_2R LED_F 
+D=Fd_4F 
+av0=c c1 =0 \nabs 
+av1=a Rs 0 %1p =0 {-2000000..2000000} 
+av2=a Rs 1 %1p =1000:100 {-2000000..2000000} 
+AcceptName=3
+Language=de
+Posi=44 21
+[_HEALIMIT 32334]
+Fam=heavfilt
+Face=Limit
+FacePosi=l
+Width=7
+Init=y
+In=_I 
+Out=_I 
+S=Rs_2R LED_F 
+D=Fd_4F 
+av0=c c1 =0 \nabs 
+av1=a Rs 0 %1p =0:75 {-2000000..2000000} 
+av2=a Rs 1 %1p =1000:450 {-2000000..2000000} 
+AcceptName=3
+Language=de
+Posi=44 18
+[_IABS 32335]
+Fam=sfupinte
+Face=Abs
+Width=4
+Init=n
+In=_I 
+Out=_I 
+Language=de
+Posi=28 15
+[_DDC_SPGENERAL22 32385]
+Fam=DDC Sollwerte
+Width=5
+Init=y
+Vers=200000
+Out=Val_I 
+S=Value_R=75 
+av0=c cs =0 \nabs 
+av1=a BACnet %s =0 {0..1} 
+av2=c c0 =0 \nabs 
+av3=a Value 0 %1p =210:10 
+av4=c cc =0 \nabs 
+AcceptName=1
+Folder=Sollwerte.Integer?
+Variables0=Value Register;(4) Integerwert
+Language=de
+Posi=21 15
+[_ISUB 32337]
+Fam=sfupinte
+Face=-
+Width=2
+Init=n
+In=_I _I 
+Out=_I 
+Language=de
+Posi=38 14
+[_ICMPSE 32338]
+Fam=sfupinte
+Face=Cmp
+Width=4
+Init=n
+In=_I _I 
+Out=<=_B 
+Language=de
+Posi=47 12
+[_DDC_SPGENERAL22 32339]
+Fam=DDC Sollwerte
+Width=5
+Init=y
+Vers=200000
+Out=Val_I 
+S=Value_R=70 
+av0=c cs =0 \nabs 
+av1=a BACnet %s =0 {0..1} 
+av2=c c0 =0 \nabs 
+av3=a Value 0 %1p =210:300 
+av4=c cc =0 \nabs 
+AcceptName=1
+Folder=Sollwerte.Integer?
+Variables0=Value Register;(4) Integerwert
+Language=de
+Posi=21 10
+[_FLISRNDY2 32340]
+Fam=sfupflip
+Width=4
+Init=y
+In=S_B R_B 
+Out=Q_B 
+S=Sta_F 
+av0=a opt %s =2 {0,1,2} 
+av1=b Sta 0 %s =0 
+av2=b Sta 0 %s =1 
+Language=de
+Posi=67 7
+[_ONDEL 32341]
+Fam=sfuptime
+Face=T|-|0
+Width=6
+Init=y
+In=In_EB TV_I 
+Out=Q_B t_I 
+S=Tim_T Sta_F 
+Language=de
+Posi=56 7
+[_ICMPGE 32342]
+Fam=sfupinte
+Face=Cmp
+Width=4
+Init=n
+In=_I _I 
+Out=>=_B 
+Language=de
+Posi=47 7
+[_CWM_SEND_CMAIL 32343]
+Fam=Communication Email
+Face=AMail Send
+FacePosi=l
+Width=16
+Init=y
+Vers=104300
+In=Send_EB 
+Out=Busy_B 
+C=Subject_Dx=5 Text_Dx=19 File_Dx=99 
+S=To_R LED_F Flags_3F Texts_2^X Priority_R 
+D=Register_2R 
+av0=a To 0 =1 {1..5} 
+av1=a Priority 0 =1 {1..5} 
+av2=a Format %s =0 {0..1} 
+AcceptName=1
+aRef=2
+Ref=WebMail
+Folder=Communication.AMailSend?
+Variables0=To Recipient;Nummer der Empfänger/-liste, die in der FBox "Text Mail Init" definiert wurde
+Variables1=Priority Priority;Mail Priorität (1...5, wichtig...normal)
+Language=de
+Posi=41 64
+[_DDC_ALGENERAL05 32344]
+Fam=DDC Stoerungen
+Width=4
+Init=y
+Vers=105000
+In=Us_B 
+Out=e_B 
+S=Verwende_F=26 
+av0=a Verwende 0 %s =0:1 {0,1} 
+av1=c cc =0 \nabs 
+AcceptName=1
+Folder=Stoerungen.Verwenden?
+Variables0=Verwende Verwenden;(4) Vorwahl ob die am Eingang anliegende Meldung am Ausgang weitergeleitet werd
+Language=de
+Posi=32 66
+[_HEAMANB3 32345]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=32 41
+[_HEAMANB3 32346]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=32 44
+[_HEAMANB3 32347]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=33 53
+[_HEAMANB3 32348]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=33 56
+[_IDIV 32349]
+Fam=sfupinte
+Face=Div
+Width=6
+Init=n
+In=A_I B_I 
+Out=A/B_I A%B_I 
+Language=de
+Posi=46 31
+[_DDC_ALGENERAL05 32350]
+Fam=DDC Stoerungen
+Width=4
+Init=y
+Vers=105000
+In=Us_B 
+Out=e_B 
+S=Verwende_F=25 
+av0=a Verwende 0 %s =0:1 {0,1} 
+av1=c cc =0 \nabs 
+AcceptName=1
+Folder=Stoerungen.Verwenden?
+Variables0=Verwende Verwenden;(4) Vorwahl ob die am Eingang anliegende Meldung am Ausgang weitergeleitet werd
+Language=de
+Posi=32 78
+[_CWM_SEND_CMAIL 32351]
+Fam=Communication Email
+Face=AMail Send
+FacePosi=l
+Width=16
+Init=y
+Vers=104300
+In=Send_EB 
+Out=Busy_B 
+C=Subject_Dx=5 Text_Dx=122 File_Dx=86 
+S=To_R LED_F Flags_3F Texts_2^X Priority_R 
+D=Register_2R 
+av0=a To 0 =1 {1..5} 
+av1=a Priority 0 =1 {1..5} 
+av2=a Format %s =0 {0..1} 
+AcceptName=1
+aRef=2
+Ref=WebMail
+Folder=Communication.AMailSend?
+Variables0=To Recipient;Nummer der Empfänger/-liste, die in der FBox "Text Mail Init" definiert wurde
+Variables1=Priority Priority;Mail Priorität (1...5, wichtig...normal)
+Language=de
+Posi=41 76
+[HLINE]
+H0=8 27 47)63 67)71 76
+H1=9 45 47
+H2=10 51 56)62 63)64 67
+H3=11 26 45
+H4=12 55 56)62 65
+H5=13 39 47
+H6=14 46 47
+H7=15 34 38)40 46)51 64)65 67)73 76
+H8=16 26 28)32 38
+H9=17 56 67)73 74
+H10=19 35 44)51 76
+H11=22 34 44)51 76
+H12=25 35 44)51 76
+H13=27 26 38)40 55
+H14=28 35 38
+H15=30 27 56
+H16=34 27 46)52 76
+H17=36 27 46)52 76
+H18=42 27 32)38 46)53 76
+H19=44 41 46)53 76
+H20=45 27 32)38 41
+H21=54 27 33)39 46)53 76
+H22=56 41 46)53 76
+H23=57 27 33)39 41
+H24=67 27 32)36 41)57 76
+H25=79 27 32)36 41)57 76
+H26=92 43 49
+H27=94 43 49
+H28=96 43 49
+H29=98 43 49
+[VLINE]
+V0=34 11 15)16 22
+V1=35 11 19)25 27)28 30
+V2=39 8 13
+V3=41 44 45)56 57
+V4=45 9 11
+V5=46 14 15
+V6=55 12 27
+V7=56 17 30
+V8=63 8 10
+V9=64 10 15
+V10=65 12 15
+[NETWORK]
+N0=Io 27 8)if 47 8)if 47 13
+N1=Bif 67 8)of 62 10
+N2=Bof 71 8)i 76 8
+N3=Iif 47 9)of 26 11)if 38 15)if 44 19
+N4=Bof 51 10)if 56 10
+N5=Bif 67 10)of 51 15
+N6=Iif 56 12)of 40 27
+N7=Iof 62 12)if 67 15
+N8=Iif 47 14)of 40 15
+N9=Iof 73 15)i 76 15
+N10=Iof 26 16)if 28 16
+N11=Iof 32 16)if 38 16)if 44 22
+N12=Iif 67 17)o 27 30)if 38 28
+N13=Iof 73 17
+N14=Iof 51 19)i 76 19
+N15=Iof 51 22)i 76 22
+N16=Iif 44 25)if 38 27)of 26 27
+N17=Iof 51 25)i 76 25
+N18=Io 27 34)if 46 34
+N19=Iof 52 34)i 76 34
+N20=Io 27 36)if 46 36
+N21=Iof 52 36)i 76 36
+N22=Bo 27 42)if 32 42
+N23=Bof 38 42)if 46 42
+N24=Bof 53 42)i 76 42
+N25=Bif 46 44)of 38 45
+N26=Bof 53 44)i 76 44
+N27=Bo 27 45)if 32 45
+N28=Io 68 47
+N29=Bo 27 54)if 33 54
+N30=Bof 39 54)if 46 54
+N31=Bof 53 54)i 76 54
+N32=Bif 46 56)of 39 57
+N33=Bof 53 56)i 76 56
+N34=Bo 27 57)if 33 57
+N35=Io 68 59
+N36=Bo 27 67)if 32 67
+N37=Bof 36 67)if 41 67
+N38=Bof 57 67
+N39=Bo 27 79)if 32 79
+N40=Bof 36 79)if 41 79
+N41=Bof 57 79
+N42=Io 17 92
+N43=Io 43 92
+N44=Bo 17 94
+N45=Io 43 94
+N46=Io 43 96
+N47=Io 43 98
+[COMMENT]
+Text0=12 11-0 Grenzwert
+Text1=7 16-0 Hysterese (negativ)
+Text2=8 27-0 Verzoegerung (Sek)
+Text3=71 46-0 0=OK / 1= Unquittiert verschwunden
+Text4=71 48-0 2 = Quittiert aber noch anliegend
+Text5=71 50-0 3 = Alarm unquittiert anliegend
+Text6=71 58-0 0=OK / 1= Unquittiert verschwunden
+Text7=71 60-0 2 = Quittiert aber noch anliegend
+Text8=71 62-0 3 = Alarm unquittiert anliegend
+Text9=10 87-0 "Hallo<10>Hier ist die Saja-PCD3.M5340 des GV der JVA in Giessen<10>Der Wert des Registers ",iEMonth," ist $",iEMonth.04T "<10><10>MfG<10>Gundacker"
+Text10=10 89-0 "SL1FLASH:/WEBPAGES/DATA/C004GEVZHZG00_M$",iEMonth.04T,".csv"
+[CONNS]
+Conn0=27 8 37 34 20
+Conn1=76 8 63 33 21
+Conn2=76 15 117 33 19
+Conn3=76 19 70 33 20
+Conn4=76 22 54 33 19
+Conn5=76 25 9 33 18
+Conn6=27 30 16 34 3
+Conn7=27 34 37 34 20
+Conn8=76 34 93 33 20
+Conn9=27 36 16 34 3
+Conn10=76 36 8 33 19
+Conn11=27 42 63 34 21
+Conn12=76 42 87 33 23
+Conn13=76 44 77 33 23
+Conn14=27 45 108 34 21
+Conn15=68 47 36 34 21
+Conn16=27 54 76 34 23
+Conn17=76 54 49 33 23
+Conn18=76 56 92 33 23
+Conn19=27 57 108 34 21
+Conn20=68 59 43 34 21
+Conn21=27 67 87 34 23
+Conn22=27 79 49 34 23
+Conn23=17 92 33 34 13
+Conn24=43 92 27 34 16
+Conn25=17 94 40 34 14
+Conn26=43 94 67 34 16
+Conn27=43 96 107 34 16
+Conn28=43 98 59 34 16
+[PAGEDEF]
+PageLen=10078
+[PAGE]
+Name=Temp. Grenzwerte
+Comment=HVT Feld 2
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=1304
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_IDIV 32352=
+_HEAALRT2 32353=
+_HEAALRT2 32354=
+_IMUL 32355=
+_DDC_SPGENERAL22 32381=
+_HEALIMIT 32357=
+_HEALIMIT 32358=
+_HEALIMIT 32359=
+_IABS 32360=
+_DDC_SPGENERAL22 32386=
+_ISUB 32362=
+_ICMPSE 32363=
+_DDC_SPGENERAL22 32364=
+_FLISRNDY2 32365=
+_ONDEL 32366=
+_ICMPGE 32367=
+_CWM_SEND_CMAIL 32368=
+_DDC_ALGENERAL05 32369=
+_HEAMANB3 32370=
+_HEAMANB3 32371=
+_HEAMANB3 32372=
+_HEAMANB3 32373=
+_IDIV 32374=
+_DDC_ALGENERAL05 32375=
+_CWM_SEND_CMAIL 32376=
+[_IDIV 32352]
+Fam=sfupinte
+Face=Div
+Width=6
+Init=n
+In=A_I B_I 
+Out=A/B_I A%B_I 
+Language=de
+Posi=67 12
+[_HEAALRT2 32353]
+Fam=heavac
+Face=AlarmT
+Width=7
+Init=y
+In=Ala_B Qit_EB 
+Out=s1_B s2_B 
+S=Fs_8F Rs_8R=116 
+av0=a op %s =2 {1,2} 
+av1=v Rs 0 %s 
+av2=v Rs 1 %0D 
+av3=v Rs 2 %0H 
+av4=v Rs 3 %0D 
+av5=v Rs 4 %0H 
+av6=v Rs 5 %0D 
+av7=v Rs 6 %0H 
+AcceptName=3
+Language=de
+Posi=46 51
+[_HEAALRT2 32354]
+Fam=heavac
+Face=AlarmT
+Width=7
+Init=y
+In=Ala_B Qit_EB 
+Out=s1_B s2_B 
+S=Fs_8F Rs_8R=121 
+av0=a op %s =2 {1,2} 
+av1=v Rs 0 %s 
+av2=v Rs 1 %0D 
+av3=v Rs 2 %0H 
+av4=v Rs 3 %0D 
+av5=v Rs 4 %0H 
+av6=v Rs 5 %0D 
+av7=v Rs 6 %0H 
+AcceptName=3
+Language=de
+Posi=46 39
+[_IMUL 32355]
+Fam=sfupinte
+Face=x
+Width=2
+Init=n
+In=_I _I 
+Out=_I 
+Language=de
+Posi=38 26
+[_DDC_SPGENERAL22 32381]
+Fam=DDC Sollwerte
+Width=5
+Init=y
+Vers=200000
+Out=Val_I 
+S=Value_R=109 
+av0=c cs =0 \nabs 
+av1=a BACnet %s =0 {0..1} 
+av2=c c0 =0 \nabs 
+av3=a Value 0 %1p =210:300 
+av4=c cc =0 \nabs 
+AcceptName=1
+Folder=Sollwerte.Integer?
+Variables0=Value Register;(4) Integerwert
+Language=de
+Posi=21 26
+[_HEALIMIT 32357]
+Fam=heavfilt
+Face=Limit
+FacePosi=l
+Width=7
+Init=y
+In=_I 
+Out=_I 
+S=Rs_2R LED_F 
+D=Fd_4F 
+av0=c c1 =0 \nabs 
+av1=a Rs 0 %1p =0 {-2000000..2000000} 
+av2=a Rs 1 %1p =1000:300 {-2000000..2000000} 
+AcceptName=3
+Language=de
+Posi=44 24
+[_HEALIMIT 32358]
+Fam=heavfilt
+Face=Limit
+FacePosi=l
+Width=7
+Init=y
+In=_I 
+Out=_I 
+S=Rs_2R LED_F 
+D=Fd_4F 
+av0=c c1 =0 \nabs 
+av1=a Rs 0 %1p =0 {-2000000..2000000} 
+av2=a Rs 1 %1p =1000:100 {-2000000..2000000} 
+AcceptName=3
+Language=de
+Posi=44 21
+[_HEALIMIT 32359]
+Fam=heavfilt
+Face=Limit
+FacePosi=l
+Width=7
+Init=y
+In=_I 
+Out=_I 
+S=Rs_2R LED_F 
+D=Fd_4F 
+av0=c c1 =0 \nabs 
+av1=a Rs 0 %1p =0:75 {-2000000..2000000} 
+av2=a Rs 1 %1p =1000:450 {-2000000..2000000} 
+AcceptName=3
+Language=de
+Posi=44 18
+[_IABS 32360]
+Fam=sfupinte
+Face=Abs
+Width=4
+Init=n
+In=_I 
+Out=_I 
+Language=de
+Posi=28 15
+[_DDC_SPGENERAL22 32386]
+Fam=DDC Sollwerte
+Width=5
+Init=y
+Vers=200000
+Out=Val_I 
+S=Value_R=75 
+av0=c cs =0 \nabs 
+av1=a BACnet %s =0 {0..1} 
+av2=c c0 =0 \nabs 
+av3=a Value 0 %1p =210:10 
+av4=c cc =0 \nabs 
+AcceptName=1
+Folder=Sollwerte.Integer?
+Variables0=Value Register;(4) Integerwert
+Language=de
+Posi=21 15
+[_ISUB 32362]
+Fam=sfupinte
+Face=-
+Width=2
+Init=n
+In=_I _I 
+Out=_I 
+Language=de
+Posi=38 14
+[_ICMPSE 32363]
+Fam=sfupinte
+Face=Cmp
+Width=4
+Init=n
+In=_I _I 
+Out=<=_B 
+Language=de
+Posi=47 12
+[_DDC_SPGENERAL22 32364]
+Fam=DDC Sollwerte
+Width=5
+Init=y
+Vers=200000
+Out=Val_I 
+S=Value_R=35 
+av0=c cs =0 \nabs 
+av1=a BACnet %s =0 {0..1} 
+av2=c c0 =0 \nabs 
+av3=a Value 0 %1p =210:300 
+av4=c cc =0 \nabs 
+AcceptName=1
+Folder=Sollwerte.Integer?
+Variables0=Value Register;(4) Integerwert
+Language=de
+Posi=21 10
+[_FLISRNDY2 32365]
+Fam=sfupflip
+Width=4
+Init=y
+In=S_B R_B 
+Out=Q_B 
+S=Sta_F 
+av0=a opt %s =2 {0,1,2} 
+av1=b Sta 0 %s =0 
+av2=b Sta 0 %s =1 
+Language=de
+Posi=67 7
+[_ONDEL 32366]
+Fam=sfuptime
+Face=T|-|0
+Width=6
+Init=y
+In=In_EB TV_I 
+Out=Q_B t_I 
+S=Tim_T Sta_F 
+Language=de
+Posi=56 7
+[_ICMPGE 32367]
+Fam=sfupinte
+Face=Cmp
+Width=4
+Init=n
+In=_I _I 
+Out=>=_B 
+Language=de
+Posi=47 7
+[_CWM_SEND_CMAIL 32368]
+Fam=Communication Email
+Face=AMail Send
+FacePosi=l
+Width=16
+Init=y
+Vers=104300
+In=Send_EB 
+Out=Busy_B 
+C=Subject_Dx=5 Text_Dx=98 File_Dx=47 
+S=To_R LED_F Flags_3F Texts_2^X Priority_R 
+D=Register_2R 
+av0=a To 0 =1 {1..5} 
+av1=a Priority 0 =1 {1..5} 
+av2=a Format %s =0 {0..1} 
+AcceptName=1
+aRef=2
+Ref=WebMail
+Folder=Communication.AMailSend?
+Variables0=To Recipient;Nummer der Empfänger/-liste, die in der FBox "Text Mail Init" definiert wurde
+Variables1=Priority Priority;Mail Priorität (1...5, wichtig...normal)
+Language=de
+Posi=41 64
+[_DDC_ALGENERAL05 32369]
+Fam=DDC Stoerungen
+Width=4
+Init=y
+Vers=105000
+In=Us_B 
+Out=e_B 
+S=Verwende_F=26 
+av0=a Verwende 0 %s =0:1 {0,1} 
+av1=c cc =0 \nabs 
+AcceptName=1
+Folder=Stoerungen.Verwenden?
+Variables0=Verwende Verwenden;(4) Vorwahl ob die am Eingang anliegende Meldung am Ausgang weitergeleitet werd
+Language=de
+Posi=32 66
+[_HEAMANB3 32370]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=32 41
+[_HEAMANB3 32371]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=32 44
+[_HEAMANB3 32372]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=33 53
+[_HEAMANB3 32373]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=33 56
+[_IDIV 32374]
+Fam=sfupinte
+Face=Div
+Width=6
+Init=n
+In=A_I B_I 
+Out=A/B_I A%B_I 
+Language=de
+Posi=46 31
+[_DDC_ALGENERAL05 32375]
+Fam=DDC Stoerungen
+Width=4
+Init=y
+Vers=105000
+In=Us_B 
+Out=e_B 
+S=Verwende_F=25 
+av0=a Verwende 0 %s =0:1 {0,1} 
+av1=c cc =0 \nabs 
+AcceptName=1
+Folder=Stoerungen.Verwenden?
+Variables0=Verwende Verwenden;(4) Vorwahl ob die am Eingang anliegende Meldung am Ausgang weitergeleitet werd
+Language=de
+Posi=32 78
+[_CWM_SEND_CMAIL 32376]
+Fam=Communication Email
+Face=AMail Send
+FacePosi=l
+Width=16
+Init=y
+Vers=104300
+In=Send_EB 
+Out=Busy_B 
+C=Subject_Dx=5 Text_Dx=91 File_Dx=17 
+S=To_R LED_F Flags_3F Texts_2^X Priority_R 
+D=Register_2R 
+av0=a To 0 =1 {1..5} 
+av1=a Priority 0 =1 {1..5} 
+av2=a Format %s =0 {0..1} 
+AcceptName=1
+aRef=2
+Ref=WebMail
+Folder=Communication.AMailSend?
+Variables0=To Recipient;Nummer der Empfänger/-liste, die in der FBox "Text Mail Init" definiert wurde
+Variables1=Priority Priority;Mail Priorität (1...5, wichtig...normal)
+Language=de
+Posi=41 76
+[HLINE]
+H0=8 27 47)63 67)71 76
+H1=9 45 47
+H2=10 51 56)62 63)64 67
+H3=11 26 45
+H4=12 55 56)62 65
+H5=13 39 47
+H6=14 46 47
+H7=15 34 38)40 46)51 64)65 67)73 76
+H8=16 26 28)32 38
+H9=17 56 67)73 74
+H10=19 35 44)51 76
+H11=22 34 44)51 76
+H12=25 35 44)51 76
+H13=27 26 38)40 55
+H14=28 35 38
+H15=30 27 56
+H16=34 27 46)52 76
+H17=36 27 46)52 76
+H18=42 27 32)38 46)53 76
+H19=44 41 46)53 76
+H20=45 27 32)38 41
+H21=54 27 33)39 46)53 76
+H22=56 41 46)53 76
+H23=57 27 33)39 41
+H24=67 27 32)36 41)57 76
+H25=79 27 32)36 41)57 76
+H26=92 43 49
+H27=94 43 49
+H28=96 43 49
+H29=98 43 49
+[VLINE]
+V0=34 11 15)16 22
+V1=35 11 19)25 27)28 30
+V2=39 8 13
+V3=41 44 45)56 57
+V4=45 9 11
+V5=46 14 15
+V6=55 12 27
+V7=56 17 30
+V8=63 8 10
+V9=64 10 15
+V10=65 12 15
+[NETWORK]
+N0=Io 27 8)if 47 8)if 47 13
+N1=Bif 67 8)of 62 10
+N2=Bof 71 8)i 76 8
+N3=Iif 47 9)of 26 11)if 38 15)if 44 19
+N4=Bof 51 10)if 56 10
+N5=Bif 67 10)of 51 15
+N6=Iif 56 12)of 40 27
+N7=Iof 62 12)if 67 15
+N8=Iif 47 14)of 40 15
+N9=Iof 73 15)i 76 15
+N10=Iof 26 16)if 28 16
+N11=Iof 32 16)if 38 16)if 44 22
+N12=Iif 67 17)o 27 30)if 38 28
+N13=Iof 73 17
+N14=Iof 51 19)i 76 19
+N15=Iof 51 22)i 76 22
+N16=Iif 44 25)if 38 27)of 26 27
+N17=Iof 51 25)i 76 25
+N18=Io 27 34)if 46 34
+N19=Iof 52 34)i 76 34
+N20=Io 27 36)if 46 36
+N21=Iof 52 36)i 76 36
+N22=Bo 27 42)if 32 42
+N23=Bof 38 42)if 46 42
+N24=Bof 53 42)i 76 42
+N25=Bif 46 44)of 38 45
+N26=Bof 53 44)i 76 44
+N27=Bo 27 45)if 32 45
+N28=Io 68 47
+N29=Bo 27 54)if 33 54
+N30=Bof 39 54)if 46 54
+N31=Bof 53 54)i 76 54
+N32=Bif 46 56)of 39 57
+N33=Bof 53 56)i 76 56
+N34=Bo 27 57)if 33 57
+N35=Io 68 59
+N36=Bo 27 67)if 32 67
+N37=Bof 36 67)if 41 67
+N38=Bof 57 67
+N39=Bo 27 79)if 32 79
+N40=Bof 36 79)if 41 79
+N41=Bof 57 79
+N42=Io 17 92
+N43=Io 43 92
+N44=Bo 17 94
+N45=Io 43 94
+N46=Io 43 96
+N47=Io 43 98
+[COMMENT]
+Text0=12 11-0 Grenzwert
+Text1=7 16-0 Hysterese (negativ)
+Text2=8 27-0 Verzoegerung (Sek)
+Text3=71 46-0 0=OK / 1= Unquittiert verschwunden
+Text4=71 48-0 2 = Quittiert aber noch anliegend
+Text5=71 50-0 3 = Alarm unquittiert anliegend
+Text6=71 58-0 0=OK / 1= Unquittiert verschwunden
+Text7=71 60-0 2 = Quittiert aber noch anliegend
+Text8=71 62-0 3 = Alarm unquittiert anliegend
+Text9=10 87-0 "Hallo<10>Hier ist die Saja-PCD3.M5340 des GV der JVA in Giessen<10>Der Wert des Registers ",iEMonth," ist $",iEMonth.04T "<10><10>MfG<10>Gundacker"
+Text10=10 89-0 "SL1FLASH:/WEBPAGES/DATA/C004GEVZHZG00_M$",iEMonth.04T,".csv"
+[CONNS]
+Conn0=27 8 42 34 20
+Conn1=76 8 29 33 21
+Conn2=76 15 85 33 19
+Conn3=76 19 35 33 20
+Conn4=76 22 62 33 19
+Conn5=76 25 110 33 18
+Conn6=27 30 16 34 3
+Conn7=27 34 42 34 20
+Conn8=76 34 41 33 20
+Conn9=27 36 16 34 3
+Conn10=76 36 18 33 19
+Conn11=27 42 29 34 21
+Conn12=76 42 53 33 23
+Conn13=76 44 7 33 23
+Conn14=27 45 108 34 21
+Conn15=68 47 121 34 21
+Conn16=27 54 48 34 23
+Conn17=76 54 69 33 23
+Conn18=76 56 61 33 23
+Conn19=27 57 108 34 21
+Conn20=68 59 116 34 21
+Conn21=27 67 53 34 23
+Conn22=27 79 69 34 23
+Conn23=17 92 33 34 13
+Conn24=43 92 27 34 16
+Conn25=17 94 40 34 14
+Conn26=43 94 67 34 16
+Conn27=43 96 107 34 16
+Conn28=43 98 59 34 16
+[RESOURCES]
+DBVersion=270340
+DBCount=126
+Format={ID}	{FullName}	{Type}	{Expression}	{ScopeID}	{Size}	{Comment}	{Override}	{Tags}	{BlockID}	{Hidden}
+HSYM0=1	COB_8	COB		3	-1	Tmp_GW_			-1	0
+HSYM1=2	ELT01.A00.UV2.Feld2.Temp.GW10	R		1	-1	(4) Integerwert			-1	0
+HSYM2=3	ELT01.A00.UV2.Feld2.Temp.iMW10	R		2	-1				-1	0
+HSYM3=4	ELT01.A00.UV1.Feld2.Temp.ALA2.SM	R	[8]	1	-1				-1	0
+HSYM4=5	PCD01.Markt.OrtBezeichnung	TEXT RAM		1	32				-1	0
+HSYM5=6	ELT01.A00.UV1.Feld1.Temp.iMW10Defekt	F		2	-1				-1	0
+HSYM6=7	ELT01.A00.HVT.Feld2.Temp.ALA1.iSSM2	F		1	-1				-1	0
+HSYM7=8	ELT01.A00.HVT.Feld1.Temp.iMW1	R		1	-1				-1	0
+HSYM8=9	ELT01.A00.HVT.Feld1.Temp.Vz	R		1	-1				-1	0
+HSYM9=10	ELT01.A00.UV2.Feld2.Temp.ALA2.iSSM1	F		1	-1				-1	0
+HSYM10=11	ELT01.A00.UV2.Feld1.Temp.ALA1.MailText	TEXT		1	0				-1	0
+HSYM11=12	ELT01.A00.UV2.Feld1.Temp.iMW10	R		2	-1				-1	0
+HSYM12=13	ELT01.A00.UV1.Feld2.Temp.ALA2.File	TEXT		1	0				-1	0
+HSYM13=14	ELT01.A00.UV1.Feld2.Temp.ALA1.SM	R	[8]	1	-1				-1	0
+HSYM14=15	ELT01.A00.UV1.Feld1.Temp.ALA2.File	TEXT		1	0				-1	0
+HSYM15=16			10	3	-1				-1	1
+HSYM16=17	ELT01.A00.HVT.Feld2.Temp.ALA2.File	TEXT		1	0				-1	0
+HSYM17=18	ELT01.A00.HVT.Feld2.Temp.iMW1	R		1	-1				-1	0
+HSYM18=19	ELT01.A00.HVT.Feld1.Temp.ALA1.MailText	TEXT		1	0				-1	0
+HSYM19=20	ELT01.A00.UV2.Feld2.Temp.Hys	R		1	-1				-1	0
+HSYM20=21	ELT01.A00.UV2.Feld1.Temp.iMW10Defekt	F		2	-1				-1	0
+HSYM21=22	ELT01.A00.UV2.Feld1.Temp.Vz	R		1	-1				-1	0
+HSYM22=23	ELT01.A00.UV1.Feld2.Temp.ALA2.MailText	TEXT		1	0				-1	0
+HSYM23=24	ELT01.A00.UV1.Feld2.Temp.iMW100	R		1	-1				-1	0
+HSYM24=25	ELT01.A00.Sensor.Defekt.USE	F		1	-1				-1	0
+HSYM25=26	ELT01.A00.Sensor.GW.USE	F		1	-1				-1	0
+HSYM26=27	PCD01.SBus.Info.IP.iAddB3	R		2	-1				-1	0
+HSYM27=28	ELT01.A00.UV1.Feld1.Temp.iMW100	R		1	-1				-1	0
+HSYM28=29	ELT01.A00.HVT.Feld2.Temp.iGWhoch	F		1	-1				-1	0
+HSYM29=30	ELT01.A00.UV2.Feld2.Temp.ALA2.iSSM2	F		1	-1				-1	0
+HSYM30=31	ELT01.A00.UV2.Feld2.Temp.iMW10Defekt	F		2	-1				-1	0
+HSYM31=32	ELT01.A00.UV2.Feld1.Temp.iMW1	R		1	-1				-1	0
+HSYM32=33	PCD01.EMail.Init.iErr	R		1	-1				-1	0
+HSYM33=34	ELT01.A00.UV1.Feld1.Temp.iRLZs	R		1	-1				-1	0
+HSYM34=35	ELT01.A00.HVT.Feld2.Temp.GW10	R		1	-1	(4) Integerwert			-1	0
+HSYM35=36	ELT01.A00.HVT.Feld1.Temp.ALA1.SM	R	[8]	1	-1				-1	0
+HSYM36=37	ELT01.A00.HVT.Feld1.Temp.iMW10	R		1	-1				-1	0
+HSYM37=38	ELT01.A00.UV2.Feld2.Temp.ALA2.File	TEXT		1	0				-1	0
+HSYM38=39	ELT01.A00.UV1.Feld1.Temp.ALA2.MailText	TEXT		1	0				-1	0
+HSYM39=40	PCD01.EMail.Init.iBusy	F		2	-1				-1	0
+HSYM40=41	ELT01.A00.HVT.Feld2.Temp.iMW100	R		1	-1				-1	0
+HSYM41=42	ELT01.A00.HVT.Feld2.Temp.iMW10	R		2	-1				-1	0
+HSYM42=43	ELT01.A00.HVT.Feld1.Temp.ALA2.SM	R	[8]	1	-1				-1	0
+HSYM43=44	ELT01.A00.UV2.Feld2.Temp.iMW100	R		1	-1				-1	0
+HSYM44=45	ELT01.A00.UV2.Feld1.Temp.ALA2.SM	R	[8]	1	-1				-1	0
+HSYM45=46	ELT01.A00.UV1.Feld1.Temp.ALA1.SM	R	[8]	1	-1				-1	0
+HSYM46=47	ELT01.A00.HVT.Feld2.Temp.ALA1.File	TEXT		1	0				-1	0
+HSYM47=48	ELT01.A00.HVT.Feld2.Temp.iMW10Defekt	F		2	-1				-1	0
+HSYM48=49	ELT01.A00.HVT.Feld1.Temp.ALA2.iSSM1	F		1	-1				-1	0
+HSYM49=50	ELT01.A00.UV2.Feld1.Temp.ALA1.SM	R	[8]	1	-1				-1	0
+HSYM50=51	ELT01.A00.UV2.Feld1.Temp.iRLZs	R		1	-1				-1	0
+HSYM51=52	ELT01.A00.UV1.Feld1.Temp.ALA2.SM	R	[8]	1	-1				-1	0
+HSYM52=53	ELT01.A00.HVT.Feld2.Temp.ALA1.iSSM1	F		1	-1				-1	0
+HSYM53=54	ELT01.A00.HVT.Feld1.Temp.Hys	R		1	-1				-1	0
+HSYM54=55	ELT01.A00.UV2.Feld2.Temp.ALA1.MailText	TEXT		1	0				-1	0
+HSYM55=56	ELT01.A00.UV2.Feld1.Temp.ALA2.MailText	TEXT		1	0				-1	0
+HSYM56=57	ELT01.A00.UV2.Feld1.Temp.ALA1.iSSM2	F		1	-1				-1	0
+HSYM57=58	ELT01.A00.UV1.Feld2.Temp.iMW10	R		2	-1				-1	0
+HSYM58=59	PCD01.SBus.Info.IP.iAddB0	R		2	-1				-1	0
+HSYM59=60	ELT01.A00.UV1.Feld1.Temp.ALA1.iSSM1	F		1	-1				-1	0
+HSYM60=61	ELT01.A00.HVT.Feld2.Temp.ALA2.iSSM2	F		1	-1				-1	0
+HSYM61=62	ELT01.A00.HVT.Feld2.Temp.Hys	R		1	-1				-1	0
+HSYM62=63	ELT01.A00.HVT.Feld1.Temp.iGWhoch	F		1	-1				-1	0
+HSYM63=64	ELT01.A00.UV2.Feld2.Temp.iRLZs	R		1	-1				-1	0
+HSYM64=65	ELT01.A00.UV2.Feld2.Temp.iGWhoch	F		1	-1				-1	0
+HSYM65=66	ELT01.A00.UV2.Feld1.Temp.ALA1.iSSM1	F		1	-1				-1	0
+HSYM66=67	PCD01.SBus.Info.IP.iAddB2	R		2	-1				-1	0
+HSYM67=68	ELT01.A00.UV1.Feld1.Temp.ALA1.iSSM2	F		1	-1				-1	0
+HSYM68=69	ELT01.A00.HVT.Feld2.Temp.ALA2.iSSM1	F		1	-1				-1	0
+HSYM69=70	ELT01.A00.HVT.Feld1.Temp.GW10	R		1	-1	(4) Integerwert			-1	0
+HSYM70=71	ELT01.A00.UV2.Feld1.Temp.ALA2.iSSM2	F		1	-1				-1	0
+HSYM71=72	ELT01.A00.UV1.Feld2.Temp.GW10	R		1	-1	(4) Integerwert			-1	0
+HSYM72=73	ELT01.A00.UV1.Feld1.Temp.ALA1.File	TEXT		1	0				-1	0
+HSYM73=74	ELT01.A00.UV1.Feld1.Temp.ALA2.iSSM2	F		1	-1				-1	0
+HSYM74=75	ELT01.A00.Sensor.GW.Hys	R		1	-1				-1	0
+HSYM75=76	ELT01.A00.HVT.Feld1.Temp.iMW10Defekt	F		1	-1				-1	0
+HSYM76=77	ELT01.A00.HVT.Feld1.Temp.ALA1.iSSM2	F		1	-1				-1	0
+HSYM77=78	ELT01.A00.UV2.Feld2.Temp.ALA2.MailText	TEXT		1	0				-1	0
+HSYM78=79	ELT01.A00.UV2.Feld1.Temp.ALA2.File	TEXT		1	0				-1	0
+HSYM79=80	ELT01.A00.UV2.Feld1.Temp.ALA1.File	TEXT		1	0				-1	0
+HSYM80=81	ELT01.A00.UV1.Feld2.Temp.ALA2.iSSM1	F		1	-1				-1	0
+HSYM81=82	ELT01.A00.UV1.Feld2.Temp.iMW10Defekt	F		2	-1				-1	0
+HSYM82=83	ELT01.A00.UV1.Feld1.Temp.ALA2.iSSM1	F		1	-1				-1	0
+HSYM83=84	ELT01.A00.UV1.Feld1.Temp.GW10	R		1	-1	(4) Integerwert			-1	0
+HSYM84=85	ELT01.A00.HVT.Feld2.Temp.iRLZs	R		1	-1				-1	0
+HSYM85=86	ELT01.A00.HVT.Feld1.Temp.ALA2.File	TEXT		1	0				-1	0
+HSYM86=87	ELT01.A00.HVT.Feld1.Temp.ALA1.iSSM1	F		1	-1				-1	0
+HSYM87=88	ELT01.A00.UV2.Feld2.Temp.ALA1.SM	R	[8]	1	-1				-1	0
+HSYM88=89	ELT01.A00.UV2.Feld1.Temp.ALA2.iSSM1	F		1	-1				-1	0
+HSYM89=90	ELT01.A00.UV2.Feld1.Temp.iMW100	R		1	-1				-1	0
+HSYM90=91	ELT01.A00.HVT.Feld2.Temp.ALA2.MailText	TEXT		1	0				-1	0
+HSYM91=92	ELT01.A00.HVT.Feld1.Temp.ALA2.iSSM2	F		1	-1				-1	0
+HSYM92=93	ELT01.A00.HVT.Feld1.Temp.iMW100	R		1	-1				-1	0
+HSYM93=94	ELT01.A00.UV2.Feld1.Temp.Hys	R		1	-1				-1	0
+HSYM94=95	ELT01.A00.UV1.Feld2.Temp.Vz	R		1	-1				-1	0
+HSYM95=96	ELT01.A00.UV1.Feld2.Temp.Hys	R		1	-1				-1	0
+HSYM96=97	ELT01.A00.UV1.Feld1.Temp.iGWhoch	F		1	-1				-1	0
+HSYM97=98	ELT01.A00.HVT.Feld2.Temp.ALA1.MailText	TEXT		1	0				-1	0
+HSYM98=99	ELT01.A00.HVT.Feld1.Temp.ALA1.File	TEXT		1	0				-1	0
+HSYM99=100	ELT01.A00.UV2.Feld2.Temp.ALA1.File	TEXT		1	0				-1	0
+HSYM100=101	ELT01.A00.UV2.Feld2.Temp.Vz	R		1	-1				-1	0
+HSYM101=102	ELT01.A00.UV2.Feld1.Temp.iGWhoch	F		1	-1				-1	0
+HSYM102=103	ELT01.A00.UV1.Feld2.Temp.ALA2.iSSM2	F		1	-1				-1	0
+HSYM103=104	ELT01.A00.UV1.Feld2.Temp.iMW1	R		1	-1				-1	0
+HSYM104=105	ELT01.A00.UV1.Feld2.Temp.iRLZs	R		1	-1				-1	0
+HSYM105=106	ELT01.A00.UV1.Feld1.Temp.ALA1.MailText	TEXT		1	0				-1	0
+HSYM106=107	PCD01.SBus.Info.IP.iAddB1	R		2	-1				-1	0
+HSYM107=108	ELT01.A00.Mld.PCD01.Quitt.Tast.iBm	F		2	-1	(5) Auswahl des Normalzustands des Gebers			-1	0
+HSYM108=109	ELT01.A00.Sensor.GW.Vz	R		1	-1				-1	0
+HSYM109=110	ELT01.A00.HVT.Feld2.Temp.Vz	R		1	-1				-1	0
+HSYM110=111	ELT01.A00.UV2.Feld2.Temp.ALA1.iSSM2	F		1	-1				-1	0
+HSYM111=112	ELT01.A00.UV2.Feld2.Temp.iMW1	R		1	-1				-1	0
+HSYM112=113	ELT01.A00.UV2.Feld1.Temp.GW10	R		1	-1	(4) Integerwert			-1	0
+HSYM113=114	ELT01.A00.UV1.Feld2.Temp.ALA1.File	TEXT		1	0				-1	0
+HSYM114=115	ELT01.A00.UV1.Feld2.Temp.iGWhoch	F		1	-1				-1	0
+HSYM115=116	ELT01.A00.HVT.Feld2.Temp.ALA2.SM	R	[8]	1	-1				-1	0
+HSYM116=117	ELT01.A00.HVT.Feld1.Temp.iRLZs	R		1	-1				-1	0
+HSYM117=118	ELT01.A00.UV2.Feld2.Temp.ALA1.iSSM1	F		1	-1				-1	0
+HSYM118=119	ELT01.A00.UV1.Feld2.Temp.ALA1.MailText	TEXT		1	0				-1	0
+HSYM119=120	ELT01.A00.UV1.Feld2.Temp.ALA1.iSSM2	F		1	-1				-1	0
+HSYM120=121	ELT01.A00.HVT.Feld2.Temp.ALA1.SM	R	[8]	1	-1				-1	0
+HSYM121=122	ELT01.A00.HVT.Feld1.Temp.ALA2.MailText	TEXT		1	0				-1	0
+HSYM122=123	ELT01.A00.UV2.Feld2.Temp.ALA2.SM	R	[8]	1	-1				-1	0
+HSYM123=124	ELT01.A00.UV1.Feld2.Temp.ALA1.iSSM1	F		1	-1				-1	0
+HSYM124=125	ELT01.A00.UV1.Feld1.Temp.iMW1	R		1	-1				-1	0
+HSYM125=126	ELT01.A00.UV1.Feld1.Temp.iMW10	R		2	-1				-1	0
+[TEXTCONTENTS]
+Count=74
+TEXT0=5 PCD01.Markt.OrtBezeichnung.[size]	32
+TEXT1=5 PCD01.Markt.OrtBezeichnung.[format]	0
+TEXT2=11 ELT01.A00.UV2.Feld1.Temp.ALA1.MailText.[size]	0
+TEXT3=11 ELT01.A00.UV2.Feld1.Temp.ALA1.MailText.[format]	1
+TEXT4=11 ELT01.A00.UV2.Feld1.Temp.ALA1.MailText.[0]	"MM IP: $", PCD01.SBus.Info.IP.iAddB3.04T ".$" ,PCD01.SBus.Info.IP.iAddB2.04T ".$", PCD01.SBus.Info.IP.iAddB1.04T ".$",PCD01.SBus.Info.IP.iAddB0.04T "<10><10>Stoerung Temperaturgrenzwert UV2 Feld 1. <10>Temperatur war am $DD.$DM.$DY um $H bei $", ELT01.A00.UV2.Feld1.Temp.iMW100.04T ",$", ELT01.A00.UV2.Feld1.Temp.iMW1.04T " °C. <10>"
+TEXT5=13 ELT01.A00.UV1.Feld2.Temp.ALA2.File.[size]	0
+TEXT6=13 ELT01.A00.UV1.Feld2.Temp.ALA2.File.[format]	0
+TEXT7=13 ELT01.A00.UV1.Feld2.Temp.ALA2.File.[0]	""
+TEXT8=15 ELT01.A00.UV1.Feld1.Temp.ALA2.File.[size]	0
+TEXT9=15 ELT01.A00.UV1.Feld1.Temp.ALA2.File.[format]	0
+TEXT10=15 ELT01.A00.UV1.Feld1.Temp.ALA2.File.[0]	""
+TEXT11=17 ELT01.A00.HVT.Feld2.Temp.ALA2.File.[size]	0
+TEXT12=17 ELT01.A00.HVT.Feld2.Temp.ALA2.File.[format]	0
+TEXT13=17 ELT01.A00.HVT.Feld2.Temp.ALA2.File.[0]	""
+TEXT14=19 ELT01.A00.HVT.Feld1.Temp.ALA1.MailText.[size]	0
+TEXT15=19 ELT01.A00.HVT.Feld1.Temp.ALA1.MailText.[format]	1
+TEXT16=19 ELT01.A00.HVT.Feld1.Temp.ALA1.MailText.[0]	"MM IP: $", PCD01.SBus.Info.IP.iAddB3.04T ".$" ,PCD01.SBus.Info.IP.iAddB2.04T ".$", PCD01.SBus.Info.IP.iAddB1.04T ".$",PCD01.SBus.Info.IP.iAddB0.04T "<10><10>Stoerung Temperaturgrenzwert HVT Feld 1. <10>Temperatur war am $DD.$DM.$DY um $H bei $", ELT01.A00.HVT.Feld1.Temp.iMW100.04T ",$", ELT01.A00.HVT.Feld1.Temp.iMW1.04T " °C. <10>"
+TEXT17=23 ELT01.A00.UV1.Feld2.Temp.ALA2.MailText.[size]	0
+TEXT18=23 ELT01.A00.UV1.Feld2.Temp.ALA2.MailText.[format]	1
+TEXT19=23 ELT01.A00.UV1.Feld2.Temp.ALA2.MailText.[0]	"MM IP: $", PCD01.SBus.Info.IP.iAddB3.04T ".$" ,PCD01.SBus.Info.IP.iAddB2.04T ".$", PCD01.SBus.Info.IP.iAddB1.04T ".$",PCD01.SBus.Info.IP.iAddB0.04T "<10><10>Stoerung Temperatur Sensor UV1 Feld 2 defekt (Sensorbruch). <10>Temperatur war am $DD.$DM.$DY um $H bei $", ELT01.A00.UV1.Feld2.Temp.iMW100.04T ",$", ELT01.A00.UV1.Feld2.Temp.iMW1.04T " °C. <10>"
+TEXT20=38 ELT01.A00.UV2.Feld2.Temp.ALA2.File.[size]	0
+TEXT21=38 ELT01.A00.UV2.Feld2.Temp.ALA2.File.[format]	0
+TEXT22=38 ELT01.A00.UV2.Feld2.Temp.ALA2.File.[0]	""
+TEXT23=39 ELT01.A00.UV1.Feld1.Temp.ALA2.MailText.[size]	0
+TEXT24=39 ELT01.A00.UV1.Feld1.Temp.ALA2.MailText.[format]	1
+TEXT25=39 ELT01.A00.UV1.Feld1.Temp.ALA2.MailText.[0]	"MM IP: $", PCD01.SBus.Info.IP.iAddB3.04T ".$" ,PCD01.SBus.Info.IP.iAddB2.04T ".$", PCD01.SBus.Info.IP.iAddB1.04T ".$",PCD01.SBus.Info.IP.iAddB0.04T "<10><10>Stoerung Temperatur Sensor UV1 Feld 1 defekt (Sensorbruch). <10>Temperatur war am $DD.$DM.$DY um $H bei $", ELT01.A00.UV1.Feld1.Temp.iMW100.04T ",$", ELT01.A00.UV1.Feld1.Temp.iMW1.04T " °C. <10>"
+TEXT26=47 ELT01.A00.HVT.Feld2.Temp.ALA1.File.[size]	0
+TEXT27=47 ELT01.A00.HVT.Feld2.Temp.ALA1.File.[format]	0
+TEXT28=47 ELT01.A00.HVT.Feld2.Temp.ALA1.File.[0]	""
+TEXT29=55 ELT01.A00.UV2.Feld2.Temp.ALA1.MailText.[size]	0
+TEXT30=55 ELT01.A00.UV2.Feld2.Temp.ALA1.MailText.[format]	1
+TEXT31=55 ELT01.A00.UV2.Feld2.Temp.ALA1.MailText.[0]	"MM IP: $", PCD01.SBus.Info.IP.iAddB3.04T ".$" ,PCD01.SBus.Info.IP.iAddB2.04T ".$", PCD01.SBus.Info.IP.iAddB1.04T ".$",PCD01.SBus.Info.IP.iAddB0.04T "<10><10>Stoerung Temperaturgrenzwert UV2 Feld 2. <10>Temperatur war am $DD.$DM.$DY um $H bei $", ELT01.A00.UV2.Feld2.Temp.iMW100.04T ",$", ELT01.A00.UV2.Feld2.Temp.iMW1.04T " °C. <10>"
+TEXT32=56 ELT01.A00.UV2.Feld1.Temp.ALA2.MailText.[size]	0
+TEXT33=56 ELT01.A00.UV2.Feld1.Temp.ALA2.MailText.[format]	1
+TEXT34=56 ELT01.A00.UV2.Feld1.Temp.ALA2.MailText.[0]	"MM IP: $", PCD01.SBus.Info.IP.iAddB3.04T ".$" ,PCD01.SBus.Info.IP.iAddB2.04T ".$", PCD01.SBus.Info.IP.iAddB1.04T ".$",PCD01.SBus.Info.IP.iAddB0.04T "<10><10>Stoerung Temperatur Sensor UV2 Feld 1 defekt (Sensorbruch). <10>Temperatur war am $DD.$DM.$DY um $H bei $", ELT01.A00.UV2.Feld1.Temp.iMW100.04T ",$", ELT01.A00.UV2.Feld1.Temp.iMW1.04T " °C. <10>"
+TEXT35=73 ELT01.A00.UV1.Feld1.Temp.ALA1.File.[size]	0
+TEXT36=73 ELT01.A00.UV1.Feld1.Temp.ALA1.File.[format]	0
+TEXT37=73 ELT01.A00.UV1.Feld1.Temp.ALA1.File.[0]	""
+TEXT38=78 ELT01.A00.UV2.Feld2.Temp.ALA2.MailText.[size]	0
+TEXT39=78 ELT01.A00.UV2.Feld2.Temp.ALA2.MailText.[format]	1
+TEXT40=78 ELT01.A00.UV2.Feld2.Temp.ALA2.MailText.[0]	"MM IP: $", PCD01.SBus.Info.IP.iAddB3.04T ".$" ,PCD01.SBus.Info.IP.iAddB2.04T ".$", PCD01.SBus.Info.IP.iAddB1.04T ".$",PCD01.SBus.Info.IP.iAddB0.04T "<10><10>Stoerung Temperatur Sensor UV2 Feld 2 defekt (Sensorbruch). <10>Temperatur war am $DD.$DM.$DY um $H bei $", ELT01.A00.UV2.Feld2.Temp.iMW100.04T ",$", ELT01.A00.UV2.Feld2.Temp.iMW1.04T " °C. <10>"
+TEXT41=79 ELT01.A00.UV2.Feld1.Temp.ALA2.File.[size]	0
+TEXT42=79 ELT01.A00.UV2.Feld1.Temp.ALA2.File.[format]	0
+TEXT43=79 ELT01.A00.UV2.Feld1.Temp.ALA2.File.[0]	""
+TEXT44=80 ELT01.A00.UV2.Feld1.Temp.ALA1.File.[size]	0
+TEXT45=80 ELT01.A00.UV2.Feld1.Temp.ALA1.File.[format]	0
+TEXT46=80 ELT01.A00.UV2.Feld1.Temp.ALA1.File.[0]	""
+TEXT47=86 ELT01.A00.HVT.Feld1.Temp.ALA2.File.[size]	0
+TEXT48=86 ELT01.A00.HVT.Feld1.Temp.ALA2.File.[format]	0
+TEXT49=86 ELT01.A00.HVT.Feld1.Temp.ALA2.File.[0]	""
+TEXT50=91 ELT01.A00.HVT.Feld2.Temp.ALA2.MailText.[size]	0
+TEXT51=91 ELT01.A00.HVT.Feld2.Temp.ALA2.MailText.[format]	1
+TEXT52=91 ELT01.A00.HVT.Feld2.Temp.ALA2.MailText.[0]	"MM IP: $", PCD01.SBus.Info.IP.iAddB3.04T ".$" ,PCD01.SBus.Info.IP.iAddB2.04T ".$", PCD01.SBus.Info.IP.iAddB1.04T ".$",PCD01.SBus.Info.IP.iAddB0.04T "<10><10>Stoerung Temperatur Sensor HVT Feld 2 defekt (Sensorbruch). <10>Temperatur war am $DD.$DM.$DY um $H bei $", ELT01.A00.HVT.Feld2.Temp.iMW100.04T ",$", ELT01.A00.HVT.Feld2.Temp.iMW1.04T " °C. <10>"
+TEXT53=98 ELT01.A00.HVT.Feld2.Temp.ALA1.MailText.[size]	0
+TEXT54=98 ELT01.A00.HVT.Feld2.Temp.ALA1.MailText.[format]	1
+TEXT55=98 ELT01.A00.HVT.Feld2.Temp.ALA1.MailText.[0]	"MM IP: $", PCD01.SBus.Info.IP.iAddB3.04T ".$" ,PCD01.SBus.Info.IP.iAddB2.04T ".$", PCD01.SBus.Info.IP.iAddB1.04T ".$",PCD01.SBus.Info.IP.iAddB0.04T "<10><10>Stoerung Temperaturgrenzwert HVT Feld 2. <10>Temperatur war am $DD.$DM.$DY um $H bei $", ELT01.A00.HVT.Feld2.Temp.iMW100.04T ",$", ELT01.A00.HVT.Feld2.Temp.iMW1.04T " °C. <10>"
+TEXT56=99 ELT01.A00.HVT.Feld1.Temp.ALA1.File.[size]	0
+TEXT57=99 ELT01.A00.HVT.Feld1.Temp.ALA1.File.[format]	0
+TEXT58=99 ELT01.A00.HVT.Feld1.Temp.ALA1.File.[0]	""
+TEXT59=100 ELT01.A00.UV2.Feld2.Temp.ALA1.File.[size]	0
+TEXT60=100 ELT01.A00.UV2.Feld2.Temp.ALA1.File.[format]	0
+TEXT61=100 ELT01.A00.UV2.Feld2.Temp.ALA1.File.[0]	""
+TEXT62=106 ELT01.A00.UV1.Feld1.Temp.ALA1.MailText.[size]	0
+TEXT63=106 ELT01.A00.UV1.Feld1.Temp.ALA1.MailText.[format]	1
+TEXT64=106 ELT01.A00.UV1.Feld1.Temp.ALA1.MailText.[0]	"MM IP: $", PCD01.SBus.Info.IP.iAddB3.04T ".$" ,PCD01.SBus.Info.IP.iAddB2.04T ".$", PCD01.SBus.Info.IP.iAddB1.04T ".$",PCD01.SBus.Info.IP.iAddB0.04T "<10><10>Stoerung Temperaturgrenzwert UV1 Feld 1. <10>Temperatur war am $DD.$DM.$DY um $H bei $", ELT01.A00.UV1.Feld1.Temp.iMW100.04T ",$", ELT01.A00.UV1.Feld1.Temp.iMW1.04T " °C. <10>"
+TEXT65=114 ELT01.A00.UV1.Feld2.Temp.ALA1.File.[size]	0
+TEXT66=114 ELT01.A00.UV1.Feld2.Temp.ALA1.File.[format]	0
+TEXT67=114 ELT01.A00.UV1.Feld2.Temp.ALA1.File.[0]	""
+TEXT68=119 ELT01.A00.UV1.Feld2.Temp.ALA1.MailText.[size]	0
+TEXT69=119 ELT01.A00.UV1.Feld2.Temp.ALA1.MailText.[format]	1
+TEXT70=119 ELT01.A00.UV1.Feld2.Temp.ALA1.MailText.[0]	"MM IP: $", PCD01.SBus.Info.IP.iAddB3.04T ".$" ,PCD01.SBus.Info.IP.iAddB2.04T ".$", PCD01.SBus.Info.IP.iAddB1.04T ".$",PCD01.SBus.Info.IP.iAddB0.04T "<10><10>Stoerung Temperaturgrenzwert UV1 Feld 2. <10>Temperatur war am $DD.$DM.$DY um $H bei $", ELT01.A00.UV1.Feld2.Temp.iMW100.04T ",$", ELT01.A00.UV1.Feld2.Temp.iMW1.04T " °C. <10>"
+TEXT71=122 ELT01.A00.HVT.Feld1.Temp.ALA2.MailText.[size]	0
+TEXT72=122 ELT01.A00.HVT.Feld1.Temp.ALA2.MailText.[format]	1
+TEXT73=122 ELT01.A00.HVT.Feld1.Temp.ALA2.MailText.[0]	"MM IP: $", PCD01.SBus.Info.IP.iAddB3.04T ".$" ,PCD01.SBus.Info.IP.iAddB2.04T ".$", PCD01.SBus.Info.IP.iAddB1.04T ".$",PCD01.SBus.Info.IP.iAddB0.04T "<10><10>Stoerung Temperatur Sensor HVT Feld 1 defekt (Sensorbruch). <10>Temperatur war am $DD.$DM.$DY um $H bei $", ELT01.A00.HVT.Feld1.Temp.iMW100.04T ",$", ELT01.A00.HVT.Feld1.Temp.iMW1.04T " °C. <10>"

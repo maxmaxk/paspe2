@@ -1,0 +1,6 @@
+; ======================================================================
+; -------- SWeb Alarmierung - File
+; ======================================================================
+;
+                    $WRFILE "DDC_Alarming.CSV" List_@A.DDC_Suite.Alarming.Handle@;@adj_AlmIndex@;Alarm_@adj_AlmIndex@;@&Name@ Wartung erforderlich
+;

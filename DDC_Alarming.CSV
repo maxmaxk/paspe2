@@ -1,0 +1,447 @@
+ListDefinition=1;PCD01_ALA
+List_1;1;Alarm_1;Fuse Power Supply not used
+List_1;2;Alarm_2;Fuse Power Supply 2F5 in alarm
+List_1;3;Alarm_3;Fuse Power Supply 2F1 /2F2 in alarm
+List_1;4;Alarm_4;Fuse Power Supply 1K1 in alarm
+List_1;5;Alarm_5;Fuse Power Supply 1F2 in alarm
+List_1;6;Alarm_6;Fuse Power Supply 2F4 in alarm
+List_1;7;Alarm_7;Communication Pool Ventilation not working Alarm
+List_1;8;Alarm_8;Pool Ventilation has Alarm  Details at MENERGA POOL Vent. Controller
+List_1;9;Alarm_9;Communication Living Room Ventilation not working Alarm
+List_1;10;Alarm_10;Living Room has Alarm  Details at MENERGA LIVING ROOM Vent. Controller
+List_1;11;Alarm_11;Pool Ventilation Sensor Exhaust Air Humidity Limit High
+List_1;12;Alarm_12;Pool Ventilation Sensor Exhaust Air Humidity Limit Low
+List_1;13;Alarm_13;Pool Ventilation Sensor Exhaust Air Temperatur Limit High
+List_1;14;Alarm_14;Pool Ventilation Sensor Exhaust Air Temperatur Limit Low
+List_1;15;Alarm_15;Pool Ventilation Sensor Supply Air Temperatur Limit High
+List_1;16;Alarm_16;Pool Ventilation Sensor Supply Air Temperatur Limit Low
+List_1;17;Alarm_17;Pool Ventilation Sensor Return Air Temperatur Limit High
+List_1;18;Alarm_18;Pool Ventilation Sensor Return Air Temperatur Limit Low
+List_1;19;Alarm_19;Living Room Ventilation Sensor Supply Air Temperatur Limit High
+List_1;20;Alarm_20;Living Room Ventilation Sensor Supply Air Temperatur Limit Low
+List_1;21;Alarm_21;Living Room Ventilation Sensor Return Air Temperatur Limit High
+List_1;22;Alarm_22;Living Room Ventilation Sensor Return Air Temperatur Limit Low
+List_1;23;Alarm_23;Pool Ventilation Sensor Preheater secondary side Supply Water Temperature Limit High
+List_1;24;Alarm_24;Pool Ventilation Sensor Preheater secondary side Supply Water Temperature Limit Low
+List_1;25;Alarm_25;Pool Ventilation Sensor Preheater secondary side Return Water Temperature Limit High
+List_1;26;Alarm_26;Pool Ventilation Sensor Preheater secondary side Return Water Temperature Limit Low
+List_1;27;Alarm_27;Living Room Ventilation Sensor Preheater secondary side Supply Water Temperature Limit High
+List_1;28;Alarm_28;Living Room Ventilation Sensor Preheater secondary side Supply Water Temperature Limit Low
+List_1;29;Alarm_29;Living Room Ventilation Sensor Preheater secondary side Return Water Temperature Limit High
+List_1;30;Alarm_30;Living Room Ventilation Sensor Preheater secondary side Return Water Temperature Limit Low
+List_1;31;Alarm_31;General Ventilation Sensor Preheater primary side Supply Water Temperature Limit High
+List_1;32;Alarm_32;General Ventilation Sensor Preheater primary side Supply Water Temperature Limit Low
+List_1;33;Alarm_33;General Ventilation Sensor Preheater primary side Return Water Temperature Limit High
+List_1;34;Alarm_34;General Ventilation Sensor Preheater primary side Return Water Temperature Limit Low
+List_1;35;Alarm_35;Fuse 4F1 Pump Preheater Pool Ventilation Alarm
+List_1;36;Alarm_36;Manual switch 4M1 Pump Preheater Pool Ventilation - in Manualmode
+List_1;37;Alarm_37;Fuse 3F1 Pump Preheater Mainhouse Ventilation Alarm
+List_1;38;Alarm_38;Manual switch 3M1 Pump Preheater Mainhouse Ventilation - in Manualmode
+List_1;39;Alarm_39;Outside Air Temperature Sensor (MB3) Limit High
+List_1;40;Alarm_40;Outside Air Temperature Sensor (MB3) Limit Low
+List_1;41;Alarm_41;Supply Air Temperature Sensor after MB3 (Frostprotection) Limit High
+List_1;42;Alarm_42;Supply Air Temperature Sensor after MB3 (Frostprotection) Limit Low
+List_1;43;Alarm_43;Supply Air Humidity Sensor after MB3 (Frostprotection) Limit High
+List_1;44;Alarm_44;Supply Air Humidity Sensor after MB3 (Frostprotection) Limit Low
+List_1;45;Alarm_45;Sensor MB3 Preheater secondary side Supply Water Temperature Limit High
+List_1;46;Alarm_46;Sensor MB3 Preheater secondary side Supply Water Temperature Limit Low
+List_1;47;Alarm_47;Sensor MB3 Preheater secondary side Return Water Temperature Limit High
+List_1;48;Alarm_48;Sensor MB3 Preheater secondary side Return Water Temperature Limit Low
+List_1;49;Alarm_49;FrostFrostalarm at the Airside
+List_1;50;Alarm_50;FrostFrostalarm at the Waterside
+List_1;51;Alarm_51;FrostFrostalarm !! Defrostprogram running
+List_1;52;Alarm_52;FrostFrostalarm !! Ventilation Off !
+List_1;53;Alarm_53;Fuse 5F1 Pump Preheater MB3 Ventilation Alarm
+List_1;54;Alarm_54;Manual switch 5M1 Pump Preheater MB3 Ventilation - in Manualmode
+List_1;55;Alarm_55;Feedback 5F1 Pump Preheater MB3 Ventilation not detected
+List_1;56;Alarm_56;Outside Temperature Sensor 1 Limit High
+List_1;57;Alarm_57;Outside Temperature Sensor 1 Limit Low
+List_1;58;Alarm_58;Outside Temperature Sensor 2 Limit High
+List_1;59;Alarm_59;Outside Temperature Sensor 2 Limit Low
+List_1;60;Alarm_60;Outside Humidity Sensor 1 Limit High
+List_1;61;Alarm_61;Outside Humidity Sensor 1 Limit Low
+List_1;62;Alarm_62;Outside Humidity Sensor 2 Limit High
+List_1;63;Alarm_63;Outside Humidity Sensor 2 Limit Low
+List_1;64;Alarm_64;Garage Temperature Sensor Limit High
+List_1;65;Alarm_65;Garage Temperature Sensor Limit Low
+List_1;66;Alarm_66;Garage Humidity Sensor Limit High
+List_1;67;Alarm_67;Garage Humidity Sensor Limit Low
+List_1;68;Alarm_68;Viessman Vitodens 200 Supply Temperature Sensor Limit High
+List_1;69;Alarm_69;Viessman Vitodens 200 Supply Temperature Sensor Limit Low
+List_1;70;Alarm_70;Viessman Vitodens 200 Return Temperature Sensor Limit High
+List_1;71;Alarm_71;Viessman Vitodens 200 Return Temperature Sensor Limit Low
+List_1;72;Alarm_72;Viessman Vitodens 100 Supply Temperature Sensor Limit High
+List_1;73;Alarm_73;Viessman Vitodens 100 Supply Temperature Sensor Limit Low
+List_1;74;Alarm_74;Viessman Vitodens 100 Return Temperature Sensor Limit High
+List_1;75;Alarm_75;Viessman Vitodens 100 Return Temperature Sensor Limit Low
+List_1;76;Alarm_76;Hydraulic Separator Secondary Side Supply Temperatur Sensor Limit High
+List_1;77;Alarm_77;Hydraulic Separator Secondary Side Supply Temperatur Sensor Limit Low
+List_1;78;Alarm_78;Hydraulic Separator Secondary Side Return Temperatur Sensor Limit High
+List_1;79;Alarm_79;Hydraulic Separator Secondary Side Return Temperatur Sensor Limit Low
+List_1;80;Alarm_80;Heatpump Cold Water Supply Temperature Sensor (Cold To Buffer) Limit High
+List_1;81;Alarm_81;Heatpump Cold Water Supply Temperature Sensor (Cold To Buffer) Limit Low
+List_1;82;Alarm_82;Heatpump Cold Water Return Temperature Sensor (Cold from Buffer) Limit High
+List_1;83;Alarm_83;Heatpump Cold Water Return Temperature Sensor (Cold from Buffer) Limit Low
+List_1;84;Alarm_84;Heatpump Warm Water Supply Temperature Sensor (Warm To Buffer) Limit High
+List_1;85;Alarm_85;Heatpump Warm Water Supply Temperature Sensor (Warm To Buffer) Limit Low
+List_1;86;Alarm_86;Heatpump Warm Water Return Temperature Sensor (Warm from Buffer) Limit High
+List_1;87;Alarm_87;Heatpump Warm Water Return Temperature Sensor (Warm from Buffer) Limit Low
+List_1;88;Alarm_88;SensorLimit High
+List_1;89;Alarm_89;SensorLimit Low
+List_1;90;Alarm_90;SensorLimit High
+List_1;91;Alarm_91;SensorLimit Low
+List_1;92;Alarm_92;SensorLimit High
+List_1;93;Alarm_93;SensorLimit Low
+List_1;94;Alarm_94;SensorLimit High
+List_1;95;Alarm_95;SensorLimit Low
+List_1;96;Alarm_96;SensorLimit High
+List_1;97;Alarm_97;SensorLimit Low
+List_1;98;Alarm_98;SensorLimit High
+List_1;99;Alarm_99;SensorLimit Low
+List_1;100;Alarm_100;SensorLimit High
+List_1;101;Alarm_101;SensorLimit Low
+List_1;102;Alarm_102;SensorLimit High
+List_1;103;Alarm_103;SensorLimit Low
+List_1;104;Alarm_104;SensorLimit High
+List_1;105;Alarm_105;SensorLimit Low
+List_1;106;Alarm_106;SensorLimit High
+List_1;107;Alarm_107;SensorLimit Low
+List_1;108;Alarm_108;Fuse 59F1 Kettle 1 Alarm
+List_1;109;Alarm_109;General fault 59E1 Kettle 1 !! Alarm !!
+List_1;110;Alarm_110;Manual switch 59E1 Kettle 1 - in Manualmode
+List_1;111;Alarm_111;Fuse 59F2 Kettle 2 Alarm
+List_1;112;Alarm_112;General fault 59E2 Kettle 2  !! Alarm !!
+List_1;113;Alarm_113;Manual switch 59E2 Kettle 2 - in Manualmode
+List_1;114;Alarm_114;Low Temp fault 59E2 Kettle 2 - check Display at Device
+List_1;115;Alarm_115;Fuse 13F1 Pump Kettle 1 Alarm
+List_1;116;Alarm_116;Manual switch 13M1 Pump Kettle 1 - in Manualmode
+List_1;117;Alarm_117;Feedback 13M1 Pump Kettle 1 not detected
+List_1;118;Alarm_118;Fuse 10F1 Pump Kettle > Mainhouse Heat Buffer  Alarm
+List_1;119;Alarm_119;Manual switch 10M1 Pump Kettle > Mainhouse Heat Buffer  - in Manualmode
+List_1;120;Alarm_120;Feedback 10M1 Pump Kettle > Mainhouse Heat Buffer  not detected
+List_1;121;Alarm_121;Fuse 60F1 Heatpump Alarm
+List_1;122;Alarm_122;Manual switch Enable 60E1 Heatpump - in Manualmode
+List_1;123;Alarm_123;Manual switch Setpoint 60E1 Heatpump - in Manualmode
+List_1;124;Alarm_124;Fuse 19F1 Pump Geothermal primary side Alarm
+List_1;125;Alarm_125;Manual switch 19M1 Pump Geothermal primary side - in Manualmode
+List_1;126;Alarm_126;Fuse 18F1 Pump Geothermal secondary side Alarm
+List_1;127;Alarm_127;Manual switch 18M1 Pump Geothermal secondary side - in Manualmode
+List_1;128;Alarm_128;SensorLimit High
+List_1;129;Alarm_129;SensorLimit Low
+List_1;130;Alarm_130;SensorLimit High
+List_1;131;Alarm_131;SensorLimit Low
+List_1;132;Alarm_132;SensorLimit High
+List_1;133;Alarm_133;SensorLimit Low
+List_1;134;Alarm_134;SensorLimit High
+List_1;135;Alarm_135;SensorLimit Low
+List_1;136;Alarm_136;SensorLimit High
+List_1;137;Alarm_137;SensorLimit Low
+List_1;138;Alarm_138;SensorLimit High
+List_1;139;Alarm_139;SensorLimit Low
+List_1;140;Alarm_140;SensorLimit High
+List_1;141;Alarm_141;SensorLimit Low
+List_1;142;Alarm_142;SensorLimit High
+List_1;143;Alarm_143;SensorLimit Low
+List_1;144;Alarm_144;SensorLimit High
+List_1;145;Alarm_145;SensorLimit Low
+List_1;146;Alarm_146;ZonenVentil2zu hoch
+List_1;147;Alarm_147;ZonenVentil2zu niedrig
+List_1;148;Alarm_148;ZonenVentil2Ventil2 Handeingriff
+List_1;149;Alarm_149;SensorLimit High
+List_1;150;Alarm_150;SensorLimit Low
+List_1;151;Alarm_151;SensorLimit High
+List_1;152;Alarm_152;SensorLimit Low
+List_1;153;Alarm_153;ZonenVentil2zu hoch
+List_1;154;Alarm_154;ZonenVentil2zu niedrig
+List_1;155;Alarm_155;ZonenVentil2Ventil2 Handeingriff
+List_1;156;Alarm_156;Fuse 63F2 Bath Radiator Ground Floor Room 17  Alarm
+List_1;157;Alarm_157;Manual Switch Bath Radiator EG Room 17- in Manualmode
+List_1;158;Alarm_158;SensorLimit High
+List_1;159;Alarm_159;SensorLimit Low
+List_1;160;Alarm_160;SensorLimit High
+List_1;161;Alarm_161;SensorLimit Low
+List_1;162;Alarm_162;ZonenVentil2zu hoch
+List_1;163;Alarm_163;ZonenVentil2zu niedrig
+List_1;164;Alarm_164;ZonenVentil2Ventil2 Handeingriff
+List_1;165;Alarm_165;SensorLimit High
+List_1;166;Alarm_166;SensorLimit Low
+List_1;167;Alarm_167;SensorLimit High
+List_1;168;Alarm_168;SensorLimit Low
+List_1;169;Alarm_169;SensorLimit High
+List_1;170;Alarm_170;SensorLimit Low
+List_1;171;Alarm_171;SensorLimit High
+List_1;172;Alarm_172;SensorLimit Low
+List_1;173;Alarm_173;Fuse 16F2 Pump Ceiling Distr. 1st Floor Alarm
+List_1;174;Alarm_174;Manual switch 16M2 Pump Ceiling Distr. 1st Floor- in Manualmode
+List_1;175;Alarm_175;Fuse 43F1 Supply Pump Ceiling 1.Floor Distr. 2/3 Alarm
+List_1;176;Alarm_176;Manual switch 43M1 Supply Pump Ceiling 1.Floor Distr. 2/3 - in Manualmode
+List_1;177;Alarm_177;Fuse 44F1 Supply Pump Ceiling 1.Floor Distr. 3/3 Alarm
+List_1;178;Alarm_178;Manual switch 44M1 Supply Pump Ceiling 1.Floor Distr. 3/3 - in Manualmode
+List_1;179;Alarm_179;SensorLimit High
+List_1;180;Alarm_180;SensorLimit Low
+List_1;181;Alarm_181;SensorLimit High
+List_1;182;Alarm_182;SensorLimit Low
+List_1;183;Alarm_183;SensorLimit High
+List_1;184;Alarm_184;SensorLimit Low
+List_1;185;Alarm_185;SensorLimit High
+List_1;186;Alarm_186;SensorLimit Low
+List_1;187;Alarm_187;Fuse 16F1 Pump Ceiling Distr. Ground Floor Alarm
+List_1;188;Alarm_188;Manual switch 16M1 Pump Ceiling Distr. Ground Floor - in Manualmode
+List_1;189;Alarm_189;Fuse 42F1 Supply Pump Ceiling Ground Distr. 1/3 Alarm
+List_1;190;Alarm_190;Manual switch 42M1 Supply Pump Ceiling Ground Distr. 1/3 - in Manualmode
+List_1;191;Alarm_191;SensorLimit High
+List_1;192;Alarm_192;SensorLimit Low
+List_1;193;Alarm_193;SensorLimit High
+List_1;194;Alarm_194;SensorLimit Low
+List_1;195;Alarm_195;Fuse 12F1 Pump Main Distr. > Ceiling Distr. Alarm
+List_1;196;Alarm_196;Manual switch 12M1 Pump Main Distr. > Ceiling Distr. - in Manualmode
+List_1;197;Alarm_197;SensorLimit High
+List_1;198;Alarm_198;SensorLimit Low
+List_1;199;Alarm_199;SensorLimit High
+List_1;200;Alarm_200;SensorLimit Low
+List_1;201;Alarm_201;SensorLimit High
+List_1;202;Alarm_202;SensorLimit Low
+List_1;203;Alarm_203;SensorLimit High
+List_1;204;Alarm_204;SensorLimit Low
+List_1;205;Alarm_205;AlarmAlarm
+List_1;206;Alarm_206;AlarmAlarm
+List_1;207;Alarm_207;ZonenVentil1zu hoch
+List_1;208;Alarm_208;ZonenVentil1zu niedrig
+List_1;209;Alarm_209;ZonenVentil1Ventil1 Handeingriff
+List_1;210;Alarm_210;ZonenVentil2zu hoch
+List_1;211;Alarm_211;ZonenVentil2zu niedrig
+List_1;212;Alarm_212;ZonenVentil2Ventil2 Handeingriff
+List_1;213;Alarm_213;SensorLimit High
+List_1;214;Alarm_214;SensorLimit Low
+List_1;215;Alarm_215;ZonenVentil2zu hoch
+List_1;216;Alarm_216;ZonenVentil2zu niedrig
+List_1;217;Alarm_217;ZonenVentil2Ventil2 Handeingriff
+List_1;218;Alarm_218;SensorLimit High
+List_1;219;Alarm_219;SensorLimit Low
+List_1;220;Alarm_220;SensorLimit High
+List_1;221;Alarm_221;SensorLimit Low
+List_1;222;Alarm_222;ZonenVentil2zu hoch
+List_1;223;Alarm_223;ZonenVentil2zu niedrig
+List_1;224;Alarm_224;ZonenVentil2Ventil2 Handeingriff
+List_1;225;Alarm_225;Fuse 63F3 Bath Radiator 1st Floor Room 3 Alarm
+List_1;226;Alarm_226;Manual Switch Bath Radiator 1st Floor Room 3 - in Manualmode
+List_1;227;Alarm_227;SensorLimit High
+List_1;228;Alarm_228;SensorLimit Low
+List_1;229;Alarm_229;SensorLimit High
+List_1;230;Alarm_230;SensorLimit Low
+List_1;231;Alarm_231;ZonenVentil2zu hoch
+List_1;232;Alarm_232;ZonenVentil2zu niedrig
+List_1;233;Alarm_233;ZonenVentil2Ventil2 Handeingriff
+List_1;234;Alarm_234;Fuse 63F3 Bath Radiator 1st Floor Room 4 Alarm
+List_1;235;Alarm_235;Manual Switch Bath Radiator 1st Floor Room 4 - in Manualmode
+List_1;236;Alarm_236;SensorLimit High
+List_1;237;Alarm_237;SensorLimit Low
+List_1;238;Alarm_238;SensorLimit High
+List_1;239;Alarm_239;SensorLimit Low
+List_1;240;Alarm_240;ZonenVentil2zu hoch
+List_1;241;Alarm_241;ZonenVentil2zu niedrig
+List_1;242;Alarm_242;ZonenVentil2Ventil2 Handeingriff
+List_1;243;Alarm_243;Fuse 64F1 Bath Radiator 1st Floor Room 8 Alarm
+List_1;244;Alarm_244;Manual Switch Bath Radiator 1st Floor Room 8 - in Manualmode
+List_1;245;Alarm_245;SensorLimit High
+List_1;246;Alarm_246;SensorLimit Low
+List_1;247;Alarm_247;SensorLimit High
+List_1;248;Alarm_248;SensorLimit Low
+List_1;249;Alarm_249;ZonenVentil2zu hoch
+List_1;250;Alarm_250;ZonenVentil2zu niedrig
+List_1;251;Alarm_251;ZonenVentil2Ventil2 Handeingriff
+List_1;252;Alarm_252;Fuse 64F2 Bath Radiator 1st Floor Room 9 Alarm
+List_1;253;Alarm_253;Manual Switch Bath Radiator 1st Floor Room 9 -
+List_1;254;Alarm_254;SensorLimit High
+List_1;255;Alarm_255;SensorLimit Low
+List_1;256;Alarm_256;ZonenVentil2zu hoch
+List_1;257;Alarm_257;ZonenVentil2zu niedrig
+List_1;258;Alarm_258;ZonenVentil2Ventil2 Handeingriff
+List_1;259;Alarm_259;SensorLimit High
+List_1;260;Alarm_260;SensorLimit Low
+List_1;261;Alarm_261;SensorLimit High
+List_1;262;Alarm_262;SensorLimit Low
+List_1;263;Alarm_263;SensorLimit High
+List_1;264;Alarm_264;SensorLimit Low
+List_1;265;Alarm_265;SensorLimit High
+List_1;266;Alarm_266;SensorLimit Low
+List_1;267;Alarm_267;ZonenVentil1zu hoch
+List_1;268;Alarm_268;ZonenVentil1zu niedrig
+List_1;269;Alarm_269;ZonenVentil1Ventil1 Handeingriff
+List_1;270;Alarm_270;ZonenVentil2zu hoch
+List_1;271;Alarm_271;ZonenVentil2zu niedrig
+List_1;272;Alarm_272;ZonenVentil2Ventil2 Handeingriff
+List_1;273;Alarm_273;SensorLimit High
+List_1;274;Alarm_274;SensorLimit Low
+List_1;275;Alarm_275;SensorLimit High
+List_1;276;Alarm_276;SensorLimit Low
+List_1;277;Alarm_277;SensorLimit High
+List_1;278;Alarm_278;SensorLimit Low
+List_1;279;Alarm_279;SensorLimit High
+List_1;280;Alarm_280;SensorLimit Low
+List_1;281;Alarm_281;ZonenVentil1zu hoch
+List_1;282;Alarm_282;ZonenVentil1zu niedrig
+List_1;283;Alarm_283;ZonenVentil1Ventil1 Handeingriff
+List_1;284;Alarm_284;ZonenVentil2zu hoch
+List_1;285;Alarm_285;ZonenVentil2zu niedrig
+List_1;286;Alarm_286;ZonenVentil2Ventil2 Handeingriff
+List_1;287;Alarm_287;SensorLimit High
+List_1;288;Alarm_288;SensorLimit Low
+List_1;289;Alarm_289;SensorLimit High
+List_1;290;Alarm_290;SensorLimit Low
+List_1;291;Alarm_291;SensorLimit High
+List_1;292;Alarm_292;SensorLimit Low
+List_1;293;Alarm_293;SensorLimit High
+List_1;294;Alarm_294;SensorLimit Low
+List_1;295;Alarm_295;ZonenVentil1zu hoch
+List_1;296;Alarm_296;ZonenVentil1zu niedrig
+List_1;297;Alarm_297;ZonenVentil1Ventil1 Handeingriff
+List_1;298;Alarm_298;ZonenVentil2zu hoch
+List_1;299;Alarm_299;ZonenVentil2zu niedrig
+List_1;300;Alarm_300;ZonenVentil2Ventil2 Handeingriff
+List_1;301;Alarm_301;SensorLimit High
+List_1;302;Alarm_302;SensorLimit Low
+List_1;303;Alarm_303;SensorLimit High
+List_1;304;Alarm_304;SensorLimit Low
+List_1;305;Alarm_305;SensorLimit High
+List_1;306;Alarm_306;SensorLimit Low
+List_1;307;Alarm_307;SensorLimit High
+List_1;308;Alarm_308;SensorLimit Low
+List_1;309;Alarm_309;ZonenVentil1zu hoch
+List_1;310;Alarm_310;ZonenVentil1zu niedrig
+List_1;311;Alarm_311;ZonenVentil1Ventil1 Handeingriff
+List_1;312;Alarm_312;ZonenVentil2zu hoch
+List_1;313;Alarm_313;ZonenVentil2zu niedrig
+List_1;314;Alarm_314;ZonenVentil2Ventil2 Handeingriff
+List_1;315;Alarm_315;SensorLimit High
+List_1;316;Alarm_316;SensorLimit Low
+List_1;317;Alarm_317;SensorLimit High
+List_1;318;Alarm_318;SensorLimit Low
+List_1;319;Alarm_319;SensorLimit High
+List_1;320;Alarm_320;SensorLimit Low
+List_1;321;Alarm_321;SensorLimit High
+List_1;322;Alarm_322;SensorLimit Low
+List_1;323;Alarm_323;ZonenVentil1zu hoch
+List_1;324;Alarm_324;ZonenVentil1zu niedrig
+List_1;325;Alarm_325;ZonenVentil1Ventil1 Handeingriff
+List_1;326;Alarm_326;ZonenVentil2zu hoch
+List_1;327;Alarm_327;ZonenVentil2zu niedrig
+List_1;328;Alarm_328;ZonenVentil2Ventil2 Handeingriff
+List_1;329;Alarm_329;SensorLimit High
+List_1;330;Alarm_330;SensorLimit Low
+List_1;331;Alarm_331;SensorLimit High
+List_1;332;Alarm_332;SensorLimit Low
+List_1;333;Alarm_333;SensorLimit High
+List_1;334;Alarm_334;SensorLimit Low
+List_1;335;Alarm_335;SensorLimit High
+List_1;336;Alarm_336;SensorLimit Low
+List_1;337;Alarm_337;Fuse 14F1 Pump Ceiling Appartment Alarm
+List_1;338;Alarm_338;Manual switch 14M1 Pump Ceiling Appartment - in Manualmode
+List_1;339;Alarm_339;SensorLimit High
+List_1;340;Alarm_340;SensorLimit Low
+List_1;341;Alarm_341;SensorLimit High
+List_1;342;Alarm_342;SensorLimit Low
+List_1;343;Alarm_343;SensorLimit High
+List_1;344;Alarm_344;SensorLimit Low
+List_1;345;Alarm_345;SensorLimit High
+List_1;346;Alarm_346;SensorLimit Low
+List_1;347;Alarm_347;ZonenVentil1zu hoch
+List_1;348;Alarm_348;ZonenVentil1zu niedrig
+List_1;349;Alarm_349;ZonenVentil1Ventil1 Handeingriff
+List_1;350;Alarm_350;ZonenVentil2zu hoch
+List_1;351;Alarm_351;ZonenVentil2zu niedrig
+List_1;352;Alarm_352;ZonenVentil2Ventil2 Handeingriff
+List_1;353;Alarm_353;SensorLimit High
+List_1;354;Alarm_354;SensorLimit Low
+List_1;355;Alarm_355;SensorLimit High
+List_1;356;Alarm_356;SensorLimit Low
+List_1;357;Alarm_357;SensorLimit High
+List_1;358;Alarm_358;SensorLimit Low
+List_1;359;Alarm_359;SensorLimit High
+List_1;360;Alarm_360;SensorLimit Low
+List_1;361;Alarm_361;Fuse 15F1 Bath Radiator AppartmentAlarm
+List_1;362;Alarm_362;Manual Switch Bath Radiator Appartment- in Manualmode
+List_1;363;Alarm_363;SensorLimit High
+List_1;364;Alarm_364;SensorLimit Low
+List_1;365;Alarm_365;SensorLimit High
+List_1;366;Alarm_366;SensorLimit Low
+List_1;367;Alarm_367;Fuse 7F1 Pump Hamam Alarm
+List_1;368;Alarm_368;Manual switch 7M1 Pump Hamam - in Manualmode
+List_1;369;Alarm_369;SensorLimit High
+List_1;370;Alarm_370;SensorLimit Low
+List_1;371;Alarm_371;SensorLimit High
+List_1;372;Alarm_372;SensorLimit Low
+List_1;373;Alarm_373;SensorLimit High
+List_1;374;Alarm_374;SensorLimit Low
+List_1;375;Alarm_375;Fuse 54F1 Pump Garage Radiator Alarm
+List_1;376;Alarm_376;Manual switch 54M1 Pump Garage Radiator - in Manualmode
+List_1;377;Alarm_377;SensorLimit High
+List_1;378;Alarm_378;SensorLimit Low
+List_1;379;Alarm_379;SensorLimit High
+List_1;380;Alarm_380;SensorLimit Low
+List_1;381;Alarm_381;Fuse 52F1 Pump Poolwater Heat Exchanger Alarm
+List_1;382;Alarm_382;Manual switch 52M1 Pump Poolwater Heat Exchanger - in Manualmode
+List_1;383;Alarm_383;SensorLimit High
+List_1;384;Alarm_384;SensorLimit Low
+List_1;385;Alarm_385;SensorLimit High
+List_1;386;Alarm_386;SensorLimit Low
+List_1;387;Alarm_387;SensorLimit High
+List_1;388;Alarm_388;SensorLimit Low
+List_1;389;Alarm_389;Fuse 6F1 Pump Radiator Mainhouse Alarm
+List_1;390;Alarm_390;Manual switch 6M1 Pump Radiator Mainhouse - in Manualmode
+List_1;391;Alarm_391;SensorLimit High
+List_1;392;Alarm_392;SensorLimit Low
+List_1;393;Alarm_393;SensorLimit High
+List_1;394;Alarm_394;SensorLimit Low
+List_1;395;Alarm_395;Fuse 9F1 Pump Floorheating Pool Main Distr. Alarm
+List_1;396;Alarm_396;Manual switch 9M1 Pump Floorheating Pool Main Distr. - in Manualmode
+List_1;397;Alarm_397;Fuse 37F1 Pump Floorheating Sub. Distr. 3 Alarm
+List_1;398;Alarm_398;Manual switch 37M1 Pump Floorheating Sub. Distr. 3 - in Manualmode
+List_1;399;Alarm_399;Fuse 38F1 Pump Floorheating Sub. Distr. 4 Alarm
+List_1;400;Alarm_400;Manual switch 38M1 Pump Floorheating Sub. Distr. 4 - in Manualmode
+List_1;401;Alarm_401;SensorLimit High
+List_1;402;Alarm_402;SensorLimit Low
+List_1;403;Alarm_403;SensorLimit High
+List_1;404;Alarm_404;SensorLimit Low
+List_1;405;Alarm_405;Fuse 8F1 Pump Floorheating Living Main Distr. Alarm
+List_1;406;Alarm_406;Manual switch 8M1 Pump Floorheating Living Main Distr. - in Manualmode
+List_1;407;Alarm_407;Fuse 35F1 Pump Floorheating Sub. Distr. 1 Alarm
+List_1;408;Alarm_408;Manual switch 35M1 Pump Floorheating Sub. Distr. 1 - in Manualmode
+List_1;409;Alarm_409;Fuse 36F1 Pump Floorheating Sub. Distr. 2 Alarm
+List_1;410;Alarm_410;Manual switch 36m1 Pump Floorheating Sub. Distr. 2 - in Manualmode
+List_1;411;Alarm_411;Fuse 39F1 Pump Floorheating Sub. Distr. 5 Alarm
+List_1;412;Alarm_412;Manual switch 39M1 Pump Floorheating Sub. Distr. 5 - in Manualmode
+List_1;413;Alarm_413;Fuse 40F1 Pump Floorheating Sub. Distr. 6 Alarm
+List_1;414;Alarm_414;Manual switch 40M1 Pump Floorheating Sub. Distr. 6 - in Manualmode
+List_1;415;Alarm_415;SensorLimit High
+List_1;416;Alarm_416;SensorLimit Low
+List_1;417;Alarm_417;SensorLimit High
+List_1;418;Alarm_418;SensorLimit Low
+List_1;419;Alarm_419;Fuse 53F1 Pump Floorheating Appartment Alarm
+List_1;420;Alarm_420;Manual switch 53M1 Pump Floorheating Appartment - in Manualmode
+List_1;421;Alarm_421;SensorLimit High
+List_1;422;Alarm_422;SensorLimit Low
+List_1;423;Alarm_423;SensorLimit High
+List_1;424;Alarm_424;SensorLimit Low
+List_1;425;Alarm_425;SensorLimit High
+List_1;426;Alarm_426;SensorLimit Low
+List_1;427;Alarm_427;SensorLimit High
+List_1;428;Alarm_428;SensorLimit Low
+List_1;429;Alarm_429;Fuse 17F1 Pump Boiler Alarm
+List_1;430;Alarm_430;Manual switch 17M1 Pump Boiler - in Manualmode
+List_1;431;Alarm_431;PumpeWartung
+List_1;432;Alarm_432;PumpeLadepumpe Alarm
+List_1;433;Alarm_433;SensorLimit High
+List_1;434;Alarm_434;SensorLimit Low
+List_1;435;Alarm_435;Fuse 17F2 Pump Circulation Alarm
+List_1;436;Alarm_436;Manual switch 17M2 Pump Circulation - in Manualmode
+List_1;437;Alarm_437;PumpeWartung
+List_1;438;Alarm_438;PumpeAlarm
+List_1;439;Alarm_439;SensorLimit High
+List_1;440;Alarm_440;SensorLimit Low
+List_1;441;Alarm_441;SensorLimit High
+List_1;442;Alarm_442;SensorLimit Low
+List_1;443;Alarm_443;SensorLimit High
+List_1;444;Alarm_444;SensorLimit Low
+List_1;445;Alarm_445;SensorLimit High
+List_1;446;Alarm_446;SensorLimit Low

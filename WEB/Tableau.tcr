@@ -1,0 +1,34 @@
+#!-- PPO FILE GENERATED FROM Saia®  S-Web Editor on Wednesday, April 03, 2013 ; 10:09:17
+#!-- Start PPO INIT File
+#!-- VERSION = 3
+#!-- TYPE = 1
+#!-- TS = 515be3ad
+#!-- N = 26
+PCD01.Panel.iRestart;PCD01.Panel.iRestart; ; ;BIN; ; ;
+PIN.Level1;PIN.Level1; ; ;STRING; ; ;
+PIN.Level2;PIN.Level2; ; ;STRING; ; ;
+PIN.Level3;PIN.Level3; ; ;STRING; ; ;
+PIN.Level4;PIN.Level4; ; ;STRING; ; ;
+RLT01.A00.Aussen.Temp.iDefekt;RLT01.A00.Aussen.Temp.iDefekt; ; ;BIN; ; ;
+RLT01.A00.Aussen.Temp.iGew;RLT01.A00.Aussen.Temp.iGew; ; ;DEC.1;°C; ;
+RLT01.A00.Aussen.Temp.iRW00;RLT01.A00.Aussen.Temp.iRW00; ; ;DEC.1;°C; ;
+RLT01.A00.Aussen.Temp.iSommer;RLT01.A00.Aussen.Temp.iSommer; ; ;BIN; ; ;
+RLT01.A00.Aussen.Temp.iWinter;RLT01.A00.Aussen.Temp.iWinter; ; ;BIN; ; ;
+RLT01.A00.FUE.Raum.iSOKomp;RLT01.A00.FUE.Raum.iSOKomp; ; ;BIN; ; ;
+RLT01.A00.Mld.PCD01.Clock.iHM;RLT01.A00.Mld.PCD01.Clock.iHM; ; ;HH:MM; ; ;
+RLT01.A00.Mld.PCD01.Clock.iYMD;RLT01.A00.Mld.PCD01.Clock.iYMD; ; ;DD.MM.YY; ; ;
+RLT01.A00.PSTA.iNormal;RLT01.A00.PSTA.iNormal; ; ;BIN; ; ;
+RLT01.A00.PSTA.iSSM_Abschalten;RLT01.A00.PSTA.iSSM_Abschalten; ; ;BIN; ; ;
+RLT01.A00.PSTA.iSSM_Warnung;RLT01.A00.PSTA.iSSM_Warnung; ; ;BIN; ; ;
+RLT01.A00.Raum.Auswahl.iRW10;RLT01.A00.Raum.Auswahl.iRW10; ; ;DEC.1;°C; ;
+RLT01.A00.ULK1.General.Temp.SWExtDOWN;RLT01.A00.ULK1.General.Temp.SWExtDOWN; ; ;BIN; ; ;
+RLT01.A00.ULK1.General.Temp.SWExtUP;RLT01.A00.ULK1.General.Temp.SWExtUP; ; ;BIN; ; ;
+RLT01.A00.ULK1.General.Temp.iSW22;RLT01.A00.ULK1.General.Temp.iSW22; ; ;DEC.1;°C; ;
+RLT01.A00.ULK2.General.Temp.SWExtDOWN;RLT01.A00.ULK2.General.Temp.SWExtDOWN; ; ;BIN; ; ;
+RLT01.A00.ULK2.General.Temp.SWExtUP;RLT01.A00.ULK2.General.Temp.SWExtUP; ; ;BIN; ; ;
+RLT01.A00.ULK2.General.Temp.iSW22;RLT01.A00.ULK2.General.Temp.iSW22; ; ;DEC.1;°C; ;
+RLT01.A00.ULK3.General.Temp.SWExtDOWN;RLT01.A00.ULK3.General.Temp.SWExtDOWN; ; ;BIN; ; ;
+RLT01.A00.ULK3.General.Temp.SWExtUP;RLT01.A00.ULK3.General.Temp.SWExtUP; ; ;BIN; ; ;
+RLT01.A00.ULK3.General.Temp.iSW22;RLT01.A00.ULK3.General.Temp.iSW22; ; ;DEC.1;°C; ;
+#!-- End PPO INIT File
+

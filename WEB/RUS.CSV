@@ -1,0 +1,856 @@
+PASPE Appartment;PASPE Appartment
+#ÈÌß?;#ÈÌß?
+"Menerga ""B-Alarm"" ausgelöst";"Menerga ""B-Alarm"" ausgelöst"
+"Menerga ""A-Alarm"" ausgelöst";"Menerga ""A-Alarm"" ausgelöst"
+Winter;Winter
+Sommer;Sommer
+Dampferzeuger;Dampferzeuger
+1000 ltr.;1000 ltr.
+400 ltr.;400 ltr.
+interne Pumpe;interne Pumpe
+EIN;EIN
+verwende WEB Temp. Sollwert;verwende WEB Temp. Sollwert
+SBC Y;SBC Y
+Stufen autark geregelt. Es sei den UM Bef. Betrieb angefordert;Stufen autark geregelt. Es sei den UM Bef. Betrieb angefordert
+Frostschutz;Frostschutz
+Entfeuchten;Entfeuchten
+Menerga Y;Menerga Y
+wird von SBC geregelt;wird von SBC geregelt
+VE Uwp und Ventil;VE Uwp und Ventil
+Signal Menerga;Signal Menerga
+BRM !!;BRM !!
+ext. UML Bef. ;ext. UML Bef. 
+Ventilatordrz. nach Thanos Bediengerät;Ventilatordrz. nach Thanos Bediengerät
+Ventilatordrz. in Auto nach Raumkondition;Ventilatordrz. in Auto nach Raumkondition
+Ventilatordrz. nach Abluftfeuchte;Ventilatordrz. nach Abluftfeuchte
+Dew;Dew
+aF;aF
+WhirlPool;WhirlPool
+gesperrt;gesperrt
+freigegeben;freigegeben
+Kühlkurve;Kühlkurve
+Kühlen;Kühlen
+Heizen;Heizen
+Cool Heatmode;Cool Heatmode
+Radiator heizt;Radiator heizt
+Radiator aus;Radiator aus
+Radiator;Radiator
+Fenster;Fenster
+Deckenhz./kh Ventil;Deckenhz./kh Ventil
+Gesperrt;Gesperrt
+Freigegeben;Freigegeben
+FbH;FbH
+FbH Ventil;FbH Ventil
+Basis;Basis
+DeckV;DeckV
+AT und Hum fehlt;AT und Hum fehlt
+Soll T:;Soll T:
+Ist T:;Ist T:
+T;T
+rF;rF
+VOC;VOC
+Umschaltschwelle Sommer- /Winterbetrieb;Switchover Summer /Winter operation 
+undicht;not airtight
+dicht;airtight
+Verteiler Heizung -> Verteiler Ceiling ;Main Distributor Heating -> Distr. Ceiling 
+Pufferladung Entfeuchtung;Loading Buffer for Dehumidification
+Pufferladung Raumkühlung;Loading Buffer for Room cooling
+Unwirtschaftlich /Aus;uneconomical /switched off
+Off Site;Off Site
+BKT Wohnraum;GfH Livingroom
+BKT Schwimmhalle;GfH Pool
+EG R1;Gr.Fl. R1
+UV 2;SwVlv 2
+EG R9;Gr.Fl. R9
+EG R13;Gr.Fl. R13
+UV 5;Vlv 5
+OG R2;1st.Fl. R2
+OG R13;1st.Fl. R13
+UV 6;Vlv 6
+UV 3;Vlv 3
+UV 4;Vlv 4
+FROST !!;FROST !!
+RLT aus bei VOC unter;Ventilation off by VOC below
+Max VOC Wert Wohhaus;Max VOC Livingroom
+VOC Sollwert;VOC Setpoint
+Anzahl kühlender Räume;Number of cooling rooms
+Kühlfreigabe;Cooling enabled
+Anzahl heizender Räume;Number of heating rooms
+Heizfreigabe;Heating enabled
+ !!! No MODBUS Communication !!!; !!! No MODBUS Communication !!!
+Regelung;Controlling
+autarke;self-sufficient
+Kessel 2- Vitodens 100 WB1C;Boiler 2- Vitodens 100 WB1C
+80/60 - 31,9 kW 50/30 - 35 kW;80/60 - 31,9 kW 50/30 - 35 kW
+Kessel 1- Vitodens 200 B2HA-60;Boilder 1- Vitodens 200 B2HA-60
+80/60 - 54,4 kW 50/30 - 60 kW;80/60 - 54,4 kW 50/30 - 60 kW
+A.Alarm.PCD01_ALA.MyName_600;-
+A.Alarm.PCD01_ALA.MyName_599;-
+A.Alarm.PCD01_ALA.MyName_598;-
+A.Alarm.PCD01_ALA.MyName_597;-
+A.Alarm.PCD01_ALA.MyName_596;-
+A.Alarm.PCD01_ALA.MyName_595;-
+A.Alarm.PCD01_ALA.MyName_594;-
+A.Alarm.PCD01_ALA.MyName_593;-
+A.Alarm.PCD01_ALA.MyName_592;-
+A.Alarm.PCD01_ALA.MyName_591;-
+A.Alarm.PCD01_ALA.MyName_590;-
+A.Alarm.PCD01_ALA.MyName_589;-
+A.Alarm.PCD01_ALA.MyName_588;-
+A.Alarm.PCD01_ALA.MyName_587;-
+A.Alarm.PCD01_ALA.MyName_586;-
+A.Alarm.PCD01_ALA.MyName_585;-
+A.Alarm.PCD01_ALA.MyName_584;-
+A.Alarm.PCD01_ALA.MyName_583;-
+A.Alarm.PCD01_ALA.MyName_582;-
+A.Alarm.PCD01_ALA.MyName_581;-
+A.Alarm.PCD01_ALA.MyName_580;-
+A.Alarm.PCD01_ALA.MyName_579;-
+A.Alarm.PCD01_ALA.MyName_578;-
+A.Alarm.PCD01_ALA.MyName_577;-
+A.Alarm.PCD01_ALA.MyName_576;-
+A.Alarm.PCD01_ALA.MyName_575;-
+A.Alarm.PCD01_ALA.MyName_574;-
+A.Alarm.PCD01_ALA.MyName_573;-
+A.Alarm.PCD01_ALA.MyName_572;-
+A.Alarm.PCD01_ALA.MyName_571;-
+A.Alarm.PCD01_ALA.MyName_570;-
+A.Alarm.PCD01_ALA.MyName_569;-
+A.Alarm.PCD01_ALA.MyName_568;-
+A.Alarm.PCD01_ALA.MyName_567;-
+A.Alarm.PCD01_ALA.MyName_566;-
+A.Alarm.PCD01_ALA.MyName_565;-
+A.Alarm.PCD01_ALA.MyName_564;-
+A.Alarm.PCD01_ALA.MyName_563;-
+A.Alarm.PCD01_ALA.MyName_562;-
+A.Alarm.PCD01_ALA.MyName_561;-
+A.Alarm.PCD01_ALA.MyName_560;-
+A.Alarm.PCD01_ALA.MyName_559;-
+A.Alarm.PCD01_ALA.MyName_558;-
+A.Alarm.PCD01_ALA.MyName_557;-
+A.Alarm.PCD01_ALA.MyName_556;-
+A.Alarm.PCD01_ALA.MyName_555;-
+A.Alarm.PCD01_ALA.MyName_554;-
+A.Alarm.PCD01_ALA.MyName_553;-
+A.Alarm.PCD01_ALA.MyName_552;-
+A.Alarm.PCD01_ALA.MyName_551;-
+A.Alarm.PCD01_ALA.MyName_550;-
+A.Alarm.PCD01_ALA.MyName_549;-
+A.Alarm.PCD01_ALA.MyName_548;-
+A.Alarm.PCD01_ALA.MyName_547;-
+A.Alarm.PCD01_ALA.MyName_546;-
+A.Alarm.PCD01_ALA.MyName_545;-
+A.Alarm.PCD01_ALA.MyName_544;-
+A.Alarm.PCD01_ALA.MyName_543;-
+A.Alarm.PCD01_ALA.MyName_542;-
+A.Alarm.PCD01_ALA.MyName_541;-
+A.Alarm.PCD01_ALA.MyName_540;-
+A.Alarm.PCD01_ALA.MyName_539;-
+A.Alarm.PCD01_ALA.MyName_538;-
+A.Alarm.PCD01_ALA.MyName_537;-
+A.Alarm.PCD01_ALA.MyName_536;-
+A.Alarm.PCD01_ALA.MyName_535;-
+A.Alarm.PCD01_ALA.MyName_534;-
+A.Alarm.PCD01_ALA.MyName_533;-
+A.Alarm.PCD01_ALA.MyName_532;-
+A.Alarm.PCD01_ALA.MyName_531;-
+A.Alarm.PCD01_ALA.MyName_530;-
+A.Alarm.PCD01_ALA.MyName_529;-
+A.Alarm.PCD01_ALA.MyName_528;-
+A.Alarm.PCD01_ALA.MyName_527;-
+A.Alarm.PCD01_ALA.MyName_526;-
+A.Alarm.PCD01_ALA.MyName_525;-
+A.Alarm.PCD01_ALA.MyName_524;-
+A.Alarm.PCD01_ALA.MyName_523;-
+A.Alarm.PCD01_ALA.MyName_522;-
+A.Alarm.PCD01_ALA.MyName_521;-
+A.Alarm.PCD01_ALA.MyName_520;-
+A.Alarm.PCD01_ALA.MyName_519;-
+A.Alarm.PCD01_ALA.MyName_518;-
+A.Alarm.PCD01_ALA.MyName_517;-
+A.Alarm.PCD01_ALA.MyName_516;-
+A.Alarm.PCD01_ALA.MyName_515;-
+A.Alarm.PCD01_ALA.MyName_514;-
+A.Alarm.PCD01_ALA.MyName_513;-
+A.Alarm.PCD01_ALA.MyName_512;-
+A.Alarm.PCD01_ALA.MyName_511;-
+A.Alarm.PCD01_ALA.MyName_510;-
+A.Alarm.PCD01_ALA.MyName_509;-
+A.Alarm.PCD01_ALA.MyName_508;-
+A.Alarm.PCD01_ALA.MyName_507;-
+A.Alarm.PCD01_ALA.MyName_506;-
+A.Alarm.PCD01_ALA.MyName_505;-
+A.Alarm.PCD01_ALA.MyName_504;-
+A.Alarm.PCD01_ALA.MyName_503;-
+A.Alarm.PCD01_ALA.MyName_502;-
+A.Alarm.PCD01_ALA.MyName_501;-
+A.Alarm.PCD01_ALA.MyName_500;-
+A.Alarm.PCD01_ALA.MyName_499;-
+A.Alarm.PCD01_ALA.MyName_498;-
+A.Alarm.PCD01_ALA.MyName_497;-
+A.Alarm.PCD01_ALA.MyName_496;-
+A.Alarm.PCD01_ALA.MyName_495;-
+A.Alarm.PCD01_ALA.MyName_494;-
+A.Alarm.PCD01_ALA.MyName_493;-
+A.Alarm.PCD01_ALA.MyName_492;-
+A.Alarm.PCD01_ALA.MyName_491;-
+A.Alarm.PCD01_ALA.MyName_490;-
+A.Alarm.PCD01_ALA.MyName_489;-
+A.Alarm.PCD01_ALA.MyName_488;-
+A.Alarm.PCD01_ALA.MyName_487;-
+A.Alarm.PCD01_ALA.MyName_486;-
+A.Alarm.PCD01_ALA.MyName_485;-
+A.Alarm.PCD01_ALA.MyName_484;-
+A.Alarm.PCD01_ALA.MyName_483;-
+A.Alarm.PCD01_ALA.MyName_482;-
+A.Alarm.PCD01_ALA.MyName_481;-
+A.Alarm.PCD01_ALA.MyName_480;-
+A.Alarm.PCD01_ALA.MyName_479;-
+A.Alarm.PCD01_ALA.MyName_478;-
+A.Alarm.PCD01_ALA.MyName_477;-
+A.Alarm.PCD01_ALA.MyName_476;-
+A.Alarm.PCD01_ALA.MyName_475;-
+A.Alarm.PCD01_ALA.MyName_474;-
+A.Alarm.PCD01_ALA.MyName_473;-
+A.Alarm.PCD01_ALA.MyName_472;-
+A.Alarm.PCD01_ALA.MyName_471;-
+A.Alarm.PCD01_ALA.MyName_470;-
+A.Alarm.PCD01_ALA.MyName_469;-
+A.Alarm.PCD01_ALA.MyName_468;-
+A.Alarm.PCD01_ALA.MyName_467;-
+A.Alarm.PCD01_ALA.MyName_466;-
+A.Alarm.PCD01_ALA.MyName_465;-
+A.Alarm.PCD01_ALA.MyName_464;-
+A.Alarm.PCD01_ALA.MyName_463;-
+A.Alarm.PCD01_ALA.MyName_462;-
+A.Alarm.PCD01_ALA.MyName_461;-
+A.Alarm.PCD01_ALA.MyName_460;-
+A.Alarm.PCD01_ALA.MyName_459;-
+A.Alarm.PCD01_ALA.MyName_458;-
+A.Alarm.PCD01_ALA.MyName_457;-
+A.Alarm.PCD01_ALA.MyName_456;-
+A.Alarm.PCD01_ALA.MyName_455;-
+A.Alarm.PCD01_ALA.MyName_454;-
+A.Alarm.PCD01_ALA.MyName_453;-
+A.Alarm.PCD01_ALA.MyName_452;-
+A.Alarm.PCD01_ALA.MyName_451;-
+A.Alarm.PCD01_ALA.MyName_450;-
+A.Alarm.PCD01_ALA.MyName_449;-
+A.Alarm.PCD01_ALA.MyName_448;-
+A.Alarm.PCD01_ALA.MyName_447;-
+A.Alarm.PCD01_ALA.MyName_446;-
+A.Alarm.PCD01_ALA.MyName_445;-
+A.Alarm.PCD01_ALA.MyName_444;-
+A.Alarm.PCD01_ALA.MyName_443;-
+A.Alarm.PCD01_ALA.MyName_442;-
+A.Alarm.PCD01_ALA.MyName_441;-
+A.Alarm.PCD01_ALA.MyName_440;-
+A.Alarm.PCD01_ALA.MyName_439;-
+A.Alarm.PCD01_ALA.MyName_438;-
+A.Alarm.PCD01_ALA.MyName_437;Pump in Alarm
+A.Alarm.PCD01_ALA.MyName_436;Pump Maintance
+A.Alarm.PCD01_ALA.MyName_435;Manual switch 17M2 Pump Circulation - in Manualmode
+A.Alarm.PCD01_ALA.MyName_434;Fuse 17F2 Pump Circulation Alarm
+A.Alarm.PCD01_ALA.MyName_433;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_432;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_431;PumpeLadepumpe Alarm
+A.Alarm.PCD01_ALA.MyName_430;Pump Maintance
+A.Alarm.PCD01_ALA.MyName_429;Manual switch 17M1 Pump Boiler - in Manualmode
+A.Alarm.PCD01_ALA.MyName_428;Fuse 17F1 Pump Boiler Alarm
+A.Alarm.PCD01_ALA.MyName_427;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_426;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_425;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_424;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_423;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_422;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_421;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_420;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_419;Manual switch 53M1 Pump Floorheating Appartment - in Manualmode
+A.Alarm.PCD01_ALA.MyName_418;Fuse 53F1 Pump Floorheating Appartment Alarm
+A.Alarm.PCD01_ALA.MyName_417;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_416;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_415;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_414;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_413;Manual switch 40M1 Pump Floorheating Sub. Distr. 6 - in Manualmode
+A.Alarm.PCD01_ALA.MyName_412;Fuse 40F1 Pump Floorheating Sub. Distr. 6 Alarm
+A.Alarm.PCD01_ALA.MyName_411;Manual switch 39M1 Pump Floorheating Sub. Distr. 5 - in Manualmode
+A.Alarm.PCD01_ALA.MyName_410;Fuse 39F1 Pump Floorheating Sub. Distr. 5 Alarm
+A.Alarm.PCD01_ALA.MyName_409;Manual switch 36m1 Pump Floorheating Sub. Distr. 2 - in Manualmode
+A.Alarm.PCD01_ALA.MyName_408;Fuse 36F1 Pump Floorheating Sub. Distr. 2 Alarm
+A.Alarm.PCD01_ALA.MyName_407;Manual switch 35M1 Pump Floorheating Sub. Distr. 1 - in Manualmode
+A.Alarm.PCD01_ALA.MyName_406;Fuse 35F1 Pump Floorheating Sub. Distr. 1 Alarm
+A.Alarm.PCD01_ALA.MyName_405;Manual switch 8M1 Pump Floorheating Living Main Distr. - in Manualmode
+A.Alarm.PCD01_ALA.MyName_404;Fuse 8F1 Pump Floorheating Living Main Distr. Alarm
+A.Alarm.PCD01_ALA.MyName_403;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_402;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_401;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_400;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_399;Manual switch 38M1 Pump Floorheating Sub. Distr. 4 - in Manualmode
+A.Alarm.PCD01_ALA.MyName_398;Fuse 38F1 Pump Floorheating Sub. Distr. 4 Alarm
+A.Alarm.PCD01_ALA.MyName_397;Manual switch 37M1 Pump Floorheating Sub. Distr. 3 - in Manualmode
+A.Alarm.PCD01_ALA.MyName_396;Fuse 37F1 Pump Floorheating Sub. Distr. 3 Alarm
+A.Alarm.PCD01_ALA.MyName_395;Manual switch 9M1 Pump Floorheating Pool Main Distr. - in Manualmode
+A.Alarm.PCD01_ALA.MyName_394;Fuse 9F1 Pump Floorheating Pool Main Distr. Alarm
+A.Alarm.PCD01_ALA.MyName_393;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_392;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_391;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_390;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_389;Manual switch 6M1 Pump Radiator Mainhouse - in Manualmode
+A.Alarm.PCD01_ALA.MyName_388;Fuse 6F1 Pump Radiator Mainhouse Alarm
+A.Alarm.PCD01_ALA.MyName_387;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_386;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_385;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_384;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_383;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_382;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_381;Manual switch 52M1 Pump Poolwater Heat Exchanger - in Manualmode
+A.Alarm.PCD01_ALA.MyName_380;Fuse 52F1 Pump Poolwater Heat Exchanger Alarm
+A.Alarm.PCD01_ALA.MyName_379;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_378;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_377;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_376;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_375;Manual switch 54M1 Pump Garage Radiator - in Manualmode
+A.Alarm.PCD01_ALA.MyName_374;Fuse 54F1 Pump Garage Radiator Alarm
+A.Alarm.PCD01_ALA.MyName_373;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_372;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_371;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_370;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_369;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_368;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_367;Manual switch 7M1 Pump Hamam - in Manualmode
+A.Alarm.PCD01_ALA.MyName_366;Fuse 7F1 Pump Hamam Alarm
+A.Alarm.PCD01_ALA.MyName_365;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_364;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_363;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_362;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_361;Manual Switch Bath Radiator Appartment- in Manualmode
+A.Alarm.PCD01_ALA.MyName_360;Fuse 15F1 Bath Radiator AppartmentAlarm
+A.Alarm.PCD01_ALA.MyName_359;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_358;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_357;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_356;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_355;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_354;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_353;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_352;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_351;ZonenVentil1 in Manualmode
+A.Alarm.PCD01_ALA.MyName_350;ZonenVentil1 low
+A.Alarm.PCD01_ALA.MyName_349;ZonenVentil1 high
+A.Alarm.PCD01_ALA.MyName_348;Alarm
+A.Alarm.PCD01_ALA.MyName_347;Alarm
+A.Alarm.PCD01_ALA.MyName_346;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_345;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_344;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_343;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_342;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_341;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_340;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_339;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_338;Manual switch 14M1 Pump Ceiling Appartment - in Manualmode
+A.Alarm.PCD01_ALA.MyName_337;Fuse 14F1 Pump Ceiling Appartment Alarm
+A.Alarm.PCD01_ALA.MyName_336;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_335;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_334;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_333;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_332;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_331;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_330;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_329;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_328;ZonenVentil2 in Manualmode
+A.Alarm.PCD01_ALA.MyName_327;ZonenVentil2 low
+A.Alarm.PCD01_ALA.MyName_326;ZonenVentil2 high
+A.Alarm.PCD01_ALA.MyName_325;ZonenVentil1 in Manualmode
+A.Alarm.PCD01_ALA.MyName_324;ZonenVentil1 low
+A.Alarm.PCD01_ALA.MyName_323;ZonenVentil1 high
+A.Alarm.PCD01_ALA.MyName_322;Alarm
+A.Alarm.PCD01_ALA.MyName_321;Alarm
+A.Alarm.PCD01_ALA.MyName_320;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_319;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_318;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_317;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_316;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_315;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_314;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_313;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_312;ZonenVentil2 in Manualmode
+A.Alarm.PCD01_ALA.MyName_311;ZonenVentil2 low
+A.Alarm.PCD01_ALA.MyName_310;ZonenVentil2 high
+A.Alarm.PCD01_ALA.MyName_309;ZonenVentil1 in Manualmode
+A.Alarm.PCD01_ALA.MyName_308;ZonenVentil1 low
+A.Alarm.PCD01_ALA.MyName_307;ZonenVentil1 high
+A.Alarm.PCD01_ALA.MyName_306;Alarm
+A.Alarm.PCD01_ALA.MyName_305;Alarm
+A.Alarm.PCD01_ALA.MyName_304;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_303;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_302;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_301;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_300;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_299;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_298;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_297;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_296;ZonenVentil2 in Manualmode
+A.Alarm.PCD01_ALA.MyName_295;ZonenVentil2 low
+A.Alarm.PCD01_ALA.MyName_294;ZonenVentil2 high
+A.Alarm.PCD01_ALA.MyName_293;ZonenVentil1 in Manualmode
+A.Alarm.PCD01_ALA.MyName_292;ZonenVentil1 low
+A.Alarm.PCD01_ALA.MyName_291;ZonenVentil1 high
+A.Alarm.PCD01_ALA.MyName_290;Alarm
+A.Alarm.PCD01_ALA.MyName_289;Alarm
+A.Alarm.PCD01_ALA.MyName_288;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_287;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_286;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_285;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_284;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_283;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_282;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_281;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_280;ZonenVentil2 in Manualmode
+A.Alarm.PCD01_ALA.MyName_279;ZonenVentil2 low
+A.Alarm.PCD01_ALA.MyName_278;ZonenVentil2 high
+A.Alarm.PCD01_ALA.MyName_277;ZonenVentil1 in Manualmode
+A.Alarm.PCD01_ALA.MyName_276;ZonenVentil1 low
+A.Alarm.PCD01_ALA.MyName_275;ZonenVentil1 high
+A.Alarm.PCD01_ALA.MyName_274;Alarm
+A.Alarm.PCD01_ALA.MyName_273;Alarm
+A.Alarm.PCD01_ALA.MyName_272;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_271;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_270;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_269;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_268;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_267;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_266;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_265;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_264;ZonenVentil2 in Manualmode
+A.Alarm.PCD01_ALA.MyName_263;ZonenVentil2 low
+A.Alarm.PCD01_ALA.MyName_262;ZonenVentil2 high
+A.Alarm.PCD01_ALA.MyName_261;ZonenVentil1 in Manualmode
+A.Alarm.PCD01_ALA.MyName_260;ZonenVentil1 low
+A.Alarm.PCD01_ALA.MyName_259;ZonenVentil1 high
+A.Alarm.PCD01_ALA.MyName_258;Alarm
+A.Alarm.PCD01_ALA.MyName_257;Alarm
+A.Alarm.PCD01_ALA.MyName_256;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_255;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_254;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_253;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_252;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_251;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_250;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_249;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_248;ZonenVentil2 in Manualmode
+A.Alarm.PCD01_ALA.MyName_247;ZonenVentil2 low
+A.Alarm.PCD01_ALA.MyName_246;ZonenVentil2 high
+A.Alarm.PCD01_ALA.MyName_245;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_244;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_243;Manual Switch Bath Radiator 1st Floor Room 9 -
+A.Alarm.PCD01_ALA.MyName_242;Fuse 64F2 Bath Radiator 1st Floor Room 9 Alarm
+A.Alarm.PCD01_ALA.MyName_241;ZonenVentil2 in Manualmode
+A.Alarm.PCD01_ALA.MyName_240;ZonenVentil2 low
+A.Alarm.PCD01_ALA.MyName_239;ZonenVentil2 high
+A.Alarm.PCD01_ALA.MyName_238;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_237;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_236;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_235;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_234;Manual Switch Bath Radiator 1st Floor Room 8 - in Manualmode
+A.Alarm.PCD01_ALA.MyName_233;Fuse 64F1 Bath Radiator 1st Floor Room 8 Alarm
+A.Alarm.PCD01_ALA.MyName_232;ZonenVentil2 in Manualmode
+A.Alarm.PCD01_ALA.MyName_231;ZonenVentil2 low
+A.Alarm.PCD01_ALA.MyName_230;ZonenVentil2 high
+A.Alarm.PCD01_ALA.MyName_229;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_228;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_227;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_226;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_225;Manual Switch Bath Radiator 1st Floor Room 4 - in Manualmode
+A.Alarm.PCD01_ALA.MyName_224;Fuse 63F3 Bath Radiator 1st Floor Room 4 Alarm
+A.Alarm.PCD01_ALA.MyName_223;ZonenVentil2 in Manualmode
+A.Alarm.PCD01_ALA.MyName_222;ZonenVentil2 low
+A.Alarm.PCD01_ALA.MyName_221;ZonenVentil2 high
+A.Alarm.PCD01_ALA.MyName_220;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_219;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_218;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_217;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_216;Manual Switch Bath Radiator 1st Floor Room 3 - in Manualmode
+A.Alarm.PCD01_ALA.MyName_215;Fuse 63F3 Bath Radiator 1st Floor Room 3 Alarm
+A.Alarm.PCD01_ALA.MyName_214;ZonenVentil2 in Manualmode
+A.Alarm.PCD01_ALA.MyName_213;ZonenVentil2 low
+A.Alarm.PCD01_ALA.MyName_212;ZonenVentil2 high
+A.Alarm.PCD01_ALA.MyName_211;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_210;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_209;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_208;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_207;ZonenVentil2 in Manualmode
+A.Alarm.PCD01_ALA.MyName_206;ZonenVentil2 low
+A.Alarm.PCD01_ALA.MyName_205;ZonenVentil2 high
+A.Alarm.PCD01_ALA.MyName_204;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_203;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_202;ZonenVentil2 in Manualmode
+A.Alarm.PCD01_ALA.MyName_201;ZonenVentil2 low
+A.Alarm.PCD01_ALA.MyName_200;ZonenVentil2 high
+A.Alarm.PCD01_ALA.MyName_199;ZonenVentil1 in Manualmode
+A.Alarm.PCD01_ALA.MyName_198;ZonenVentil1 low
+A.Alarm.PCD01_ALA.MyName_197;ZonenVentil1 high
+A.Alarm.PCD01_ALA.MyName_196;Alarm
+A.Alarm.PCD01_ALA.MyName_195;Alarm
+A.Alarm.PCD01_ALA.MyName_194;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_193;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_192;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_191;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_190;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_189;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_188;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_187;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_186;Manual switch 12M1 Pump Main Distr. > Ceiling Distr. - in Manualmode
+A.Alarm.PCD01_ALA.MyName_185;Fuse 12F1 Pump Main Distr. > Ceiling Distr. Alarm
+A.Alarm.PCD01_ALA.MyName_184;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_183;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_182;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_181;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_180;Manual switch 42M1 Supply Pump Ceiling Ground Distr. 1/3 - in Manualmode
+A.Alarm.PCD01_ALA.MyName_179;Fuse 42F1 Supply Pump Ceiling Ground Distr. 1/3 Alarm
+A.Alarm.PCD01_ALA.MyName_178;Manual switch 16M1 Pump Ceiling Distr. Ground Floor - in Manualmode
+A.Alarm.PCD01_ALA.MyName_177;Fuse 16F1 Pump Ceiling Distr. Ground Floor Alarm
+A.Alarm.PCD01_ALA.MyName_176;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_175;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_174;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_173;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_172;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_171;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_170;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_169;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_168;Manual switch 44M1 Supply Pump Ceiling 1.Floor Distr. 3/3 - in Manualmode
+A.Alarm.PCD01_ALA.MyName_167;Fuse 44F1 Supply Pump Ceiling 1.Floor Distr. 3/3 Alarm
+A.Alarm.PCD01_ALA.MyName_166;Manual switch 43M1 Supply Pump Ceiling 1.Floor Distr. 2/3 - in Manualmode
+A.Alarm.PCD01_ALA.MyName_165;Fuse 43F1 Supply Pump Ceiling 1.Floor Distr. 2/3 Alarm
+A.Alarm.PCD01_ALA.MyName_164;Manual switch 16M2 Pump Ceiling Distr. 1st Floor- in Manualmode
+A.Alarm.PCD01_ALA.MyName_163;Fuse 16F2 Pump Ceiling Distr. 1st Floor Alarm
+A.Alarm.PCD01_ALA.MyName_162;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_161;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_160;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_159;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_158;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_157;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_156;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_155;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_154;ZonenVentil2 in Manualmode
+A.Alarm.PCD01_ALA.MyName_153;ZonenVentil2 low
+A.Alarm.PCD01_ALA.MyName_152;ZonenVentil2 high
+A.Alarm.PCD01_ALA.MyName_151;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_150;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_149;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_148;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_147;Manual Switch Bath Radiator EG Room 17- in Manualmode
+A.Alarm.PCD01_ALA.MyName_146;Fuse 63F2 Bath Radiator Ground Floor Room 17  Alarm
+A.Alarm.PCD01_ALA.MyName_145;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_144;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_143;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_142;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_141;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_140;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_139;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_138;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_137;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_136;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_135;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_134;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_133;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_132;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_131;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_130;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_129;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_128;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_127;Manual switch 18M1 Pump Geothermal secondary side - in Manualmode
+A.Alarm.PCD01_ALA.MyName_126;Fuse 18F1 Pump Geothermal secondary side Alarm
+A.Alarm.PCD01_ALA.MyName_125;Manual switch 19M1 Pump Geothermal primary side - in Manualmode
+A.Alarm.PCD01_ALA.MyName_124;Fuse 19F1 Pump Geothermal primary side Alarm
+A.Alarm.PCD01_ALA.MyName_123;Manual switch Setpoint 60E1 Heatpump - in Manualmode
+A.Alarm.PCD01_ALA.MyName_122;Manual switch Enable 60E1 Heatpump - in Manualmode
+A.Alarm.PCD01_ALA.MyName_121;Fuse 60F1 Heatpump Alarm
+A.Alarm.PCD01_ALA.MyName_120;Feedback 10M1 Pump Kettle > Mainhouse Heat Buffer  not detected
+A.Alarm.PCD01_ALA.MyName_119;Manual switch 10M1 Pump Kettle > Mainhouse Heat Buffer  - in Manualmode
+A.Alarm.PCD01_ALA.MyName_118;Fuse 10F1 Pump Kettle > Mainhouse Heat Buffer  Alarm
+A.Alarm.PCD01_ALA.MyName_117;Feedback 13M1 Pump Kettle 1 not detected
+A.Alarm.PCD01_ALA.MyName_116;Manual switch 13M1 Pump Kettle 1 - in Manualmode
+A.Alarm.PCD01_ALA.MyName_115;Fuse 13F1 Pump Kettle 1 Alarm
+A.Alarm.PCD01_ALA.MyName_114;Low Temp fault 59E2 Kettle 2 - check Display at Device
+A.Alarm.PCD01_ALA.MyName_113;Manual switch 59E2 Kettle 2 - in Manualmode
+A.Alarm.PCD01_ALA.MyName_112;General fault 59E2 Kettle 2  !! Alarm !!
+A.Alarm.PCD01_ALA.MyName_111;Fuse 59F2 Kettle 2 Alarm
+A.Alarm.PCD01_ALA.MyName_110;Manual switch 59E1 Kettle 1 - in Manualmode
+A.Alarm.PCD01_ALA.MyName_109;General fault 59E1 Kettle 1 !! Alarm !!
+A.Alarm.PCD01_ALA.MyName_108;Fuse 59F1 Kettle 1 Alarm
+A.Alarm.PCD01_ALA.MyName_107;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_106;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_105;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_104;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_103;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_102;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_101;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_100;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_99;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_98;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_97;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_96;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_95;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_94;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_93;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_92;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_91;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_90;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_89;Sensorlimit Low
+A.Alarm.PCD01_ALA.MyName_88;Sensorlimit High
+A.Alarm.PCD01_ALA.MyName_87;Heatpump Warm Water Return Temperature Sensor (Warm from Buffer) Limit Low
+A.Alarm.PCD01_ALA.MyName_86;Heatpump Warm Water Return Temperature Sensor (Warm from Buffer) Limit High
+A.Alarm.PCD01_ALA.MyName_85;Heatpump Warm Water Supply Temperature Sensor (Warm To Buffer) Limit Low
+A.Alarm.PCD01_ALA.MyName_84;Heatpump Warm Water Supply Temperature Sensor (Warm To Buffer) Limit High
+A.Alarm.PCD01_ALA.MyName_83;Heatpump Cold Water Return Temperature Sensor (Cold from Buffer) Limit Low
+A.Alarm.PCD01_ALA.MyName_82;Heatpump Cold Water Return Temperature Sensor (Cold from Buffer) Limit High
+A.Alarm.PCD01_ALA.MyName_81;Heatpump Cold Water Supply Temperature Sensor (Cold To Buffer) Limit Low
+A.Alarm.PCD01_ALA.MyName_80;Heatpump Cold Water Supply Temperature Sensor (Cold To Buffer) Limit High
+A.Alarm.PCD01_ALA.MyName_79;Hydraulic Separator Secondary Side Return Temperatur Sensor Limit Low
+A.Alarm.PCD01_ALA.MyName_78;Hydraulic Separator Secondary Side Return Temperatur Sensor Limit High
+A.Alarm.PCD01_ALA.MyName_77;Hydraulic Separator Secondary Side Supply Temperatur Sensor Limit Low
+A.Alarm.PCD01_ALA.MyName_76;Hydraulic Separator Secondary Side Supply Temperatur Sensor Limit High
+A.Alarm.PCD01_ALA.MyName_75;Viessman Vitodens 100 Return Temperature Sensor Limit Low
+A.Alarm.PCD01_ALA.MyName_74;Viessman Vitodens 100 Return Temperature Sensor Limit High
+A.Alarm.PCD01_ALA.MyName_73;Viessman Vitodens 100 Supply Temperature Sensor Limit Low
+A.Alarm.PCD01_ALA.MyName_72;Viessman Vitodens 100 Supply Temperature Sensor Limit High
+A.Alarm.PCD01_ALA.MyName_71;Viessman Vitodens 200 Return Temperature Sensor Limit Low
+A.Alarm.PCD01_ALA.MyName_70;Viessman Vitodens 200 Return Temperature Sensor Limit High
+A.Alarm.PCD01_ALA.MyName_69;Viessman Vitodens 200 Supply Temperature Sensor Limit Low
+A.Alarm.PCD01_ALA.MyName_68;Viessman Vitodens 200 Supply Temperature Sensor Limit High
+A.Alarm.PCD01_ALA.MyName_67;Garage Humidity Sensor Limit Low
+A.Alarm.PCD01_ALA.MyName_66;Garage Humidity Sensor Limit High
+A.Alarm.PCD01_ALA.MyName_65;Garage Temperature Sensor Limit Low
+A.Alarm.PCD01_ALA.MyName_64;Garage Temperature Sensor Limit High
+A.Alarm.PCD01_ALA.MyName_63;Outside Humidity Sensor 2 Limit Low
+A.Alarm.PCD01_ALA.MyName_62;Outside Humidity Sensor 2 Limit High
+A.Alarm.PCD01_ALA.MyName_61;Outside Humidity Sensor 1 Limit Low
+A.Alarm.PCD01_ALA.MyName_60;Outside Humidity Sensor 1 Limit High
+A.Alarm.PCD01_ALA.MyName_59;Outside Temperature Sensor 2 Limit Low
+A.Alarm.PCD01_ALA.MyName_58;Outside Temperature Sensor 2 Limit High
+A.Alarm.PCD01_ALA.MyName_57;Outside Temperature Sensor 1 Limit Low
+A.Alarm.PCD01_ALA.MyName_56;Outside Temperature Sensor 1 Limit High
+A.Alarm.PCD01_ALA.MyName_55;Feedback 5F1 Pump Preheater MB3 Ventilation not detected
+A.Alarm.PCD01_ALA.MyName_54;Manual switch 5M1 Pump Preheater MB3 Ventilation - in Manualmode
+A.Alarm.PCD01_ALA.MyName_53;Fuse 5F1 Pump Preheater MB3 Ventilation Alarm
+A.Alarm.PCD01_ALA.MyName_52;FrostFrostalarm !! Ventilation Off !
+A.Alarm.PCD01_ALA.MyName_51;FrostFrostalarm !! Defrostprogram running
+A.Alarm.PCD01_ALA.MyName_50;FrostFrostalarm at the Waterside
+A.Alarm.PCD01_ALA.MyName_49;FrostFrostalarm at the Airside
+A.Alarm.PCD01_ALA.MyName_48;Sensor MB3 Preheater secondary side Return Water Temperature Limit Low
+A.Alarm.PCD01_ALA.MyName_47;Sensor MB3 Preheater secondary side Return Water Temperature Limit High
+A.Alarm.PCD01_ALA.MyName_46;Sensor MB3 Preheater secondary side Supply Water Temperature Limit Low
+A.Alarm.PCD01_ALA.MyName_45;Sensor MB3 Preheater secondary side Supply Water Temperature Limit High
+A.Alarm.PCD01_ALA.MyName_44;Supply Air Humidity Sensor after MB3 (Frostprotection) Limit Low
+A.Alarm.PCD01_ALA.MyName_43;Supply Air Humidity Sensor after MB3 (Frostprotection) Limit High
+A.Alarm.PCD01_ALA.MyName_42;Supply Air Temperature Sensor after MB3 (Frostprotection) Limit Low
+A.Alarm.PCD01_ALA.MyName_41;Supply Air Temperature Sensor after MB3 (Frostprotection) Limit High
+A.Alarm.PCD01_ALA.MyName_40;Outside Air Temperature Sensor (MB3) Limit Low
+A.Alarm.PCD01_ALA.MyName_39;Outside Air Temperature Sensor (MB3) Limit High
+A.Alarm.PCD01_ALA.MyName_38;Manual switch 3M1 Pump Preheater Mainhouse Ventilation - in Manualmode
+A.Alarm.PCD01_ALA.MyName_37;Fuse 3F1 Pump Preheater Mainhouse Ventilation Alarm
+A.Alarm.PCD01_ALA.MyName_36;Manual switch 4M1 Pump Preheater Pool Ventilation - in Manualmode
+A.Alarm.PCD01_ALA.MyName_35;Fuse 4F1 Pump Preheater Pool Ventilation Alarm
+A.Alarm.PCD01_ALA.MyName_34;General Ventilation Sensor Preheater primary side Return Water Temperature Limit Low
+A.Alarm.PCD01_ALA.MyName_33;General Ventilation Sensor Preheater primary side Return Water Temperature Limit High
+A.Alarm.PCD01_ALA.MyName_32;General Ventilation Sensor Preheater primary side Supply Water Temperature Limit Low
+A.Alarm.PCD01_ALA.MyName_31;General Ventilation Sensor Preheater primary side Supply Water Temperature Limit High
+A.Alarm.PCD01_ALA.MyName_30;Living Room Ventilation Sensor Preheater secondary side Return Water Temperature Limit Low
+A.Alarm.PCD01_ALA.MyName_29;Living Room Ventilation Sensor Preheater secondary side Return Water Temperature Limit High
+A.Alarm.PCD01_ALA.MyName_28;Living Room Ventilation Sensor Preheater secondary side Supply Water Temperature Limit Low
+A.Alarm.PCD01_ALA.MyName_27;Living Room Ventilation Sensor Preheater secondary side Supply Water Temperature Limit High
+A.Alarm.PCD01_ALA.MyName_26;Pool Ventilation Sensor Preheater secondary side Return Water Temperature Limit Low
+A.Alarm.PCD01_ALA.MyName_25;Pool Ventilation Sensor Preheater secondary side Return Water Temperature Limit High
+A.Alarm.PCD01_ALA.MyName_24;Pool Ventilation Sensor Preheater secondary side Supply Water Temperature Limit Low
+A.Alarm.PCD01_ALA.MyName_23;Pool Ventilation Sensor Preheater secondary side Supply Water Temperature Limit High
+A.Alarm.PCD01_ALA.MyName_22;Living Room Ventilation Sensor Return Air Temperatur Limit Low
+A.Alarm.PCD01_ALA.MyName_21;Living Room Ventilation Sensor Return Air Temperatur Limit High
+A.Alarm.PCD01_ALA.MyName_20;Living Room Ventilation Sensor Supply Air Temperatur Limit Low
+A.Alarm.PCD01_ALA.MyName_19;Living Room Ventilation Sensor Supply Air Temperatur Limit High
+A.Alarm.PCD01_ALA.MyName_18;Pool Ventilation Sensor Return Air Temperatur Limit Low
+A.Alarm.PCD01_ALA.MyName_17;Pool Ventilation Sensor Return Air Temperatur Limit High
+A.Alarm.PCD01_ALA.MyName_16;Pool Ventilation Sensor Supply Air Temperatur Limit Low
+A.Alarm.PCD01_ALA.MyName_15;Pool Ventilation Sensor Supply Air Temperatur Limit High
+A.Alarm.PCD01_ALA.MyName_14;Pool Ventilation Sensor Exhaust Air Temperatur Limit Low
+A.Alarm.PCD01_ALA.MyName_13;Pool Ventilation Sensor Exhaust Air Temperatur Limit High
+A.Alarm.PCD01_ALA.MyName_12;Pool Ventilation Sensor Exhaust Air Humidity Limit Low
+A.Alarm.PCD01_ALA.MyName_11;Pool Ventilation Sensor Exhaust Air Humidity Limit High
+A.Alarm.PCD01_ALA.MyName_10;Living Room has Alarm  Details at MENERGA LIVING ROOM Vent. Controller
+A.Alarm.PCD01_ALA.MyName_9;Communication Living Room Ventilation not working Alarm
+A.Alarm.PCD01_ALA.MyName_8;Pool Ventilation has Alarm  Details at MENERGA POOL Vent. Controller
+A.Alarm.PCD01_ALA.MyName_7;Communication Pool Ventilation not working Alarm
+A.Alarm.PCD01_ALA.MyName_6;Fuse Power Supply 2F4 in alarm
+A.Alarm.PCD01_ALA.MyName_5;Fuse Power Supply 1F2 in alarm
+A.Alarm.PCD01_ALA.MyName_4;Fuse Power Supply 1K1 in alarm
+A.Alarm.PCD01_ALA.MyName_3;Fuse Power Supply 2F1 /2F2 in alarm
+A.Alarm.PCD01_ALA.MyName_2;Fuse Power Supply 2F5 in alarm
+A.Alarm.PCD01_ALA.MyName_1;Fuse Power Supply not used
+Not Sorted\nActive Time Sorted\n;Not Sorted\nActive Time Sorted\n
+Sort Mode :;Sort Mode :
+Filter Mode :;Filter Mode :
+Disable Alarms List;Disable Alarms List
+Disable Selected Alarms;Disable Selected Alarms
+Enable Alarms List;Enable Alarms List
+Enable Selected Alarms;Enable Selected Alarms
+Online Alarm List;Online Alarm List
+Color\tID\tPrio\tGroup\tAlarm Text\tTime On\tTime Off\tAck\tActiv\tCount;Color\tID\tPrio\tGroup\tAlarm Text\tTime On\tTime Off\tAck\tActiv\tCount
+All\nPrio1\nPrio2\nPrio3\nPrio4\nPrio5\nPrio6\nPrio7\n;All\nPrio1\nPrio2\nPrio3\nPrio4\nPrio5\nPrio6\nPrio7\n
+All\nGroup1\nGroup2\nGroup3\nGroup4\nGroup5\nGroup6\nGroup7\nGroup8\nGroup9\nGroup10\nGroup11\nGroup12\nGroup13\nGroup14\nGroup15\nGroup16\nGroup17\nGroup18\nGroup19\nGroup20\nGroup21\nGroup22\nGroup23\nGroup24\nGroup25\nGroup26\nGroup27\nGroup28\nGroup29\nGroup30\nGroup31\n;All\nGroup1\nGroup2\nGroup3\nGroup4\nGroup5\nGroup6\nGroup7\nGroup8\nGroup9\nGroup10\nGroup11\nGroup12\nGroup13\nGroup14\nGroup15\nGroup16\nGroup17\nGroup18\nGroup19\nGroup20\nGroup21\nGroup22\nGroup23\nGroup24\nGroup25\nGroup26\nGroup27\nGroup28\nGroup29\nGroup30\nGroup31\n
+Prio :;Prio :
+Group :;Group :
+Color Mode :;Color Mode :
+State Color Mode\nGroup Color Mode\nPrio Color Mode;State Color Mode\nGroup Color Mode\nPrio Color Mode
+Help Text On;Help Text On
+Help Text Off;Help Text Off
+Filter;Filter
+Filter Off;Filter Off
+Advanced ;Advanced 
+Advanced Off;Advanced Off
+Alarm Text Type;Alarm Text Type
+Long;Long
+Short;Short
+Total Entries :;Total Entries :
+Select Mode :;Select Mode :
+Delete Alarms List;Delete Alarms List
+Delete Selected Alarms;Delete Selected Alarms
+Ack Alarms List;Ack Alarms List
+Pg Up;Pg Up
+Pg Dn;Pg Dn
+Multiple Select;Multiple Select
+Single Select;Single Select
+Ack Selected Alarms;Ack Selected Alarms
+No Filter\nActive Alarms\nAlarms count > 0\nActive Non Ack Alarms\nNon Ack Alarms\nDisabled Alarms\nEnabled Alarms\n;No Filter\nActive Alarms\nAlarms count > 0\nActive Non Ack Alarms\nNon Ack Alarms\nDisabled Alarms\nEnabled Alarms\n
+Anforderung;Anforderung
+verwende THANOS Temp. Sollwert;Use THANOS Temp. Setpoint
+wirksame Solltemp. ;effective Temp Setpoint 
+Feuchtesollwert;Setp. Humidity
+Solltemp. WEB;Temp. Setpoint VISU
+Solltemp. Thanos;Temp. Setpoint THANOS
+OF;OF
+KH;COOL 
+HZ;HEAT
+Stufe 2;Step 2
+UML Bef.;CIRC Hum.
+Stufe 1;Step 1
+Wasser;Water
+Luft;Air
+Ra. VOC;Ro. VOC
+Führungsgrösse;Management by
+Rel. Feu /Ra.Temp;Humidity /Roomtemp.
+Schwimmbad /Pool;Pool
+Übersicht Steuerspannungen;Overview 
+MaxSW;MaxSetp.
+MinSW;MinSetp.
+Frostschutz <=..°C;Frostprot. <=..°C
+Stop bei < ..°C;Stop at < ..°C
+Pufferladung;Buffer loading
+Start bei > ..°C;Start at > ..°C
+Geschlossen;closed
+mglw. Geöffnet;possibl. Open
+Auftasten;Trig. OPN
+Zutasten;Trig. CLS
+ABL Sollwert;RET Air Setpoint
+RL Frostschutztemp.;Ret. Frost Protect Temp.
+Taup.;Dewpoint
+abs. Feu.;abs. Hum.
+Hamam;Hamam
+Radiatoren;Radiator
+Th. Vent;Th. Valve
+Keller /Vorbereitungsküche /Technik;Basement /Technik
+PASPE Keller;PASPE Basement
+Appartement;Apartment
+Austasten;Trig OFF
+Eintasten;Trig. ON
+Sperre Hzg. ab Garagentemp. höher als;Lock heating if garage temp higher than ..
+Freigabe Hzg bei Garagentemp. unter;Enable heating if garage temp lower than ..
+Raumtemperaturfreigabe;Enabled by Roomtemperature
+Garagenheizung;Garagenheizung
+VL Soll Temp:;VL Soll Temp:
+Speicherladung;Speicherladung
+Stop bei > ..°C;Stop bei > ..°C
+Start bei < ..°C;Start bei < ..°C
+----;----
+USV gestört (Bauteil 2T2 Batterie defekt ? Batterie leer ?);USV gestört (Bauteil 2T2 Batterie defekt ? Batterie leer ?)
+Phasenwächter (Bauteil 1K1 Phase fehlt ? Netz asynchron ?);Phasenwächter (Bauteil 1K1 Phase fehlt ? Netz asynchron ?)
+OK;OK
+Störung - USV;Alarm  - USV
+Störung - Phasenwächter;Alarm - Phase monitor
+Störung - Sicherung gefallen;Alarm - Fuse in off
+Versorgungsspannung 24VAC (Sicherung 2F5);Supply Voltage 24VAC Fuse 2F5)
+Versorgungsspannung 24VDC (Sicherung 2F2 oder 2F4);Supply Voltage 24VDC Fuse 2F2 oder 2F4)
+Steuerspannung 400V (Sicherung 1F2);Control Voltage 400V Fuse 1F2)
+P  A  S  P  E;P  A  S  P  E    - RUS -
+Zu;CLS
+Auf;OPN
+Feuchte;Humidity
+Temp.;Temp.
+Istwerte;Measured Value
+E i n s t e l l u n g e n  S O M M E R B E T R I E B;A d j u s t m e n t  Summer operation
+E i n s t e l l u n g e n  W I N T E R B E T R I E B;A d j u s t m e n t  Winter operation
+Deckenheiz- /kühlung;Ceiling heat- /cooling
+Speisewassertemp.;Temp. Water inlet
+Wassertemp.;Water temp.
+Frost !!!;Frost !!!
+ZUL Sollwert;SUP Setpoint
+Beckenwassertemperaturregelung;Regulation Pool Water Temperature
+Sollwert Beckenwasser;Setpoint Poolwater
+Klappe 3 und 5 geöffnet;Flap 3 und 5 open
+Klappe 4 und 6 geschlossen;Flap 4 und 6 closed
+Klappe 1 und 2 geöffnet oder geschlossen;Flap 1 und 2 open or closed
+Befeuchtungsbetrieb;Humidifiying Operation
+Klappe 3 und 5 geschlossen;Flap 3 and 5 closed
+Klappe 4 und 6 geöffnet;Flap 4 und 6 open
+Klappe 1 und 2 geöffnet;Flap 1 und 2 open
+Normalbetrieb;Normal Operation
+1;1
+2;2
+PASPE Raumlufttechnik;PASPE Climatetechnic
+PASPE Anlagentechnik;PASPE Planttechnic
+5;5
+4;4
+3;3
+6;6
+ZU;SUP
+AB;RET
+AU;OUT
+FO;EXH
+Wohnraum;Livingroom
+MB 3;MB 3
+Raumlufttechnik;Climatechnic
+vom Verbr.;from Consum.
+zu Verbr.;to Consum.
+Störung;Alarm
+Wärmepumpe;Heatpump
+Puffer Warmwasser;Buffer Hot water
+Puffer Kaltwasser;Buffer Cold water
+Warmwasserspeicher;Warmwaterboiler 
+Anlagentechnik;Planttechnic
+E i n s t e l l u n g e n;A D J U S T M E N T
+Sperre BKT ab Aussentemp. höher als;Lock GfH if Outside temp higher than ..
+Freigabe BKT bei Aussentemp. unter;Enable GfH if Outside temp lower than ..
+Aussentemperaturfreigabe;Enable by Outside temperatur 
+errechnete VL Soll Temp:;calculated SUP Setp. Temp:
+Soll VL von ..;Setp. SUP by ..
+Ab AT von ..;By Out above ..
+Bei AT von ..;By Out below ..
+Heizkurve;Heat Curve
+PASPE Schwimmbad;PASPE Pool
+Betonkerntemperierung;Groundfloorheating (GfH)
+Schwimmbad;Pool
+PASPE Erdgeschoss;PASPE 
+Erdgeschoss;Groundfloor 
+PASPE Obergeschoss;PASPE First Floor
+Obergeschoss;First Floor
+Gundacker;Gundacker
+Decke wird geheizt;Ceiling is heated
+Decke wird gekühlt;Ceiling is cooled
+Deckenheiz- kühlung bereit;Ceiling ready
+Betreiber;Operator
+DEC_SYMB;.
+LANG_SYMB;RU
+PM_AM;0
+Gast;Guest
+VL Soll;SUP Set
+Aus;Off
+Ein;On 
+Ist Manu;Is Man
+Ist Auto;Is Auto

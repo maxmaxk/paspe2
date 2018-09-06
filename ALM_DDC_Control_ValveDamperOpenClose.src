@@ -1,0 +1,8 @@
+; ======================================================================
+; -------- SWeb Alarmierung - File
+; ======================================================================
+;
+                    $WRFILE "DDC_Alarming.CSV" List_@A.DDC_Suite.Alarming.Handle@;@adj_AlmIndex@;Alarm_@adj_AlmIndex@;@&Name@ Rueckmeldung AUF fehlt
+                    $WRFILE "DDC_Alarming.CSV" List_@A.DDC_Suite.Alarming.Handle@;@adj_AlmIndex+1@;Alarm_@adj_AlmIndex+1@;@&Name@ Rueckmeldung ZU fehlt
+                    $WRFILE "DDC_Alarming.CSV" List_@A.DDC_Suite.Alarming.Handle@;@adj_AlmIndex+2@;Alarm_@adj_AlmIndex+2@;@&Name@ Handeingriff
+;

@@ -1,0 +1,969 @@
+;System Symbols
+;File "_PASPE_2.obj"
+S.SYS.SASMVERS EQU 2001410 ;Assembler/linker version, new format (abbbccc)
+S.PRJ.PASPE_2.SbusStation EQU 212 ;S-Bus station number
+S.CPU.PcdType EQU 24 ;PCD types, see __PCDx_Mxxx__ symbols
+S.CPU.Eline_System EQU 0 ;0=not an E-line type
+S.CPU.NT_System EQU 1 ;1 for new PCD types, 0 for old
+S.CPU.Cpu EQU 0 ;CPU number
+S.CPU.PCD3_System EQU 24 ;PCD3 type, or 0 if not PCD3
+S.CPU.PCD2M5_System EQU 0 ;PCD2_M5 type, or 0 if not PCD2_M5
+S.CPU.MinFWVersion EQU 12400 ;Min firmware
+S.CPU.MaxFWVersion EQU 999999 ;Max firmware version not defined
+S.CPU.FullHandshakeOnPort0 EQU 0 ;Full RS-232 handshaking on Port 0
+S.CPU.Xob1Enable EQU 0 ;XOB 1 enabled
+S.CPU.SbusStation EQU 212 ;S-Bus station number
+S.CPU.SbusPguPort EQU -1 ;Serial PGU port number, -1=none
+S.CPU.SbusBaudRate EQU 9600 ;Serial port baud rate
+S.CPU.SbusMode EQU 2 ;Serial port mode, 0=Break, 1=Parity, 2=Data
+S.CPU.SbusModemPort EQU -1 ;Modem port number, -1=none
+S.CPU.SbusModemBaudRate EQU 9600 ;Modem baud rate
+S.CPU.SbusModemMode EQU 2 ;0=Break, 1=Parity, 2=Data
+S.CPU.IPNode EQU 212 ;IP node number
+S.CPU.IPChannel EQU 9 ;IP channel number
+S.CPU.IPAddress EQU 0C0A807D4H ;IP address : 192.168.7.212
+S.CPU.IPSubnetMask EQU 0FF000000H ;Subnet mask : 255.0.0.0
+S.CPU.IPDefaultRouter EQU 0C0A80701H ;Default router : 192.168.7.1
+S.CPU.EnergyMonitoringEnabled EQU 0 ;Energy monitoring function enabled
+S.CPU.Interrupt0XOB EQU 20 ;Fix Interrupt0 XOB number
+S.CPU.Interrupt1XOB EQU 21 ;Fix Interrupt1 XOB number
+S.ODM.Initialized EQU 1 ;ODM Init has been activated in SPM
+S.ODM.ReadTimeout EQU 1000 ;Telegram reading timeout
+S.CPU.ProgramVersion EQU 1000000 ;Program Version 1.0
+S.CPU.LastTimer EQU T 999 ;Last timer number
+S.CPU.TimerTimebase EQU 100 ;Timer timebase in ms
+S.CPU.FirstCounter EQU C 1000 ;First counter number
+S.CPU.HasVolatileFlags EQU 0 ;1=has volatile Flags
+S.CPU.LastVolatileFlag EQU -1 ;There are no volatile Flags
+S.CPU.FirstNonvolatileFlag EQU F 0 ;Flags from F 0 are nonvolatile
+S.CPU.FirstDynCounter EQU C 1000 ;First dynamic Counter address
+S.CPU.LastDynCounter EQU C 1599 ;Last dynamic Counter address
+S.CPU.FirstDynTimer EQU T 10 ;First dynamic Timer address
+S.CPU.LastDynTimer EQU T 999 ;Last dynamic Timer address
+S.CPU.FirstDynRegister EQU R 500 ;First dynamic Register address
+S.CPU.LastDynRegister EQU R 16383 ;Last dynamic Register address
+S.CPU.FirstDynFlag EQU F 10 ;First dynamic Flag address
+S.CPU.LastDynFlag EQU F 16383 ;Last dynamic Flag address
+S.CPU.FirstDynText EQU TEXT 3300 ;First dynamic Text address
+S.CPU.LastDynText EQU TEXT 3499 ;Last dynamic Text address
+S.CPU.FirstDynDB EQU DB 3500 ;First dynamic DB address
+S.CPU.LastDynDB EQU DB 3999 ;Last dynamic DB address
+S.CPU.FirstDynRamText EQU TEXT 7800 ;First dynamic RAM Text address
+S.CPU.LastDynRamText EQU TEXT 7999 ;Last dynamic RAM Text address
+S.CPU.FirstDynRamDB EQU DB 8000 ;First dynamic RAM DB address
+S.CPU.LastDynRamDB EQU DB 8191 ;Last dynamic RAM DB address
+S.CPU.MaxFlag EQU 16383 ;Last Flag number
+S.CPU.MaxReg EQU 16383 ;Last Register number
+S.CPU.MaxCounter EQU 1599 ;Last Counter number
+S.CPU.Use16BitAddressing EQU 1 ;Use 16-bit Register and Flag addressing (FW >= 1.20.00)
+S.CPU.FirstWritableTextDB EQU -1 ;First writable Text/DB number (-1=not supported)
+S.PRJ.AppLanguage EQU 'en' ;Preferred language for applications
+S.PRJ.LibLanguage EQU 'en' ;Preferred language for libraries
+;File "WEB-Server.obj"
+S.WEB.WebServer_Diag EQU R 500 ;
+;File "HKLS.obj"
+A.MACROS.Uhrzeit EQU 27834 ;[_HEAWCLK2
+A.BACnet.PCD.AlBattery.OutOfService EQU F 12598 ;Out Of Service
+A.BACnet.PCD.AlBattery.PCDInRef EQU F 12599 ;PCD Input Reference
+A.BACnet.PCD.AlXOB.OutOfService EQU F 12600 ;Out Of Service
+A.BACnet.PCD.AlXOB.PCDInRef EQU F 12601 ;PCD Input Reference
+A.DDCSuite.Init.AckAlarm EQU F 3092 ;Acknowledge all stored alarm. Try to set them to normal state
+A.DDCSuite.Init.ClrMaint EQU F 3093 ;Clear all maintenance messages and restart internal counter
+A.DDCSuite.Init.OutdoorTemp EQU R 1603 ;Outdoor temperature
+S.Alarm.Library EQU 10 ;
+S.Alarm.Create EQU 0 ;
+S.Alarm.Update EQU 1 ;
+S.Alarm.Erase EQU 2 ;
+S.Alarm.EraseAll EQU 3 ;
+S.Alarm.Reset EQU 4 ;
+S.Alarm.ResetAll EQU 5 ;
+S.Alarm.Ack EQU 6 ;
+S.Alarm.AckAll EQU 7 ;
+S.Alarm.Create2 EQU 8 ;
+S.Alarm.Config EQU 9 ;
+S.Alarm.Create_nParams EQU 11 ;
+S.Alarm.Open_nParams EQU 3 ;
+S.Alarm.Erase_nParams EQU 2 ;
+S.Alarm.EraseAll_nParams EQU 3 ;
+S.Alarm.Reset_nParams EQU 2 ;
+S.Alarm.ResetAll_nParams EQU 3 ;
+S.Alarm.Ack_nParams EQU 2 ;
+S.Alarm.AckAll_nParams EQU 3 ;
+S.Alarm.Delete.ALL EQU K 00H ;
+S.Alarm.Delete.NONE EQU K 01H ;
+S.Alarm.Delete.OFF EQU K 02H ;
+S.Alarm.Delete.ACK EQU K 03H ;
+S.Alarm.Delete.ACK_OFF EQU K 04H ;
+S.Alarm.Auto.NORMAL EQU K 00H ;
+S.Alarm.Auto.OFF EQU K 01H ;
+S.Alarm.Auto.ACK EQU K 02H ;
+S.Alarm.Auto.ACK_OFF EQU K 03H ;
+S.Alarm.Auto.TOP EQU K 04H ;
+S.Alarm.Ring.NO EQU K 00H ;
+S.Alarm.Ring.YES EQU K 01H ;
+S.Alarm.Flags.NO EQU K 00H ;
+A.Alarm.PCD01_ALA.Flags EQU F 11646[600] ;Alarmflags
+A.Alarm.PCD01_ALA.FlagsAck EQU -1 ;Ack wird nicht verwendet
+A.Alarm.PCD01_ALA.FlagsDel EQU -1 ;Clear wird nicht verwendet
+A.Alarm.PCD01_ALA.MaxAlarms EQU 600 ;max. numbers of alarms
+A.Alarm.PCD01_ALA.MaxHistory EQU 250 ;max. alarms in history
+A.Alarm.PCD01_ALA.Handle EQU R 4368 ;Handle-ID
+A.Alarm.PCD01_ALA.MyName EQU TEXT 3307 ;Name of list
+A.Alarm.PCD01_ALA.FilePath EQU TEXT 3306 ;Path of the config file
+A.Alarm.PCD01_ALA.Diagnose EQU R 4369 ;Diagnose (  >=0  success  <0  error  )  -----
+A.Alarm.DDC_PCD01_ALA EQU 1 ;Alarmliste
+A.Mail.MailerWorks EQU F 12610 ;
+S.Application.Library EQU 6 ;
+S.Application.CopyText EQU 0 ;
+S.IPS.Library EQU 9 ;
+S.IPS.SendMailSimple EQU 0 ;
+S.IPS.SendMailComplex EQU 1 ;
+S.IPS.SendMail_nParams EQU 14 ;
+S.IPS.Format.Plain EQU K 00H ;
+S.IPS.Format.HTML EQU K 01H ;
+S.IPS.Unused EQU -1 ;
+A.ComplexMail.WebCMail.IP_Port EQU R 1577 ;Portadresse des Mailproviders
+A.ComplexMail.WebCMail.Sender EQU TEXT 3319 ;Mailadresse des Absendersender
+A.ComplexMail.WebCMail.To1 EQU TEXT 7874 ;Mailadresse des 1ten Empfängers
+A.ComplexMail.WebCMail.To2 EQU TEXT 3320 ;Mailadresse des 2ten Empfängers
+A.ComplexMail.WebCMail.To3 EQU TEXT 3321 ;Mailadresse des 3ten Empfängers
+A.ComplexMail.WebCMail.To4 EQU TEXT 3322 ;Mailadresse des 4ten Empfängers
+A.ComplexMail.WebCMail.To5 EQU TEXT 3323 ;Mailadresse des 5ten Empfängers
+A.ComplexMail.WebCMail.Subject EQU TEXT 7802 ;Betreff
+A.ComplexMail.WebCMail.Body EQU TEXT 7803 ;Text
+A.ComplexMail.WebCMail.To EQU R 1582 ;Empfänger
+A.ComplexMail.WebCMail.Content EQU R 1583 ;Typ der Mail (Plain oder HTML)
+A.ComplexMail.WebCMail.TDIA EQU F 3053[10] ;
+A.ComplexMail.WebCMail.TBSY EQU F 3054 ;
+A.ComplexMail.WebCMail.NEXE EQU F 3055 ;
+A.ComplexMail.WebCMail.DREG EQU R 1578[7] ;
+A.ComplexMail.WebCMail.Busy EQU F 3057 ;
+A.ComplexMail.WebCMail.MailerWorks EQU F 3058 ;
+A.ComplexMail.WebCMail.DoInit EQU F 3056 ;
+A.ComplexMail.WebCMail.MailerLocked EQU F 3060 ;
+A.ComplexMail.WebCMail.MyPriority EQU R 1579 ;
+A.ComplexMail.WebCMail.MySubject EQU R 1580 ;
+A.ComplexMail.WebCMail.MyBody EQU R 1581 ;
+A.ComplexMail.WebCMail.MyFile EQU R 1584 ;
+A.ComplexMail.WebCMail.LenSubject EQU 150 ;
+A.ComplexMail.WebCMail.LenText EQU 300 ;
+A.BACnet.FuseGuard.Al230AC.OutOfService EQU F 12400 ;Out Of Service
+A.BACnet.FuseGuard.Al230AC.PCDInRef EQU F 12401 ;PCD Input Reference
+A.BACnet.FuseGuard.Al24AC.OutOfService EQU F 12402 ;Out Of Service
+A.BACnet.FuseGuard.Al24AC.PCDInRef EQU F 12403 ;PCD Input Reference
+A.BACnet.FuseGuard.Al24DC.OutOfService EQU F 12404 ;Out Of Service
+A.BACnet.FuseGuard.Al24DC.PCDInRef EQU F 12405 ;PCD Input Reference
+A.BACnet.FuseGuard.AlPhase.OutOfService EQU F 12408 ;Out Of Service
+A.BACnet.FuseGuard.AlPhase.PCDInRef EQU F 12409 ;PCD Input Reference
+A.BACnet.FuseGuard.AlMain.OutOfService EQU F 12406 ;Out Of Service
+A.BACnet.FuseGuard.AlMain.PCDInRef EQU F 12407 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000001_04_B00A.Alarm.OutOfService EQU F 12410 ;Out Of Service
+A.BACnet.GROUP__fbl_C000001_04_B00A.Alarm.PCDInRef EQU F 12411 ;PCD Input Reference
+A.HVC.Uhrzeit.TimeCmd EQU F 3177 ;
+A.HVC.Uhrzeit.DateCmd EQU F 3178 ;
+A.HVC.Uhrzeit.Time EQU R 1689[3] ;
+A.HVC.Uhrzeit.Date EQU R 1690 ;
+A.HVC.Uhrzeit.DayOW EQU R 1691 ;
+s.modc.ModbusTCP.fboxerror EQU R 4756 ;
+A.BACnet.GROUP__fbl_C000BD4_00_B045.Alarm.OutOfService EQU F 12512 ;Out Of Service
+A.BACnet.GROUP__fbl_C000BD4_00_B045.Alarm.PCDInRef EQU F 12513 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000BD4_00_B048.Alarm.OutOfService EQU F 12516 ;Out Of Service
+A.BACnet.GROUP__fbl_C000BD4_00_B048.Alarm.PCDInRef EQU F 12517 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000BD4_00_B046.Alarm.OutOfService EQU F 12514 ;Out Of Service
+A.BACnet.GROUP__fbl_C000BD4_00_B046.Alarm.PCDInRef EQU F 12515 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000BD4_00_B04A.Alarm.OutOfService EQU F 12518 ;Out Of Service
+A.BACnet.GROUP__fbl_C000BD4_00_B04A.Alarm.PCDInRef EQU F 12519 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000904_01_ABDA.OutOfService EQU F 10361[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000904_01_ABDA.PCDInRef EQU R 3886 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000904_01_ABDD.OutOfService EQU F 10369[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000904_01_ABDD.PCDInRef EQU R 3889 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000904_01_ACC5.OutOfService EQU F 10655[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000904_01_ACC5.PCDInRef EQU R 3957 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000904_01_ACC8.OutOfService EQU F 10663[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000904_01_ACC8.PCDInRef EQU R 3960 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000904_01_ACCE.OutOfService EQU F 10679[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000904_01_ACCE.PCDInRef EQU R 3966 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000904_01_ACCB.OutOfService EQU F 10671[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000904_01_ACCB.PCDInRef EQU R 3963 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000904_02_AD7B.OutOfService EQU F 10775[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000904_02_AD7B.PCDInRef EQU R 4049 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000904_02_AD81.OutOfService EQU F 10783[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000904_02_AD81.PCDInRef EQU R 4052 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000904_02_AD87.OutOfService EQU F 10799[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000904_02_AD87.PCDInRef EQU R 4058 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000904_02_AD84.OutOfService EQU F 10791[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000904_02_AD84.PCDInRef EQU R 4055 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000904_02_AD8D.OutOfService EQU F 10815[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000904_02_AD8D.PCDInRef EQU R 4064 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000904_02_AD8A.OutOfService EQU F 10807[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000904_02_AD8A.PCDInRef EQU R 4061 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000904_07_93E7.Alarm.OutOfService EQU F 12504 ;Out Of Service
+A.BACnet.GROUP__fbl_C000904_07_93E7.Alarm.PCDInRef EQU F 12505 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000904_07_AC74.Alarm.OutOfService EQU F 12506 ;Out Of Service
+A.BACnet.GROUP__fbl_C000904_07_AC74.Alarm.PCDInRef EQU F 12507 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000904_0A_AC81.Alarm.OutOfService EQU F 12510 ;Out Of Service
+A.BACnet.GROUP__fbl_C000904_0A_AC81.Alarm.PCDInRef EQU F 12511 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000904_0A_AC80.Alarm.OutOfService EQU F 12508 ;Out Of Service
+A.BACnet.GROUP__fbl_C000904_0A_AC80.Alarm.PCDInRef EQU F 12509 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C001F8E_01_93B3.OutOfService EQU F 4446[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C001F8E_01_93B3.PCDInRef EQU R 2724 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C001F8E_01_93B9.OutOfService EQU F 4454[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C001F8E_01_93B9.PCDInRef EQU R 2727 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C001F8E_01_93BC.OutOfService EQU F 4462[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C001F8E_01_93BC.PCDInRef EQU R 2730 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C001F8E_01_93BF.OutOfService EQU F 4470[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C001F8E_01_93BF.PCDInRef EQU R 2733 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C001F8E_01_93C2.OutOfService EQU F 4478[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C001F8E_01_93C2.PCDInRef EQU R 2736 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C001F8E_05_B025.AlAir.OutOfService EQU F 12522 ;Out Of Service
+A.BACnet.GROUP__fbl_C001F8E_05_B025.AlAir.PCDInRef EQU F 12523 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C001F8E_05_B025.AlWater.OutOfService EQU F 12526 ;Out Of Service
+A.BACnet.GROUP__fbl_C001F8E_05_B025.AlWater.PCDInRef EQU F 12527 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C001F8E_05_B025.AlActive.OutOfService EQU F 12520 ;Out Of Service
+A.BACnet.GROUP__fbl_C001F8E_05_B025.AlActive.PCDInRef EQU F 12521 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C001F8E_05_B025.AlFrost.OutOfService EQU F 12524 ;Out Of Service
+A.BACnet.GROUP__fbl_C001F8E_05_B025.AlFrost.PCDInRef EQU F 12525 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C001F8E_07_AC76.Alarm.OutOfService EQU F 12530 ;Out Of Service
+A.BACnet.GROUP__fbl_C001F8E_07_AC76.Alarm.PCDInRef EQU F 12531 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C001F8E_07_93E4.Alarm.OutOfService EQU F 12528 ;Out Of Service
+A.BACnet.GROUP__fbl_C001F8E_07_93E4.Alarm.PCDInRef EQU F 12529 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C001F8E_07_AF43.Alarm.OutOfService EQU F 12532 ;Out Of Service
+A.BACnet.GROUP__fbl_C001F8E_07_AF43.Alarm.PCDInRef EQU F 12533 ;PCD Input Reference
+A.BACnet.HZE001.AUL.Temp1.OutOfService EQU F 3031[2] ;Out Of Service
+A.BACnet.HZE001.AUL.Temp1.PCDInRef EQU R 1562 ;PCD Input Reference
+A.BACnet.HZE001.AUL.Temp2.OutOfService EQU F 3927[2] ;Out Of Service
+A.BACnet.HZE001.AUL.Temp2.PCDInRef EQU R 2564 ;PCD Input Reference
+A.BACnet.HZE001.AUL.Feuchte1.OutOfService EQU F 3933[2] ;Out Of Service
+A.BACnet.HZE001.AUL.Feuchte1.PCDInRef EQU R 2570 ;PCD Input Reference
+A.BACnet.HZE001.AUL.Feuchte2.OutOfService EQU F 3930[2] ;Out Of Service
+A.BACnet.HZE001.AUL.Feuchte2.PCDInRef EQU R 2567 ;PCD Input Reference
+A.BACnet.HZE001.GARAGE.Temp1.OutOfService EQU F 3956[2] ;Out Of Service
+A.BACnet.HZE001.GARAGE.Temp1.PCDInRef EQU R 2587 ;PCD Input Reference
+A.BACnet.HZE001.GARAGE.Feuchte1.OutOfService EQU F 3959[2] ;Out Of Service
+A.BACnet.HZE001.GARAGE.Feuchte1.PCDInRef EQU R 2590 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_0B_5B83.OutOfService EQU F 3044[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_0B_5B83.PCDInRef EQU R 1574 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_0B_5B81.OutOfService EQU F 3041[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_0B_5B81.PCDInRef EQU R 1571 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_0B_5B71.OutOfService EQU F 3036[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_0B_5B71.PCDInRef EQU R 1565 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_0B_5B72.OutOfService EQU F 3038[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_0B_5B72.PCDInRef EQU R 1568 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_0C_AB1D.OutOfService EQU F 10064[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_0C_AB1D.PCDInRef EQU R 3752 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_0C_AB1B.OutOfService EQU F 10061[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_0C_AB1B.PCDInRef EQU R 3749 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_0D_7317.OutOfService EQU F 3234[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_0D_7317.PCDInRef EQU R 1710 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_0D_7315.OutOfService EQU F 3231[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_0D_7315.PCDInRef EQU R 1707 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_0D_7313.OutOfService EQU F 3228[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_0D_7313.PCDInRef EQU R 1704 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_0D_7311.OutOfService EQU F 3225[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_0D_7311.PCDInRef EQU R 1701 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_0E_AB25.OutOfService EQU F 10076[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_0E_AB25.PCDInRef EQU R 3764 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_0E_AB23.OutOfService EQU F 10073[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_0E_AB23.PCDInRef EQU R 3761 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_0E_AB21.OutOfService EQU F 10070[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_0E_AB21.PCDInRef EQU R 3758 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_0E_AB1F.OutOfService EQU F 10067[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_0E_AB1F.PCDInRef EQU R 3755 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_0F_AB35.OutOfService EQU F 10088[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_0F_AB35.PCDInRef EQU R 3776 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_0F_AB33.OutOfService EQU F 10085[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_0F_AB33.PCDInRef EQU R 3773 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_0F_AB31.OutOfService EQU F 10082[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_0F_AB31.PCDInRef EQU R 3770 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_0F_AB2F.OutOfService EQU F 10079[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_0F_AB2F.PCDInRef EQU R 3767 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_10_AB3D.OutOfService EQU F 10094[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_10_AB3D.PCDInRef EQU R 3782 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_10_AB3B.OutOfService EQU F 10091[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_10_AB3B.PCDInRef EQU R 3779 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_13_4FCC.OutOfService EQU F 2958 ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_13_4FCC.PCDInRef EQU R 7818 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_13_4FC1.OutOfService EQU F 2951 ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_13_4FC1.PCDInRef EQU R 7820 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_13_4FBF.OutOfService EQU F 2949 ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_13_4FBF.PCDInRef EQU R 7822 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_17_AB41.Alarm.OutOfService EQU F 12468 ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_17_AB41.Alarm.PCDInRef EQU F 12469 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_17_AB40.Alarm.OutOfService EQU F 12466 ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_17_AB40.Alarm.PCDInRef EQU F 12467 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_17_AB3F.Alarm.OutOfService EQU F 12464 ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_17_AB3F.Alarm.PCDInRef EQU F 12465 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_18_AF2A.Alarm.OutOfService EQU F 12474 ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_18_AF2A.Alarm.PCDInRef EQU F 12475 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_18_AF29.Alarm.OutOfService EQU F 12472 ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_18_AF29.Alarm.PCDInRef EQU F 12473 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_18_AF28.Alarm.OutOfService EQU F 12470 ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_18_AF28.Alarm.PCDInRef EQU F 12471 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_18_B16B.Alarm.OutOfService EQU F 12476 ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_18_B16B.Alarm.PCDInRef EQU F 12477 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_1D_AC0B.Alarm.OutOfService EQU F 12480 ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_1D_AC0B.Alarm.PCDInRef EQU F 12481 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_1D_AC0A.Alarm.OutOfService EQU F 12478 ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_1D_AC0A.Alarm.PCDInRef EQU F 12479 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_1D_AF40.Alarm.OutOfService EQU F 12482 ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_1D_AF40.Alarm.PCDInRef EQU F 12483 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_1E_AB7A.Alarm.OutOfService EQU F 12486 ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_1E_AB7A.Alarm.PCDInRef EQU F 12487 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_1E_AB79.Alarm.OutOfService EQU F 12484 ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_1E_AB79.Alarm.PCDInRef EQU F 12485 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_1E_AF3B.Alarm.OutOfService EQU F 12488 ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_1E_AF3B.Alarm.PCDInRef EQU F 12489 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_21_AF31.Alarm.OutOfService EQU F 12492 ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_21_AF31.Alarm.PCDInRef EQU F 12493 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_21_AF32.Alarm.OutOfService EQU F 12494 ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_21_AF32.Alarm.PCDInRef EQU F 12495 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_21_AC70.Alarm.OutOfService EQU F 12490 ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_21_AC70.Alarm.PCDInRef EQU F 12491 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_25_AC16.Alarm.OutOfService EQU F 12498 ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_25_AC16.Alarm.PCDInRef EQU F 12499 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_25_AC15.Alarm.OutOfService EQU F 12496 ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_25_AC15.Alarm.PCDInRef EQU F 12497 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_26_AC20.Alarm.OutOfService EQU F 12502 ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_26_AC20.Alarm.PCDInRef EQU F 12503 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000902_26_AC1F.Alarm.OutOfService EQU F 12500 ;Out Of Service
+A.BACnet.GROUP__fbl_C000902_26_AC1F.Alarm.PCDInRef EQU F 12501 ;PCD Input Reference
+s.modc.MODBusEG.fboxerror EQU R 4752 ;
+s.modc.MODBusOG.fboxerror EQU R 4754 ;
+A.BACnet.GROUP__fbl_C00344E_12_96FA.OutOfService EQU F 4695[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C00344E_12_96FA.PCDInRef EQU F 4696 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C00344E_12_96F9.OutOfService EQU F 4694 ;Out Of Service
+A.BACnet.GROUP__fbl_C00344E_12_96F9.PCDInRef EQU R 5184 ;PCD Input Reference
+A.BACnet.EZR0016.Raum.Temp.MW10.OutOfService EQU F 4699[2] ;Out Of Service
+A.BACnet.EZR0016.Raum.Temp.MW10.PCDInRef EQU R 2855 ;PCD Input Reference
+A.BACnet.EZR0016.Raum.Temp1.MW20.OutOfService EQU F 4697[2] ;Out Of Service
+A.BACnet.EZR0016.Raum.Temp1.MW20.PCDInRef EQU R 2852 ;PCD Input Reference
+A.BACnet.EZR0016.Raum.Temp2.MW20.OutOfService EQU F 10632[2] ;Out Of Service
+A.BACnet.EZR0016.Raum.Temp2.MW20.PCDInRef EQU R 3949 ;PCD Input Reference
+A.BACnet.EZR0016.Raum.Feuchte1.MW10.OutOfService EQU F 4719[2] ;Out Of Service
+A.BACnet.EZR0016.Raum.Feuchte1.MW10.PCDInRef EQU R 2858 ;PCD Input Reference
+A.BACnet.EZR0016.Raum.Feuchte2.MW10.OutOfService EQU F 10616[2] ;Out Of Service
+A.BACnet.EZR0016.Raum.Feuchte2.MW10.PCDInRef EQU R 3943 ;PCD Input Reference
+A.BACnet.EZR0016.Raum.Feuchte3.MW10.OutOfService EQU F 10624[2] ;Out Of Service
+A.BACnet.EZR0016.Raum.Feuchte3.MW10.PCDInRef EQU R 3946 ;PCD Input Reference
+A.BACnet.EZR0016.Raum.VOC.MW10.OutOfService EQU F 4727[2] ;Out Of Service
+A.BACnet.EZR0016.Raum.VOC.MW10.PCDInRef EQU R 2861 ;PCD Input Reference
+A.BACnet.EZR0016.Raum.DEW1.MW10.OutOfService EQU F 11532[2] ;Out Of Service
+A.BACnet.EZR0016.Raum.DEW1.MW10.PCDInRef EQU R 4569 ;PCD Input Reference
+A.BACnet.EZR0016.Raum.DEW.MW10.OutOfService EQU F 11540[2] ;Out Of Service
+A.BACnet.EZR0016.Raum.DEW.MW10.PCDInRef EQU R 4572 ;PCD Input Reference
+A.BACnet.EZR0016.Raum.Ventil2.Signal.OutOfService EQU F 8322 ;Out Of Service
+A.BACnet.EZR0016.Raum.Ventil2.Signal.PCDInRef EQU R 1382 ;PCD Input Reference
+A.BACnet.EZR0016.Raum.Ventil2.AlMInt.OutOfService EQU F 8320 ;Out Of Service
+A.BACnet.EZR0016.Raum.Ventil2.AlMInt.PCDInRef EQU F 8321 ;PCD Input Reference
+A.BACnet.EZR0016.Raum.Ventil2.AlHigh.OutOfService EQU F 8316 ;Out Of Service
+A.BACnet.EZR0016.Raum.Ventil2.AlHigh.PCDInRef EQU F 8317 ;PCD Input Reference
+A.BACnet.EZR0016.Raum.Ventil2.AlLow.OutOfService EQU F 8318 ;Out Of Service
+A.BACnet.EZR0016.Raum.Ventil2.AlLow.PCDInRef EQU F 8319 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C00344E_28_9BE0.OutOfService EQU F 5348[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C00344E_28_9BE0.PCDInRef EQU F 5349 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C00344E_28_9BDF.OutOfService EQU F 5347 ;Out Of Service
+A.BACnet.GROUP__fbl_C00344E_28_9BDF.PCDInRef EQU R 5341 ;PCD Input Reference
+A.BACnet.ERZ0017.Raum.Temp.MW10.OutOfService EQU F 5350[2] ;Out Of Service
+A.BACnet.ERZ0017.Raum.Temp.MW10.PCDInRef EQU R 3015 ;PCD Input Reference
+A.BACnet.ERZ0017.Raum.Feuchte.MW10.OutOfService EQU F 5364[2] ;Out Of Service
+A.BACnet.ERZ0017.Raum.Feuchte.MW10.PCDInRef EQU R 3018 ;PCD Input Reference
+A.BACnet.EZR0017.Raum.Ventil2.Signal.OutOfService EQU F 12266 ;Out Of Service
+A.BACnet.EZR0017.Raum.Ventil2.Signal.PCDInRef EQU R 4775 ;PCD Input Reference
+A.BACnet.EZR0017.Raum.Ventil2.AlMInt.OutOfService EQU F 12264 ;Out Of Service
+A.BACnet.EZR0017.Raum.Ventil2.AlMInt.PCDInRef EQU F 12265 ;PCD Input Reference
+A.BACnet.EZR0017.Raum.Ventil2.AlHigh.OutOfService EQU F 12260 ;Out Of Service
+A.BACnet.EZR0017.Raum.Ventil2.AlHigh.PCDInRef EQU F 12261 ;PCD Input Reference
+A.BACnet.EZR0017.Raum.Ventil2.AlLow.OutOfService EQU F 12262 ;Out Of Service
+A.BACnet.EZR0017.Raum.Ventil2.AlLow.PCDInRef EQU F 12263 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C00344E_2C_9C02.Alarm.OutOfService EQU F 8619 ;Out Of Service
+A.BACnet.GROUP__fbl_C00344E_2C_9C02.Alarm.PCDInRef EQU F 8620 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C00344E_2C_9C03.Alarm.OutOfService EQU F 8621 ;Out Of Service
+A.BACnet.GROUP__fbl_C00344E_2C_9C03.Alarm.PCDInRef EQU F 8622 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C00344E_40_9DD8.OutOfService EQU F 5918[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C00344E_40_9DD8.PCDInRef EQU F 5919 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C00344E_40_9DD7.OutOfService EQU F 5917 ;Out Of Service
+A.BACnet.GROUP__fbl_C00344E_40_9DD7.PCDInRef EQU R 5007 ;PCD Input Reference
+A.BACnet.ERZ0011.Raum.Temp.MW10.OutOfService EQU F 5920[2] ;Out Of Service
+A.BACnet.ERZ0011.Raum.Temp.MW10.PCDInRef EQU R 3046 ;PCD Input Reference
+A.BACnet.ERZ0011.Raum.Feuchte.MW10.OutOfService EQU F 5934[2] ;Out Of Service
+A.BACnet.ERZ0011.Raum.Feuchte.MW10.PCDInRef EQU R 3049 ;PCD Input Reference
+A.BACnet.EZR0011.Raum.Ventil2.Signal.OutOfService EQU F 12259 ;Out Of Service
+A.BACnet.EZR0011.Raum.Ventil2.Signal.PCDInRef EQU R 4774 ;PCD Input Reference
+A.BACnet.EZR0011.Raum.Ventil2.AlMInt.OutOfService EQU F 12257 ;Out Of Service
+A.BACnet.EZR0011.Raum.Ventil2.AlMInt.PCDInRef EQU F 12258 ;PCD Input Reference
+A.BACnet.EZR0011.Raum.Ventil2.AlHigh.OutOfService EQU F 12253 ;Out Of Service
+A.BACnet.EZR0011.Raum.Ventil2.AlHigh.PCDInRef EQU F 12254 ;PCD Input Reference
+A.BACnet.EZR0011.Raum.Ventil2.AlLow.OutOfService EQU F 12255 ;Out Of Service
+A.BACnet.EZR0011.Raum.Ventil2.AlLow.PCDInRef EQU F 12256 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_0B_90BE.OutOfService EQU F 3981[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_0B_90BE.PCDInRef EQU R 2602 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_0B_90BC.OutOfService EQU F 3978[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_0B_90BC.PCDInRef EQU R 2599 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_0B_90BA.OutOfService EQU F 3975[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_0B_90BA.PCDInRef EQU R 2596 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_0B_90B7.OutOfService EQU F 3967[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_0B_90B7.PCDInRef EQU R 2593 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_0E_927A.Alarm.OutOfService EQU F 12422 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_0E_927A.Alarm.PCDInRef EQU F 12423 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_0E_9277.Alarm.OutOfService EQU F 12420 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_0E_9277.Alarm.PCDInRef EQU F 12421 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_11_A8EF.Alarm.OutOfService EQU F 12426 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_11_A8EF.Alarm.PCDInRef EQU F 12427 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_11_A8EE.Alarm.OutOfService EQU F 12424 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_11_A8EE.Alarm.PCDInRef EQU F 12425 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_12_A8F4.Alarm.OutOfService EQU F 12430 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_12_A8F4.Alarm.PCDInRef EQU F 12431 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_12_A8F3.Alarm.OutOfService EQU F 12428 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_12_A8F3.Alarm.PCDInRef EQU F 12429 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_16_AB11.OutOfService EQU F 10058[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_16_AB11.PCDInRef EQU R 3746 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_16_AB0F.OutOfService EQU F 10055[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_16_AB0F.PCDInRef EQU R 3743 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_16_AB0D.OutOfService EQU F 10052[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_16_AB0D.PCDInRef EQU R 3740 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_16_AB0A.OutOfService EQU F 10044[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_16_AB0A.PCDInRef EQU R 3737 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_19_AAFE.Alarm.OutOfService EQU F 12434 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_19_AAFE.Alarm.PCDInRef EQU F 12435 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_19_AAFD.Alarm.OutOfService EQU F 12432 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_19_AAFD.Alarm.PCDInRef EQU F 12433 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_1B_A8EA.Alarm.OutOfService EQU F 12438 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_1B_A8EA.Alarm.PCDInRef EQU F 12439 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_1B_A8E9.Alarm.OutOfService EQU F 12436 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_1B_A8E9.Alarm.PCDInRef EQU F 12437 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_1D_AB9F.OutOfService EQU F 10238[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_1D_AB9F.PCDInRef EQU R 3829 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_1D_AB9D.OutOfService EQU F 10235[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_1D_AB9D.PCDInRef EQU R 3826 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_1F_AB80.Alarm.OutOfService EQU F 12442 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_1F_AB80.Alarm.PCDInRef EQU F 12443 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_1F_AB7F.Alarm.OutOfService EQU F 12440 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_1F_AB7F.Alarm.PCDInRef EQU F 12441 ;PCD Input Reference
+A.BACnet.EZR0258.Raum.Temp.MW10.OutOfService EQU F 4200[2] ;Out Of Service
+A.BACnet.EZR0258.Raum.Temp.MW10.PCDInRef EQU R 2639 ;PCD Input Reference
+A.BACnet.EZR0258.Raum.Temp.MW20.OutOfService EQU F 4198[2] ;Out Of Service
+A.BACnet.EZR0258.Raum.Temp.MW20.PCDInRef EQU R 2636 ;PCD Input Reference
+A.BACnet.EZR0258.Raum.Feuchte.MW10.OutOfService EQU F 4285[2] ;Out Of Service
+A.BACnet.EZR0258.Raum.Feuchte.MW10.PCDInRef EQU R 2666 ;PCD Input Reference
+A.BACnet.EZR0258.Raum.VOC.MW10.OutOfService EQU F 4293[2] ;Out Of Service
+A.BACnet.EZR0258.Raum.VOC.MW10.PCDInRef EQU R 2669 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_34_92BA.OutOfService EQU F 4205[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_34_92BA.PCDInRef EQU F 4206 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_34_92B9.OutOfService EQU F 4204 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_34_92B9.PCDInRef EQU R 5491 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_37_92CF.Alarm.OutOfService EQU F 8325 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_37_92CF.Alarm.PCDInRef EQU F 8326 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_37_92CD.OutOfService EQU F 4217 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_37_92CD.PCDInRef EQU R 5432 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_37_92CB.OutOfService EQU F 4215 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_37_92CB.PCDInRef EQU R 5430 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_37_92CA.Alarm.OutOfService EQU F 8323 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_37_92CA.Alarm.PCDInRef EQU F 8324 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_37_92C8.OutOfService EQU F 4209 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_37_92C8.PCDInRef EQU R 5428 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_37_92C6.OutOfService EQU F 4207 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_37_92C6.PCDInRef EQU R 5426 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_39_92F2.OutOfService EQU F 4249 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_39_92F2.PCDInRef EQU R 5412 ;PCD Input Reference
+A.BACnet.EZR0258.Raum.Ventil1.Signal.OutOfService EQU F 12273 ;Out Of Service
+A.BACnet.EZR0258.Raum.Ventil1.Signal.PCDInRef EQU R 4778 ;PCD Input Reference
+A.BACnet.EZR0258.Raum.Ventil1.AlMInt.OutOfService EQU F 12271 ;Out Of Service
+A.BACnet.EZR0258.Raum.Ventil1.AlMInt.PCDInRef EQU F 12272 ;PCD Input Reference
+A.BACnet.EZR0258.Raum.Ventil1.AlHigh.OutOfService EQU F 12267 ;Out Of Service
+A.BACnet.EZR0258.Raum.Ventil1.AlHigh.PCDInRef EQU F 12268 ;PCD Input Reference
+A.BACnet.EZR0258.Raum.Ventil1.AlLow.OutOfService EQU F 12269 ;Out Of Service
+A.BACnet.EZR0258.Raum.Ventil1.AlLow.PCDInRef EQU F 12270 ;PCD Input Reference
+A.BACnet.EZR0258.Raum.Ventil2.Signal.OutOfService EQU F 12280 ;Out Of Service
+A.BACnet.EZR0258.Raum.Ventil2.Signal.PCDInRef EQU R 4780 ;PCD Input Reference
+A.BACnet.EZR0258.Raum.Ventil2.AlMInt.OutOfService EQU F 12278 ;Out Of Service
+A.BACnet.EZR0258.Raum.Ventil2.AlMInt.PCDInRef EQU F 12279 ;PCD Input Reference
+A.BACnet.EZR0258.Raum.Ventil2.AlHigh.OutOfService EQU F 12274 ;Out Of Service
+A.BACnet.EZR0258.Raum.Ventil2.AlHigh.PCDInRef EQU F 12275 ;PCD Input Reference
+A.BACnet.EZR0258.Raum.Ventil2.AlLow.OutOfService EQU F 12276 ;Out Of Service
+A.BACnet.EZR0258.Raum.Ventil2.AlLow.PCDInRef EQU F 12277 ;PCD Input Reference
+A.BACnet.EZR0001.Raum.Temp.MW10.OutOfService EQU F 11340[2] ;Out Of Service
+A.BACnet.EZR0001.Raum.Temp.MW10.PCDInRef EQU R 4454 ;PCD Input Reference
+A.BACnet.EZR0001.Raum.Ventil2.Signal.OutOfService EQU F 12252 ;Out Of Service
+A.BACnet.EZR0001.Raum.Ventil2.Signal.PCDInRef EQU R 4758 ;PCD Input Reference
+A.BACnet.EZR0001.Raum.Ventil2.AlMInt.OutOfService EQU F 12250 ;Out Of Service
+A.BACnet.EZR0001.Raum.Ventil2.AlMInt.PCDInRef EQU F 12251 ;PCD Input Reference
+A.BACnet.EZR0001.Raum.Ventil2.AlHigh.OutOfService EQU F 12246 ;Out Of Service
+A.BACnet.EZR0001.Raum.Ventil2.AlHigh.PCDInRef EQU F 12247 ;PCD Input Reference
+A.BACnet.EZR0001.Raum.Ventil2.AlLow.OutOfService EQU F 12248 ;Out Of Service
+A.BACnet.EZR0001.Raum.Ventil2.AlLow.PCDInRef EQU F 12249 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_5B_9E9E.OutOfService EQU F 6143[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_5B_9E9E.PCDInRef EQU F 6144 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_5B_9E9D.OutOfService EQU F 6142 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_5B_9E9D.PCDInRef EQU R 5916 ;PCD Input Reference
+A.BACnet.EZR1003.Raum.Temp.MW10.OutOfService EQU F 6145[2] ;Out Of Service
+A.BACnet.EZR1003.Raum.Temp.MW10.PCDInRef EQU R 3068 ;PCD Input Reference
+A.BACnet.EZR1003.Raum.Feuchte.MW10.OutOfService EQU F 6159[2] ;Out Of Service
+A.BACnet.EZR1003.Raum.Feuchte.MW10.PCDInRef EQU R 3071 ;PCD Input Reference
+A.BACnet.EZR1003.Raum.Ventil2.Signal.OutOfService EQU F 12301 ;Out Of Service
+A.BACnet.EZR1003.Raum.Ventil2.Signal.PCDInRef EQU R 4802 ;PCD Input Reference
+A.BACnet.EZR1003.Raum.Ventil2.AlMInt.OutOfService EQU F 12299 ;Out Of Service
+A.BACnet.EZR1003.Raum.Ventil2.AlMInt.PCDInRef EQU F 12300 ;PCD Input Reference
+A.BACnet.EZR1003.Raum.Ventil2.AlHigh.OutOfService EQU F 12295 ;Out Of Service
+A.BACnet.EZR1003.Raum.Ventil2.AlHigh.PCDInRef EQU F 12296 ;PCD Input Reference
+A.BACnet.EZR1003.Raum.Ventil2.AlLow.OutOfService EQU F 12297 ;Out Of Service
+A.BACnet.EZR1003.Raum.Ventil2.AlLow.PCDInRef EQU F 12298 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_60_9EC0.Alarm.OutOfService EQU F 8327 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_60_9EC0.Alarm.PCDInRef EQU F 8328 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_60_9EC1.Alarm.OutOfService EQU F 8329 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_60_9EC1.Alarm.PCDInRef EQU F 8330 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_72_9F61.OutOfService EQU F 6386[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_72_9F61.PCDInRef EQU F 6387 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_72_9F60.OutOfService EQU F 6385 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_72_9F60.PCDInRef EQU R 6059 ;PCD Input Reference
+A.BACnet.ERZ1004.Raum.Temp.MW10.OutOfService EQU F 6388[2] ;Out Of Service
+A.BACnet.ERZ1004.Raum.Temp.MW10.PCDInRef EQU R 3099 ;PCD Input Reference
+A.BACnet.ERZ1004.Raum.Feuchte.MW10.OutOfService EQU F 6402[2] ;Out Of Service
+A.BACnet.ERZ1004.Raum.Feuchte.MW10.PCDInRef EQU R 3102 ;PCD Input Reference
+A.BACnet.EZR1004.Raum.Ventil2.Signal.OutOfService EQU F 12308 ;Out Of Service
+A.BACnet.EZR1004.Raum.Ventil2.Signal.PCDInRef EQU R 4803 ;PCD Input Reference
+A.BACnet.EZR1004.Raum.Ventil2.AlMInt.OutOfService EQU F 12306 ;Out Of Service
+A.BACnet.EZR1004.Raum.Ventil2.AlMInt.PCDInRef EQU F 12307 ;PCD Input Reference
+A.BACnet.EZR1004.Raum.Ventil2.AlHigh.OutOfService EQU F 12302 ;Out Of Service
+A.BACnet.EZR1004.Raum.Ventil2.AlHigh.PCDInRef EQU F 12303 ;PCD Input Reference
+A.BACnet.EZR1004.Raum.Ventil2.AlLow.OutOfService EQU F 12304 ;Out Of Service
+A.BACnet.EZR1004.Raum.Ventil2.AlLow.PCDInRef EQU F 12305 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_76_9F83.Alarm.OutOfService EQU F 8331 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_76_9F83.Alarm.PCDInRef EQU F 8332 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_76_9F84.Alarm.OutOfService EQU F 8605 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_76_9F84.Alarm.PCDInRef EQU F 8606 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_88_A0EA.OutOfService EQU F 6629[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_88_A0EA.PCDInRef EQU F 6630 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_88_A0E9.OutOfService EQU F 6628 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_88_A0E9.PCDInRef EQU R 6644 ;PCD Input Reference
+A.BACnet.ERZ1008.Raum.Temp.MW10.OutOfService EQU F 6631[2] ;Out Of Service
+A.BACnet.ERZ1008.Raum.Temp.MW10.PCDInRef EQU R 3134 ;PCD Input Reference
+A.BACnet.ERZ1008.Raum.Feuchte.MW10.OutOfService EQU F 6645[2] ;Out Of Service
+A.BACnet.ERZ1008.Raum.Feuchte.MW10.PCDInRef EQU R 3137 ;PCD Input Reference
+A.BACnet.EZR1008.Raum.Ventil2.Signal.OutOfService EQU F 12343 ;Out Of Service
+A.BACnet.EZR1008.Raum.Ventil2.Signal.PCDInRef EQU R 4808 ;PCD Input Reference
+A.BACnet.EZR1008.Raum.Ventil2.AlMInt.OutOfService EQU F 12341 ;Out Of Service
+A.BACnet.EZR1008.Raum.Ventil2.AlMInt.PCDInRef EQU F 12342 ;PCD Input Reference
+A.BACnet.EZR1008.Raum.Ventil2.AlHigh.OutOfService EQU F 12337 ;Out Of Service
+A.BACnet.EZR1008.Raum.Ventil2.AlHigh.PCDInRef EQU F 12338 ;PCD Input Reference
+A.BACnet.EZR1008.Raum.Ventil2.AlLow.OutOfService EQU F 12339 ;Out Of Service
+A.BACnet.EZR1008.Raum.Ventil2.AlLow.PCDInRef EQU F 12340 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_8C_A10C.Alarm.OutOfService EQU F 8607 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_8C_A10C.Alarm.PCDInRef EQU F 8608 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_8C_A10D.Alarm.OutOfService EQU F 8609 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_8C_A10D.Alarm.PCDInRef EQU F 8610 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_9E_A1AD.OutOfService EQU F 6870[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_9E_A1AD.PCDInRef EQU F 6871 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_9E_A1AC.OutOfService EQU F 6869 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_9E_A1AC.PCDInRef EQU R 6821 ;PCD Input Reference
+A.BACnet.ERZ1009.Raum.Temp.MW10.OutOfService EQU F 6872[2] ;Out Of Service
+A.BACnet.ERZ1009.Raum.Temp.MW10.PCDInRef EQU R 3165 ;PCD Input Reference
+A.BACnet.ERZ1009.Raum.Feuchte.MW10.OutOfService EQU F 6886[2] ;Out Of Service
+A.BACnet.ERZ1009.Raum.Feuchte.MW10.PCDInRef EQU R 3168 ;PCD Input Reference
+A.BACnet.EZR1009.Raum.Ventil2.Signal.OutOfService EQU F 12350 ;Out Of Service
+A.BACnet.EZR1009.Raum.Ventil2.Signal.PCDInRef EQU R 4809 ;PCD Input Reference
+A.BACnet.EZR1009.Raum.Ventil2.AlMInt.OutOfService EQU F 12348 ;Out Of Service
+A.BACnet.EZR1009.Raum.Ventil2.AlMInt.PCDInRef EQU F 12349 ;PCD Input Reference
+A.BACnet.EZR1009.Raum.Ventil2.AlHigh.OutOfService EQU F 12344 ;Out Of Service
+A.BACnet.EZR1009.Raum.Ventil2.AlHigh.PCDInRef EQU F 12345 ;PCD Input Reference
+A.BACnet.EZR1009.Raum.Ventil2.AlLow.OutOfService EQU F 12346 ;Out Of Service
+A.BACnet.EZR1009.Raum.Ventil2.AlLow.PCDInRef EQU F 12347 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_A2_A1CF.Alarm.OutOfService EQU F 8611 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_A2_A1CF.Alarm.PCDInRef EQU F 8612 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_A2_A1D0.Alarm.OutOfService EQU F 8613 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_A2_A1D0.Alarm.PCDInRef EQU F 8614 ;PCD Input Reference
+A.BACnet.EZR1010.Raum.Temp.MW10.OutOfService EQU F 11190[2] ;Out Of Service
+A.BACnet.EZR1010.Raum.Temp.MW10.PCDInRef EQU R 4331 ;PCD Input Reference
+A.BACnet.EZR1010.Raum.Ventil2.Signal.OutOfService EQU F 12357 ;Out Of Service
+A.BACnet.EZR1010.Raum.Ventil2.Signal.PCDInRef EQU R 4810 ;PCD Input Reference
+A.BACnet.EZR1010.Raum.Ventil2.AlMInt.OutOfService EQU F 12355 ;Out Of Service
+A.BACnet.EZR1010.Raum.Ventil2.AlMInt.PCDInRef EQU F 12356 ;PCD Input Reference
+A.BACnet.EZR1010.Raum.Ventil2.AlHigh.OutOfService EQU F 12351 ;Out Of Service
+A.BACnet.EZR1010.Raum.Ventil2.AlHigh.PCDInRef EQU F 12352 ;PCD Input Reference
+A.BACnet.EZR1010.Raum.Ventil2.AlLow.OutOfService EQU F 12353 ;Out Of Service
+A.BACnet.EZR1010.Raum.Ventil2.AlLow.PCDInRef EQU F 12354 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_C7_A4AC.OutOfService EQU F 7934[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_C7_A4AC.PCDInRef EQU F 7935 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_C7_A4AB.OutOfService EQU F 7933 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_C7_A4AB.PCDInRef EQU R 5712 ;PCD Input Reference
+A.BACnet.EZR1002.Raum.Temp.MW10.OutOfService EQU F 7938[2] ;Out Of Service
+A.BACnet.EZR1002.Raum.Temp.MW10.PCDInRef EQU R 3388 ;PCD Input Reference
+A.BACnet.EZR1002.Raum.Temp.MW20.OutOfService EQU F 7936[2] ;Out Of Service
+A.BACnet.EZR1002.Raum.Temp.MW20.PCDInRef EQU R 3385 ;PCD Input Reference
+A.BACnet.EZR1002.Raum.Feuchte.MW10.OutOfService EQU F 7958[2] ;Out Of Service
+A.BACnet.EZR1002.Raum.Feuchte.MW10.PCDInRef EQU R 3391 ;PCD Input Reference
+A.BACnet.EZR1002.Raum.VOC.MW10.OutOfService EQU F 7966[2] ;Out Of Service
+A.BACnet.EZR1002.Raum.VOC.MW10.PCDInRef EQU R 3394 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_CB_A504.OutOfService EQU F 8036 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_CB_A504.PCDInRef EQU R 5633 ;PCD Input Reference
+A.BACnet.EZR1002.Raum.Ventil1.Signal.OutOfService EQU F 12287 ;Out Of Service
+A.BACnet.EZR1002.Raum.Ventil1.Signal.PCDInRef EQU R 4781 ;PCD Input Reference
+A.BACnet.EZR1002.Raum.Ventil1.AlMInt.OutOfService EQU F 12285 ;Out Of Service
+A.BACnet.EZR1002.Raum.Ventil1.AlMInt.PCDInRef EQU F 12286 ;PCD Input Reference
+A.BACnet.EZR1002.Raum.Ventil1.AlHigh.OutOfService EQU F 12281 ;Out Of Service
+A.BACnet.EZR1002.Raum.Ventil1.AlHigh.PCDInRef EQU F 12282 ;PCD Input Reference
+A.BACnet.EZR1002.Raum.Ventil1.AlLow.OutOfService EQU F 12283 ;Out Of Service
+A.BACnet.EZR1002.Raum.Ventil1.AlLow.PCDInRef EQU F 12284 ;PCD Input Reference
+A.BACnet.EZR1002.Raum.Ventil2.Signal.OutOfService EQU F 12294 ;Out Of Service
+A.BACnet.EZR1002.Raum.Ventil2.Signal.PCDInRef EQU R 4787 ;PCD Input Reference
+A.BACnet.EZR1002.Raum.Ventil2.AlMInt.OutOfService EQU F 12292 ;Out Of Service
+A.BACnet.EZR1002.Raum.Ventil2.AlMInt.PCDInRef EQU F 12293 ;PCD Input Reference
+A.BACnet.EZR1002.Raum.Ventil2.AlHigh.OutOfService EQU F 12288 ;Out Of Service
+A.BACnet.EZR1002.Raum.Ventil2.AlHigh.PCDInRef EQU F 12289 ;PCD Input Reference
+A.BACnet.EZR1002.Raum.Ventil2.AlLow.OutOfService EQU F 12290 ;Out Of Service
+A.BACnet.EZR1002.Raum.Ventil2.AlLow.PCDInRef EQU F 12291 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_DF_A5AF.OutOfService EQU F 8255[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_DF_A5AF.PCDInRef EQU F 8256 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_DF_A5AE.OutOfService EQU F 8254 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_DF_A5AE.PCDInRef EQU R 6220 ;PCD Input Reference
+A.BACnet.EZR1006.Raum.Temp.MW10.OutOfService EQU F 8259[2] ;Out Of Service
+A.BACnet.EZR1006.Raum.Temp.MW10.PCDInRef EQU R 3472 ;PCD Input Reference
+A.BACnet.EZR1006.Raum.Temp.MW20.OutOfService EQU F 8257[2] ;Out Of Service
+A.BACnet.EZR1006.Raum.Temp.MW20.PCDInRef EQU R 3469 ;PCD Input Reference
+A.BACnet.EZR1006.Raum.Feuchte.MW10.OutOfService EQU F 8279[2] ;Out Of Service
+A.BACnet.EZR1006.Raum.Feuchte.MW10.PCDInRef EQU R 3475 ;PCD Input Reference
+A.BACnet.EZR1006.Raum.VOC.MW10.OutOfService EQU F 8287[2] ;Out Of Service
+A.BACnet.EZR1006.Raum.VOC.MW10.PCDInRef EQU R 3478 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_E3_A607.OutOfService EQU F 8357 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_E3_A607.PCDInRef EQU R 6141 ;PCD Input Reference
+A.BACnet.EZR1006.Raum.Ventil1.Signal.OutOfService EQU F 12315 ;Out Of Service
+A.BACnet.EZR1006.Raum.Ventil1.Signal.PCDInRef EQU R 4804 ;PCD Input Reference
+A.BACnet.EZR1006.Raum.Ventil1.AlMInt.OutOfService EQU F 12313 ;Out Of Service
+A.BACnet.EZR1006.Raum.Ventil1.AlMInt.PCDInRef EQU F 12314 ;PCD Input Reference
+A.BACnet.EZR1006.Raum.Ventil1.AlHigh.OutOfService EQU F 12309 ;Out Of Service
+A.BACnet.EZR1006.Raum.Ventil1.AlHigh.PCDInRef EQU F 12310 ;PCD Input Reference
+A.BACnet.EZR1006.Raum.Ventil1.AlLow.OutOfService EQU F 12311 ;Out Of Service
+A.BACnet.EZR1006.Raum.Ventil1.AlLow.PCDInRef EQU F 12312 ;PCD Input Reference
+A.BACnet.EZR1006.Raum.Ventil2.Signal.OutOfService EQU F 12322 ;Out Of Service
+A.BACnet.EZR1006.Raum.Ventil2.Signal.PCDInRef EQU R 4805 ;PCD Input Reference
+A.BACnet.EZR1006.Raum.Ventil2.AlMInt.OutOfService EQU F 12320 ;Out Of Service
+A.BACnet.EZR1006.Raum.Ventil2.AlMInt.PCDInRef EQU F 12321 ;PCD Input Reference
+A.BACnet.EZR1006.Raum.Ventil2.AlHigh.OutOfService EQU F 12316 ;Out Of Service
+A.BACnet.EZR1006.Raum.Ventil2.AlHigh.PCDInRef EQU F 12317 ;PCD Input Reference
+A.BACnet.EZR1006.Raum.Ventil2.AlLow.OutOfService EQU F 12318 ;Out Of Service
+A.BACnet.EZR1006.Raum.Ventil2.AlLow.PCDInRef EQU F 12319 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_F7_A6A0.OutOfService EQU F 8571[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_F7_A6A0.PCDInRef EQU F 8572 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_F7_A69F.OutOfService EQU F 8570 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_F7_A69F.PCDInRef EQU R 6441 ;PCD Input Reference
+A.BACnet.EZR1007.Raum.Temp.MW10.OutOfService EQU F 8575[2] ;Out Of Service
+A.BACnet.EZR1007.Raum.Temp.MW10.PCDInRef EQU R 3536 ;PCD Input Reference
+A.BACnet.EZR1007.Raum.Temp.MW20.OutOfService EQU F 8573[2] ;Out Of Service
+A.BACnet.EZR1007.Raum.Temp.MW20.PCDInRef EQU R 3533 ;PCD Input Reference
+A.BACnet.EZR1007.Raum.Feuchte.MW10.OutOfService EQU F 8595[2] ;Out Of Service
+A.BACnet.EZR1007.Raum.Feuchte.MW10.PCDInRef EQU R 3539 ;PCD Input Reference
+A.BACnet.EZR1007.Raum.VOC.MW10.OutOfService EQU F 8603[2] ;Out Of Service
+A.BACnet.EZR1007.Raum.VOC.MW10.PCDInRef EQU R 3542 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_FB_A6F8.OutOfService EQU F 8673 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_FB_A6F8.PCDInRef EQU R 6362 ;PCD Input Reference
+A.BACnet.EZR1007.Raum.Ventil1.Signal.OutOfService EQU F 12329 ;Out Of Service
+A.BACnet.EZR1007.Raum.Ventil1.Signal.PCDInRef EQU R 4806 ;PCD Input Reference
+A.BACnet.EZR1007.Raum.Ventil1.AlMInt.OutOfService EQU F 12327 ;Out Of Service
+A.BACnet.EZR1007.Raum.Ventil1.AlMInt.PCDInRef EQU F 12328 ;PCD Input Reference
+A.BACnet.EZR1007.Raum.Ventil1.AlHigh.OutOfService EQU F 12323 ;Out Of Service
+A.BACnet.EZR1007.Raum.Ventil1.AlHigh.PCDInRef EQU F 12324 ;PCD Input Reference
+A.BACnet.EZR1007.Raum.Ventil1.AlLow.OutOfService EQU F 12325 ;Out Of Service
+A.BACnet.EZR1007.Raum.Ventil1.AlLow.PCDInRef EQU F 12326 ;PCD Input Reference
+A.BACnet.EZR1007.Raum.Ventil2.Signal.OutOfService EQU F 12336 ;Out Of Service
+A.BACnet.EZR1007.Raum.Ventil2.Signal.PCDInRef EQU R 4807 ;PCD Input Reference
+A.BACnet.EZR1007.Raum.Ventil2.AlMInt.OutOfService EQU F 12334 ;Out Of Service
+A.BACnet.EZR1007.Raum.Ventil2.AlMInt.PCDInRef EQU F 12335 ;PCD Input Reference
+A.BACnet.EZR1007.Raum.Ventil2.AlHigh.OutOfService EQU F 12330 ;Out Of Service
+A.BACnet.EZR1007.Raum.Ventil2.AlHigh.PCDInRef EQU F 12331 ;PCD Input Reference
+A.BACnet.EZR1007.Raum.Ventil2.AlLow.OutOfService EQU F 12332 ;Out Of Service
+A.BACnet.EZR1007.Raum.Ventil2.AlLow.PCDInRef EQU F 12333 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_10D_A791.OutOfService EQU F 8887[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_10D_A791.PCDInRef EQU F 8888 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_10D_A790.OutOfService EQU F 8886 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_10D_A790.PCDInRef EQU R 7284 ;PCD Input Reference
+A.BACnet.EZR1012.Raum.Temp.MW10.OutOfService EQU F 8891[2] ;Out Of Service
+A.BACnet.EZR1012.Raum.Temp.MW10.PCDInRef EQU R 3600 ;PCD Input Reference
+A.BACnet.EZR1012.Raum.Temp.MW20.OutOfService EQU F 8889[2] ;Out Of Service
+A.BACnet.EZR1012.Raum.Temp.MW20.PCDInRef EQU R 3597 ;PCD Input Reference
+A.BACnet.EZR1012.Raum.Feuchte.MW10.OutOfService EQU F 8911[2] ;Out Of Service
+A.BACnet.EZR1012.Raum.Feuchte.MW10.PCDInRef EQU R 3603 ;PCD Input Reference
+A.BACnet.EZR1012.Raum.VOC.MW10.OutOfService EQU F 8919[2] ;Out Of Service
+A.BACnet.EZR1012.Raum.VOC.MW10.PCDInRef EQU R 3606 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_111_A7E9.OutOfService EQU F 8989 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_111_A7E9.PCDInRef EQU R 7205 ;PCD Input Reference
+A.BACnet.EZR1012.Raum.Ventil1.Signal.OutOfService EQU F 12378 ;Out Of Service
+A.BACnet.EZR1012.Raum.Ventil1.Signal.PCDInRef EQU R 4813 ;PCD Input Reference
+A.BACnet.EZR1012.Raum.Ventil1.AlMInt.OutOfService EQU F 12376 ;Out Of Service
+A.BACnet.EZR1012.Raum.Ventil1.AlMInt.PCDInRef EQU F 12377 ;PCD Input Reference
+A.BACnet.EZR1012.Raum.Ventil1.AlHigh.OutOfService EQU F 12372 ;Out Of Service
+A.BACnet.EZR1012.Raum.Ventil1.AlHigh.PCDInRef EQU F 12373 ;PCD Input Reference
+A.BACnet.EZR1012.Raum.Ventil1.AlLow.OutOfService EQU F 12374 ;Out Of Service
+A.BACnet.EZR1012.Raum.Ventil1.AlLow.PCDInRef EQU F 12375 ;PCD Input Reference
+A.BACnet.EZR1012.Raum.Ventil2.Signal.OutOfService EQU F 12385 ;Out Of Service
+A.BACnet.EZR1012.Raum.Ventil2.Signal.PCDInRef EQU R 4814 ;PCD Input Reference
+A.BACnet.EZR1012.Raum.Ventil2.AlMInt.OutOfService EQU F 12383 ;Out Of Service
+A.BACnet.EZR1012.Raum.Ventil2.AlMInt.PCDInRef EQU F 12384 ;PCD Input Reference
+A.BACnet.EZR1012.Raum.Ventil2.AlHigh.OutOfService EQU F 12379 ;Out Of Service
+A.BACnet.EZR1012.Raum.Ventil2.AlHigh.PCDInRef EQU F 12380 ;PCD Input Reference
+A.BACnet.EZR1012.Raum.Ventil2.AlLow.OutOfService EQU F 12381 ;Out Of Service
+A.BACnet.EZR1012.Raum.Ventil2.AlLow.PCDInRef EQU F 12382 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_123_A882.OutOfService EQU F 9203[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_123_A882.PCDInRef EQU F 9204 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_123_A881.OutOfService EQU F 9202 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_123_A881.PCDInRef EQU R 7063 ;PCD Input Reference
+A.BACnet.EZR1011.Raum.Temp.MW10.OutOfService EQU F 9207[2] ;Out Of Service
+A.BACnet.EZR1011.Raum.Temp.MW10.PCDInRef EQU R 3664 ;PCD Input Reference
+A.BACnet.EZR1011.Raum.Temp.MW20.OutOfService EQU F 9205[2] ;Out Of Service
+A.BACnet.EZR1011.Raum.Temp.MW20.PCDInRef EQU R 3661 ;PCD Input Reference
+A.BACnet.EZR1011.Raum.Feuchte.MW10.OutOfService EQU F 9227[2] ;Out Of Service
+A.BACnet.EZR1011.Raum.Feuchte.MW10.PCDInRef EQU R 3667 ;PCD Input Reference
+A.BACnet.EZR1011.Raum.VOC.MW10.OutOfService EQU F 9235[2] ;Out Of Service
+A.BACnet.EZR1011.Raum.VOC.MW10.PCDInRef EQU R 3670 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C000380_12A_A8DA.OutOfService EQU F 9305 ;Out Of Service
+A.BACnet.GROUP__fbl_C000380_12A_A8DA.PCDInRef EQU R 6960 ;PCD Input Reference
+A.BACnet.EZR1011.Raum.Ventil1.Signal.OutOfService EQU F 12364 ;Out Of Service
+A.BACnet.EZR1011.Raum.Ventil1.Signal.PCDInRef EQU R 4811 ;PCD Input Reference
+A.BACnet.EZR1011.Raum.Ventil1.AlMInt.OutOfService EQU F 12362 ;Out Of Service
+A.BACnet.EZR1011.Raum.Ventil1.AlMInt.PCDInRef EQU F 12363 ;PCD Input Reference
+A.BACnet.EZR1011.Raum.Ventil1.AlHigh.OutOfService EQU F 12358 ;Out Of Service
+A.BACnet.EZR1011.Raum.Ventil1.AlHigh.PCDInRef EQU F 12359 ;PCD Input Reference
+A.BACnet.EZR1011.Raum.Ventil1.AlLow.OutOfService EQU F 12360 ;Out Of Service
+A.BACnet.EZR1011.Raum.Ventil1.AlLow.PCDInRef EQU F 12361 ;PCD Input Reference
+A.BACnet.EZR1011.Raum.Ventil2.Signal.OutOfService EQU F 12371 ;Out Of Service
+A.BACnet.EZR1011.Raum.Ventil2.Signal.PCDInRef EQU R 4812 ;PCD Input Reference
+A.BACnet.EZR1011.Raum.Ventil2.AlMInt.OutOfService EQU F 12369 ;Out Of Service
+A.BACnet.EZR1011.Raum.Ventil2.AlMInt.PCDInRef EQU F 12370 ;PCD Input Reference
+A.BACnet.EZR1011.Raum.Ventil2.AlHigh.OutOfService EQU F 12365 ;Out Of Service
+A.BACnet.EZR1011.Raum.Ventil2.AlHigh.PCDInRef EQU F 12366 ;PCD Input Reference
+A.BACnet.EZR1011.Raum.Ventil2.AlLow.OutOfService EQU F 12367 ;Out Of Service
+A.BACnet.EZR1011.Raum.Ventil2.AlLow.PCDInRef EQU F 12368 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C002547_02_99A5.OutOfService EQU F 5147[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C002547_02_99A5.PCDInRef EQU R 2972 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C002547_02_99A3.OutOfService EQU F 5144[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C002547_02_99A3.PCDInRef EQU R 2969 ;PCD Input Reference
+A.BACnet.HZG004.Raum.Temp1.OutOfService EQU F 5141[2] ;Out Of Service
+A.BACnet.HZG004.Raum.Temp1.PCDInRef EQU R 2966 ;PCD Input Reference
+A.BACnet.HZG004.Raum.Temp2.OutOfService EQU F 5133[2] ;Out Of Service
+A.BACnet.HZG004.Raum.Temp2.PCDInRef EQU R 2963 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C002547_0C_9AE7.Alarm.OutOfService EQU F 12536 ;Out Of Service
+A.BACnet.GROUP__fbl_C002547_0C_9AE7.Alarm.PCDInRef EQU F 12537 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C002547_0C_9AE4.Alarm.OutOfService EQU F 12534 ;Out Of Service
+A.BACnet.GROUP__fbl_C002547_0C_9AE4.Alarm.PCDInRef EQU F 12535 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C002547_20_9805.OutOfService EQU F 4846[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C002547_20_9805.PCDInRef EQU F 4847 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C002547_20_9804.OutOfService EQU F 4845 ;Out Of Service
+A.BACnet.GROUP__fbl_C002547_20_9804.PCDInRef EQU R 7652 ;PCD Input Reference
+A.BACnet.EZRA245.Raum.Temp.MW10.OutOfService EQU F 4850[2] ;Out Of Service
+A.BACnet.EZRA245.Raum.Temp.MW10.PCDInRef EQU R 2887 ;PCD Input Reference
+A.BACnet.EZRA245.Raum.Temp.MW20.OutOfService EQU F 4848[2] ;Out Of Service
+A.BACnet.EZRA245.Raum.Temp.MW20.PCDInRef EQU R 2884 ;PCD Input Reference
+A.BACnet.EZRA245.Raum.Feuchte.MW10.OutOfService EQU F 4870[2] ;Out Of Service
+A.BACnet.EZRA245.Raum.Feuchte.MW10.PCDInRef EQU R 2890 ;PCD Input Reference
+A.BACnet.EZRA245.Raum.VOC.MW10.OutOfService EQU F 4878[2] ;Out Of Service
+A.BACnet.EZRA245.Raum.VOC.MW10.PCDInRef EQU R 2893 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C002547_24_985D.OutOfService EQU F 4948 ;Out Of Service
+A.BACnet.GROUP__fbl_C002547_24_985D.PCDInRef EQU R 7573 ;PCD Input Reference
+A.BACnet.EZRA245.Raum.Ventil1.Signal.OutOfService EQU F 12392 ;Out Of Service
+A.BACnet.EZRA245.Raum.Ventil1.Signal.PCDInRef EQU R 4815 ;PCD Input Reference
+A.BACnet.EZRA245.Raum.Ventil1.AlMInt.OutOfService EQU F 12390 ;Out Of Service
+A.BACnet.EZRA245.Raum.Ventil1.AlMInt.PCDInRef EQU F 12391 ;PCD Input Reference
+A.BACnet.EZRA245.Raum.Ventil1.AlHigh.OutOfService EQU F 12386 ;Out Of Service
+A.BACnet.EZRA245.Raum.Ventil1.AlHigh.PCDInRef EQU F 12387 ;PCD Input Reference
+A.BACnet.EZRA245.Raum.Ventil1.AlLow.OutOfService EQU F 12388 ;Out Of Service
+A.BACnet.EZRA245.Raum.Ventil1.AlLow.PCDInRef EQU F 12389 ;PCD Input Reference
+A.BACnet.EZRA245.Raum.Ventil2.Signal.OutOfService EQU F 12399 ;Out Of Service
+A.BACnet.EZRA245.Raum.Ventil2.Signal.PCDInRef EQU R 4816 ;PCD Input Reference
+A.BACnet.EZRA245.Raum.Ventil2.AlMInt.OutOfService EQU F 12397 ;Out Of Service
+A.BACnet.EZRA245.Raum.Ventil2.AlMInt.PCDInRef EQU F 12398 ;PCD Input Reference
+A.BACnet.EZRA245.Raum.Ventil2.AlHigh.OutOfService EQU F 12393 ;Out Of Service
+A.BACnet.EZRA245.Raum.Ventil2.AlHigh.PCDInRef EQU F 12394 ;PCD Input Reference
+A.BACnet.EZRA245.Raum.Ventil2.AlLow.OutOfService EQU F 12395 ;Out Of Service
+A.BACnet.EZRA245.Raum.Ventil2.AlLow.PCDInRef EQU F 12396 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C002547_38_9921.OutOfService EQU F 5070[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C002547_38_9921.PCDInRef EQU F 5071 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C002547_38_9920.OutOfService EQU F 5069 ;Out Of Service
+A.BACnet.GROUP__fbl_C002547_38_9920.PCDInRef EQU R 7489 ;PCD Input Reference
+A.BACnet.EZRA003.Raum.Temp.MW10.OutOfService EQU F 5074[2] ;Out Of Service
+A.BACnet.EZRA003.Raum.Temp.MW10.PCDInRef EQU R 2951 ;PCD Input Reference
+A.BACnet.EZRA003.Raum.Temp.MW20.OutOfService EQU F 5072[2] ;Out Of Service
+A.BACnet.EZRA003.Raum.Temp.MW20.PCDInRef EQU R 2948 ;PCD Input Reference
+A.BACnet.EZRA003.Raum.Feuchte.MW10.OutOfService EQU F 5094[2] ;Out Of Service
+A.BACnet.EZRA003.Raum.Feuchte.MW10.PCDInRef EQU R 2954 ;PCD Input Reference
+A.BACnet.EZRA003.Raum.VOC.MW10.OutOfService EQU F 5102[2] ;Out Of Service
+A.BACnet.EZRA003.Raum.VOC.MW10.PCDInRef EQU R 2957 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C002547_3D_9997.Alarm.OutOfService EQU F 8615 ;Out Of Service
+A.BACnet.GROUP__fbl_C002547_3D_9997.Alarm.PCDInRef EQU F 8616 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C002547_3D_999A.Alarm.OutOfService EQU F 8617 ;Out Of Service
+A.BACnet.GROUP__fbl_C002547_3D_999A.Alarm.PCDInRef EQU F 8618 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C0036A2_01_A268.OutOfService EQU F 7110[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C0036A2_01_A268.PCDInRef EQU R 3263 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C0036A2_01_A266.OutOfService EQU F 7107[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C0036A2_01_A266.PCDInRef EQU R 3260 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C0036A2_03_A25D.Alarm.OutOfService EQU F 12584 ;Out Of Service
+A.BACnet.GROUP__fbl_C0036A2_03_A25D.Alarm.PCDInRef EQU F 12585 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C0036A2_03_A25A.Alarm.OutOfService EQU F 12582 ;Out Of Service
+A.BACnet.GROUP__fbl_C0036A2_03_A25A.Alarm.PCDInRef EQU F 12583 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C0036A2_06_ACD7.OutOfService EQU F 10690[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C0036A2_06_ACD7.PCDInRef EQU R 3972 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C0036A2_06_ACD5.OutOfService EQU F 10687[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C0036A2_06_ACD5.PCDInRef EQU R 3969 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C0036A2_06_ACE5.OutOfService EQU F 10721[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C0036A2_06_ACE5.PCDInRef EQU R 3978 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C0036A2_08_ACE0.Alarm.OutOfService EQU F 12588 ;Out Of Service
+A.BACnet.GROUP__fbl_C0036A2_08_ACE0.Alarm.PCDInRef EQU F 12589 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C0036A2_08_ACDF.Alarm.OutOfService EQU F 12586 ;Out Of Service
+A.BACnet.GROUP__fbl_C0036A2_08_ACDF.Alarm.PCDInRef EQU F 12587 ;PCD Input Reference
+A.BACnet.SBT001.WT.Sek.VLTemp.OutOfService EQU F 4411[2] ;Out Of Service
+A.BACnet.SBT001.WT.Sek.VLTemp.PCDInRef EQU R 2719 ;PCD Input Reference
+A.BACnet.SBT001.WT.Sek.RLTemp.OutOfService EQU F 4403[2] ;Out Of Service
+A.BACnet.SBT001.WT.Sek.RLTemp.PCDInRef EQU R 2716 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C0036A2_0D_AB69.Alarm.OutOfService EQU F 12592 ;Out Of Service
+A.BACnet.GROUP__fbl_C0036A2_0D_AB69.Alarm.PCDInRef EQU F 12593 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C0036A2_0D_AB66.Alarm.OutOfService EQU F 12590 ;Out Of Service
+A.BACnet.GROUP__fbl_C0036A2_0D_AB66.Alarm.PCDInRef EQU F 12591 ;PCD Input Reference
+A.BACnet.EZR0010.Raum.Temp.MW10.OutOfService EQU F 7327[2] ;Out Of Service
+A.BACnet.EZR0010.Raum.Temp.MW10.PCDInRef EQU R 3286 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C0036A2_23_A344.OutOfService EQU F 7353[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C0036A2_23_A344.PCDInRef EQU R 3328 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C0036A2_23_A342.OutOfService EQU F 7350[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C0036A2_23_A342.PCDInRef EQU R 3325 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C0036A2_25_A351.Alarm.OutOfService EQU F 12596 ;Out Of Service
+A.BACnet.GROUP__fbl_C0036A2_25_A351.Alarm.PCDInRef EQU F 12597 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C0036A2_25_A34E.Alarm.OutOfService EQU F 12594 ;Out Of Service
+A.BACnet.GROUP__fbl_C0036A2_25_A34E.Alarm.PCDInRef EQU F 12595 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C003342_01_A22F.OutOfService EQU F 7020[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C003342_01_A22F.PCDInRef EQU R 3220 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C003342_01_A22D.OutOfService EQU F 7017[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C003342_01_A22D.PCDInRef EQU R 3217 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C003342_03_A23E.Alarm.OutOfService EQU F 12544 ;Out Of Service
+A.BACnet.GROUP__fbl_C003342_03_A23E.Alarm.PCDInRef EQU F 12545 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C003342_03_A23B.Alarm.OutOfService EQU F 12542 ;Out Of Service
+A.BACnet.GROUP__fbl_C003342_03_A23B.Alarm.PCDInRef EQU F 12543 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C003342_05_A379.Alarm.OutOfService EQU F 12548 ;Out Of Service
+A.BACnet.GROUP__fbl_C003342_05_A379.Alarm.PCDInRef EQU F 12549 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C003342_05_A376.Alarm.OutOfService EQU F 12546 ;Out Of Service
+A.BACnet.GROUP__fbl_C003342_05_A376.Alarm.PCDInRef EQU F 12547 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C003342_08_A380.Alarm.OutOfService EQU F 12552 ;Out Of Service
+A.BACnet.GROUP__fbl_C003342_08_A380.Alarm.PCDInRef EQU F 12553 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C003342_08_A37D.Alarm.OutOfService EQU F 12550 ;Out Of Service
+A.BACnet.GROUP__fbl_C003342_08_A37D.Alarm.PCDInRef EQU F 12551 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C003342_0C_9355.OutOfService EQU F 4383[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C003342_0C_9355.PCDInRef EQU R 2713 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C003342_0C_9353.OutOfService EQU F 4380[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C003342_0C_9353.PCDInRef EQU R 2710 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C003342_0F_9333.Alarm.OutOfService EQU F 12556 ;Out Of Service
+A.BACnet.GROUP__fbl_C003342_0F_9333.Alarm.PCDInRef EQU F 12557 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C003342_0F_9330.Alarm.OutOfService EQU F 12554 ;Out Of Service
+A.BACnet.GROUP__fbl_C003342_0F_9330.Alarm.PCDInRef EQU F 12555 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C003342_14_A35E.Alarm.OutOfService EQU F 12447 ;Out Of Service
+A.BACnet.GROUP__fbl_C003342_14_A35E.Alarm.PCDInRef EQU F 12558 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C003342_14_A35B.Alarm.OutOfService EQU F 11507 ;Out Of Service
+A.BACnet.GROUP__fbl_C003342_14_A35B.Alarm.PCDInRef EQU F 11508 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C003342_16_A36A.Alarm.OutOfService EQU F 12561 ;Out Of Service
+A.BACnet.GROUP__fbl_C003342_16_A36A.Alarm.PCDInRef EQU F 12562 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C003342_16_A367.Alarm.OutOfService EQU F 12559 ;Out Of Service
+A.BACnet.GROUP__fbl_C003342_16_A367.Alarm.PCDInRef EQU F 12560 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C003342_18_A38B.Alarm.OutOfService EQU F 12565 ;Out Of Service
+A.BACnet.GROUP__fbl_C003342_18_A38B.Alarm.PCDInRef EQU F 12566 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C003342_18_A388.Alarm.OutOfService EQU F 12563 ;Out Of Service
+A.BACnet.GROUP__fbl_C003342_18_A388.Alarm.PCDInRef EQU F 12564 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C003342_1A_A396.Alarm.OutOfService EQU F 12569 ;Out Of Service
+A.BACnet.GROUP__fbl_C003342_1A_A396.Alarm.PCDInRef EQU F 12570 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C003342_1A_A393.Alarm.OutOfService EQU F 12567 ;Out Of Service
+A.BACnet.GROUP__fbl_C003342_1A_A393.Alarm.PCDInRef EQU F 12568 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C003342_1E_A209.OutOfService EQU F 6958[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C003342_1E_A209.PCDInRef EQU R 3194 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C003342_1E_A207.OutOfService EQU F 6955[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C003342_1E_A207.PCDInRef EQU R 3191 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C003342_20_A218.Alarm.OutOfService EQU F 12573 ;Out Of Service
+A.BACnet.GROUP__fbl_C003342_20_A218.Alarm.PCDInRef EQU F 12574 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C003342_20_A215.Alarm.OutOfService EQU F 12571 ;Out Of Service
+A.BACnet.GROUP__fbl_C003342_20_A215.Alarm.PCDInRef EQU F 12572 ;PCD Input Reference
+A.BACnet.TWW001.VL.Temp.OutOfService EQU F 3264[2] ;Out Of Service
+A.BACnet.TWW001.VL.Temp.PCDInRef EQU R 1732 ;PCD Input Reference
+A.BACnet.TWW001.RL.Temp.OutOfService EQU F 3262[2] ;Out Of Service
+A.BACnet.TWW001.RL.Temp.PCDInRef EQU R 1729 ;PCD Input Reference
+A.BACnet.TWW001.SP01.TSO.OutOfService EQU F 3260[2] ;Out Of Service
+A.BACnet.TWW001.SP01.TSO.PCDInRef EQU R 1726 ;PCD Input Reference
+A.BACnet.TWW001.SP01.TSU.OutOfService EQU F 3258[2] ;Out Of Service
+A.BACnet.TWW001.SP01.TSU.PCDInRef EQU R 1723 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C00033B_0C_7D64.OutOfService EQU F 3367[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C00033B_0C_7D64.PCDInRef EQU F 3368 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C00033B_0C_7D5E.OutOfService EQU F 3362 ;Out Of Service
+A.BACnet.GROUP__fbl_C00033B_0C_7D5E.PCDInRef EQU R 10616 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C00033B_0C_7D5C.OutOfService EQU F 3360 ;Out Of Service
+A.BACnet.GROUP__fbl_C00033B_0C_7D5C.PCDInRef EQU R 10618 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C00033B_0C_7D54.OutOfService EQU F 3355 ;Out Of Service
+A.BACnet.GROUP__fbl_C00033B_0C_7D54.PCDInRef EQU R 10620 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C00033B_0C_7D52.OutOfService EQU F 3353 ;Out Of Service
+A.BACnet.GROUP__fbl_C00033B_0C_7D52.PCDInRef EQU R 10622 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C00033B_0D_7D10.OutOfService EQU F 3328 ;Out Of Service
+A.BACnet.GROUP__fbl_C00033B_0D_7D10.PCDInRef EQU R 10835 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C00033B_0E_7D1B.OutOfService EQU F 3336 ;Out Of Service
+A.BACnet.GROUP__fbl_C00033B_0E_7D1B.PCDInRef EQU R 10655 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C00033B_0E_7D19.OutOfService EQU F 3335 ;Out Of Service
+A.BACnet.GROUP__fbl_C00033B_0E_7D19.PCDInRef EQU R 10643 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C00033B_0F_7D41.OutOfService EQU F 3349 ;Out Of Service
+A.BACnet.GROUP__fbl_C00033B_0F_7D41.PCDInRef EQU R 10657 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C00033B_0F_7D3D.OutOfService EQU F 3347 ;Out Of Service
+A.BACnet.GROUP__fbl_C00033B_0F_7D3D.PCDInRef EQU R 10659 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C00033B_0F_7D37.OutOfService EQU F 3344 ;Out Of Service
+A.BACnet.GROUP__fbl_C00033B_0F_7D37.PCDInRef EQU R 10667 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C00033B_0F_7D34.OutOfService EQU F 3341 ;Out Of Service
+A.BACnet.GROUP__fbl_C00033B_0F_7D34.PCDInRef EQU R 10664 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C00033B_11_B006.Alarm.OutOfService EQU F 12414 ;Out Of Service
+A.BACnet.GROUP__fbl_C00033B_11_B006.Alarm.PCDInRef EQU F 12415 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C00033B_11_B005.Alarm.OutOfService EQU F 12412 ;Out Of Service
+A.BACnet.GROUP__fbl_C00033B_11_B005.Alarm.PCDInRef EQU F 12413 ;PCD Input Reference
+A.BACnet.TWW001_UWP.Maintenance.OutOfService EQU F 12608 ;Out Of Service
+A.BACnet.TWW001_UWP.Maintenance.PCDInRef EQU F 12609 ;PCD Input Reference
+A.BACnet.TWW001_UWP.Alarm.OutOfService EQU F 12606 ;Alarm
+A.BACnet.TWW001_UWP.Alarm.PCDInRef EQU F 12607 ;PCD Input Reference
+A.BACnet.TWW001.ZIRK.RL.Temp.OutOfService EQU F 2929[2] ;Out Of Service
+A.BACnet.TWW001.ZIRK.RL.Temp.PCDInRef EQU R 1544 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C00033B_17_B008.Alarm.OutOfService EQU F 12418 ;Out Of Service
+A.BACnet.GROUP__fbl_C00033B_17_B008.Alarm.PCDInRef EQU F 12419 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C00033B_17_B007.Alarm.OutOfService EQU F 12416 ;Out Of Service
+A.BACnet.GROUP__fbl_C00033B_17_B007.Alarm.PCDInRef EQU F 12417 ;PCD Input Reference
+A.BACnet.TWW001_UWP_ZIRK.Maintenance.OutOfService EQU F 12604 ;Out Of Service
+A.BACnet.TWW001_UWP_ZIRK.Maintenance.PCDInRef EQU F 12605 ;PCD Input Reference
+A.BACnet.TWW001_UWP_ZIRK.Alarm.OutOfService EQU F 12602 ;Alarm
+A.BACnet.TWW001_UWP_ZIRK.Alarm.PCDInRef EQU F 12603 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C00ABB0_02_B350.OutOfService EQU F 11425[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C00ABB0_02_B350.PCDInRef EQU R 6231 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C00ABB0_03_B35A.OutOfService EQU F 12454[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C00ABB0_03_B35A.PCDInRef EQU R 6837 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C00ABB0_04_B362.OutOfService EQU F 12538[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C00ABB0_04_B362.PCDInRef EQU R 7295 ;PCD Input Reference
+A.BACnet.GROUP__fbl_C00ABB0_05_B36A.OutOfService EQU F 12992[2] ;Out Of Service
+A.BACnet.GROUP__fbl_C00ABB0_05_B36A.PCDInRef EQU R 11044 ;PCD Input Reference
+;File "InitODM.obj"
+s.odm.FlagDiag EQU F 16000[8] ;
+s.odm.RegChannel EQU R 10669 ;
+s.odm.InitError EQU F 16008 ;
+s.odm.InitExec EQU F 16009 ;
+;File "heavac5.obj"
+S.HVC.Clock.Season EQU F 16021 ;Actual season 0=Winter, 1=Summer
+S.HVC.Clock.ClkTest EQU F 16025 ;Clock test 1=OK 0=Error
+S.HVC.Clock.ClkTest1 EQU F 16026 ;HW-Clock present
+S.HVC.Clock.HHMMSS EQU R 10670[3] ;Hour, Minute, Second
+S.HVC.Clock.YYYYMMDD EQU R 10671 ;Year 2000..2099, Month, Day
+S.HVC.Clock.DayOW EQU R 10672 ;Day of week
+S.HVC.Clock.YYMMDD EQU R 10675[16] ;Year 00..99, Month, Day
+S.HVC.Clock.MMDD EQU R 10676 ;Month, Day
+S.HVC.Clock.HHMM EQU R 10677 ;Hour, Minute
+S.HVC.Clock.Year EQU R 10679 ;Year 00..99
+S.HVC.Clock.YYYYear EQU R 10680 ;Year 2000..2099
+S.HVC.Clock.Month EQU R 10681 ;Month
+S.HVC.Clock.Day EQU R 10682 ;Day of month
+S.HVC.Clock.Hour EQU R 10683 ;Hour
+S.HVC.Clock.Minute EQU R 10684 ;Minute
+S.HVC.Clock.Second EQU R 10685 ;Second
+S.HVC.Clock.Week EQU R 10686 ;Week of year
+S.HVC.Clock.WWD EQU R 10687 ;Week of year and day of week
+S.HVC.Clock.DHHMM EQU R 10688 ;Day of week Hour, Minute
+S.HVC.Clock.MMDDHHMM EQU R 10689 ;Month, Day, Hour, Minute
+S.HVC.Clock.SecODay EQU R 10690 ;Second of the day
+S.HVC.Clock.MinODay EQU R 10693 ;Minute of the day
+S.HVC.Clock.PHDay EQU F 16019 ;Public Holiday
+S.HVC.Clock.PHDay1 EQU F 16020 ;Day following public holiday(s)
+S.HVC.Clock.AllPHDay EQU F 16016 ;Day following all public holiday
+S.HVC.Clock.DayInYear EQU R 10691 ;No of day in the year (1..366)
+S.HVC.Clock.SecTick EQU F 16022 ;One second tick based on HW-Clock
+;File "sModSlave.obj"
+s.mods.fboxerror EQU R 11063 ;
+

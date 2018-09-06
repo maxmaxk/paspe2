@@ -1,0 +1,19 @@
+CreatePcdInfo
+PCDType=PCD3.M5340 Serial=088F290F FWversion=1.24.00
+CreateSBusHeader
+CreateExtendedHeader
+CreateMemoryHeader
+CreateExtensionMemoryHeader
+CreatePassword
+CreateConfig
+Configuration rules: F:\Baustelle\Projekte PG5 2.1\PASPE_22.09.14\B1_PASPE_RLT\B1_PASPE_RLT.cfgini was not found., skip
+CreateOtherConfig BACnet
+CreateOtherConfig CAN
+CreateOtherConfig LON
+CreateWebConfiguration
+Web files: F:\Baustelle\Projekte PG5 2.1\PASPE_22.09.14\B1_PASPE_RLT\B1_PASPE_RLT.webini not found, skip
+CreateSpcd
+CreateSrio
+CreateNestedBackupFileBlockCreateFwDnldConfiguration
+Firmware files: F:\Baustelle\Projekte PG5 2.1\PASPE_22.09.14\B1_PASPE_RLT\B1_PASPE_RLT.fwini not found, skip
+CreateValidFileBlock

@@ -1,0 +1,21 @@
+//PG5 INTERMEDIATE DOCUMENTATION FILE
+//DO NOT EDIT
+V,1
+M+,137,_sodm_init,1,Init ODM on default module (B2 or on board)
+X+,137,16
+C,137,0,LDL    R   0,A,s.odm.RegChannel,s.odm.RegChannel,
+C,137,1,           0,L,__abs___0,,
+C,137,2,BITO       8,L,__abs___8,,
+C,137,3,       R   0,A,s.odm.RegChannel,s.odm.RegChannel,
+C,137,4,       F   0,A,s.odm.FlagDiag,s.odm.FlagDiag,
+C,137,5,CSF        0,L,__mac__0.Library,,
+C,137,6,           0,L,__mac__0.InitODM,,
+C,137,7,       F   0,A,s.odm.FlagDiag,s.odm.FlagDiag,
+C,137,8,       R   0,A,s.odm.RegChannel,s.odm.RegChannel,
+C,137,9,           1000,L,__mac__0.timeout,,
+C,137,10,ACC    E,L,,,
+C,137,11,OUT    F   0,A,s.odm.InitError,s.odm.InitError,
+C,137,12,ACC    H,L,,,
+C,137,13,SET    F   0,A,s.odm.InitExec,s.odm.InitExec,
+X-,137,16
+M-,137,_sodm_init,1,

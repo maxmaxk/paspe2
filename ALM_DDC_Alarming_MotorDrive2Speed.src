@@ -1,0 +1,10 @@
+; ======================================================================
+; -------- SWeb Alarmierung - File
+; ======================================================================
+;
+                    $WRFILE "DDC_Alarming.CSV" List_@A.DDC_Suite.Alarming.Handle@;@adj_AlmIndex@;Alarm_@adj_AlmIndex@;@&Name@ Keine Betriebsrueckmeldung
+                    $WRFILE "DDC_Alarming.CSV" List_@A.DDC_Suite.Alarming.Handle@;@adj_AlmIndex+1@;Alarm_@adj_AlmIndex+1@;@&Name@ Motorschutz
+                    $WRFILE "DDC_Alarming.CSV" List_@A.DDC_Suite.Alarming.Handle@;@adj_AlmIndex+2@;Alarm_@adj_AlmIndex+2@;@&Name@ Rep.-Schalter
+                    $WRFILE "DDC_Alarming.CSV" List_@A.DDC_Suite.Alarming.Handle@;@adj_AlmIndex+3@;Alarm_@adj_AlmIndex+3@;@&Name@ Keine Prozessrueckmeldung
+                    $WRFILE "DDC_Alarming.CSV" List_@A.DDC_Suite.Alarming.Handle@;@adj_AlmIndex+4@;Alarm_@adj_AlmIndex+4@;@&Name@ Handeingriff
+;

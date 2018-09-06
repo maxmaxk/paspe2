@@ -1,0 +1,10 @@
+; ======================================================================
+; -------- SWeb Alarmierung - File
+; ======================================================================
+;
+                    $WRFILE "DDC_Alarming.CSV" List_@A.DDC_Suite.Alarming.Handle@;@adj_AlmIndex@;Alarm_@adj_AlmIndex@;@&Name@ Stoerung Nr. 1
+                    $WRFILE "DDC_Alarming.CSV" List_@A.DDC_Suite.Alarming.Handle@;@adj_AlmIndex+1@;Alarm_@adj_AlmIndex+1@;@&Name@ Stoerung Nr. 2
+                    $WRFILE "DDC_Alarming.CSV" List_@A.DDC_Suite.Alarming.Handle@;@adj_AlmIndex+2@;Alarm_@adj_AlmIndex+2@;@&Name@ Stoerung Nr. 3
+                    $WRFILE "DDC_Alarming.CSV" List_@A.DDC_Suite.Alarming.Handle@;@adj_AlmIndex+3@;Alarm_@adj_AlmIndex+3@;@&Name@ Stoerung Nr. 4
+                    $WRFILE "DDC_Alarming.CSV" List_@A.DDC_Suite.Alarming.Handle@;@adj_AlmIndex+4@;Alarm_@adj_AlmIndex+4@;@&Name@ Stoerung Nr. 5
+;

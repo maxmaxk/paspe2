@@ -1,0 +1,345 @@
+$IFINC ;if $included
+EXTN ELT01.A00.HDLog.iTAktiv	F
+EXTN ELT01.A00.HDLog.iTApr	F
+EXTN ELT01.A00.HDLog.iTAug	F
+EXTN ELT01.A00.HDLog.iTDez	F
+EXTN ELT01.A00.HDLog.iTFeb	F
+EXTN ELT01.A00.HDLog.iTFebDez	F
+EXTN ELT01.A00.HDLog.iTJan	F
+EXTN ELT01.A00.HDLog.iTJul	F
+EXTN ELT01.A00.HDLog.iTJun	F
+EXTN ELT01.A00.HDLog.iTMai	F
+EXTN ELT01.A00.HDLog.iTMar	F
+EXTN ELT01.A00.HDLog.iTNov	F
+EXTN ELT01.A00.HDLog.iTOkt	F
+EXTN ELT01.A00.HDLog.iTSep	F
+EXTN ELT01.A00.HDLog.USE	F
+EXTN ELT01.A00.Mld.PCD01.SVz.iSVZ1200	F
+EXTN ELT01.A00.SiKettUV1.iSM10	F
+EXTN ELT01.A00.SiKettUV1.USE	F
+EXTN ELT01.A00.SiKettUV2.iSM10	F
+EXTN ELT01.A00.SiKettUV2.USE	F
+EXTN ELT01.A00.SiKettUV3.iSM10	F
+EXTN ELT01.A00.SiKettUV3.USE	F
+EXTN HIGH	F
+EXTN LOW	F
+EXTN PCD01.DNS.Query.IP.iFCode	F
+EXTN PCD01.DNS.Query.IP.Read	F
+EXTN PCD01.EMail.Init.iBusy	F
+EXTN PCD01.EMail.Init.iFail	F
+EXTN PCD01.EMail.Init.iSending	F
+EXTN PCD01.EMail.Init.iSSM	F
+EXTN PCD01.EMail.Init.UseAuth	F
+EXTN PCD01.EMail.Send.Prf	F
+EXTN PCD01.EMail.Sent.Busy	F
+EXTN PCD01.Email.Setup.Del	F
+EXTN PCD01.Email.Setup.DelBusy	F
+EXTN PCD01.Email.Setup.FileBig	F
+EXTN PCD01.Email.Setup.FileExist	F
+EXTN PCD01.Email.Setup.iFileErr	F
+EXTN PCD01.Email.Setup.iGFLBusy	F
+EXTN PCD01.Email.Setup.Written	F
+EXTN PCD01.Email.Setup.WtF	F
+EXTN PCD01.HTTP.Init.iChannel	F
+EXTN PCD01.HTTP.Init.iStation	F
+EXTN PCD01.Markt.Del	F
+EXTN PCD01.Markt.DelBusy	F
+EXTN PCD01.Markt.FileBig	F
+EXTN PCD01.Markt.FileExist	F
+EXTN PCD01.Markt.iFileErr	F
+EXTN PCD01.Markt.iGFLBusy	F
+EXTN PCD01.Markt.Written	F
+EXTN PCD01.Markt.WtF	F
+EXTN PCD01.Email.Setup.Read	F
+EXTN PCD01.Email.Setup.Write	F
+EXTN PCD01.Markt.Read	F
+EXTN PCD01.Markt.Write	F
+EXTN ELT01.A00.HDLog.iActMon	R
+EXTN ELT01.A00.HDLog.iActMon2	R
+EXTN ELT01.A00.HDLog.iActWeek	R
+EXTN ELT01.A00.HDLog.iActYear	R
+EXTN ELT01.A00.HDLog.iEMonth	R
+EXTN ELT01.A00.HDLog.iLastMon	R
+EXTN ELT01.A00.HDLog.iLastYear	R
+EXTN ELT01.A00.Mld.PCD01.Clock.iD	R
+EXTN ELT01.A00.Mld.PCD01.Clock.iYMD	R
+EXTN NULL	R
+EXTN PCD01.DNS.Query.IP.iAddB0	R
+EXTN PCD01.DNS.Query.IP.iAddB1	R
+EXTN PCD01.DNS.Query.IP.iAddB2	R
+EXTN PCD01.DNS.Query.IP.iAddB3	R
+EXTN PCD01.EMail.Init.Count	R
+EXTN PCD01.EMail.Init.Delay	R
+EXTN PCD01.EMail.Init.iErr	R
+EXTN PCD01.EMail.Init.Port	R
+EXTN PCD01.EMail.Init.Retrys	R
+EXTN PCD01.Email.Setup.FileLength	R
+EXTN PCD01.Markt.FileLength	R
+EXTN ELT01.A00.HDLog.File	TEXT
+_TextSize_.ELT01.A00.HDLog.File	EQU	0
+EXTN ELT01.A00.HDLog.MailText	TEXT
+_TextSize_.ELT01.A00.HDLog.MailText	EQU	0
+EXTN ELT01.A00.SiKettUV1.File	TEXT
+_TextSize_.ELT01.A00.SiKettUV1.File	EQU	0
+EXTN ELT01.A00.SiKettUV1.MailText	TEXT
+_TextSize_.ELT01.A00.SiKettUV1.MailText	EQU	0
+EXTN ELT01.A00.SiKettUV2.File	TEXT
+_TextSize_.ELT01.A00.SiKettUV2.File	EQU	0
+EXTN ELT01.A00.SiKettUV2.MailText	TEXT
+_TextSize_.ELT01.A00.SiKettUV2.MailText	EQU	0
+EXTN ELT01.A00.SiKettUV3.File	TEXT
+_TextSize_.ELT01.A00.SiKettUV3.File	EQU	0
+EXTN PCD01.EMail.Init.ServerIP	TEXT
+_TextSize_.PCD01.EMail.Init.ServerIP	EQU	0
+EXTN PCD01.EMail.Init.Setup	TEXT
+_TextSize_.PCD01.EMail.Init.Setup	EQU	0
+EXTN PCD01.EMail.Send.File	TEXT
+_TextSize_.PCD01.EMail.Send.File	EQU	0
+EXTN PCD01.EMail.Send.MailText	TEXT
+_TextSize_.PCD01.EMail.Send.MailText	EQU	0
+EXTN PCD01.Markt.MarktInfo	TEXT
+_TextSize_.PCD01.Markt.MarktInfo	EQU	0
+EXTN RLT01_H1	TEXT
+_TextSize_.RLT01_H1	EQU	0
+EXTN ELT01.A00.SiKettUV3.MailText	TEXT RAM
+_TextSize_.ELT01.A00.SiKettUV3.MailText	EQU	0
+EXTN PCD01.EMail.Init.Name	TEXT RAM
+_TextSize_.PCD01.EMail.Init.Name	EQU	32
+EXTN PCD01.EMail.Init.Pwd	TEXT RAM
+_TextSize_.PCD01.EMail.Init.Pwd	EQU	32
+EXTN PCD01.EMail.Init.Sender	TEXT RAM
+_TextSize_.PCD01.EMail.Init.Sender	EQU	32
+EXTN PCD01.EMail.Init.Server	TEXT RAM
+_TextSize_.PCD01.EMail.Init.Server	EQU	32
+EXTN PCD01.EMail.Init.To1	TEXT RAM
+_TextSize_.PCD01.EMail.Init.To1	EQU	32
+EXTN PCD01.EMail.Init.To2	TEXT RAM
+_TextSize_.PCD01.EMail.Init.To2	EQU	32
+EXTN PCD01.EMail.Init.To3	TEXT RAM
+_TextSize_.PCD01.EMail.Init.To3	EQU	32
+EXTN PCD01.EMail.Init.To4	TEXT RAM
+_TextSize_.PCD01.EMail.Init.To4	EQU	32
+EXTN PCD01.EMail.Init.To5	TEXT RAM
+_TextSize_.PCD01.EMail.Init.To5	EQU	32
+EXTN PCD01.Markt.IP	TEXT RAM
+_TextSize_.PCD01.Markt.IP	EQU	32
+EXTN PCD01.Markt.Kostenstelle	TEXT RAM
+_TextSize_.PCD01.Markt.Kostenstelle	EQU	32
+EXTN PCD01.Markt.Ort	TEXT RAM
+_TextSize_.PCD01.Markt.Ort	EQU	32
+EXTN PCD01.Markt.OrtBezeichnung	TEXT RAM
+_TextSize_.PCD01.Markt.OrtBezeichnung	EQU	32
+EXTN PCD01.Markt.PLZ	TEXT RAM
+_TextSize_.PCD01.Markt.PLZ	EQU	32
+EXTN PCD01.Markt.Strasse	TEXT RAM
+_TextSize_.PCD01.Markt.Strasse	EQU	32
+EXTN PCD01.Markt.Tel	TEXT RAM
+_TextSize_.PCD01.Markt.Tel	EQU	32
+EXTN PCD01.RefSPS.IP	TEXT RAM
+_TextSize_.PCD01.RefSPS.IP	EQU	32
+$ENDIF
+$IFNINC ;if assembled and linked
+COB_7	EQU	COB		;EMail_HTTP_
+ELT01.A00.HDLog.iTAktiv	PEQU	F	
+ELT01.A00.HDLog.iTApr	PEQU	F	
+ELT01.A00.HDLog.iTAug	PEQU	F	
+ELT01.A00.HDLog.iTDez	PEQU	F	
+ELT01.A00.HDLog.iTFeb	PEQU	F	
+ELT01.A00.HDLog.iTFebDez	PEQU	F	
+ELT01.A00.HDLog.iTJan	PEQU	F	
+ELT01.A00.HDLog.iTJul	PEQU	F	
+ELT01.A00.HDLog.iTJun	PEQU	F	
+ELT01.A00.HDLog.iTMai	PEQU	F	
+ELT01.A00.HDLog.iTMar	PEQU	F	
+ELT01.A00.HDLog.iTNov	PEQU	F	
+ELT01.A00.HDLog.iTOkt	PEQU	F	
+ELT01.A00.HDLog.iTSep	PEQU	F	
+ELT01.A00.HDLog.USE	PEQU	F	
+EXTN	ELT01.A00.Mld.PCD01.Quitt.Tast.iBm	F	;(5) Auswahl des Normalzustands des Gebers
+EXTN	ELT01.A00.Mld.PCD01.SVz.iSVZ300	F
+EXTN	ELT01.A00.Mld.PCD01.SVz.iSVZ600	F
+ELT01.A00.Mld.PCD01.SVz.iSVZ1200	PEQU	F	
+ELT01.A00.SiKettUV1.iSM10	PEQU	F	
+ELT01.A00.SiKettUV1.USE	PEQU	F	
+ELT01.A00.SiKettUV2.iSM10	PEQU	F	
+ELT01.A00.SiKettUV2.USE	PEQU	F	
+ELT01.A00.SiKettUV3.iSM10	PEQU	F	
+ELT01.A00.SiKettUV3.USE	PEQU	F	
+HIGH	PEQU	F	
+LOW	PEQU	F	
+PCD01.DNS.Query.IP.iFCode	PEQU	F	
+PCD01.DNS.Query.IP.Read	PEQU	F	
+PCD01.EMail.Init.iBusy	PEQU	F	
+PCD01.EMail.Init.iFail	PEQU	F	
+PCD01.EMail.Init.iSending	PEQU	F	
+PCD01.EMail.Init.iSSM	PEQU	F	
+PCD01.EMail.Init.UseAuth	PEQU	F		;Angabe ob eine Authentifizierung am Mailserver erfolgen soll
+PCD01.EMail.Send.Prf	PEQU	F	
+PCD01.EMail.Sent.Busy	PEQU	F	
+PCD01.Email.Setup.Del	PEQU	F	
+PCD01.Email.Setup.DelBusy	PEQU	F	
+PCD01.Email.Setup.FileBig	PEQU	F	
+PCD01.Email.Setup.FileExist	PEQU	F	
+PCD01.Email.Setup.iFileErr	PEQU	F	
+PCD01.Email.Setup.iGFLBusy	PEQU	F	
+PCD01.Email.Setup.Written	PEQU	F	
+PCD01.Email.Setup.WtF	PEQU	F	
+PCD01.HTTP.Init.iChannel	PEQU	F	
+PCD01.HTTP.Init.iStation	PEQU	F	
+PCD01.Markt.Del	PEQU	F	
+PCD01.Markt.DelBusy	PEQU	F	
+PCD01.Markt.FileBig	PEQU	F	
+PCD01.Markt.FileExist	PEQU	F	
+PCD01.Markt.iFileErr	PEQU	F	
+PCD01.Markt.iGFLBusy	PEQU	F	
+PCD01.Markt.Written	PEQU	F	
+PCD01.Markt.WtF	PEQU	F	
+PCD01.Email.Setup.Read	PEQU	F	:= 0
+PCD01.Email.Setup.Write	PEQU	F	:= 0
+PCD01.Markt.Read	PEQU	F	:= 0
+PCD01.Markt.Write	PEQU	F	:= 0
+ELT01.A00.HDLog.iActMon	PEQU	R	
+ELT01.A00.HDLog.iActMon2	PEQU	R	
+ELT01.A00.HDLog.iActWeek	PEQU	R	
+ELT01.A00.HDLog.iActYear	PEQU	R	
+ELT01.A00.HDLog.iEMonth	PEQU	R	
+ELT01.A00.HDLog.iLastMon	PEQU	R	
+ELT01.A00.HDLog.iLastYear	PEQU	R	
+ELT01.A00.Mld.PCD01.Clock.iD	PEQU	R	
+ELT01.A00.Mld.PCD01.Clock.iYMD	PEQU	R	
+NULL	PEQU	R	
+EXTN	PCD01.DNS.Query.IP.iAdd	R
+PCD01.DNS.Query.IP.iAddB0	PEQU	R	
+PCD01.DNS.Query.IP.iAddB1	PEQU	R	
+PCD01.DNS.Query.IP.iAddB2	PEQU	R	
+PCD01.DNS.Query.IP.iAddB3	PEQU	R	
+EXTN	PCD01.DNS.Query.IP.iRCode	R
+PCD01.EMail.Init.Count	PEQU	R		;Verbleibende Anzahl von Sendeversuchen
+PCD01.EMail.Init.Delay	PEQU	R		;Verzögerung zwischen 2 Sendeversuchen
+PCD01.EMail.Init.iErr	PEQU	R	
+PCD01.EMail.Init.Port	PEQU	R		;Portnummer des  Mailservers (Standard SMTP Port ist 25)
+PCD01.EMail.Init.Retrys	PEQU	R		;Anzahl der Sendeversuche. Falls alle Versuche fehlgeschlagen sind, wird Err aus
+PCD01.Email.Setup.FileLength	PEQU	R	
+PCD01.Markt.FileLength	PEQU	R	
+EXTN	PCD01.Markt.uBT_InAcAdr	R
+EXTN	RLT01.A00.PSTA.uBT_InAcCounter	R
+ELT01.A00.HDLog.File	PEQU	TEXT	
+TEXT	ELT01.A00.HDLog.File	[]	"",
+"SL1FLASH:/WEBPAGES/DATA/C004GEVZHZG00_M$",ELT01.A00.HDLog.iEMonth.04T,".csv"
+;ENDTEXT
+$CHARSET OEM
+ELT01.A00.HDLog.MailText	PEQU	TEXT	
+TEXT	ELT01.A00.HDLog.MailText	[]	"",
+"MM Trenddaten IP: $", PCD01.SBus.Info.IP.iAddB3.04T ".$" ,PCD01.SBus.Info.IP.iAddB2.04T ".$", PCD01.SBus.Info.IP.iAddB1.04T ".$",PCD01.SBus.Info.IP.iAddB0.04T "<10><10>Email Trenddaten als .CSV <10>Ausgeführt am $DD.$DM.$DY um $H <10>"
+;ENDTEXT
+$CHARSET ANSI
+ELT01.A00.SiKettUV1.File	PEQU	TEXT	
+TEXT	ELT01.A00.SiKettUV1.File	[]	"",
+""
+;ENDTEXT
+$CHARSET OEM
+ELT01.A00.SiKettUV1.MailText	PEQU	TEXT	
+TEXT	ELT01.A00.SiKettUV1.MailText	[]	"",
+"MM IP: $", PCD01.SBus.Info.IP.iAddB3.04T ".$" ,PCD01.SBus.Info.IP.iAddB2.04T ".$", PCD01.SBus.Info.IP.iAddB1.04T ".$",PCD01.SBus.Info.IP.iAddB0.04T "<10><10>Die Sicherheitskette der UV 1 hat ausgeloest,<10>Vermutlich Sicherung gefallen, Notbeleuchtung wurde eingeschaltet (Bateriebetrieb)<10><10>Stoerung gekommen am $DD.$DM.$DY um $H <10>"
+;ENDTEXT
+$CHARSET ANSI
+ELT01.A00.SiKettUV2.File	PEQU	TEXT	
+TEXT	ELT01.A00.SiKettUV2.File	[]	"",
+""
+;ENDTEXT
+$CHARSET OEM
+ELT01.A00.SiKettUV2.MailText	PEQU	TEXT	
+TEXT	ELT01.A00.SiKettUV2.MailText	[]	"",
+"MM IP: $", PCD01.SBus.Info.IP.iAddB3.04T ".$" ,PCD01.SBus.Info.IP.iAddB2.04T ".$", PCD01.SBus.Info.IP.iAddB1.04T ".$",PCD01.SBus.Info.IP.iAddB0.04T "<10><10>Die Sicherheitskette der UV 2 hat ausgeloest,<10>Vermutlich Sicherung gefallen, Notbeleuchtung wurde eingeschaltet (Bateriebetrieb)<10><10>Stoerung gekommen am $DD.$DM.$DY um $H <10>"
+;ENDTEXT
+$CHARSET ANSI
+ELT01.A00.SiKettUV3.File	PEQU	TEXT	
+TEXT	ELT01.A00.SiKettUV3.File	[]	"",
+""
+;ENDTEXT
+PCD01.EMail.Init.ServerIP	PEQU	TEXT	
+TEXT	PCD01.EMail.Init.ServerIP	[]	"",
+"$" ,PCD01.DNS.Query.IP.iAddB3.04T ".$" ,PCD01.DNS.Query.IP.iAddB2.04T ".$", PCD01.DNS.Query.IP.iAddB1.04T ".$",PCD01.DNS.Query.IP.iAddB0.04T
+;ENDTEXT
+PCD01.EMail.Init.Setup	PEQU	TEXT	
+TEXT	PCD01.EMail.Init.Setup	[]	"",
+"Setupmail"
+;ENDTEXT
+PCD01.EMail.Send.File	PEQU	TEXT	
+TEXT	PCD01.EMail.Send.File	[]	"",
+""
+;ENDTEXT
+$CHARSET OEM
+PCD01.EMail.Send.MailText	PEQU	TEXT	
+TEXT	PCD01.EMail.Send.MailText	[]	"",
+"MM IP: $", PCD01.SBus.Info.IP.iAddB3.04T ".$" ,PCD01.SBus.Info.IP.iAddB2.04T ".$", PCD01.SBus.Info.IP.iAddB1.04T ".$",PCD01.SBus.Info.IP.iAddB0.04T "<10><10>Email Kommunikationstest. <10>Ausgeführt am $DD.$DM.$DY um $H <10>"
+;ENDTEXT
+$CHARSET ANSI
+PCD01.Markt.MarktInfo	PEQU	TEXT	
+TEXT	PCD01.Markt.MarktInfo	[]	"",
+"Marktinfo"
+;ENDTEXT
+$CHARSET OEM
+RLT01_H1	PEQU	TEXT	
+TEXT	RLT01_H1	[]	"",
+"/Webpages/Trends"
+;ENDTEXT
+$CHARSET ANSI
+$CHARSET OEM
+ELT01.A00.SiKettUV3.MailText	PEQU	TEXT RAM	
+TEXT	ELT01.A00.SiKettUV3.MailText	[]	"",
+"MM IP: $", PCD01.SBus.Info.IP.iAddB3.04T ".$" ,PCD01.SBus.Info.IP.iAddB2.04T ".$", PCD01.SBus.Info.IP.iAddB1.04T ".$",PCD01.SBus.Info.IP.iAddB0.04T "<10><10>Die Sicherheitskette der UV 3 hat ausgeloest,<10>Vermutlich Sicherung gefallen, Notbeleuchtung wurde eingeschaltet (Bateriebetrieb)<10><10>Stoerung gekommen am $DD.$DM.$DY um $H <10>"
+;ENDTEXT
+$CHARSET ANSI
+PCD01.EMail.Init.Name	PEQU	TEXT RAM	
+TEXT	PCD01.EMail.Init.Name	[32]	""
+;ENDTEXT
+PCD01.EMail.Init.Pwd	PEQU	TEXT RAM	
+TEXT	PCD01.EMail.Init.Pwd	[32]	""
+;ENDTEXT
+PCD01.EMail.Init.Sender	PEQU	TEXT RAM	
+TEXT	PCD01.EMail.Init.Sender	[32]	""
+;ENDTEXT
+PCD01.EMail.Init.Server	PEQU	TEXT RAM	
+TEXT	PCD01.EMail.Init.Server	[32]	""
+;ENDTEXT
+PCD01.EMail.Init.To1	PEQU	TEXT RAM	
+TEXT	PCD01.EMail.Init.To1	[32]	""
+;ENDTEXT
+PCD01.EMail.Init.To2	PEQU	TEXT RAM	
+TEXT	PCD01.EMail.Init.To2	[32]	""
+;ENDTEXT
+PCD01.EMail.Init.To3	PEQU	TEXT RAM	
+TEXT	PCD01.EMail.Init.To3	[32]	""
+;ENDTEXT
+PCD01.EMail.Init.To4	PEQU	TEXT RAM	
+TEXT	PCD01.EMail.Init.To4	[32]	""
+;ENDTEXT
+PCD01.EMail.Init.To5	PEQU	TEXT RAM	
+TEXT	PCD01.EMail.Init.To5	[32]	""
+;ENDTEXT
+PCD01.Markt.IP	PEQU	TEXT RAM	
+TEXT	PCD01.Markt.IP	[32]	""
+;ENDTEXT
+PCD01.Markt.Kostenstelle	PEQU	TEXT RAM	
+TEXT	PCD01.Markt.Kostenstelle	[32]	""
+;ENDTEXT
+PCD01.Markt.Ort	PEQU	TEXT RAM	
+TEXT	PCD01.Markt.Ort	[32]	""
+;ENDTEXT
+PCD01.Markt.OrtBezeichnung	PEQU	TEXT RAM	
+TEXT	PCD01.Markt.OrtBezeichnung	[32]	""
+;ENDTEXT
+PCD01.Markt.PLZ	PEQU	TEXT RAM	
+TEXT	PCD01.Markt.PLZ	[32]	""
+;ENDTEXT
+PCD01.Markt.Strasse	PEQU	TEXT RAM	
+TEXT	PCD01.Markt.Strasse	[32]	""
+;ENDTEXT
+PCD01.Markt.Tel	PEQU	TEXT RAM	
+TEXT	PCD01.Markt.Tel	[32]	""
+;ENDTEXT
+PCD01.RefSPS.IP	PEQU	TEXT RAM	
+TEXT	PCD01.RefSPS.IP	[32]	""
+;ENDTEXT
+$ENDIF

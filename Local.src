@@ -1,0 +1,42 @@
+$HIDE ;;Hidden section inserted by S-Edit
+$include "<$ProjDir>\Libs\SF\SFSysLib_en.lib"
+$ENDHIDE
+            COB    5
+                   5
+$INIT
+S.CPU.Sid   EQU    R
+            PUBL   S.CPU.Sid
+
+S.CPU.SSid  EQU    R
+            PUBL   S.CPU.Sid
+
+
+S.CPU.Sidok EQU    F
+            PUBL   S.CPU.Sidok
+
+            LD     S.CPU.SSID
+                   R     94524212     
+$ENDINIT
+
+
+            CSF    S.SF.SYS.Library    ;Library number
+                   S.SF.SYS.ReadSerialNum ;Read PCD serial number into Register
+                   S.CPU.Sid           ;
+            CMP    S.CPU.Sid
+                   S.CPU.ssid
+            JR     Z SSIDok
+            RES    S.CPU.Sidok
+            HALT                       ; HALT  if not ok
+SSIDok:
+            SET    S.CPU.Sidok
+            ECOB
+
+                   
+          
+
+
+
+
+
+
+

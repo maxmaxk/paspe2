@@ -1,0 +1,712 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SaiaObjectData VersionStruct="2.0.101" VersionContent="2.0.111">
+  <!--Copyright(C) 2009-2014, Saia-Burgess Controls AG-->
+  <Object name="pcd3.controller.pcd3m5340">
+    <SlotList>
+      <Category name="this">
+        <Slot name="this" visible="true">
+          <Object name="pcd3.controller.pcd3m5340">
+            <PropertyList>
+              <Category name="firmware">
+                <Item name="firmwareversion">1.24.00</Item>
+                <Item name="maxfirmwareversion">
+                </Item>
+                <Item name="scfgstructvermajor">1.24.00</Item>
+                <Item name="scfgstructverminor">1.24.00</Item>
+                <Item name="configntmajor" section="ConfigNT" attrib="Major" minfwver="1.14.00">0</Item>
+                <Item name="configntminor" section="ConfigNT" attrib="Minor" minfwver="1.14.00">2</Item>
+                <Item name="configntpcdtype" section="ConfigNT" attrib="PCDType" minfwver="1.14.00">PCD3.M5340</Item>
+              </Category>
+              <Category name="memory">
+                <Item name="codetextextensionmemory">1024</Item>
+                <Item name="userprogrammemorybackup">onfilesystem</Item>
+                <Item name="extensionmemorybackup">256</Item>
+                <Item name="pcdprogprogdir" section="PCDProg" attrib="ProgDir" minfwver="1.16.00">SL0FLASH:/PCD_PROG</Item>
+                <Item name="pcdprogramrestore" section="Pcd" attrib="ProgramRestore" minfwver="1.20.00">0</Item>
+              </Category>
+              <Category name="system" visible="false">
+                <Item name="ntsystem">1</Item>
+                <Item name="typenumber">24</Item>
+                <Item name="typeconstant">PCD3_M534</Item>
+                <Item name="typecomment">
+                </Item>
+                <Item name="systemid">M5340</Item>
+                <Item name="serialnumber">088F290F</Item>
+                <Item name="pcdfirmwareversion">1.24.5</Item>
+                <Item name="ethernetriosupport">ethernetrio;smartrio</Item>
+                <Item name="labelforiomodules">pcd3</Item>
+                <Item name="interruptx0xob">20</Item>
+                <Item name="interruptx1xob">21</Item>
+              </Category>
+              <Category name="options">
+                <Item name="resetoutputenable" section="Pcd" attrib="Reset_Output_Enable" minfwver="1.20.00">0</Item>
+                <Item name="xob1enable" section="Pcd" attrib="XOB1_Enable" minfwver="1.20.00">0</Item>
+                <Item name="runstopenable" section="Pcd" attrib="RUN_HALT_Switch" minfwver="1.20.00">0</Item>
+                <Item name="rtccountryzone" minfwver="1.14.00">(Custom)</Item>
+                <Item name="rtctimezone" section="Rtc" attrib="TimeZone" minfwver="1.14.00">
+                </Item>
+                <Item name="servicekey" minfwver="1.22.00">
+                </Item>
+              </Category>
+              <Category name="password">
+                <Item name="passwordenabled" section="ProgPassword" attrib="Enable" minfwver="1.20.00">0</Item>
+                <Item name="password" section="ProgPassword" attrib="Password" minfwver="1.20.00">
+                </Item>
+                <Item name="passwordtimeout" section="ProgPassword" attrib="Password_Timeout" minfwver="1.20.00">1</Item>
+              </Category>
+              <Category name="sbus">
+                <Item name="sbusenabled">1</Item>
+                <Item name="sbusstation" section="SBus" attrib="Address" minfwver="1.20.00">212</Item>
+              </Category>
+              <Category name="iohandling">
+                <Item name="iohandlingsupported">1</Item>
+                <Item name="iohandlingenabled">1</Item>
+                <Item name="peripheraladdressdefinition">auto</Item>
+              </Category>
+              <Category name="powersupply">
+                <Item name="powersupplyspec">bad</Item>
+                <Item name="currentavailable5v">600</Item>
+                <Item name="currentavailable24v">100</Item>
+                <Item name="current24vfactors">100.0;0.0;150;0.067;260.0;0.208</Item>
+                <Item name="currentused5v">0</Item>
+                <Item name="currentused24v">0</Item>
+              </Category>
+              <Category name="serverfileaccess" minfwver="1.14.00" minfwacc="1.14.00">
+                <Item name="swebpage" section="SWeb" attrib="Page">start.htm</Item>
+                <Item name="swebindex" section="SWeb" attrib="Index">1</Item>
+                <Item name="swebaccessenable" section="SWeb" attrib="AccessEnable">0</Item>
+                <Item name="swebaccesstimeout" section="SWeb" attrib="AccessTimeout">60</Item>
+                <Item name="swebaccesspage" section="SWeb" attrib="AccessPage">pwdform.htm</Item>
+                <Item name="swebaccessfile" section="SWeb" attrib="AccessFile">
+                </Item>
+                <Item name="swebaccessread" section="SWeb" attrib="AccessRead">
+                </Item>
+                <Item name="swebaccesswrite" section="SWeb" attrib="AccessWrite">
+                </Item>
+                <Item name="swebaccessglobal" section="SWeb" attrib="AccessGlobal">
+                </Item>
+              </Category>
+              <Category name="serverhwconfig" minfwver="1.14.00" minfwacc="1.14.00">
+                <Item name="pcdwebserverspeed" section="PCDWebServer" attrib="Speed">5</Item>
+                <Item name="pcdwebserverramdisk" section="PCDWebServer" attrib="Ramdisk">64</Item>
+                <Item name="pcdwebserveradvanceduser" minfwver="">0</Item>
+                <Item name="pcdwebserverweb" section="PCDWebServer" attrib="WEB">1</Item>
+                <Item name="pcdwebserverintflash" section="PCDWebServer" attrib="INTFLASH">2</Item>
+                <Item name="pcdwebserverm2_flash" section="PCDWebServer" attrib="M2_FLASH">3</Item>
+                <Item name="pcdwebserverm1_flash" section="PCDWebServer" attrib="M1_FLASH">4</Item>
+                <Item name="pcdwebserversl0flash" section="PCDWebServer" attrib="SL0FLASH">5</Item>
+                <Item name="pcdwebserversl1flash" section="PCDWebServer" attrib="SL1FLASH">6</Item>
+                <Item name="pcdwebserversl2flash" section="PCDWebServer" attrib="SL2FLASH">7</Item>
+                <Item name="pcdwebserversl3flash" section="PCDWebServer" attrib="SL3FLASH">8</Item>
+                <Item name="pcdwebserverusersram" section="PCDWebServer" attrib="USERSRAM">9</Item>
+                <Item name="pcdwebserverdefpages" section="PCDWebServer" attrib="DEFPAGES">99</Item>
+              </Category>
+              <Category name="sbusweb" minfwver="1.14.00" minfwacc="1.14.00">
+                <Item name="sbuswebenable" section="SBusWeb" attrib="Enable">1</Item>
+                <Item name="sbuswebsessions" section="SBusWeb" attrib="Sessions">8</Item>
+                <Item name="sbuswebadvanceduser" minfwver="">0</Item>
+                <Item name="sbuswebcached" section="SBusWeb" attrib="Cached">1</Item>
+                <Item name="sbuswebtimeout" section="SBusWeb" attrib="Timeout">750</Item>
+                <Item name="sbuswebpriority" section="SBusWeb" attrib="Priority">10</Item>
+                <Item name="sbuswebtimeoutfdl" section="SBusWeb" attrib="TimeoutFdl">3000</Item>
+                <Item name="sbuswebpriorityfdl" section="SBusWeb" attrib="PriorityFdl">5</Item>
+                <Item name="sbuswebtimeoutether" section="SBusWeb" attrib="TimeoutEther">3000</Item>
+                <Item name="sbuswebpriorityether" section="SBusWeb" attrib="PriorityEther">10</Item>
+                <Item name="sbuswebtimeoutcom" section="SBusWeb" attrib="TimeoutCom">3000</Item>
+                <Item name="sbuswebprioritycom" section="SBusWeb" attrib="PriorityCom">5</Item>
+                <Item name="sbuswebtimeoutusb" section="SBusWeb" attrib="TimeoutUsb">500</Item>
+                <Item name="sbuswebpriorityusb" section="SBusWeb" attrib="PriorityUsb">10</Item>
+                <Item name="sbuswebcookies" section="SBusWeb" attrib="Cookies" minfwver="1.20.00">0</Item>
+              </Category>
+            </PropertyList>
+          </Object>
+        </Slot>
+      </Category>
+      <Category name="memoryslots">
+        <Slot name="slot0" visible="true">
+          <Object name="" />
+        </Slot>
+        <Slot name="slot1" visible="true">
+          <Object name="" />
+        </Slot>
+      </Category>
+      <Category name="onboardcomms">
+        <Slot name="rs422/rs485" visible="true">
+          <Object name="pcd3.onboard.rs422/rs485">
+            <PropertyList>
+              <Category name="general">
+                <Item name="enabledbustermination" section="Pcd" attrib="Termination_Resistor" minfwver="1.20.00">1</Item>
+              </Category>
+              <Category name="serialsbus">
+                <Item name="port" section="SBusSerial_0" attrib="Port" minfwver="1.20.00">3</Item>
+                <Item name="enabledserialsbus" section="SBusSerial_0" attrib="Enable" minfwver="1.20.00">0</Item>
+                <Item name="pguserialsbus" section="SBusSerial_0" attrib="PGU" minfwver="1.20.00">1</Item>
+              </Category>
+              <Category name="gatewayserialsbus">
+                <Item name="portgateway" section="SBusSerialMG_0" attrib="Port" minfwver="1.20.00">3</Item>
+                <Item name="enabledgatewayserialsbus" section="SBusSerialMG_0" attrib="Enable" minfwver="1.20.00">0</Item>
+                <Item name="firststnserialsbus" section="SBusSerialMG_0" attrib="StartAddress" minfwver="1.20.00">0</Item>
+                <Item name="laststnserialsbus" section="SBusSerialMG_0" attrib="EndAddress" minfwver="1.20.00">253</Item>
+              </Category>
+              <Category name="timingserialsbus">
+                <Item name="mode" section="SBusSerial_0" section1="SBusSerialMG_0" attrib="Mode" minfwver="1.20.00">data</Item>
+                <Item name="baudrateserialsbus" section="SBusSerial_0" section1="SBusSerialMG_0" attrib="Baudrate" minfwver="1.20.00">9600</Item>
+                <Item name="timeoutserialsbus" section="SBusSerialMG_0" attrib="Timeout" minfwver="1.20.00">0</Item>
+                <Item name="tsdelay" section="SBusSerial_0" section1="SBusSerialMG_0" attrib="TsDelay" minfwver="1.20.00">0</Item>
+                <Item name="tndelay" section="SBusSerial_0" section1="SBusSerialMG_0" attrib="TnDelay" minfwver="1.20.00">0</Item>
+              </Category>
+            </PropertyList>
+          </Object>
+        </Slot>
+        <Slot name="usb" visible="true">
+          <Object name="pcd3.onboard.usb">
+            <PropertyList>
+              <Category name="general">
+                <Item name="usbtype">USB 1.1 Slave</Item>
+                <Item name="sbususb" section="SBus" attrib="USB" minfwver="1.20.00">1</Item>
+              </Category>
+            </PropertyList>
+          </Object>
+        </Slot>
+        <Slot name="rs232" visible="true">
+          <Object name="pcd3.onboard.rs232">
+            <PropertyList>
+              <Category name="general">
+                <Item name="fullhandshake" section="Pcd" attrib="PGU" minfwver="1.20.00">0</Item>
+              </Category>
+              <Category name="serialsbus">
+                <Item name="port" section="SBusSerial_0" attrib="Port" minfwver="1.20.00">0</Item>
+                <Item name="enabledserialsbus" section="SBusSerial_0" attrib="Enable" minfwver="1.20.00">0</Item>
+                <Item name="pguserialsbus" section="SBusSerial_0" attrib="PGU" minfwver="1.20.00">1</Item>
+              </Category>
+              <Category name="modem">
+                <Item name="portmodem" section="SBusModem" section1="Modem" attrib="Port" minfwver="1.20.00">0</Item>
+                <Item name="enabledmodem" section="SBusModem" section1="Modem" attrib="Enable" minfwver="1.20.00">0</Item>
+                <Item name="pgumodem" section="SBusModem" attrib="PGU" minfwver="1.20.00">1</Item>
+                <Item name="modemname" section="Modem" attrib="Name" minfwver="1.20.00">
+                </Item>
+                <Item name="modeminit" section="Modem" attrib="Init" minfwver="1.20.00">
+                </Item>
+                <Item name="modemreset" section="Modem" attrib="Reset" minfwver="1.20.00">
+                </Item>
+              </Category>
+              <Category name="gatewayserialsbus">
+                <Item name="portgateway" section="SBusSerialMG_0" attrib="Port" minfwver="1.20.00">0</Item>
+                <Item name="enabledgatewayserialsbus" section="SBusSerialMG_0" attrib="Enable" minfwver="1.20.00">0</Item>
+                <Item name="firststnserialsbus" section="SBusSerialMG_0" attrib="StartAddress" minfwver="1.20.00">0</Item>
+                <Item name="laststnserialsbus" section="SBusSerialMG_0" attrib="EndAddress" minfwver="1.20.00">253</Item>
+              </Category>
+              <Category name="timingserialsbus">
+                <Item name="mode" section="SBusSerial_0" section1="SBusSerialMG_0" section2="SBusModem" attrib="Mode" minfwver="1.20.00">data</Item>
+                <Item name="baudrateserialsbus" section="SBusSerial_0" section1="SBusSerialMG_0" section2="Modem" attrib="Baudrate" minfwver="1.20.00">9600</Item>
+                <Item name="timeoutserialsbus" section="SBusSerialMG_0" attrib="Timeout" minfwver="1.20.00">0</Item>
+                <Item name="tsdelay" section="SBusSerial_0" section1="SBusSerialMG_0" section2="SBusModem" attrib="TsDelay" minfwver="1.20.00">0</Item>
+                <Item name="tndelay" section="SBusSerial_0" section1="SBusSerialMG_0" section2="SBusModem" attrib="TnDelay" minfwver="1.20.00">0</Item>
+              </Category>
+              <Category name="ppp" minfwver="1.14.00" minfwacc="1.14.00">
+                <Item name="pppportid" section="PPP" attrib="PortID">0</Item>
+                <Item name="pppenable" section="PPP" attrib="Enable">0</Item>
+                <Item name="pppmode" section="PPP" attrib="Mode">1</Item>
+                <Item name="ppplocaladdress" section="PPP" attrib="LocalAddress">0.0.0.0</Item>
+                <Item name="pppremoteaddress" section="PPP" attrib="RemoteAddress">0.0.0.0</Item>
+                <Item name="ppprestart" section="PPP" attrib="Restart">0</Item>
+                <Item name="pppimmstart" section="PPP" attrib="ImmStart">0</Item>
+                <Item name="pppusemodem" section="PPP" attrib="UseModem">0</Item>
+                <Item name="pppusedefaultscript" section="PPP" attrib="UseDefaultScript">1</Item>
+                <Item name="pppmsla" section="PPP" attrib="MSLa">
+                </Item>
+                <Item name="pppmslb" section="PPP" attrib="MSLb">
+                </Item>
+                <Item name="pppmslc" section="PPP" attrib="MSLc">
+                </Item>
+                <Item name="pppmsld" section="PPP" attrib="MSLd">
+                </Item>
+                <Item name="pppmsle" section="PPP" attrib="MSLe">
+                </Item>
+                <Item name="pppmslf" section="PPP" attrib="MSLf">
+                </Item>
+                <Item name="pppmslg" section="PPP" attrib="MSLg">
+                </Item>
+                <Item name="pppmslh" section="PPP" attrib="MSLh">
+                </Item>
+                <Item name="pppmsli" section="PPP" attrib="MSLi">
+                </Item>
+                <Item name="pppmslj" section="PPP" attrib="MSLj">
+                </Item>
+                <Item name="pppadvanceduser" minfwver="">0</Item>
+                <Item name="pppstartdelay" section="PPP" attrib="StartDelay">5</Item>
+                <Item name="pppdefaultroute" section="PPP" attrib="DefaultRoute">0</Item>
+                <Item name="pppbaudrate" section="PPP" attrib="Baudrate">115200</Item>
+                <Item name="pppremoteauthusername" section="PPP" attrib="RemoteAuthUsername">
+                </Item>
+                <Item name="pppremoteauthpasswd" section="PPP" attrib="RemoteAuthPasswd">
+                </Item>
+                <Item name="ppppeerauth" section="PPP" attrib="PeerAuth">0</Item>
+                <Item name="pppenaipfw" section="PPP" attrib="EnaIPFW">0</Item>
+                <Item name="pppenaereq" section="PPP" attrib="EnaEReq">0</Item>
+                <Item name="pppertinterval" section="PPP" attrib="ERTInterval">5</Item>
+                <Item name="pppernumber" section="PPP" attrib="ERNumber">6</Item>
+                <Item name="pppcheckdcd" section="PPP" attrib="CheckDCD">0</Item>
+                <Item name="pppdcdtimeout" section="PPP" attrib="DCDTimeout">1000</Item>
+                <Item name="pppdtrpulse" section="PPP" attrib="DTRPulse">0</Item>
+                <Item name="pppenadnsneg" section="PPP" attrib="EnaDNSNeg" minfwver="1.16.00">0</Item>
+              </Category>
+            </PropertyList>
+          </Object>
+        </Slot>
+        <Slot name="rs485/snet" visible="true">
+          <Object name="pcd3.onboard.rs485/snet">
+            <PropertyList>
+              <Category name="serialsbus">
+                <Item name="port" section="SBusSerial_0" attrib="Port" minfwver="1.20.00">2</Item>
+                <Item name="enabledserialsbus" section="SBusSerial_0" attrib="Enable" minfwver="1.20.00">0</Item>
+                <Item name="pguserialsbus" section="SBusSerial_0" attrib="PGU" minfwver="1.20.00">1</Item>
+              </Category>
+              <Category name="gatewayserialsbus">
+                <Item name="portgateway" section="SBusSerialMG_0" attrib="Port" minfwver="1.20.00">2</Item>
+                <Item name="enabledgatewayserialsbus" section="SBusSerialMG_0" attrib="Enable" minfwver="1.20.00">0</Item>
+                <Item name="firststnserialsbus" section="SBusSerialMG_0" attrib="StartAddress" minfwver="1.20.00">0</Item>
+                <Item name="laststnserialsbus" section="SBusSerialMG_0" attrib="EndAddress" minfwver="1.20.00">253</Item>
+              </Category>
+              <Category name="timingserialsbus">
+                <Item name="mode" section="SBusSerial_0" section1="SBusSerialMG_0" attrib="Mode" minfwver="1.20.00">data</Item>
+                <Item name="baudrateserialsbus" section="SBusSerial_0" section1="SBusSerialMG_0" attrib="Baudrate" minfwver="1.20.00">9600</Item>
+                <Item name="timeoutserialsbus" section="SBusSerialMG_0" attrib="Timeout" minfwver="1.20.00">0</Item>
+                <Item name="tsdelay" section="SBusSerial_0" section1="SBusSerialMG_0" attrib="TsDelay" minfwver="1.20.00">0</Item>
+                <Item name="tndelay" section="SBusSerial_0" section1="SBusSerialMG_0" attrib="TnDelay" minfwver="1.20.00">0</Item>
+              </Category>
+              <Category name="energymetersbus">
+                <Item name="portecbus" section="SBusEnergy" attrib="Port" minfwver="1.20.00">2</Item>
+                <Item name="enabledecbus" section="SBusEnergy" attrib="Enable" minfwver="1.20.00">0</Item>
+                <Item name="baudratesecbus" section="SBusEnergy" attrib="Baudrate" minfwver="1.20.00">0</Item>
+                <Item name="timeoutecbus" section="SBusEnergy" attrib="Timeout" minfwver="1.20.00">0</Item>
+                <Item name="retriesecbus" section="SBusEnergy" attrib="Retries" minfwver="1.20.00">2</Item>
+                <Item name="maxsaddressecbus" section="SBusEnergy" attrib="MaxAddress" minfwver="1.20.00">32</Item>
+              </Category>
+              <Category name="profisbus">
+                <Item name="channel">2</Item>
+                <Item name="enabledprofisbus">0</Item>
+                <Item name="pguprofisbus">0</Item>
+                <Item name="slaveprofisbus">1</Item>
+                <Item name="address">0</Item>
+                <Item name="usesnetconfig">0</Item>
+                <Item name="snetfilename">
+                </Item>
+                <Item name="baudrateprofisbus">187500</Item>
+                <Item name="busprofile">s-net</Item>
+              </Category>
+              <Category name="parametersprofisbus">
+                <Item name="slottime">3000</Item>
+                <Item name="mintsdr">150</Item>
+                <Item name="maxtsdr">980</Item>
+                <Item name="quiettime">0</Item>
+                <Item name="setuptime">240</Item>
+                <Item name="gap">50</Item>
+                <Item name="hsa">126</Item>
+                <Item name="retries">1</Item>
+              </Category>
+              <Category name="gatewayprofisbus">
+                <Item name="channelgateway">2</Item>
+                <Item name="enabledgatewayprofisbus">0</Item>
+                <Item name="firststnprofisbus">0</Item>
+                <Item name="laststnprofisbus">253</Item>
+                <Item name="timeoutprofisbus">0</Item>
+              </Category>
+            </PropertyList>
+          </Object>
+        </Slot>
+        <Slot name="ethernet" visible="true">
+          <Object name="pcd3.onboard.ethernet">
+            <PropertyList>
+              <Category name="general">
+                <Item name="mac">7C 16 0D 01 CB 56</Item>
+              </Category>
+              <Category name="tcpip">
+                <Item name="channel">9</Item>
+                <Item name="enabledtcpip">1</Item>
+                <Item name="ethernetrionetwork">0</Item>
+                <Item name="ipaddress" section="TcpIp_0" attrib="Address" minfwver="1.20.00">192.168.7.212</Item>
+                <Item name="subnetmask" section="TcpIp_0" attrib="SubnetMask" minfwver="1.20.00">255.0.0.0</Item>
+                <Item name="defaultrouter" section="TcpIp_0" attrib="Gateway" minfwver="1.20.00">192.168.7.1</Item>
+                <Item name="enableddhcp">0</Item>
+                <Item name="accesscontrollist">0</Item>
+                <Item name="aclipenable" section="ACL_IN_IP0" attrib="Enable" minfwver="1.22.0">0</Item>
+                <Item name="aclippolicy" section="ACL_IN_IP0" attrib="Policy" minfwver="1.22.0">DROP</Item>
+                <Item name="aclipdialog">aclipdialog</Item>
+                <Item name="aclipip_0" section="ACL_IN_IP0" attrib="IP.0" minfwver="1.22.0">0.0.0.0</Item>
+                <Item name="aclipmask_0" section="ACL_IN_IP0" attrib="MASK.0" minfwver="1.22.0">255.255.255.255</Item>
+                <Item name="aclipdesc_0" section="ACL_IN_IP0" attrib="DESC.0" minfwver="1.22.0">
+                </Item>
+                <Item name="aclipip_1" section="ACL_IN_IP0" attrib="IP.1" minfwver="1.22.0">0.0.0.0</Item>
+                <Item name="aclipmask_1" section="ACL_IN_IP0" attrib="MASK.1" minfwver="1.22.0">255.255.255.255</Item>
+                <Item name="aclipdesc_1" section="ACL_IN_IP0" attrib="DESC.1" minfwver="1.22.0">
+                </Item>
+                <Item name="aclipip_2" section="ACL_IN_IP0" attrib="IP.2" minfwver="1.22.0">0.0.0.0</Item>
+                <Item name="aclipmask_2" section="ACL_IN_IP0" attrib="MASK.2" minfwver="1.22.0">255.255.255.255</Item>
+                <Item name="aclipdesc_2" section="ACL_IN_IP0" attrib="DESC.2" minfwver="1.22.0">
+                </Item>
+                <Item name="aclipip_3" section="ACL_IN_IP0" attrib="IP.3" minfwver="1.22.0">0.0.0.0</Item>
+                <Item name="aclipmask_3" section="ACL_IN_IP0" attrib="MASK.3" minfwver="1.22.0">255.255.255.255</Item>
+                <Item name="aclipdesc_3" section="ACL_IN_IP0" attrib="DESC.3" minfwver="1.22.0">
+                </Item>
+                <Item name="aclipip_4" section="ACL_IN_IP0" attrib="IP.4" minfwver="1.22.0">0.0.0.0</Item>
+                <Item name="aclipmask_4" section="ACL_IN_IP0" attrib="MASK.4" minfwver="1.22.0">255.255.255.255</Item>
+                <Item name="aclipdesc_4" section="ACL_IN_IP0" attrib="DESC.4" minfwver="1.22.0">
+                </Item>
+                <Item name="aclipip_5" section="ACL_IN_IP0" attrib="IP.5" minfwver="1.22.0">0.0.0.0</Item>
+                <Item name="aclipmask_5" section="ACL_IN_IP0" attrib="MASK.5" minfwver="1.22.0">255.255.255.255</Item>
+                <Item name="aclipdesc_5" section="ACL_IN_IP0" attrib="DESC.5" minfwver="1.22.0">
+                </Item>
+                <Item name="aclipip_6" section="ACL_IN_IP0" attrib="IP.6" minfwver="1.22.0">0.0.0.0</Item>
+                <Item name="aclipmask_6" section="ACL_IN_IP0" attrib="MASK.6" minfwver="1.22.0">255.255.255.255</Item>
+                <Item name="aclipdesc_6" section="ACL_IN_IP0" attrib="DESC.6" minfwver="1.22.0">
+                </Item>
+                <Item name="aclipip_7" section="ACL_IN_IP0" attrib="IP.7" minfwver="1.22.0">0.0.0.0</Item>
+                <Item name="aclipmask_7" section="ACL_IN_IP0" attrib="MASK.7" minfwver="1.22.0">255.255.255.255</Item>
+                <Item name="aclipdesc_7" section="ACL_IN_IP0" attrib="DESC.7" minfwver="1.22.0">
+                </Item>
+                <Item name="aclipip_8" section="ACL_IN_IP0" attrib="IP.8" minfwver="1.22.0">0.0.0.0</Item>
+                <Item name="aclipmask_8" section="ACL_IN_IP0" attrib="MASK.8" minfwver="1.22.0">255.255.255.255</Item>
+                <Item name="aclipdesc_8" section="ACL_IN_IP0" attrib="DESC.8" minfwver="1.22.0">
+                </Item>
+                <Item name="aclipip_9" section="ACL_IN_IP0" attrib="IP.9" minfwver="1.22.0">0.0.0.0</Item>
+                <Item name="aclipmask_9" section="ACL_IN_IP0" attrib="MASK.9" minfwver="1.22.0">255.255.255.255</Item>
+                <Item name="aclipdesc_9" section="ACL_IN_IP0" attrib="DESC.9" minfwver="1.22.0">
+                </Item>
+                <Item name="aclipip_10" section="ACL_IN_IP0" attrib="IP.10" minfwver="1.22.0">0.0.0.0</Item>
+                <Item name="aclipmask_10" section="ACL_IN_IP0" attrib="MASK.10" minfwver="1.22.0">255.255.255.255</Item>
+                <Item name="aclipdesc_10" section="ACL_IN_IP0" attrib="DESC.10" minfwver="1.22.0">
+                </Item>
+                <Item name="aclipip_11" section="ACL_IN_IP0" attrib="IP.11" minfwver="1.22.0">0.0.0.0</Item>
+                <Item name="aclipmask_11" section="ACL_IN_IP0" attrib="MASK.11" minfwver="1.22.0">255.255.255.255</Item>
+                <Item name="aclipdesc_11" section="ACL_IN_IP0" attrib="DESC.11" minfwver="1.22.0">
+                </Item>
+                <Item name="aclipip_12" section="ACL_IN_IP0" attrib="IP.12" minfwver="1.22.0">0.0.0.0</Item>
+                <Item name="aclipmask_12" section="ACL_IN_IP0" attrib="MASK.12" minfwver="1.22.0">255.255.255.255</Item>
+                <Item name="aclipdesc_12" section="ACL_IN_IP0" attrib="DESC.12" minfwver="1.22.0">
+                </Item>
+                <Item name="aclipip_13" section="ACL_IN_IP0" attrib="IP.13" minfwver="1.22.0">0.0.0.0</Item>
+                <Item name="aclipmask_13" section="ACL_IN_IP0" attrib="MASK.13" minfwver="1.22.0">255.255.255.255</Item>
+                <Item name="aclipdesc_13" section="ACL_IN_IP0" attrib="DESC.13" minfwver="1.22.0">
+                </Item>
+                <Item name="aclipip_14" section="ACL_IN_IP0" attrib="IP.14" minfwver="1.22.0">0.0.0.0</Item>
+                <Item name="aclipmask_14" section="ACL_IN_IP0" attrib="MASK.14" minfwver="1.22.0">255.255.255.255</Item>
+                <Item name="aclipdesc_14" section="ACL_IN_IP0" attrib="DESC.14" minfwver="1.22.0">
+                </Item>
+                <Item name="aclipip_15" section="ACL_IN_IP0" attrib="IP.15" minfwver="1.22.0">0.0.0.0</Item>
+                <Item name="aclipmask_15" section="ACL_IN_IP0" attrib="MASK.15" minfwver="1.22.0">255.255.255.255</Item>
+                <Item name="aclipdesc_15" section="ACL_IN_IP0" attrib="DESC.15" minfwver="1.22.0">
+                </Item>
+                <Item name="aclipip_16" section="ACL_IN_IP0" attrib="IP.16" minfwver="1.22.0">0.0.0.0</Item>
+                <Item name="aclipmask_16" section="ACL_IN_IP0" attrib="MASK.16" minfwver="1.22.0">255.255.255.255</Item>
+                <Item name="aclipdesc_16" section="ACL_IN_IP0" attrib="DESC.16" minfwver="1.22.0">
+                </Item>
+                <Item name="aclipip_17" section="ACL_IN_IP0" attrib="IP.17" minfwver="1.22.0">0.0.0.0</Item>
+                <Item name="aclipmask_17" section="ACL_IN_IP0" attrib="MASK.17" minfwver="1.22.0">255.255.255.255</Item>
+                <Item name="aclipdesc_17" section="ACL_IN_IP0" attrib="DESC.17" minfwver="1.22.0">
+                </Item>
+                <Item name="aclipip_18" section="ACL_IN_IP0" attrib="IP.18" minfwver="1.22.0">0.0.0.0</Item>
+                <Item name="aclipmask_18" section="ACL_IN_IP0" attrib="MASK.18" minfwver="1.22.0">255.255.255.255</Item>
+                <Item name="aclipdesc_18" section="ACL_IN_IP0" attrib="DESC.18" minfwver="1.22.0">
+                </Item>
+                <Item name="aclipip_19" section="ACL_IN_IP0" attrib="IP.19" minfwver="1.22.0">0.0.0.0</Item>
+                <Item name="aclipmask_19" section="ACL_IN_IP0" attrib="MASK.19" minfwver="1.22.0">255.255.255.255</Item>
+                <Item name="aclipdesc_19" section="ACL_IN_IP0" attrib="DESC.19" minfwver="1.22.0">
+                </Item>
+                <Item name="aclipip_20" section="ACL_IN_IP0" attrib="IP.20" minfwver="1.22.0">0.0.0.0</Item>
+                <Item name="aclipmask_20" section="ACL_IN_IP0" attrib="MASK.20" minfwver="1.22.0">255.255.255.255</Item>
+                <Item name="aclipdesc_20" section="ACL_IN_IP0" attrib="DESC.20" minfwver="1.22.0">
+                </Item>
+                <Item name="aclipip_21" section="ACL_IN_IP0" attrib="IP.21" minfwver="1.22.0">0.0.0.0</Item>
+                <Item name="aclipmask_21" section="ACL_IN_IP0" attrib="MASK.21" minfwver="1.22.0">255.255.255.255</Item>
+                <Item name="aclipdesc_21" section="ACL_IN_IP0" attrib="DESC.21" minfwver="1.22.0">
+                </Item>
+                <Item name="aclipip_22" section="ACL_IN_IP0" attrib="IP.22" minfwver="1.22.0">0.0.0.0</Item>
+                <Item name="aclipmask_22" section="ACL_IN_IP0" attrib="MASK.22" minfwver="1.22.0">255.255.255.255</Item>
+                <Item name="aclipdesc_22" section="ACL_IN_IP0" attrib="DESC.22" minfwver="1.22.0">
+                </Item>
+                <Item name="aclipip_23" section="ACL_IN_IP0" attrib="IP.23" minfwver="1.22.0">0.0.0.0</Item>
+                <Item name="aclipmask_23" section="ACL_IN_IP0" attrib="MASK.23" minfwver="1.22.0">255.255.255.255</Item>
+                <Item name="aclipdesc_23" section="ACL_IN_IP0" attrib="DESC.23" minfwver="1.22.0">
+                </Item>
+                <Item name="aclipip_24" section="ACL_IN_IP0" attrib="IP.24" minfwver="1.22.0">0.0.0.0</Item>
+                <Item name="aclipmask_24" section="ACL_IN_IP0" attrib="MASK.24" minfwver="1.22.0">255.255.255.255</Item>
+                <Item name="aclipdesc_24" section="ACL_IN_IP0" attrib="DESC.24" minfwver="1.22.0">
+                </Item>
+                <Item name="aclipip_25" section="ACL_IN_IP0" attrib="IP.25" minfwver="1.22.0">0.0.0.0</Item>
+                <Item name="aclipmask_25" section="ACL_IN_IP0" attrib="MASK.25" minfwver="1.22.0">255.255.255.255</Item>
+                <Item name="aclipdesc_25" section="ACL_IN_IP0" attrib="DESC.25" minfwver="1.22.0">
+                </Item>
+                <Item name="aclipip_26" section="ACL_IN_IP0" attrib="IP.26" minfwver="1.22.0">0.0.0.0</Item>
+                <Item name="aclipmask_26" section="ACL_IN_IP0" attrib="MASK.26" minfwver="1.22.0">255.255.255.255</Item>
+                <Item name="aclipdesc_26" section="ACL_IN_IP0" attrib="DESC.26" minfwver="1.22.0">
+                </Item>
+                <Item name="aclipip_27" section="ACL_IN_IP0" attrib="IP.27" minfwver="1.22.0">0.0.0.0</Item>
+                <Item name="aclipmask_27" section="ACL_IN_IP0" attrib="MASK.27" minfwver="1.22.0">255.255.255.255</Item>
+                <Item name="aclipdesc_27" section="ACL_IN_IP0" attrib="DESC.27" minfwver="1.22.0">
+                </Item>
+                <Item name="aclipip_28" section="ACL_IN_IP0" attrib="IP.28" minfwver="1.22.0">0.0.0.0</Item>
+                <Item name="aclipmask_28" section="ACL_IN_IP0" attrib="MASK.28" minfwver="1.22.0">255.255.255.255</Item>
+                <Item name="aclipdesc_28" section="ACL_IN_IP0" attrib="DESC.28" minfwver="1.22.0">
+                </Item>
+                <Item name="aclipip_29" section="ACL_IN_IP0" attrib="IP.29" minfwver="1.22.0">0.0.0.0</Item>
+                <Item name="aclipmask_29" section="ACL_IN_IP0" attrib="MASK.29" minfwver="1.22.0">255.255.255.255</Item>
+                <Item name="aclipdesc_29" section="ACL_IN_IP0" attrib="DESC.29" minfwver="1.22.0">
+                </Item>
+                <Item name="aclipip_30" section="ACL_IN_IP0" attrib="IP.30" minfwver="1.22.0">0.0.0.0</Item>
+                <Item name="aclipmask_30" section="ACL_IN_IP0" attrib="MASK.30" minfwver="1.22.0">255.255.255.255</Item>
+                <Item name="aclipdesc_30" section="ACL_IN_IP0" attrib="DESC.30" minfwver="1.22.0">
+                </Item>
+                <Item name="aclipip_31" section="ACL_IN_IP0" attrib="IP.31" minfwver="1.22.0">0.0.0.0</Item>
+                <Item name="aclipmask_31" section="ACL_IN_IP0" attrib="MASK.31" minfwver="1.22.0">255.255.255.255</Item>
+                <Item name="aclipdesc_31" section="ACL_IN_IP0" attrib="DESC.31" minfwver="1.22.0">
+                </Item>
+              </Category>
+              <Category name="dhcp" minfwver="1.14.00">
+                <Item name="dhcpenable" section="DHCP" attrib="Enable">0</Item>
+                <Item name="dhcpimmstart" section="DHCP" attrib="ImmStart" maxfwver="1.22.00">1</Item>
+                <Item name="dhcpsetgateway" section="DHCP" attrib="SetGateway">0</Item>
+                <Item name="dhcpsetdnsinfo" section="DHCP" attrib="SetDNSInfo">0</Item>
+                <Item name="dhcpmode" section="DHCP" attrib="Mode">0</Item>
+                <Item name="dhcprejsvra" section="DHCP" attrib="RejSVRa">0.0.0.0</Item>
+                <Item name="dhcprejsvrb" section="DHCP" attrib="RejSVRb">0.0.0.0</Item>
+                <Item name="dhcprejsvrc" section="DHCP" attrib="RejSVRc">0.0.0.0</Item>
+                <Item name="dhcprejsvrd" section="DHCP" attrib="RejSVRd">0.0.0.0</Item>
+                <Item name="dhcphostname" section="DHCP" attrib="Hostname">
+                </Item>
+                <Item name="dhcpfqdn" section="DHCP" attrib="FQDN">
+                </Item>
+              </Category>
+              <Category name="ethersbus">
+                <Item name="ethersbuschannel" section="SBusIp" attrib="Port" minfwver="1.20.00">9</Item>
+                <Item name="ethersbusenabled" section="SBusIp" attrib="Enable" minfwver="1.20.00">1</Item>
+                <Item name="ipnode" section="TcpIp_0" attrib="Node" minfwver="1.20.00">212</Item>
+                <Item name="pgutcpip" section="SBusIp" attrib="PGU" minfwver="1.20.00">1</Item>
+                <Item name="porttype">1</Item>
+                <Item name="slavetcpip">1</Item>
+                <Item name="networkgroups">1;1</Item>
+              </Category>
+              <Category name="gatewaytcpip">
+                <Item name="channelgateway">9</Item>
+                <Item name="enabledgatewaytcpip" section="SBusIpMG" attrib="Enable" minfwver="1.20.00">0</Item>
+                <Item name="firststntcpip" section="SBusIpMG" attrib="StartAddress" minfwver="1.20.00">0</Item>
+                <Item name="laststntcpip" section="SBusIpMG" attrib="EndAddress" minfwver="1.20.00">253</Item>
+                <Item name="timeouttcpip" section="SBusIpMG" attrib="Timeout" minfwver="1.20.00">0</Item>
+              </Category>
+              <Category name="ethphy" minfwver="1.16.00" visible="false">
+                <Item name="ethphylink_config" section="EthPHY" attrib="link_config">Auto-Negotiation</Item>
+              </Category>
+            </PropertyList>
+          </Object>
+        </Slot>
+      </Category>
+      <Category name="inifileconfig">
+        <Slot name="http" visible="true">
+          <Object name="pcd3.inifileconfig.http">
+            <PropertyList>
+              <Category name="ftpserver" minfwver="1.14.00" minfwacc="1.14.00">
+                <Item name="ftpserverftpstart" section="FTPServer" attrib="FTPStart">1</Item>
+                <Item name="ftpserverftpport" section="FTPServer" attrib="FTPPort">21</Item>
+                <Item name="ftpserverusernamea" section="FTPServer" attrib="UserNamea">
+                </Item>
+                <Item name="ftpserverusernameb" section="FTPServer" attrib="UserNameb">
+                </Item>
+                <Item name="ftpserverusernamec" section="FTPServer" attrib="UserNamec">
+                </Item>
+                <Item name="ftpserverusernamed" section="FTPServer" attrib="UserNamed">
+                </Item>
+                <Item name="ftpserverusernamee" section="FTPServer" attrib="UserNamee">
+                </Item>
+                <Item name="ftpserverusernamef" section="FTPServer" attrib="UserNamef">
+                </Item>
+                <Item name="ftpserverusernameg" section="FTPServer" attrib="UserNameg">
+                </Item>
+                <Item name="ftpserverusernameh" section="FTPServer" attrib="UserNameh">
+                </Item>
+                <Item name="ftpserverusernamei" section="FTPServer" attrib="UserNamei">
+                </Item>
+                <Item name="ftpserverusernamej" section="FTPServer" attrib="UserNamej">
+                </Item>
+                <Item name="ftpserveradvanceduser" minfwver="">0</Item>
+                <Item name="ftpserverftpconnectiontimeout" section="FTPServer" attrib="FTPConnectionTimeout">300</Item>
+                <Item name="ftpserverftpmaxinstnbr" section="FTPServer" attrib="FTPMaxInstNbr">3</Item>
+                <Item name="ftpserverftpplcblocks" section="FTPServer" attrib="FTPPLCBlocks">0</Item>
+                <Item name="ftpserverftpplcsfcb" section="FTPServer" attrib="FTPPLCSFCB">0</Item>
+                <Item name="ftpserverftpremovedefaultuser" section="FTPServer" attrib="FTPRemoveDefaultUser">0</Item>
+              </Category>
+              <Category name="httpprotocol" minfwver="1.14.00">
+                <Item name="httpdowngrade" section="Http" attrib="Downgrade">0</Item>
+                <Item name="httpchunkmode" section="Http" attrib="ChunkMode">1</Item>
+              </Category>
+              <Category name="httpfirstdaemon" minfwver="1.14.00" minfwacc="1.14.00">
+                <Item name="httpdirectenable" section="HttpDirect" attrib="Enable">1</Item>
+                <Item name="httpdirectport" section="HttpDirect" attrib="Port">80</Item>
+                <Item name="httpdirect1advanceduser" minfwver="">0</Item>
+                <Item name="httpdirectlistener" section="HttpDirect" attrib="Listener">16</Item>
+                <Item name="httpdirectsession" section="HttpDirect" attrib="Session">8</Item>
+                <Item name="httpdirectrecv" section="HttpDirect" attrib="Recv">4096</Item>
+                <Item name="httpdirectsend" section="HttpDirect" attrib="Send">2920</Item>
+                <Item name="httpdirectpriority" section="HttpDirect" attrib="Priority">10</Item>
+                <Item name="httpdirecttimeout" section="HttpDirect" attrib="Timeout">3000</Item>
+                <Item name="httpdirectkeep" section="HttpDirect" attrib="Keep">3000</Item>
+                <Item name="httpdirectretry" section="HttpDirect" attrib="Retry">30</Item>
+                <Item name="httpdirectnowait" section="HttpDirect" attrib="NoWait">1</Item>
+                <Item name="httpdirectnodelay" section="HttpDirect" attrib="NoDelays">1</Item>
+                <Item name="httpdirectchunkmode" section="HttpDirect" attrib="ChunkMode">1</Item>
+              </Category>
+              <Category name="httpseconddaemon" minfwver="1.14.00" minfwacc="1.14.00">
+                <Item name="httpdirectcmdenable" section="HttpDirect" attrib="CmdEnable">1</Item>
+                <Item name="httpdirectcmdport" section="HttpDirect" attrib="CmdPort">81</Item>
+                <Item name="httpdirect2advanceduser" minfwver="">0</Item>
+                <Item name="httpdirectcmdlistener" section="HttpDirect" attrib="CmdListener">16</Item>
+                <Item name="httpdirectcmdsession" section="HttpDirect" attrib="CmdSession">8</Item>
+                <Item name="httpdirectcmdrecv" section="HttpDirect" attrib="CmdRecv">4096</Item>
+                <Item name="httpdirectcmdsend" section="HttpDirect" attrib="CmdSend">2920</Item>
+                <Item name="httpdirectcmdpriority" section="HttpDirect" attrib="CmdPriority">5</Item>
+                <Item name="httpdirectcmdtimeout" section="HttpDirect" attrib="CmdTimeout">2000</Item>
+                <Item name="httpdirectcmdkeep" section="HttpDirect" attrib="CmdKeep">1000</Item>
+                <Item name="httpdirectcmdretry" section="HttpDirect" attrib="CmdRetry">20</Item>
+                <Item name="httpdirectcmdnowait" section="HttpDirect" attrib="CmdNoWait">1</Item>
+                <Item name="httpdirectcmdnodelay" section="HttpDirect" attrib="CmdNoDelay">1</Item>
+                <Item name="httpdirectcmdchunkmode" section="HttpDirect" attrib="CmdChunkMode">1</Item>
+              </Category>
+              <Category name="opendatamode">
+                <Item name="initopendatamode">1</Item>
+                <Item name="channletoinit">0</Item>
+                <Item name="telegramreadingtimeout">1000</Item>
+              </Category>
+            </PropertyList>
+          </Object>
+        </Slot>
+        <Slot name="tcpprotocols" visible="true">
+          <Object name="pcd3.inifileconfig.tcpprotocols">
+            <PropertyList>
+              <Category name="dns" minfwver="1.14.00">
+                <Item name="dnsenable" section="DNS" attrib="Enable">1</Item>
+                <Item name="dnsusedhcpinfo" section="DNS" attrib="UseDHCPInfo">0</Item>
+                <Item name="dnssvra" section="DNS" attrib="SVRa">192.168.7.1</Item>
+                <Item name="dnssvrb" section="DNS" attrib="SVRb">8.8.8.8</Item>
+                <Item name="dnstimeout" section="DNS" attrib="Timeout">1000</Item>
+              </Category>
+              <Category name="sntp" minfwver="1.14.00">
+                <Item name="sntpenable" section="SNTP" attrib="Enable">0</Item>
+                <Item name="sntpmode" section="SNTP" attrib="Mode">0</Item>
+                <Item name="sntpimmstart" section="SNTP" attrib="ImmStart">0</Item>
+                <Item name="sntpstartdelay" section="SNTP" attrib="StartDelay">0</Item>
+                <Item name="sntpsntpregulation" section="SNTP" attrib="SNTPRegulation">0</Item>
+                <Item name="sntpclockdelta" section="SNTP" attrib="ClockDelta">2000</Item>
+                <Item name="sntpreqdelta" section="SNTP" attrib="ReqDelta">10</Item>
+                <Item name="sntpsvrnamea" section="SNTP" attrib="SVRNamea">
+                </Item>
+                <Item name="sntpsvrnameb" section="SNTP" attrib="SVRNameb">
+                </Item>
+                <Item name="sntpsvrnamec" section="SNTP" attrib="SVRNamec">
+                </Item>
+                <Item name="sntpsvrnamed" section="SNTP" attrib="SVRNamed">
+                </Item>
+              </Category>
+              <Category name="snmp" minfwver="1.14.00" minfwacc="1.14.00">
+                <Item name="snmpenable" section="SNMP" attrib="Enable">0</Item>
+                <Item name="snmpsyscontact" section="SNMP" attrib="sysContact">Saia Burgess Controls AG</Item>
+                <Item name="snmpsyslocation" section="SNMP" attrib="sysLocation">CH-3280 Murten</Item>
+                <Item name="snmplifetimeout" section="SNMP" attrib="LifeTimeout">0</Item>
+                <Item name="snmptrapaport" section="SNMP" attrib="TrapaPort">0</Item>
+                <Item name="snmptrapaipaddr" section="SNMP" attrib="TrapaIPAddr">0.0.0.0</Item>
+                <Item name="snmptrapbport" section="SNMP" attrib="TrapbPort">0</Item>
+                <Item name="snmptrapbipaddr" section="SNMP" attrib="TrapbIPAddr">0.0.0.0</Item>
+                <Item name="snmptrapcport" section="SNMP" attrib="TrapcPort">0</Item>
+                <Item name="snmptrapcipaddr" section="SNMP" attrib="TrapcIPAddr">0.0.0.0</Item>
+                <Item name="snmpadvanceduser" minfwver="">0</Item>
+                <Item name="snmpusev3" section="SNMP" attrib="UseV3">0</Item>
+                <Item name="snmpstartdelay" section="SNMP" attrib="StartDelay">5</Item>
+                <Item name="snmpreadcommunity" section="SNMP" attrib="ReadCommunity">public</Item>
+                <Item name="snmpwritecommunity" section="SNMP" attrib="WriteCommunity">private</Item>
+                <Item name="snmptrapcommunity" section="SNMP" attrib="TrapCommunity">public</Item>
+                <Item name="snmptrapversion" section="SNMP" attrib="TrapVersion" minfwver="1.16.00">1</Item>
+                <Item name="snmpioreadfirst" section="SNMP" attrib="IOReadFirst">0</Item>
+                <Item name="snmpioreadlast" section="SNMP" attrib="IOReadLast">1024</Item>
+                <Item name="snmpiowritefirst" section="SNMP" attrib="IOWriteFirst">0</Item>
+                <Item name="snmpiowritelast" section="SNMP" attrib="IOWriteLast">0</Item>
+                <Item name="snmpflagreadfirst" section="SNMP" attrib="FlagReadFirst">0</Item>
+                <Item name="snmpflagreadlast" section="SNMP" attrib="FlagReadLast">14336</Item>
+                <Item name="snmpflagwritefirst" section="SNMP" attrib="FlagWriteFirst">0</Item>
+                <Item name="snmpflagwritelast" section="SNMP" attrib="FlagWriteLast">0</Item>
+                <Item name="snmpregreadfirst" section="SNMP" attrib="RegReadFirst">0</Item>
+                <Item name="snmpregreadlast" section="SNMP" attrib="RegReadLast">16384</Item>
+                <Item name="snmpregwritefirst" section="SNMP" attrib="RegWriteFirst">0</Item>
+                <Item name="snmpregwritelast" section="SNMP" attrib="RegWriteLast">0</Item>
+                <Item name="snmptimerreadfirst" section="SNMP" attrib="TimerReadFirst">0</Item>
+                <Item name="snmptimerreadlast" section="SNMP" attrib="TimerReadLast">1600</Item>
+                <Item name="snmptimerwritefirst" section="SNMP" attrib="TimerWriteFirst">0</Item>
+                <Item name="snmptimerwritelast" section="SNMP" attrib="TimerWriteLast">0</Item>
+                <Item name="snmpcounterreadfirst" section="SNMP" attrib="CounterReadFirst">0</Item>
+                <Item name="snmpcounterreadlast" section="SNMP" attrib="CounterReadLast">1600</Item>
+                <Item name="snmpcounterwritefirst" section="SNMP" attrib="CounterWriteFirst">0</Item>
+                <Item name="snmpcounterwritelast" section="SNMP" attrib="CounterWriteLast">0</Item>
+                <Item name="snmpdbreadfirst" section="SNMP" attrib="DBReadFirst">0</Item>
+                <Item name="snmpdbreadlast" section="SNMP" attrib="DBReadLast">8192</Item>
+                <Item name="snmpdbwritefirst" section="SNMP" attrib="DBWriteFirst">0</Item>
+                <Item name="snmpdbwritelast" section="SNMP" attrib="DBWriteLast">0</Item>
+              </Category>
+            </PropertyList>
+          </Object>
+        </Slot>
+        <Slot name="portalconfig" visible="true">
+          <Object name="pcd3.inifileconfig.portalconfig">
+            <PropertyList>
+              <Category name="httpreverse" minfwver="1.16.00" minfwacc="1.16.00">
+                <Item name="httpreverseenabled" section="HttpReverse" attrib="Enable">0</Item>
+                <Item name="httpportalhost" section="HttpPortal" attrib="Host">
+                </Item>
+                <Item name="httpportalport" section="HttpPortal" attrib="Port">23066</Item>
+                <Item name="httpportalpassword" section="HttpPortal" attrib="Password">
+                </Item>
+                <Item name="httpportalstationname" section="HttpPortal" attrib="StationName">
+                </Item>
+                <Item name="httpportalstationgroup" section="HttpPortal" attrib="StationGroup">
+                </Item>
+                <Item name="httpportaladvanceduser" minfwver="">0</Item>
+                <Item name="httpreverseminchannels" section="HttpReverse" attrib="MinChannels">1</Item>
+                <Item name="httpreversemaxchannels" section="HttpReverse" attrib="MaxChannels">4</Item>
+                <Item name="httpreversetimeout" section="HttpReverse" attrib="Timeout">5000</Item>
+                <Item name="httpreversekeepalivetimeout" section="HttpReverse" attrib="KeepAliveTimeout">600000</Item>
+                <Item name="httpreversekeepaliveinterval" section="HttpReverse" attrib="KeepAliveInterval">600000</Item>
+                <Item name="httpreverseconnecttimeout" section="HttpReverse" attrib="ConnectTimeout">5000</Item>
+                <Item name="httpreverseconnectdelay" section="HttpReverse" attrib="ConnectDelay">5000</Item>
+                <Item name="httpreversebusytimetonewchannel" section="HttpReverse" attrib="BusyTimeToNewChannel">2000</Item>
+                <Item name="httpreverseidletimeout" section="HttpReverse" attrib="IdleTimeout">5000</Item>
+                <Item name="httpreversepriority" section="HttpReverse" attrib="Priority">10</Item>
+                <Item name="httpreversesendbuffersize" section="HttpReverse" attrib="SendBufferSize">2920</Item>
+                <Item name="httpreverserecvbuffersize" section="HttpReverse" attrib="RecvBufferSize">4096</Item>
+              </Category>
+              <Category name="httpportal" minfwver="1.16.00">
+                <Item name="httpportalsendcommsettings" section="HttpPortal" attrib="SendCommSettings">0</Item>
+                <Item name="httpportaltimeout" section="HttpPortal" attrib="Timeout">10000</Item>
+                <Item name="httpportalkeepalive" section="HttpPortal" attrib="KeepAlive">0</Item>
+                <Item name="httpportalkeepalivetimeout" section="HttpPortal" attrib="KeepAliveTimeout">600000</Item>
+                <Item name="httpportalkeepaliveinterval" section="HttpPortal" attrib="KeepAliveInterval">600000</Item>
+              </Category>
+            </PropertyList>
+          </Object>
+        </Slot>
+      </Category>
+      <Category name="onboardslots">
+        <Slot name="slot0" baseaddress="0" ioslotindex="0" visible="true">
+          <Object name="" />
+        </Slot>
+        <Slot name="slot1" baseaddress="16" ioslotindex="1" visible="true">
+          <Object name="" />
+        </Slot>
+        <Slot name="slot2" baseaddress="32" ioslotindex="2" visible="true">
+          <Object name="" />
+        </Slot>
+        <Slot name="slot3" baseaddress="48" ioslotindex="3" visible="true">
+          <Object name="" />
+        </Slot>
+        <Slot name="expansion" visible="true">
+          <Object name="" />
+        </Slot>
+      </Category>
+    </SlotList>
+  </Object>
+</SaiaObjectData>

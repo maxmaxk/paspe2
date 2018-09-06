@@ -1,0 +1,63 @@
+<!-- START TAG1 ALL TEXT UNTIL END OF THAT TAG IS OVERWRITTEN FROM EDITOR DURING HTML FILE GENERATION  -->
+<!-- HTML FILE GENERATED FROM Saia®  S-Web Editor on Thursday, June 21, 2012 ; 00:10:47 -->
+<!-- END TAG1 -->
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html;CHARSET=iso-8859-1">
+	<META NAME="GENERATOR" CONTENT="iniNet SpiderControl TM">
+	<TITLE>Müller Markt Ybbs -Österreich-Tableau-</TITLE>
+	<style type="text/css">
+a:link { text-decoration:none; font-weight:bold; color:#e00000; }
+a:visited { text-decoration:none; font-weight:bold; color:#800000; }
+a:hover { text-decoration:none; font-weight:bold; background-color:#ff0; }
+a:active { text-decoration:none; font-weight:bold; background-color:#cff; }
+a:focus { text-decoration:none; font-weight:bold; background-color:#080; }
+	</style>
+</HEAD>
+<<table background ="mb.gif" border="0" width="822" height="650" align="Center">
+<td align="Center" width="AppletWidth" height="AppletHeight">
+<body style="background-color: rgb(88, 172, 250);">
+<!-- START TAG2 ALL TEXT UNTIL END OF THAT TAG IS OVERWRITTEN FROM EDITOR DURING HTML FILE GENERATION  -->
+<applet width="640" height="480" align="BOTTOM" code="IMasterSaia5_15_02.class" archive="IMasterSaia5_15_02.jar" style="padding-left: 16px; padding-top: 0px;">
+<PARAM NAME="java_arguments"   VALUE="-Xms256m -Xmx512m">
+<PARAM NAME="AppletName"   VALUE="Tableau">
+<PARAM NAME="ProjectName"   VALUE="Tableau">
+<!--PARAM NAME="DrawTeqsAtInit"   VALUE="true"-->
+<PARAM NAME="Period"   VALUE="1000">
+<PARAM NAME="FirstFileIndex"   VALUE="0">
+<PARAM NAME="LastFileIndex"   VALUE="3">
+<PARAM NAME="Main"   VALUE="0">
+<PARAM NAME="OrderPerView"   VALUE="on">
+<PARAM NAME="debug"   VALUE="off">
+<PARAM NAME="SpiderHTMLVersion"   VALUE="12">
+<PARAM NAME="MainTEQName"   VALUE="Tableau.teq">
+<PARAM NAME="InitCoTEQName"   VALUE="Tableau.itq">
+<PARAM NAME="InitPPOASCIIName"   VALUE="Tableau.tcr">
+<PARAM NAME="IMASTERHTMLTAGSFILEName"   VALUE="">
+<PARAM NAME="StaticHTMLTagsFileName"   VALUE="">
+<PARAM NAME="MessageBox"   VALUE="MsgBox.teq">
+<PARAM NAME="SOAPIF"   VALUE="off">
+<PARAM NAME="encodeSpecialChar"   VALUE="on">
+<PARAM NAME="RUNTIMEACTIONMODE"   VALUE="CONSUMED ACTION">
+<PARAM NAME="BrowsingMode"   VALUE="DEFAULT">
+<PARAM NAME="MirrorPPOName"   VALUE="mirror">
+<PARAM NAME="LoadingMode"   VALUE="Standard Load">
+<PARAM NAME="LANG_SYMB"   VALUE="EN">
+<PARAM NAME="DEC_SYMB"   VALUE=".">
+<PARAM NAME="PM_AM"   VALUE="0">
+<PARAM NAME="CGIFAILNBR_UNTILWARN"   VALUE="1">
+<PARAM NAME="WARNDISPLAYTIME_UNTILCLEARMSGBOX"   VALUE="0">
+<PARAM NAME="TEQDISPLAYFACTOR"   VALUE="1.000000">
+<PARAM NAME="IMASTER_FONT_FACTOR"   VALUE="1.000000">
+<PARAM NAME="GENERATE_TIMESTAMP"   VALUE="4fe24a67">
+<PARAM NAME="Day_NightColorMapFileName"   VALUE="">
+<PARAM NAME="TEQ0NAME"   VALUE="MsgBox.teq">
+<PARAM NAME="TEQ1NAME"   VALUE="Tableau.teq">
+<PARAM NAME="TEQ2NAME"   VALUE="keypad.teq">
+<PARAM NAME="TEQ3NAME"   VALUE="LoginTab.teq">
+<!-- END TAG2 -->
+</applet>
+</body>
+</td>
+</table>
+</HTML>

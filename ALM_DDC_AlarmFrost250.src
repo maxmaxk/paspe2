@@ -1,0 +1,18 @@
+; ======================================================================
+; -------- Alarmierung
+; ======================================================================
+;
+;	Variablen von FBOx:
+; 	----------------------------------------------------------------
+;	@str(A.FBox.Description)			
+;
+;	@str(A.FBox.AlAir.Alarmtext)
+;	@str(A.FBox.AlWater.Alarmtext)
+;	@str(A.FBox.AlActive.Alarmtext)
+;	@str(A.FBox.AlFrost.Alarmtext)
+;
+$WRFILE "DDC_Alarming.CSV" List_@A.Alarming.Handle@;@adj_AlmIndex@;Alarm_@adj_AlmIndex@;@str(A.Alarming.System)@STR(A.Alarming.Key.ToLevel10)@str(A.FBox.Description)@str(A.FBox.AlAir.Alarmtext)
+$WRFILE "DDC_Alarming.CSV" List_@A.Alarming.Handle@;@adj_AlmIndex+1@;Alarm_@adj_AlmIndex+1@;@str(A.Alarming.System)@STR(A.Alarming.Key.ToLevel10)@str(A.FBox.Description)@str(A.FBox.AlWater.Alarmtext)
+$WRFILE "DDC_Alarming.CSV" List_@A.Alarming.Handle@;@adj_AlmIndex+2@;Alarm_@adj_AlmIndex+2@;@str(A.Alarming.System)@STR(A.Alarming.Key.ToLevel10)@str(A.FBox.Description)@str(A.FBox.AlActive.Alarmtext)
+$WRFILE "DDC_Alarming.CSV" List_@A.Alarming.Handle@;@adj_AlmIndex+3@;Alarm_@adj_AlmIndex+3@;@str(A.Alarming.System)@STR(A.Alarming.Key.ToLevel10)@str(A.FBox.Description)@str(A.FBox.AlFrost.Alarmtext)
+;

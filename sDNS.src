@@ -1,0 +1,54 @@
+$HIDE ;;Hidden section inserted by S-Edit
+$include "<$ProjDir>\Libs\SF\SFIPSLib_en.lib" ;<$ProjDir>\Libs\SF\SFIPSLib.saialin
+EXTN	PCD01.EMail.Init.Server	TEXT RAM
+$GROUP PCD01.DNS.Query.IP
+iAdd	PEQU	R	
+iRCode	PEQU	R	
+iFCode	PEQU	F	
+$ENDGROUP
+$GROUP PCD01
+$ENDGROUP
+$GROUP PCD01.EMail
+$ENDGROUP
+$GROUP PCD01.DNS
+$ENDGROUP
+$GROUP PCD01.DNS.Query
+$ENDGROUP
+$ENDHIDE
+            PB     2
+
+            CSF    S.SF.DNS.Library    ;SF Library
+                   S.SF.DNS.DNSQueryByName ;SF Function
+                   PCD01.EMail.Init.Server ;1 TEXT IN, Hostname name of the host to resolve
+                   K 4                 ;2 R|K IN, Option
+                   PCD01.DNS.Query.IP.iAdd ;3 R OUT, IPAddr returned IP address
+                   PCD01.DNS.Query.IP.iRCode ;4 R OUT, RetCode execution return code
+                   PCD01.DNS.Query.IP.iFCode   ;5 F OUT, Busy kept high as long as the query is pending
+
+              EPB                         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

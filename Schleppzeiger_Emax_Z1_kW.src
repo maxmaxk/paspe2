@@ -1,0 +1,162 @@
+$HIDE ;;Hidden section inserted by S-Edit
+$GROUP ELT01.A00.Zaehler.Z1
+iStoPh1_P	PEQU	R	
+$ENDGROUP
+EXTN	ELT01.A00.Zaehler.Z1.Ph1_P	R	;(2) Phase 1 Leistung
+$GROUP ELT01.A00.Zaehler.Z1
+mxPh1_P	PEQU	R	
+iTimerPh1kW	EQU	T	
+istoPh2_P	PEQU	R	
+$ENDGROUP
+EXTN	ELT01.A00.Zaehler.Z1.Ph2_P	R	;(2) Phase 2 Leistung
+$GROUP ELT01.A00.Zaehler.Z1
+mxPh2_P	PEQU	R	
+istoPh3_P	PEQU	R	
+$ENDGROUP
+EXTN	ELT01.A00.Zaehler.Z1.Ph3_P	R	;(2) Phase 3 Leistung
+$GROUP ELT01.A00.Zaehler.Z1
+mxPh3_P	PEQU	R	
+iTimerPh3kW	EQU	T	
+iStoP_Total	PEQU	R	
+$ENDGROUP
+EXTN	ELT01.A00.Zaehler.Z1.P_Total	R	;(2) Leistung total
+$GROUP ELT01.A00.Zaehler.Z1
+iTimerTotalkW	EQU	T	
+mxP_Total	PEQU	R	
+iTimerPh2kW	EQU	T	
+$ENDGROUP
+EXTN	ELT01.A00.ELTStart.Takt.i15Min	F
+EXTN	ELT01.A00.Zaehler.Clock.iImpTag	F
+$GROUP ELT01
+$ENDGROUP
+$GROUP ELT01.A00
+$ENDGROUP
+$GROUP ELT01.A00.Zaehler
+$ENDGROUP
+$GROUP ELT01.A00.ELTStart
+$ENDGROUP
+$ENDHIDE
+; ************* Emax KLT I-Ph1
+
+            PB     111                 ; E-Max Funktion die den maximalen Energiefluss der letzen 15 Minuten ermittelt
+            
+            CMP    ELT01.A00.Zaehler.Z1.iStoPh1_P
+                   ELT01.A00.Zaehler.Z1.Ph1_P
+            JR     P 3                 ;ist kleiner 
+            COPY   ELT01.A00.Zaehler.Z1.Ph1_P ;wenn grösser kopiere den wert auf iSto1_P
+                   ELT01.A00.Zaehler.Z1.iStoPh1_P
+            CMP    ELT01.A00.Zaehler.Z1.mxPh1_P
+                   ELT01.A00.Zaehler.Z1.iStoPh1_P
+            JR     P Keincopy
+            COPY   ELT01.A00.Zaehler.Z1.iStoPh1_P ;wenn grösser kopiere den wert auf iSto1_P
+                   ELT01.A00.Zaehler.Z1.mxPh1_P
+            
+Keincopy:
+            STH    ELT01.A00.ELTStart.Takt.i15Min
+            JR     L ende
+            LD     ELT01.A00.Zaehler.Z1.iStoPh1_P ; für den erneuten vergleich
+                   0
+            STH    ELT01.A00.Zaehler.Clock.iImpTag ; Tagesreset des Max kW
+            JR     L Ende
+            LD     ELT01.A00.Zaehler.Z1.mxPh1_P ; für den erneuten vergleich
+                   0
+Ende:
+            EPB
+
+; ************* Emax KLT I-Ph2
+
+            PB     112                 ; E-Max Funktion die den maximalen Energiefluss der letzen 15 Minuten ermittelt
+            
+            CMP    ELT01.A00.Zaehler.Z1.iStoPh2_P
+                   ELT01.A00.Zaehler.Z1.Ph2_P
+            JR     P 3                 ;ist kleiner 
+            COPY   ELT01.A00.Zaehler.Z1.Ph2_P ;wenn grösser kopiere den wert auf iSto1_P
+                   ELT01.A00.Zaehler.Z1.iStoPh2_P
+            CMP    ELT01.A00.Zaehler.Z1.mxPh2_P
+                   ELT01.A00.Zaehler.Z1.iStoPh2_P
+            JR     P Keincopy
+            COPY   ELT01.A00.Zaehler.Z1.iStoPh2_P ;wenn grösser kopiere den wert auf iSto1_P
+                   ELT01.A00.Zaehler.Z1.mxPh2_P
+            
+Keincopy:
+            STH    ELT01.A00.ELTStart.Takt.i15Min
+            JR     L ende
+            LD     ELT01.A00.Zaehler.Z1.iStoPh2_P ; für den erneuten vergleich
+                   0
+            STH    ELT01.A00.Zaehler.Clock.iImpTag ; Tagesreset des Max kW
+            JR     L Ende
+            LD     ELT01.A00.Zaehler.Z1.mxPh2_P ; für den erneuten vergleich
+                   0
+Ende:
+            EPB
+    
+
+; ************* Emax KLT I-Ph3
+
+            PB     113                 ; E-Max Funktion die den maximalen Energiefluss der letzen 15 Minuten ermittelt
+            
+            CMP    ELT01.A00.Zaehler.Z1.iStoPh3_P
+                   ELT01.A00.Zaehler.Z1.Ph3_P
+            JR     P 3                 ;ist kleiner 
+            COPY   ELT01.A00.Zaehler.Z1.Ph3_P ;wenn grösser kopiere den wert auf iSto1_P
+                   ELT01.A00.Zaehler.Z1.iStoPh3_P
+            CMP    ELT01.A00.Zaehler.Z1.mxPh3_P
+                   ELT01.A00.Zaehler.Z1.iStoPh3_P
+            JR     P Keincopy
+            COPY   ELT01.A00.Zaehler.Z1.iStoPh3_P ;wenn grösser kopiere den wert auf iSto1_P
+                   ELT01.A00.Zaehler.Z1.mxPh3_P
+            
+Keincopy:
+            STH    ELT01.A00.ELTStart.Takt.i15Min
+            JR     L ende
+            LD     ELT01.A00.Zaehler.Z1.iStoPh3_P ; für den erneuten vergleich
+                   0
+            STH    ELT01.A00.Zaehler.Clock.iImpTag ; Tagesreset des Max kW
+            JR     L Ende
+            LD     ELT01.A00.Zaehler.Z1.mxPh3_P ; für den erneuten vergleich
+                   0
+Ende:
+            EPB
+
+; ************* Emax KLT KW-Ph1..3
+
+            PB     114                 ; E-Max Funktion die den maximalen Energiefluss der letzen 15 Minuten ermittelt
+            
+            CMP    ELT01.A00.Zaehler.Z1.iStoP_Total
+                   ELT01.A00.Zaehler.Z1.P_Total
+            JR     P 3                 ;ist kleiner 
+            COPY   ELT01.A00.Zaehler.Z1.P_Total ;wenn grösser kopiere den wert auf iSto1_P
+                   ELT01.A00.Zaehler.Z1.iStoP_Total
+            CMP    ELT01.A00.Zaehler.Z1.mxP_Total
+                   ELT01.A00.Zaehler.Z1.iStoP_Total
+           JR     P Keincopy
+            COPY   ELT01.A00.Zaehler.Z1.iStoP_Total ;wenn grösser kopiere den wert auf iSto1_P
+                   ELT01.A00.Zaehler.Z1.mxP_Total
+            
+Keincopy:
+            STH    ELT01.A00.ELTStart.Takt.i15Min
+            JR     L ende
+            LD     ELT01.A00.Zaehler.Z1.iStoP_Total ; für den erneuten vergleich
+                   0
+            STH    ELT01.A00.Zaehler.Clock.iImpTag ; Tagesreset des Max kW
+            JR     L Ende
+            LD     ELT01.A00.Zaehler.Z1.mxP_Total ; für den erneuten vergleich
+                   0
+Ende:
+            EPB
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

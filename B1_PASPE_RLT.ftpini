@@ -1,0 +1,10 @@
+[SFtpDnld]
+PcdPathName=F:\Baustelle\Projekte PG5 2.1\PASPE_22.09.14\B1_PASPE_RLT\B1_PASPE_RLT.pcd
+PcdType=PCD3.M5340
+IpAddress=192.168.7.211
+PcdSerialNumber=088F290F
+UsePortal=False
+PortalUserName=
+PortalPassword=7637F53C0455B3791D0516B172B32574
+Slots=SL0FLASH:
+Slot=0

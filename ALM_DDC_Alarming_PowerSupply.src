@@ -1,0 +1,10 @@
+; ======================================================================
+; -------- SWeb Alarmierung - File
+; ======================================================================
+;
+                    $WRFILE "DDC_Alarming.CSV" List_@A.DDC_Suite.Alarming.Handle@;@adj_AlmIndex@;Alarm_@adj_AlmIndex@;@&Name@ 230 VAC fehlt
+                    $WRFILE "DDC_Alarming.CSV" List_@A.DDC_Suite.Alarming.Handle@;@adj_AlmIndex+1@;Alarm_@adj_AlmIndex+1@;@&Name@ 24 VAC fehlt
+                    $WRFILE "DDC_Alarming.CSV" List_@A.DDC_Suite.Alarming.Handle@;@adj_AlmIndex+2@;Alarm_@adj_AlmIndex+2@;@&Name@ 24 VDC fehlt
+                    $WRFILE "DDC_Alarming.CSV" List_@A.DDC_Suite.Alarming.Handle@;@adj_AlmIndex+3@;Alarm_@adj_AlmIndex+3@;@&Name@ Phasenwaechter ausgeloest
+                    $WRFILE "DDC_Alarming.CSV" List_@A.DDC_Suite.Alarming.Handle@;@adj_AlmIndex+4@;Alarm_@adj_AlmIndex+4@;@&Name@ Steuerspannung fehlt
+;

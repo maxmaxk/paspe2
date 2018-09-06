@@ -1,0 +1,131 @@
+$HIDE ;;Hidden section inserted by S-Edit
+EXTN	NULL	R
+EXTN	RLT01.A00.FUE.Raum.iSW20	R	;(3) Tatsächlicher Sollwert
+$GROUP RLT01.A00.FUE.Raum
+istoSW10	PEQU	R	
+imxSW10	PEQU	R	
+$ENDGROUP
+EXTN	RLT01.A00.FUE.Raum.iNGrad	F
+EXTN	RLT01.A00.FUE.Raum.iSW10	R	;(3) Tatsächlicher Sollwert
+EXTN	RLT01.A00.FUE.Raum.iSW10S	R
+EXTN	RLT01.A00.FUE.Raum.iSOKomp	F
+$GROUP RLT01.A00.FUE.Raum
+iNGradSRC	PEQU	F	
+iSOKompDyn	EQU	F	
+iNGradAUL	PEQU	F	
+$ENDGROUP
+EXTN	RLT01.A00.Mld.PCD01.Clock.iEn	F
+EXTN	RLT01.A00.AUL.Temp.iMW11	R
+EXTN	RLT01.A00.AUL.Temp.iMW12	R
+$GROUP RLT01
+$ENDGROUP
+$GROUP RLT01.A00
+$ENDGROUP
+$GROUP RLT01.A00.FUE
+$ENDGROUP
+$GROUP RLT01.A00.Mld
+$ENDGROUP
+$GROUP RLT01.A00.Mld.PCD01
+$ENDGROUP
+$GROUP RLT01.A00.AUL
+$ENDGROUP
+$ENDHIDE
+; ************* Max Sollwerterhoehung durch SoKo
+
+            PB     210                 ; Höchste Raumsollwerterhöhung durch Sommerkompensation ermitteln
+
+Init:
+            STH    RLT01.A00.FUE.Raum.iSOKomp
+            DYN    RLT01.A00.FUE.Raum.iSOKompDyn
+            JR     L NoInit
+            COPY   RLT01.A00.FUE.Raum.iSW10 ;lade Vergleichsregister mit TagSoll +- anh/abs 
+                   RLT01.A00.FUE.Raum.istoSW10
+            COPY   RLT01.A00.FUE.Raum.iSW10 ;lade Maxregister mit TagSoll +- anh/abs 
+                   RLT01.A00.FUE.Raum.imxSW10
+            RES    RLT01.A00.FUE.Raum.iNGradAUL
+         
+NoInit:
+            JR     MaxErmitteln
+
+MaxErmitteln:
+
+            CMP    RLT01.A00.FUE.Raum.iSW10
+                   RLT01.A00.FUE.Raum.istoSW10
+            JR     N 3
+            COPY   RLT01.A00.FUE.Raum.iSW10 ;wenn grösser kopiere den wert auf iSto1_SW10
+                   RLT01.A00.FUE.Raum.istoSW10
+            CMP    RLT01.A00.FUE.Raum.istoSW10
+                   RLT01.A00.FUE.Raum.imxSW10
+            JR     N 3
+            COPY   RLT01.A00.FUE.Raum.istoSW10 ;wenn grösser kopiere den wert auf imxSW10
+                   RLT01.A00.FUE.Raum.imxSW10
+            CMP    RLT01.A00.AUL.Temp.iMW12 ; Vergleiche ob der AUL Wert mit dem DDC Filter groesser ist als der mit dem BeOpt Filter
+                   RLT01.A00.AUL.Temp.iMW11
+            ACC    P
+            RES    RLT01.A00.FUE.Raum.iNGradAUL ; Wenn AUL der DDC kleiner ist dann lass alles so wie es aktuell ist
+            ACC    N
+            SET    RLT01.A00.FUE.Raum.iNGradAUL
+            JR     Marke2
+
+Marke2:
+            CMP    RLT01.A00.FUE.Raum.iSW10
+                   RLT01.A00.FUE.Raum.iSW10S
+            ACC    Z
+            ANL    RLT01.A00.FUE.Raum.iSOKomp
+            RES    RLT01.A00.FUE.Raum.iNGrad
+
+            CMP    RLT01.A00.FUE.Raum.iSW10
+                   RLT01.A00.FUE.Raum.imxSW10
+            ACC    N
+            SET    RLT01.A00.FUE.Raum.iNGrad
+            
+            ACC    N
+            JR     H Marke3
+
+            CMP    RLT01.A00.FUE.Raum.iSW10
+                   RLT01.A00.FUE.Raum.imxSW10
+            ACC    P
+            RES    RLT01.A00.FUE.Raum.iNGrad
+            
+            JR     TagReset
+            
+
+Marke3:
+            CMP    RLT01.A00.FUE.Raum.iSW10
+                   RLT01.A00.FUE.Raum.iSW10S
+            ACC    Z
+            ANL    RLT01.A00.FUE.Raum.iSOKomp
+            RES    RLT01.A00.FUE.Raum.iNGrad 
+            RES    RLT01.A00.FUE.Raum.iNGradAUL
+            JR     L TagReset
+
+            COPY   RLT01.A00.FUE.Raum.iSW10
+                   RLT01.A00.FUE.Raum.istoSW10
+
+            COPY   RLT01.A00.FUE.Raum.iSW10
+                   RLT01.A00.FUE.Raum.imxSW10
+TagReset:
+            STH    RLT01.A00.Mld.PCD01.Clock.iEn ;wenn Taktflanke H
+            JR     L 3
+            COPY   RLT01.A00.FUE.Raum.iSW10 ;lade Maxregister mit TagSoll +- anh/abs 
+                   RLT01.A00.FUE.Raum.istoSW10
+            STH    RLT01.A00.Mld.PCD01.Clock.iEn ;wenn Taktflanke H
+            JR     L 3
+            COPY   RLT01.A00.FUE.Raum.iSW10 ;lade Maxregister mit TagSoll +- anh/abs 
+                   RLT01.A00.FUE.Raum.imxSW10
+            STH    RLT01.A00.Mld.PCD01.Clock.iEn ;wenn Taktflanke H  
+            JR     L 2
+            RES    RLT01.A00.FUE.Raum.iNGrad
+            RES    RLT01.A00.FUE.Raum.iNGradAUL
+           
+Ende:
+            EPB
+
+
+
+
+
+
+
+
+

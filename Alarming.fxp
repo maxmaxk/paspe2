@@ -1,0 +1,352 @@
+//IF:529 - CP:1252 - FV:V2.1.430 - ID:5060797
+//begin of resources used ascii//
+10056	Public	PIN.Level2	RText		1		
+7179	Public	NULL	R		1		
+3	Public	PCD01.SWeb.Alarme.ListClear	F		1		Löscht die gesamte Alarmliste
+2	Public	PCD01.SWeb.Alarme.ListAck	F		1		Quittiert die gesamte Alarmliste
+7527	Local		Const	600	1		
+7163	Public	PCD01.SWeb.Alarme.iQuit	F		1		
+7785	Public	ELT01.A00.Mld.PCD01.SVz.iSVZ300	F		1		
+18737	Public	PIN.Logout	R	:= 600	1		
+17443	Public	PCD01.SWeb.Alarme.iNbr	R		1		
+23174	Public	PCD01.SWeb.Event.Aktiv	F		1		
+2353	Public	LOW	F		1		
+23175	Public	PCD01.SWeb.Event.iNbr	R		1		
+10058	Public	PIN.Level4	RText		1		
+23176	Public	PCD01.SWeb.Event.ListClear	F		1		Löscht die gesamte Alarmliste
+23177	Public	PCD01.SWeb.Event.ListAck	F		1		Quittiert die gesamte Alarmliste
+776	Public	ELT01.A00.Mld.PCD01.Quitt.Tast.iBm	F		1		(5) Auswahl des Normalzustands des Gebers
+10055	Public	PIN.Level1	RText		1		
+18224	Local		Const	50	1		
+10057	Public	PIN.Level3	RText		1		
+5	Public	PCD01.SWeb.Alarme.Aktiv	F		1		
+//end of resources used ascii//
+//begin of Text/DB resources//
+PIN.Level2.[size]	-1	Text size
+PIN.Level2.[format]	0
+PIN.Level2.[0]	""
+PIN.Level4.[size]	0	Text size
+PIN.Level4.[format]	0
+PIN.Level4.[0]	"08154711"
+PIN.Level1.[size]	0	Text size
+PIN.Level1.[format]	0
+PIN.Level1.[0]	"1"
+PIN.Level3.[size]	0	Text size
+PIN.Level3.[format]	0
+PIN.Level3.[0]	"96346"
+//end of Text/DB resources//
+//begin of Tag information//
+//end of Tag information//
+
+
+
+
+//begin of fupla page//
+[PAGE]
+Name=Init Alarming
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=1043
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_DDC_INAKS250 36178=
+_IISZERO 36180=
+_XPULSE 36181=
+_SWA_ALARM2_SWEB_V30 36184=
+_SWA_ALARM2_SWEB_V30 36786=
+_DDC_INALMHDR250 36813=
+_IMOVEE 37088=
+_IMOVEE 37089=
+_ILOADE 37504=
+_HEAMANB3 37506=
+_HEAMANI3 37507=
+[_DDC_INAKS250 36178]
+Fam=DDC25_FAM_INIT
+Face=AKS
+FacePosi=l
+Width=12
+Init=y
+Vers=205001
+av0=c cs =0 \nabs 
+av1=a Function %s =0:1 {0..4,10..14} 
+av2=c c1 =0 \nabs 
+av3=a Level1 %0T ="" 
+av4=a Level2 %0T ="" 
+av5=a Level3 %0T ="" 
+av6=a Level4 %0T ="" 
+av7=a Level5 %0T ="" 
+av8=a Level6 %0T ="" 
+av9=a Level7 %0T ="" 
+av10=a Level8 %0T ="" 
+av11=a Level9 %0T ="" 
+av12=a Level10 %0T ="" 
+av13=c cc =0 \nabs 
+AcceptName=1
+Picture=0 0 12 2
+Language=de
+Posi=2 40
+[_IISZERO 36180]
+Fam=sfupinte
+Face==0
+Width=3
+Init=n
+In=_I 
+Out=_B 
+Language=de
+Posi=43 29
+[_XPULSE 36181]
+Fam=sfuptime
+Face=XPulse
+Width=7
+Init=y
+In=In_EB TV_I 
+Out=Q_B t_I 
+S=Tim_T Sta_F 
+Language=de
+Posi=52 27
+[_SWA_ALARM2_SWEB_V30 36184]
+Fam=Alarming
+Face=Alarm2 SWeb
+FacePosi=l
+Width=16
+Init=y
+Vers=300000
+In=En_B Clr_EB Ack_EB ClrNum_I AckNum_I 
+Out=Alarm_B Num_I 
+S=LED_F ActClear_F=3 ActAck_F=2 State_R LstHdl_R intF_2F AlarmDB_^D HistDB_^D AlmStFl_F Diagn_R sDB_^D sFlg_2F 
+D=dynReg_R 
+av0=c ccActLst =0 \nabs 
+av1=a ActNumb =100:400 {10..1000} 
+av2=a DnldClr %s =1 {0,1} 
+av3=a ActMode %s =0:3 {0..3} 
+av4=a DelMode %s =0 {0..4} 
+av5=b ActClear 0 %s =1 
+av6=b ActAck 0 %s =1 
+av7=a DelAck %s =0 {0..3} 
+av8=a FPath1 %s =0:3 {0..7} 
+av9=c ccHstLst =0 \nabs 
+av10=a HistList %s =1 {0..2} 
+av11=a HistNumb =250 {0..4200} 
+av12=c cNewF =0 \nabs 
+av13=a EnEvtLst %s =0:1 {0..1} 
+av14=a EvtSize =250 {0..2000} 
+av15=a ALogTrsh =25:50 {0..2000} 
+av16=a ALogPlac %s =1:3 {1..7} 
+av17=a ALogCrFq %s =0:2 {0..2} 
+av18=a ALogMFil =50 {0..1000} 
+av19=a ALogMSiz =500 {0..1048576} 
+AcceptName=2
+uName=ELT01_ALA
+Folder=Alarming.Init?
+Variables0=ActClear ListClear;Löscht die gesamte Alarmliste
+Variables1=ActAck ListAck;Quittiert die gesamte Alarmliste
+Language=de
+Posi=43 4
+[_SWA_ALARM2_SWEB_V30 36786]
+Fam=Alarming
+Face=Alarm2 SWeb
+FacePosi=l
+Width=16
+Init=y
+Vers=300000
+In=En_B Clr_EB Ack_EB ClrNum_I AckNum_I 
+Out=Alarm_B Num_I 
+S=LED_F ActClear_F=23176 ActAck_F=23177 State_R LstHdl_R intF_2F AlarmDB_^D HistDB_^D AlmStFl_F Diagn_R sDB_^D sFlg_2F 
+D=dynReg_R 
+av0=c ccActLst =0 \nabs 
+av1=a ActNumb =100:800 {10..1000} 
+av2=a DnldClr %s =1 {0,1} 
+av3=a ActMode %s =0:3 {0..3} 
+av4=a DelMode %s =0 {0..4} 
+av5=b ActClear 0 %s =1 
+av6=b ActAck 0 %s =1 
+av7=a DelAck %s =0 {0..3} 
+av8=a FPath1 %s =0:3 {0..7} 
+av9=c ccHstLst =0 \nabs 
+av10=a HistList %s =1 {0..2} 
+av11=a HistNumb =250 {0..4200} 
+av12=c cNewF =0 \nabs 
+av13=a EnEvtLst %s =0:1 {0..1} 
+av14=a EvtSize =250 {0..2000} 
+av15=a ALogTrsh =25:50 {0..2000} 
+av16=a ALogPlac %s =1:3 {1..7} 
+av17=a ALogCrFq %s =0:2 {0..2} 
+av18=a ALogMFil =50 {0..1000} 
+av19=a ALogMSiz =500 {0..1048576} 
+AcceptName=2
+uName=ELT01_EVT
+Folder=Alarming.Init?
+Variables0=ActClear ListClear;Löscht die gesamte Alarmliste
+Variables1=ActAck ListAck;Quittiert die gesamte Alarmliste
+Language=de
+Posi=43 45
+[_DDC_INALMHDR250 36813]
+Fam=DDC25_FAM_INIT
+Face=Alarm Hdr
+FacePosi=l
+Width=12
+Init=y
+Vers=205000
+av0=c cs =0 \nabs 
+av1=a BaseIdx =-1:1 {-1,1..1000} 
+av2=a Descript %0T ="" 
+av3=c cc =0 \nabs 
+AcceptName=1
+aRef=2
+Ref=ELT01_ALA
+Language=de
+Posi=2 63
+[_IMOVEE 37088]
+Fam=sfupinte
+Width=7
+Init=n
+In=En_B In_I 
+Out=Out_I 
+Language=de
+Posi=63 2
+[_IMOVEE 37089]
+Fam=sfupinte
+Width=7
+Init=n
+In=En_B In_I 
+Out=Out_I 
+Language=de
+Posi=63 43
+[_ILOADE 37504]
+Fam=sfupinte
+Width=11
+Init=n
+In=En_B In_I 
+Out=Out_I 
+C=_Irtc=18737 
+Language=de
+Posi=46 68
+[_HEAMANB3 37506]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=33 68
+[_HEAMANI3 37507]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_I 
+Out=_I 
+S=Fs_F Fsm_F Rsm_R LED_F 
+av0=a flw %s =0 {0,1} 
+av1=a Rsm 0 %1p =0 
+av2=bv Fs 0 %s =1 \v Fsm 0 %s 
+AcceptName=3
+Language=de
+Posi=33 71
+[HLINE]
+H0=3 37 63)70 73
+H1=5 62 63
+H2=7 26 43)59 73
+H3=9 26 43)59 62
+H4=11 26 43
+H5=13 26 43
+H6=15 26 43
+H7=19 26 33
+H8=21 26 33
+H9=23 26 33
+H10=25 26 33
+H11=27 26 33
+H12=30 26 43)46 52)59 73
+H13=32 26 52)59 60
+H14=44 37 63)70 73
+H15=46 61 63
+H16=48 26 43)59 73
+H17=50 26 43)59 61
+H18=52 26 43
+H19=54 26 43
+H20=56 26 43
+H21=69 26 33)39 46)57 58
+H22=71 45 46
+H23=72 26 33)39 45
+[VLINE]
+V0=37 3 7)44 48
+V1=45 71 72
+V2=61 46 50
+V3=62 5 9
+[NETWORK]
+N0=Bif 63 3)if 43 7)o 26 7
+N1=Iof 70 3)i 73 3
+N2=Iif 63 5)of 59 9
+N3=Bof 59 7)i 73 7
+N4=Bo 26 9)if 43 9
+N5=Bo 26 11)if 43 11
+N6=Io 26 13)if 43 13
+N7=Io 26 15)if 43 15
+N8=Io 26 19
+N9=Uo 26 21
+N10=Uo 26 23
+N11=Uo 26 25
+N12=Uo 26 27
+N13=Io 26 30)if 43 30
+N14=Bof 46 30)if 52 30
+N15=Bof 59 30)i 73 30
+N16=Io 26 32)if 52 32
+N17=Iof 59 32
+N18=Bif 63 44)if 43 48)o 26 48
+N19=Iof 70 44)i 73 44
+N20=Iif 63 46)of 59 50
+N21=Bof 59 48)i 73 48
+N22=Bo 26 50)if 43 50
+N23=Bo 26 52)if 43 52
+N24=Io 26 54)if 43 54
+N25=Io 26 56)if 43 56
+N26=Bo 26 69)if 33 69
+N27=Bof 39 69)if 46 69
+N28=Iof 57 69
+N29=Iif 46 71)of 39 72
+N30=Io 26 72)if 33 72
+[COMMENT]
+Text0=16 40-0 Alarming
+Text1=18 63-0 Init Auf 1
+[CONNS]
+Conn0=73 3 17443 33 15
+Conn1=26 7 7785 34 20
+Conn2=73 7 5 33 16
+Conn3=26 9 2353 34 4
+Conn4=26 11 2353 34 4
+Conn5=26 13 7179 34 5
+Conn6=26 15 7179 34 5
+Conn7=26 19 18737 34 7
+Conn8=26 21 10055 34 7
+Conn9=26 23 10056 34 7
+Conn10=26 25 10057 34 7
+Conn11=26 27 10058 34 7
+Conn12=26 30 17443 34 15
+Conn13=73 30 7163 33 16
+Conn14=26 32 18224 34 3
+Conn15=73 44 23175 33 15
+Conn16=26 48 7785 34 20
+Conn17=73 48 23174 33 15
+Conn18=26 50 2353 34 4
+Conn19=26 52 2353 34 4
+Conn20=26 54 7179 34 5
+Conn21=26 56 7179 34 5
+Conn22=26 69 776 34 21
+Conn23=26 72 7527 34 3

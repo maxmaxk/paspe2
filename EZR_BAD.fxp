@@ -1,0 +1,4986 @@
+//IF:529 - CP:1252 - FV:V2.1.420 - ID:71004713
+//begin of resources used ascii//
+11792	Public	EZR1003.Bad.Rad.Strng.SchaltungMax	R		1		(4) Anzahl Einschaltungen bis Wartungsmeldung erfolgt
+11912	Public	EZR1003.Raum.Feuchte.Korrektur	R		1		(5) Korrekturwert in physikalischer Größe
+11955	Public	EZR1003.Raum.Temp1.IstwertY1	R		1		(5) minimaler physikalischer Wert
+11938	Public	EZR1003.Raum.Temp2.SpgGrp	R		1		(5) zugehörige Spannungsgruppe zur Unterdrückung von Geistermeldungen bei fehle
+11887	Public	EZR1003.Raum.Temp2.GwOben	R		1		(4) Oberer Grenzwert, bei passiven Fühlern z.B. "Kabelbruch"
+107	Public	NULL	R		1		
+11809	Public	EZR1003.Raum.iGew20.AV.Prio8En	F		1		(3) Commandable Priority 8 Enabled
+11854	Public	EZR1003.Raum.iGew.iGewDiff	R		1		
+2875	Local		K	1000	1		
+11823	Public	EZR1003.HX.absFeuchte.iRW10	R		1		
+11866	Public	EZR1003.Thanos.RaumBelegtWrite	R		1		
+11813	Public	EZR1003.Thanos.Taste6Hide	R	:= 0	1		
+11879	Public	EZR1003.Thanos.iEinhB2	R	:= 255	1		
+888	Public	PCD01.A00.Mld.PCD01.Clock.iS	R		1		
+3083	Local		Const	3	1		
+11920	Public	EZR1003.Thanos.Raumtemp	R		1		
+11989	Public	EZR1003.Thanos.iParaWrite	F		1		
+3951	Local		Const	100	1		
+11921	Public	EZR1003.Bad.Rad.MACT.Sm	F		1		(1) Zustand der Störmeldung
+11886	Public	EZR1003.Raum.RegHZ.PI	R		14		
+11911	Public	EZR1003.Raum.Feuchte.IstwertY2	R		1		(5) maximaler physikalischer Wert
+11954	Public	EZR1003.Raum.Feuchte.IstwertY1	R		1		(5) minimaler physikalischer Wert
+11795	Public	EZR1003.Raum.Temp2.GwUnten	R		1		(4) Unterer Grenzwert, bei passiven Fühlern z.B. "Kurzschluß"
+11808	Public	EZR1003.Raum.iGew10.AV.Output	R		1		(3) Integerwert Zustand
+11822	Public	EZR1003.Raum.iGew20.AV.Prio8Val	R		1		(3) Commandable Priority 8 Value
+11810	Public	EZR1003.HX.Taupunkt.iRW10	R		1		
+11865	Public	EZR1003.Raum.RegKH.iKh	F		1		
+11962	Public	EZR1003.Thanos.Heizen	F		1		
+11855	Public	EZR1003.Thanos.Kuehlen	F		1		
+11979	Public	EZR1003.Thanos.iActive	F		1		
+3400	Public	IOs.DO_198.iOut	F		1		
+11849	Public	EZR1003.Raum.VOC.IstwertY2	R		1		(5) maximaler physikalischer Wert
+11953	Public	EZR1003.Raum.VOC.SmGwUnten	F		1		(1) Meldung unterer Grenzwert wurde unterschritten
+11794	Public	EZR1003.Raum.Feuchte.RohwertX2	R		1		(5) maximaler Integerwert von der Eingangskarte
+11910	Public	EZR1003.Raum.Feuchte.RohwertX1	R		1		(5) minimaler Integerwert von der Eingangskarte
+11864	Public	EZR1003.Raum.Temp2.FilterFaktor	R		1		(5) Faktor zur Einflußnahme einer Meßwertänderung in den aktuellen Istwert
+11821	Public	EZR1003.Raum.iGew10.AV.Prio8En	F		1		(3) Commandable Priority 8 Enabled
+11811	Public	EZR1003.Raum.iGew.iRW10	R		1		
+2975	Local		Const	4	1		
+887	Public	PCD01.A00.Mld.PCD01.Clock.iM	R		1		
+11978	Public	EZR1003.Thanos.iRCycle	F		1		
+2869	Public	PCD01.A00.Mld.PCD01.Quitt.Tast.iBm	F		1		(5) Auswahl des Normalzustands des Gebers
+11963	Public	EZR1003.Thanos.iSSM	F		1		
+11952	Public	EZR1003.Bad.Rad.Strng.StundenMax	R		1		(4) Anzahl Betriebsstunden bis Wartungsmeldung erfolgt
+11848	Public	EZR1003.Raum.VOC.GwUnten	R		1		(4) Unterer Grenzwert, bei passiven Fühlern z.B. "Kurzschluß"
+11820	Public	EZR1003.Raum.Temp1.Korrektur	R		1		(5) Korrekturwert in physikalischer Größe
+11863	Public	EZR1003.Raum.Temp2.IstwertY1	R		1		(5) minimaler physikalischer Wert
+11889	Public	EZR1003.Raum.Temp2.iDefekt	F		1		
+11797	Public	EZR1003.HX.Enthalpie.iRW10	R		1		
+11944	Public	EZR1003.Thanos.ShowDatum	R	:= 2	1		
+11960	Public	EZR1003.Thanos.Ventilatorstufe	R		1		
+11917	Public	EZR1003.Thanos.ExtWert1	R		1		
+11951	Public	EZR1003.Bad.Rad.Strng.BedAtFunk	R		1		(5) Auswahl Funktion der Außenlufttemperatur
+11862	Public	EZR1003.Raum.Temp1.GwOben	R		1		(4) Oberer Grenzwert, bei passiven Fühlern z.B. "Kabelbruch"
+11900	Public	EZR1003.Raum.Temp2.MessTyp	R		1		(5) Auswahl der Umrechnung des am Eingang "In" angeschlossenen Wertes
+11888	Public	EZR1003.Raum.Temp2.RohwertX1	R		1		(5) minimaler Integerwert von der Eingangskarte
+11874	Public	EZR1003.Raum.Temp2.FilterZeit	R		1		(5) Abtastzeit des Sensorwertes zur Filterung
+11796	Public	EZR1003.Raum.iGew20.AV.Output	R		1		(3) Integerwert Zustand
+2765	Local		Const	1000	1		
+11916	Public	EZR1003.Thanos.RaumtempKomma	F		1		
+11945	Public	EZR1003.Thanos.HideRenergie	R	:= 0	1		
+2564	Local		Const	0	1		
+11827	Public	EZR1003.Thanos.VentilatorAuto	F		1		
+11961	Public	EZR1003.Thanos.ECOWrite	R		1		
+11950	Public	EZR1003.Bad.Rad.Strng.Schaltung	R		1		(3) Anzahl Einschaltungen
+11966	Public	EZR1003.PLT.TSP01.iFrg02	F		1		
+2964	Local		Const	5	1		
+11898	Public	EZR1003.Raum.VOC.RohwertX1	R		1		(5) minimaler Integerwert von der Eingangskarte
+11858	Public	EZR1003.Raum.VOC.Korrektur	R		1		(5) Korrekturwert in physikalischer Größe
+11861	Public	EZR1003.Raum.Feuchte.FilterZeit	R		1		(5) Abtastzeit des Sensorwertes zur Filterung
+11830	Public	EZR1003.Raum.Feuchte.Istwert	R		1		(1) Physikalischer Wert des Sensors = Ausgang "Iw"
+11875	Public	EZR1003.Raum.Temp2.SmGwUnten	F		1		(1) Meldung unterer Grenzwert wurde unterschritten
+11915	Public	EZR1003.Raum.Feuchte.iDefekt	F		1		
+11901	Public	EZR1003.Raum.Temp1.iDefekt	F		1		
+11799	Public	EZR1003.Thanos.Taste4Hide	R	:= 0	1		
+11826	Public	EZR1003.Thanos.ShowUhr	R	:= 2	1		
+11946	Public	EZR1003.Thanos.ModeHZ	F		1		
+1137	Public	HZE001.Aussen.Temp.iRW10	R		1		
+11975	Public	EZR1003.Thanos.RaumTOffWrite	R		1		
+11967	Public	EZR1003.Bad.Rad.LS.irSM10	F		1		
+11859	Public	EZR1003.Raum.VOC.SmGwOben	F		1		(1) Meldung oberer Grenzwert wurde überschritten
+11899	Public	EZR1003.Raum.Feuchte.MessTyp	R		1		(5) Auswahl der Umrechnung des am Eingang "In" angeschlossenen Wertes
+11860	Public	EZR1003.Raum.Feuchte.GwUnten	R		1		(4) Unterer Grenzwert, bei passiven Fühlern z.B. "Kurzschluß"
+11831	Public	EZR1003.Raum.Temp1.MessTyp	R		1		(5) Auswahl der Umrechnung des am Eingang "In" angeschlossenen Wertes
+11914	Public	EZR1003.Raum.Temp1.RohwertX2	R		1		(5) maximaler Integerwert von der Eingangskarte
+11876	Public	EZR1003.Raum.VOC.iMW20	R		1		
+11798	Public	EZR1003.Thanos.RestartReg2	R	:= 51514	1		
+11902	Public	EZR1003.Thanos.iRestart	F		1		
+11825	Public	EZR1003.Thanos.Taste5Hide	R	:= 0	1		
+11845	Public	EZR1003.Thanos.iDispStBy	R	:= 1	1		
+11974	Public	EZR1003.Thanos.ModeAuto	F		1		
+4049	Local		Const	2	1		
+11947	Public	EZR1003.Raum.Feuchte.iMW20	R		1		
+11964	Public	EZR1003.Bad.Rad.MACT.NoNc	F		1		(5) Auswahl des Normalzustands des Gebers
+11832	Public	EZR1003.Raum.iGew.BV.Value	F		1		(4) Binärwert Vorwahl
+11877	Public	EZR1003.Raum.iGew.iRW10.AV.Output	R		1		* intern
+11788	Public	EZR1003.Raum.iGew10.AV.Value	R		1		(4) Integerwert Vorwahl
+11940	Public	EZR1003.Raum.RegHZ.iHz	F		1		
+11903	Public	EZR1003.Thanos.Extern2Komma	F		1		
+11844	Public	EZR1003.Thanos.Extern2Anzeige	F		1		
+11824	Public	EZR1003.Thanos.RaumTSprungWrite	R		1		
+8986	Local		Const	-254	1		
+11847	Public	EZR1003.Bad.Rad.Strng.Ausgang	F		1		(2) Anzeige Ansteuerung des Ausgangs erfolgt
+11965	Public	EZR1003.Bad.Rad.Strng.AnsteuerDO	R		1		(5) Digitaler Ausgang
+11980	Public	EZR1003.Bad.Rad.Strng.Stunden	R		1		(3) Anzahl Betriebssekunden
+11896	Public	EZR1003.Bad.Rad.Strng.BedYGw	R		1		(5) Grenzwert des Stellsignals
+11870	Public	EZR1003.Bad.Rad.Strng.iSB10DO	F		1		
+11833	Public	EZR1003.Raum.iGew10.AV.Prio8Val	R		1		(3) Commandable Priority 8 Value
+13054	Public	EZR1003.PLT.Praesenz.iBelegt	F		1		
+338	Public	LOW	F		1		
+11941	Public	EZR1003.Thanos.Extern1Komma	F		1		
+11789	Public	EZR1003.Thanos.iEinhB1	R	:= 37	1		
+895	Public	PCD01.A00.Mld.PCD01.Clock.iMonth	R		1		
+11931	Public	EZR1003.Thanos.ShowRenergie	R	:= 1	1		
+11904	Public	EZR1003.Thanos.ModeStatus	R		1		
+403	Public	PCD01.ModBus.Comm.Takt.ModbusReset	F		1		
+2538	Public	HZG002.Raum.Nr.Register	R		1		
+11981	Public	EZR1003.Bad.Rad.Strng.Sperre	F		1		(1) Sperre des Motors durch Störung(en)
+11897	Public	EZR1003.Bad.Rad.Strng.AbsErlaubt	R		1		(5) Vorwahl für Antiblockierschutzfunktion
+11871	Public	EZR1003.Raum.RegHZ.MACT	F		2		
+11786	Public	EZR1003.Raum.Temp2.GwVerz	R		1		(4) Verzögerung Grenzwertüberwachung
+11971	Public	EZR1003.Raum.iGew20.AV.Prio16En	F		1		(5) Priority 16 Enabled
+11834	Public	EZR1003.Raum.iGew.iGewError	F		1		
+11928	Public	EZR1003.Thanos.ModeWrite	R		1		
+13055	Public	EZR1003.PLT.Praesenz.iUnbelegt	F		1		
+11942	Public	EZR1003.Thanos.MAXVentilatorstufe	R	:= 65282	1		
+11801	Public	EZR1003.Thanos.iTexB4	R	:= 255	1		
+11930	Public	EZR1003.Thanos.iEinhB3	R	:= 255	1		
+11905	Public	EZR1003.Thanos.UniAus	F		1		
+11846	Public	EZR1003.Thanos.VentilatorAus	F		1		
+3206	Local		Const	50	1		
+11894	Public	EZR1003.Bad.Rad.MACT.QuitPflicht	F		1		(5) Vorwahl ob die Störung dem Geber folgt oder gespeichert bleibt und quittier
+11982	Public	EZR1003.Bad.Rad.Strng.iSchaltung	R		1		(3) Anzahl Einschaltungen
+11872	Public	EZR1003.Raum.VOC.SpgGrp	R		1		(5) zugehörige Spannungsgruppe zur Unterdrückung von Geistermeldungen bei fehle
+11841	Public	EZR1003.Raum.VOC.Istwert	R		1		(1) Physikalischer Wert des Sensors = Ausgang "Iw"
+11818	Public	EZR1003.Raum.Temp1.RohwertX1	R		1		(5) minimaler Integerwert von der Eingangskarte
+11970	Public	EZR1003.Raum.VOC.iDefekt	F		1		
+11787	Public	EZR1003.Raum.iGew10.AV.Prio16En	F		1		(5) Priority 16 Enabled
+2853	Public	HZG002.ANZ.VBZ.iSWM	F		1		
+11835	Public	EZR1003.Thanos.ModeNbrReset	R	:= 1	1		
+11929	Public	EZR1003.Thanos.Taste6Show	R	:= 4111	1		Heizen Kuehlen unter Taste 6
+11800	Public	EZR1003.Thanos.Taste4Show	R	:= 167	1		Direktumschaltung Ein Aus Badeizk.
+11943	Public	EZR1003.Thanos.iDispAktiv	R	:= 70	1		
+11906	Public	EZR1003.Thanos.VentilatorSt3	F		1		
+11919	Public	EZR1003.Thanos.Raumsolltemp	R		1		
+11933	Public	EZR1003.Thanos.RaumTBasisWrite	R		1		
+11881	Public	EZR1003.Bad.Rad.MACT.DIKontakt	R		1		(5) Digitaler Eingang
+11895	Public	EZR1003.Bad.Rad.Strng.BedY	F		1		(3) Anzeige Bedarf nach Funktion Ventilstellung
+11840	Public	EZR1003.Bad.Rad.Strng.Betrieb	F		1		(2) entspricht dem Eingang Brm, Betriebsrückmeldung
+11907	Public	EZR1003.Bad.Rad.Strng.BedAtGw	R		1		(5) Grenzwert für Außenlufttemperatur
+11803	Public	EZR1003.Bad.Rad.Strng.Nachlauf	R		1		(5) Abschaltverzögerung
+11784	Public	EZR1003.Raum.VOC.MessTyp	R		1		(5) Auswahl der Umrechnung des am Eingang "In" angeschlossenen Wertes
+11983	Public	EZR1003.Raum.VOC.FilterZeit	R		1		(5) Abtastzeit des Sensorwertes zur Filterung
+11873	Public	EZR1003.Raum.Feuchte.GwVerz	R		1		(4) Verzögerung Grenzwertüberwachung
+11829	Public	EZR1003.Raum.Feuchte.FilterFaktor	R		1		(5) Faktor zur Einflußnahme einer Meßwertänderung in den aktuellen Istwert
+11819	Public	EZR1003.Raum.Temp1.FilterZeit	R		1		(5) Abtastzeit des Sensorwertes zur Filterung
+11852	Public	EZR1003.Raum.Temp1.Istwert	R		1		(1) Physikalischer Wert des Sensors = Ausgang "Iw"
+11926	Public	EZR1003.Raum.Temp2.RohwertX2	R		1		(5) maximaler Integerwert von der Eingangskarte
+11973	Public	EZR1003.Thanos.ModeNbr	R	:= 1	1		
+11836	Public	EZR1003.Thanos.iTexB1	R	:= 72	1		
+890	Public	PCD01.A00.Mld.PCD01.Clock.iDay	R		1		
+11932	Public	EZR1003.Thanos.ModeKH	F		1		
+11918	Public	EZR1003.Thanos.RaumBelegtRead	R		1		
+11828	Public	EZR1003.Bad.Rad.Strng.Ansteuerung	F		1		(2) Anzeige Ansteuerung erfolgt
+11816	Public	EZR1003.PLT.TSP01.iFrg01	F		1		
+11935	Public	EZR1003.Raum.RegHZ.iYSignal	R		1		
+11785	Public	EZR1003.Raum.VOC.RohwertX2	R		1		(5) maximaler Integerwert von der Eingangskarte
+11984	Public	EZR1003.Raum.Feuchte.SpgGrp	R		1		(5) zugehörige Spannungsgruppe zur Unterdrückung von Geistermeldungen bei fehle
+11968	Public	EZR1003.Raum.Temp1.SpgGrp	R		1		(5) zugehörige Spannungsgruppe zur Unterdrückung von Geistermeldungen bei fehle
+11853	Public	EZR1003.Raum.Temp1.SmGwOben	F		1		(1) Meldung oberer Grenzwert wurde überschritten
+11843	Public	EZR1003.Raum.Temp2.Korrektur	R		1		(5) Korrekturwert in physikalischer Größe
+11927	Public	EZR1003.Raum.Temp2.SmGwOben	F		1		(1) Meldung oberer Grenzwert wurde überschritten
+11972	Public	EZR1003.Thanos.Extern1Anzeige	F		1		
+11892	Public	EZR1003.Thanos.iTexB8	R	:= 255	1		
+11802	Public	EZR1003.Thanos.iTexB3	R	:= 77	1		
+11959	Public	EZR1003.Thanos.iDispDim	R	:= 70	1		
+891	Public	PCD01.A00.Mld.PCD01.Clock.iH	R		1		
+11837	Public	EZR1003.Thanos.ModeAus	F		1		
+11880	Public	EZR1003.Thanos.UniEin	F		1		
+3927	Local		Const	1	1		
+11934	Public	EZR1003.Bad.Rad.LS.Sm	F		1		(1) Zustand der Störmeldung
+11782	Public	EZR1003.Bad.Rad.Strng.Wartung	F		1		(3) Anzeige Wartung erforderlich
+11869	Public	EZR1003.Bad.Rad.MACT.iMACT10	F		1		
+11883	Public	EZR1003.Bad.Rad.LS.iSM10	F		1		
+11924	Public	EZR1003.Bad.Rad.Strng.iFrg	F		1		
+11908	Public	EZR1003.Bad.Rad.MACT.irMACT10	F		1		
+3556	Public	IOs.DI_508.iInp	F		1		
+11850	Public	EZR1003.Raum.Feuchte.GwHyst	R		1		(4) Hysterese Grenzwertüberwachung
+11817	Public	EZR1003.Raum.Feuchte.SmGwOben	F		1		(1) Meldung oberer Grenzwert wurde überschritten
+11985	Public	EZR1003.Raum.Temp1.GwHyst	R		1		(4) Hysterese Grenzwertüberwachung
+11805	Public	EZR1003.Raum.Temp1.GwUnten	R		1		(4) Unterer Grenzwert, bei passiven Fühlern z.B. "Kurzschluß"
+11842	Public	EZR1003.Raum.Temp1.IstwertY2	R		1		(5) maximaler physikalischer Wert
+11969	Public	EZR1003.Raum.Temp1.SmGwUnten	F		1		(1) Meldung unterer Grenzwert wurde unterschritten
+11958	Public	EZR1003.Thanos.iTexB6	R	:= 85	1		
+11893	Public	EZR1003.Thanos.iTexB5	R	:= 79	1		
+892	Public	PCD01.A00.Mld.PCD01.Clock.iEn	F		1		
+11882	Public	EZR1003.Bad.Rad.LS.DIKontakt	R		1		(5) Digitaler Eingang
+11868	Public	EZR1003.Bad.Rad.LS.SpgGrp	R		1		(5) zugehörige Spannungsgruppe zur Unterdrückung von Geistermeldungen bei fehle
+11804	Public	EZR1003.Bad.Rad.Strng.HMI	R		1		(4) Vorwahl Pumpensteuerung für HMI
+3661	Public	IOs.DI_505.iInp	F		1		
+11783	Public	EZR1003.Raum.VOC.GwVerz	R		1		(4) Verzögerung Grenzwertüberwachung
+11909	Public	EZR1003.Raum.VOC.GwHyst	R		1		(4) Hysterese Grenzwertüberwachung
+11925	Public	EZR1003.Raum.VOC.GwOben	R		1		(4) Oberer Grenzwert, bei passiven Fühlern z.B. "Kabelbruch"
+11851	Public	EZR1003.Raum.Temp1.GwVerz	R		1		(4) Verzögerung Grenzwertüberwachung
+11937	Public	EZR1003.Raum.Temp1.FilterFaktor	R		1		(5) Faktor zur Einflußnahme einer Meßwertänderung in den aktuellen Istwert
+11986	Public	EZR1003.Raum.Temp2.IstwertY2	R		1		(5) maximaler physikalischer Wert
+11890	Public	EZR1003.Raum.iGew20.AV.Value	R		1		(4) Integerwert Vorwahl
+11814	Public	EZR1003.Thanos.iTexB2	R	:= 85	1		
+893	Public	PCD01.A00.Mld.PCD01.Clock.iYear	R		1		
+11791	Public	EZR1003.Thanos.VentilatorSt2	F		1		
+11991	Public	EZR1003.Thanos.ExtWert2	R		1		
+11838	Public	EZR1003.Thanos.SSM	F		1		
+11922	Public	EZR1003.Bad.Rad.MACT.SpgGrp	R		1		(5) zugehörige Spannungsgruppe zur Unterdrückung von Geistermeldungen bei fehle
+11839	Public	EZR1003.Bad.Rad.LS.QuitPflicht	F		1		(5) Vorwahl ob die Störung dem Geber folgt oder gespeichert bleibt und quittier
+11948	Public	EZR1003.Bad.Rad.LS.NoNc	F		1		(5) Auswahl des Normalzustands des Gebers
+11815	Public	EZR1003.Bad.Rad.Strng.BedYFunk	R		1		(5) Auswahl Funktion des Stellsignals
+11885	Public	EZR1003.Bad.Rad.Strng.irBM10	F		1		
+11936	Public	EZR1003.Raum.Feuchte.GwOben	R		1		(4) Oberer Grenzwert, bei passiven Fühlern z.B. "Kabelbruch"
+11987	Public	EZR1003.Raum.Temp2.Istwert	R		1		(1) Physikalischer Wert des Sensors = Ausgang "Iw"
+11807	Public	EZR1003.Raum.iGew.iRW10.AV.Value	R		1		(4) Integerwert Vorwahl
+11891	Public	EZR1003.Thanos.RestartReg1	R	:= 29605	1		
+13053	Local		Const	10	1		
+11957	Public	EZR1003.Thanos.iTexB7	R	:= 84	1		
+11790	Public	EZR1003.Thanos.UhrFormat	R	:= 0	1		
+11990	Public	EZR1003.Thanos.UniONOFF	R		1		
+11856	Public	EZR1003.Thanos.RaumTOffRead	R		1		
+11949	Public	EZR1003.Bad.Rad.Strng.HMISuper	R		1		(4) Vorwahl Pumpensteuerung für GLT
+11781	Public	EZR1003.Bad.Rad.Strng.BedAt	F		1		(3) Anzeige Bedarf nach Funktion Außentemperatur
+11923	Public	EZR1003.Bad.Rad.Strng.iWartung	F		1		(3) Anzeige Wartung erforderlich
+11884	Public	EZR1003.Bad.Rad.Strng.iStunden	R		1		(3) Anzahl Betriebsstunden
+11857	Public	EZR1003.Raum.VOC.IstwertY1	R		1		(5) minimaler physikalischer Wert
+11793	Public	EZR1003.Raum.VOC.FilterFaktor	R		1		(5) Faktor zur Einflußnahme einer Meßwertänderung in den aktuellen Istwert
+11913	Public	EZR1003.Raum.Feuchte.SmGwUnten	F		1		(1) Meldung unterer Grenzwert wurde unterschritten
+11806	Public	EZR1003.Raum.Temp2.GwHyst	R		1		(4) Hysterese Grenzwertüberwachung
+11939	Public	EZR1003.Raum.Temp2.iMW20	R		1		
+11988	Public	EZR1003.Raum.Temp1.iMW10	R		1		
+2874	Local		K	995	1		
+11956	Public	EZR1003.Thanos.Taste7Hide	R	:= 0	1		
+11812	Public	EZR1003.Thanos.Taste7Show	R	:= 4100	1		Temperatursymbol unter Taste 7
+11878	Public	EZR1003.Thanos.Taste5Show	R	:= 0	1		Ventilatorsymbol unter Taste 5
+11867	Public	EZR1003.Thanos.VentilatorSt1	F		1		
+//end of resources used ascii//
+//begin of Text/DB resources//
+//end of Text/DB resources//
+//begin of Tag information//
+//end of Tag information//
+
+
+
+
+//begin of fupla page//
+[PAGE]
+Name=--- OG Raum 03 Bad ---
+Comment=Hier Raumnummer eintragen !
+RemarkSize=0
+CountOfLabels=40
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=2645
+PageColor=-1
+PageBackColor=255
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_DDC_SPGENERAL22 40447=
+[_DDC_SPGENERAL22 40447]
+Fam=DDC Sollwerte
+Width=5
+Init=y
+Vers=200000
+Out=Val_I 
+S=Value_R=2538 
+av0=c cs =0 \nabs 
+av1=a BACnet %s =0 {0..1} 
+av2=c c0 =0 \nabs 
+av3=a Value 0 %1p =210:8 
+av4=c cc =0 \nabs 
+AcceptName=1
+Folder=Sollwerte.Integer?
+Variables0=Value Register;(4) Integerwert
+Language=de
+Posi=21 5
+[HLINE]
+H0=6 26 27
+[NETWORK]
+N0=Iof 26 6
+N1=Io 27 9
+[COMMENT]
+Text0=5 5-0 Raumnummer 02 = 0,2
+[CONNS]
+Conn0=27 9 2538 34 16
+
+
+
+
+//begin of fupla page//
+[PAGE]
+Name=--- EZR ---
+Comment=Bad Radiator
+RemarkSize=0
+CountOfLabels=27
+CountOfGrids=82
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=2646
+PageColor=-1
+PageBackColor=255
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+
+
+
+
+//begin of fupla page//
+[PAGE]
+Name=Thanos MODBUS
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=124
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=2647
+PageColor=0
+PageBackColor=14540253
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_MODBUS_CLUNIT2 40448=
+_DDC_SPGENERAL21 40449=
+_BOR 40450=
+_BLINK2 40451=
+[_MODBUS_CLUNIT2 40448]
+Fam=sModMaster
+Face=Def Unit Client
+FacePosi=l
+Width=14
+Init=y
+Vers=2
+In=Enable_B Clear_EB 
+Out=Active_B Error_B 
+S=Fs_2F Rs_6R LED_F 
+av0=a IPA %0i =-1062731519:0 
+av1=a UID =1:3 {0..255} 
+av2=a OFF %s =0 {0,1} 
+av3=bv Fs 0 %s =1 \v Rs 0 
+av4=bv Fs 1 %s =1 \v Rs 1 
+av5=v Rs 2 %s 
+av6=v Rs 3 
+av7=v Rs 4 
+av8=v Rs 5 
+AcceptName=2
+uName=EZR1003
+aRef=2
+Ref=MODBusOG
+Language=de
+Posi=49 3
+[_DDC_SPGENERAL21 40449]
+Fam=DDC Sollwerte
+Width=5
+Init=y
+Vers=200000
+Out=Val_B 
+S=Value_F 
+av0=c cs =0 \nabs 
+av1=a BACnet %s =0 {0..1} 
+av2=c c0 =0 \nabs 
+av3=a Value 0 %s =0:1 {0..1} 
+av4=c cc =0 \nabs 
+AcceptName=1
+Folder=Sollwerte.Binaer?
+Variables0=Value Flag;(4) Binärwert
+Language=de
+Posi=30 5
+[_BOR 40450]
+Fam=sfupbina
+Face=>=1
+Width=3
+Init=n
+Stretch=1 9 1 1
+In=_NB 
+Out=_B 
+Language=de
+Posi=40 9
+[_BLINK2 40451]
+Fam=sfupblin
+Face=Blink
+Width=6
+Init=n
+In=En_B T0_I T1_I 
+Out=Q_B 
+S=Tim_T Sta_F 
+Language=de
+Posi=54 15
+[HLINE]
+H0=6 35 49)63 95
+H1=8 48 49)63 95
+H2=10 36 40)43 48
+H3=11 38 40
+H4=12 36 38
+H5=18 45 54)60 95
+H6=20 36 54
+H7=22 36 54
+[VLINE]
+V0=38 11 12
+V1=45 6 18
+V2=48 8 10
+[NETWORK]
+N0=Bof 35 6)if 49 6)if 54 18
+N1=Bof 63 6)i 95 6
+N2=Bif 49 8)of 43 10
+N3=Bof 63 8)i 95 8
+N4=Bo 36 10)if 40 10
+N5=Bif 40 11)o 36 12
+N6=Bof 60 18)i 95 18
+N7=Io 36 20)if 54 20
+N8=Io 36 22)if 54 22
+[CONNS]
+Conn0=95 6 11979 33 18
+Conn1=95 8 11963 33 17
+Conn2=36 10 2869 34 22
+Conn3=36 12 403 34 24
+Conn4=95 18 11978 33 19
+Conn5=36 20 3951 34 3
+Conn6=36 22 3206 34 3
+
+
+
+
+//begin of fupla page//
+[PAGE]
+Name=Thanos Soll- /Istwerte
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=2648
+PageColor=0
+PageBackColor=14540253
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_MODBUS_RXINT 40456=
+_MODBUS_TXINT 40457=
+_MODBUS_TXINT 40458=
+_MODBUS_TXBIN 40459=
+_MODBUS_TXINT 40460=
+_MODBUS_RXINT 40461=
+_MODBUS_RXINT 40462=
+_BDYN2 40463=
+_BDYN2 40464=
+_MODBUS_TXBIN 40465=
+_MODBUS_TXBIN 40466=
+_MODBUS_TXINT 40467=
+_HEAMANI3 40468=
+_MODBUS_TXINT 40469=
+_HEAMANI3 40470=
+_MODBUS_RXINT 40471=
+[_MODBUS_RXINT 40456]
+Fam=sModMaster
+Face=Read Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11920 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =3 {3,4} 
+av1=a PRO %s =1 {1,2,3,4} 
+av2=a ADD =0:789 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=21 3
+[_MODBUS_TXINT 40457]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11975 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:6 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=70 17
+[_MODBUS_TXINT 40458]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11961 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:1107 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=70 69
+[_MODBUS_TXBIN 40459]
+Fam=sModMaster
+Face=Write Bin
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Biof=11962 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =15:5 {5,15} 
+av1=a ADD =0:257 {0..65535} 
+av2=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=21 57
+[_MODBUS_TXINT 40460]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11933 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:1061 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=70 3
+[_MODBUS_RXINT 40461]
+Fam=sModMaster
+Face=Read Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11918 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =3 {3,4} 
+av1=a PRO %s =1:2 {1,2,3,4} 
+av2=a ADD =0:792 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=21 44
+[_MODBUS_RXINT 40462]
+Fam=sModMaster
+Face=Read Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11856 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =3 {3,4} 
+av1=a PRO %s =1 {1,2,3,4} 
+av2=a ADD =0:783 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=21 31
+[_BDYN2 40463]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0 {0..2} 
+Language=de
+Posi=63 19
+[_BDYN2 40464]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0 {0..2} 
+Language=de
+Posi=63 5
+[_MODBUS_TXBIN 40465]
+Fam=sModMaster
+Face=Write Bin
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Biof=11855 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =15:5 {5,15} 
+av1=a ADD =0:258 {0..65535} 
+av2=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=70 56
+[_MODBUS_TXBIN 40466]
+Fam=sModMaster
+Face=Write Bin
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Biof=11838 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =15:5 {5,15} 
+av1=a ADD =0:256 {0..65535} 
+av2=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=70 43
+[_MODBUS_TXINT 40467]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11917 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:1039 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=21 70
+[_HEAMANI3 40468]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_I 
+Out=_I 
+S=Fs_F Fsm_F Rsm_R LED_F 
+av0=a flw %s =0 {0,1} 
+av1=a Rsm 0 %1p =0 
+av2=bv Fs 0 %s =1 \v Fsm 0 %s 
+AcceptName=3
+Language=de
+Posi=21 79
+[_MODBUS_TXINT 40469]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11991 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:1040 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=21 83
+[_HEAMANI3 40470]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_I 
+Out=_I 
+S=Fs_F Fsm_F Rsm_R LED_F 
+av0=a flw %s =0 {0,1} 
+av1=a Rsm 0 %1p =0 
+av2=bv Fs 0 %s =1 \v Fsm 0 %s 
+AcceptName=3
+Language=de
+Posi=21 92
+[_MODBUS_RXINT 40471]
+Fam=sModMaster
+Face=Read Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11919 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =3 {3,4} 
+av1=a PRO %s =1 {1,2,3,4} 
+av2=a ADD =0:784 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=21 17
+[HLINE]
+H0=6 13 21)35 36)61 63)67 70)84 85
+H1=20 13 21)35 36)61 63)67 70)84 85
+H2=34 13 21)35 36
+H3=46 61 70)84 85
+H4=47 13 21)35 36
+H5=53 85 93
+H6=59 61 70)84 85
+H7=60 13 21)35 36
+H8=66 85 93
+H9=72 61 70)84 85
+H10=73 13 21)35 36
+H11=80 13 21)27 28
+H12=86 13 21)35 36
+H13=93 13 21)27 28
+[NETWORK]
+N0=Bo 13 6)if 21 6
+N1=Bof 35 6
+N2=Bo 61 6)if 63 6
+N3=Bof 67 6)if 70 6
+N4=Bof 84 6
+N5=Io 36 13
+N6=Io 85 13
+N7=Bo 13 20)if 21 20
+N8=Bof 35 20
+N9=Bo 61 20)if 63 20
+N10=Bof 67 20)if 70 20
+N11=Bof 84 20
+N12=Io 36 27
+N13=Io 85 27
+N14=Bo 13 34)if 21 34
+N15=Bof 35 34
+N16=Io 36 41
+N17=Bo 61 46)if 70 46
+N18=Bof 84 46
+N19=Bo 13 47)if 21 47
+N20=Bof 35 47
+N21=Bo 85 53
+N22=Io 36 54
+N23=Bo 61 59)if 70 59
+N24=Bof 84 59
+N25=Bo 13 60)if 21 60
+N26=Bof 35 60
+N27=Bo 85 66
+N28=Bo 36 67
+N29=Bo 61 72)if 70 72
+N30=Bof 84 72
+N31=Bo 13 73)if 21 73
+N32=Bof 35 73
+N33=Io 13 80)if 21 80
+N34=Iof 27 80)i 28 80
+N35=Io 85 80
+N36=Bo 13 86)if 21 86
+N37=Bof 35 86
+N38=Io 13 93)if 21 93
+N39=Iof 27 93)i 28 93
+[COMMENT]
+Text0=36 3-0 Raumtemperatur incl Offset
+Text1=85 3-0 RaumTBasis Schreiben
+Text2=36 7-0 OK
+Text3=85 7-0 OK
+Text4=36 17-0 Raumsolltemperatur
+Text5=85 17-0 RaumToffset Schreiben
+Text6=36 21-0 OK
+Text7=85 21-0 OK
+Text8=36 31-0 RaumToffset Lesen
+Text9=36 35-0 OK
+Text10=85 43-0 SSM Schreiben
+Text11=36 44-0 Raumbelegung Lesen
+Text12=85 47-0 OK
+Text13=36 48-0 OK
+Text14=85 56-0 Kuehlen Schreiben
+Text15=36 57-0 Heizen Schreiben
+Text16=85 60-0 OK
+Text17=36 61-0 OK
+Text18=85 69-0 ECO (Leaf) Schreiben
+Text19=85 73-0 OK
+Text20=86 77-0 0 .. Grün
+Text21=86 79-0 5 .. Rot
+[CONNS]
+Conn0=13 6 11978 34 12
+Conn1=61 6 11989 34 16
+Conn2=36 13 11920 34 17
+Conn3=85 13 11933 34 20
+Conn4=13 20 11978 34 12
+Conn5=61 20 11989 34 16
+Conn6=36 27 11919 34 18
+Conn7=85 27 11975 34 19
+Conn8=13 34 11978 34 12
+Conn9=36 41 11856 34 19
+Conn10=61 46 11978 34 15
+Conn11=13 47 11978 34 12
+Conn12=85 53 11838 34 13
+Conn13=36 54 11918 34 20
+Conn14=61 59 11978 34 15
+Conn15=13 60 11978 34 12
+Conn16=85 66 11855 34 15
+Conn17=36 67 11962 34 14
+Conn18=61 72 11978 34 15
+Conn19=13 73 11978 34 12
+Conn20=13 80 11947 34 12
+Conn21=28 80 11917 33 16
+Conn22=85 80 11961 34 16
+Conn23=13 86 11978 34 12
+Conn24=13 93 1137 34 12
+Conn25=28 93 11991 33 16
+
+
+
+
+//begin of fupla page//
+[PAGE]
+Name=Thanos Tastenstatus
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=2649
+PageColor=0
+PageBackColor=14540253
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_MODBUS_RXINT 40472=
+_ICMPEQ 40473=
+_ICMPEQ 40474=
+_ICMPEQ 40475=
+_ICMPEQ 40476=
+_ICMPEQ 40477=
+_MODBUS_RXINT 40478=
+_ICMPEQ 40479=
+_ICMPEQ 40480=
+_ICMPEQ 40481=
+_ICMPEQ 40482=
+_MODBUS_RXINT 40483=
+_ICMPEQ 40484=
+_ICMPEQ 40485=
+[_MODBUS_RXINT 40472]
+Fam=sModMaster
+Face=Read Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11960 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =3:4 {3,4} 
+av1=a PRO %s =1 {1,2,3,4} 
+av2=a ADD =0:791 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=24 3
+[_ICMPEQ 40473]
+Fam=sfupinte
+Face=Cmp
+Width=4
+Init=n
+In=_I _I 
+Out==_B 
+Language=de
+Posi=34 33
+[_ICMPEQ 40474]
+Fam=sfupinte
+Face=Cmp
+Width=4
+Init=n
+In=_I _I 
+Out==_B 
+Language=de
+Posi=34 28
+[_ICMPEQ 40475]
+Fam=sfupinte
+Face=Cmp
+Width=4
+Init=n
+In=_I _I 
+Out==_B 
+Language=de
+Posi=34 23
+[_ICMPEQ 40476]
+Fam=sfupinte
+Face=Cmp
+Width=4
+Init=n
+In=_I _I 
+Out==_B 
+Language=de
+Posi=34 18
+[_ICMPEQ 40477]
+Fam=sfupinte
+Face=Cmp
+Width=4
+Init=n
+In=_I _I 
+Out==_B 
+Language=de
+Posi=34 13
+[_MODBUS_RXINT 40478]
+Fam=sModMaster
+Face=Read Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11990 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =3:4 {3,4} 
+av1=a PRO %s =1 {1,2,3,4} 
+av2=a ADD =0:776 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=24 40
+[_ICMPEQ 40479]
+Fam=sfupinte
+Face=Cmp
+Width=4
+Init=n
+In=_I _I 
+Out==_B 
+Language=de
+Posi=34 55
+[_ICMPEQ 40480]
+Fam=sfupinte
+Face=Cmp
+Width=4
+Init=n
+In=_I _I 
+Out==_B 
+Language=de
+Posi=34 50
+[_ICMPEQ 40481]
+Fam=sfupinte
+Face=Cmp
+Width=4
+Init=n
+In=_I _I 
+Out==_B 
+Language=de
+Posi=34 78
+[_ICMPEQ 40482]
+Fam=sfupinte
+Face=Cmp
+Width=4
+Init=n
+In=_I _I 
+Out==_B 
+Language=de
+Posi=34 73
+[_MODBUS_RXINT 40483]
+Fam=sModMaster
+Face=Read Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11904 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =3:4 {3,4} 
+av1=a PRO %s =1 {1,2,3,4} 
+av2=a ADD =0:841 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=24 63
+[_ICMPEQ 40484]
+Fam=sfupinte
+Face=Cmp
+Width=4
+Init=n
+In=_I _I 
+Out==_B 
+Language=de
+Posi=34 83
+[_ICMPEQ 40485]
+Fam=sfupinte
+Face=Cmp
+Width=4
+Init=n
+In=_I _I 
+Out==_B 
+Language=de
+Posi=34 88
+[HLINE]
+H0=6 16 24)38 39
+H1=14 16 34
+H2=15 28 34
+H3=16 16 28)38 46
+H4=19 31 34
+H5=20 16 34
+H6=21 38 46
+H7=24 31 34
+H8=25 16 34
+H9=26 38 46
+H10=29 31 34
+H11=30 16 34
+H12=31 38 46
+H13=34 31 34
+H14=35 16 34
+H15=36 38 46
+H16=43 16 24)38 39
+H17=51 16 34
+H18=52 32 34
+H19=53 16 32)38 46
+H20=56 30 34
+H21=57 16 34
+H22=58 38 46
+H23=66 16 24)38 39
+H24=74 16 34
+H25=75 32 34
+H26=76 16 32)38 46
+H27=79 30 34
+H28=80 16 34
+H29=81 38 46
+H30=84 30 34
+H31=85 16 34
+H32=86 38 46
+H33=89 30 34
+H34=90 16 34
+H35=91 38 46
+[VLINE]
+V0=28 15 16
+V1=30 51 56)74 79)79 84)84 89
+V2=31 14 19)19 24)24 29)29 34
+V3=32 52 53)75 76
+[NETWORK]
+N0=Bo 16 6)if 24 6
+N1=Bof 38 6
+N2=Io 16 14)if 34 14)if 34 34)if 34 29)if 34 24)if 34 19
+N3=Iif 34 15)o 16 16
+N4=Bof 38 16)i 46 16
+N5=Io 16 20)if 34 20
+N6=Bof 38 21)i 46 21
+N7=Io 16 25)if 34 25
+N8=Bof 38 26)i 46 26
+N9=Io 16 30)if 34 30
+N10=Bof 38 31)i 46 31
+N11=Io 16 35)if 34 35
+N12=Bof 38 36)i 46 36
+N13=Bo 16 43)if 24 43
+N14=Bof 38 43
+N15=Io 16 51)if 34 51)if 34 56
+N16=Iif 34 52)o 16 53
+N17=Bof 38 53)i 46 53
+N18=Io 16 57)if 34 57
+N19=Bof 38 58)i 46 58
+N20=Bo 16 66)if 24 66
+N21=Bof 38 66
+N22=Io 16 74)if 34 74)if 34 89)if 34 84)if 34 79
+N23=Iif 34 75)o 16 76
+N24=Bof 38 76)i 46 76
+N25=Io 16 80)if 34 80
+N26=Bof 38 81)i 46 81
+N27=Io 16 85)if 34 85
+N28=Bof 38 86)i 46 86
+N29=Io 16 90)if 34 90
+N30=Bof 38 91)i 46 91
+[COMMENT]
+Text0=39 3-0 Ventilatorstufe
+Text1=39 7-0 OK
+Text2=39 40-0 Universal ON/OFF
+Text3=39 44-0 OK
+Text4=39 63-0 Betriebsmodus 
+Text5=39 67-0 OK
+[CONNS]
+Conn0=16 6 11978 34 15
+Conn1=16 14 11960 34 15
+Conn2=16 16 8986 34 4
+Conn3=46 16 11827 33 22
+Conn4=16 20 2564 34 3
+Conn5=46 21 11846 33 22
+Conn6=16 25 3927 34 3
+Conn7=46 26 11867 33 21
+Conn8=16 30 4049 34 3
+Conn9=46 31 11791 33 21
+Conn10=16 35 3083 34 3
+Conn11=46 36 11906 33 21
+Conn12=16 43 11978 34 15
+Conn13=16 51 11990 34 15
+Conn14=16 53 2564 34 3
+Conn15=46 53 11905 33 18
+Conn16=16 57 3927 34 3
+Conn17=46 58 11880 33 18
+Conn18=16 66 11978 34 15
+Conn19=16 74 11904 34 15
+Conn20=16 76 2564 34 3
+Conn21=46 76 11837 33 19
+Conn22=16 80 4049 34 3
+Conn23=46 81 11932 33 19
+Conn24=16 85 3927 34 3
+Conn25=46 86 11946 33 19
+Conn26=16 90 3083 34 3
+Conn27=46 91 11974 33 20
+
+
+
+
+//begin of fupla page//
+[PAGE]
+Name=Thanos Parametrierung
+Comment=Logo, Uhr, Datum, Kontrast
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=2650
+PageColor=0
+PageBackColor=14540253
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_MODBUS_TXINT 40486=
+_MODBUS_TXINT 40487=
+_MODBUS_TXINT 40488=
+_MODBUS_TXINT 40489=
+_MODBUS_TXINT 40491=
+_MODBUS_TXINT 40492=
+_MODBUS_TXINT 40493=
+_MODBUS_TXINT 40494=
+_MODBUS_TXINT 40495=
+_MODBUS_TXINT 40497=
+_MODBUS_TXINT 40498=
+_MODBUS_TXINT 40499=
+_MODBUS_TXINT 40500=
+_MODBUS_TXINT 40501=
+[_MODBUS_TXINT 40486]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=893 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:1029 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=79 65
+[_MODBUS_TXINT 40487]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=895 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:1028 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=62 65
+[_MODBUS_TXINT 40488]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=890 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:1027 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=45 65
+[_MODBUS_TXINT 40489]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11944 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:27 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=24 65
+[_MODBUS_TXINT 40491]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11790 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:29 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=27 46
+[_MODBUS_TXINT 40492]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=891 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:1026 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=82 32
+[_MODBUS_TXINT 40493]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=887 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:1025 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=65 32
+[_MODBUS_TXINT 40494]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=888 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:1024 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=48 32
+[_MODBUS_TXINT 40495]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11826 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:28 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=27 32
+[_MODBUS_TXINT 40497]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11945 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:1108 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=49 13
+[_MODBUS_TXINT 40498]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11931 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:1108 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=27 13
+[_MODBUS_TXINT 40499]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11845 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:19 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=79 84
+[_MODBUS_TXINT 40500]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11959 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:18 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=62 84
+[_MODBUS_TXINT 40501]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11943 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:17 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=45 84
+[HLINE]
+H0=10 18 43
+H1=16 24 27)41 42)43 49)63 64
+H2=30 18 81
+H3=35 18 27)41 42)46 48)62 63)64 65)79 80)81 82)96 97
+H4=49 24 27)41 42
+H5=63 18 78
+H6=68 18 24)38 39)43 45)59 60)61 62)76 77)78 79)93 94
+H7=82 18 78
+H8=87 43 45)59 60)61 62)76 77)78 79)93 94
+[VLINE]
+V0=24 10 16)35 49
+V1=43 10 16)63 68)82 87
+V2=46 30 35
+V3=61 63 68)82 87
+V4=64 30 35
+V5=78 63 68)82 87
+V6=81 30 35
+[NETWORK]
+N0=Bo 18 10)i-f 49 16)if 27 16
+N1=Bof 41 16
+N2=Bof 63 16
+N3=Io 42 23
+N4=Io 64 23
+N5=Bo 18 30)if 82 35)if 65 35)if 48 35
+N6=Bo 18 35)if 27 35)if 27 49
+N7=Bof 41 35
+N8=Bof 62 35
+N9=Bof 79 35
+N10=Bof 96 35
+N11=Io 42 42
+N12=Io 63 42
+N13=Io 80 42
+N14=Io 97 42
+N15=Bof 41 49
+N16=Io 42 56
+N17=Bo 18 63)if 79 68)if 62 68)if 45 68
+N18=Bo 18 68)if 24 68
+N19=Bof 38 68
+N20=Bof 59 68
+N21=Bof 76 68
+N22=Bof 93 68
+N23=Io 39 75
+N24=Io 60 75
+N25=Io 77 75
+N26=Io 94 75
+N27=Bo 18 82)if 79 87)if 62 87)if 45 87
+N28=Bof 59 87
+N29=Bof 76 87
+N30=Bof 93 87
+N31=Io 60 94
+N32=Io 77 94
+N33=Io 94 94
+[COMMENT]
+Text0=65 13-0 Zeige Datum/Uhr od. Firmenlogo
+Text1=65 17-0 OK
+Text2=14 18-0 0= kein Bild
+Text3=14 20-0 1= Topimg01.bmp
+Text4=14 22-0 2= Topimg02.bmp
+Text5=14 24-0 ...8
+Text6=1 37-0 Uhr einstellen
+Text7=12 37-0 0= keine Uhr
+Text8=12 39-0 1= mit Sekunden
+Text9=12 41-0 2= ohne Sekunden
+Text10=43 50-0 0= 24h
+Text11=43 52-0 1= 12h
+Text12=94 65-0 OK
+Text13=1 70-0 Datum einstellen
+Text14=12 70-0 0= keine Datum
+Text15=12 72-0 1= YMD
+Text16=12 74-0 2= DMY
+Text17=12 76-0 3= MDY
+Text18=94 84-0 OK
+Text19=45 96-0 Displ. Kontrast Aktiv
+Text20=62 96-0 Displ. Kontrast Dimmer
+Text21=79 96-0 Displ. Kontrast StBy
+[CONNS]
+Conn0=18 10 11989 34 16
+Conn1=42 23 11931 34 18
+Conn2=64 23 11945 34 18
+Conn3=18 30 892 34 17
+Conn4=18 35 11989 34 16
+Conn5=42 42 11826 34 16
+Conn6=63 42 888 34 19
+Conn7=80 42 887 34 16
+Conn8=97 42 891 34 16
+Conn9=42 56 11790 34 17
+Conn10=18 63 892 34 17
+Conn11=18 68 11989 34 16
+Conn12=39 75 11944 34 17
+Conn13=60 75 890 34 20
+Conn14=77 75 895 34 16
+Conn15=94 75 893 34 16
+Conn16=18 82 11989 34 16
+Conn17=60 94 11943 34 16
+Conn18=77 94 11959 34 16
+Conn19=94 94 11845 34 16
+
+
+
+
+//begin of fupla page//
+[PAGE]
+Name=Thanos Parametrierung
+Comment=Text HUM, EXT
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=2651
+PageColor=0
+PageBackColor=14540253
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_MODBUS_TXINT 40503=
+_MODBUS_TXINT 40504=
+_MODBUS_TXINT 40505=
+_MODBUS_TXINT 40507=
+_MODBUS_TXINT 40508=
+_MODBUS_TXINT 40509=
+_MODBUS_TXINT 40511=
+_MODBUS_TXINT 40512=
+_MODBUS_TXINT 40513=
+_MODBUS_TXINT 40514=
+_MODBUS_TXINT 40515=
+_MODBUS_TXINT 40517=
+[_MODBUS_TXINT 40503]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11802 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:104 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=61 27
+[_MODBUS_TXINT 40504]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11814 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:103 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=44 27
+[_MODBUS_TXINT 40505]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11836 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:102 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=27 27
+[_MODBUS_TXINT 40507]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11930 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:101 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=78 6
+[_MODBUS_TXINT 40508]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11879 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:100 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=61 6
+[_MODBUS_TXINT 40509]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11789 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:99 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=44 6
+[_MODBUS_TXINT 40511]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11801 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:105 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=78 27
+[_MODBUS_TXINT 40512]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11892 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:112 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=78 47
+[_MODBUS_TXINT 40513]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11957 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:111 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=61 47
+[_MODBUS_TXINT 40514]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11958 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:110 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=44 47
+[_MODBUS_TXINT 40515]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11893 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:109 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=27 47
+[_MODBUS_TXINT 40517]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11942 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:8 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=27 64
+[HLINE]
+H0=4 18 77
+H1=9 42 44)58 59)60 61)75 76)77 78)92 93
+H2=25 18 77
+H3=30 25 27)41 42)43 44)58 59)60 61)75 76)77 78)92 93
+H4=45 18 77
+H5=50 25 27)41 42)43 44)58 59)60 61)75 76)77 78)92 93
+H6=62 18 25
+H7=67 25 27)41 42
+[VLINE]
+V0=25 25 30)45 50)62 67
+V1=42 4 9
+V2=43 25 30)45 50
+V3=60 4 9)25 30)45 50
+V4=77 4 9)25 30)45 50
+[NETWORK]
+N0=Bo 18 4)if 78 9)if 61 9)if 44 9
+N1=Bof 58 9
+N2=Bof 75 9
+N3=Bof 92 9
+N4=Io 59 16
+N5=Io 76 16
+N6=Io 93 16
+N7=Bo 18 25)if 78 30)if 61 30)if 44 30)if 27 30
+N8=Bof 41 30
+N9=Bof 58 30
+N10=Bof 75 30
+N11=Bof 92 30
+N12=Io 42 37
+N13=Io 59 37
+N14=Io 76 37
+N15=Io 93 37
+N16=Bo 18 45)if 78 50)if 61 50)if 44 50)if 27 50
+N17=Bof 41 50
+N18=Bof 58 50
+N19=Bof 75 50
+N20=Bof 92 50
+N21=Io 42 57
+N22=Io 59 57
+N23=Io 76 57
+N24=Io 93 57
+N25=Bo 18 62)if 27 67
+N26=Bof 41 67
+N27=Io 42 74
+[COMMENT]
+Text0=93 6-0 OK
+Text1=45 18-0 ExtWert Einheit 1 - %
+Text2=61 18-0 ExtWert Buchstabe 2 - _
+Text3=78 18-0 ExtWert Buchstabe 3 - _
+Text4=96 27-0 OK
+Text5=27 39-0 ExtWert1 Buchstabe 1 - H
+Text6=44 39-0 ExtWert1 Buchstabe 2 - U
+Text7=61 39-0 ExtWert1 Buchstabe 3 - M
+Text8=78 39-0 ExtWert1 Buchstabe 3 - _
+Text9=96 47-0 OK
+Text10=27 59-0 ExtWert2 Buchstabe 1 - O
+Text11=44 59-0 ExtWert2 Buchstabe 2 - U
+Text12=61 59-0 ExtWert2 Buchstabe 3 - M
+Text13=78 59-0 ExtWert2 Buchstabe 3 - _
+Text14=27 76-0 Max Ventilatorstufe
+[CONNS]
+Conn0=18 4 11989 34 16
+Conn1=59 16 11789 34 15
+Conn2=76 16 11879 34 15
+Conn3=93 16 11930 34 15
+Conn4=18 25 11989 34 16
+Conn5=42 37 11836 34 14
+Conn6=59 37 11814 34 14
+Conn7=76 37 11802 34 14
+Conn8=93 37 11801 34 14
+Conn9=18 45 11989 34 16
+Conn10=42 57 11893 34 14
+Conn11=59 57 11958 34 14
+Conn12=76 57 11957 34 14
+Conn13=93 57 11892 34 14
+Conn14=18 62 11989 34 16
+Conn15=42 74 11942 34 25
+
+
+
+
+//begin of fupla page//
+[PAGE]
+Name=Thanos Tastenparametrierung
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=2652
+PageColor=0
+PageBackColor=14540253
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_MODBUS_TXINT 40520=
+_MODBUS_TXINT 40521=
+_BDYN2 40522=
+_BDYN2 40523=
+_MODBUS_TXINT 40525=
+_MODBUS_TXINT 40526=
+_BDYN2 40527=
+_MODBUS_TXINT 40529=
+_MODBUS_TXINT 40530=
+_BDYN2 40531=
+_MODBUS_TXINT 40533=
+_MODBUS_TXINT 40534=
+_HEATOG 40535=
+[_MODBUS_TXINT 40520]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11800 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:143 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=28 10
+[_MODBUS_TXINT 40521]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11799 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:143 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=71 10
+[_BDYN2 40522]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0 {0..2} 
+Language=de
+Posi=65 12
+[_BDYN2 40523]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0 {0..2} 
+Language=de
+Posi=65 28
+[_MODBUS_TXINT 40525]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11825 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:144 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=71 26
+[_MODBUS_TXINT 40526]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11878 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:144 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=28 26
+[_BDYN2 40527]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0 {0..2} 
+Language=de
+Posi=65 44
+[_MODBUS_TXINT 40529]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11813 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:145 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=71 42
+[_MODBUS_TXINT 40530]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11929 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:145 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=28 42
+[_BDYN2 40531]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0 {0..2} 
+Language=de
+Posi=65 61
+[_MODBUS_TXINT 40533]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11956 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:146 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=71 59
+[_MODBUS_TXINT 40534]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11812 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:146 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=28 59
+[_HEATOG 40535]
+Fam=heavtest
+Face=Edit
+Width=5
+Init=y
+Stretch=0 3 1 3
+Out=_NB 
+S=Fs_8F 
+av0=bv Fs 0 %s =1 \v Fs 4 %s 
+av1=bv Fs 1 %s =1 \v Fs 5 %s 
+av2=bv Fs 2 %s =1 \v Fs 6 %s 
+av3=bv Fs 3 %s =1 \v Fs 7 %s 
+Language=de
+Posi=8 2
+[HLINE]
+H0=3 13 64
+H1=4 13 63
+H2=5 13 62
+H3=6 13 61
+H4=13 18 28)42 43)64 65)69 71)85 86
+H5=29 18 28)42 43)63 65)69 71)85 86
+H6=45 18 28)42 43)62 65)69 71)85 86
+H7=62 18 28)42 43)61 65)69 71)85 86
+[VLINE]
+V0=61 6 62
+V1=62 5 45
+V2=63 4 29
+V3=64 3 13
+[NETWORK]
+N0=Bof 13 3)if 65 13
+N1=Bof 13 4)if 65 29
+N2=Bof 13 5)if 65 45
+N3=Bof 13 6)if 65 62
+N4=Bo 18 13)if 28 13
+N5=Bof 42 13
+N6=Bof 69 13)if 71 13
+N7=Bof 85 13
+N8=Io 43 20
+N9=Io 86 20
+N10=Bo 18 29)if 28 29
+N11=Bof 42 29
+N12=Bof 69 29)if 71 29
+N13=Bof 85 29
+N14=Io 43 36
+N15=Io 86 36
+N16=Bo 18 45)if 28 45
+N17=Bof 42 45
+N18=Bof 69 45)if 71 45
+N19=Bof 85 45
+N20=Io 43 52
+N21=Io 86 52
+N22=Bo 18 62)if 28 62
+N23=Bof 42 62
+N24=Bof 69 62)if 71 62
+N25=Bof 85 62
+N26=Io 43 69
+N27=Io 86 69
+[COMMENT]
+Text0=43 10-0 Taste 4 Show
+Text1=86 10-0 Taste 4 Show
+Text2=43 14-0 OK
+Text3=86 14-0 OK
+Text4=44 17-0 ON/OFF .. Direktumschaltung
+Text5=87 17-0 0 ..Symbol Ausblenden
+Text6=30 22-0 := 167
+Text7=43 26-0 Taste 5 Show
+Text8=86 26-0 Taste 5 Show
+Text9=43 30-0 OK
+Text10=86 30-0 OK
+Text11=44 33-0 4103 .. Ventilatormenue
+Text12=87 33-0 0 ..Symbol Ausblenden
+Text13=30 38-0 := 4103
+Text14=43 42-0 Taste 6 Show
+Text15=86 42-0 Taste 6 Show
+Text16=43 46-0 OK
+Text17=86 46-0 OK
+Text18=44 49-0 4111 .. Betriebsart Heizen /Kühlen
+Text19=87 49-0 0 ..Symbol Ausblenden
+Text20=30 55-0 := 4111
+Text21=43 59-0 Taste 7 Show
+Text22=86 59-0 Taste 7 Show
+Text23=43 63-0 OK
+Text24=86 63-0 OK
+Text25=44 66-0 4100 .. Sollwertverstellung
+Text26=87 66-0 0 ..Symbol Ausblenden
+Text27=30 71-0 := 4100
+[CONNS]
+Conn0=18 13 11989 34 16
+Conn1=43 20 11800 34 17
+Conn2=86 20 11799 34 17
+Conn3=18 29 11989 34 16
+Conn4=43 36 11878 34 17
+Conn5=86 36 11825 34 17
+Conn6=18 45 11989 34 16
+Conn7=43 52 11929 34 17
+Conn8=86 52 11813 34 17
+Conn9=18 62 11989 34 16
+Conn10=43 69 11812 34 17
+Conn11=86 69 11956 34 17
+
+
+
+
+//begin of fupla page//
+[PAGE]
+Name=Thanos Betriebsarten
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=2653
+PageColor=0
+PageBackColor=14540253
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_MODBUS_TXINT 40536=
+_MODBUS_TXINT 40537=
+_MODBUS_TXINT 40538=
+_MODBUS_TXINT 40539=
+_MODBUS_TXINT 40540=
+_MODBUS_TXINT 40541=
+_MODBUS_TXINT 40543=
+_MODBUS_TXINT 40545=
+_MODBUS_TXBIN 40547=
+_MODBUS_TXBIN 40548=
+_MODBUS_TXBIN 40550=
+_MODBUS_TXBIN 40551=
+_MODBUS_TXBIN 40552=
+[_MODBUS_TXINT 40536]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11824 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:90 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=40 20
+[_MODBUS_TXINT 40537]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11824 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:79 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=22 20
+[_MODBUS_TXINT 40538]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11824 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:68 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=80 8
+[_MODBUS_TXINT 40539]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11824 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:57 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=60 8
+[_MODBUS_TXINT 40540]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11824 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:46 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=41 8
+[_MODBUS_TXINT 40541]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11824 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:35 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=22 8
+[_MODBUS_TXINT 40543]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11973 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:493 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=22 32
+[_MODBUS_TXINT 40545]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11835 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:510 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=43 32
+[_MODBUS_TXBIN 40547]
+Fam=sModMaster
+Face=Write Bin
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Biof=11916 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =15:5 {5,15} 
+av1=a ADD =0:2 {0..65535} 
+av2=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=22 44
+[_MODBUS_TXBIN 40548]
+Fam=sModMaster
+Face=Write Bin
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Biof=11972 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =15:5 {5,15} 
+av1=a ADD =0:15 {0..65535} 
+av2=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=22 58
+[_MODBUS_TXBIN 40550]
+Fam=sModMaster
+Face=Write Bin
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Biof=11941 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =15:5 {5,15} 
+av1=a ADD =0:14 {0..65535} 
+av2=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=47 58
+[_MODBUS_TXBIN 40551]
+Fam=sModMaster
+Face=Write Bin
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Biof=11941 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =15:5 {5,15} 
+av1=a ADD =0:16 {0..65535} 
+av2=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=47 72
+[_MODBUS_TXBIN 40552]
+Fam=sModMaster
+Face=Write Bin
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Biof=11972 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =15:5 {5,15} 
+av1=a ADD =0:17 {0..65535} 
+av2=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=22 72
+[HLINE]
+H0=6 19 78
+H1=11 20 22)36 37)39 41)55 56)58 60)74 75)78 80)94 95
+H2=23 20 22)36 37)39 40)54 55
+H3=30 20 38
+H4=35 21 22)36 37)38 43)57 58
+H5=47 20 22)36 37
+H6=57 20 38
+H7=61 21 22)36 37)38 47)61 62
+H8=71 20 38
+H9=75 21 22)36 37)38 47)61 62
+[VLINE]
+V0=20 6 11)11 23
+V1=21 30 35)57 61)71 75
+V2=38 30 35)57 61)71 75
+V3=39 6 11)11 23
+V4=58 6 11
+V5=78 6 11
+[NETWORK]
+N0=Bo 19 6)if 80 11)if 60 11)if 40 23)if 41 11)if 22 23)if 22 11
+N1=Bof 36 11
+N2=Bof 55 11
+N3=Bof 74 11
+N4=Bof 94 11
+N5=Io 37 18
+N6=Bof 36 23
+N7=Bof 54 23
+N8=Bo 20 30)if 43 35)if 22 35
+N9=Bof 36 35
+N10=Bof 57 35
+N11=Io 37 42
+N12=Io 58 42
+N13=Bo 20 47)if 22 47
+N14=Bof 36 47
+N15=Bo 37 54
+N16=Bo 20 57)if 47 61)if 22 61
+N17=Bof 36 61
+N18=Bof 61 61
+N19=Bo 37 68
+N20=Bo 62 68
+N21=Bo 20 71)if 47 75)if 22 75
+N22=Bof 36 75
+N23=Bof 61 75
+N24=Bo 37 82
+N25=Bo 62 82
+[COMMENT]
+Text0=60 20-0 Sprungweitenverstellung alle 5 Sollwertregister
+Text1=37 44-0 Anzeige ohne Komma
+Text2=37 48-0 OK
+Text3=37 62-0 OK
+Text4=62 62-0 OK
+Text5=37 76-0 OK
+Text6=62 76-0 OK
+[CONNS]
+Conn0=19 6 11989 34 16
+Conn1=37 18 11824 34 16
+Conn2=20 30 11989 34 16
+Conn3=37 42 11973 34 16
+Conn4=58 42 11835 34 19
+Conn5=20 47 11989 34 16
+Conn6=37 54 11916 34 21
+Conn7=20 57 11989 34 16
+Conn8=37 68 11972 34 19
+Conn9=62 68 11941 34 19
+Conn10=20 71 11989 34 16
+Conn11=37 82 11844 34 19
+Conn12=62 82 11903 34 19
+
+
+
+
+//begin of fupla page//
+[PAGE]
+Name=Thanos Raumbelegung
+Comment=schreiben
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=2654
+PageColor=0
+PageBackColor=14540253
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_BDYN2 40554=
+_HEAMANI3 40555=
+_MODBUS_TXINT 40556=
+_ILOADE 40557=
+_FLISRNDY2 40558=
+_MODBUS_TXINT 40559=
+_ILOADE 40560=
+_BDYN2 40561=
+_FLISRNDY2 40562=
+_BDYN2 40563=
+_BDYN2 40564=
+_XPULSE 41431=
+_XPULSE 41432=
+_IISZERO 41433=
+[_BDYN2 40554]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0 {0..2} 
+Language=de
+Posi=59 38
+[_HEAMANI3 40555]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_I 
+Out=_I 
+S=Fs_F Fsm_F Rsm_R LED_F 
+av0=a flw %s =0 {0,1} 
+av1=a Rsm 0 %1p =0 
+av2=bv Fs 0 %s =1 \v Fsm 0 %s 
+AcceptName=3
+Language=de
+Posi=43 4
+[_MODBUS_TXINT 40556]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11866 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:1031 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=67 36
+[_ILOADE 40557]
+Fam=sfupinte
+Width=11
+Init=n
+In=En_B In_I 
+Out=Out_I 
+C=_Irtc=11866 
+Language=de
+Posi=70 28
+[_FLISRNDY2 40558]
+Fam=sfupflip
+Width=4
+Init=y
+In=S_B R_B 
+Out=Q_B 
+S=Sta_F 
+av0=a opt %s =2 {0,1,2} 
+av1=b Sta 0 %s =0 
+av2=b Sta 0 %s =1 
+Language=de
+Posi=45 28
+[_MODBUS_TXINT 40559]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11866 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:1031 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=67 15
+[_ILOADE 40560]
+Fam=sfupinte
+Width=11
+Init=n
+In=En_B In_I 
+Out=Out_I 
+C=_Irtc=11866 
+Language=de
+Posi=70 7
+[_BDYN2 40561]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0 {0..2} 
+Language=de
+Posi=59 17
+[_FLISRNDY2 40562]
+Fam=sfupflip
+Width=4
+Init=y
+In=S_B R_B 
+Out=Q_B 
+S=Sta_F 
+av0=a opt %s =2 {0,1,2} 
+av1=b Sta 0 %s =0 
+av2=b Sta 0 %s =1 
+Language=de
+Posi=45 7
+[_BDYN2 40563]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0 {0..2} 
+Language=de
+Posi=33 9
+[_BDYN2 40564]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0 {0..2} 
+Language=de
+Posi=33 30
+[_XPULSE 41431]
+Fam=sfuptime
+Face=XPulse
+Width=7
+Init=y
+In=In_EB TV_I 
+Out=Q_B t_I 
+S=Tim_T Sta_F 
+Language=de
+Posi=44 56
+[_XPULSE 41432]
+Fam=sfuptime
+Face=XPulse
+Width=7
+Init=y
+In=In_EB TV_I 
+Out=Q_B t_I 
+S=Tim_T Sta_F 
+Language=de
+Posi=44 49
+[_IISZERO 41433]
+Fam=sfupinte
+Face==0
+Width=3
+Init=n
+In=_I 
+Out=_B 
+Language=de
+Posi=34 49
+[HLINE]
+H0=5 25 43)49 66
+H1=8 25 45)49 70)81 82
+H2=10 25 33)37 45)69 70
+H3=18 55 59)63 67)81 82
+H4=29 25 45)49 70)81 82
+H5=31 25 33)37 45)69 70
+H6=39 55 59)63 67)81 82
+H7=50 25 34)37 40
+H8=52 40 44)51 66
+H9=54 25 44)51 52
+H10=59 40 44)51 66
+H11=61 39 44)51 52
+[VLINE]
+V0=39 54 61
+V1=40 50 52)52 59
+V2=55 8 18)29 39
+[NETWORK]
+N0=Io 25 5)if 43 5
+N1=Iof 49 5)i 66 5
+N2=Bo 25 8)if 45 8
+N3=Bof 49 8)if 70 8)if 59 18
+N4=Iof 81 8
+N5=Bo 25 10)i-f 33 10
+N6=Bof 37 10)if 45 10
+N7=Io 69 10)if 70 10
+N8=Bof 63 18)if 67 18
+N9=Bof 81 18
+N10=Io 82 25
+N11=Bo 25 29)if 45 29
+N12=Bof 49 29)if 70 29)if 59 39
+N13=Iof 81 29
+N14=Bo 25 31)i-f 33 31
+N15=Bof 37 31)if 45 31
+N16=Io 69 31)if 70 31
+N17=Bof 63 39)if 67 39
+N18=Bof 81 39
+N19=Io 25 50)if 34 50
+N20=Bof 37 50)if 44 59)i-f 44 52
+N21=Bof 51 52)i 66 52
+N22=Io 25 54)if 44 54)if 44 61
+N23=Iof 51 54
+N24=Bof 51 59)i 66 59
+N25=Iof 51 61
+[COMMENT]
+Text0=83 14-0 Raumbelegung Schreiben
+Text1=82 19-0 OK
+Text2=83 36-0 Raumbelegung Schreiben
+Text3=82 40-0 OK
+[CONNS]
+Conn0=25 5 11918 34 24
+Conn1=66 5 11866 33 24
+Conn2=25 8 338 34 4
+Conn3=25 10 11978 34 19
+Conn4=69 10 3927 34 3
+Conn5=82 25 11866 34 24
+Conn6=25 29 338 34 4
+Conn7=25 31 11978 34 19
+Conn8=69 31 2564 34 3
+Conn9=25 50 11918 34 24
+Conn10=66 52 13054 33 18
+Conn11=25 54 13053 34 3
+Conn12=66 59 13055 33 19
+
+
+
+
+//begin of fupla page//
+[PAGE]
+Name=Betriebsvorwahl Heizen Kühlen
+Comment=schreiben
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=2655
+PageColor=0
+PageBackColor=14540253
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_BDYN2 40565=
+_MODBUS_TXINT 40566=
+_BDYN2 40567=
+_ILOADE 40568=
+_FLISRNDY2 40569=
+_BDYN2 40570=
+_MODBUS_TXINT 40571=
+_BDYN2 40572=
+_ILOADE 40573=
+_FLISRNDY2 40574=
+_HEAMANI3 40575=
+_BDYN2 40576=
+_MODBUS_TXINT 40577=
+_BDYN2 40578=
+_ILOADE 40579=
+_FLISRNDY2 40580=
+_BDYN2 40581=
+_MODBUS_TXINT 40582=
+_BDYN2 40583=
+_ILOADE 40584=
+_FLISRNDY2 40585=
+[_BDYN2 40565]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0 {0..2} 
+Language=de
+Posi=58 39
+[_MODBUS_TXINT 40566]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11928 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:1109 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=66 37
+[_BDYN2 40567]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0 {0..2} 
+Language=de
+Posi=32 31
+[_ILOADE 40568]
+Fam=sfupinte
+Width=11
+Init=n
+In=En_B In_I 
+Out=Out_I 
+C=_Irtc=11928 
+Language=de
+Posi=69 29
+[_FLISRNDY2 40569]
+Fam=sfupflip
+Width=4
+Init=y
+In=S_B R_B 
+Out=Q_B 
+S=Sta_F 
+av0=a opt %s =2 {0,1,2} 
+av1=b Sta 0 %s =0 
+av2=b Sta 0 %s =1 
+Language=de
+Posi=44 29
+[_BDYN2 40570]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0 {0..2} 
+Language=de
+Posi=58 18
+[_MODBUS_TXINT 40571]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11928 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:1109 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=66 16
+[_BDYN2 40572]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0 {0..2} 
+Language=de
+Posi=32 10
+[_ILOADE 40573]
+Fam=sfupinte
+Width=11
+Init=n
+In=En_B In_I 
+Out=Out_I 
+C=_Irtc=11928 
+Language=de
+Posi=69 8
+[_FLISRNDY2 40574]
+Fam=sfupflip
+Width=4
+Init=y
+In=S_B R_B 
+Out=Q_B 
+S=Sta_F 
+av0=a opt %s =2 {0,1,2} 
+av1=b Sta 0 %s =0 
+av2=b Sta 0 %s =1 
+Language=de
+Posi=44 8
+[_HEAMANI3 40575]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_I 
+Out=_I 
+S=Fs_F Fsm_F Rsm_R LED_F 
+av0=a flw %s =0 {0,1} 
+av1=a Rsm 0 %1p =0 
+av2=bv Fs 0 %s =1 \v Fsm 0 %s 
+AcceptName=3
+Language=de
+Posi=42 5
+[_BDYN2 40576]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0 {0..2} 
+Language=de
+Posi=58 81
+[_MODBUS_TXINT 40577]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11928 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:1109 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=66 79
+[_BDYN2 40578]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0 {0..2} 
+Language=de
+Posi=32 73
+[_ILOADE 40579]
+Fam=sfupinte
+Width=11
+Init=n
+In=En_B In_I 
+Out=Out_I 
+C=_Irtc=11928 
+Language=de
+Posi=69 71
+[_FLISRNDY2 40580]
+Fam=sfupflip
+Width=4
+Init=y
+In=S_B R_B 
+Out=Q_B 
+S=Sta_F 
+av0=a opt %s =2 {0,1,2} 
+av1=b Sta 0 %s =0 
+av2=b Sta 0 %s =1 
+Language=de
+Posi=44 71
+[_BDYN2 40581]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0 {0..2} 
+Language=de
+Posi=58 60
+[_MODBUS_TXINT 40582]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11928 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:1109 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=66 58
+[_BDYN2 40583]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0 {0..2} 
+Language=de
+Posi=32 52
+[_ILOADE 40584]
+Fam=sfupinte
+Width=11
+Init=n
+In=En_B In_I 
+Out=Out_I 
+C=_Irtc=11928 
+Language=de
+Posi=69 50
+[_FLISRNDY2 40585]
+Fam=sfupflip
+Width=4
+Init=y
+In=S_B R_B 
+Out=Q_B 
+S=Sta_F 
+av0=a opt %s =2 {0,1,2} 
+av1=b Sta 0 %s =0 
+av2=b Sta 0 %s =1 
+Language=de
+Posi=44 50
+[HLINE]
+H0=6 24 42)48 64
+H1=9 24 44)48 69)80 81
+H2=11 24 32)36 44)68 69
+H3=19 54 58)62 66)80 81
+H4=30 24 44)48 69)80 81
+H5=32 24 32)36 44)68 69
+H6=40 54 58)62 66)80 81
+H7=51 24 44)48 69)80 81
+H8=53 24 32)36 44)68 69
+H9=61 54 58)62 66)80 81
+H10=72 24 44)48 69)80 81
+H11=74 24 32)36 44)68 69
+H12=82 54 58)62 66)80 81
+[VLINE]
+V0=54 9 19)30 40)51 61)72 82
+[NETWORK]
+N0=Io 24 6)if 42 6
+N1=Iof 48 6)i 64 6
+N2=Bo 24 9)if 44 9
+N3=Bof 48 9)if 69 9)if 58 19
+N4=Iof 80 9
+N5=Bo 24 11)i-f 32 11
+N6=Bof 36 11)if 44 11
+N7=Io 68 11)if 69 11
+N8=Bof 62 19)if 66 19
+N9=Bof 80 19
+N10=Io 81 26
+N11=Bo 24 30)if 44 30
+N12=Bof 48 30)if 69 30)if 58 40
+N13=Iof 80 30
+N14=Bo 24 32)i-f 32 32
+N15=Bof 36 32)if 44 32
+N16=Io 68 32)if 69 32
+N17=Bof 62 40)if 66 40
+N18=Bof 80 40
+N19=Bo 24 51)if 44 51
+N20=Bof 48 51)if 69 51)if 58 61
+N21=Iof 80 51
+N22=Bo 24 53)i-f 32 53
+N23=Bof 36 53)if 44 53
+N24=Io 68 53)if 69 53
+N25=Bof 62 61)if 66 61
+N26=Bof 80 61
+N27=Io 81 68
+N28=Bo 24 72)if 44 72
+N29=Bof 48 72)if 69 72)if 58 82
+N30=Iof 80 72
+N31=Bo 24 74)i-f 32 74
+N32=Bof 36 74)if 44 74
+N33=Io 68 74)if 69 74
+N34=Bof 62 82)if 66 82
+N35=Bof 80 82
+[COMMENT]
+Text0=81 16-0 Betriebsvorwahl Kühlen
+Text1=81 20-0 OK
+Text2=81 37-0 Betriebsvorwahl Heizen
+Text3=81 41-0 OK
+Text4=81 58-0 Betriebsvorwahl Aus
+Text5=81 62-0 OK
+Text6=81 79-0 Betriebsvorwahl Automatik
+Text7=81 83-0 OK
+[CONNS]
+Conn0=24 6 11904 34 21
+Conn1=64 6 11928 33 20
+Conn2=24 9 338 34 4
+Conn3=24 11 11978 34 19
+Conn4=68 11 4049 34 3
+Conn5=81 26 11928 34 20
+Conn6=24 30 338 34 4
+Conn7=24 32 11978 34 19
+Conn8=68 32 3927 34 3
+Conn9=24 51 13055 34 19
+Conn10=24 53 11978 34 19
+Conn11=68 53 2564 34 3
+Conn12=81 68 11928 34 20
+Conn13=24 72 13054 34 18
+Conn14=24 74 11978 34 19
+Conn15=68 74 3927 34 3
+
+
+
+
+//begin of fupla page//
+[PAGE]
+Name=Thanos Satusmeldungen
+Comment=Heizt, Kühlt, Ecobetrieb
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=2656
+PageColor=0
+PageBackColor=14540253
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_HEAMANB3 40586=
+_HEAMANB3 40587=
+_HEAMANB3 40588=
+_HEAMANI3 40589=
+[_HEAMANB3 40586]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=44 6
+[_HEAMANB3 40587]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=44 10
+[_HEAMANB3 40588]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=44 14
+[_HEAMANI3 40589]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_I 
+Out=_I 
+S=Fs_F Fsm_F Rsm_R LED_F 
+av0=a flw %s =0 {0,1} 
+av1=a Rsm 0 %1p =0 
+av2=bv Fs 0 %s =1 \v Fsm 0 %s 
+AcceptName=3
+Language=de
+Posi=44 23
+[HLINE]
+H0=7 19 44)50 69
+H1=11 19 44)50 69
+H2=15 19 44)50 69
+H3=24 19 44)50 69
+[NETWORK]
+N0=Bo 19 7)if 44 7
+N1=Bof 50 7)i 69 7
+N2=Bo 19 11)if 44 11
+N3=Bof 50 11)i 69 11
+N4=Bo 19 15)if 44 15
+N5=Bof 50 15)i 69 15
+N6=Io 19 24)if 44 24
+N7=Iof 50 24)i 69 24
+[CONNS]
+Conn0=19 7 2853 34 15
+Conn1=69 7 11838 33 17
+Conn2=19 11 11865 34 16
+Conn3=69 11 11855 33 19
+Conn4=19 15 11940 34 16
+Conn5=69 15 11962 33 18
+Conn6=19 24 2975 34 3
+Conn7=69 24 11961 33 20
+
+
+
+
+//begin of fupla page//
+[PAGE]
+Name=Thanos Reset
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=2657
+PageColor=0
+PageBackColor=14540253
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_MODBUS_TXINT 40590=
+_MODBUS_TXINT 40591=
+[_MODBUS_TXINT 40590]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11798 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:1106 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=27 16
+[_MODBUS_TXINT 40591]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=11891 #_Ik=3927 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:1105 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=EZR1003
+Language=de
+Posi=27 3
+[HLINE]
+H0=6 19 27)41 42
+H1=19 25 27)41 42
+[VLINE]
+V0=25 6 19
+[NETWORK]
+N0=Bo 19 6)if 27 6)if 27 19
+N1=Bof 41 6
+N2=Io 42 13
+N3=Bof 41 19
+N4=Io 42 26
+[COMMENT]
+Text0=42 3-0 Bedieneinheit Neustart
+Text1=42 7-0 OK
+Text2=42 16-0 Bedieneinheit Neustart
+Text3=42 20-0 OK
+[CONNS]
+Conn0=19 6 11902 34 15
+Conn1=42 13 11891 34 16
+Conn2=42 26 11798 34 18
+
+
+
+
+//begin of fupla page//
+[PAGE]
+Name=Taupunkt
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=2658
+PageColor=0
+PageBackColor=15588035
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_HEAENTH3 40592=
+_DDC_SPGENERAL22 40593=
+[_HEAENTH3 40592]
+Fam=heavenrg
+Face=Enth
+FacePosi=l
+Width=8
+Init=y
+Vers=5
+In=T_I H_I P_I 
+Out=h_SI x_SI t_SI 
+S=Fs_F Rs_4R LED_F 
+D=Fd_4F Rd_4R 
+av0=v Rs 0 %1p \nabs 
+av1=v Rs 1 %1p \nabs 
+av2=v Rs 2 %1p \nabs 
+av3=v Rs 3 %1p \nabs 
+av4=a REX %s =1 {1,2} 
+AcceptName=3
+Language=de
+Posi=48 5
+[_DDC_SPGENERAL22 40593]
+Fam=DDC Sollwerte
+Width=5
+Init=y
+Vers=200000
+Out=Val_I 
+S=Value_R 
+av0=c cs =0 \nabs 
+av1=a BACnet %s =0 {0..1} 
+av2=c c0 =0 \nabs 
+av3=a Value 0 %1p =210:9900 
+av4=c cc =0 \nabs 
+AcceptName=1
+Folder=Sollwerte.Integer?
+Variables0=Value Register;(4) Integerwert
+Language=de
+Posi=23 12
+[HLINE]
+H0=8 29 48)56 76
+H1=10 29 48)56 76
+H2=12 47 48)56 76
+H3=13 28 47
+[VLINE]
+V0=47 12 13
+[NETWORK]
+N0=Io 29 8)if 48 8
+N1=Iof 56 8)i 76 8
+N2=Io 29 10)if 48 10
+N3=Iof 56 10)i 76 10
+N4=Iif 48 12)of 28 13
+N5=Iof 56 12)i 76 12
+[CONNS]
+Conn0=29 8 11811 34 17
+Conn1=76 8 11797 33 17
+Conn2=29 10 11947 34 18
+Conn3=76 10 11823 33 19
+Conn4=76 12 11810 33 17
+
+
+
+
+//begin of fupla page//
+[PAGE]
+Name=Mittelung Raumtemperaturen
+RemarkSize=0
+CountOfLabels=45
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=2660
+PageColor=0
+PageBackColor=13434879
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_IADD2 40594=
+_IADD2 40595=
+_HEALIMIT 40596=
+_DDC_SPINT250 40597=
+_IMUL 40598=
+_HEALIMIT 40599=
+_DDC_SPINT250 40600=
+_IMUL 40601=
+_IDIV 40602=
+_ISUB 40603=
+_ICMPRAN 40604=
+_DDC_ANINTAV251 40605=
+_DDC_ANBINBV251 40606=
+[_IADD2 40594]
+Fam=sfupinte
+Face=+
+Width=2
+Init=n
+Stretch=1 7 1 1
+In=_NI 
+Out=_I 
+D=AddReg_R 
+Language=de
+Posi=46 35
+[_IADD2 40595]
+Fam=sfupinte
+Face=+
+Width=2
+Init=n
+Stretch=1 7 1 1
+In=_NI 
+Out=_I 
+D=AddReg_R 
+Language=de
+Posi=46 43
+[_HEALIMIT 40596]
+Fam=heavfilt
+Face=Limit
+FacePosi=l
+Width=7
+Init=y
+In=_I 
+Out=_I 
+S=Rs_2R LED_F 
+D=Fd_4F 
+av0=c c1 =0 \nabs 
+av1=a Rs 0 %1p =0 {-2000000..2000000} 
+av2=a Rs 1 %1p =1000 {-2000000..2000000} 
+AcceptName=3
+Language=de
+Posi=22 54
+[_DDC_SPINT250 40597]
+Fam=DDC25_FAM_SETPT
+Width=5
+Init=y
+Vers=205003
+Out=Val_I 
+S=Value_R=11890 Output_R=11796 O1P8En_F=11809 O1P8Val_R=11822 O1P16En_F=11971 
+av0=c cs =0 \nabs 
+av1=a Descript %0T ="" 
+av2=a HDLogKB =0 {0..64} 
+av3=a BACnet %s =1 {0..1} 
+av4=c c0 =0 \nabs 
+av5=a Value 0 %1p =0 
+av6=v Output 0 %1p 
+av7=a O1ON %0T ="VAL":"V02SW01" 
+av8=a O1D %0T ="Value":"Gewichtung Raumtemperatur 2" 
+av9=a O1OT %0T ="" 
+av10=a O1TL %s =2:0 {0..2} 
+av11=a O1TLON %0T ="VAL-TREND":"V02TR01" 
+av12=a O1TLD %0T ="Value trend":"Gewichtung Raumtemperatur 2 Trend" 
+av13=a O1TLBS =1000 
+av14=a O1TLLI %2p =0 {0..100000000} 
+av15=c cCO =0 \nabs 
+av16=a O1useCOM %s =1:0 {0,1} 
+av17=a O1P8En 0 %s =0 {0,1} 
+av18=a O1P8Val 0 %1p =0 
+av19=c cIR =0 \nabs 
+av20=a O1NC =-1 {-1..4194303} 
+av21=a O1HL %1p =1000 
+av22=a O1LL %1p =0 
+av23=a O1DB %1p =20:0 
+av24=a O1LE %s =0 {0..3} 
+av25=c cd =0 \nabs 
+av26=a gUnit %0T ="degrees-Celsius":"degress-Celsius" 
+av27=a gCOV %1p =5 
+av28=c cc =0 \nabs 
+AcceptName=1
+Folder=Sollwerte.Integer_?
+Variables0=Value Value;(4) Integerwert Vorwahl
+Variables1=Output Output;(3) Integerwert Zustand
+Variables2=O1P8En Prio8En;(3) Commandable Priority 8 Enabled
+Variables3=O1P8Val Prio8Val;(3) Commandable Priority 8 Value
+Variables4=O1P16En Prio16En;(5) Priority 16 Enabled
+Language=de
+Posi=15 54
+[_IMUL 40598]
+Fam=sfupinte
+Face=x
+Width=2
+Init=n
+In=_I _I 
+Out=_I 
+Language=de
+Posi=38 51
+[_HEALIMIT 40599]
+Fam=heavfilt
+Face=Limit
+FacePosi=l
+Width=7
+Init=y
+In=_I 
+Out=_I 
+S=Rs_2R LED_F 
+D=Fd_4F 
+av0=c c1 =0 \nabs 
+av1=a Rs 0 %1p =0 {-2000000..2000000} 
+av2=a Rs 1 %1p =1000 {-2000000..2000000} 
+AcceptName=3
+Language=de
+Posi=22 48
+[_DDC_SPINT250 40600]
+Fam=DDC25_FAM_SETPT
+Width=5
+Init=y
+Vers=205003
+Out=Val_I 
+S=Value_R=11788 Output_R=11808 O1P8En_F=11821 O1P8Val_R=11833 O1P16En_F=11787 
+av0=c cs =0 \nabs 
+av1=a Descript %0T ="" 
+av2=a HDLogKB =0 {0..64} 
+av3=a BACnet %s =1 {0..1} 
+av4=c c0 =0 \nabs 
+av5=a Value 0 %1p =0:1000 
+av6=v Output 0 %1p 
+av7=a O1ON %0T ="VAL":"V01SW01" 
+av8=a O1D %0T ="Value":"Gewichtung Raumtemperatur 1" 
+av9=a O1OT %0T ="" 
+av10=a O1TL %s =2:0 {0..2} 
+av11=a O1TLON %0T ="VAL-TREND":"V01TR01" 
+av12=a O1TLD %0T ="Value trend":"Gewichtung Raumtemperatur 1 Trend" 
+av13=a O1TLBS =1000 
+av14=a O1TLLI %2p =0 {0..100000000} 
+av15=c cCO =0 \nabs 
+av16=a O1useCOM %s =1:0 {0,1} 
+av17=a O1P8En 0 %s =0 {0,1} 
+av18=a O1P8Val 0 %1p =0 
+av19=c cIR =0 \nabs 
+av20=a O1NC =-1 {-1..4194303} 
+av21=a O1HL %1p =1000 
+av22=a O1LL %1p =0 
+av23=a O1DB %1p =20:0 
+av24=a O1LE %s =0 {0..3} 
+av25=c cd =0 \nabs 
+av26=a gUnit %0T ="degrees-Celsius":"degress-Celsius" 
+av27=a gCOV %1p =5 
+av28=c cc =0 \nabs 
+AcceptName=1
+Folder=Sollwerte.Integer_?
+Variables0=Value Value;(4) Integerwert Vorwahl
+Variables1=Output Output;(3) Integerwert Zustand
+Variables2=O1P8En Prio8En;(3) Commandable Priority 8 Enabled
+Variables3=O1P8Val Prio8Val;(3) Commandable Priority 8 Value
+Variables4=O1P16En Prio16En;(5) Priority 16 Enabled
+Language=de
+Posi=15 48
+[_IMUL 40601]
+Fam=sfupinte
+Face=x
+Width=2
+Init=n
+In=_I _I 
+Out=_I 
+Language=de
+Posi=38 45
+[_IDIV 40602]
+Fam=sfupinte
+Face=Div
+Width=6
+Init=n
+In=A_I B_I 
+Out=A/B_I A%B_I 
+Language=de
+Posi=52 41
+[_ISUB 40603]
+Fam=sfupinte
+Face=-
+Width=2
+Init=n
+In=_I _I 
+Out=_I 
+Language=de
+Posi=56 35
+[_ICMPRAN 40604]
+Fam=sfupinte
+Face=Range
+Width=6
+Init=n
+In=Min_I In_I Max_I 
+Out=_B 
+Language=de
+Posi=52 25
+[_DDC_ANINTAV251 40605]
+Fam=DDC25_FAM_ANALOG
+Width=8
+Init=y
+Vers=205001
+In=Val(AV)_I 
+Out=_I 
+S=Value_R=11807 sReg_R=11877 sFlag_F 
+av0=c cs =0 \nabs 
+av1=a Descript %0T ="":"Temperatur Raum Gewichtet" 
+av2=a HDLogKB =0 {0..64} 
+av3=a BACnet %s =1 {0..1} 
+av4=c c0 =0 \nabs 
+av5=v Value 0 %1p 
+av6=v sReg 0 %1p 
+av7=a O1ON %0T ="VAL":"V41RW02" 
+av8=a O1D %0T ="Value":"Temperatur Raum Gewichtet" 
+av9=a O1OT %0T ="" 
+av10=a O1TL %s =2 {0..2} 
+av11=a O1TLON %0T ="VAL-TREND":"V41TR02" 
+av12=a O1TLD %0T ="Value trend":"Temperatur Raum Gewichtet Trend" 
+av13=a O1TLBS =1000 
+av14=a O1TLLI %2p =0 {0..100000000} 
+av15=c cIR =0 \nabs 
+av16=a O1NC =-1 {-1..4194303} 
+av17=a O1HL %1p =1000 
+av18=a O1LL %1p =0 
+av19=a O1DB %1p =20:0 
+av20=a O1LE %s =0 {0..3} 
+av21=c cd =0 \nabs 
+av22=a gUnit %0T ="degrees-Celsius" 
+av23=a gCOV %1p =5 
+av24=c cc =0 \nabs 
+AcceptName=1
+Folder=Analogwerte.Integer_?
+Variables0=Value Value;(4) Integerwert Vorwahl
+Variables1=sReg Output;(4) Integerwert Ausgang
+Language=de
+Posi=64 43
+[_DDC_ANBINBV251 40606]
+Fam=DDC25_FAM_ANALOG
+Width=8
+Init=y
+Vers=205001
+In=Val(BV)_B 
+Out=_B 
+S=Value_F=11832 sFlag_2F 
+av0=c cs =0 \nabs 
+av1=a Descript %0T ="":"Raumtemperaturgewichtung" 
+av2=a BACnet %s =1 {0..1} 
+av3=c c0 =0 \nabs 
+av4=v Value 0 %s 
+av5=a O1ON %0T ="VAL":"V05SM01" 
+av6=a O1D %0T ="Value":"Gewichung <60><62> 100 %" 
+av7=a O1OT %0T ="" 
+av8=a O1INACTX %0T ="Off":"Aus" 
+av9=a O1ACTX %0T ="On":"Ein" 
+av10=a O1NC =-1 {-1..4194303} 
+av11=a O1TL %s =2:0 {0..2} 
+av12=a O1TLON %0T ="VAL-TREND":"V05TR01" 
+av13=a O1TLD %0T ="Value trend":"Gewichung <60><62> 100 % Trend " 
+av14=a O1TLBS =1000 
+av15=a O1TLLI %2p =0 {0..100000000} 
+av16=c cc =0 \nabs 
+AcceptName=1
+Folder=Analogwerte.Binaer_?
+Variables0=Value Value;(4) Binärwert Vorwahl
+Language=de
+Posi=64 25
+[HLINE]
+H0=26 58 64)72 75
+H1=28 21 52
+H2=30 50 52
+H3=32 21 52
+H4=36 32 46)48 56)58 75
+H5=37 33 46)50 56
+H6=44 41 46)48 52)58 64)72 75
+H7=45 42 46
+H8=46 21 38)40 41)50 52)58 59
+H9=47 36 38
+H10=49 20 22)29 75
+H11=52 21 38)40 42
+H12=53 36 38
+H13=55 20 22)29 75
+H14=59 19 50
+[VLINE]
+V0=32 36 49
+V1=33 37 55
+V2=36 47 49)53 55
+V3=41 44 46
+V4=42 45 52
+V5=50 30 36)37 46)46 59
+[NETWORK]
+N0=Bo-f 58 26)if 64 26
+N1=Bof 72 26)i 75 26
+N2=Io 21 28)if 52 28
+N3=Iif 52 30)if 56 36)of 48 36
+N4=Io 21 32)if 52 32
+N5=Iif 46 36)i 75 49)if 38 47)of 29 49
+N6=Iof 58 36)i 75 36
+N7=Iif 46 37)i 75 55)if 38 53)of 29 55
+N8=Iif 56 37)o 19 59)if 52 46
+N9=Iif 46 44)of 40 46
+N10=Iof 48 44)if 52 44
+N11=Iof 58 44)if 64 44
+N12=Iof 72 44)i 75 44
+N13=Iif 46 45)of 40 52
+N14=Io 21 46)if 38 46
+N15=Iof 58 46
+N16=Iof 20 49)if 22 49
+N17=Io 21 52)if 38 52
+N18=Iof 20 55)if 22 55
+[CONNS]
+Conn0=75 26 11834 33 20
+Conn1=21 28 2874 34 4
+Conn2=21 32 2875 34 5
+Conn3=75 36 11854 33 19
+Conn4=75 44 11811 33 18
+Conn5=21 46 11988 34 19
+Conn6=75 49 11788 33 21
+Conn7=21 52 11939 34 19
+Conn8=75 55 11890 33 21
+Conn9=19 59 2765 34 4
+
+
+
+
+//begin of fupla page//
+[PAGE]
+Name=Zonenregelung Sensoren
+Comment=AKS
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=2661
+PageColor=0
+PageBackColor=13434879
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_DDC_ANSENSOR250 40607=
+_DDC_ANSENSOR250 40608=
+_HEAMANB3 40609=
+_DDC_ALGENERAL05 40610=
+_HEAMANB3 40611=
+_DDC_ALGENERAL05 40612=
+_HEAMANB3 40613=
+_DDC_ALGENERAL05 40614=
+_DDC_ANSENSOR250 40615=
+_HEAMANB3 40616=
+_DDC_ALGENERAL05 40617=
+_DDC_ANSENSOR250 40618=
+[_DDC_ANSENSOR250 40607]
+Fam=DDC25_FAM_ANALOG
+Face=Analog
+Width=9
+Init=y
+Vers=205004
+In=In_I 
+Out=Iw_I GwO_B GwU_B 
+S=SmGwHi_F=11927 SmGwLo_F=11875 Messwert_R=11987 Korrekt_R=11843 FiltZeit_R=11874 FiltFakt_R=11864 MessY1_R=11863 MessY2_R=11986 RohX1_R=11888 RohX2_R=11926 GwHi_R=11887 GwLo_R=11795 SpgGrp_R=11938 MessTyp_R=11900 sReg_3R sTmr_2T sFlag_2F GwHyst_R=11806 GwVerz_R=11786 
+av0=c CS =0 \nabs 
+av1=a Descript %0T ="Sensor" 
+av2=a HDLog =0 {0..64} 
+av3=a AlmIndex =-1 {-1..1000} 
+av4=a BACnet %s =1 {0..1} 
+av5=c c0 =0 \nabs 
+av6=a MessTyp 0 %s =2 {2,3} 
+av7=a Korrekt 0 %1p =0 {-1000..1000} 
+av8=v Messwert 0 %1p 
+av9=a O1ON %0T ="VAL":"B92MW01" 
+av10=a O1D %0T ="Value":"Raum Temperatur 2" 
+av11=a O1OT %0T ="" 
+av12=a O1TL %s =2 {0..2} 
+av13=a O1TLON %0T ="VAL-TREND":"B92TR01" 
+av14=a O1TLD %0T ="Value trend":"Raum Temperatur 2 Trend" 
+av15=a O1TLBS =1000 
+av16=a O1TLLI %2p =0 {0..100000000} 
+av17=c c1 =0 \nabs 
+av18=a FiltZeit 0 %1p =10 {0..600} 
+av19=a FiltFakt 0 =10 {1..200} 
+av20=c c2 =0 \nabs 
+av21=a MessY1 0 %1p =0 
+av22=a MessY2 0 %1p =1000 
+av23=a RohX1 0 =0 
+av24=a RohX2 0 =4095:10000 
+av25=a SpgGrp 0 %s =1:4 {0..6} 
+av26=c c3 =0 \nabs 
+av27=a GwHyst 0 %1p =20 {-1000..1000} 
+av28=a GwVerz 0 =10 {0..36000} 
+av29=a GwHi 0 %1p =1000:1050 
+av30=v SmGwHi 0 %s 
+av31=a txtHi %0T ="Limit High" 
+av32=a GwLo 0 %1p =0:-500 
+av33=v SmGwLo 0 %s 
+av34=a txtLo %0T ="Limit Low" 
+av35=c cIR =0 \nabs 
+av36=a O1NC =0:12 {-1..4194303} 
+av37=a O1LE %s =0 {0..3} 
+av38=c cd =0 \nabs 
+av39=a gUnit %0T ="degrees-Celsius" 
+av40=a gCOV %1p =5 
+av41=a gScale =1 {0..5} 
+av42=c cc =0 \nabs 
+AcceptName=1
+uName=EZR1003.Raum.Temp.MW20
+aRef=2
+Ref=FuseGuard
+Folder=Analogwerte.Messwert_?
+Variables0=SmGwHi SmGwOben;(1) Meldung oberer Grenzwert wurde überschritten
+Variables1=SmGwLo SmGwUnten;(1) Meldung unterer Grenzwert wurde unterschritten
+Variables2=Messwert Istwert;(1) Physikalischer Wert des Sensors = Ausgang "Iw"
+Variables3=Korrekt Korrektur;(5) Korrekturwert in physikalischer Größe
+Variables4=FiltZeit FilterZeit;(5) Abtastzeit des Sensorwertes zur Filterung
+Variables5=FiltFakt FilterFaktor;(5) Faktor zur Einflußnahme einer Meßwertänderung in den aktuellen Istwert
+Variables6=MessY1 IstwertY1;(5) minimaler physikalischer Wert
+Variables7=MessY2 IstwertY2;(5) maximaler physikalischer Wert
+Variables8=RohX1 RohwertX1;(5) minimaler Integerwert von der Eingangskarte
+Variables9=RohX2 RohwertX2;(5) maximaler Integerwert von der Eingangskarte
+Variables10=GwHi GwOben;(4) Oberer Grenzwert, bei passiven Fühlern z.B. "Kabelbruch"
+Variables11=GwLo GwUnten;(4) Unterer Grenzwert, bei passiven Fühlern z.B. "Kurzschluß"
+Variables12=SpgGrp SpgGrp;(5) zugehörige Spannungsgruppe zur Unterdrückung von Geistermeldungen bei fehle
+Variables13=MessTyp MessTyp;(5) Auswahl der Umrechnung des am Eingang "In" angeschlossenen Wertes
+Variables14=GwHyst GwHyst;(4) Hysterese Grenzwertüberwachung
+Variables15=GwVerz GwVerz;(4) Verzögerung Grenzwertüberwachung
+Language=de
+Posi=43 27
+[_DDC_ANSENSOR250 40608]
+Fam=DDC25_FAM_ANALOG
+Face=Analog
+Width=9
+Init=y
+Vers=205004
+In=In_I 
+Out=Iw_I GwO_B GwU_B 
+S=SmGwHi_F=11853 SmGwLo_F=11969 Messwert_R=11852 Korrekt_R=11820 FiltZeit_R=11819 FiltFakt_R=11937 MessY1_R=11955 MessY2_R=11842 RohX1_R=11818 RohX2_R=11914 GwHi_R=11862 GwLo_R=11805 SpgGrp_R=11968 MessTyp_R=11831 sReg_3R sTmr_2T sFlag_2F GwHyst_R=11985 GwVerz_R=11851 
+av0=c CS =0 \nabs 
+av1=a Descript %0T ="Sensor" 
+av2=a HDLog =0 {0..64} 
+av3=a AlmIndex =-1 {-1..1000} 
+av4=a BACnet %s =1 {0..1} 
+av5=c c0 =0 \nabs 
+av6=a MessTyp 0 %s =2 {2,3} 
+av7=a Korrekt 0 %1p =0 {-1000..1000} 
+av8=v Messwert 0 %1p 
+av9=a O1ON %0T ="VAL":"B91MW01" 
+av10=a O1D %0T ="Value":"Raum Temperatur 1" 
+av11=a O1OT %0T ="" 
+av12=a O1TL %s =2 {0..2} 
+av13=a O1TLON %0T ="VAL-TREND":"B91TR01" 
+av14=a O1TLD %0T ="Value trend":"Raum Temperatur 1 Trend" 
+av15=a O1TLBS =1000 
+av16=a O1TLLI %2p =0 {0..100000000} 
+av17=c c1 =0 \nabs 
+av18=a FiltZeit 0 %1p =10 {0..600} 
+av19=a FiltFakt 0 =10 {1..200} 
+av20=c c2 =0 \nabs 
+av21=a MessY1 0 %1p =0 
+av22=a MessY2 0 %1p =1000 
+av23=a RohX1 0 =0 
+av24=a RohX2 0 =4095:10000 
+av25=a SpgGrp 0 %s =1:4 {0..6} 
+av26=c c3 =0 \nabs 
+av27=a GwHyst 0 %1p =20 {-1000..1000} 
+av28=a GwVerz 0 =10 {0..36000} 
+av29=a GwHi 0 %1p =1000:1050 
+av30=v SmGwHi 0 %s 
+av31=a txtHi %0T ="Limit High" 
+av32=a GwLo 0 %1p =0:-500 
+av33=v SmGwLo 0 %s 
+av34=a txtLo %0T ="Limit Low" 
+av35=c cIR =0 \nabs 
+av36=a O1NC =0:12 {-1..4194303} 
+av37=a O1LE %s =0 {0..3} 
+av38=c cd =0 \nabs 
+av39=a gUnit %0T ="degrees-Celsius" 
+av40=a gCOV %1p =5 
+av41=a gScale =1 {0..5} 
+av42=c cc =0 \nabs 
+AcceptName=1
+uName=EZR1003.Raum.Temp.MW10
+aRef=2
+Ref=FuseGuard
+Folder=Analogwerte.Messwert_?
+Variables0=SmGwHi SmGwOben;(1) Meldung oberer Grenzwert wurde überschritten
+Variables1=SmGwLo SmGwUnten;(1) Meldung unterer Grenzwert wurde unterschritten
+Variables2=Messwert Istwert;(1) Physikalischer Wert des Sensors = Ausgang "Iw"
+Variables3=Korrekt Korrektur;(5) Korrekturwert in physikalischer Größe
+Variables4=FiltZeit FilterZeit;(5) Abtastzeit des Sensorwertes zur Filterung
+Variables5=FiltFakt FilterFaktor;(5) Faktor zur Einflußnahme einer Meßwertänderung in den aktuellen Istwert
+Variables6=MessY1 IstwertY1;(5) minimaler physikalischer Wert
+Variables7=MessY2 IstwertY2;(5) maximaler physikalischer Wert
+Variables8=RohX1 RohwertX1;(5) minimaler Integerwert von der Eingangskarte
+Variables9=RohX2 RohwertX2;(5) maximaler Integerwert von der Eingangskarte
+Variables10=GwHi GwOben;(4) Oberer Grenzwert, bei passiven Fühlern z.B. "Kabelbruch"
+Variables11=GwLo GwUnten;(4) Unterer Grenzwert, bei passiven Fühlern z.B. "Kurzschluß"
+Variables12=SpgGrp SpgGrp;(5) zugehörige Spannungsgruppe zur Unterdrückung von Geistermeldungen bei fehle
+Variables13=MessTyp MessTyp;(5) Auswahl der Umrechnung des am Eingang "In" angeschlossenen Wertes
+Variables14=GwHyst GwHyst;(4) Hysterese Grenzwertüberwachung
+Variables15=GwVerz GwVerz;(4) Verzögerung Grenzwertüberwachung
+Language=de
+Posi=43 12
+[_HEAMANB3 40609]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=48 21
+[_DDC_ALGENERAL05 40610]
+Fam=DDC Stoerungen
+Width=4
+Init=y
+Vers=105000
+In=Us_B 
+Out=e_B 
+S=Verwende_F 
+av0=a Verwende 0 %s =0:1 {0,1} 
+av1=c cc =0 \nabs 
+AcceptName=1
+Folder=Stoerungen.Verwenden?
+Variables0=Verwende Verwenden;(4) Vorwahl ob die am Eingang anliegende Meldung am Ausgang weitergeleitet werd
+Language=de
+Posi=42 21
+[_HEAMANB3 40611]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=48 36
+[_DDC_ALGENERAL05 40612]
+Fam=DDC Stoerungen
+Width=4
+Init=y
+Vers=105000
+In=Us_B 
+Out=e_B 
+S=Verwende_F 
+av0=a Verwende 0 %s =0:1 {0,1} 
+av1=c cc =0 \nabs 
+AcceptName=1
+Folder=Stoerungen.Verwenden?
+Variables0=Verwende Verwenden;(4) Vorwahl ob die am Eingang anliegende Meldung am Ausgang weitergeleitet werd
+Language=de
+Posi=42 36
+[_HEAMANB3 40613]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=48 51
+[_DDC_ALGENERAL05 40614]
+Fam=DDC Stoerungen
+Width=4
+Init=y
+Vers=105000
+In=Us_B 
+Out=e_B 
+S=Verwende_F 
+av0=a Verwende 0 %s =0:1 {0,1} 
+av1=c cc =0 \nabs 
+AcceptName=1
+Folder=Stoerungen.Verwenden?
+Variables0=Verwende Verwenden;(4) Vorwahl ob die am Eingang anliegende Meldung am Ausgang weitergeleitet werd
+Language=de
+Posi=42 51
+[_DDC_ANSENSOR250 40615]
+Fam=DDC25_FAM_ANALOG
+Face=Analog
+Width=9
+Init=y
+Vers=205004
+In=In_I 
+Out=Iw_I GwO_B GwU_B 
+S=SmGwHi_F=11817 SmGwLo_F=11913 Messwert_R=11830 Korrekt_R=11912 FiltZeit_R=11861 FiltFakt_R=11829 MessY1_R=11954 MessY2_R=11911 RohX1_R=11910 RohX2_R=11794 GwHi_R=11936 GwLo_R=11860 SpgGrp_R=11984 MessTyp_R=11899 sReg_3R sTmr_2T sFlag_2F GwHyst_R=11850 GwVerz_R=11873 
+av0=c CS =0 \nabs 
+av1=a Descript %0T ="Sensor" 
+av2=a HDLog =0 {0..64} 
+av3=a AlmIndex =-1 {-1..1000} 
+av4=a BACnet %s =1 {0..1} 
+av5=c c0 =0 \nabs 
+av6=a MessTyp 0 %s =2:3 {2,3} 
+av7=a Korrekt 0 %1p =0 {-1000..1000} 
+av8=v Messwert 0 %1p 
+av9=a O1ON %0T ="VAL":"B92MW01" 
+av10=a O1D %0T ="Value":"Raum Temperatur 2" 
+av11=a O1OT %0T ="" 
+av12=a O1TL %s =2 {0..2} 
+av13=a O1TLON %0T ="VAL-TREND":"B92TR01" 
+av14=a O1TLD %0T ="Value trend":"Raum Temperatur 2 Trend" 
+av15=a O1TLBS =1000 
+av16=a O1TLLI %2p =0 {0..100000000} 
+av17=c c1 =0 \nabs 
+av18=a FiltZeit 0 %1p =10 {0..600} 
+av19=a FiltFakt 0 =10 {1..200} 
+av20=c c2 =0 \nabs 
+av21=a MessY1 0 %1p =0 
+av22=a MessY2 0 %1p =1000 
+av23=a RohX1 0 =0 
+av24=a RohX2 0 =4095:10000 
+av25=a SpgGrp 0 %s =1:4 {0..6} 
+av26=c c3 =0 \nabs 
+av27=a GwHyst 0 %1p =20 {-1000..1000} 
+av28=a GwVerz 0 =10 {0..36000} 
+av29=a GwHi 0 %1p =1000:1050 
+av30=v SmGwHi 0 %s 
+av31=a txtHi %0T ="Limit High" 
+av32=a GwLo 0 %1p =0:-500 
+av33=v SmGwLo 0 %s 
+av34=a txtLo %0T ="Limit Low" 
+av35=c cIR =0 \nabs 
+av36=a O1NC =0:12 {-1..4194303} 
+av37=a O1LE %s =0 {0..3} 
+av38=c cd =0 \nabs 
+av39=a gUnit %0T ="degrees-Celsius" 
+av40=a gCOV %1p =5 
+av41=a gScale =1 {0..5} 
+av42=c cc =0 \nabs 
+AcceptName=1
+uName=EZR1003.Raum.Feuchte.MW10
+aRef=2
+Ref=FuseGuard
+Folder=Analogwerte.Messwert_?
+Variables0=SmGwHi SmGwOben;(1) Meldung oberer Grenzwert wurde überschritten
+Variables1=SmGwLo SmGwUnten;(1) Meldung unterer Grenzwert wurde unterschritten
+Variables2=Messwert Istwert;(1) Physikalischer Wert des Sensors = Ausgang "Iw"
+Variables3=Korrekt Korrektur;(5) Korrekturwert in physikalischer Größe
+Variables4=FiltZeit FilterZeit;(5) Abtastzeit des Sensorwertes zur Filterung
+Variables5=FiltFakt FilterFaktor;(5) Faktor zur Einflußnahme einer Meßwertänderung in den aktuellen Istwert
+Variables6=MessY1 IstwertY1;(5) minimaler physikalischer Wert
+Variables7=MessY2 IstwertY2;(5) maximaler physikalischer Wert
+Variables8=RohX1 RohwertX1;(5) minimaler Integerwert von der Eingangskarte
+Variables9=RohX2 RohwertX2;(5) maximaler Integerwert von der Eingangskarte
+Variables10=GwHi GwOben;(4) Oberer Grenzwert, bei passiven Fühlern z.B. "Kabelbruch"
+Variables11=GwLo GwUnten;(4) Unterer Grenzwert, bei passiven Fühlern z.B. "Kurzschluß"
+Variables12=SpgGrp SpgGrp;(5) zugehörige Spannungsgruppe zur Unterdrückung von Geistermeldungen bei fehle
+Variables13=MessTyp MessTyp;(5) Auswahl der Umrechnung des am Eingang "In" angeschlossenen Wertes
+Variables14=GwHyst GwHyst;(4) Hysterese Grenzwertüberwachung
+Variables15=GwVerz GwVerz;(4) Verzögerung Grenzwertüberwachung
+Language=de
+Posi=43 42
+[_HEAMANB3 40616]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=48 65
+[_DDC_ALGENERAL05 40617]
+Fam=DDC Stoerungen
+Width=4
+Init=y
+Vers=105000
+In=Us_B 
+Out=e_B 
+S=Verwende_F 
+av0=a Verwende 0 %s =0:1 {0,1} 
+av1=c cc =0 \nabs 
+AcceptName=1
+Folder=Stoerungen.Verwenden?
+Variables0=Verwende Verwenden;(4) Vorwahl ob die am Eingang anliegende Meldung am Ausgang weitergeleitet werd
+Language=de
+Posi=42 65
+[_DDC_ANSENSOR250 40618]
+Fam=DDC25_FAM_ANALOG
+Face=Analog
+Width=9
+Init=y
+Vers=205004
+In=In_I 
+Out=Iw_I GwO_B GwU_B 
+S=SmGwHi_F=11859 SmGwLo_F=11953 Messwert_R=11841 Korrekt_R=11858 FiltZeit_R=11983 FiltFakt_R=11793 MessY1_R=11857 MessY2_R=11849 RohX1_R=11898 RohX2_R=11785 GwHi_R=11925 GwLo_R=11848 SpgGrp_R=11872 MessTyp_R=11784 sReg_3R sTmr_2T sFlag_2F GwHyst_R=11909 GwVerz_R=11783 
+av0=c CS =0 \nabs 
+av1=a Descript %0T ="Sensor" 
+av2=a HDLog =0 {0..64} 
+av3=a AlmIndex =-1 {-1..1000} 
+av4=a BACnet %s =1 {0..1} 
+av5=c c0 =0 \nabs 
+av6=a MessTyp 0 %s =2:3 {2,3} 
+av7=a Korrekt 0 %1p =0 {-1000..1000} 
+av8=v Messwert 0 %1p 
+av9=a O1ON %0T ="VAL":"B92MW01" 
+av10=a O1D %0T ="Value":"Raum Temperatur 2" 
+av11=a O1OT %0T ="" 
+av12=a O1TL %s =2 {0..2} 
+av13=a O1TLON %0T ="VAL-TREND":"B92TR01" 
+av14=a O1TLD %0T ="Value trend":"Raum Temperatur 2 Trend" 
+av15=a O1TLBS =1000 
+av16=a O1TLLI %2p =0 {0..100000000} 
+av17=c c1 =0 \nabs 
+av18=a FiltZeit 0 %1p =10 {0..600} 
+av19=a FiltFakt 0 =10 {1..200} 
+av20=c c2 =0 \nabs 
+av21=a MessY1 0 %1p =0 
+av22=a MessY2 0 %1p =1000 
+av23=a RohX1 0 =0 
+av24=a RohX2 0 =4095:10000 
+av25=a SpgGrp 0 %s =1:4 {0..6} 
+av26=c c3 =0 \nabs 
+av27=a GwHyst 0 %1p =20 {-1000..1000} 
+av28=a GwVerz 0 =10 {0..36000} 
+av29=a GwHi 0 %1p =1000:1050 
+av30=v SmGwHi 0 %s 
+av31=a txtHi %0T ="Limit High" 
+av32=a GwLo 0 %1p =0:-500 
+av33=v SmGwLo 0 %s 
+av34=a txtLo %0T ="Limit Low" 
+av35=c cIR =0 \nabs 
+av36=a O1NC =0:12 {-1..4194303} 
+av37=a O1LE %s =0 {0..3} 
+av38=c cd =0 \nabs 
+av39=a gUnit %0T ="degrees-Celsius" 
+av40=a gCOV %1p =5 
+av41=a gScale =1 {0..5} 
+av42=c cc =0 \nabs 
+AcceptName=1
+uName=EZR1003.Raum.VOC.MW10
+aRef=2
+Ref=FuseGuard
+Folder=Analogwerte.Messwert_?
+Variables0=SmGwHi SmGwOben;(1) Meldung oberer Grenzwert wurde überschritten
+Variables1=SmGwLo SmGwUnten;(1) Meldung unterer Grenzwert wurde unterschritten
+Variables2=Messwert Istwert;(1) Physikalischer Wert des Sensors = Ausgang "Iw"
+Variables3=Korrekt Korrektur;(5) Korrekturwert in physikalischer Größe
+Variables4=FiltZeit FilterZeit;(5) Abtastzeit des Sensorwertes zur Filterung
+Variables5=FiltFakt FilterFaktor;(5) Faktor zur Einflußnahme einer Meßwertänderung in den aktuellen Istwert
+Variables6=MessY1 IstwertY1;(5) minimaler physikalischer Wert
+Variables7=MessY2 IstwertY2;(5) maximaler physikalischer Wert
+Variables8=RohX1 RohwertX1;(5) minimaler Integerwert von der Eingangskarte
+Variables9=RohX2 RohwertX2;(5) maximaler Integerwert von der Eingangskarte
+Variables10=GwHi GwOben;(4) Oberer Grenzwert, bei passiven Fühlern z.B. "Kabelbruch"
+Variables11=GwLo GwUnten;(4) Unterer Grenzwert, bei passiven Fühlern z.B. "Kurzschluß"
+Variables12=SpgGrp SpgGrp;(5) zugehörige Spannungsgruppe zur Unterdrückung von Geistermeldungen bei fehle
+Variables13=MessTyp MessTyp;(5) Auswahl der Umrechnung des am Eingang "In" angeschlossenen Wertes
+Variables14=GwHyst GwHyst;(4) Hysterese Grenzwertüberwachung
+Variables15=GwVerz GwVerz;(4) Verzögerung Grenzwertüberwachung
+Language=de
+Posi=43 56
+[HLINE]
+H0=15 20 43)52 72
+H1=17 52 53
+H2=19 52 53
+H3=22 20 42)46 48)54 72
+H4=30 20 43)52 72
+H5=32 52 53
+H6=34 52 53
+H7=37 20 42)46 48)54 72
+H8=45 20 43)52 72
+H9=47 52 53
+H10=49 52 53
+H11=52 20 42)46 48)54 72
+H12=59 20 43)52 72
+H13=61 52 53
+H14=63 52 53
+H15=66 20 42)46 48)54 72
+[NETWORK]
+N0=Io 20 15)if 43 15
+N1=Iof 52 15)i 72 15
+N2=Bof 52 17
+N3=Bof 52 19
+N4=Bo 20 22)if 42 22
+N5=Bof 46 22)if 48 22
+N6=Bof 54 22)i 72 22
+N7=Io 20 30)if 43 30
+N8=Iof 52 30)i 72 30
+N9=Bof 52 32
+N10=Bof 52 34
+N11=Bo 20 37)if 42 37
+N12=Bof 46 37)if 48 37
+N13=Bof 54 37)i 72 37
+N14=Io 20 45)if 43 45
+N15=Iof 52 45)i 72 45
+N16=Bof 52 47
+N17=Bof 52 49
+N18=Bo 20 52)if 42 52
+N19=Bof 46 52)if 48 52
+N20=Bof 54 52)i 72 52
+N21=Io 20 59)if 43 59
+N22=Iof 52 59)i 72 59
+N23=Bof 52 61
+N24=Bof 52 63
+N25=Bo 20 66)if 42 66
+N26=Bof 46 66)if 48 66
+N27=Bof 54 66)i 72 66
+[CONNS]
+Conn0=20 15 11920 34 19
+Conn1=72 15 11988 33 18
+Conn2=20 22 11963 34 17
+Conn3=72 22 11901 33 18
+Conn4=20 30 107 34 5
+Conn5=72 30 11939 33 18
+Conn6=20 37 338 34 4
+Conn7=72 37 11889 33 18
+Conn8=20 45 107 34 5
+Conn9=72 45 11947 33 18
+Conn10=20 52 338 34 4
+Conn11=72 52 11915 33 19
+Conn12=20 59 107 34 5
+Conn13=72 59 11876 33 17
+Conn14=20 66 338 34 4
+Conn15=72 66 11970 33 17
+
+
+
+
+//begin of fupla page//
+[PAGE]
+Name=Zonenregelung
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=2662
+PageColor=0
+PageBackColor=13434879
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_HEAPPI2 40619=
+_ISUB 40620=
+_DDC_ANGENERAL26 40621=
+_BOR 40622=
+[_HEAPPI2 40619]
+Fam=heavregu
+Face=P-PI
+FacePosi=l
+Width=7
+Init=y
+Vers=6
+In=X_I W_I A_I En_B 
+Out=Y_I 
+S=Fs_2F=11871 Rs_14R=11886 LED_F 
+D=Rd_8R 
+av0=a hmi %s =0 {0,1} 
+av1=a opA %s =1 {1,2} 
+av2=a opL %s =1 {1,2} 
+av3=a opP %s =1 {1,2} 
+av4=a opI %s =1 {1,2,3} 
+av5=a opX %s =0 {0,1,5} 
+av6=a Rs 0 %1p =0 {-1000000..1000000} 
+av7=a Rs 1 %1p =500:0 {-1000000..1000000} 
+av8=a Rs 2 %1p =100:10 {1..10000} 
+av9=a Rs 3 %1p =1000:0 {0,10..1000000} 
+av10=a Rs 4 %1p =200:500 {0..1000000} 
+av11=a Rs 5 %1p =0 {-1000000..1000000} 
+av12=a Rs 6 %1p =1000 {-1000000..1000000} 
+av13=a Rs 7 %1p =10 {0..10000} 
+av14=c c1 =0 \nabs 
+av15=v Rs 8 %1p \nabs 
+av16=v Rs 9 %1p \nabs 
+av17=v Rs 10 %1p \nabs 
+av18=v Rs 11 %1p \nabs 
+av19=v Rs 12 %1p \nabs 
+av20=c c2 =0 \nabs 
+av21=bv Fs 1 %s =1 \v Fs 0 %s 
+av22=a Rs 13 %1p =0:100 {-1000000..1000000} 
+AcceptName=3
+Language=de
+Posi=48 26
+[_ISUB 40620]
+Fam=sfupinte
+Face=-
+Width=2
+Init=n
+In=_I _I 
+Out=_I 
+Language=de
+Posi=34 24
+[_DDC_ANGENERAL26 40621]
+Fam=DDC Analogwerte
+Face=A/D
+Width=5
+Init=y
+Vers=200000
+In=A_I 
+Out=D_B 
+S=Zustand_F GwOben_R GwUnten_R 
+av0=c cs =0 \nabs 
+av1=a BACnet %s =0 {0..2} 
+av2=c c0 =0 \nabs 
+av3=a GwOben 0 %1p =1000:50 
+av4=a GwUnten 0 %1p =100:20 
+av5=v Zustand 0 %s 
+av6=c cc =0 \nabs 
+AcceptName=1
+Folder=Analog.AnaDig?
+Variables0=Zustand Wert;(2) Zustand des digtalen Wertes
+Variables1=GwOben High;(5) Schwellwert für Sigal High
+Variables2=GwUnten Low;(5) Schwellwert für Sigal Low
+Language=de
+Posi=63 24
+[_BOR 40622]
+Fam=sfupbina
+Face=>=1
+Width=3
+Init=n
+Stretch=1 9 1 1
+In=_NB 
+Out=_B 
+Language=de
+Posi=43 34
+[HLINE]
+H0=25 25 34)36 45
+H1=26 33 34
+H2=27 25 33)61 63)68 73
+H3=29 25 48)55 73
+H4=31 45 48
+H5=33 25 48
+H6=35 25 43)46 48
+H7=36 42 43
+H8=37 25 42
+[VLINE]
+V0=33 26 27
+V1=42 36 37
+V2=45 25 31
+V3=61 27 29
+[NETWORK]
+N0=Io 25 25)if 34 25
+N1=Iof 36 25)if 48 31
+N2=Iif 34 26)o 25 27
+N3=Iif 63 27)i 73 29)of 55 29
+N4=Bof 68 27)i 73 27
+N5=Io 25 29)if 48 29
+N6=Io 25 33)if 48 33
+N7=Bo 25 35)if 43 35
+N8=Bof 46 35)if 48 35
+N9=Bif 43 36)o 25 37
+[CONNS]
+Conn0=25 25 11919 34 22
+Conn1=25 27 2964 34 3
+Conn2=73 27 11940 33 16
+Conn3=25 29 11988 34 18
+Conn4=73 29 11935 33 19
+Conn5=25 33 2765 34 4
+Conn6=25 35 11946 34 19
+Conn7=25 37 11974 34 20
+
+
+
+
+//begin of fupla page//
+[PAGE]
+Name=DI, DO, AO
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=2664
+PageColor=0
+PageBackColor=17151
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_HEAMANB3 40623=
+_HEAMANB3 40624=
+_HEAMANB3 40625=
+_HEAMANB3 40626=
+[_HEAMANB3 40623]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=48 27
+[_HEAMANB3 40624]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=48 15
+[_HEAMANB3 40625]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=48 23
+[_HEAMANB3 40626]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=48 19
+[HLINE]
+H0=16 27 48)54 73
+H1=20 27 48)54 73
+H2=24 27 48)54 73
+H3=28 27 48)54 73
+[NETWORK]
+N0=Bo 27 16)if 48 16
+N1=Bof 54 16)i 73 16
+N2=Bo 27 20)if 48 20
+N3=Bof 54 20)i 73 20
+N4=Bo 27 24)if 48 24
+N5=Bof 54 24)i 73 24
+N6=Bo 27 28)if 48 28
+N7=Bof 54 28)i 73 28
+[CONNS]
+Conn0=27 16 11870 34 22
+Conn1=73 16 3400 33 11
+Conn2=27 20 3556 34 10
+Conn3=73 20 11885 33 20
+Conn4=27 24 338 34 5
+Conn5=73 24 11908 33 22
+Conn6=27 28 3661 34 10
+Conn7=73 28 11967 33 19
+
+
+
+
+//begin of fupla page//
+[PAGE]
+Name=Badradiator
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=2665
+PageColor=0
+PageBackColor=17151
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_BDYN2 40627=
+_BDYN2 40628=
+_BOR 40629=
+_BDYN2 40630=
+_BDYN2 40631=
+_BAND 40632=
+_BDYN2 40633=
+_BAND 40634=
+_FLISRNDY2 40635=
+_DDC_COPUMP21 40636=
+_BDYN2 40637=
+_BOR 40638=
+_BDYN2 40639=
+_DDC_AL1ALA250 40640=
+_DDC_AL1ALA250 40641=
+[_BDYN2 40627]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0 {0..2} 
+Language=de
+Posi=40 36
+[_BDYN2 40628]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0 {0..2} 
+Language=de
+Posi=40 33
+[_BOR 40629]
+Fam=sfupbina
+Face=>=1
+Width=3
+Init=n
+Stretch=1 9 1 3
+In=_NB 
+Out=_B 
+Language=de
+Posi=49 30
+[_BDYN2 40630]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0 {0..2} 
+Language=de
+Posi=40 30
+[_BDYN2 40631]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0 {0..2} 
+Language=de
+Posi=40 21
+[_BAND 40632]
+Fam=sfupbina
+Face=&&
+Width=2
+Init=n
+Stretch=1 9 1 1
+In=_NB 
+Out=_B 
+Language=de
+Posi=32 21
+[_BDYN2 40633]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0 {0..2} 
+Language=de
+Posi=40 17
+[_BAND 40634]
+Fam=sfupbina
+Face=&&
+Width=2
+Init=n
+Stretch=1 9 1 1
+In=_NB 
+Out=_B 
+Language=de
+Posi=32 17
+[_FLISRNDY2 40635]
+Fam=sfupflip
+Width=4
+Init=y
+In=S_B R_B 
+Out=Q_B 
+S=Sta_F 
+av0=a opt %s =2 {0,1,2} 
+av1=b Sta 0 %s =0 
+av2=b Sta 0 %s =1 
+Language=de
+Posi=61 14
+[_DDC_COPUMP21 40636]
+Fam=DDC Steuerungen
+Face=Uwp
+FacePosi=l
+Width=10
+Init=y
+Vers=200005
+In=Frg_B Brm_B Ssm_B Y_I 
+Out=Out_B Std_I Zhl_I Wrt_B 
+S=HMI_R=11804 Nachlauf_R=11803 AbsWahl_R=11897 SchaltMx_R=11792 StdMx_R=11952 AtFunkt_R=11951 AtGw_R=11907 YFunkt_R=11815 YGw_R=11896 Ansteuer_F=11828 Betrieb_F=11840 Wartung_F=11782 Sperre_F=11981 AtAnf_F=11781 YAnf_F=11895 Schalt_R=11950 Stunden_R=11980 sFlag_5F sReg_3R sTmr_2T AnstDO_R=11965 LED_F HMISuper_R=11949 Ausgang_F=11847 
+av0=c cs =0 \nabs 
+av1=a AlmIndex =0 {0..4000} 
+av2=a BACnet %s =0 {0..5} 
+av3=c c0 =0 \nabs 
+av4=a AnstDO 0 =-1 {-1..1023} 
+av5=v HMISuper 0 %s 
+av6=a HMI 0 %s =1 {1..3} 
+av7=a Nachlauf 0 %1p =0:50 {0..36000} 
+av8=a AbsWahl 0 %s =0:1 {0..1} 
+av9=c c1 =0 \nabs 
+av10=a AtFunkt 0 %s =2:1 {1..3} 
+av11=a AtGw 0 %1p =100:50 {-1000..1000} 
+av12=a YFunkt 0 %s =2 {1..3} 
+av13=a YGw 0 %1p =50:450 {30..1000} 
+av14=v AtAnf 0 %s 
+av15=v YAnf 0 %s 
+av16=c c2 =0 \nabs 
+av17=v Ansteuer 0 %s 
+av18=v Ausgang 0 %s 
+av19=v Betrieb 0 %s 
+av20=bv Wartung 0 %s =0 
+av21=v Sperre 0 %s 
+av22=c c3 =0 \nabs 
+av23=a Schalt 0 =0 {0..2000000000} 
+av24=a SchaltMx 0 =2000 {0..2000000000} 
+av25=a Stunden 0 =0 {0..2000000000} 
+av26=a StdMx 0 =5000:8760 {0..2000000000} 
+av27=c cc =0 \nabs 
+AcceptName=1
+Folder=Steuerungen.Pumpe?
+Variables0=HMI HMI;(4) Vorwahl Pumpensteuerung für HMI
+Variables1=Nachlauf Nachlauf;(5) Abschaltverzögerung
+Variables2=AbsWahl AbsErlaubt;(5) Vorwahl für Antiblockierschutzfunktion
+Variables3=SchaltMx SchaltungMax;(4) Anzahl Einschaltungen bis Wartungsmeldung erfolgt
+Variables4=StdMx StundenMax;(4) Anzahl Betriebsstunden bis Wartungsmeldung erfolgt
+Variables5=AtFunkt BedAtFunk;(5) Auswahl Funktion der Außenlufttemperatur
+Variables6=AtGw BedAtGw;(5) Grenzwert für Außenlufttemperatur
+Variables7=YFunkt BedYFunk;(5) Auswahl Funktion des Stellsignals
+Variables8=YGw BedYGw;(5) Grenzwert des Stellsignals
+Variables9=Ansteuer Ansteuerung;(2) Anzeige Ansteuerung erfolgt
+Variables10=Betrieb Betrieb;(2) entspricht dem Eingang Brm, Betriebsrückmeldung
+Variables11=Wartung Wartung;(3) Anzeige Wartung erforderlich
+Variables12=Sperre Sperre;(1) Sperre des Motors durch Störung(en)
+Variables13=AtAnf BedAt;(3) Anzeige Bedarf nach Funktion Außentemperatur
+Variables14=YAnf BedY;(3) Anzeige Bedarf nach Funktion Ventilstellung
+Variables15=Schalt Schaltung;(3) Anzahl Einschaltungen
+Variables16=Stunden Stunden;(3) Anzahl Betriebsstunden
+Variables17=AnstDO AnsteuerDO;(5) Digitaler Ausgang
+Variables18=HMISuper HMISuper;(4) Vorwahl Pumpensteuerung für GLT
+Variables19=Ausgang Ausgang;(2) Anzeige Ansteuerung des Ausgangs erfolgt
+Language=de
+Posi=46 45
+[_BDYN2 40637]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0 {0..2} 
+Language=de
+Posi=40 39
+[_BOR 40638]
+Fam=sfupbina
+Face=>=1
+Width=3
+Init=n
+Stretch=1 9 1 2
+In=_NB 
+Out=_B 
+Language=de
+Posi=49 14
+[_BDYN2 40639]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0 {0..2} 
+Language=de
+Posi=40 14
+[_DDC_AL1ALA250 40640]
+Fam=DDC25_FAM_ALARM
+Face=Sm 1
+FacePosi=l
+Width=10
+Init=y
+Vers=205001
+In=In_B 
+Out=Sm_B [In]_B 
+S=NoNc_F=11948 QuitTyp_F=11839 SpgGrp_R=11868 Sm_F=11934 LED_F DI_R=11882 
+av0=c cs =0 \nabs 
+av1=a Descript %0T ="Alarm":"PTC" 
+av2=a AlmIndex =-1 {-1..4000} 
+av3=a BACnet %s =1 {0..1} 
+av4=c c0 =0 \nabs 
+av5=a DI 0 =-1 {-1..1023} 
+av6=a NoNc 0 %s =0:1 {0,1} 
+av7=a QuitTyp 0 %s =0 {0,1} 
+av8=a SpgGrp 0 %s =1:4 {0..6} 
+av9=v Sm 0 %s 
+av10=a txtSm %0T ="Alarm":"Motortemperatur" 
+av11=a O1ON %0T ="ALA":"PTC" 
+av12=a O1D %0T ="Alarm":"Motortemperatur" 
+av13=a O1NC =0:11 {-1..4194303} 
+av14=a O1OT %0T ="" 
+av15=c cc =0 \nabs 
+AcceptName=1
+aRef=2
+Ref=FuseGuard
+Folder=Stoerungen.Sm1_?
+Variables0=NoNc NoNc;(5) Auswahl des Normalzustands des Gebers
+Variables1=QuitTyp QuitPflicht;(5) Vorwahl ob die Störung dem Geber folgt oder gespeichert bleibt und quittier
+Variables2=SpgGrp SpgGrp;(5) zugehörige Spannungsgruppe zur Unterdrückung von Geistermeldungen bei fehle
+Variables3=Sm Sm;(1) Zustand der Störmeldung
+Variables4=DI DIKontakt;(5) Digitaler Eingang
+Language=de
+Posi=46 64
+[_DDC_AL1ALA250 40641]
+Fam=DDC25_FAM_ALARM
+Face=Sm 1
+FacePosi=l
+Width=10
+Init=y
+Vers=205001
+In=In_B 
+Out=Sm_B [In]_B 
+S=NoNc_F=11964 QuitTyp_F=11894 SpgGrp_R=11922 Sm_F=11921 LED_F DI_R=11881 
+av0=c cs =0 \nabs 
+av1=a Descript %0T ="Alarm":"MACT" 
+av2=a AlmIndex =-1 {-1..4000} 
+av3=a BACnet %s =1 {0..1} 
+av4=c c0 =0 \nabs 
+av5=a DI 0 =-1 {-1..1023} 
+av6=a NoNc 0 %s =0 {0,1} 
+av7=a QuitTyp 0 %s =0 {0,1} 
+av8=a SpgGrp 0 %s =1:4 {0..6} 
+av9=v Sm 0 %s 
+av10=a txtSm %0T ="Alarm":"Handeingriff" 
+av11=a O1ON %0T ="ALA":"MACT" 
+av12=a O1D %0T ="Alarm":"Handeingriff" 
+av13=a O1NC =0:13 {-1..4194303} 
+av14=a O1OT %0T ="" 
+av15=c cc =0 \nabs 
+AcceptName=1
+aRef=2
+Ref=FuseGuard
+Folder=Stoerungen.Sm1_?
+Variables0=NoNc NoNc;(5) Auswahl des Normalzustands des Gebers
+Variables1=QuitTyp QuitPflicht;(5) Vorwahl ob die Störung dem Geber folgt oder gespeichert bleibt und quittier
+Variables2=SpgGrp SpgGrp;(5) zugehörige Spannungsgruppe zur Unterdrückung von Geistermeldungen bei fehle
+Variables3=Sm Sm;(1) Zustand der Störmeldung
+Variables4=DI DIKontakt;(5) Digitaler Eingang
+Language=de
+Posi=46 73
+[HLINE]
+H0=15 25 40)44 49)52 61)65 73
+H1=16 45 49
+H2=17 48 49)60 61
+H3=18 29 32)34 40)44 45
+H4=19 25 32
+H5=22 29 32)34 40)44 48
+H6=23 25 32
+H7=31 25 40)44 49)52 60
+H8=32 45 49
+H9=33 46 49
+H10=34 25 40)44 45)48 49
+H11=37 25 40)44 46
+H12=40 25 40)44 48
+H13=48 25 46)56 73
+H14=50 25 46)56 73
+H15=52 25 46)56 73
+H16=54 25 46)56 73
+H17=67 25 46)56 72
+H18=69 56 57
+H19=76 25 46)56 72
+H20=78 56 57
+[VLINE]
+V0=29 15 18)18 22
+V1=45 16 18)32 34
+V2=46 33 37
+V3=48 17 22)34 40
+V4=60 17 31
+[NETWORK]
+N0=Bo 25 15)if 40 15)if 32 22)if 32 18
+N1=Bof 44 15)if 49 15
+N2=Bof 52 15)if 61 15
+N3=Bof 65 15)i 73 15
+N4=Bif 49 16)of 44 18
+N5=Bif 49 17)of 44 22
+N6=Bif 61 17)of 52 31
+N7=Bof 34 18)if 40 18
+N8=Bo 25 19)if 32 19
+N9=Bof 34 22)if 40 22
+N10=Bo 25 23)if 32 23
+N11=Bo- 25 31)if 40 31
+N12=Bof 44 31)if 49 31
+N13=Bif 49 32)of 44 34
+N14=Bif 49 33)of 44 37
+N15=Bo- 25 34)if 40 34
+N16=Bif 49 34)of 44 40
+N17=Bo 25 37)if 40 37
+N18=Bo 25 40)if 40 40
+N19=Bo 25 48)if 46 48
+N20=Bof 56 48)i 73 48
+N21=Bo 25 50)if 46 50
+N22=Iof 56 50)i 73 50
+N23=Bo 25 52)if 46 52
+N24=Iof 56 52)i 73 52
+N25=Io 25 54)if 46 54
+N26=Bof 56 54)i 73 54
+N27=Bo 25 67)if 46 67
+N28=Bof 56 67)i 72 67
+N29=Bof 56 69
+N30=Bo 25 76)if 46 76
+N31=Bof 56 76)i 72 76
+N32=Bof 56 78
+[COMMENT]
+Text0=46 56-0 Bad Radiator unterstützt die Heizung wenn die Heizung mehr als 20 % angefordert wird
+Text1=46 58-0 Bad Radiator startet bei Präsenz nach Zeitprogramm unabhaengig vom Feiertag und bei 
+Text2=46 60-0 Einschalten über das Thermokon Bedienpanel
+[CONNS]
+Conn0=25 15 11880 34 20
+Conn1=73 15 11924 33 18
+Conn2=25 19 11816 34 18
+Conn3=25 23 11966 34 18
+Conn4=25 31 11816 34 18
+Conn5=25 34 11966 34 18
+Conn6=25 37 892 34 21
+Conn7=25 40 11905 34 20
+Conn8=25 48 11924 34 18
+Conn9=73 48 11870 33 22
+Conn10=25 50 11885 34 20
+Conn11=73 50 11884 33 21
+Conn12=25 52 338 34 5
+Conn13=73 52 11982 33 22
+Conn14=25 54 11935 34 20
+Conn15=73 54 11923 33 21
+Conn16=25 67 11967 34 19
+Conn17=72 67 11883 33 18
+Conn18=25 76 11908 34 22
+Conn19=72 76 11869 33 22

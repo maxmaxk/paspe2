@@ -1,0 +1,45 @@
+$HIDE ;;Hidden section inserted by S-Edit
+$include "<$ProjDir>\Libs\SF\SFIPLib_en.lib" ;<$ProjDir>\Libs\SF\SFIPLib.saialin
+EXTN	PCD01.SBus.Para.IP.Addr	TEXT
+EXTN	PCD01.SBus.Para.IP.Subnet	TEXT
+EXTN	PCD01.SBus.Para.IP.Gateway	TEXT
+EXTN	PCD01.SBus.Para.IP.iEn	F
+EXTN	PCD01.SBus.Para.IP.AddrT	TEXT
+EXTN	PCD01.SBus.Para.IP.SubnetT	TEXT
+EXTN	PCD01.SBus.Para.IP.GatewayT	TEXT
+EXTN	PCD01.SBus.Para.IP.SubnetR	R
+EXTN	PCD01.SBus.Para.IP.AddrR	R
+EXTN	PCD01.SBus.Para.IP.AddrMOV	R
+EXTN	PCD01.SBus.Para.IP.SubMOV	R
+EXTN	PCD01.SBus.Para.IP.GateMOV	R
+$GROUP PCD01
+$ENDGROUP
+$GROUP PCD01.SBus
+$ENDGROUP
+$GROUP PCD01.SBus.Para
+$ENDGROUP
+$ENDHIDE
+            PB     1
+                                   
+            CSF    S.SF.IP.Library     ;SF Library
+                   S.SF.IP.SetLocalIPConfig ;SF Function
+                   PCD01.SBus.Para.IP.AddrMOV ;1 X|R IN, IP-Address
+                   PCD01.SBus.Para.IP.GateMOV ;2 X|R IN, Subnet Mask
+                   PCD01.SBus.Para.IP.SubMOV ;3 X|R IN, Default Gateway
+            EPB
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

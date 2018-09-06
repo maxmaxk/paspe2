@@ -1,0 +1,14 @@
+; ======================================================================
+; -------- Alarmierung
+; ======================================================================
+;
+;	Variablen von FBOx:
+; 	----------------------------------------------------------------
+;	@str(A.FBox.Description)			
+;
+;	@str(A.FBox.AlOpen.Alarmtext)
+;	@str(A.FBox.AlClose.Alarmtext)
+;
+$WRFILE "DDC_Alarming.CSV" List_@A.Alarming.Handle@;@adj_AlmIndex@;Alarm_@adj_AlmIndex@;@str(A.Alarming.System)@STR(A.Alarming.Key.ToLevel10)@str(A.FBox.Description)@str(A.FBox.AlOpen.Alarmtext)
+$WRFILE "DDC_Alarming.CSV" List_@A.Alarming.Handle@;@adj_AlmIndex+1@;Alarm_@adj_AlmIndex+1@;@str(A.Alarming.System)@STR(A.Alarming.Key.ToLevel10)@str(A.FBox.Description)@str(A.FBox.AlClose.Alarmtext)
+;

@@ -1,0 +1,731 @@
+[HDLogFile]
+Version=2
+FBoxName=RLT01_H1
+Memory=SL0FLASH
+Folder=RLT01_H1
+FolderContent=Month
+Records=10
+Mailbox=RLT01.A00.HDLog_H1.Mailbox
+
+[Record 1]
+Name=TrdEG.ZUL_Temp
+Format=DEC.1
+Unit=°C
+Colour=0,0,0
+Y-Axis min=19.0
+Y-Axis max=25.0
+
+[Record 2]
+Name=TrdEG.Raumtemperatur1
+Format=DEC.1
+Unit=°C
+Colour=0,255,0
+Y-Axis min=19.0
+Y-Axis max=25.0
+
+[Record 3]
+Name=TrdEG.Raumtemperatur2
+Format=DEC.1
+Unit=°C
+Colour=0,255,0
+Y-Axis min=19.0
+Y-Axis max=25.0
+
+[Record 4]
+Name=TrdEG.Raumtemperatur3
+Format=DEC.1
+Unit=°C
+Colour=0,255,0
+Y-Axis min=19.0
+Y-Axis max=25.0
+
+[Record 5]
+Name=TrdEG.Raumtemperatur4
+Format=DEC.1
+Unit=°C
+Colour=0,255,0
+Y-Axis min=19.0
+Y-Axis max=25.0
+
+[Record 6]
+Name=TrdEG.Gew_Raum
+Format=DEC.1
+Unit=°C
+Colour=255,255,0
+Y-Axis min=19.0
+Y-Axis max=25.0
+
+[Record 7]
+Name=TrdEG.SW_Raum
+Format=DEC.1
+Unit=°C
+Colour=0,64,0
+Y-Axis min=19.0
+Y-Axis max=25.0
+
+[Record 8]
+Name=TrdEG.AuFeuchte
+Format=DEC.1
+Unit=%
+Colour=75,75,75
+Y-Axis min=0.0
+Y-Axis max=100.0
+
+[Record 9]
+Name=TrdEG.RaFeuchte
+Format=DEC.1
+Unit=%
+Colour=0,255,255
+Y-Axis min=0.0
+Y-Axis max=100.0
+
+[Record 10]
+Name=NULL
+Format=DEC.1
+Unit=%
+Colour=255,128,192
+Y-Axis min=0.0
+Y-Axis max=100.0
+
+[HDLogFile]
+Version=2
+FBoxName=RLT01_H2
+Memory=SL0FLASH
+Folder=RLT01_H1
+FolderContent=Month
+Records=10
+Mailbox=RLT01.A00.HDLog_H2.Mailbox
+
+[Record 1]
+Name=TrdUG.ZUL_Temp
+Format=DEC.1
+Unit=°C
+Colour=0,0,0
+Y-Axis min=19.0
+Y-Axis max=25.0
+
+[Record 2]
+Name=TrdUG.Raumtemperatur1
+Format=DEC.1
+Unit=°C
+Colour=0,255,0
+Y-Axis min=19.0
+Y-Axis max=25.0
+
+[Record 3]
+Name=TrdUG.Raumtemperatur2
+Format=DEC.1
+Unit=°C
+Colour=0,255,0
+Y-Axis min=19.0
+Y-Axis max=25.0
+
+[Record 4]
+Name=TrdUG.Raumtemperatur3
+Format=DEC.1
+Unit=°C
+Colour=0,255,0
+Y-Axis min=19.0
+Y-Axis max=25.0
+
+[Record 5]
+Name=TrdUG.Raumtemperatur4
+Format=DEC.1
+Unit=°C
+Colour=0,255,0
+Y-Axis min=19.0
+Y-Axis max=25.0
+
+[Record 6]
+Name=TrdUG.Gew_Raum
+Format=DEC.1
+Unit=°C
+Colour=255,255,0
+Y-Axis min=19.0
+Y-Axis max=25.0
+
+[Record 7]
+Name=TrdUG.SW_Raum
+Format=DEC.1
+Unit=°C
+Colour=0,64,0
+Y-Axis min=19.0
+Y-Axis max=25.0
+
+[Record 8]
+Name=TrdEG.AuFeuchte
+Format=DEC.1
+Unit=%
+Colour=75,75,75
+Y-Axis min=0.0
+Y-Axis max=100.0
+
+[Record 9]
+Name=TrdUG.RaFeuchte
+Format=DEC.1
+Unit=%
+Colour=0,255,255
+Y-Axis min=0.0
+Y-Axis max=100.0
+
+[Record 10]
+Name=NULL
+Format=DEC.1
+Unit=%
+Colour=255,128,192
+Y-Axis min=0.0
+Y-Axis max=100.0
+
+[HDLogFile]
+Version=2
+FBoxName=RLT01_H3
+Memory=SL0FLASH
+Folder=RLT01_H1
+FolderContent=Month
+Records=5
+Mailbox=RLT01.A00.HDLog_H3.Mailbox
+
+[Record 1]
+Name=TrdEG.CO2S1
+Format=DEC.1
+Unit=unknowm
+Colour=75,75,75
+Y-Axis min=0.0
+Y-Axis max=2100.0
+
+[Record 2]
+Name=TrdEG.CO2S2
+Format=DEC.1
+Unit=unknowm
+Colour=0,0,0
+Y-Axis min=0.0
+Y-Axis max=2100.0
+
+[Record 3]
+Name=TrdEG.CO2S3
+Format=DEC.1
+Unit=unknowm
+Colour=0,255,0
+Y-Axis min=0.0
+Y-Axis max=2100.0
+
+[Record 4]
+Name=TrdEG.Aussenlufttemperatur
+Format=DEC.1
+Unit=°C
+Colour=255,0,0
+Y-Axis min=10.0
+Y-Axis max=35.0
+
+[Record 5]
+Name=TrdEG.Aussentemperatur
+Format=DEC.1
+Unit=°C
+Colour=0,0,0
+Y-Axis min=10.0
+Y-Axis max=35.0
+
+[HDLogFile]
+Version=2
+FBoxName=RLT01_H4
+Memory=SL0FLASH
+Folder=RLT01_H1
+FolderContent=Month
+Records=10
+Mailbox=RLT01.A00.HDLog_H4.Mailbox
+
+[Record 1]
+Name=RLT01.A00.Zaehler.RLT.Ph1_P
+Format=DEC.2
+Unit=unknowm
+Colour=255,128,192
+Y-Axis min=0.0
+Y-Axis max=20.0
+
+[Record 2]
+Name=RLT01.A00.Zaehler.RLT.Ph2_P
+Format=DEC.2
+Unit=unknowm
+Colour=0,0,0
+Y-Axis min=0.0
+Y-Axis max=20.0
+
+[Record 3]
+Name=RLT01.A00.Zaehler.RLT.Ph3_P
+Format=DEC.2
+Unit=unknowm
+Colour=75,75,75
+Y-Axis min=0.0
+Y-Axis max=20.0
+
+[Record 4]
+Name=RLT01.A00.Zaehler.RLT.P_Total
+Format=DEC.2
+Unit=unknowm
+Colour=255,0,0
+Y-Axis min=0.0
+Y-Axis max=20.0
+
+[Record 5]
+Name=RLT01.A00.Zaehler.RLT.Ph1_I
+Format=DEC.1
+Unit=unknowm
+Colour=255,128,192
+Y-Axis min=0.0
+Y-Axis max=70.0
+
+[Record 6]
+Name=RLT01.A00.Zaehler.RLT.Ph2_I
+Format=DEC.1
+Unit=unknowm
+Colour=0,0,0
+Y-Axis min=0.0
+Y-Axis max=70.0
+
+[Record 7]
+Name=RLT01.A00.Zaehler.RLT.Ph3_I
+Format=DEC.1
+Unit=unknowm
+Colour=75,75,75
+Y-Axis min=0.0
+Y-Axis max=70.0
+
+[Record 8]
+Name=RLT01.A00.Zaehler.RLT.Ph1_Cos
+Format=DEC.2
+Unit=Pa
+Colour=255,128,192
+Y-Axis min=0.0
+Y-Axis max=1.0
+
+[Record 9]
+Name=RLT01.A00.Zaehler.RLT.Ph2_Cos
+Format=DEC.2
+Unit=Pa
+Colour=0,0,0
+Y-Axis min=0.0
+Y-Axis max=1.0
+
+[Record 10]
+Name=RLT01.A00.Zaehler.RLT.Ph3_Cos
+Format=DEC.2
+Unit=Pa
+Colour=75,75,75
+Y-Axis min=0.0
+Y-Axis max=1.0
+
+[HDLogFile]
+Version=2
+FBoxName=RLT01_H5
+Memory=SL0FLASH
+Folder=RLT01_H1
+FolderContent=Month
+Records=10
+Mailbox=RLT01.A00.HDLog_H5.Mailbox
+
+[Record 1]
+Name=RLT01.A00.Zaehler.KLT.Ph1_P
+Format=DEC.1
+Unit=unknowm
+Colour=255,128,192
+Y-Axis min=0.0
+Y-Axis max=60.0
+
+[Record 2]
+Name=RLT01.A00.Zaehler.KLT.Ph2_P
+Format=DEC.1
+Unit=unknowm
+Colour=0,0,0
+Y-Axis min=0.0
+Y-Axis max=60.0
+
+[Record 3]
+Name=RLT01.A00.Zaehler.KLT.Ph3_P
+Format=DEC.1
+Unit=unknowm
+Colour=75,75,75
+Y-Axis min=0.0
+Y-Axis max=60.0
+
+[Record 4]
+Name=RLT01.A00.Zaehler.KLT.P_Total
+Format=DEC.1
+Unit=unknowm
+Colour=255,0,0
+Y-Axis min=0.0
+Y-Axis max=60.0
+
+[Record 5]
+Name=RLT01.A00.Zaehler.KLT.Ph1_I
+Format=DEC.1
+Unit=unknowm
+Colour=255,128,192
+Y-Axis min=0.0
+Y-Axis max=500.0
+
+[Record 6]
+Name=RLT01.A00.Zaehler.KLT.Ph2_I
+Format=DEC.1
+Unit=unknowm
+Colour=0,0,0
+Y-Axis min=0.0
+Y-Axis max=500.0
+
+[Record 7]
+Name=RLT01.A00.Zaehler.KLT.Ph3_I
+Format=DEC.1
+Unit=unknowm
+Colour=75,75,75
+Y-Axis min=0.0
+Y-Axis max=500.0
+
+[Record 8]
+Name=RLT01.A00.Zaehler.KLT.Ph1_Cos
+Format=DEC.2
+Unit=Pa
+Colour=255,128,192
+Y-Axis min=0.0
+Y-Axis max=1.0
+
+[Record 9]
+Name=RLT01.A00.Zaehler.KLT.Ph2_Cos
+Format=DEC.2
+Unit=Pa
+Colour=0,0,0
+Y-Axis min=0.0
+Y-Axis max=1.0
+
+[Record 10]
+Name=RLT01.A00.Zaehler.KLT.Ph3_Cos
+Format=DEC.2
+Unit=Pa
+Colour=75,75,75
+Y-Axis min=0.0
+Y-Axis max=1.0
+
+[HDLogFile]
+Version=2
+FBoxName=RLT01_H6
+Memory=SL0FLASH
+Folder=RLT01_H1
+FolderContent=Month
+Records=3
+Mailbox=RLT01.A00.HDLog_H6.Mailbox
+
+[Record 1]
+Name=RLT01.A00.Zaehler.RLT.Ph1_Q
+Format=DEC.2
+Unit=unknowm
+Colour=255,128,192
+Y-Axis min=0.0
+Y-Axis max=20.0
+
+[Record 2]
+Name=RLT01.A00.Zaehler.RLT.Ph2_Q
+Format=DEC.2
+Unit=unknowm
+Colour=0,0,0
+Y-Axis min=0.0
+Y-Axis max=20.0
+
+[Record 3]
+Name=RLT01.A00.Zaehler.RLT.Ph3_Q
+Format=DEC.2
+Unit=unknowm
+Colour=75,75,75
+Y-Axis min=0.0
+Y-Axis max=20.0
+
+[HDLogFile]
+Version=2
+FBoxName=RLT01_H7
+Memory=SL0FLASH
+Folder=RLT01_H1
+FolderContent=Month
+Records=3
+Mailbox=RLT01.A00.HDLog_H7.Mailbox
+
+[Record 1]
+Name=RLT01.A00.Zaehler.KLT.Ph1_Q
+Format=DEC.1
+Unit=unknowm
+Colour=255,128,192
+Y-Axis min=0.0
+Y-Axis max=1.0
+
+[Record 2]
+Name=RLT01.A00.Zaehler.KLT.Ph2_Q
+Format=DEC.1
+Unit=unknowm
+Colour=0,0,0
+Y-Axis min=0.0
+Y-Axis max=1.0
+
+[Record 3]
+Name=RLT01.A00.Zaehler.KLT.Ph3_Q
+Format=DEC.1
+Unit=unknowm
+Colour=75,75,75
+Y-Axis min=0.0
+Y-Axis max=1.0
+
+[HDLogFile]
+Version=2
+FBoxName=RLT01_H08
+Memory=SL0FLASH
+Folder=RLT01_H1
+FolderContent=Month
+Records=10
+Mailbox=RLT01.A00.HDLog_H8.Mailbox
+
+[Record 1]
+Name=NULL
+Format=DEC.1
+Unit=unknowm
+Colour=255,0,0
+Y-Axis min=0.0
+Y-Axis max=25.0
+
+[Record 2]
+Name=NULL
+Format=DEC.1
+Unit=unknowm
+Colour=0,64,0
+Y-Axis min=0.0
+Y-Axis max=25.0
+
+[Record 3]
+Name=RLT01.A00.AUL.TmpaD.iDLD
+Format=DEC.1
+Unit=°C
+Colour=0,0,128
+Y-Axis min=-40.0
+Y-Axis max=40.0
+
+[Record 4]
+Name=RLT01.A00.Aussen.TmpaD.iDLD
+Format=DEC.1
+Unit=°C
+Colour=128,0,128
+Y-Axis min=-40.0
+Y-Axis max=40.0
+
+[Record 5]
+Name=RLT01.A00.AUF.AbsaD.iDLD
+Format=DEC.1
+Unit=unknowm
+Colour=255,255,0
+Y-Axis min=0.0
+Y-Axis max=20.0
+
+[Record 6]
+Name=RLT01.A00.Raum.TmpaD.iDLD
+Format=DEC.1
+Unit=°C
+Colour=255,128,128
+Y-Axis min=-40.0
+Y-Axis max=40.0
+
+[Record 7]
+Name=RLT01.A00.RAF.AbsaD.iDLD
+Format=DEC.1
+Unit=unknowm
+Colour=0,255,0
+Y-Axis min=0.0
+Y-Axis max=20.0
+
+[Record 8]
+Name=RLT01.A00.FUE.TmpaD.iDLD
+Format=DEC.1
+Unit=°C
+Colour=0,0,255
+Y-Axis min=-40.0
+Y-Axis max=40.0
+
+[Record 9]
+Name=TrdEG.RLTkwhVortag
+Format=DEC.1
+Unit=unknowm
+Colour=255,128,192
+Y-Axis min=0.0
+Y-Axis max=200.0
+
+[Record 10]
+Name=TrdEG.KLTkWhVortag
+Format=DEC.1
+Unit=unknowm
+Colour=255,255,128
+Y-Axis min=0.0
+Y-Axis max=200.0
+
+[HDLogFile]
+Version=2
+FBoxName=RLT_01H10
+Memory=SL0FLASH
+Folder=RLT01_H1
+FolderContent=Month
+Records=8
+Mailbox=RLT01.A00.HDLog_H10.Mailbox
+
+[Record 1]
+Name=RLT01.A00.Zaehler.RLT.mxPh1_P
+Format=DEC.2
+Unit=unknowm
+Colour=255,128,192
+Y-Axis min=0.0
+Y-Axis max=20.0
+
+[Record 2]
+Name=RLT01.A00.Zaehler.RLT.mxPh2_P
+Format=DEC.2
+Unit=unknowm
+Colour=0,0,0
+Y-Axis min=0.0
+Y-Axis max=20.0
+
+[Record 3]
+Name=RLT01.A00.Zaehler.RLT.mxPh3_P
+Format=DEC.2
+Unit=unknowm
+Colour=75,75,75
+Y-Axis min=0.0
+Y-Axis max=20.0
+
+[Record 4]
+Name=RLT01.A00.Zaehler.RLT.mxP_Total
+Format=DEC.2
+Unit=unknowm
+Colour=255,0,0
+Y-Axis min=0.0
+Y-Axis max=20.0
+
+[Record 5]
+Name=RLT01.A00.Zaehler.KLT.mxPh1_P
+Format=DEC.1
+Unit=unknowm
+Colour=255,128,192
+Y-Axis min=0.0
+Y-Axis max=100.0
+
+[Record 6]
+Name=RLT01.A00.Zaehler.KLT.mxPh2_P
+Format=DEC.1
+Unit=unknowm
+Colour=0,0,0
+Y-Axis min=0.0
+Y-Axis max=100.0
+
+[Record 7]
+Name=RLT01.A00.Zaehler.KLT.mxPh3_P
+Format=DEC.1
+Unit=unknowm
+Colour=75,75,75
+Y-Axis min=0.0
+Y-Axis max=100.0
+
+[Record 8]
+Name=RLT01.A00.Zaehler.KLT.mxP_Total
+Format=DEC.1
+Unit=unknowm
+Colour=255,128,192
+Y-Axis min=0.0
+Y-Axis max=100.0
+
+[HDLogFile]
+Version=2
+FBoxName=RLT_01H11
+Memory=SL0FLASH
+Folder=RLT01_H1
+FolderContent=Month
+Records=8
+Mailbox=__stc_id_004AF_var_00___SG_RLT_
+
+[Record 1]
+Name=RLT01.A00.Zaehler.RLT.mxPh1_I
+Format=DEC.1
+Unit=unknowm
+Colour=255,128,192
+Y-Axis min=0.0
+Y-Axis max=20.0
+
+[Record 2]
+Name=RLT01.A00.Zaehler.RLT.mxPh2_I
+Format=DEC.1
+Unit=unknowm
+Colour=0,0,0
+Y-Axis min=0.0
+Y-Axis max=20.0
+
+[Record 3]
+Name=RLT01.A00.Zaehler.RLT.mxPh3_I
+Format=DEC.1
+Unit=unknowm
+Colour=75,75,75
+Y-Axis min=0.0
+Y-Axis max=20.0
+
+[Record 4]
+Name=NULL
+Format=DEC.1
+Unit=unknowm
+Colour=255,0,0
+Y-Axis min=0.0
+Y-Axis max=20.0
+
+[Record 5]
+Name=RLT01.A00.Zaehler.KLT.mxPh1_I
+Format=DEC.1
+Unit=unknowm
+Colour=255,128,192
+Y-Axis min=0.0
+Y-Axis max=500.0
+
+[Record 6]
+Name=RLT01.A00.Zaehler.KLT.mxPh2_I
+Format=DEC.1
+Unit=unknowm
+Colour=0,0,0
+Y-Axis min=0.0
+Y-Axis max=500.0
+
+[Record 7]
+Name=RLT01.A00.Zaehler.KLT.mxPh3_I
+Format=DEC.1
+Unit=unknowm
+Colour=75,75,75
+Y-Axis min=0.0
+Y-Axis max=500.0
+
+[Record 8]
+Name=NULL
+Format=DEC.1
+Unit=unknowm
+Colour=255,128,192
+Y-Axis min=0.0
+Y-Axis max=500.0
+
+[HDLogFile]
+Version=2
+FBoxName=RLT01_H15
+Memory=SL0FLASH
+Folder=RLT01_H1
+FolderContent=Month
+Records=2
+Mailbox=RLT01.A00.HDLog_H11.Mailbox
+
+[Record 1]
+Name=TrdEG.KLT_kWh
+Format=DEC.1
+Unit=unknowm
+Colour=0,0,128
+Y-Axis min=0.0
+Y-Axis max=214748368.0
+
+[Record 2]
+Name=TrdEG.RLT_kWh
+Format=DEC.1
+Unit=unknowm
+Colour=128,0,128
+Y-Axis min=0.0
+Y-Axis max=214748368.0
+

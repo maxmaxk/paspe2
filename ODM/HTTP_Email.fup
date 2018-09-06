@@ -1,0 +1,3566 @@
+[FILEHEADER]
+Version=529
+Compiler=310
+Bues=1
+VisiPlus=0
+PrjID=101
+UpdateGlobals=0
+DnldInRun=0
+FuplaVersion=V2.1.310
+CodePage=1252
+MacroID=32547
+ModuleVersion=
+AdjustLog=0
+Author=
+Comment=
+LastPageID=1
+[BLOCK]
+BlockSym=1
+COBSupTime=0
+PageDisabled=0
+ConditinalFunction=0
+ConditionalSymbol=
+ConditionalValue=0
+PageColor=16777215
+PageBackColor=0
+[PAGEDEF]
+PageLen=2401
+[PAGE]
+Name=DNS Query
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=1312
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_MOVEBYT1 32533=
+_CALL_PB2 32534=
+_XPULSE 32536=
+_BDYN2 32538=
+_BDYN2 32539=
+_BDYN2 32540=
+_BOR 32541=
+[_MOVEBYT1 32533]
+Fam=sfupmove
+Face=MovByte
+Width=13
+Init=n
+Stretch=0 3 1 3
+In=In_I 
+Out=Out_I B_NI 
+C=Of_Ik=14 
+av0=a ADJ0 %s =1 {1..2} 
+av1=a ADJ1 %s =1 {1..2} 
+av2=a ADJ2 %s =1 {1..2} 
+av3=a ADJ3 %s =1 {1..2} 
+Language=de
+Posi=47 22
+[_CALL_PB2 32534]
+Fam=sfupuser
+Face=Call PB
+Width=14
+Init=y
+Vers=101002
+In=En_B 
+C=#_Ppk=33 
+Language=de
+Posi=47 5
+[_XPULSE 32536]
+Fam=sfuptime
+Face=XPulse
+Width=7
+Init=y
+In=In_EB TV_I 
+Out=Q_B t_I 
+S=Tim_T Sta_F 
+Language=de
+Posi=49 38
+[_BDYN2 32538]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0:2 {0..2} 
+Language=de
+Posi=30 40
+[_BDYN2 32539]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0:2 {0..2} 
+Language=de
+Posi=30 43
+[_BDYN2 32540]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0:2 {0..2} 
+Language=de
+Posi=30 46
+[_BOR 32541]
+Fam=sfupbina
+Face=>=1
+Width=3
+Init=n
+Stretch=1 9 1 2
+In=_NB 
+Out=_B 
+Language=de
+Posi=41 40
+[HLINE]
+H0=8 25 47
+H1=25 24 47)60 62
+H2=27 60 76
+H3=29 60 76
+H4=31 60 76
+H5=33 60 76
+H6=41 24 30)34 41)44 49)56 76
+H7=42 35 41
+H8=43 36 41)47 49)56 57
+H9=44 24 30)34 35
+H10=47 24 30)34 36
+H11=49 23 47
+[VLINE]
+V0=35 42 44
+V1=36 43 47
+V2=47 43 49
+[NETWORK]
+N0=Bo 25 8)if 47 8
+N1=Io 24 25)if 47 25
+N2=Iof 60 25
+N3=Io 24 27
+N4=Iof 60 27)i 76 27
+N5=Bo 24 29
+N6=Iof 60 29)i 76 29
+N7=Iof 60 31)i 76 31
+N8=Iof 60 33)i 76 33
+N9=Bo 24 41)if 30 41
+N10=Bof 34 41)if 41 41
+N11=Bof 44 41)if 49 41
+N12=Bof 56 41)i 76 41
+N13=Bif 41 42)of 34 44
+N14=Bif 41 43)of 34 47
+N15=Iif 49 43)o 23 49
+N16=Iof 56 43
+N17=Bo 24 44)if 30 44
+N18=Bo 24 47)if 30 47
+[CONNS]
+Conn0=25 8 64 34 16
+Conn1=24 21 63 34 15
+Conn2=24 23 23 34 14
+Conn3=24 25 133 34 16
+Conn4=24 27 75 34 17
+Conn5=76 27 56 33 17
+Conn6=24 29 71 34 17
+Conn7=76 29 48 33 17
+Conn8=76 31 38 33 17
+Conn9=76 33 87 33 17
+Conn10=24 41 110 34 21
+Conn11=76 41 64 33 16
+Conn12=24 44 132 34 21
+Conn13=24 47 55 34 13
+Conn14=23 49 98 34 3
+[PAGEDEF]
+PageLen=7337
+[PAGE]
+Name=Init Email
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=3
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_DDC_SPGENERAL21 32164=
+_CWM_CINIT 19=
+_BAND 32200=
+_DDC_ALGENERAL05 33=
+_XPULSE 32223=
+_DDC_SPGENERAL21 32222=
+_CWM_SEND_CMAIL 32221=
+_OFFDEL 32224=
+_BLINK2 32225=
+_IISZERO 32226=
+_BOR 32248=
+_DDC_SPGENERAL21 32481=
+_XPULSE 32482=
+_DDC_SPGENERAL21 32485=
+_XPULSE 32484=
+_BOR 32542=
+_BDYN2 32543=
+_BDYN2 32544=
+[_DDC_SPGENERAL21 32164]
+Fam=DDC Sollwerte
+Width=5
+Init=y
+Vers=200000
+Out=Val_B 
+S=Value_F 
+av0=c cs =0 \nabs 
+av1=a BACnet %s =0 {0..1} 
+av2=c c0 =0 \nabs 
+av3=a Value 0 %s =0:1 {0..1} 
+av4=c cc =0 \nabs 
+AcceptName=1
+Folder=Sollwerte.Binaer?
+Variables0=Value Flag;(4) Binärwert
+Language=de
+Posi=16 5
+[_CWM_CINIT 19]
+Fam=Communication Email
+Face=AMail Init
+FacePosi=l
+Width=17
+Init=y
+Vers=104300
+In=En_B 
+Out=Busy_B Err_B ErrNum_I 
+C=SMTP_Dx=63 Name_Dx=86 Pwd_Dx=74 Sender_Dx=118 To1_Dx=29 To2_Dx=53 To3_Dx=125 To4_Dx=73 To5_Dx=59 
+S=LED_F Port_R=69 Flags_10F Register_7R Texts_2^X InitDB_^D Retrys_R=103 Delay_R=109 Count_R=46 TimerDly_T UseAuth_F=36 
+D=dReg_6R 
+av0=c cc0 =0 \nabs 
+av1=a Port 0 =25 
+av2=a UseAuth 0 %s =1 {0..1} 
+av3=c ccText =0 \nabs 
+av4=a LenSubj =40:127 {20..3072} 
+av5=a LenText =80:500 {40..3072} 
+av6=c ccRetry =0 \nabs 
+av7=a Retrys 0 =3 {0..10} 
+av8=v Count 0 
+av9=a Delay 0 %1p =600:50 
+av10=v TimerDly 0 %1p 
+av11=c cc1 =0 \nabs 
+av12=v Flags 0 %s \nabs 
+av13=v Flags 1 %s \nabs 
+av14=v Flags 0 %s \nabs 
+AcceptName=2
+uName=WebMail
+Folder=Communication.AMailInitl?
+Variables0=Port Port;Portnummer des  Mailservers (Standard SMTP Port ist 25)
+Variables1=Retrys Retrys;Anzahl der Sendeversuche. Falls alle Versuche fehlgeschlagen sind, wird Err aus
+Variables2=Delay Delay;Verzögerung zwischen 2 Sendeversuchen
+Variables3=Count Count;Verbleibende Anzahl von Sendeversuchen
+Variables4=UseAuth UseAuth;Angabe ob eine Authentifizierung am Mailserver erfolgen soll
+Language=de
+Posi=40 3
+[_BAND 32200]
+Fam=sfupbina
+Face=&&
+Width=2
+Init=n
+Stretch=1 9 1 2
+In=_NB 
+Out=_B 
+Language=de
+Posi=36 5
+[_DDC_ALGENERAL05 33]
+Fam=DDC Stoerungen
+Width=4
+Init=y
+Vers=105000
+In=Us_B 
+Out=e_B 
+S=Verwende_F 
+av0=a Verwende 0 %s =0:1 {0,1} 
+av1=c cc =0 \nabs 
+AcceptName=1
+Folder=Stoerungen.Verwenden?
+Variables0=Verwende Verwenden;(4) Vorwahl ob die am Eingang anliegende Meldung am Ausgang weitergeleitet werd
+Language=de
+Posi=25 8
+[_XPULSE 32223]
+Fam=sfuptime
+Face=XPulse
+Width=7
+Init=y
+In=In_EB TV_I 
+Out=Q_B t_I 
+S=Tim_T Sta_F 
+Language=de
+Posi=45 58
+[_DDC_SPGENERAL21 32222]
+Fam=DDC Sollwerte
+Width=5
+Init=y
+Vers=200000
+Out=Val_B 
+S=Value_F=13 
+av0=c cs =0 \nabs 
+av1=a BACnet %s =0 {0..1} 
+av2=c c0 =0 \nabs 
+av3=a Value 0 %s =0:1 {0..1} 
+av4=c cc =0 \nabs 
+AcceptName=1
+Folder=Sollwerte.Binaer?
+Variables0=Value Flag;(4) Binärwert
+Language=de
+Posi=16 48
+[_CWM_SEND_CMAIL 32221]
+Fam=Communication Email
+Face=AMail Send
+FacePosi=l
+Width=16
+Init=y
+Vers=104300
+In=Send_EB 
+Out=Busy_B 
+C=Subject_Dx=12 Text_Dx=85 File_Dx=93 
+S=To_R LED_F Flags_3F Texts_2^X Priority_R 
+D=Register_2R 
+av0=a To 0 =1 {1..5} 
+av1=a Priority 0 =1 {1..5} 
+av2=a Format %s =0 {0..1} 
+AcceptName=1
+aRef=2
+Ref=WebMail
+Folder=Communication.AMailSend?
+Variables0=To Recipient;Nummer der Empfänger/-liste, die in der FBox "Text Mail Init" definiert wurde
+Variables1=Priority Priority;Mail Priorität (1...5, wichtig...normal)
+Language=de
+Posi=40 46
+[_OFFDEL 32224]
+Fam=sfuptime
+Face=0|-|T
+Width=6
+Init=y
+In=In_EB TV_I 
+Out=Q_B t_I 
+S=Tim_T Sta_F 
+Language=de
+Posi=40 30
+[_BLINK2 32225]
+Fam=sfupblin
+Face=Blink
+Width=6
+Init=n
+In=En_B T0_I T1_I 
+Out=Q_B 
+S=Tim_T Sta_F 
+Language=de
+Posi=64 30
+[_IISZERO 32226]
+Fam=sfupinte
+Face==0
+Width=3
+Init=n
+In=_I 
+Out=_B 
+Language=de
+Posi=40 41
+[_BOR 32248]
+Fam=sfupbina
+Face=>=1
+Width=3
+Init=n
+Stretch=1 9 1 1
+In=_NB 
+Out=_B 
+Language=de
+Posi=52 32
+[_DDC_SPGENERAL21 32481]
+Fam=DDC Sollwerte
+Width=5
+Init=y
+Vers=200000
+Out=Val_B 
+S=Value_F=60 
+av0=c cs =0 \nabs 
+av1=a BACnet %s =0 {0..1} 
+av2=c c0 =0 \nabs 
+av3=a Value 0 %s =0 {0..1} 
+av4=c cc =0 \nabs 
+AcceptName=1
+Folder=Sollwerte.Binaer?
+Variables0=Value Flag;(4) Binärwert
+Language=de
+Posi=16 73
+[_XPULSE 32482]
+Fam=sfuptime
+Face=XPulse
+Width=7
+Init=y
+In=In_EB TV_I 
+Out=Q_B t_I 
+S=Tim_T Sta_F 
+Language=de
+Posi=45 74
+[_DDC_SPGENERAL21 32485]
+Fam=DDC Sollwerte
+Width=5
+Init=y
+Vers=200000
+Out=Val_B 
+S=Value_F=54 
+av0=c cs =0 \nabs 
+av1=a BACnet %s =0 {0..1} 
+av2=c c0 =0 \nabs 
+av3=a Value 0 %s =0 {0..1} 
+av4=c cc =0 \nabs 
+AcceptName=1
+Folder=Sollwerte.Binaer?
+Variables0=Value Flag;(4) Binärwert
+Language=de
+Posi=16 84
+[_XPULSE 32484]
+Fam=sfuptime
+Face=XPulse
+Width=7
+Init=y
+In=In_EB TV_I 
+Out=Q_B t_I 
+S=Tim_T Sta_F 
+Language=de
+Posi=45 82
+[_BOR 32542]
+Fam=sfupbina
+Face=>=1
+Width=3
+Init=n
+Stretch=1 9 1 1
+In=_NB 
+Out=_B 
+Language=de
+Posi=38 73
+[_BDYN2 32543]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0:2 {0..2} 
+Language=de
+Posi=30 73
+[_BDYN2 32544]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0:2 {0..2} 
+Language=de
+Posi=30 76
+[HLINE]
+H0=6 21 36)38 40)57 75
+H1=7 31 36
+H2=8 32 36)57 75
+H3=9 22 25)29 31
+H4=10 57 75
+H5=11 22 32
+H6=33 22 40)46 52)55 64)70 75
+H7=34 50 52
+H8=35 22 40)46 47)61 64
+H9=37 22 61)62 64
+H10=39 22 62
+H11=42 22 40)43 75
+H12=49 21 40)56 75
+H13=61 22 45)52 75
+H14=63 22 45)52 53
+H15=74 21 30)34 38)41 44
+H16=75 37 38
+H17=77 22 30)34 37)44 45)52 75
+H18=79 22 45)52 53
+H19=85 21 45)52 75
+H20=87 44 45)52 53
+H21=88 22 44
+[VLINE]
+V0=31 7 9
+V1=32 8 11
+V2=37 75 77
+V3=44 74 77)87 88
+V4=50 34 42
+V5=61 35 37
+V6=62 37 39
+[NETWORK]
+N0=Bof 21 6)if 36 6
+N1=Bof 38 6)if 40 6
+N2=Bof 57 6)i 75 6
+N3=Bif 36 7)o-f 29 9
+N4=Bif 36 8)o 22 11
+N5=Bof 57 8)i 75 8
+N6=Bo 22 9)if 25 9
+N7=Iof 57 10)i 75 10
+N8=Bo 22 33)if 40 33
+N9=Bof 46 33)if 52 33
+N10=Bof 55 33)if 64 33
+N11=Bof 70 33)i 75 33
+N12=Bif 52 34)i 75 42)o-f 43 42
+N13=Io 22 35)if 40 35
+N14=Iof 46 35
+N15=Iif 64 35)o 22 37
+N16=Iif 64 37)o 22 39
+N17=Io 22 42)if 40 42
+N18=Bof 21 49)if 40 49
+N19=Bof 56 49)i 75 49
+N20=Bo 22 61)if 45 61
+N21=Bof 52 61)i 75 61
+N22=Io 22 63)if 45 63
+N23=Iof 52 63
+N24=Bof 21 74)if 30 74
+N25=Bof 34 74)if 38 74
+N26=Bof 41 74)if 45 77
+N27=Bif 38 75)of 34 77
+N28=Bo 22 77)if 30 77
+N29=Bof 52 77)i 75 77
+N30=Io 22 79)if 45 79
+N31=Iof 52 79
+N32=Bof 21 85)if 45 85
+N33=Bof 52 85)i 75 85
+N34=Iif 45 87)o 22 88
+N35=Iof 52 87
+[CONNS]
+Conn0=75 6 47 33 14
+Conn1=75 8 55 33 13
+Conn2=22 9 110 34 21
+Conn3=75 10 37 33 13
+Conn4=22 11 30 34 20
+Conn5=22 15 23 34 14
+Conn6=22 17 86 34 14
+Conn7=22 19 74 34 13
+Conn8=22 21 118 34 14
+Conn9=22 23 29 34 13
+Conn10=22 33 47 34 14
+Conn11=75 33 126 33 15
+Conn12=22 35 62 34 3
+Conn13=22 37 94 34 3
+Conn14=22 39 61 34 3
+Conn15=22 42 37 34 13
+Conn16=75 42 104 33 13
+Conn17=75 49 70 33 14
+Conn18=22 61 13 34 13
+Conn19=75 61 13 33 13
+Conn20=22 63 80 34 3
+Conn21=22 77 30 34 20
+Conn22=75 77 60 33 15
+Conn23=22 79 80 34 3
+Conn24=75 85 54 33 15
+Conn25=22 88 98 34 3
+[PAGEDEF]
+PageLen=6482
+[PAGE]
+Name=SetupEmail
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=1311
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_HEAMANB3 32503=
+_BDYN2 32504=
+_DDC_ALGENERAL05 32505=
+_FILE_DELFILE 32506=
+_FILE_GETLEN 32507=
+_BDYN2 32508=
+_BDYN2 32509=
+_BOR 32510=
+_BDYN2 32511=
+_XPULSE 32512=
+_ONDEL 32513=
+_BAND 32514=
+_BOR 32515=
+_BDYN2 32516=
+_BOR 32517=
+_BDYN2 32518=
+_BAND 32519=
+_BAND 32520=
+_ICMPGT 32521=
+_BAND 32522=
+_ICMPEQ 32523=
+[_HEAMANB3 32503]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=38 80
+[_BDYN2 32504]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0:2 {0..2} 
+Language=de
+Posi=29 66
+[_DDC_ALGENERAL05 32505]
+Fam=DDC Stoerungen
+Width=4
+Init=y
+Vers=105000
+In=Us_B 
+Out=e_B 
+S=Verwende_F 
+av0=a Verwende 0 %s =0:1 {0,1} 
+av1=c cc =0 \nabs 
+AcceptName=1
+Folder=Stoerungen.Verwenden?
+Variables0=Verwende Verwenden;(4) Vorwahl ob die am Eingang anliegende Meldung am Ausgang weitergeleitet werd
+Language=de
+Posi=31 80
+[_FILE_DELFILE 32506]
+Fam=FileSyst
+Face=DeleteFile
+FacePosi=l
+Width=15
+Init=y
+Vers=2
+In=Exec_EB Index_I 
+Out=Busy_B Error_B 
+C=Dir_Dx=91 File_Dx=124 
+S=Fs_2F LED_F 
+av0=a IDX %s =-1 {-1,0..10} 
+av1=a EXT %s =1 {0,1,11,12,21,22,31} 
+av2=bv Fs 0 %s =1 \v Fs 1 %s 
+aRef=2
+Ref=MEM_M1
+Language=de
+Posi=49 78
+[_FILE_GETLEN 32507]
+Fam=FileSyst
+Face=GetFileLength
+FacePosi=l
+Width=15
+Init=y
+Vers=2
+In=Exec_EB Index_I 
+Out=Busy_B Error_B Length_I 
+C=Dir_Dx=91 File_Dx=124 
+S=Fs_2F LED_F 
+av0=a IDX %s =-1 {-1,0..10} 
+av1=a EXT %s =1 {0,1,11,12,21,22,31} 
+av2=bv Fs 0 %s =1 \v Fs 1 %s 
+aRef=2
+Ref=MEM_M1
+Language=de
+Posi=49 64
+[_BDYN2 32508]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0:2 {0..2} 
+Language=de
+Posi=29 63
+[_BDYN2 32509]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0:2 {0..2} 
+Language=de
+Posi=29 60
+[_BOR 32510]
+Fam=sfupbina
+Face=>=1
+Width=3
+Init=n
+Stretch=1 9 1 3
+In=_NB 
+Out=_B 
+Language=de
+Posi=43 57
+[_BDYN2 32511]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0:2 {0..2} 
+Language=de
+Posi=29 57
+[_XPULSE 32512]
+Fam=sfuptime
+Face=XPulse
+Width=7
+Init=y
+In=In_EB TV_I 
+Out=Q_B t_I 
+S=Tim_T Sta_F 
+Language=de
+Posi=52 50
+[_ONDEL 32513]
+Fam=sfuptime
+Face=T|-|0
+Width=6
+Init=y
+In=In_EB TV_I 
+Out=Q_B t_I 
+S=Tim_T Sta_F 
+Language=de
+Posi=64 40
+[_BAND 32514]
+Fam=sfupbina
+Face=&&
+Width=2
+Init=n
+Stretch=1 9 1 3
+In=_NB 
+Out=_B 
+Language=de
+Posi=56 40
+[_BOR 32515]
+Fam=sfupbina
+Face=>=1
+Width=3
+Init=n
+Stretch=1 9 1 1
+In=_NB 
+Out=_B 
+Language=de
+Posi=41 40
+[_BDYN2 32516]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0:2 {0..2} 
+Language=de
+Posi=66 37
+[_BOR 32517]
+Fam=sfupbina
+Face=>=1
+Width=3
+Init=n
+Stretch=1 9 1 1
+In=_NB 
+Out=_B 
+Language=de
+Posi=73 34
+[_BDYN2 32518]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0:2 {0..2} 
+Language=de
+Posi=66 34
+[_BAND 32519]
+Fam=sfupbina
+Face=&&
+Width=2
+Init=n
+Stretch=1 9 1 1
+In=_NB 
+Out=_B 
+Language=de
+Posi=56 34
+[_BAND 32520]
+Fam=sfupbina
+Face=&&
+Width=2
+Init=n
+Stretch=1 9 1 1
+In=_NB 
+Out=_B 
+Language=de
+Posi=66 30
+[_ICMPGT 32521]
+Fam=sfupinte
+Face=Cmp
+Width=4
+Init=n
+In=_I _I 
+Out=>_B 
+Language=de
+Posi=55 28
+[_BAND 32522]
+Fam=sfupbina
+Face=&&
+Width=2
+Init=n
+Stretch=1 9 1 1
+In=_NB 
+Out=_B 
+Language=de
+Posi=66 25
+[_ICMPEQ 32523]
+Fam=sfupinte
+Face=Cmp
+Width=4
+Init=n
+In=_I _I 
+Out==_B 
+Language=de
+Posi=55 23
+[HLINE]
+H0=24 26 55
+H1=25 53 55
+H2=26 59 66)68 79
+H3=27 63 66
+H4=29 52 55
+H5=30 26 55
+H6=31 59 66)68 79
+H7=32 65 66
+H8=33 26 65
+H9=35 26 56)58 66)70 73)76 79
+H10=36 55 56)71 73
+H11=37 26 55
+H12=38 61 66)70 71
+H13=41 26 41)44 45)53 56)58 59
+H14=42 40 41)45 56
+H15=43 26 40)45 56)59 64)70 79
+H16=44 46 56
+H17=45 26 45)59 64)70 71
+H18=47 26 46
+H19=49 26 59
+H20=53 26 52)59 79
+H21=55 26 52)59 60
+H22=58 25 29)33 43)46 47
+H23=59 34 43
+H24=60 35 43
+H25=61 25 29)33 34)36 43
+H26=64 25 29)33 35
+H27=67 25 29)33 36)47 49)64 79
+H28=69 26 49)64 79
+H29=71 64 79
+H30=81 26 31)35 38)44 49)64 79
+H31=83 26 49)64 65
+[VLINE]
+V0=34 59 61
+V1=35 60 64
+V2=36 61 67
+V3=40 42 43
+V4=45 41 42)43 45
+V5=46 44 47
+V6=47 58 67
+V7=52 24 29
+V8=53 25 30)35 41
+V9=55 36 37
+V10=59 41 43)45 49
+V11=61 31 38
+V12=63 27 33
+V13=65 32 33
+V14=71 36 38
+[NETWORK]
+N0=Io 26 24)if 55 24)if 55 29
+N1=Iif 55 25)if 55 30)o 26 30
+N2=Bof 59 26)if 66 26
+N3=Bof 68 26)i 79 26
+N4=Bif 66 27)if 66 32)o- 26 33
+N5=Bof 59 31)if 66 31)if 66 38
+N6=Bof 68 31)i 79 31
+N7=Bo 26 35)if 56 35)if 56 41
+N8=Bof 58 35)if 66 35
+N9=Bof 70 35)if 73 35
+N10=Bof 76 35)i 79 35
+N11=Bif 56 36)o 26 37
+N12=Bif 73 36)of 70 38
+N13=Bo- 26 41)if 41 41
+N14=Bof 44 41)if 56 42
+N15=Bof 58 41)if 64 43
+N16=Bif 41 42)o- 26 43
+N17=Bif 56 43)o- 26 45
+N18=Bof 70 43)i 79 43
+N19=Bif 56 44)o- 26 47
+N20=Iif 64 45)o 26 49
+N21=Iof 70 45
+N22=Bo- 26 53)if 52 53
+N23=Bof 59 53)i 79 53
+N24=Io 26 55)if 52 55
+N25=Iof 59 55
+N26=Bo 25 58)if 29 58
+N27=Bof 33 58)if 43 58
+N28=Bof 46 58)if 49 67
+N29=Bif 43 59)of 33 61
+N30=Bif 43 60)of 33 64
+N31=Bo 25 61)if 29 61
+N32=Bif 43 61)of 33 67
+N33=Bo 25 64)if 29 64
+N34=Bo 25 67)if 29 67
+N35=Bof 64 67)i 79 67
+N36=Io 26 69)if 49 69
+N37=Bof 64 69)i 79 69
+N38=Iof 64 71)i 79 71
+N39=Bo 26 81)if 31 81
+N40=Bof 35 81)if 38 81
+N41=Bof 44 81)if 49 81
+N42=Bof 64 81)i 79 81
+N43=Io 26 83)if 49 83
+N44=Bof 64 83
+[CONNS]
+Conn0=26 24 28 34 18
+Conn1=79 26 45 33 17
+Conn2=26 30 27 34 3
+Conn3=79 31 79 33 16
+Conn4=26 33 68 34 16
+Conn5=26 35 54 34 15
+Conn6=79 35 11 33 14
+Conn7=26 37 45 34 17
+Conn8=26 41 45 34 17
+Conn9=26 43 79 34 16
+Conn10=79 43 117 33 15
+Conn11=26 45 35 34 17
+Conn12=26 47 11 34 14
+Conn13=26 49 10 34 3
+Conn14=26 53 54 34 15
+Conn15=79 53 92 33 16
+Conn16=26 55 94 34 3
+Conn17=25 58 54 34 15
+Conn18=25 61 60 34 15
+Conn19=25 64 34 34 20
+Conn20=25 67 92 34 16
+Conn21=79 67 131 33 18
+Conn22=26 69 9 34 5
+Conn23=79 69 68 33 16
+Conn24=79 71 28 33 18
+Conn25=26 81 11 34 14
+Conn26=79 81 35 33 17
+Conn27=26 83 9 34 5
+[PAGEDEF]
+PageLen=4768
+[PAGE]
+Name=Maileinstellungen Write to File
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=1309
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_FILE_READD 32493=
+_FILE_WRITED 32494=
+_FILE_READD 32495=
+_FILE_WRITED 32496=
+_FILE_READD 32497=
+_FILE_WRITED 32498=
+_FILE_READD 32499=
+_FILE_WRITED 32500=
+_FILE_READD 32501=
+_FILE_WRITED 32502=
+[_FILE_READD 32493]
+Fam=FileSyst
+Face=Read
+FacePosi=l
+Width=15
+Init=y
+Vers=2
+In=Exec_EB Index_I Record_I 
+Out=Busy_B Error_B 
+C=Dir_Dx=91 File_Dx=124 Val_Dxd=29 
+S=Fs_2F LED_F 
+av0=bv Fs 0 %s =1 \v Fs 1 %s 
+aRef=2
+Ref=MEM_M1
+Language=de
+Posi=33 34
+[_FILE_WRITED 32494]
+Fam=FileSyst
+Face=Write
+FacePosi=l
+Width=15
+Init=y
+Vers=2
+In=Exec_EB Index_I 
+Out=Busy_B Error_B 
+C=Dir_Dx=91 File_Dx=124 Val_Dxd=29 
+S=Fs_2F LED_F 
+av0=bv Fs 0 %s =1 \v Fs 1 %s 
+aRef=2
+Ref=MEM_M1
+Language=de
+Posi=9 34
+[_FILE_READD 32495]
+Fam=FileSyst
+Face=Read
+FacePosi=l
+Width=15
+Init=y
+Vers=2
+In=Exec_EB Index_I Record_I 
+Out=Busy_B Error_B 
+C=Dir_Dx=91 File_Dx=124 Val_Dxd=118 
+S=Fs_2F LED_F 
+av0=bv Fs 0 %s =1 \v Fs 1 %s 
+aRef=2
+Ref=MEM_M1
+Language=de
+Posi=82 18
+[_FILE_WRITED 32496]
+Fam=FileSyst
+Face=Write
+FacePosi=l
+Width=15
+Init=y
+Vers=2
+In=Exec_EB Index_I 
+Out=Busy_B Error_B 
+C=Dir_Dx=91 File_Dx=124 Val_Dxd=118 
+S=Fs_2F LED_F 
+av0=bv Fs 0 %s =1 \v Fs 1 %s 
+aRef=2
+Ref=MEM_M1
+Language=de
+Posi=58 18
+[_FILE_READD 32497]
+Fam=FileSyst
+Face=Read
+FacePosi=l
+Width=15
+Init=y
+Vers=2
+In=Exec_EB Index_I Record_I 
+Out=Busy_B Error_B 
+C=Dir_Dx=91 File_Dx=124 Val_Dxd=74 
+S=Fs_2F LED_F 
+av0=bv Fs 0 %s =1 \v Fs 1 %s 
+aRef=2
+Ref=MEM_M1
+Language=de
+Posi=33 18
+[_FILE_WRITED 32498]
+Fam=FileSyst
+Face=Write
+FacePosi=l
+Width=15
+Init=y
+Vers=2
+In=Exec_EB Index_I 
+Out=Busy_B Error_B 
+C=Dir_Dx=91 File_Dx=124 Val_Dxd=74 
+S=Fs_2F LED_F 
+av0=bv Fs 0 %s =1 \v Fs 1 %s 
+aRef=2
+Ref=MEM_M1
+Language=de
+Posi=9 18
+[_FILE_READD 32499]
+Fam=FileSyst
+Face=Read
+FacePosi=l
+Width=15
+Init=y
+Vers=2
+In=Exec_EB Index_I Record_I 
+Out=Busy_B Error_B 
+C=Dir_Dx=91 File_Dx=124 Val_Dxd=86 
+S=Fs_2F LED_F 
+av0=bv Fs 0 %s =1 \v Fs 1 %s 
+aRef=2
+Ref=MEM_M1
+Language=de
+Posi=82 2
+[_FILE_WRITED 32500]
+Fam=FileSyst
+Face=Write
+FacePosi=l
+Width=15
+Init=y
+Vers=2
+In=Exec_EB Index_I 
+Out=Busy_B Error_B 
+C=Dir_Dx=91 File_Dx=124 Val_Dxd=86 
+S=Fs_2F LED_F 
+av0=bv Fs 0 %s =1 \v Fs 1 %s 
+aRef=2
+Ref=MEM_M1
+Language=de
+Posi=58 2
+[_FILE_READD 32501]
+Fam=FileSyst
+Face=Read
+FacePosi=l
+Width=15
+Init=y
+Vers=2
+In=Exec_EB Index_I Record_I 
+Out=Busy_B Error_B 
+C=Dir_Dx=91 File_Dx=124 Val_Dxd=23 
+S=Fs_2F LED_F 
+av0=bv Fs 0 %s =1 \v Fs 1 %s 
+aRef=2
+Ref=MEM_M1
+Language=de
+Posi=33 2
+[_FILE_WRITED 32502]
+Fam=FileSyst
+Face=Write
+FacePosi=l
+Width=15
+Init=y
+Vers=2
+In=Exec_EB Index_I 
+Out=Busy_B Error_B 
+C=Dir_Dx=91 File_Dx=124 Val_Dxd=23 
+S=Fs_2F LED_F 
+av0=bv Fs 0 %s =1 \v Fs 1 %s 
+aRef=2
+Ref=MEM_M1
+Language=de
+Posi=9 2
+[HLINE]
+H0=5 8 9)24 25)32 33)48 49)57 58)73 74)81 82)97 98
+H1=7 8 9)24 25)32 33)48 49)57 58)73 74)81 82)97 98
+H2=9 32 33)81 82
+H3=21 8 9)24 25)32 33)48 49)57 58)73 74)81 82)97 98
+H4=23 8 9)24 25)32 33)48 49)57 58)73 74)81 82)97 98
+H5=25 32 33)81 82
+H6=37 8 9)24 25)32 33)48 49
+H7=39 8 9)24 25)32 33)48 49
+H8=41 32 33
+[NETWORK]
+N0=Bo 8 5)if 9 5
+N1=Bof 24 5
+N2=Bo 32 5)if 33 5
+N3=Bof 48 5
+N4=Bo 57 5)if 58 5
+N5=Bof 73 5
+N6=Bo 81 5)if 82 5
+N7=Bof 97 5
+N8=Io 8 7)if 9 7
+N9=Bof 24 7
+N10=Io 32 7)if 33 7
+N11=Bof 48 7
+N12=Io 57 7)if 58 7
+N13=Bof 73 7
+N14=Io 81 7)if 82 7
+N15=Bof 97 7
+N16=Io 32 9)if 33 9
+N17=Io 81 9)if 82 9
+N18=Bo 8 21)if 9 21
+N19=Bof 24 21
+N20=Bo 32 21)if 33 21
+N21=Bof 48 21
+N22=Bo 57 21)if 58 21
+N23=Bof 73 21
+N24=Bo 81 21)if 82 21
+N25=Bof 97 21
+N26=Io 8 23)if 9 23
+N27=Bof 24 23
+N28=Io 32 23)if 33 23
+N29=Bof 48 23
+N30=Io 57 23)if 58 23
+N31=Bof 73 23
+N32=Io 81 23)if 82 23
+N33=Bof 97 23
+N34=Io 32 25)if 33 25
+N35=Io 81 25)if 82 25
+N36=Bo 8 37)if 9 37
+N37=Bof 24 37
+N38=Bo 32 37)if 33 37
+N39=Bof 48 37
+N40=Io 8 39)if 9 39
+N41=Bof 24 39
+N42=Io 32 39)if 33 39
+N43=Bof 48 39
+N44=Io 32 41)if 33 41
+[CONNS]
+Conn0=8 5 117 34 12
+Conn1=32 5 60 34 6
+Conn2=57 5 117 34 7
+Conn3=81 5 60 34 6
+Conn4=8 7 9 34 12
+Conn5=32 7 9 34 5
+Conn6=57 7 9 34 5
+Conn7=81 7 9 34 5
+Conn8=32 9 14 34 3
+Conn9=81 9 22 34 3
+Conn10=8 21 117 34 12
+Conn11=32 21 60 34 6
+Conn12=57 21 117 34 7
+Conn13=81 21 60 34 6
+Conn14=8 23 9 34 12
+Conn15=32 23 9 34 5
+Conn16=57 23 9 34 5
+Conn17=81 23 9 34 5
+Conn18=32 25 33 34 3
+Conn19=81 25 44 34 3
+Conn20=8 37 117 34 12
+Conn21=32 37 60 34 6
+Conn22=8 39 9 34 12
+Conn23=32 39 9 34 5
+Conn24=32 41 26 34 3
+[PAGEDEF]
+PageLen=6101
+[PAGE]
+Name=Email Jahresprg Trendversand
+RemarkSize=0
+CountOfLabels=40
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=1288
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_HEACLKY2 20091=
+_HEACLKY2 396=
+_HEACLKY2 20092=
+_HEACLKY2 20093=
+_HEACLKY2 20094=
+_HEACLKY2 20095=
+_HEACLKY2 407=
+_HEACLKY2 408=
+_HEACLKY2 409=
+_HEACLKY2 410=
+_HEACLKY2 411=
+_HEACLKY2 412=
+[_HEACLKY2 20091]
+Fam=heavclk
+Face=Clk_Y
+FacePosi=l
+Width=8
+Init=y
+Vers=5
+In=En_B 
+Out=Ch_B 
+S=Fs_2F Rs_4R LED_F 
+D=Rd_4R 
+av0=a hmi %s =0 {0,1} 
+av1=a Rs 0 %1D =0:101 {0..1231} 
+av2=a Rs 1 %1H =1200:1300 {0..2359} 
+av3=a Rs 2 %1D =0:101 {0..1231} 
+av4=a Rs 3 %1H =1200:1330 {0..2359} 
+av5=v Fs 0 %s \nabs 
+av6=a op %s =0 {0,1} 
+AcceptName=3
+Language=de
+Posi=41 2
+[_HEACLKY2 396]
+Fam=heavclk
+Face=Clk_Y
+FacePosi=l
+Width=8
+Init=y
+Vers=5
+In=En_B 
+Out=Ch_B 
+S=Fs_2F Rs_4R LED_F 
+D=Rd_4R 
+av0=a hmi %s =0 {0,1} 
+av1=a Rs 0 %1D =0:201 {0..1231} 
+av2=a Rs 1 %1H =1200:1300 {0..2359} 
+av3=a Rs 2 %1D =0:201 {0..1231} 
+av4=a Rs 3 %1H =1200:1330 {0..2359} 
+av5=v Fs 0 %s \nabs 
+av6=a op %s =0 {0,1} 
+AcceptName=3
+Language=de
+Posi=41 7
+[_HEACLKY2 20092]
+Fam=heavclk
+Face=Clk_Y
+FacePosi=l
+Width=8
+Init=y
+Vers=5
+In=En_B 
+Out=Ch_B 
+S=Fs_2F Rs_4R LED_F 
+D=Rd_4R 
+av0=a hmi %s =0 {0,1} 
+av1=a Rs 0 %1D =0:301 {0..1231} 
+av2=a Rs 1 %1H =1200:1300 {0..2359} 
+av3=a Rs 2 %1D =0:301 {0..1231} 
+av4=a Rs 3 %1H =1200:1330 {0..2359} 
+av5=v Fs 0 %s \nabs 
+av6=a op %s =0 {0,1} 
+AcceptName=3
+Language=de
+Posi=41 12
+[_HEACLKY2 20093]
+Fam=heavclk
+Face=Clk_Y
+FacePosi=l
+Width=8
+Init=y
+Vers=5
+In=En_B 
+Out=Ch_B 
+S=Fs_2F Rs_4R LED_F 
+D=Rd_4R 
+av0=a hmi %s =0 {0,1} 
+av1=a Rs 0 %1D =0:401 {0..1231} 
+av2=a Rs 1 %1H =1200:1300 {0..2359} 
+av3=a Rs 2 %1D =0:401 {0..1231} 
+av4=a Rs 3 %1H =1200:1330 {0..2359} 
+av5=v Fs 0 %s \nabs 
+av6=a op %s =0 {0,1} 
+AcceptName=3
+Language=de
+Posi=41 17
+[_HEACLKY2 20094]
+Fam=heavclk
+Face=Clk_Y
+FacePosi=l
+Width=8
+Init=y
+Vers=5
+In=En_B 
+Out=Ch_B 
+S=Fs_2F Rs_4R LED_F 
+D=Rd_4R 
+av0=a hmi %s =0 {0,1} 
+av1=a Rs 0 %1D =0:501 {0..1231} 
+av2=a Rs 1 %1H =1200:1300 {0..2359} 
+av3=a Rs 2 %1D =0:501 {0..1231} 
+av4=a Rs 3 %1H =1200:1330 {0..2359} 
+av5=v Fs 0 %s \nabs 
+av6=a op %s =0 {0,1} 
+AcceptName=3
+Language=de
+Posi=41 22
+[_HEACLKY2 20095]
+Fam=heavclk
+Face=Clk_Y
+FacePosi=l
+Width=8
+Init=y
+Vers=5
+In=En_B 
+Out=Ch_B 
+S=Fs_2F Rs_4R LED_F 
+D=Rd_4R 
+av0=a hmi %s =0 {0,1} 
+av1=a Rs 0 %1D =0:601 {0..1231} 
+av2=a Rs 1 %1H =1200:1300 {0..2359} 
+av3=a Rs 2 %1D =0:601 {0..1231} 
+av4=a Rs 3 %1H =1200:1330 {0..2359} 
+av5=v Fs 0 %s \nabs 
+av6=a op %s =0 {0,1} 
+AcceptName=3
+Language=de
+Posi=41 27
+[_HEACLKY2 407]
+Fam=heavclk
+Face=Clk_Y
+FacePosi=l
+Width=8
+Init=y
+Vers=5
+In=En_B 
+Out=Ch_B 
+S=Fs_2F Rs_4R LED_F 
+D=Rd_4R 
+av0=a hmi %s =0 {0,1} 
+av1=a Rs 0 %1D =0:1201 {0..1231} 
+av2=a Rs 1 %1H =1200:1300 {0..2359} 
+av3=a Rs 2 %1D =0:1201 {0..1231} 
+av4=a Rs 3 %1H =1200:1330 {0..2359} 
+av5=v Fs 0 %s \nabs 
+av6=a op %s =0 {0,1} 
+AcceptName=3
+Language=de
+Posi=41 57
+[_HEACLKY2 408]
+Fam=heavclk
+Face=Clk_Y
+FacePosi=l
+Width=8
+Init=y
+Vers=5
+In=En_B 
+Out=Ch_B 
+S=Fs_2F Rs_4R LED_F 
+D=Rd_4R 
+av0=a hmi %s =0 {0,1} 
+av1=a Rs 0 %1D =0:1101 {0..1231} 
+av2=a Rs 1 %1H =1200:1300 {0..2359} 
+av3=a Rs 2 %1D =0:1101 {0..1231} 
+av4=a Rs 3 %1H =1200:1330 {0..2359} 
+av5=v Fs 0 %s \nabs 
+av6=a op %s =0 {0,1} 
+AcceptName=3
+Language=de
+Posi=41 52
+[_HEACLKY2 409]
+Fam=heavclk
+Face=Clk_Y
+FacePosi=l
+Width=8
+Init=y
+Vers=5
+In=En_B 
+Out=Ch_B 
+S=Fs_2F Rs_4R LED_F 
+D=Rd_4R 
+av0=a hmi %s =0 {0,1} 
+av1=a Rs 0 %1D =0:1001 {0..1231} 
+av2=a Rs 1 %1H =1200:1300 {0..2359} 
+av3=a Rs 2 %1D =0:1001 {0..1231} 
+av4=a Rs 3 %1H =1200:1330 {0..2359} 
+av5=v Fs 0 %s \nabs 
+av6=a op %s =0 {0,1} 
+AcceptName=3
+Language=de
+Posi=41 47
+[_HEACLKY2 410]
+Fam=heavclk
+Face=Clk_Y
+FacePosi=l
+Width=8
+Init=y
+Vers=5
+In=En_B 
+Out=Ch_B 
+S=Fs_2F Rs_4R LED_F 
+D=Rd_4R 
+av0=a hmi %s =0 {0,1} 
+av1=a Rs 0 %1D =0:901 {0..1231} 
+av2=a Rs 1 %1H =1200:1300 {0..2359} 
+av3=a Rs 2 %1D =0:901 {0..1231} 
+av4=a Rs 3 %1H =1200:1330 {0..2359} 
+av5=v Fs 0 %s \nabs 
+av6=a op %s =0 {0,1} 
+AcceptName=3
+Language=de
+Posi=41 42
+[_HEACLKY2 411]
+Fam=heavclk
+Face=Clk_Y
+FacePosi=l
+Width=8
+Init=y
+Vers=5
+In=En_B 
+Out=Ch_B 
+S=Fs_2F Rs_4R LED_F 
+D=Rd_4R 
+av0=a hmi %s =0 {0,1} 
+av1=a Rs 0 %1D =0:801 {0..1231} 
+av2=a Rs 1 %1H =1200:1300 {0..2359} 
+av3=a Rs 2 %1D =0:801 {0..1231} 
+av4=a Rs 3 %1H =1200:1330 {0..2359} 
+av5=v Fs 0 %s \nabs 
+av6=a op %s =0 {0,1} 
+AcceptName=3
+Language=de
+Posi=41 37
+[_HEACLKY2 412]
+Fam=heavclk
+Face=Clk_Y
+FacePosi=l
+Width=8
+Init=y
+Vers=5
+In=En_B 
+Out=Ch_B 
+S=Fs_2F Rs_4R LED_F 
+D=Rd_4R 
+av0=a hmi %s =0 {0,1} 
+av1=a Rs 0 %1D =0:701 {0..1231} 
+av2=a Rs 1 %1H =1200:1300 {0..2359} 
+av3=a Rs 2 %1D =0:701 {0..1231} 
+av4=a Rs 3 %1H =1200:1330 {0..2359} 
+av5=v Fs 0 %s \nabs 
+av6=a op %s =0 {0,1} 
+AcceptName=3
+Language=de
+Posi=41 32
+[HLINE]
+H0=5 19 41)49 63
+H1=10 26 41)49 63
+H2=15 26 41)49 63
+H3=20 26 41)49 63
+H4=25 26 41)49 63
+H5=30 26 41)49 63
+H6=35 26 41)49 63
+H7=40 26 41)49 63
+H8=45 26 41)49 63
+H9=50 26 41)49 63
+H10=55 26 41)49 63
+H11=60 26 41)49 63
+[VLINE]
+V0=26 5 10)10 15)15 20)20 25)25 30)30 35)35 40)40 45)45 50)50 55)55 60
+[NETWORK]
+N0=Bo 19 5)if 41 5)if 41 60)if 41 55)if 41 50)if 41 45)if 41 40)if 41 35)if 41 30)if 41 25)if 41 20)if 41 15)if 41 10
+N1=Bof 49 5)i 63 5
+N2=Bof 49 10)i 63 10
+N3=Bof 49 15)i 63 15
+N4=Bof 49 20)i 63 20
+N5=Bof 49 25)i 63 25
+N6=Bof 49 30)i 63 30
+N7=Bof 49 35)i 63 35
+N8=Bof 49 40)i 63 40
+N9=Bof 49 45)i 63 45
+N10=Bof 49 50)i 63 50
+N11=Bof 49 55)i 63 55
+N12=Bof 49 60)i 63 60
+[CONNS]
+Conn0=19 5 102 34 5
+Conn1=63 5 116 33 14
+Conn2=63 10 21 33 14
+Conn3=63 15 123 33 14
+Conn4=63 20 8 33 14
+Conn5=63 25 101 33 14
+Conn6=63 30 78 33 14
+Conn7=63 35 67 33 14
+Conn8=63 40 43 33 14
+Conn9=63 45 25 33 14
+Conn10=63 50 122 33 14
+Conn11=63 55 115 33 15
+Conn12=63 60 72 33 14
+[PAGEDEF]
+PageLen=6138
+[PAGE]
+Name=Email Jahresprg Datum sichern
+RemarkSize=0
+CountOfLabels=45
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=1289
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_HEAMANI3 300=
+_IMOVES2 20096=
+_BOR 344=
+_BOR 20097=
+_HEAMANB3 20098=
+_IMOVES2 414=
+_ICMPEQ 415=
+_IDIV 416=
+_DDC_SPGENERAL22 417=
+_ISUB 423=
+_IDIV 420=
+_DDC_SPGENERAL22 421=
+_ISUB 424=
+_HEASW2 426=
+_ISUB 20099=
+_BDYN2 418=
+_FLIRSNDY2 419=
+_BOR 422=
+[_HEAMANI3 300]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_I 
+Out=_I 
+S=Fs_F Fsm_F Rsm_R LED_F 
+av0=a flw %s =0 {0,1} 
+av1=a Rsm 0 %1p =0 
+av2=bv Fs 0 %s =1 \v Fsm 0 %s 
+AcceptName=3
+Language=de
+Posi=56 28
+[_IMOVES2 20096]
+Fam=sfupinte
+Width=8
+Init=y
+In=Sto_EB In_I 
+Out=Out_I 
+S=Edg_F Old_R 
+av0=a opt %s =0 {0,1,2} 
+av1=a Old 0 =0 
+Language=de
+Posi=67 22
+[_BOR 344]
+Fam=sfupbina
+Face=>=1
+Width=3
+Init=n
+Stretch=1 9 1 1
+In=_NB 
+Out=_B 
+Language=de
+Posi=42 17
+[_BOR 20097]
+Fam=sfupbina
+Face=>=1
+Width=3
+Init=n
+Stretch=1 9 1 9
+In=_NB 
+Out=_B 
+Language=de
+Posi=35 1
+[_HEAMANB3 20098]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=56 22
+[_IMOVES2 414]
+Fam=sfupinte
+Width=8
+Init=y
+In=Sto_EB In_I 
+Out=Out_I 
+S=Edg_F Old_R 
+av0=a opt %s =0 {0,1,2} 
+av1=a Old 0 =0 
+Language=de
+Posi=67 32
+[_ICMPEQ 415]
+Fam=sfupinte
+Face=Cmp
+Width=4
+Init=n
+In=_I _I 
+Out==_B 
+Language=de
+Posi=34 30
+[_IDIV 416]
+Fam=sfupinte
+Face=Div
+Width=6
+Init=n
+In=A_I B_I 
+Out=A/B_I A%B_I 
+Language=de
+Posi=33 38
+[_DDC_SPGENERAL22 417]
+Fam=DDC Sollwerte
+Width=5
+Init=y
+Vers=200000
+Out=Val_I 
+S=Value_R 
+av0=c cs =0 \nabs 
+av1=a BACnet %s =0 {0..1} 
+av2=c c0 =0 \nabs 
+av3=a Value 0 %1p =210:10000 
+av4=c cc =0 \nabs 
+AcceptName=1
+Folder=Sollwerte.Integer?
+Variables0=Value Register;(4) Integerwert
+Language=de
+Posi=17 43
+[_ISUB 423]
+Fam=sfupinte
+Face=-
+Width=2
+Init=n
+In=_I _I 
+Out=_I 
+Language=de
+Posi=73 43
+[_IDIV 420]
+Fam=sfupinte
+Face=Div
+Width=6
+Init=n
+In=A_I B_I 
+Out=A/B_I A%B_I 
+Language=de
+Posi=33 47
+[_DDC_SPGENERAL22 421]
+Fam=DDC Sollwerte
+Width=5
+Init=y
+Vers=200000
+Out=Val_I 
+S=Value_R 
+av0=c cs =0 \nabs 
+av1=a BACnet %s =0 {0..1} 
+av2=c c0 =0 \nabs 
+av3=a Value 0 %1p =210:100 
+av4=c cc =0 \nabs 
+AcceptName=1
+Folder=Sollwerte.Integer?
+Variables0=Value Register;(4) Integerwert
+Language=de
+Posi=17 51
+[_ISUB 424]
+Fam=sfupinte
+Face=-
+Width=2
+Init=n
+In=_I _I 
+Out=_I 
+Language=de
+Posi=73 53
+[_HEASW2 426]
+Fam=heavac
+Face=Switch
+Width=6
+Init=y
+In=En_B V0_I V1_I 
+Out=V_I 
+AcceptName=3
+Language=de
+Posi=45 60
+[_ISUB 20099]
+Fam=sfupinte
+Face=-
+Width=2
+Init=n
+In=_I _I 
+Out=_I 
+Language=de
+Posi=37 66
+[_BDYN2 418]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0 {0..2} 
+Language=de
+Posi=34 25
+[_FLIRSNDY2 419]
+Fam=sfupflip
+Width=4
+Init=y
+In=R_B S_B 
+Out=Q_B 
+S=Sta_F 
+av0=a opt %s =2 {0,1,2} 
+av1=b Sta 0 %s =0 
+av2=b Sta 0 %s =1 
+Language=de
+Posi=35 59
+[_BOR 422]
+Fam=sfupbina
+Face=>=1
+Width=3
+Init=n
+Stretch=1 9 1 2
+In=_NB 
+Out=_B 
+Language=de
+Posi=49 22
+[HLINE]
+H0=2 23 35)38 39
+H1=3 24 35
+H2=4 23 24)25 35
+H3=5 26 35
+H4=6 23 25)27 35
+H5=7 28 35
+H6=8 23 26)29 35
+H7=9 30 35
+H8=10 23 27)31 35
+H9=11 32 35
+H10=12 23 28
+H11=14 23 29
+H12=16 23 30
+H13=17 46 81
+H14=18 23 31)39 42)45 46
+H15=19 33 42)64 81
+H16=20 23 32
+H17=22 23 33
+H18=23 46 49)52 56)62 67)75 81
+H19=24 23 49
+H20=25 39 49)65 67
+H21=26 23 34)38 39
+H22=29 23 56)62 65
+H23=31 23 34
+H24=32 33 34
+H25=33 23 33)38 67)75 81
+H26=35 65 67
+H27=41 23 33)39 81
+H28=43 24 33)39 40
+H29=44 22 24)71 73)75 81
+H30=45 69 73
+H31=50 30 33)39 81
+H32=52 22 33)39 40
+H33=54 71 73)75 81
+H34=55 23 73
+H35=60 23 35)39 40
+H36=62 23 35
+H37=63 40 45)51 81
+H38=65 23 45
+H39=67 23 37)39 45
+H40=68 36 37
+H41=69 23 36
+[VLINE]
+V0=24 3 4)43 44
+V1=25 4 6
+V2=26 5 8
+V3=27 6 10
+V4=28 7 12
+V5=29 8 14
+V6=30 9 16)41 50
+V7=31 10 18
+V8=32 11 20
+V9=33 19 22)32 33
+V10=36 68 69
+V11=39 2 18)25 26
+V12=40 60 63
+V13=46 17 18)18 23
+V14=64 19 23
+V15=65 25 29)29 35
+V16=69 45 55
+V17=71 41 44)50 54
+[NETWORK]
+N0=Bo 23 2)if 35 2
+N1=Bof 38 2)if 42 18
+N2=Bif 35 3)o 23 4
+N3=Bif 35 4)o 23 6
+N4=Bif 35 5)o 23 8
+N5=Bif 35 6)o 23 10
+N6=Bif 35 7)o 23 12
+N7=Bif 35 8)o 23 14
+N8=Bif 35 9)o 23 16
+N9=Bif 35 10)o 23 18
+N10=Bif 35 11)o 23 20
+N11=Bi 81 17)if 49 23)of 45 18
+N12=Bif 42 19)o 23 22
+N13=Bi 81 19)if 67 23)of 62 23
+N14=Bof 52 23)if 56 23
+N15=Iof 75 23)i 81 23
+N16=Bo 23 24)if 49 24
+N17=Bif 49 25)of 38 26
+N18=Iif 67 25)if 67 35)of 62 29
+N19=Bo 23 26)if 34 26
+N20=Io 23 29)if 56 29
+N21=Io 23 31)if 34 31
+N22=Iif 34 32)o 23 33
+N23=Bof 38 33)if 67 33
+N24=Iof 75 33)i 81 33
+N25=Io 23 41)if 33 41)if 33 50
+N26=Iof 39 41)i 81 41)if 73 44
+N27=Iif 33 43)of 22 44
+N28=Iof 39 43
+N29=Iof 75 44)i 81 44
+N30=Iif 73 45)if 73 55)o 23 55
+N31=Iof 39 50)i 81 50)if 73 54
+N32=Iof 22 52)if 33 52
+N33=Iof 39 52
+N34=Iof 75 54)i 81 54
+N35=Bo 23 60)if 35 60
+N36=Bof 39 60)if 45 63
+N37=Bo 23 62)if 35 62
+N38=Iof 51 63)i 81 63
+N39=Io 23 65)if 45 65
+N40=Io 23 67)if 37 67
+N41=Iof 39 67)if 45 67
+N42=Iif 37 68)o 23 69
+[CONNS]
+Conn0=23 2 21 34 14
+Conn1=23 4 123 34 14
+Conn2=23 6 8 34 14
+Conn3=23 8 101 34 14
+Conn4=23 10 78 34 14
+Conn5=23 12 67 34 14
+Conn6=23 14 43 34 14
+Conn7=23 16 25 34 14
+Conn8=81 17 121 33 16
+Conn9=23 18 122 34 14
+Conn10=81 19 42 33 15
+Conn11=23 20 115 34 15
+Conn12=23 22 72 34 14
+Conn13=81 23 20 33 16
+Conn14=23 24 116 34 14
+Conn15=23 26 30 34 20
+Conn16=23 29 84 34 20
+Conn17=23 31 108 34 18
+Conn18=23 33 52 34 3
+Conn19=81 33 24 33 16
+Conn20=23 41 20 34 16
+Conn21=81 41 130 33 16
+Conn22=81 44 41 33 16
+Conn23=81 50 32 33 16
+Conn24=81 54 120 33 16
+Conn25=23 55 7 34 3
+Conn26=23 60 121 34 16
+Conn27=23 62 116 34 14
+Conn28=81 63 100 33 16
+Conn29=23 65 120 34 16
+Conn30=23 67 20 34 16
+Conn31=23 69 6 34 3
+[PAGEDEF]
+PageLen=5736
+[PAGE]
+Name=EMAIL Meldungen Versand
+RemarkSize=0
+CountOfLabels=45
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=70
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_DDC_ALGENERAL05 32235=
+_CWM_SEND_CMAIL 299=
+_DDC_ALGENERAL05 32236=
+_CWM_SEND_CMAIL 32237=
+_DDC_ALGENERAL05 32238=
+_CWM_SEND_CMAIL 32239=
+_DDC_ALGENERAL05 32242=
+_CWM_SEND_CMAIL 32243=
+_HEAMANB3 32244=
+_HEAMANB3 32245=
+_HEAMANB3 32246=
+_HEAMANB3 32247=
+[_DDC_ALGENERAL05 32235]
+Fam=DDC Stoerungen
+Width=4
+Init=y
+Vers=105000
+In=Us_B 
+Out=e_B 
+S=Verwende_F=40 
+av0=a Verwende 0 %s =0 {0,1} 
+av1=c cc =0 \nabs 
+AcceptName=1
+Folder=Stoerungen.Verwenden?
+Variables0=Verwende Verwenden;(4) Vorwahl ob die am Eingang anliegende Meldung am Ausgang weitergeleitet werd
+Language=de
+Posi=27 4
+[_CWM_SEND_CMAIL 299]
+Fam=Communication Email
+Face=AMail Send
+FacePosi=l
+Width=16
+Init=y
+Vers=104300
+In=Send_EB 
+Out=Busy_B 
+C=Subject_Dx=12 Text_Dx=129 File_Dx=99 
+S=To_R LED_F Flags_3F Texts_2^X Priority_R 
+D=Register_2R 
+av0=a To 0 =1 {1..5} 
+av1=a Priority 0 =1 {1..5} 
+av2=a Format %s =0 {0..1} 
+AcceptName=1
+aRef=2
+Ref=WebMail
+Folder=Communication.AMailSend?
+Variables0=To Recipient;Nummer der Empfänger/-liste, die in der FBox "Text Mail Init" definiert wurde
+Variables1=Priority Priority;Mail Priorität (1...5, wichtig...normal)
+Language=de
+Posi=45 2
+[_DDC_ALGENERAL05 32236]
+Fam=DDC Stoerungen
+Width=4
+Init=y
+Vers=105000
+In=Us_B 
+Out=e_B 
+S=Verwende_F=51 
+av0=a Verwende 0 %s =0 {0,1} 
+av1=c cc =0 \nabs 
+AcceptName=1
+Folder=Stoerungen.Verwenden?
+Variables0=Verwende Verwenden;(4) Vorwahl ob die am Eingang anliegende Meldung am Ausgang weitergeleitet werd
+Language=de
+Posi=27 19
+[_CWM_SEND_CMAIL 32237]
+Fam=Communication Email
+Face=AMail Send
+FacePosi=l
+Width=16
+Init=y
+Vers=104300
+In=Send_EB 
+Out=Busy_B 
+C=Subject_Dx=12 Text_Dx=76 File_Dx=83 
+S=To_R LED_F Flags_3F Texts_2^X Priority_R 
+D=Register_2R 
+av0=a To 0 =1 {1..5} 
+av1=a Priority 0 =1 {1..5} 
+av2=a Format %s =0 {0..1} 
+AcceptName=1
+aRef=2
+Ref=WebMail
+Folder=Communication.AMailSend?
+Variables0=To Recipient;Nummer der Empfänger/-liste, die in der FBox "Text Mail Init" definiert wurde
+Variables1=Priority Priority;Mail Priorität (1...5, wichtig...normal)
+Language=de
+Posi=45 17
+[_DDC_ALGENERAL05 32238]
+Fam=DDC Stoerungen
+Width=4
+Init=y
+Vers=105000
+In=Us_B 
+Out=e_B 
+S=Verwende_F=90 
+av0=a Verwende 0 %s =0 {0,1} 
+av1=c cc =0 \nabs 
+AcceptName=1
+Folder=Stoerungen.Verwenden?
+Variables0=Verwende Verwenden;(4) Vorwahl ob die am Eingang anliegende Meldung am Ausgang weitergeleitet werd
+Language=de
+Posi=27 34
+[_CWM_SEND_CMAIL 32239]
+Fam=Communication Email
+Face=AMail Send
+FacePosi=l
+Width=16
+Init=y
+Vers=104300
+In=Send_EB 
+Out=Busy_B 
+C=Subject_Dx=12 Text_Dx=114 File_Dx=5 
+S=To_R LED_F Flags_3F Texts_2^X Priority_R 
+D=Register_2R 
+av0=a To 0 =1 {1..5} 
+av1=a Priority 0 =1 {1..5} 
+av2=a Format %s =0 {0..1} 
+AcceptName=1
+aRef=2
+Ref=WebMail
+Folder=Communication.AMailSend?
+Variables0=To Recipient;Nummer der Empfänger/-liste, die in der FBox "Text Mail Init" definiert wurde
+Variables1=Priority Priority;Mail Priorität (1...5, wichtig...normal)
+Language=de
+Posi=45 32
+[_DDC_ALGENERAL05 32242]
+Fam=DDC Stoerungen
+Width=4
+Init=y
+Vers=105000
+In=Us_B 
+Out=e_B 
+S=Verwende_F=4 
+av0=a Verwende 0 %s =0 {0,1} 
+av1=c cc =0 \nabs 
+AcceptName=1
+Folder=Stoerungen.Verwenden?
+Variables0=Verwende Verwenden;(4) Vorwahl ob die am Eingang anliegende Meldung am Ausgang weitergeleitet werd
+Language=de
+Posi=27 49
+[_CWM_SEND_CMAIL 32243]
+Fam=Communication Email
+Face=AMail Send
+FacePosi=l
+Width=16
+Init=y
+Vers=104300
+In=Send_EB 
+Out=Busy_B 
+C=Subject_Dx=12 Text_Dx=58 File_Dx=50 
+S=To_R LED_F Flags_3F Texts_2^X Priority_R 
+D=Register_2R 
+av0=a To 0 =1 {1..5} 
+av1=a Priority 0 =1 {1..5} 
+av2=a Format %s =0 {0..1} 
+AcceptName=1
+aRef=2
+Ref=WebMail
+Folder=Communication.AMailSend?
+Variables0=To Recipient;Nummer der Empfänger/-liste, die in der FBox "Text Mail Init" definiert wurde
+Variables1=Priority Priority;Mail Priorität (1...5, wichtig...normal)
+Language=de
+Posi=45 47
+[_HEAMANB3 32244]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=36 4
+[_HEAMANB3 32245]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=36 19
+[_HEAMANB3 32246]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=36 34
+[_HEAMANB3 32247]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=36 49
+[HLINE]
+H0=5 24 27)31 36)42 45)61 78
+H1=20 24 27)31 36)42 45)61 78
+H2=35 24 27)31 36)42 45)61 78
+H3=50 24 27)31 36)42 45)61 78
+[NETWORK]
+N0=Bo 24 5)if 27 5
+N1=Bof 31 5)if 36 5
+N2=Bof 42 5)if 45 5
+N3=Bof 61 5
+N4=Bo 24 20)if 27 20
+N5=Bof 31 20)if 36 20
+N6=Bof 42 20)if 45 20
+N7=Bof 61 20
+N8=Bo 24 35)if 27 35
+N9=Bof 31 35)if 36 35
+N10=Bof 42 35)if 45 35
+N11=Bof 61 35
+N12=Bo 24 50)if 27 50
+N13=Bof 31 50)if 36 50
+N14=Bof 42 50)if 45 50
+N15=Bof 61 50
+[CONNS]
+Conn0=24 5 42 34 15
+Conn1=24 20 66 34 16
+Conn2=24 35 77 34 16
+Conn3=24 50 107 34 16
+[PAGEDEF]
+PageLen=8647
+[PAGE]
+Name=Marktdaten
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=1308
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_HEAMANB3 32426=
+_BDYN2 32469=
+_DDC_ALGENERAL05 32427=
+_FILE_DELFILE 32409=
+_FILE_GETLEN 32423=
+_BDYN2 32451=
+_BDYN2 32452=
+_BOR 32454=
+_BDYN2 32453=
+_XPULSE 32463=
+_ONDEL 32476=
+_BAND 32462=
+_BOR 32473=
+_BDYN2 32471=
+_BOR 32468=
+_BDYN2 32470=
+_BAND 32458=
+_BAND 32475=
+_ICMPGT 32467=
+_BAND 32474=
+_ICMPEQ 32466=
+_BDYN2 32477=
+_ICMPSE 32479=
+_BDYN2 32448=
+_BOR 32441=
+_ICMPSE 32480=
+_XPULSE 32428=
+_BDYN2 32447=
+_XPULSE 32422=
+[_HEAMANB3 32426]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=38 80
+[_BDYN2 32469]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0:2 {0..2} 
+Language=de
+Posi=29 66
+[_DDC_ALGENERAL05 32427]
+Fam=DDC Stoerungen
+Width=4
+Init=y
+Vers=105000
+In=Us_B 
+Out=e_B 
+S=Verwende_F 
+av0=a Verwende 0 %s =0:1 {0,1} 
+av1=c cc =0 \nabs 
+AcceptName=1
+Folder=Stoerungen.Verwenden?
+Variables0=Verwende Verwenden;(4) Vorwahl ob die am Eingang anliegende Meldung am Ausgang weitergeleitet werd
+Language=de
+Posi=31 80
+[_FILE_DELFILE 32409]
+Fam=FileSyst
+Face=DeleteFile
+FacePosi=l
+Width=15
+Init=y
+Vers=2
+In=Exec_EB Index_I 
+Out=Busy_B Error_B 
+C=Dir_Dx=91 File_Dx=96 
+S=Fs_2F LED_F 
+av0=a IDX %s =-1 {-1,0..10} 
+av1=a EXT %s =1 {0,1,11,12,21,22,31} 
+av2=bv Fs 0 %s =1 \v Fs 1 %s 
+aRef=2
+Ref=MEM_M1
+Language=de
+Posi=49 78
+[_FILE_GETLEN 32423]
+Fam=FileSyst
+Face=GetFileLength
+FacePosi=l
+Width=15
+Init=y
+Vers=2
+In=Exec_EB Index_I 
+Out=Busy_B Error_B Length_I 
+C=Dir_Dx=91 File_Dx=96 
+S=Fs_2F LED_F 
+av0=a IDX %s =-1 {-1,0..10} 
+av1=a EXT %s =1 {0,1,11,12,21,22,31} 
+av2=bv Fs 0 %s =1 \v Fs 1 %s 
+aRef=2
+Ref=MEM_M1
+Language=de
+Posi=49 64
+[_BDYN2 32451]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0:2 {0..2} 
+Language=de
+Posi=29 63
+[_BDYN2 32452]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0:2 {0..2} 
+Language=de
+Posi=29 60
+[_BOR 32454]
+Fam=sfupbina
+Face=>=1
+Width=3
+Init=n
+Stretch=1 9 1 3
+In=_NB 
+Out=_B 
+Language=de
+Posi=43 57
+[_BDYN2 32453]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0:2 {0..2} 
+Language=de
+Posi=29 57
+[_XPULSE 32463]
+Fam=sfuptime
+Face=XPulse
+Width=7
+Init=y
+In=In_EB TV_I 
+Out=Q_B t_I 
+S=Tim_T Sta_F 
+Language=de
+Posi=52 50
+[_ONDEL 32476]
+Fam=sfuptime
+Face=T|-|0
+Width=6
+Init=y
+In=In_EB TV_I 
+Out=Q_B t_I 
+S=Tim_T Sta_F 
+Language=de
+Posi=64 40
+[_BAND 32462]
+Fam=sfupbina
+Face=&&
+Width=2
+Init=n
+Stretch=1 9 1 3
+In=_NB 
+Out=_B 
+Language=de
+Posi=56 40
+[_BOR 32473]
+Fam=sfupbina
+Face=>=1
+Width=3
+Init=n
+Stretch=1 9 1 1
+In=_NB 
+Out=_B 
+Language=de
+Posi=41 40
+[_BDYN2 32471]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0:2 {0..2} 
+Language=de
+Posi=66 37
+[_BOR 32468]
+Fam=sfupbina
+Face=>=1
+Width=3
+Init=n
+Stretch=1 9 1 1
+In=_NB 
+Out=_B 
+Language=de
+Posi=73 34
+[_BDYN2 32470]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0:2 {0..2} 
+Language=de
+Posi=66 34
+[_BAND 32458]
+Fam=sfupbina
+Face=&&
+Width=2
+Init=n
+Stretch=1 9 1 1
+In=_NB 
+Out=_B 
+Language=de
+Posi=56 34
+[_BAND 32475]
+Fam=sfupbina
+Face=&&
+Width=2
+Init=n
+Stretch=1 9 1 1
+In=_NB 
+Out=_B 
+Language=de
+Posi=66 30
+[_ICMPGT 32467]
+Fam=sfupinte
+Face=Cmp
+Width=4
+Init=n
+In=_I _I 
+Out=>_B 
+Language=de
+Posi=55 28
+[_BAND 32474]
+Fam=sfupbina
+Face=&&
+Width=2
+Init=n
+Stretch=1 9 1 1
+In=_NB 
+Out=_B 
+Language=de
+Posi=66 25
+[_ICMPEQ 32466]
+Fam=sfupinte
+Face=Cmp
+Width=4
+Init=n
+In=_I _I 
+Out==_B 
+Language=de
+Posi=55 23
+[_BDYN2 32477]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0:2 {0..2} 
+Language=de
+Posi=39 17
+[_ICMPSE 32479]
+Fam=sfupinte
+Face=Cmp
+Width=4
+Init=n
+In=_I _I 
+Out=<=_B 
+Language=de
+Posi=32 15
+[_BDYN2 32448]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0:2 {0..2} 
+Language=de
+Posi=39 12
+[_BOR 32441]
+Fam=sfupbina
+Face=>=1
+Width=3
+Init=n
+Stretch=1 9 1 2
+In=_NB 
+Out=_B 
+Language=de
+Posi=48 10
+[_ICMPSE 32480]
+Fam=sfupinte
+Face=Cmp
+Width=4
+Init=n
+In=_I _I 
+Out=<=_B 
+Language=de
+Posi=32 10
+[_XPULSE 32428]
+Fam=sfuptime
+Face=XPulse
+Width=7
+Init=y
+In=In_EB TV_I 
+Out=Q_B t_I 
+S=Tim_T Sta_F 
+Language=de
+Posi=54 9
+[_BDYN2 32447]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0:2 {0..2} 
+Language=de
+Posi=39 8
+[_XPULSE 32422]
+Fam=sfuptime
+Face=XPulse
+Width=7
+Init=y
+In=In_EB TV_I 
+Out=Q_B t_I 
+S=Tim_T Sta_F 
+Language=de
+Posi=54 2
+[HLINE]
+H0=5 26 54)61 79
+H1=7 26 54)61 62
+H2=9 26 39)43 47
+H3=11 26 32)47 48)51 53
+H4=12 30 32)46 48)53 54)61 79
+H5=13 36 39)43 46)47 48
+H6=14 52 54)61 62
+H7=16 26 32
+H8=17 30 32
+H9=18 26 30)36 39)43 47
+H10=20 26 52
+H11=24 26 55
+H12=25 53 55
+H13=26 59 66)68 79
+H14=27 63 66
+H15=29 52 55
+H16=30 26 55
+H17=31 59 66)68 79
+H18=32 65 66
+H19=33 26 65
+H20=35 26 56)58 66)70 73)76 79
+H21=36 55 56)71 73
+H22=37 26 55
+H23=38 61 66)70 71
+H24=41 26 41)44 45)53 56)58 59
+H25=42 40 41)45 56
+H26=43 26 40)45 56)59 64)70 79
+H27=44 46 56
+H28=45 26 45)59 64)70 71
+H29=47 26 46
+H30=49 26 59
+H31=53 26 52)59 79
+H32=55 26 52)59 60
+H33=58 25 29)33 43)46 47
+H34=59 34 43
+H35=60 35 43
+H36=61 25 29)33 34)36 43
+H37=64 25 29)33 35
+H38=67 25 29)33 36)47 49)64 79
+H39=69 26 49)64 79
+H40=71 64 79
+H41=81 26 31)35 38)44 49)64 79
+H42=83 26 49)64 65
+[VLINE]
+V0=30 12 17)17 18
+V1=34 59 61
+V2=35 60 64
+V3=36 61 67
+V4=40 42 43
+V5=45 41 42)43 45
+V6=46 12 13)44 47
+V7=47 9 11)13 18)58 67
+V8=52 14 20)24 29
+V9=53 11 12)25 30)35 41
+V10=55 36 37
+V11=59 41 43)45 49
+V12=61 31 38
+V13=63 27 33
+V14=65 32 33
+V15=71 36 38
+[NETWORK]
+N0=Bo 26 5)if 54 5
+N1=Bof 61 5)i 79 5
+N2=Io 26 7)if 54 7
+N3=Iof 61 7
+N4=Bo 26 9)if 39 9
+N5=Bof 43 9)if 48 11
+N6=Io 26 11)if 32 11
+N7=Bof 51 11)if 54 12
+N8=Iif 32 12)o 26 18)if 32 17
+N9=Bif 48 12)of 43 13
+N10=Bof 61 12)i 79 12
+N11=Bof 36 13)if 39 13
+N12=Bif 48 13)of 43 18
+N13=Iif 54 14)o 26 20
+N14=Iof 61 14
+N15=Io 26 16)if 32 16
+N16=Bof 36 18)if 39 18
+N17=Io 26 24)if 55 24)if 55 29
+N18=Iif 55 25)if 55 30)o 26 30
+N19=Bof 59 26)if 66 26
+N20=Bof 68 26)i 79 26
+N21=Bif 66 27)if 66 32)o- 26 33
+N22=Bof 59 31)if 66 31)if 66 38
+N23=Bof 68 31)i 79 31
+N24=Bo 26 35)if 56 35)if 56 41
+N25=Bof 58 35)if 66 35
+N26=Bof 70 35)if 73 35
+N27=Bof 76 35)i 79 35
+N28=Bif 56 36)o 26 37
+N29=Bif 73 36)of 70 38
+N30=Bo- 26 41)if 41 41
+N31=Bof 44 41)if 56 42
+N32=Bof 58 41)if 64 43
+N33=Bif 41 42)o- 26 43
+N34=Bif 56 43)o- 26 45
+N35=Bof 70 43)i 79 43
+N36=Bif 56 44)o- 26 47
+N37=Iif 64 45)o 26 49
+N38=Iof 70 45
+N39=Bo- 26 53)if 52 53
+N40=Bof 59 53)i 79 53
+N41=Io 26 55)if 52 55
+N42=Iof 59 55
+N43=Bo 25 58)if 29 58
+N44=Bof 33 58)if 43 58
+N45=Bof 46 58)if 49 67
+N46=Bif 43 59)of 33 61
+N47=Bif 43 60)of 33 64
+N48=Bo 25 61)if 29 61
+N49=Bif 43 61)of 33 67
+N50=Bo 25 64)if 29 64
+N51=Bo 25 67)if 29 67
+N52=Bof 64 67)i 79 67
+N53=Io 26 69)if 49 69
+N54=Bof 64 69)i 79 69
+N55=Iof 64 71)i 79 71
+N56=Bo 26 81)if 31 81
+N57=Bof 35 81)if 38 81
+N58=Bof 44 81)if 49 81
+N59=Bof 64 81)i 79 81
+N60=Io 26 83)if 49 83
+N61=Bof 64 83
+[CONNS]
+Conn0=26 5 82 34 12
+Conn1=79 5 82 33 12
+Conn2=26 7 98 34 3
+Conn3=26 9 57 34 12
+Conn4=26 11 113 34 20
+Conn5=79 12 57 33 12
+Conn6=26 16 19 34 16
+Conn7=26 18 33 34 3
+Conn8=26 20 80 34 3
+Conn9=26 24 18 34 14
+Conn10=79 26 31 33 13
+Conn11=26 30 89 34 3
+Conn12=79 31 128 33 12
+Conn13=26 33 49 34 13
+Conn14=26 35 82 34 12
+Conn15=79 35 65 33 11
+Conn16=26 37 31 34 13
+Conn17=26 41 31 34 13
+Conn18=26 43 128 34 12
+Conn19=79 43 3 33 11
+Conn20=26 45 39 34 13
+Conn21=26 47 65 34 11
+Conn22=26 49 10 34 3
+Conn23=26 53 82 34 12
+Conn24=79 53 112 33 13
+Conn25=26 55 94 34 3
+Conn26=25 58 82 34 12
+Conn27=25 61 57 34 12
+Conn28=25 64 34 34 20
+Conn29=25 67 112 34 13
+Conn30=79 67 17 33 14
+Conn31=26 69 9 34 5
+Conn32=79 69 49 33 13
+Conn33=79 71 18 33 14
+Conn34=26 81 65 34 11
+Conn35=79 81 39 33 13
+Conn36=26 83 9 34 5
+Conn37=26 85 16 34 15
+Conn38=26 87 12 34 17
+Conn39=26 89 127 34 13
+Conn40=26 91 119 34 11
+Conn41=26 93 111 34 11
+Conn42=26 95 106 34 10
+Conn43=26 97 97 34 10
+Conn44=26 99 88 34 11
+[PAGEDEF]
+PageLen=7480
+[PAGE]
+Name=Marktdaten Write to File
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=1306
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_FILE_READD 32410=
+_FILE_WRITED 32411=
+_FILE_READD 32405=
+_FILE_WRITED 32406=
+_FILE_READD 32407=
+_FILE_WRITED 32408=
+_FILE_READD 32400=
+_FILE_WRITED 32399=
+_FILE_READD 32398=
+_FILE_WRITED 32397=
+_FILE_READD 32414=
+_FILE_WRITED 32415=
+_FILE_READD 32418=
+_FILE_WRITED 32419=
+_FILE_READD 32420=
+_FILE_WRITED 32421=
+[_FILE_READD 32410]
+Fam=FileSyst
+Face=Read
+FacePosi=l
+Width=15
+Init=y
+Vers=2
+In=Exec_EB Index_I Record_I 
+Out=Busy_B Error_B 
+C=Dir_Dx=91 File_Dx=96 Val_Dxd=111 
+S=Fs_2F LED_F 
+av0=bv Fs 0 %s =1 \v Fs 1 %s 
+aRef=2
+Ref=MEM_M1
+Language=de
+Posi=33 66
+[_FILE_WRITED 32411]
+Fam=FileSyst
+Face=Write
+FacePosi=l
+Width=15
+Init=y
+Vers=2
+In=Exec_EB Index_I 
+Out=Busy_B Error_B 
+C=Dir_Dx=91 File_Dx=96 Val_Dxd=111 
+S=Fs_2F LED_F 
+av0=bv Fs 0 %s =1 \v Fs 1 %s 
+aRef=2
+Ref=MEM_M1
+Language=de
+Posi=9 66
+[_FILE_READD 32405]
+Fam=FileSyst
+Face=Read
+FacePosi=l
+Width=15
+Init=y
+Vers=2
+In=Exec_EB Index_I Record_I 
+Out=Busy_B Error_B 
+C=Dir_Dx=91 File_Dx=96 Val_Dxd=119 
+S=Fs_2F LED_F 
+av0=bv Fs 0 %s =1 \v Fs 1 %s 
+aRef=2
+Ref=MEM_M1
+Language=de
+Posi=33 50
+[_FILE_WRITED 32406]
+Fam=FileSyst
+Face=Write
+FacePosi=l
+Width=15
+Init=y
+Vers=2
+In=Exec_EB Index_I 
+Out=Busy_B Error_B 
+C=Dir_Dx=91 File_Dx=96 Val_Dxd=119 
+S=Fs_2F LED_F 
+av0=bv Fs 0 %s =1 \v Fs 1 %s 
+aRef=2
+Ref=MEM_M1
+Language=de
+Posi=9 50
+[_FILE_READD 32407]
+Fam=FileSyst
+Face=Read
+FacePosi=l
+Width=15
+Init=y
+Vers=2
+In=Exec_EB Index_I Record_I 
+Out=Busy_B Error_B 
+C=Dir_Dx=91 File_Dx=96 Val_Dxd=127 
+S=Fs_2F LED_F 
+av0=bv Fs 0 %s =1 \v Fs 1 %s 
+aRef=2
+Ref=MEM_M1
+Language=de
+Posi=33 34
+[_FILE_WRITED 32408]
+Fam=FileSyst
+Face=Write
+FacePosi=l
+Width=15
+Init=y
+Vers=2
+In=Exec_EB Index_I 
+Out=Busy_B Error_B 
+C=Dir_Dx=91 File_Dx=96 Val_Dxd=127 
+S=Fs_2F LED_F 
+av0=bv Fs 0 %s =1 \v Fs 1 %s 
+aRef=2
+Ref=MEM_M1
+Language=de
+Posi=9 34
+[_FILE_READD 32400]
+Fam=FileSyst
+Face=Read
+FacePosi=l
+Width=15
+Init=y
+Vers=2
+In=Exec_EB Index_I Record_I 
+Out=Busy_B Error_B 
+C=Dir_Dx=91 File_Dx=96 Val_Dxd=12 
+S=Fs_2F LED_F 
+av0=bv Fs 0 %s =1 \v Fs 1 %s 
+aRef=2
+Ref=MEM_M1
+Language=de
+Posi=33 18
+[_FILE_WRITED 32399]
+Fam=FileSyst
+Face=Write
+FacePosi=l
+Width=15
+Init=y
+Vers=2
+In=Exec_EB Index_I 
+Out=Busy_B Error_B 
+C=Dir_Dx=91 File_Dx=96 Val_Dxd=12 
+S=Fs_2F LED_F 
+av0=bv Fs 0 %s =1 \v Fs 1 %s 
+aRef=2
+Ref=MEM_M1
+Language=de
+Posi=9 18
+[_FILE_READD 32398]
+Fam=FileSyst
+Face=Read
+FacePosi=l
+Width=15
+Init=y
+Vers=2
+In=Exec_EB Index_I Record_I 
+Out=Busy_B Error_B 
+C=Dir_Dx=91 File_Dx=96 Val_Dxd=16 
+S=Fs_2F LED_F 
+av0=bv Fs 0 %s =1 \v Fs 1 %s 
+aRef=2
+Ref=MEM_M1
+Language=de
+Posi=33 2
+[_FILE_WRITED 32397]
+Fam=FileSyst
+Face=Write
+FacePosi=l
+Width=15
+Init=y
+Vers=2
+In=Exec_EB Index_I 
+Out=Busy_B Error_B 
+C=Dir_Dx=91 File_Dx=96 Val_Dxd=16 
+S=Fs_2F LED_F 
+av0=bv Fs 0 %s =1 \v Fs 1 %s 
+aRef=2
+Ref=MEM_M1
+Language=de
+Posi=9 2
+[_FILE_READD 32414]
+Fam=FileSyst
+Face=Read
+FacePosi=l
+Width=15
+Init=y
+Vers=2
+In=Exec_EB Index_I Record_I 
+Out=Busy_B Error_B 
+C=Dir_Dx=91 File_Dx=96 Val_Dxd=106 
+S=Fs_2F LED_F 
+av0=bv Fs 0 %s =1 \v Fs 1 %s 
+aRef=2
+Ref=MEM_M1
+Language=de
+Posi=33 82
+[_FILE_WRITED 32415]
+Fam=FileSyst
+Face=Write
+FacePosi=l
+Width=15
+Init=y
+Vers=2
+In=Exec_EB Index_I 
+Out=Busy_B Error_B 
+C=Dir_Dx=91 File_Dx=96 Val_Dxd=106 
+S=Fs_2F LED_F 
+av0=bv Fs 0 %s =1 \v Fs 1 %s 
+aRef=2
+Ref=MEM_M1
+Language=de
+Posi=9 82
+[_FILE_READD 32418]
+Fam=FileSyst
+Face=Read
+FacePosi=l
+Width=15
+Init=y
+Vers=2
+In=Exec_EB Index_I Record_I 
+Out=Busy_B Error_B 
+C=Dir_Dx=91 File_Dx=96 Val_Dxd=97 
+S=Fs_2F LED_F 
+av0=bv Fs 0 %s =1 \v Fs 1 %s 
+aRef=2
+Ref=MEM_M1
+Language=de
+Posi=82 2
+[_FILE_WRITED 32419]
+Fam=FileSyst
+Face=Write
+FacePosi=l
+Width=15
+Init=y
+Vers=2
+In=Exec_EB Index_I 
+Out=Busy_B Error_B 
+C=Dir_Dx=91 File_Dx=96 Val_Dxd=97 
+S=Fs_2F LED_F 
+av0=bv Fs 0 %s =1 \v Fs 1 %s 
+aRef=2
+Ref=MEM_M1
+Language=de
+Posi=58 2
+[_FILE_READD 32420]
+Fam=FileSyst
+Face=Read
+FacePosi=l
+Width=15
+Init=y
+Vers=2
+In=Exec_EB Index_I Record_I 
+Out=Busy_B Error_B 
+C=Dir_Dx=91 File_Dx=96 Val_Dxd=88 
+S=Fs_2F LED_F 
+av0=bv Fs 0 %s =1 \v Fs 1 %s 
+aRef=2
+Ref=MEM_M1
+Language=de
+Posi=82 18
+[_FILE_WRITED 32421]
+Fam=FileSyst
+Face=Write
+FacePosi=l
+Width=15
+Init=y
+Vers=2
+In=Exec_EB Index_I 
+Out=Busy_B Error_B 
+C=Dir_Dx=91 File_Dx=96 Val_Dxd=88 
+S=Fs_2F LED_F 
+av0=bv Fs 0 %s =1 \v Fs 1 %s 
+aRef=2
+Ref=MEM_M1
+Language=de
+Posi=58 18
+[HLINE]
+H0=5 8 9)24 25)32 33)48 49)57 58)73 74)81 82)97 98
+H1=7 8 9)24 25)32 33)48 49)57 58)73 74)81 82)97 98
+H2=9 32 33)81 82
+H3=21 8 9)24 25)32 33)48 49)57 58)73 74)81 82)97 98
+H4=23 8 9)24 25)32 33)48 49)57 58)73 74)81 82)97 98
+H5=25 32 33)81 82
+H6=37 8 9)24 25)32 33)48 49
+H7=39 8 9)24 25)32 33)48 49
+H8=41 32 33
+H9=53 8 9)24 25)32 33)48 49
+H10=55 8 9)24 25)32 33)48 49
+H11=57 32 33
+H12=69 8 9)24 25)32 33)48 49
+H13=71 8 9)24 25)32 33)48 49
+H14=73 32 33
+H15=85 8 9)24 25)32 33)48 49
+H16=87 8 9)24 25)32 33)48 49
+H17=89 32 33
+[NETWORK]
+N0=Bo 8 5)if 9 5
+N1=Bof 24 5
+N2=Bo 32 5)if 33 5
+N3=Bof 48 5
+N4=Bo 57 5)if 58 5
+N5=Bof 73 5
+N6=Bo 81 5)if 82 5
+N7=Bof 97 5
+N8=Io 8 7)if 9 7
+N9=Bof 24 7
+N10=Io 32 7)if 33 7
+N11=Bof 48 7
+N12=Io 57 7)if 58 7
+N13=Bof 73 7
+N14=Io 81 7)if 82 7
+N15=Bof 97 7
+N16=Io 32 9)if 33 9
+N17=Io 81 9)if 82 9
+N18=Bo 8 21)if 9 21
+N19=Bof 24 21
+N20=Bo 32 21)if 33 21
+N21=Bof 48 21
+N22=Bo 57 21)if 58 21
+N23=Bof 73 21
+N24=Bo 81 21)if 82 21
+N25=Bof 97 21
+N26=Io 8 23)if 9 23
+N27=Bof 24 23
+N28=Io 32 23)if 33 23
+N29=Bof 48 23
+N30=Io 57 23)if 58 23
+N31=Bof 73 23
+N32=Io 81 23)if 82 23
+N33=Bof 97 23
+N34=Io 32 25)if 33 25
+N35=Io 81 25)if 82 25
+N36=Bo 8 37)if 9 37
+N37=Bof 24 37
+N38=Bo 32 37)if 33 37
+N39=Bof 48 37
+N40=Io 8 39)if 9 39
+N41=Bof 24 39
+N42=Io 32 39)if 33 39
+N43=Bof 48 39
+N44=Io 32 41)if 33 41
+N45=Bo 8 53)if 9 53
+N46=Bof 24 53
+N47=Bo 32 53)if 33 53
+N48=Bof 48 53
+N49=Io 8 55)if 9 55
+N50=Bof 24 55
+N51=Io 32 55)if 33 55
+N52=Bof 48 55
+N53=Io 32 57)if 33 57
+N54=Bo 8 69)if 9 69
+N55=Bof 24 69
+N56=Bo 32 69)if 33 69
+N57=Bof 48 69
+N58=Io 8 71)if 9 71
+N59=Bof 24 71
+N60=Io 32 71)if 33 71
+N61=Bof 48 71
+N62=Io 32 73)if 33 73
+N63=Bo 8 85)if 9 85
+N64=Bof 24 85
+N65=Bo 32 85)if 33 85
+N66=Bof 48 85
+N67=Io 8 87)if 9 87
+N68=Bof 24 87
+N69=Io 32 87)if 33 87
+N70=Bof 48 87
+N71=Io 32 89)if 33 89
+[CONNS]
+Conn0=8 5 3 34 12
+Conn1=32 5 57 34 6
+Conn2=57 5 3 34 7
+Conn3=81 5 57 34 6
+Conn4=8 7 9 34 12
+Conn5=32 7 9 34 5
+Conn6=57 7 9 34 5
+Conn7=81 7 9 34 5
+Conn8=32 9 14 34 3
+Conn9=81 9 22 34 3
+Conn10=8 21 3 34 12
+Conn11=32 21 57 34 6
+Conn12=57 21 3 34 7
+Conn13=81 21 57 34 6
+Conn14=8 23 9 34 12
+Conn15=32 23 9 34 5
+Conn16=57 23 9 34 5
+Conn17=81 23 9 34 5
+Conn18=32 25 33 34 3
+Conn19=81 25 44 34 3
+Conn20=8 37 3 34 12
+Conn21=32 37 57 34 6
+Conn22=8 39 9 34 12
+Conn23=32 39 9 34 5
+Conn24=32 41 26 34 3
+Conn25=8 53 3 34 12
+Conn26=32 53 57 34 6
+Conn27=8 55 9 34 12
+Conn28=32 55 9 34 5
+Conn29=32 57 94 34 3
+Conn30=8 69 3 34 12
+Conn31=32 69 57 34 6
+Conn32=8 71 9 34 12
+Conn33=32 71 9 34 5
+Conn34=32 73 95 34 3
+Conn35=8 85 3 34 12
+Conn36=32 85 57 34 6
+Conn37=8 87 9 34 12
+Conn38=32 87 9 34 5
+Conn39=32 89 105 34 3
+[PAGEDEF]
+PageLen=220
+[PAGE]
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=1313
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[PAGEDEF]
+PageLen=3031
+[PAGE]
+Name=HTTP Client
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=1305
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_HTTPC_DIAG1 32391=
+_HTTPC_STATION2 32392=
+_HTTPC_CHANNEL1 32394=
+_BMOVE2 32546=
+_BMOVE2 32547=
+[_HTTPC_DIAG1 32391]
+Fam=HTTPC_Common
+Face=Web Diagnostics
+FacePosi=l
+Width=15
+Init=y
+Vers=100100
+S=Fs_8F LED_F HttpStat_R ErrCode_R B1_F Phase_R Context_3R 
+D=Fd_8F Rd_8R 
+av0=v Fs 0 %s 
+av1=v Fs 2 %s 
+av2=v Fs 3 %s 
+av3=v Fs 4 %s 
+av4=v HttpStat 0 %s 
+av5=v Fs 1 %s 
+av6=v ErrCode 0 %s 
+av7=b B1 0 %s =1 \nabs 
+av8=c c1 =0 \nabs 
+av9=v Phase 0 %s 
+av10=v Fs 5 %s 
+av11=v Fs 6 %s 
+av12=v Fs 7 %s 
+av13=c c2 =0 \nabs 
+av14=v Context 0 
+av15=v Context 1 
+av16=v Context 2 
+aRef=2
+Ref=WebChannel1
+Language=de
+Posi=40 30
+[_HTTPC_STATION2 32392]
+Fam=HTTPC_Common
+Face=Web Station
+FacePosi=l
+Width=15
+Init=y
+Vers=100112
+In=En_B 
+Out=Busy_B Error_B 
+S=LED_F RmtHost_^X RmtIP_R RmtPort_R BasicUsr_^X BasicPwd_^X WebPass_^X FtpUser_^X FtpPass_^X B1_F B2_F 
+D=Fd_8F Rd_8R 
+av0=a IPSrcMod %s =0 {0,2,3} 
+av1=a RmtHost 0 %X ="":"renergie-automation.de" 
+av2=a RmtIP 0 %0i =-1 
+av3=a RmtPort 0 =80 {1..65535} 
+av4=c c1 =0 \nabs 
+av5=a Timeout %1p =350 {0..36000} 
+av6=a ExDelay %1p =5 {0..36000} 
+av7=a RecDelay %1p =10 {0..36000} 
+av8=c c2 =0 \nabs 
+av9=a BasicUsr 0 %X ="" 
+av10=a BasicPwd 0 %X ="" 
+av11=c c3 =0 \nabs 
+av12=a WebPass 0 %X ="" 
+av13=a FtpUser 0 %X ="root" 
+av14=a FtpPass 0 %X ="rootpasswd" 
+av15=c c4 =0 \nabs 
+av16=b B1 0 %s =1 
+av17=b B2 0 %s =1 
+AcceptName=2
+uName=WebStation1
+aRef=2
+Ref=WebChannel1
+Language=de
+Posi=40 35
+[_HTTPC_CHANNEL1 32394]
+Fam=HTTPC_Common
+Face=Web Channel
+FacePosi=l
+Width=15
+Init=y
+Vers=100100
+In=En_B 
+Out=Busy_B Conn_B Error_B ErrCode_I 
+S=LED_F Recovery_F HttpStat_R ErrCode_R B1_F 
+D=Fd_8F Rd_8R 
+av0=a Channel %s =1:9 {1..10} 
+av1=a Recovery 0 %s =0:1 {0..1} 
+av2=v HttpStat 0 %s 
+av3=v ErrCode 0 %s 
+av4=b B1 0 %s =1 
+AcceptName=2
+uName=WebChannel1
+Language=de
+Posi=40 16
+[_BMOVE2 32546]
+Fam=sfupbina
+Width=2
+Init=n
+Stretch=0 31 1 0
+In=_NB 
+Out=_NB 
+Language=de
+Posi=46 11
+[_BMOVE2 32547]
+Fam=sfupbina
+Width=2
+Init=n
+Stretch=0 31 1 0
+In=_NB 
+Out=_NB 
+Language=de
+Posi=46 8
+[HLINE]
+H0=9 22 46)48 75
+H1=12 41 46)48 75
+H2=19 22 40)55 56
+H3=21 55 56
+H4=23 55 56
+H5=25 55 56
+H6=38 22 40)55 56
+H7=40 55 56
+[VLINE]
+V0=41 9 12
+[NETWORK]
+N0=Bo 22 9)if 46 9)if 46 12
+N1=Bof 48 9)i 75 9
+N2=Bof 48 12)i 75 12
+N3=Bo 22 19)if 40 19
+N4=Bof 55 19
+N5=Bof 55 21
+N6=Bof 55 23
+N7=Iof 55 25
+N8=Bo 22 38)if 40 38
+N9=Bof 55 38
+N10=Bof 55 40
+[CONNS]
+Conn0=22 9 81 34 4
+Conn1=75 9 2 33 15
+Conn2=75 12 15 33 15
+Conn3=22 19 2 34 15
+Conn4=22 38 15 34 15
+Conn5=22 47 16 34 15
+Conn6=22 49 12 34 17
+Conn7=22 51 127 34 13
+Conn8=22 53 119 34 11
+Conn9=22 55 111 34 11
+Conn10=22 57 106 34 10
+Conn11=22 59 97 34 10
+Conn12=22 61 88 34 11
+[RESOURCES]
+DBVersion=270340
+DBCount=133
+Format={ID}	{FullName}	{Type}	{Expression}	{ScopeID}	{Size}	{Comment}	{Override}	{Tags}	{BlockID}	{Hidden}
+HSYM0=1	COB_7	COB		3	-1	EMail_HTTP_			-1	0
+HSYM1=2	PCD01.HTTP.Init.iChannel	F		1	-1				-1	0
+HSYM2=3	PCD01.Markt.WtF	F		1	-1				-1	0
+HSYM3=4	ELT01.A00.SiKettUV3.USE	F		1	-1				-1	0
+HSYM4=5	ELT01.A00.SiKettUV2.File	TEXT		1	0				-1	0
+HSYM5=6		K	89	3	-1				-1	1
+HSYM6=7		K	1	3	-1				-1	1
+HSYM7=8	ELT01.A00.HDLog.iTApr	F		1	-1				-1	0
+HSYM8=9	NULL	R		1	-1				-1	0
+HSYM9=10			30	3	-1				-1	1
+HSYM10=11	PCD01.Email.Setup.Del	F		1	-1				-1	0
+HSYM11=12	PCD01.Markt.OrtBezeichnung	TEXT RAM		1	32				-1	0
+HSYM12=13	PCD01.EMail.Send.Prf	F		1	-1				-1	0
+HSYM13=14			0	3	-1				-1	1
+HSYM14=15	PCD01.HTTP.Init.iStation	F		1	-1				-1	0
+HSYM15=16	PCD01.Markt.Kostenstelle	TEXT RAM		1	32				-1	0
+HSYM16=17	PCD01.Markt.iGFLBusy	F		1	-1				-1	0
+HSYM17=18	PCD01.Markt.FileLength	R		1	-1				-1	0
+HSYM18=19	PCD01.Markt.uBT_InAcAdr	R		2	-1				-1	0
+HSYM19=20	ELT01.A00.HDLog.iActMon	R		1	-1				-1	0
+HSYM20=21	ELT01.A00.HDLog.iTFeb	F		1	-1				-1	0
+HSYM21=22			1	3	-1				-1	1
+HSYM22=23	PCD01.EMail.Init.Server	TEXT RAM		1	32				-1	0
+HSYM23=24	ELT01.A00.HDLog.iActWeek	R		1	-1				-1	0
+HSYM24=25	ELT01.A00.HDLog.iTSep	F		1	-1				-1	0
+HSYM25=26			4	3	-1				-1	1
+HSYM26=27			160	3	-1				-1	1
+HSYM27=28	PCD01.Email.Setup.FileLength	R		1	-1				-1	0
+HSYM28=29	PCD01.EMail.Init.To1	TEXT RAM		1	32				-1	0
+HSYM29=30	ELT01.A00.Mld.PCD01.SVz.iSVZ600	F		2	-1				-1	0
+HSYM30=31	PCD01.Markt.FileExist	F		1	-1				-1	0
+HSYM31=32	ELT01.A00.HDLog.iActMon2	R		1	-1				-1	0
+HSYM32=33			2	3	-1				-1	1
+HSYM33=34	ELT01.A00.Mld.PCD01.SVz.iSVZ300	F		2	-1				-1	0
+HSYM34=35	PCD01.Email.Setup.DelBusy	F		1	-1				-1	0
+HSYM35=36	PCD01.EMail.Init.UseAuth	F		1	-1	Angabe ob eine Authentifizierung am Mailserver erfolgen soll			-1	0
+HSYM36=37	PCD01.EMail.Init.iErr	R		1	-1				-1	0
+HSYM37=38	PCD01.DNS.Query.IP.iAddB2	R		1	-1				-1	0
+HSYM38=39	PCD01.Markt.DelBusy	F		1	-1				-1	0
+HSYM39=40	ELT01.A00.HDLog.USE	F		1	-1				-1	0
+HSYM40=41	ELT01.A00.HDLog.iLastYear	R		1	-1				-1	0
+HSYM41=42	ELT01.A00.HDLog.iTAktiv	F		1	-1				-1	0
+HSYM42=43	ELT01.A00.HDLog.iTAug	F		1	-1				-1	0
+HSYM43=44			3	3	-1				-1	1
+HSYM44=45	PCD01.Email.Setup.FileExist	F		1	-1				-1	0
+HSYM45=46	PCD01.EMail.Init.Count	R		1	-1	Verbleibende Anzahl von Sendeversuchen			-1	0
+HSYM46=47	PCD01.EMail.Init.iBusy	F		1	-1				-1	0
+HSYM47=48	PCD01.DNS.Query.IP.iAddB1	R		1	-1				-1	0
+HSYM48=49	PCD01.Markt.iFileErr	F		1	-1				-1	0
+HSYM49=50	ELT01.A00.SiKettUV3.File	TEXT		1	0				-1	0
+HSYM50=51	ELT01.A00.SiKettUV1.USE	F		1	-1				-1	0
+HSYM51=52		K	7	3	-1				-1	1
+HSYM52=53	PCD01.EMail.Init.To2	TEXT RAM		1	32				-1	0
+HSYM53=54	PCD01.Email.Setup.Write	F	:= 0	1	-1				-1	0
+HSYM54=55	PCD01.EMail.Init.iFail	F		1	-1				-1	0
+HSYM55=56	PCD01.DNS.Query.IP.iAddB0	R		1	-1				-1	0
+HSYM56=57	PCD01.Markt.Read	F	:= 0	1	-1				-1	0
+HSYM57=58	ELT01.A00.SiKettUV3.MailText	TEXT RAM		1	0				-1	0
+HSYM58=59	PCD01.EMail.Init.To5	TEXT RAM		1	32				-1	0
+HSYM59=60	PCD01.Email.Setup.Read	F	:= 0	1	-1				-1	0
+HSYM60=61			10	3	-1				-1	1
+HSYM61=62			100	3	-1				-1	1
+HSYM62=63	PCD01.EMail.Init.ServerIP	TEXT		1	0				-1	0
+HSYM63=64	PCD01.DNS.Query.IP.Read	F		1	-1				-1	0
+HSYM64=65	PCD01.Markt.Del	F		1	-1				-1	0
+HSYM65=66	ELT01.A00.SiKettUV1.iSM10	F		1	-1				-1	0
+HSYM66=67	ELT01.A00.HDLog.iTJul	F		1	-1				-1	0
+HSYM67=68	PCD01.Email.Setup.iFileErr	F		1	-1				-1	0
+HSYM68=69	PCD01.EMail.Init.Port	R		1	-1	Portnummer des  Mailservers (Standard SMTP Port ist 25)			-1	0
+HSYM69=70	PCD01.EMail.Sent.Busy	F		1	-1				-1	0
+HSYM70=71	PCD01.DNS.Query.IP.iFCode	F		1	-1				-1	0
+HSYM71=72	ELT01.A00.HDLog.iTDez	F		1	-1				-1	0
+HSYM72=73	PCD01.EMail.Init.To4	TEXT RAM		1	32				-1	0
+HSYM73=74	PCD01.EMail.Init.Pwd	TEXT RAM		1	32				-1	0
+HSYM74=75	PCD01.DNS.Query.IP.iRCode	R		2	-1				-1	0
+HSYM75=76	ELT01.A00.SiKettUV1.MailText	TEXT		1	0				-1	0
+HSYM76=77	ELT01.A00.SiKettUV2.iSM10	F		1	-1				-1	0
+HSYM77=78	ELT01.A00.HDLog.iTJun	F		1	-1				-1	0
+HSYM78=79	PCD01.Email.Setup.FileBig	F		1	-1				-1	0
+HSYM79=80		K	20	3	-1				-1	1
+HSYM80=81	LOW	F		1	-1				-1	0
+HSYM81=82	PCD01.Markt.Write	F	:= 0	1	-1				-1	0
+HSYM82=83	ELT01.A00.SiKettUV1.File	TEXT		1	0				-1	0
+HSYM83=84	ELT01.A00.Mld.PCD01.Clock.iYMD	R		1	-1				-1	0
+HSYM84=85	PCD01.EMail.Send.MailText	TEXT		1	0				-1	0
+HSYM85=86	PCD01.EMail.Init.Name	TEXT RAM		1	32				-1	0
+HSYM86=87	PCD01.DNS.Query.IP.iAddB3	R		1	-1				-1	0
+HSYM87=88	PCD01.RefSPS.IP	TEXT RAM		1	32				-1	0
+HSYM88=89			256	3	-1				-1	1
+HSYM89=90	ELT01.A00.SiKettUV2.USE	F		1	-1				-1	0
+HSYM90=91	RLT01_H1	TEXT		1	0				-1	0
+HSYM91=92	PCD01.Email.Setup.Written	F		1	-1				-1	0
+HSYM92=93	PCD01.EMail.Send.File	TEXT		1	0				-1	0
+HSYM93=94			5	3	-1				-1	1
+HSYM94=95			6	3	-1				-1	1
+HSYM95=96	PCD01.Markt.MarktInfo	TEXT		1	0				-1	0
+HSYM96=97	PCD01.Markt.IP	TEXT RAM		1	32				-1	0
+HSYM97=98			50	3	-1				-1	1
+HSYM98=99	ELT01.A00.HDLog.File	TEXT		1	0				-1	0
+HSYM99=100	ELT01.A00.HDLog.iEMonth	R		1	-1				-1	0
+HSYM100=101	ELT01.A00.HDLog.iTMai	F		1	-1				-1	0
+HSYM101=102	HIGH	F		1	-1				-1	0
+HSYM102=103	PCD01.EMail.Init.Retrys	R		1	-1	Anzahl der Sendeversuche. Falls alle Versuche fehlgeschlagen sind, wird Err aus			-1	0
+HSYM103=104	PCD01.EMail.Init.iSSM	F		1	-1				-1	0
+HSYM104=105			7	3	-1				-1	1
+HSYM105=106	PCD01.Markt.Tel	TEXT RAM		1	32				-1	0
+HSYM106=107	ELT01.A00.SiKettUV3.iSM10	F		1	-1				-1	0
+HSYM107=108	ELT01.A00.Mld.PCD01.Clock.iD	R		1	-1				-1	0
+HSYM108=109	PCD01.EMail.Init.Delay	R		1	-1	Verzögerung zwischen 2 Sendeversuchen			-1	0
+HSYM109=110	ELT01.A00.Mld.PCD01.Quitt.Tast.iBm	F		2	-1	(5) Auswahl des Normalzustands des Gebers			-1	0
+HSYM110=111	PCD01.Markt.Ort	TEXT RAM		1	32				-1	0
+HSYM111=112	PCD01.Markt.Written	F		1	-1				-1	0
+HSYM112=113	RLT01.A00.PSTA.uBT_InAcCounter	R		2	-1				-1	0
+HSYM113=114	ELT01.A00.SiKettUV2.MailText	TEXT		1	0				-1	0
+HSYM114=115	ELT01.A00.HDLog.iTNov	F		1	-1				-1	0
+HSYM115=116	ELT01.A00.HDLog.iTJan	F		1	-1				-1	0
+HSYM116=117	PCD01.Email.Setup.WtF	F		1	-1				-1	0
+HSYM117=118	PCD01.EMail.Init.Sender	TEXT RAM		1	32				-1	0
+HSYM118=119	PCD01.Markt.PLZ	TEXT RAM		1	32				-1	0
+HSYM119=120	ELT01.A00.HDLog.iLastMon	R		1	-1				-1	0
+HSYM120=121	ELT01.A00.HDLog.iTFebDez	F		1	-1				-1	0
+HSYM121=122	ELT01.A00.HDLog.iTOkt	F		1	-1				-1	0
+HSYM122=123	ELT01.A00.HDLog.iTMar	F		1	-1				-1	0
+HSYM123=124	PCD01.EMail.Init.Setup	TEXT		1	0				-1	0
+HSYM124=125	PCD01.EMail.Init.To3	TEXT RAM		1	32				-1	0
+HSYM125=126	PCD01.EMail.Init.iSending	F		1	-1				-1	0
+HSYM126=127	PCD01.Markt.Strasse	TEXT RAM		1	32				-1	0
+HSYM127=128	PCD01.Markt.FileBig	F		1	-1				-1	0
+HSYM128=129	ELT01.A00.HDLog.MailText	TEXT		1	0				-1	0
+HSYM129=130	ELT01.A00.HDLog.iActYear	R		1	-1				-1	0
+HSYM130=131	PCD01.Email.Setup.iGFLBusy	F		1	-1				-1	0
+HSYM131=132	ELT01.A00.Mld.PCD01.SVz.iSVZ1200	F		1	-1				-1	0
+HSYM132=133	PCD01.DNS.Query.IP.iAdd	R		2	-1				-1	0
+[TEXTCONTENTS]
+Count=76
+TEXT0=5 ELT01.A00.SiKettUV2.File.[size]	0
+TEXT1=5 ELT01.A00.SiKettUV2.File.[format]	0
+TEXT2=5 ELT01.A00.SiKettUV2.File.[0]	""
+TEXT3=12 PCD01.Markt.OrtBezeichnung.[size]	32
+TEXT4=12 PCD01.Markt.OrtBezeichnung.[format]	0
+TEXT5=16 PCD01.Markt.Kostenstelle.[size]	32
+TEXT6=16 PCD01.Markt.Kostenstelle.[format]	0
+TEXT7=23 PCD01.EMail.Init.Server.[size]	32
+TEXT8=23 PCD01.EMail.Init.Server.[format]	0
+TEXT9=29 PCD01.EMail.Init.To1.[size]	32
+TEXT10=29 PCD01.EMail.Init.To1.[format]	0
+TEXT11=50 ELT01.A00.SiKettUV3.File.[size]	0
+TEXT12=50 ELT01.A00.SiKettUV3.File.[format]	0
+TEXT13=50 ELT01.A00.SiKettUV3.File.[0]	""
+TEXT14=53 PCD01.EMail.Init.To2.[size]	32
+TEXT15=53 PCD01.EMail.Init.To2.[format]	0
+TEXT16=58 ELT01.A00.SiKettUV3.MailText.[size]	0
+TEXT17=58 ELT01.A00.SiKettUV3.MailText.[format]	1
+TEXT18=58 ELT01.A00.SiKettUV3.MailText.[0]	"MM IP: $", PCD01.SBus.Info.IP.iAddB3.04T ".$" ,PCD01.SBus.Info.IP.iAddB2.04T ".$", PCD01.SBus.Info.IP.iAddB1.04T ".$",PCD01.SBus.Info.IP.iAddB0.04T "<10><10>Die Sicherheitskette der UV 3 hat ausgeloest,<10>Vermutlich Sicherung gefallen, Notbeleuchtung wurde eingeschaltet (Bateriebetrieb)<10><10>Stoerung gekommen am $DD.$DM.$DY um $H <10>"
+TEXT19=59 PCD01.EMail.Init.To5.[size]	32
+TEXT20=59 PCD01.EMail.Init.To5.[format]	0
+TEXT21=63 PCD01.EMail.Init.ServerIP.[size]	0
+TEXT22=63 PCD01.EMail.Init.ServerIP.[format]	0
+TEXT23=63 PCD01.EMail.Init.ServerIP.[0]	"$" ,PCD01.DNS.Query.IP.iAddB3.04T ".$" ,PCD01.DNS.Query.IP.iAddB2.04T ".$", PCD01.DNS.Query.IP.iAddB1.04T ".$",PCD01.DNS.Query.IP.iAddB0.04T
+TEXT24=73 PCD01.EMail.Init.To4.[size]	32
+TEXT25=73 PCD01.EMail.Init.To4.[format]	0
+TEXT26=74 PCD01.EMail.Init.Pwd.[size]	32
+TEXT27=74 PCD01.EMail.Init.Pwd.[format]	0
+TEXT28=76 ELT01.A00.SiKettUV1.MailText.[size]	0
+TEXT29=76 ELT01.A00.SiKettUV1.MailText.[format]	1
+TEXT30=76 ELT01.A00.SiKettUV1.MailText.[0]	"MM IP: $", PCD01.SBus.Info.IP.iAddB3.04T ".$" ,PCD01.SBus.Info.IP.iAddB2.04T ".$", PCD01.SBus.Info.IP.iAddB1.04T ".$",PCD01.SBus.Info.IP.iAddB0.04T "<10><10>Die Sicherheitskette der UV 1 hat ausgeloest,<10>Vermutlich Sicherung gefallen, Notbeleuchtung wurde eingeschaltet (Bateriebetrieb)<10><10>Stoerung gekommen am $DD.$DM.$DY um $H <10>"
+TEXT31=83 ELT01.A00.SiKettUV1.File.[size]	0
+TEXT32=83 ELT01.A00.SiKettUV1.File.[format]	0
+TEXT33=83 ELT01.A00.SiKettUV1.File.[0]	""
+TEXT34=85 PCD01.EMail.Send.MailText.[size]	0
+TEXT35=85 PCD01.EMail.Send.MailText.[format]	1
+TEXT36=85 PCD01.EMail.Send.MailText.[0]	"MM IP: $", PCD01.SBus.Info.IP.iAddB3.04T ".$" ,PCD01.SBus.Info.IP.iAddB2.04T ".$", PCD01.SBus.Info.IP.iAddB1.04T ".$",PCD01.SBus.Info.IP.iAddB0.04T "<10><10>Email Kommunikationstest. <10>Ausgeführt am $DD.$DM.$DY um $H <10>"
+TEXT37=86 PCD01.EMail.Init.Name.[size]	32
+TEXT38=86 PCD01.EMail.Init.Name.[format]	0
+TEXT39=88 PCD01.RefSPS.IP.[size]	32
+TEXT40=88 PCD01.RefSPS.IP.[format]	0
+TEXT41=91 RLT01_H1.[size]	0
+TEXT42=91 RLT01_H1.[format]	1
+TEXT43=91 RLT01_H1.[0]	"/Webpages/Trends"
+TEXT44=93 PCD01.EMail.Send.File.[size]	0
+TEXT45=93 PCD01.EMail.Send.File.[format]	0
+TEXT46=93 PCD01.EMail.Send.File.[0]	""
+TEXT47=96 PCD01.Markt.MarktInfo.[size]	0
+TEXT48=96 PCD01.Markt.MarktInfo.[format]	0
+TEXT49=96 PCD01.Markt.MarktInfo.[0]	"Marktinfo"
+TEXT50=97 PCD01.Markt.IP.[size]	32
+TEXT51=97 PCD01.Markt.IP.[format]	0
+TEXT52=99 ELT01.A00.HDLog.File.[size]	0
+TEXT53=99 ELT01.A00.HDLog.File.[format]	0
+TEXT54=99 ELT01.A00.HDLog.File.[0]	"SL1FLASH:/WEBPAGES/DATA/C004GEVZHZG00_M$",ELT01.A00.HDLog.iEMonth.04T,".csv"
+TEXT55=106 PCD01.Markt.Tel.[size]	32
+TEXT56=106 PCD01.Markt.Tel.[format]	0
+TEXT57=111 PCD01.Markt.Ort.[size]	32
+TEXT58=111 PCD01.Markt.Ort.[format]	0
+TEXT59=114 ELT01.A00.SiKettUV2.MailText.[size]	0
+TEXT60=114 ELT01.A00.SiKettUV2.MailText.[format]	1
+TEXT61=114 ELT01.A00.SiKettUV2.MailText.[0]	"MM IP: $", PCD01.SBus.Info.IP.iAddB3.04T ".$" ,PCD01.SBus.Info.IP.iAddB2.04T ".$", PCD01.SBus.Info.IP.iAddB1.04T ".$",PCD01.SBus.Info.IP.iAddB0.04T "<10><10>Die Sicherheitskette der UV 2 hat ausgeloest,<10>Vermutlich Sicherung gefallen, Notbeleuchtung wurde eingeschaltet (Bateriebetrieb)<10><10>Stoerung gekommen am $DD.$DM.$DY um $H <10>"
+TEXT62=118 PCD01.EMail.Init.Sender.[size]	32
+TEXT63=118 PCD01.EMail.Init.Sender.[format]	0
+TEXT64=119 PCD01.Markt.PLZ.[size]	32
+TEXT65=119 PCD01.Markt.PLZ.[format]	0
+TEXT66=124 PCD01.EMail.Init.Setup.[size]	0
+TEXT67=124 PCD01.EMail.Init.Setup.[format]	0
+TEXT68=124 PCD01.EMail.Init.Setup.[0]	"Setupmail"
+TEXT69=125 PCD01.EMail.Init.To3.[size]	32
+TEXT70=125 PCD01.EMail.Init.To3.[format]	0
+TEXT71=127 PCD01.Markt.Strasse.[size]	32
+TEXT72=127 PCD01.Markt.Strasse.[format]	0
+TEXT73=129 ELT01.A00.HDLog.MailText.[size]	0
+TEXT74=129 ELT01.A00.HDLog.MailText.[format]	1
+TEXT75=129 ELT01.A00.HDLog.MailText.[0]	"MM Trenddaten IP: $", PCD01.SBus.Info.IP.iAddB3.04T ".$" ,PCD01.SBus.Info.IP.iAddB2.04T ".$", PCD01.SBus.Info.IP.iAddB1.04T ".$",PCD01.SBus.Info.IP.iAddB0.04T "<10><10>Email Trenddaten als .CSV <10>Ausgeführt am $DD.$DM.$DY um $H <10>"
