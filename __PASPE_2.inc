@@ -80,7 +80,7 @@ SbusModemMode EQU 2			;0=Break, 1=Parity, 2=Data
 IPNode EQU 212				;IP node number
 IPChannel EQU 9				;IP channel number
 IPAddress EQU 0c0a807d4H		;IP address : 192.168.7.212
-IPSubnetMask EQU 0ff000000H		;Subnet mask : 255.0.0.0
+IPSubnetMask EQU 0ffffff00H		;Subnet mask : 255.255.255.0
 IPDefaultRouter EQU 0c0a80701H		;Default router : 192.168.7.1
 EnergyMonitoringEnabled EQU 0		;Energy monitoring function enabled
 Interrupt0XOB EQU 20 ;Fix Interrupt0 XOB number

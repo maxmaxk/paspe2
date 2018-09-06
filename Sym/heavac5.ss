@@ -20,7 +20,7 @@ S.CPU.SbusModemMode EQU 2 ;0=Break, 1=Parity, 2=Data
 S.CPU.IPNode EQU 212 ;IP node number
 S.CPU.IPChannel EQU 9 ;IP channel number
 S.CPU.IPAddress EQU 0C0A807D4H ;IP address : 192.168.7.212
-S.CPU.IPSubnetMask EQU 0FF000000H ;Subnet mask : 255.0.0.0
+S.CPU.IPSubnetMask EQU 0FFFFFF00H ;Subnet mask : 255.255.255.0
 S.CPU.IPDefaultRouter EQU 0C0A80701H ;Default router : 192.168.7.1
 S.CPU.EnergyMonitoringEnabled EQU 0 ;Energy monitoring function enabled
 S.CPU.Interrupt0XOB EQU 20 ;Fix Interrupt0 XOB number

@@ -23,7 +23,6 @@
 
 ;Files to assemble and link
 "_PASPE_2.src"
-"WEB-Server.wsr"
-"HKLS.fbd"
+"HKLS2.fbd"
 
 ;end

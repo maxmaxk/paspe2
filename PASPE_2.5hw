@@ -1,9 +1,9 @@
 
 [General]
 Version=2
-FuplaDnldInRun=0
+FuplaDnldInRun=1
 FuplaAdjustParams=1
-LastDownload=2018/07/13 17:24:14
+LastDownload=2018/09/06 17:54:50
 
 [Pcd]
 Password=00000000
@@ -22,9 +22,9 @@ FirmwareVersion=1.24.5
 ManualMemAlloc=0
 CodeTextMemSize=1024
 ExtenMemSize=0
-CodeSizes=160,0,0,0,0,0,0
-TextSizes=128,0,0,0,0,0,0
-ExtenSizes=256,0,0,0,0,0,0
+CodeSizes=960,0,0,0,0,0,0
+TextSizes=62,0,0,0,0,0,0
+ExtenSizes=2,0,0,0,0,0,0
 ExtensionInit=0
 EpromType=0
 EpromSize=0
@@ -133,12 +133,12 @@ IPDHCP=0
 IPSlot=0
 IPNode=212
 IPAddress=192.168.7.212
-IPSubnetMask=255.0.0.0
+IPSubnetMask=255.255.255.0
 IPGateway=192.168.7.1
 IPClientFlags=1
 IPServerFlags=1
 EthernetRIO=0
-IPModified=1
+IPModified=0
 IPNotNetworked=1
 
 [IPModule2]

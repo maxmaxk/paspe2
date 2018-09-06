@@ -1,0 +1,4104 @@
+[FILEHEADER]
+Version=529
+Compiler=310
+Bues=1
+VisiPlus=0
+PrjID=112
+UpdateGlobals=0
+DnldInRun=0
+FuplaVersion=V2.1.410
+CodePage=1251
+MacroID=47495
+ModuleVersion=
+AdjustLog=0
+Author=
+Comment=
+LastPageID=3
+[BLOCK]
+BlockSym=1
+COBSupTime=0
+PageDisabled=0
+ConditinalFunction=0
+ConditionalSymbol=
+ConditionalValue=0
+PageColor=16777215
+PageBackColor=0
+[PAGEDEF]
+PageLen=252
+[PAGE]
+Name=Init
+Comment=BACnet, AKS
+RemarkSize=0
+CountOfLabels=40
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=1952
+PageColor=0
+PageBackColor=16777215
+PageDisabled=1
+ConditinalFunction=0
+ConditionalValue=0
+[PAGEDEF]
+PageLen=8439
+[PAGE]
+Name=HEVAC /InitLib
+RemarkSize=0
+CountOfLabels=40
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=1953
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_DDC_INLIBRARY250 27770=
+_BHIGH 27772=
+_DDC_INANTIBLCK21 27773=
+_XPULSE 27774=
+_HEAINI8 27776=
+_IMOVE2 27777=
+_BMOVE2 27778=
+_BMOVE2 27779=
+_IMIN2 45524=
+[_DDC_INLIBRARY250 27770]
+Fam=DDC25_FAM_INIT
+Face=Init LIB
+Width=11
+Init=y
+Vers=205001
+In=AckAla_EB AckMt_EB WD_B OutTemp_I 
+Out=ResAla_B ResMt_B Err_B Bat_B Pulse_B 
+S=SysFlag_20F SysReg_20R SysTmr_5T WrkFlag_22F WrkReg_31R WrkCnt_10C QuitSm_F=37 QuitWart_F=117 QuitDiag_F=95 DiagErr_F=72 RSmImp_R=84 DiagXob_R=162 DiagPrgL_R=116 DiagIdx_R=130 DiagCobL_R=71 DiagNL1L_R=83 DiagNL2L_R=36 DiagNL3L_R=55 DiagNL4L_R=143 DiagNL5L_R=142 DiagNL6L_R=106 DiagNL7L_R=115 DiagRes_R=184 LED_F sDiag_12R SmBatt_F=196 QuitDI_R=161 QuitDO_R=175 
+av0=c cs =0 \nabs 
+av1=a Descript %0T ="Init" 
+av2=a AlmIdx =-1 {-1..1000} 
+av3=a BACnet %s =2 {0..2} 
+av4=a MskHrs %s =1 {0,1} 
+av5=c c1 =0 \nabs 
+av6=b QuitSm 0 %s =1 
+av7=a RSmImp 0 %1p =20 {0..600} 
+av8=a QuitDI 0 =-1 {-1..1023} 
+av9=a QuitDO 0 =-1 {-1..1023} 
+av10=c c2 =0 \nabs 
+av11=b QuitWart 0 %s =1 
+av12=c c3 =0 \nabs 
+av13=a WDTyp %s =0:1 {0..1} 
+av14=c cBat =0 \nabs 
+av15=v SmBatt 0 %s 
+av16=a txtBat %0T ="Battery" 
+av17=a O1ON %0T ="INIT-BAT" 
+av18=a O1D %0T ="Init Battery" 
+av19=a O1NC =0 {-1..4194303} 
+av20=a O1OT %0T ="" 
+av21=c cXOB =0 \nabs 
+av22=v DiagErr 0 %s 
+av23=a txtDiag %0T ="Error" 
+av24=a O2ON %0T ="INIT-ERR" 
+av25=a O2D %0T ="Init Error" 
+av26=a O2NC =0 {-1..4194303} 
+av27=a O2OT %0T ="" 
+av28=c c4 =0 \nabs 
+av29=b QuitDiag 0 %s =1 
+av30=v DiagXob 0 %s 
+av31=v DiagPrgL 0 
+av32=v DiagIdx 0 
+av33=v DiagCobL 0 
+av34=v DiagNL1L 0 
+av35=v DiagNL2L 0 
+av36=v DiagNL3L 0 
+av37=v DiagNL4L 0 
+av38=v DiagNL5L 0 
+av39=v DiagNL6L 0 
+av40=v DiagNL7L 0 
+av41=v DiagRes 0 
+av42=c cc =0 \nabs 
+AcceptName=1
+uName=PCD
+Folder=Init.Library?
+Variables0=QuitSm SmQuit;(4) Quittieren von Stormeldungen in allen Storungs-FBoxenSteuerung
+Variables1=QuitWart WartQuit;(4) Rucksetzen der Wartungsmeldungen und - zahler in allen Steuerungs-FBoxen
+Variables2=QuitDiag HistQuit;(4) Loschen der History
+Variables3=DiagErr HistFehler;(1) Fehler in der Steuerung
+Variables4=RSmImp SmQuitHwImp;(5) Dauer der Ansteuerung des Quittierungsausganges
+Variables5=DiagXob HistMeldung;(3) Ursache der Fehlermeldung
+Variables6=DiagPrgL HistProgLine;(3) Programmzeile in der der Fehler aufgetreten ist
+Variables7=DiagIdx HistIndex;(3) Inhalt des Indexregister bei auftreten des Fehlers
+Variables8=DiagCobL HistCobLine;(3) Zeilennummer im COB
+Variables9=DiagNL1L HistCall1;(3) Zeilennummer in Aufrufebene 1
+Variables10=DiagNL2L HistCall2;(3) Zeilennummer in Aufrufebene 2
+Variables11=DiagNL3L HistCall3;(3) Zeilennummer in Aufrufebene 3
+Variables12=DiagNL4L HistCall4;(3) Zeilennummer in Aufrufebene 4
+Variables13=DiagNL5L HistCall5;(3) Zeilennummer in Aufrufebene 5
+Variables14=DiagNL6L HistCall6;(3) Zeilennummer in Aufrufebene 6
+Variables15=DiagNL7L HistCall7;(3) Zeilennummer in Aufrufebene 7
+Variables16=DiagRes HistReserve;(3) Vorhaltung fur spatere Erganzungen
+Variables17=SmBatt SmBatterie;(1) Batterie schwach
+Variables18=QuitDI QuitDI;(5) Eingangsadresse Reset-Knopf
+Variables19=QuitDO QuitDO;(5) Ausgangsadresse Hardware Reset
+Picture=0 0 11 2
+Language=de
+Posi=44 22
+[_BHIGH 27772]
+Fam=sfupbina
+Face=H
+Width=2
+Init=n
+Out=_B 
+Language=de
+Posi=25 68
+[_DDC_INANTIBLCK21 27773]
+Fam=DDC Initialisierung
+Face=Init ABS
+FacePosi=l
+Width=9
+Init=y
+Vers=200000
+In=En2P_B EnY_B 
+Out=2P_B Y_B 
+S=UwpFrg_F=35 UwpWoImp_F=48 YFrg_F=34 YWoImp_F=20 UwpVorw_R=10 UwpStill_R=174 UwpWoTag_R=33 UwpUhr_R=19 YVorw_R=183 YStill_R=195 YWoTag_R=18 YUhr_R=9 
+av0=c cs =0 \nabs 
+av1=a BACnet %s =0 {0..1} 
+av2=c c1 =0 \nabs 
+av3=a UwpVorw 0 %s =3 {1..3} 
+av4=a UwpStill 0 =24 {0..2400} 
+av5=a UwpWoTag 0 %s =7:1 {1..7} 
+av6=a UwpUhr 0 %1H =1200:900 {0..2359} 
+av7=v UwpFrg 0 %s 
+av8=v UwpWoImp 0 %s 
+av9=c c2 =0 \nabs 
+av10=a YVorw 0 %s =3 {1..3} 
+av11=a YStill 0 =24 {0..2400} 
+av12=a YWoTag 0 %s =7:1 {1..7} 
+av13=a YUhr 0 %1H =1200 {0..2359} 
+av14=v YFrg 0 %s 
+av15=v YWoImp 0 %s 
+av16=c cc =0 \nabs 
+AcceptName=1
+Folder=Init.Antiblock?
+Variables0=UwpFrg UwpErlaubt;(2) Anzeige ob die Antiblockierschutzfunktion ausgefuhrt werden darf
+Variables1=UwpWoImp UwpWoImpuls;(2) Anzeige des Wochentlichen Impulses des Bewegungsbetriebes
+Variables2=YFrg YErlaubt;(2) Anzeige ob die Antiblockierschutzfunktion ausgefuhrt werden darf
+Variables3=YWoImp YWoImpuls;(2) Anzeige des Wochenrlichen Impulses des Bewegungsbetriebes
+Variables4=UwpVorw UwpVorwahl;(5) Betriebsvorwahl der Antiblockierschutzfunktion
+Variables5=UwpStill UwpStillDauer;(5) Anzahl der Stunden nach der ein Bewegungslauf aktiviert werden soll
+Variables6=UwpWoTag UwpWoTag;(5) Wochentag an dem der Bewegungsbetrieb ausgefuhrt werden soll
+Variables7=UwpUhr UwpWoUhrzeit;(5) Uhrzeit des Tages an dem der Bewegungsbetrieb ausgefuhrt werden soll
+Variables8=YVorw YVorwahl;(5) Betriebsvorwahl fur die Antiblockierschutzfunktion
+Variables9=YStill YStillDauer;(5) Anzahl der Stunden nach der ein Bewegungslauf aktiviert werden soll
+Variables10=YWoTag YWoTag;(5) Wochentag an dem der Bewegungsbetrieb ausgefuhrt werden soll
+Variables11=YUhr YWoUhrzeit;(5) Uhrzeit des Tages an dem der Bewegungsbetrieb ausgefuhrt werden soll
+Language=de
+Posi=45 66
+[_XPULSE 27774]
+Fam=sfuptime
+Face=XPulse
+Width=7
+Init=y
+In=In_EB TV_I 
+Out=Q_B t_I 
+S=Tim_T Sta_F 
+Language=de
+Posi=45 55
+[_HEAINI8 27776]
+Fam=heavinit
+Face=Heavac 8
+FacePosi=l
+Width=10
+Init=y
+Vers=7
+Out=REx_B Err_B 
+S=Fs_4F Fsw_2F Rs_2R Clk_3R Cs_C LED_F 
+av0=c c1 =0 \nabs 
+av1=a hwk %s =1 {0,1} 
+av2=v Fs 0 %s \nabs 
+av3=v Clk 0 %0H 
+av4=v Clk 1 %2D 
+av5=v Clk 2 %s 
+av6=c c2 =0 \nabs 
+av7=a Fsw 0 %s =1 {0,1} 
+av8=a Hem %s =0 {0,1} 
+av9=v Fsw 1 %s 
+av10=c c4 =0 \nabs 
+av11=a bid %s =1:0 {0,1,2} 
+av12=c c3 =0 \nabs 
+av13=a Fir %1p =20 {1..100} 
+av14=a Sin %s =10 {10,20,50,100} 
+av15=v Fs 1 %s \nabs 
+av16=v Rs 0 \nabs 
+av17=b Fs 2 %s =1 \nabs 
+av18=c c5 =0 \nabs 
+av19=c c51 =0 \nabs 
+av20=c c52 =0 \nabs 
+av21=bv Fs 3 %s =1 \v Cs 0 %s \nabs 
+av22=a are %s =1 {0,1} 
+av23=v Rs 1 %s 
+av24=c c6 =0 \nabs 
+av25=a PuE %s =0:1 {0,1,2} 
+av26=a PuR %s =0:1 {0,1,2} 
+av27=a PuA %s =0:1 {0,1,2} 
+AcceptName=3
+Language=de
+Posi=45 1
+[_IMOVE2 27777]
+Fam=sfupinte
+Width=2
+Init=n
+Stretch=0 31 1 0
+In=_NI 
+Out=_NI 
+Language=de
+Posi=48 44
+[_BMOVE2 27778]
+Fam=sfupbina
+Width=2
+Init=n
+Stretch=0 31 1 0
+In=_NB 
+Out=_NB 
+Language=de
+Posi=48 50
+[_BMOVE2 27779]
+Fam=sfupbina
+Width=2
+Init=n
+Stretch=0 31 1 0
+In=_NB 
+Out=_NB 
+Language=de
+Posi=48 47
+[_IMIN2 45524]
+Fam=sfupinte
+Face=Min
+Width=4
+Init=n
+Stretch=1 7 1 1
+In=_NI 
+Out=_I 
+D=Lowest_R 
+Language=de
+Posi=35 30
+[HLINE]
+H0=4 55 56
+H1=6 55 69
+H2=25 28 44)55 69
+H3=27 28 44)55 69
+H4=29 28 44)55 69
+H5=31 28 35)39 44)55 57)58 69
+H6=32 29 35
+H7=33 28 29)55 56)57 69
+H8=45 28 48)50 69
+H9=48 28 48)50 69
+H10=51 28 48)50 69
+H11=58 28 45)52 69
+H12=60 28 45)52 53
+H13=69 27 45)54 69
+H14=71 43 45)54 69
+[VLINE]
+V0=29 32 33
+V1=43 69 71
+V2=57 31 33
+V3=58 29 31
+[NETWORK]
+N0=Bof 55 4
+N1=Bof 55 6)i 69 6
+N2=Bo 28 25)if 44 25
+N3=Bof 55 25)i 69 25
+N4=Bo 28 27)if 44 27
+N5=Bof 55 27)i 69 27
+N6=Bo 28 29)i-f 44 29
+N7=Bof 55 29)i 69 29)i 69 31
+N8=Io 28 31)if 35 31
+N9=Iof 39 31)if 44 31
+N10=Bof 55 31)i 69 33
+N11=Iif 35 32)o 28 33
+N12=Bof 55 33
+N13=Io 28 45)if 48 45
+N14=Iof 50 45)i 69 45
+N15=Bo 28 48)if 48 48
+N16=Bof 50 48)i 69 48
+N17=Bo 28 51)if 48 51
+N18=Bof 50 51)i 69 51
+N19=Bo 28 58)if 45 58
+N20=Bof 52 58)i 69 58
+N21=Io 28 60)if 45 60
+N22=Iof 52 60
+N23=Bof 27 69)if 45 69)if 45 71
+N24=Bof 54 69)i 69 69
+N25=Bof 54 71)i 69 71
+[CONNS]
+Conn0=69 6 145 33 24
+Conn1=28 25 131 34 25
+Conn2=69 25 98 33 30
+Conn3=28 27 176 34 3
+Conn4=69 27 38 33 30
+Conn5=28 29 49 34 27
+Conn6=69 29 12 33 25
+Conn7=28 31 61 34 19
+Conn8=69 31 49 33 28
+Conn9=28 33 97 34 17
+Conn10=69 33 21 33 27
+Conn11=28 45 176 34 3
+Conn12=69 45 11 33 5
+Conn13=28 48 144 34 3
+Conn14=69 48 87 33 5
+Conn15=28 51 56 34 3
+Conn16=69 51 96 33 5
+Conn17=28 58 37 34 26
+Conn18=69 58 37 33 26
+Conn19=28 60 86 34 3
+Conn20=69 69 73 33 28
+Conn21=69 71 85 33 29
+[PAGEDEF]
+PageLen=4812
+[PAGE]
+Name=Init Alarming
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=3467
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_DDC_INAKS250 45053=
+_DDC_SPGENERAL22 44282=
+_SWA_ALARM2_SWEB_V30 45056=
+_DDC_INALMHDR250 45058=
+_IMOVEE 45059=
+_XPULSE 30918=
+_HEAMANI3 37507=
+_ILOADE 37504=
+_HEAMANB3 37506=
+_IISZERO 30917=
+[_DDC_INAKS250 45053]
+Fam=DDC25_FAM_INIT
+Face=PCS def.
+FacePosi=l
+Width=12
+Init=y
+Vers=205001
+av0=c cs =0 \nabs 
+av1=a Function %s =0:1 {0..4,10..14} 
+av2=c c1 =0 \nabs 
+av3=a Level1 %0T ="" 
+av4=a Level2 %0T ="" 
+av5=a Level3 %0T ="" 
+av6=a Level4 %0T ="" 
+av7=a Level5 %0T ="" 
+av8=a Level6 %0T ="" 
+av9=a Level7 %0T ="" 
+av10=a Level8 %0T ="" 
+av11=a Level9 %0T ="" 
+av12=a Level10 %0T ="" 
+av13=c cc =0 \nabs 
+AcceptName=1
+Picture=0 0 12 2
+Language=de
+Posi=2 59
+[_DDC_SPGENERAL22 44282]
+Fam=DDC Sollwerte
+Width=5
+Init=y
+Vers=200000
+Out=Val_I 
+S=Value_R 
+av0=c cs =0 \nabs 
+av1=a BACnet %s =0 {0..1} 
+av2=c c0 =0 \nabs 
+av3=a Value 0 %1p =210:6000 
+av4=c cc =0 \nabs 
+AcceptName=1
+Folder=Sollwerte.Integer?
+Variables0=Value Register;(4) Integerwert
+Language=de
+Posi=20 36
+[_SWA_ALARM2_SWEB_V30 45056]
+Fam=Alarming
+Face=Alarm2 SWeb
+FacePosi=l
+Width=16
+Init=y
+Vers=300000
+In=En_B Clr_EB Ack_EB ClrNum_I AckNum_I 
+Out=Alarm_B Num_I 
+S=LED_F ActClear_F=47 ActAck_F=104 State_R LstHdl_R intF_2F AlarmDB_^D HistDB_^D AlmStFl_F Diagn_R sDB_^D sFlg_2F 
+D=dynReg_R 
+av0=c ccActLst =0 \nabs 
+av1=a ActNumb =100:600 {10..1000} 
+av2=a DnldClr %s =1 {0,1} 
+av3=a ActMode %s =0:3 {0..3} 
+av4=a DelMode %s =0 {0..4} 
+av5=b ActClear 0 %s =1 
+av6=b ActAck 0 %s =1 
+av7=a DelAck %s =0 {0..3} 
+av8=a FPath1 %s =0:3 {0..7} 
+av9=c ccHstLst =0 \nabs 
+av10=a HistList %s =1 {0..2} 
+av11=a HistNumb =250 {0..4200} 
+av12=c cNewF =0 \nabs 
+av13=a EnEvtLst %s =0 {0..1} 
+av14=a EvtSize =250 {0..2000} 
+av15=a ALogTrsh =25:50 {0..2000} 
+av16=a ALogPlac %s =1:3 {1..7} 
+av17=a ALogCrFq %s =0:2 {0..2} 
+av18=a ALogMFil =50 {0..1000} 
+av19=a ALogMSiz =500 {0..1048576} 
+AcceptName=2
+uName=PCD01_ALA
+Folder=Alarming.Init?
+Variables0=ActClear ListClear;Loscht die gesamte Alarmliste
+Variables1=ActAck ListAck;Quittiert die gesamte Alarmliste
+Language=de
+Posi=43 4
+[_DDC_INALMHDR250 45058]
+Fam=DDC25_FAM_INIT
+Face=Alarm Hdr
+FacePosi=l
+Width=12
+Init=y
+Vers=205000
+av0=c cs =0 \nabs 
+av1=a BaseIdx =-1:1 {-1,1..1000} 
+av2=a Descript %0T ="" 
+av3=c cc =0 \nabs 
+AcceptName=1
+aRef=2
+Ref=PCD01_ALA
+Language=de
+Posi=2 63
+[_IMOVEE 45059]
+Fam=sfupinte
+Width=7
+Init=n
+In=En_B In_I 
+Out=Out_I 
+Language=de
+Posi=63 2
+[_XPULSE 30918]
+Fam=sfuptime
+Face=XPulse
+Width=7
+Init=y
+In=In_EB TV_I 
+Out=Q_B t_I 
+S=Tim_T Sta_F 
+Language=de
+Posi=52 28
+[_HEAMANI3 37507]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_I 
+Out=_I 
+S=Fs_F Fsm_F Rsm_R LED_F 
+av0=a flw %s =0 {0,1} 
+av1=a Rsm 0 %1p =0 
+av2=bv Fs 0 %s =1 \v Fsm 0 %s 
+AcceptName=3
+Language=de
+Posi=33 50
+[_ILOADE 37504]
+Fam=sfupinte
+Width=11
+Init=n
+In=En_B In_I 
+Out=Out_I 
+C=_Irtc=129 
+Language=de
+Posi=48 47
+[_HEAMANB3 37506]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=33 47
+[_IISZERO 30917]
+Fam=sfupinte
+Face==0
+Width=3
+Init=n
+In=_I 
+Out=_B 
+Language=de
+Posi=43 30
+[HLINE]
+H0=3 37 63)70 73
+H1=5 62 63
+H2=7 26 43)59 73
+H3=9 26 43)59 62
+H4=11 26 43
+H5=13 26 43
+H6=15 26 43
+H7=19 26 33
+H8=21 26 33
+H9=23 26 33
+H10=25 26 33
+H11=27 26 33
+H12=31 26 43)46 52)59 74
+H13=33 26 52)59 60
+H14=37 25 26
+H15=48 26 33)39 48)59 60
+H16=50 40 48
+H17=51 26 33)39 40
+[VLINE]
+V0=37 3 7
+V1=40 50 51
+V2=62 5 9
+[NETWORK]
+N0=Bif 63 3)if 43 7)o 26 7
+N1=Iof 70 3)i 73 3
+N2=Iif 63 5)of 59 9
+N3=Bof 59 7)i 73 7
+N4=Bo 26 9)if 43 9
+N5=Bo 26 11)if 43 11
+N6=Io 26 13)if 43 13
+N7=Io 26 15)if 43 15
+N8=Io 26 19
+N9=Uo 26 21
+N10=Uo 26 23
+N11=Uo 26 25
+N12=Uo 26 27
+N13=Io 26 31)if 43 31
+N14=Bof 46 31)if 52 31
+N15=Bof 59 31)i 74 31
+N16=Io 26 33)if 52 33
+N17=Iof 59 33
+N18=Iof 25 37
+N19=Bo 26 48)if 33 48
+N20=Bof 39 48)if 48 48
+N21=Iof 59 48
+N22=Iif 48 50)of 39 51
+N23=Io 26 51)if 33 51
+[COMMENT]
+Text0=18 59-0 Alarming
+Text1=18 63-0 Init Auf 1
+[CONNS]
+Conn0=73 3 54 33 18
+Conn1=26 7 194 34 25
+Conn2=73 7 82 33 18
+Conn3=26 9 96 34 5
+Conn4=26 11 96 34 5
+Conn5=26 13 11 34 5
+Conn6=26 15 11 34 5
+Conn7=26 19 129 34 11
+Conn8=26 21 81 34 8
+Conn9=26 23 70 34 8
+Conn10=26 25 105 34 8
+Conn11=26 27 94 34 8
+Conn12=26 31 54 34 18
+Conn13=74 31 32 33 18
+Conn14=26 33 80 34 3
+Conn15=26 48 194 34 25
+Conn16=26 51 69 34 4
+[PAGEDEF]
+PageLen=5982
+[PAGE]
+Name=Init Email
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=67
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_CWM_SEND_CMAIL 24048=
+_DDC_SPGENERAL21 24055=
+_CWM_CINIT 24056=
+_HEAMANB3 24060=
+_HEAMANB3 24065=
+_CWM_SEND_CMAIL 24067=
+_COMQUERY_BY_NAME3 33729=
+_DDC_SPGENERAL21 33730=
+_BOR 33731=
+_MOVEBYT1 33732=
+_BAND 36898=
+[_CWM_SEND_CMAIL 24048]
+Fam=Communication Email
+Face=AMail Send
+FacePosi=l
+Width=16
+Init=y
+Vers=104300
+In=Send_EB 
+Out=Busy_B 
+C=Subject_Dx=127 Text_Dx=172 File_Dx=126 
+S=To_R LED_F Flags_3F Texts_2^X Priority_R 
+D=Register_2R 
+av0=a To 0 =1 {1..5} 
+av1=a Priority 0 =1 {1..5} 
+av2=a Format %s =0 {0..1} 
+AcceptName=1
+aRef=2
+Ref=WebCMail
+Folder=Communication.AMailSend?
+Variables0=To Recipient;Nummer der Empfanger/-liste, die in der FBox "Text Mail Init" definiert wurde
+Variables1=Priority Priority;Mail Prioritat (1...5, wichtig...normal)
+Language=de
+Posi=50 76
+[_DDC_SPGENERAL21 24055]
+Fam=DDC Sollwerte
+Width=5
+Init=y
+Vers=200000
+Out=Val_B 
+S=Value_F 
+av0=c cs =0 \nabs 
+av1=a BACnet %s =0 {0..1} 
+av2=c c0 =0 \nabs 
+av3=a Value 0 %s =0:1 {0..1} 
+av4=c cc =0 \nabs 
+AcceptName=1
+Folder=Sollwerte.Binaer?
+Variables0=Value Flag;(4) Binarwert
+Language=de
+Posi=20 7
+[_CWM_CINIT 24056]
+Fam=Communication Email
+Face=AMail Init
+FacePosi=l
+Width=17
+Init=y
+Vers=104300
+In=En_B 
+Out=Busy_B Err_B ErrNum_I 
+C=SMTP_Dx=173 Name_Dx=160 Pwd_Dx=114 Sender_Dx=103 To1_Dx=53 To2_Dx=193 To3_Dx=8 To4_Dx=141 To5_Dx=182 
+S=LED_F Port_R Flags_10F Register_7R Texts_2^X InitDB_^D Retrys_R Delay_R Count_R TimerDly_T UseAuth_F 
+D=dReg_6R 
+av0=c cc0 =0 \nabs 
+av1=a Port 0 =25 
+av2=a UseAuth 0 %s =1:0 {0..1} 
+av3=c ccText =0 \nabs 
+av4=a LenSubj =40:150 {20..3072} 
+av5=a LenText =80:300 {40..3072} 
+av6=c ccRetry =0 \nabs 
+av7=a Retrys 0 =3 {0..10} 
+av8=v Count 0 
+av9=a Delay 0 %1p =600:200 
+av10=v TimerDly 0 %1p 
+av11=c cc1 =0 \nabs 
+av12=v Flags 0 %s \nabs 
+av13=v Flags 1 %s \nabs 
+av14=v Flags 0 %s \nabs 
+AcceptName=2
+uName=WebCMail
+Folder=Communication.AMailInitl?
+Variables0=Port Port;Portnummer des  Mailservers (Standard SMTP Port ist 25)
+Variables1=Retrys Retrys;Anzahl der Sendeversuche. Falls alle Versuche fehlgeschlagen sind, wird Err aus
+Variables2=Delay Delay;Verzogerung zwischen 2 Sendeversuchen
+Variables3=Count Count;Verbleibende Anzahl von Sendeversuchen
+Variables4=UseAuth UseAuth;Angabe ob eine Authentifizierung am Mailserver erfolgen soll
+Language=de
+Posi=50 5
+[_HEAMANB3 24060]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=38 78
+[_HEAMANB3 24065]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=38 90
+[_CWM_SEND_CMAIL 24067]
+Fam=Communication Email
+Face=AMail Send
+FacePosi=l
+Width=16
+Init=y
+Vers=104300
+In=Send_EB 
+Out=Busy_B 
+C=Subject_Dx=171 Text_Dx=157 File_Dx=140 
+S=To_R LED_F Flags_3F Texts_2^X Priority_R 
+D=Register_2R 
+av0=a To 0 =1:2 {1..5} 
+av1=a Priority 0 =1 {1..5} 
+av2=a Format %s =0 {0..1} 
+AcceptName=1
+aRef=2
+Ref=WebCMail
+Folder=Communication.AMailSend?
+Variables0=To Recipient;Nummer der Empfanger/-liste, die in der FBox "Text Mail Init" definiert wurde
+Variables1=Priority Priority;Mail Prioritat (1...5, wichtig...normal)
+Language=de
+Posi=50 88
+[_COMQUERY_BY_NAME3 33729]
+Fam=IP Protocols
+Face=Query IP Name
+FacePosi=l
+Width=15
+Init=y
+Vers=3
+In=Query_EB 
+Out=Con_SB IPAddr_SI Bsy_SB Error_SB Status_SI 
+C=Name_Dx=181 
+S=LED_F 
+av0=a ADJ0 %s =0:4 {0,4} 
+AcceptName=1
+Language=de
+Posi=50 33
+[_DDC_SPGENERAL21 33730]
+Fam=DDC Sollwerte
+Width=5
+Init=y
+Vers=200000
+Out=Val_B 
+S=Value_F 
+av0=c cs =0 \nabs 
+av1=a BACnet %s =0 {0..1} 
+av2=c c0 =0 \nabs 
+av3=a Value 0 %s =0 {0..1} 
+av4=c cc =0 \nabs 
+AcceptName=1
+Folder=Sollwerte.Binaer?
+Variables0=Value Flag;(4) Binarwert
+Language=de
+Posi=20 40
+[_BOR 33731]
+Fam=sfupbina
+Face=>=1
+Width=3
+Init=n
+Stretch=1 9 1 2
+In=_NB 
+Out=_B 
+Language=de
+Posi=38 35
+[_MOVEBYT1 33732]
+Fam=sfupmove
+Face=MovByte
+Width=13
+Init=n
+Stretch=0 3 1 3
+In=In_I 
+Out=Out_I B_NI 
+C=Of_Ik=56 
+av0=a ADJ0 %s =1 {1..2} 
+av1=a ADJ1 %s =1 {1..2} 
+av2=a ADJ2 %s =1 {1..2} 
+av3=a ADJ3 %s =1 {1..2} 
+Language=de
+Posi=51 49
+[_BAND 36898]
+Fam=sfupbina
+Face=&&
+Width=2
+Init=n
+Stretch=1 9 1 1
+In=_NB 
+Out=_B 
+Language=de
+Posi=39 7
+[HLINE]
+H0=8 25 39)41 50)67 68
+H1=9 36 39
+H2=10 67 68
+H3=12 67 68
+H4=36 26 38)41 50)65 66
+H5=37 36 38
+H6=38 26 36)37 38)65 80
+H7=40 65 66
+H8=41 25 37
+H9=42 65 66
+H10=44 65 66
+H11=52 26 51)64 66
+H12=54 64 80
+H13=56 64 80
+H14=58 64 80
+H15=60 64 80
+H16=79 26 38)44 50)66 67
+H17=91 26 38)44 50)66 67
+[VLINE]
+V0=36 9 36)37 38
+V1=37 38 41
+[NETWORK]
+N0=Bof 25 8)if 39 8
+N1=Bof 41 8)if 50 8
+N2=Bof 67 8
+N3=Bi-f 39 9)if 38 36)o 26 36
+N4=Bof 67 10
+N5=Iof 67 12
+N6=Bof 41 36)if 50 36
+N7=Bof 65 36
+N8=Bif 38 37)o 26 38
+N9=Bif 38 38)of 25 41
+N10=Iof 65 38)i 80 38
+N11=Bof 65 40
+N12=Bof 65 42
+N13=Iof 65 44
+N14=Io 26 52)if 51 52
+N15=Iof 64 52
+N16=Iof 64 54)i 80 54
+N17=Iof 64 56)i 80 56
+N18=Iof 64 58)i 80 58
+N19=Iof 64 60)i 80 60
+N20=Bo 26 79)if 38 79
+N21=Bof 44 79)if 50 79
+N22=Bof 66 79
+N23=Bo 26 91)if 38 91
+N24=Bof 44 91)if 50 91
+N25=Bof 66 91
+[CONNS]
+Conn0=77 14 173 34 8
+Conn1=77 16 160 34 8
+Conn2=77 18 114 34 7
+Conn3=77 20 103 34 9
+Conn4=77 22 53 34 6
+Conn5=77 24 193 34 6
+Conn6=26 36 159 34 22
+Conn7=26 38 17 34 24
+Conn8=80 38 192 33 8
+Conn9=26 52 192 34 8
+Conn10=80 54 46 33 10
+Conn11=80 56 31 33 10
+Conn12=80 58 16 33 10
+Conn13=80 60 158 33 10
+Conn14=26 79 128 34 25
+Conn15=26 91 96 34 5
+[PAGEDEF]
+PageLen=6548
+[PAGE]
+Name=Init StSpg
+RemarkSize=0
+CountOfLabels=40
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=1954
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_DDC_AL1ALA250 45066=
+_DDC_ALFUSE250 45065=
+[_DDC_AL1ALA250 45066]
+Fam=DDC25_FAM_ALARM
+Face=1 Alarm
+FacePosi=l
+Width=10
+Init=y
+Vers=205001
+In=Inp_B 
+Out=Alarm_B [Inp]_B 
+S=NoNc_F=155 QuitTyp_F=139 SpgGrp_R=125 Sm_F=113 LED_F DI_R=102 
+av0=c cs =0 \nabs 
+av1=a Descript %0T ="Alarm":"Fuse Power Supply " 
+av2=a AlmIndex =-1 {-1..4000} 
+av3=a BACnet %s =1 {0..1} 
+av4=c c0 =0 \nabs 
+av5=a DI 0 =-1 {-1..1023} 
+av6=a NoNc 0 %s =0:1 {0,1} 
+av7=a QuitTyp 0 %s =0 {0,1} 
+av8=a SpgGrp 0 %s =1:4 {0..6} 
+av9=v Sm 0 %s 
+av10=a txtSm %0T ="Alarm":"2F4 in alarm" 
+av11=a O1ON %0T ="ALA" 
+av12=a O1D %0T ="Alarm":"2F4 in alarm" 
+av13=a O1NC =0 {-1..4194303} 
+av14=a O1OT %0T ="" 
+av15=c cc =0 \nabs 
+AcceptName=1
+aRef=2
+Ref=FuseGuard
+Folder=Stoerungen.Sm1_?
+Variables0=NoNc NoNc;(5) Auswahl des Normalzustands des Gebers
+Variables1=QuitTyp QuitPflicht;(5) Vorwahl ob die Storung dem Geber folgt oder gespeichert bleibt und quittier
+Variables2=SpgGrp SpgGrp;(5) zugehorige Spannungsgruppe zur Unterdruckung von Geistermeldungen bei fehle
+Variables3=Sm Sm;(1) Zustand der Stormeldung
+Variables4=DI DIKontakt;(5) Digitaler Eingang
+Language=de
+Posi=47 31
+[_DDC_ALFUSE250 45065]
+Fam=DDC25_FAM_ALARM
+Face=Ala Fuse
+FacePosi=l
+Width=10
+Init=y
+Vers=205001
+In=230_B 24~_B 24=_B Ph_B vltg._B 
+Out=GrpAla_B StartUp_B [230]_B [24~]_B [24=]_B [Ph]_B [Spg]_B 
+S=NoNc230_F=59 Quit230_F=68 NoNc24AC_F=138 Quit24AC_F=124 NoNc24DC_F=170 Quit24DC_F=154 NoNcPh_F=93 QuitPh_F=79 NoNcStKr_F=112 QuitStKr_F=101 PhTyp_F=44 StKrTyp_F=29 Sm230AC_F=78 Sm24AC_F=92 Sm24DC_F=100 SmPhasen_F=111 SmSteuer_F=43 LED_F sFlag_13F DI230_R=51 DI24AC_R=58 DI24DC_R=67 DIPhasen_R=191 DIStKr_R=6 sTmr_T Delay_R=169 
+av0=c cs =0 \nabs 
+av1=a Descript %0T ="Ala Fuse":"Fuse Power Supply " 
+av2=a AlmIndex =-1 {-1..4000} 
+av3=a BACnet %s =4 {0..4} 
+av4=c cp =0 \nabs 
+av5=a Delay 0 %1p =20 {0..6000} 
+av6=c c1 =0 \nabs 
+av7=a DI230 0 =-1 {-1..1023} 
+av8=a NoNc230 0 %s =0:1 {0,1} 
+av9=a Quit230 0 %s =0 {0,1} 
+av10=v Sm230AC 0 %s 
+av11=a txt230AC %0T ="230VAC":"not used" 
+av12=a O1ON %0T ="ALFUSE-230AC" 
+av13=a O1D %0T ="Alarm Fuse 230VAC":"not used" 
+av14=a O1NC =0 {-1..4194303} 
+av15=a O1OT %0T ="" 
+av16=c c2 =0 \nabs 
+av17=a DI24AC 0 =-1 {-1..1023} 
+av18=a NoNc24AC 0 %s =0:1 {0,1} 
+av19=a Quit24AC 0 %s =0 {0,1} 
+av20=v Sm24AC 0 %s 
+av21=a txt24AC %0T ="24VAC":"2F5 in alarm" 
+av22=a O2ON %0T ="ALFUSE-24AC" 
+av23=a O2D %0T ="Alarm Fuse 24VAC":"2F5 in alarm" 
+av24=a O2NC =0 {-1..4194303} 
+av25=a O2OT %0T ="" 
+av26=c c3 =0 \nabs 
+av27=a DI24DC 0 =-1 {-1..1023} 
+av28=a NoNc24DC 0 %s =0:1 {0,1} 
+av29=a Quit24DC 0 %s =0 {0,1} 
+av30=v Sm24DC 0 %s 
+av31=a txt24DC %0T ="24VDC":"2F1 /2F2 in alarm" 
+av32=a O3ON %0T ="ALFUSE-24DC" 
+av33=a O3D %0T ="Alarm Fuse 24VDC":"2F1 /2F2 in alarm" 
+av34=a O3NC =0 {-1..4194303} 
+av35=a O3OT %X ="" 
+av36=c c4 =0 \nabs 
+av37=a DIPhasen 0 =-1 {-1..1023} 
+av38=a NoNcPh 0 %s =0:1 {0,1} 
+av39=a QuitPh 0 %s =0 {0,1} 
+av40=v SmPhasen 0 %s 
+av41=a txtPhase %0T ="Phase":"1K1 in alarm" 
+av42=a O4ON %0T ="ALFUSE-PHASE" 
+av43=a O4D %0T ="Alarm Fuse Phase":"1K1 in alarm" 
+av44=a O4NC =0 {-1..4194303} 
+av45=a O4OT %0T ="" 
+av46=a PhTyp 0 %s =1 {0,1} 
+av47=c c5 =0 \nabs 
+av48=a DIStKr 0 =-1 {-1..1023} 
+av49=a NoNcStKr 0 %s =0:1 {0,1} 
+av50=a QuitStKr 0 %s =0 {0,1} 
+av51=v SmSteuer 0 %s 
+av52=a txtMain %0T ="Main Fuse":"1F2 in alarm" 
+av53=a O5ON %0T ="ALFUSE-MAIN" 
+av54=a O5D %0T ="Alarm Fuse Main":"1F2 in alarm" 
+av55=a O5NC =0 {-1..4194303} 
+av56=a O5OT %0T ="" 
+av57=a StKrTyp 0 %s =1:0 {0,1} 
+av58=c cc =0 \nabs 
+AcceptName=2
+uName=FuseGuard
+Folder=Stoerungen.Spannungen?
+Variables0=NoNc230 AC230NoNc;(5) Meldung 1 - Auswahl des Normalzustands des Gebers
+Variables1=Quit230 AC230QuitPflicht;(5) Meldung 1 - Vorwahl ob die Storung dem Geber folgt oder gespeichert bleibt
+Variables2=NoNc24AC AC24NoNc;(5) Meldung 2 - Auswahl des Normalzustands des Gebers
+Variables3=Quit24AC AC24QuitPflicht;(5) Meldung 2 - Vorwahl ob die Storung dem Geber folgt oder gespeichert bleibt
+Variables4=NoNc24DC DC24NoNc;(5) Meldung 3 - Auswahl des Normalzustands des Gebers
+Variables5=Quit24DC DC24QuitPflicht;(5) Meldung 3 - Vorwahl ob die Storung dem Geber folgt oder gespeichert bleibt
+Variables6=NoNcPh PhasenNoNc;(5) Meldung 4 - Auswahl des Normalzustands des Gebers
+Variables7=QuitPh PhasenQuitPflicht;(5) Meldung 4 - Vorwahl ob die Storung dem Geber folgt oder gespeichert bleibt
+Variables8=NoNcStKr SpgNoNc;(5) Meldung 5 - Auswahl des Normalzustands des Gebers
+Variables9=QuitStKr SpgQuitPflicht;(5) Meldung 5 - Vorwahl ob die Storung dem Geber folgt oder gespeichert bleibt
+Variables10=PhTyp PhasenOverride;(5) Meldung 4 - Vorwahl ob intern parallel die Meldungen 230VC/24VAC/24VDC (Mel
+Variables11=StKrTyp SpgOverride;(5) Meldung 5 - Vorwahl ob intern parallel die Meldungen 230VC/24VAC/24VDC (Mel
+Variables12=Sm230AC SmAC230;(1) Meldung 1 - Alarmzustand
+Variables13=Sm24AC SmAC24;(1) Meldung 2 - Alarmzustand
+Variables14=Sm24DC SmDC24;(1) Meldung 3 - Alarmzustand
+Variables15=SmPhasen SmPhasen;(1) Meldung 4 - Alarmzustand
+Variables16=SmSteuer SmSpg;(1) Meldung 5 - Alarmzustand
+Variables17=DI230 DI230AC;(5) Meldung 1 - Digitale Eingangsadresse
+Variables18=DI24AC DI24AC;(5) Meldung 2 - Digitale Eingangsadresse
+Variables19=DI24DC DI24DC;(5) Meldung 3 - Digitale Eingangsadresse
+Variables20=DIPhasen DIPhasen;(5) Meldung 4 - Digitale Eingangsadresse
+Variables21=DIStKr DISteuerkreis;(5) Meldung 5 - Digitale Eingangsadresse
+Variables22=Delay Verzoeger;(5) Verzogerung bis Normalzustand angezeigt wird
+Language=de
+Posi=47 11
+[HLINE]
+H0=14 37 47)57 72
+H1=16 37 47)57 58
+H2=18 37 47)57 58
+H3=20 37 47)57 58
+H4=22 37 47)57 58
+H5=24 57 58
+H6=26 57 58
+H7=34 37 47)57 72
+H8=36 57 58
+[NETWORK]
+N0=Bo 37 14)if 47 14
+N1=Bof 57 14)i 72 14
+N2=Bo 37 16)if 47 16
+N3=Bof 57 16
+N4=Bo 37 18)if 47 18
+N5=Bof 57 18
+N6=Bo 37 20)if 47 20
+N7=Bof 57 20
+N8=Bo 37 22)if 47 22
+N9=Bof 57 22
+N10=Bof 57 24
+N11=Bof 57 26
+N12=Bo 37 34)if 47 34
+N13=Bof 57 34)i 72 34
+N14=Bof 57 36
+[COMMENT]
+Text0=47 38-0 USV
+[CONNS]
+Conn0=37 14 87 34 5
+Conn1=72 14 60 33 24
+Conn2=37 16 52 34 25
+Conn3=37 18 45 34 25
+Conn4=37 20 30 34 23
+Conn5=37 22 15 34 23
+Conn6=37 34 7 34 23
+Conn7=72 34 156 33 23
+[PAGEDEF]
+PageLen=254
+[PAGE]
+Name=Init SBus
+Comment=E-Zahler
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=1955
+PageColor=0
+PageBackColor=16777215
+PageDisabled=1
+ConditinalFunction=0
+ConditionalValue=0
+[PAGEDEF]
+PageLen=241
+[PAGE]
+Name=Init SL0_Flash
+RemarkSize=0
+CountOfLabels=40
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=1957
+PageColor=0
+PageBackColor=16777215
+PageDisabled=1
+ConditinalFunction=0
+ConditionalValue=0
+[PAGEDEF]
+PageLen=4354
+[PAGE]
+Name=Clock
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=1958
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_IDIV 27832=
+_HEALIMIT 27833=
+_IMUL 27842=
+_HEARCLK 27835=
+_HEAWCLK2 27834=
+_IDIV 36679=
+_IDIV 36684=
+_IDIV 36685=
+_IADD2 36686=
+_IDIV 36860=
+_IMOVE2 36911=
+_IMOVE2 36912=
+[_IDIV 27832]
+Fam=sfupinte
+Face=Div
+Width=6
+Init=n
+In=A_I B_I 
+Out=A/B_I A%B_I 
+Language=de
+Posi=50 14
+[_HEALIMIT 27833]
+Fam=heavfilt
+Face=Limit
+FacePosi=l
+Width=7
+Init=y
+In=_I 
+Out=_I 
+S=Rs_2R LED_F 
+D=Fd_4F 
+av0=c c1 =0 \nabs 
+av1=a Rs 0 %1p =0:1 {-2000000..2000000} 
+av2=a Rs 1 %1p =1000:7 {-2000000..2000000} 
+AcceptName=3
+Language=de
+Posi=49 11
+[_IMUL 27842]
+Fam=sfupinte
+Face=x
+Width=2
+Init=n
+In=_I _I 
+Out=_I 
+Language=de
+Posi=61 34
+[_HEARCLK 27835]
+Fam=heavclk
+Face=Clock
+FacePosi=l
+Width=7
+Init=y
+Vers=5
+Out=HMS_I YMD_I D_I SW_B Err_B 
+S=LED_F 
+AcceptName=3
+Language=de
+Posi=22 5
+[_HEAWCLK2 27834]
+Fam=heavclk
+Face=Clock
+FacePosi=l
+Width=7
+Init=y
+Vers=5
+In=HM_I EnT_EB YMD_I D_I EnD_EB 
+S=Fs_4F Rs_3R LED_F 
+D=Rd_2R 
+av0=a hmi %s =0 {0,1} 
+av1=a Rs 0 %1H =1200:363 {0..2359} \nabs 
+av2=b Fs 2 %s =1 \nabs 
+av3=a Rs 1 %0D =940101:515 {101..991231} \nabs 
+av4=a Rs 2 %s =1:4 {1..7} \nabs 
+av5=b Fs 3 %s =1 \nabs 
+AcceptName=3
+uName=Uhrzeit
+Language=de
+Posi=49 83
+[_IDIV 36679]
+Fam=sfupinte
+Face=Div
+Width=6
+Init=n
+In=A_I B_I 
+Out=A/B_I A%B_I 
+Language=de
+Posi=50 28
+[_IDIV 36684]
+Fam=sfupinte
+Face=Div
+Width=6
+Init=n
+In=A_I B_I 
+Out=A/B_I A%B_I 
+Language=de
+Posi=50 37
+[_IDIV 36685]
+Fam=sfupinte
+Face=Div
+Width=6
+Init=n
+In=A_I B_I 
+Out=A/B_I A%B_I 
+Language=de
+Posi=50 45
+[_IADD2 36686]
+Fam=sfupinte
+Face=+
+Width=2
+Init=n
+Stretch=1 7 1 1
+In=_NI 
+Out=_I 
+D=AddReg_R 
+Language=de
+Posi=61 39
+[_IDIV 36860]
+Fam=sfupinte
+Face=Div
+Width=6
+Init=n
+In=A_I B_I 
+Out=A/B_I A%B_I 
+Language=de
+Posi=50 21
+[_IMOVE2 36911]
+Fam=sfupinte
+Width=2
+Init=n
+Stretch=0 31 1 0
+In=_NI 
+Out=_NI 
+Language=de
+Posi=52 54
+[_IMOVE2 36912]
+Fam=sfupinte
+Width=2
+Init=n
+Stretch=0 31 1 0
+In=_NI 
+Out=_NI 
+Language=de
+Posi=52 57
+[HLINE]
+H0=8 29 67
+H1=10 29 67
+H2=12 29 49)56 67
+H3=14 29 30
+H4=16 29 30
+H5=17 43 50)56 67
+H6=19 30 50)56 67
+H7=24 43 50)56 67
+H8=26 31 50)56 57
+H9=31 30 50)56 67
+H10=33 30 50)56 67
+H11=35 60 61)63 67
+H12=36 30 61
+H13=40 41 50)56 61)63 67
+H14=41 58 61
+H15=42 30 50)56 57
+H16=43 57 67
+H17=44 30 58
+H18=48 30 50)56 67
+H19=50 30 50)56 67
+H20=55 30 52)54 67
+H21=58 30 52)54 67
+H22=86 29 49
+H23=88 29 49
+H24=90 29 49
+H25=92 29 49
+H26=94 29 49
+[VLINE]
+V0=41 10 40
+V1=43 8 17)17 24
+V2=57 42 43
+V3=58 41 44
+V4=60 17 35
+[NETWORK]
+N0=Iof 29 8)i 67 8)if 50 24)if 50 17
+N1=Iof 29 10)i 67 10)if 50 40
+N2=Iof 29 12)if 49 12
+N3=Iof 56 12)i 67 12
+N4=Bof 29 14
+N5=Bof 29 16
+N6=Iof 56 17)i 67 17)if 61 35
+N7=Io 30 19)if 50 19
+N8=Iof 56 19)i 67 19
+N9=Iof 56 24)i 67 24
+N10=Io 31 26)if 50 26
+N11=Iof 56 26
+N12=Io 30 31)if 50 31
+N13=Iof 56 31)i 67 31
+N14=Io 30 33)if 50 33
+N15=Iof 56 33)i 67 33
+N16=Iof 63 35)i 67 35
+N17=Io 30 36)if 61 36
+N18=Iof 56 40)if 61 40
+N19=Iof 63 40)i 67 40
+N20=Iif 61 41)o 30 44
+N21=Io 30 42)if 50 42
+N22=Iof 56 42)i 67 43
+N23=Io 30 48)if 50 48
+N24=Iof 56 48)i 67 48
+N25=Io 30 50)if 50 50
+N26=Iof 56 50)i 67 50
+N27=Io 30 55)if 52 55
+N28=Iof 54 55)i 67 55
+N29=Io 30 58)if 52 58
+N30=Iof 54 58)i 67 58
+N31=Io 29 86)if 49 86
+N32=Bo 29 88)if 49 88
+N33=Io 29 90)if 49 90
+N34=Io 29 92)if 49 92
+N35=Bo 29 94)if 49 94
+[CONNS]
+Conn0=67 8 77 33 32
+Conn1=67 10 14 33 32
+Conn2=67 12 180 33 22
+Conn3=67 17 137 33 22
+Conn4=30 19 42 34 5
+Conn5=67 19 190 33 23
+Conn6=67 24 28 33 32
+Conn7=31 26 5 34 4
+Conn8=30 31 190 34 23
+Conn9=67 31 27 33 22
+Conn10=30 33 5 34 4
+Conn11=67 33 4 33 22
+Conn12=67 35 66 33 32
+Conn13=30 36 179 34 3
+Conn14=67 40 168 33 23
+Conn15=30 42 42 34 5
+Conn16=67 43 26 33 23
+Conn17=30 44 25 34 5
+Conn18=30 48 26 34 23
+Conn19=67 48 91 33 24
+Conn20=30 50 5 34 4
+Conn21=67 50 123 33 23
+Conn22=30 55 14 34 29
+Conn23=67 55 14 33 32
+Conn24=30 58 28 34 29
+Conn25=67 58 28 33 32
+Conn26=29 86 153 34 23
+Conn27=29 88 167 34 23
+Conn28=29 90 178 34 24
+Conn29=29 92 189 34 22
+Conn30=29 94 110 34 23
+[PAGEDEF]
+PageLen=695
+[PAGE]
+Name=Tagesimpuls
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=1959
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_HEACLKI2 27847=
+[_HEACLKI2 27847]
+Fam=heavclk
+Face=Clk_I
+FacePosi=l
+Width=8
+Init=y
+Vers=5
+In=En_B 
+Out=Ch_B 
+S=Fs_2F Rs_2R Ts_T LED_F 
+D=Rd_R 
+av0=a hmi %s =0 {0,1} 
+av1=a Rs 0 %1H =1200:1 {0..2359} 
+av2=a Rs 1 %1p =10:600 {0,2..1000} 
+av3=v Fs 0 %s \nabs 
+AcceptName=3
+Language=de
+Posi=52 8
+[HLINE]
+H0=11 31 52)60 68
+[NETWORK]
+N0=Bo 31 11)if 52 11
+N1=Bof 60 11)i 68 11
+[CONNS]
+Conn0=31 11 50 34 22
+Conn1=68 11 159 33 22
+[PAGEDEF]
+PageLen=1404
+[PAGE]
+Name=Zykluszeit
+RemarkSize=0
+CountOfLabels=40
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=1961
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_DDC_SPGENERAL21 27856=
+_DDC_SPGENERAL21 27857=
+_TIMECYC 27858=
+[_DDC_SPGENERAL21 27856]
+Fam=DDC Sollwerte
+Width=5
+Init=y
+Vers=200000
+Out=Val_B 
+S=Value_F 
+av0=c cs =0 \nabs 
+av1=a BACnet %s =0 {0..5} 
+av2=c c0 =0 \nabs 
+av3=a Value 0 %s =0 {0..1} 
+av4=c cc =0 \nabs 
+AcceptName=1
+Folder=Sollwerte.Binaer?
+Variables0=Value Flag;(4) Binarwert
+Language=de
+Posi=28 19
+[_DDC_SPGENERAL21 27857]
+Fam=DDC Sollwerte
+Width=5
+Init=y
+Vers=200000
+Out=Val_B 
+S=Value_F 
+av0=c cs =0 \nabs 
+av1=a BACnet %s =0 {0..5} 
+av2=c c0 =0 \nabs 
+av3=a Value 0 %s =0 {0..1} 
+av4=c cc =0 \nabs 
+AcceptName=1
+Folder=Sollwerte.Binaer?
+Variables0=Value Flag;(4) Binarwert
+Language=de
+Posi=28 22
+[_TIMECYC 27858]
+Fam=sfuptime
+Face=CycleTime
+FacePosi=l
+Width=11
+Init=y
+In=RM_EB RA_EB 
+Out=CyT_I Max_I Ala_B 
+S=Fs_2F LED_F 
+D=Rd_2R 
+av0=a nb =10 {1..1000} 
+av1=a lev =100 {1..100000} 
+av2=b Fs 0 %s =1 
+av3=b Fs 1 %s =1 
+Language=de
+Posi=50 17
+[HLINE]
+H0=20 33 50)61 62
+H1=22 34 50)61 62
+H2=23 33 34
+H3=24 61 62
+[VLINE]
+V0=34 22 23
+[NETWORK]
+N0=Bof 33 20)if 50 20
+N1=Iof 61 20
+N2=Bif 50 22)of 33 23
+N3=Iof 61 22
+N4=Bof 61 24
+[PAGEDEF]
+PageLen=6763
+[PAGE]
+Name=ResetTaster, LED
+RemarkSize=0
+CountOfLabels=40
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=1965
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_DDC_ALGENERAL21 27903=
+_XPULSE 27905=
+_BDYN2 29904=
+_BDYN2 29905=
+_BDYN2 29906=
+_BDYN2 29907=
+_BDYN2 29908=
+_BDYN2 29909=
+_BOR 29910=
+_BOR 27913=
+_BOR 27914=
+_XPULSE 27915=
+_BOR 27916=
+_ONDEL 27917=
+_XPULSE 27918=
+_BOR 27919=
+_XPULSE 27920=
+_BDYN2 29911=
+_BDYN2 30499=
+[_DDC_ALGENERAL21 27903]
+Fam=DDC Stoerungen
+Face=1 Ala/Msg
+FacePosi=l
+Width=10
+Init=y
+Vers=200000
+In=Inp_B 
+Out=Alarm_B Message_B [Inp]_B 
+S=NoNc_F QuitTyp_F Sm_F SpgGrp_R SmTyp_R AnVerz_R AbVerz_R sFlag_3F sTimer_T LED_F DI_R 
+av0=c cs =0 \nabs 
+av1=a AlmIndex =0 {0..4000} 
+av2=a BACnet %s =0:2 {0..20} 
+av3=c c0 =0 \nabs 
+av4=a DI 0 =-1 {-1..1023} 
+av5=a NoNc 0 %s =1 {0,1} 
+av6=a QuitTyp 0 %s =0 {0,1} 
+av7=a SpgGrp 0 %s =1:0 {0..6} 
+av8=a SmTyp 0 %s =3:2 {1..4} 
+av9=a AnVerz 0 %1p =20:0 {0..36000} 
+av10=a AbVerz 0 %1p =0:10 {0..36000} 
+av11=v Sm 0 %s 
+av12=c cc =0 \nabs 
+AcceptName=1
+aRef=2
+Ref=FuseGuard
+Folder=Stoerungen.SmMld?
+Variables0=NoNc NoNc;(5) Auswahl des Normalzustands des Gebers
+Variables1=QuitTyp QuitPflicht;(5) Vorwahl ob die Storung dem Geber folgt oder gespeichert bleibt und quittier
+Variables2=Sm Sm;(1) Zustand der Stormeldung
+Variables3=SpgGrp SpgGrp;(5) zugehorige Spannungsgruppe zur Unterdruckung von Geistermeldungen bei fehle
+Variables4=SmTyp Funktion;(5) Auswahl welcher Ausgang angesteuert werden soll. Interne Stormeldung wird i
+Variables5=AnVerz VerzAnzug;(5) Dauer der Anzugverzogerung
+Variables6=AbVerz VerzAbfall;(5) Dauer der Abfallverzogerung
+Variables7=DI DIKontakt;(5) Digitaler Eingang
+Language=de
+Posi=48 2
+[_XPULSE 27905]
+Fam=sfuptime
+Face=XPulse
+Width=7
+Init=y
+In=In_EB TV_I 
+Out=Q_B t_I 
+S=Tim_T Sta_F 
+Language=de
+Posi=50 12
+[_BDYN2 29904]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0 {0..2} 
+Language=de
+Posi=32 32
+[_BDYN2 29905]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0 {0..2} 
+Language=de
+Posi=38 30
+[_BDYN2 29906]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0 {0..2} 
+Language=de
+Posi=33 28
+[_BDYN2 29907]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0 {0..2} 
+Language=de
+Posi=38 26
+[_BDYN2 29908]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0 {0..2} 
+Language=de
+Posi=33 24
+[_BDYN2 29909]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0 {0..2} 
+Language=de
+Posi=38 22
+[_BOR 29910]
+Fam=sfupbina
+Face=>=1
+Width=3
+Init=n
+Stretch=1 9 1 7
+In=_NB 
+Out=_B 
+Language=de
+Posi=53 20
+[_BOR 27913]
+Fam=sfupbina
+Face=>=1
+Width=3
+Init=n
+Stretch=1 9 1 2
+In=_NB 
+Out=_B 
+Language=de
+Posi=69 6
+[_BOR 27914]
+Fam=sfupbina
+Face=>=1
+Width=3
+Init=n
+Stretch=1 9 1 1
+In=_NB 
+Out=_B 
+Language=de
+Posi=51 42
+[_XPULSE 27915]
+Fam=sfuptime
+Face=XPulse
+Width=7
+Init=y
+In=In_EB TV_I 
+Out=Q_B t_I 
+S=Tim_T Sta_F 
+Language=de
+Posi=49 55
+[_BOR 27916]
+Fam=sfupbina
+Face=>=1
+Width=3
+Init=n
+Stretch=1 9 1 2
+In=_NB 
+Out=_B 
+Language=de
+Posi=66 56
+[_ONDEL 27917]
+Fam=sfuptime
+Face=T|-|0
+Width=6
+Init=y
+In=In_EB TV_I 
+Out=Q_B t_I 
+S=Tim_T Sta_F 
+Language=de
+Posi=49 48
+[_XPULSE 27918]
+Fam=sfuptime
+Face=XPulse
+Width=7
+Init=y
+In=In_EB TV_I 
+Out=Q_B t_I 
+S=Tim_T Sta_F 
+Language=de
+Posi=49 62
+[_BOR 27919]
+Fam=sfupbina
+Face=>=1
+Width=3
+Init=n
+Stretch=1 9 1 1
+In=_NB 
+Out=_B 
+Language=de
+Posi=37 57
+[_XPULSE 27920]
+Fam=sfuptime
+Face=XPulse
+Width=7
+Init=y
+In=In_EB TV_I 
+Out=Q_B t_I 
+S=Tim_T Sta_F 
+Language=de
+Posi=49 70
+[_BDYN2 29911]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0 {0..2} 
+Language=de
+Posi=33 20
+[_BDYN2 30499]
+Fam=sfupbina
+Face=Dyn
+Width=4
+Init=y
+In=_EB 
+Out=_B 
+S=Edg_F 
+av0=a opt %s =0 {0..2} 
+Language=de
+Posi=38 34
+[HLINE]
+H0=5 29 48)58 59
+H1=7 58 69)72 78
+H2=8 61 69
+H3=9 58 59)68 69
+H4=15 29 50)57 61
+H5=17 29 50)57 58
+H6=21 29 33)37 53)56 68
+H7=22 43 53
+H8=23 29 38)42 43)44 53
+H9=24 45 53
+H10=25 29 33)37 44)46 53
+H11=26 47 53
+H12=27 29 38)42 45)48 53
+H13=28 49 53
+H14=29 29 33)37 46
+H15=31 29 38)42 47
+H16=33 29 32)36 48
+H17=35 29 38)42 49
+H18=43 29 51)54 77
+H19=44 50 51
+H20=45 29 50)75 77
+H21=47 75 77
+H22=51 29 49)55 65
+H23=53 29 49)55 56
+H24=57 29 36)65 66)69 77
+H25=58 36 37)40 49)56 66
+H26=59 29 37)65 66)75 77
+H27=60 48 49)56 57
+H28=61 29 48
+H29=65 29 49)56 65
+H30=67 48 49)56 57
+H31=68 29 48
+H32=73 29 49)56 77
+H33=75 29 49)56 57
+[VLINE]
+V0=36 57 58
+V1=43 22 23
+V2=44 23 25
+V3=45 24 27
+V4=46 25 29
+V5=47 26 31
+V6=48 27 33)60 61)67 68
+V7=49 28 35
+V8=50 44 45
+V9=61 8 15
+V10=65 51 57)59 65
+V11=68 9 21
+V12=75 43 45)45 47)57 59
+[NETWORK]
+N0=Bo 29 5)if 48 5
+N1=Bof 58 5
+N2=Bof 58 7)if 69 7
+N3=Bof 72 7)i 78 7
+N4=Bif 69 8)of 57 15
+N5=Bof 58 9
+N6=Bif 69 9)of 56 21
+N7=Bo 29 15)if 50 15
+N8=Io 29 17)if 50 17
+N9=Iof 57 17
+N10=Bo 29 21)if 33 21
+N11=Bof 37 21)if 53 21
+N12=Bif 53 22)of 42 23
+N13=Bo 29 23)if 38 23
+N14=Bif 53 23)of 37 25
+N15=Bif 53 24)of 42 27
+N16=Bo 29 25)if 33 25
+N17=Bif 53 25)of 37 29
+N18=Bif 53 26)of 42 31
+N19=Bo 29 27)if 38 27
+N20=Bif 53 27)of 36 33
+N21=Bif 53 28)of 42 35
+N22=Bo 29 29)if 33 29
+N23=Bo 29 31)if 38 31
+N24=Bo 29 33)if 32 33
+N25=Bo 29 35)if 38 35
+N26=Bo 29 43)if 51 43
+N27=Bof 54 43)i 77 43)i 77 47)i 77 45
+N28=Bif 51 44)o 29 45
+N29=Bo 29 51)if 49 51
+N30=Bof 55 51)if 66 57
+N31=Io 29 53)if 49 53
+N32=Iof 55 53
+N33=Bo 29 57)if 37 58
+N34=Bof 69 57)i 77 57)i 77 59
+N35=Bof 40 58)if 49 58
+N36=Bof 56 58)if 66 58
+N37=Bo 29 59)if 37 59
+N38=Bif 66 59)of 56 65
+N39=Iif 49 60)o 29 61
+N40=Iof 56 60
+N41=Bo 29 65)if 49 65
+N42=Iif 49 67)o 29 68
+N43=Iof 56 67
+N44=Bo 29 73)if 49 73
+N45=Bof 56 73)i 77 73
+N46=Io 29 75)if 49 75
+N47=Iof 56 75
+[CONNS]
+Conn0=29 5 152 34 27
+Conn1=78 7 131 33 21
+Conn2=29 15 96 34 5
+Conn3=29 17 86 34 3
+Conn4=29 21 122 34 23
+Conn5=29 23 194 34 25
+Conn6=29 25 76 34 25
+Conn7=29 27 3 34 18
+Conn8=29 29 96 34 5
+Conn9=29 31 96 34 5
+Conn10=29 33 159 34 22
+Conn11=29 35 32 34 18
+Conn12=29 43 98 34 28
+Conn13=77 43 24 33 22
+Conn14=29 45 38 34 28
+Conn15=77 45 121 33 22
+Conn16=77 47 188 33 22
+Conn17=29 51 131 34 25
+Conn18=29 53 90 34 3
+Conn19=29 57 89 34 18
+Conn20=77 57 151 33 15
+Conn21=29 59 151 34 15
+Conn22=77 59 65 33 9
+Conn23=29 61 166 34 4
+Conn24=29 65 194 34 25
+Conn25=29 68 166 34 4
+Conn26=29 73 89 34 18
+Conn27=77 73 89 33 18
+Conn28=29 75 165 34 3
+[PAGEDEF]
+PageLen=2731
+[PAGE]
+Name=SAMMELSTORMELDUNGEN
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=1966
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_CONBINTOI 44772=
+_CONBINTOI 44851=
+_CONBINTOI 44852=
+_CONBINTOI 44853=
+_IADD2 44854=
+_CONBINTOI 44855=
+_CONBINTOI 44856=
+_CONBINTOI 44857=
+_CONBINTOI 44858=
+[_CONBINTOI 44772]
+Fam=sfupconv
+Face=BinToInt
+Width=8
+Init=n
+In=_B 
+Out=_I 
+D=Reg_R 
+av0=a BIT =0 {0..31} 
+Language=de
+Posi=37 5
+[_CONBINTOI 44851]
+Fam=sfupconv
+Face=BinToInt
+Width=8
+Init=n
+In=_B 
+Out=_I 
+D=Reg_R 
+av0=a BIT =0:1 {0..31} 
+Language=de
+Posi=37 8
+[_CONBINTOI 44852]
+Fam=sfupconv
+Face=BinToInt
+Width=8
+Init=n
+In=_B 
+Out=_I 
+D=Reg_R 
+av0=a BIT =0:2 {0..31} 
+Language=de
+Posi=37 11
+[_CONBINTOI 44853]
+Fam=sfupconv
+Face=BinToInt
+Width=8
+Init=n
+In=_B 
+Out=_I 
+D=Reg_R 
+av0=a BIT =0:3 {0..31} 
+Language=de
+Posi=37 14
+[_IADD2 44854]
+Fam=sfupinte
+Face=+
+Width=2
+Init=n
+Stretch=1 7 1 7
+In=_NI 
+Out=_I 
+D=AddReg_R 
+Language=de
+Posi=59 5
+[_CONBINTOI 44855]
+Fam=sfupconv
+Face=BinToInt
+Width=8
+Init=n
+In=_B 
+Out=_I 
+D=Reg_R 
+av0=a BIT =0:5 {0..31} 
+Language=de
+Posi=37 20
+[_CONBINTOI 44856]
+Fam=sfupconv
+Face=BinToInt
+Width=8
+Init=n
+In=_B 
+Out=_I 
+D=Reg_R 
+av0=a BIT =0:4 {0..31} 
+Language=de
+Posi=37 17
+[_CONBINTOI 44857]
+Fam=sfupconv
+Face=BinToInt
+Width=8
+Init=n
+In=_B 
+Out=_I 
+D=Reg_R 
+av0=a BIT =0:7 {0..31} 
+Language=de
+Posi=37 26
+[_CONBINTOI 44858]
+Fam=sfupconv
+Face=BinToInt
+Width=8
+Init=n
+In=_B 
+Out=_I 
+D=Reg_R 
+av0=a BIT =0:6 {0..31} 
+Language=de
+Posi=37 23
+[HLINE]
+H0=6 26 37)45 59)61 73
+H1=7 46 59
+H2=8 47 59
+H3=9 26 37)45 46)48 59
+H4=10 49 59
+H5=11 50 59
+H6=12 26 37)45 47)51 59
+H7=13 52 59
+H8=15 26 37)45 48
+H9=18 26 37)45 49
+H10=21 26 37)45 50
+H11=24 26 37)45 51
+H12=27 26 37)45 52
+H13=33 67 73
+H14=57 67 73
+[VLINE]
+V0=46 7 9
+V1=47 8 12
+V2=48 9 15
+V3=49 10 18
+V4=50 11 21
+V5=51 12 24
+V6=52 13 27
+V7=67 6 33)33 57
+[NETWORK]
+N0=Bo 26 6)if 37 6
+N1=Iof 45 6)if 59 6
+N2=Iof 61 6)i 73 6)i 73 57)i 73 33
+N3=Iif 59 7)of 45 9
+N4=Iif 59 8)of 45 12
+N5=Bo 26 9)if 37 9
+N6=Iif 59 9)of 45 15
+N7=Iif 59 10)of 45 18
+N8=Iif 59 11)of 45 21
+N9=Bo 26 12)if 37 12
+N10=Iif 59 12)of 45 24
+N11=Iif 59 13)of 45 27
+N12=Bo 26 15)if 37 15
+N13=Bo 26 18)if 37 18
+N14=Bo 26 21)if 37 21
+N15=Bo 26 24)if 37 24
+N16=Bo 26 27)if 37 27
+[CONNS]
+Conn0=26 6 60 34 24
+Conn1=73 6 2 33 26
+Conn2=26 9 150 34 25
+Conn3=26 12 187 34 25
+Conn4=26 15 64 34 25
+Conn5=26 18 120 34 23
+Conn6=26 21 109 34 22
+Conn7=26 24 186 34 25
+Conn8=26 27 41 34 22
+Conn9=73 33 13 33 26
+Conn10=73 57 108 33 26
+[PAGEDEF]
+PageLen=792
+[PAGE]
+Name=WARNMELDUNGEN
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=1967
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_DDC_SPGENERAL22 43239=
+[_DDC_SPGENERAL22 43239]
+Fam=DDC Sollwerte
+Width=5
+Init=y
+Vers=200000
+Out=Val_I 
+S=Value_R 
+av0=c cs =0 \nabs 
+av1=a BACnet %s =0 {0..1} 
+av2=c c0 =0 \nabs 
+av3=a Value 0 %1p =210:0 
+av4=c cc =0 \nabs 
+AcceptName=1
+Folder=Sollwerte.Integer?
+Variables0=Value Register;(4) Integerwert
+Language=de
+Posi=25 6
+[HLINE]
+H0=7 30 71
+H1=34 54 70
+H2=58 54 70
+[VLINE]
+V0=54 7 34)34 58
+[NETWORK]
+N0=Iof 30 7)i 71 7)i 70 58)i 70 34
+[CONNS]
+Conn0=71 7 149 33 28
+Conn1=70 34 136 33 29
+Conn2=70 58 75 33 29
+[PAGEDEF]
+PageLen=1114
+[PAGE]
+Name=Systeminformationen
+RemarkSize=0
+CountOfLabels=40
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=13
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_SYSRSB 157=
+_SYSRDT 158=
+_SYSRCT 159=
+_SYSRFW 160=
+[_SYSRSB 157]
+Fam=sfupsyst
+Face=SBusStn
+Width=9
+Init=y
+Out=Stn_I 
+av0=a opr %s =1 {1,2} 
+Language=de
+Posi=24 3
+[_SYSRDT 158]
+Fam=sfupsyst
+Face=DvcType
+Width=9
+Init=y
+Out=DT_I 
+av0=a opr %s =1 {1,2} 
+av1=a opf %s =1 {1,2} 
+Language=de
+Posi=24 9
+[_SYSRCT 159]
+Fam=sfupsyst
+Face=CPUType
+Width=9
+Init=y
+Out=CT_I 
+av0=a opr %s =1 {1,2} 
+av1=a opf %s =1 {1,2} 
+Language=de
+Posi=24 15
+[_SYSRFW 160]
+Fam=sfupsyst
+Face=Firmware
+Width=9
+Init=y
+Out=FW_I 
+av0=a opr %s =1 {1,2} 
+av1=a opf %s =1 {1,2} 
+Language=de
+Posi=24 21
+[HLINE]
+H0=6 33 46
+H1=12 33 46
+H2=18 33 46
+H3=24 33 46
+[NETWORK]
+N0=Iof 33 6)i 46 6
+N1=Iof 33 12)i 46 12
+N2=Iof 33 18)i 46 18
+N3=Iof 33 24)i 46 24
+[CONNS]
+Conn0=46 6 88 33 29
+Conn1=46 12 99 33 27
+Conn2=46 18 107 33 26
+Conn3=46 24 40 33 26
+[PAGEDEF]
+PageLen=589
+[PAGE]
+Name=XTnrl
+Comment=!!!! NICHT COMPILIREN !!!!!!
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=1316
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[COMMENT]
+Text0=25 10-0 !!!! NICHT COMPILIREN !!!!!!
+Text1=37 21-0 !!!! NICHT COMPILIREN !!!!!!
+Text2=52 34-0 !!!! NICHT COMPILIREN !!!!!!
+Text3=67 49-0 !!!! NICHT COMPILIREN !!!!!!
+Text4=53 64-0 !!!! NICHT COMPILIREN !!!!!!
+Text5=33 77-0 !!!! NICHT COMPILIREN !!!!!!
+Text6=15 90-0 !!!! NICHT COMPILIREN !!!!!!
+[PAGEDEF]
+PageLen=741
+[PAGE]
+Name=Vorlageversion
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=1136
+PageColor=0
+PageBackColor=16777215
+PageDisabled=1
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_DDC_SPGENERAL22 35918=
+[_DDC_SPGENERAL22 35918]
+Fam=DDC Sollwerte
+Width=5
+Init=y
+Vers=200000
+Out=Val_I 
+S=Value_R=119 
+av0=c cs =0 \nabs 
+av1=a BACnet %s =0 {0..1} 
+av2=c c0 =0 \nabs 
+av3=a Value 0 %1p =210:966 
+av4=c cc =0 \nabs 
+AcceptName=1
+Folder=Sollwerte.Integer?
+Variables0=Value Register;(4) Integerwert
+Language=de
+Posi=10 6
+[HLINE]
+H0=7 15 31
+[NETWORK]
+N0=Iof 15 7
+N1=Io 16 12
+[COMMENT]
+Text0=18 9-0 Versionsdatum (Jahr,KW)
+[CONNS]
+Conn0=16 12 119 34 11
+[PAGEDEF]
+PageLen=252
+[PAGE]
+Name=IP-Adresse
+Comment=Lesen
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=1331
+PageColor=0
+PageBackColor=16777215
+PageDisabled=1
+ConditinalFunction=0
+ConditionalValue=0
+[PAGEDEF]
+PageLen=256
+[PAGE]
+Name=IP-Adresse
+Comment=Schreiben
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=1330
+PageColor=0
+PageBackColor=16777215
+PageDisabled=1
+ConditinalFunction=0
+ConditionalValue=0
+[PAGEDEF]
+PageLen=2461
+[PAGE]
+Name=Definierter Anlagenstart
+Comment=Sequenzer
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=1973
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_STDEL 28026=
+_HEAMANB3 28027=
+_ONDEL 28028=
+_ONDEL 28033=
+_ONDEL 28034=
+_ONDEL 28035=
+_XPULSE 28036=
+[_STDEL 28026]
+Fam=sfuptime
+Face=Start delay
+Width=10
+Init=y
+Out=Q_B 
+S=Tim_T 
+av0=a Del %1p =20 {0..6000} 
+Language=de
+Posi=9 4
+[_HEAMANB3 28027]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=43 6
+[_ONDEL 28028]
+Fam=sfuptime
+Face=T|-|0
+Width=6
+Init=y
+In=In_EB TV_I 
+Out=Q_B t_I 
+S=Tim_T Sta_F 
+Language=de
+Posi=43 12
+[_ONDEL 28033]
+Fam=sfuptime
+Face=T|-|0
+Width=6
+Init=y
+In=In_EB TV_I 
+Out=Q_B t_I 
+S=Tim_T Sta_F 
+Language=de
+Posi=43 56
+[_ONDEL 28034]
+Fam=sfuptime
+Face=T|-|0
+Width=6
+Init=y
+In=In_EB TV_I 
+Out=Q_B t_I 
+S=Tim_T Sta_F 
+Language=de
+Posi=43 65
+[_ONDEL 28035]
+Fam=sfuptime
+Face=T|-|0
+Width=6
+Init=y
+In=In_EB TV_I 
+Out=Q_B t_I 
+S=Tim_T Sta_F 
+Language=de
+Posi=43 74
+[_XPULSE 28036]
+Fam=sfuptime
+Face=XPulse
+Width=7
+Init=y
+In=In_EB TV_I 
+Out=Q_B t_I 
+S=Tim_T Sta_F 
+Language=de
+Posi=43 83
+[HLINE]
+H0=7 19 43)49 74
+H1=15 20 43)49 73
+H2=17 20 43)49 50
+H3=59 20 43)49 73
+H4=61 20 43)49 50
+H5=68 20 43)49 73
+H6=70 20 43)49 50
+H7=77 20 43)49 73
+H8=79 20 43)49 50
+H9=86 20 43)50 73
+H10=88 20 43)50 51
+[NETWORK]
+N0=Bof 19 7)if 43 7
+N1=Bof 49 7)i 74 7
+N2=Bo 20 15)if 43 15
+N3=Bof 49 15)i 73 15
+N4=Io 20 17)if 43 17
+N5=Iof 49 17
+N6=Bo 20 59)if 43 59
+N7=Bof 49 59)i 73 59
+N8=Io 20 61)if 43 61
+N9=Iof 49 61
+N10=Bo 20 68)if 43 68
+N11=Bof 49 68)i 73 68
+N12=Io 20 70)if 43 70
+N13=Iof 49 70
+N14=Bo 20 77)if 43 77
+N15=Bof 49 77)i 73 77
+N16=Io 20 79)if 43 79
+N17=Iof 49 79
+N18=Bo 20 86)if 43 86
+N19=Bof 50 86)i 73 86
+N20=Io 20 88)if 43 88
+N21=Iof 50 88
+[CONNS]
+Conn0=74 7 50 33 22
+Conn1=20 15 50 34 19
+Conn2=73 15 122 33 23
+Conn3=20 17 135 34 3
+Conn4=20 59 50 34 19
+Conn5=73 59 194 33 25
+Conn6=20 61 148 34 4
+Conn7=20 68 50 34 19
+Conn8=73 68 76 33 25
+Conn9=20 70 134 34 4
+Conn10=20 77 76 34 19
+Conn11=73 77 185 33 25
+Conn12=20 79 133 34 5
+Conn13=20 86 50 34 19
+Conn14=73 86 17 33 24
+Conn15=20 88 69 34 4
+[PAGEDEF]
+PageLen=1015
+[PAGE]
+Name=Sampler /Blinker
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=1974
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_BLINK2 28040=
+_BLINK2 44632=
+[_BLINK2 28040]
+Fam=sfupblin
+Face=Blink
+Width=6
+Init=n
+In=En_B T0_I T1_I 
+Out=Q_B 
+S=Tim_T Sta_F 
+Language=de
+Posi=45 29
+[_BLINK2 44632]
+Fam=sfupblin
+Face=Blink
+Width=6
+Init=n
+In=En_B T0_I T1_I 
+Out=Q_B 
+S=Tim_T Sta_F 
+Language=de
+Posi=45 39
+[HLINE]
+H0=32 23 45)51 76
+H1=34 23 45
+H2=36 23 45
+H3=42 23 45)51 76
+H4=44 23 45
+H5=46 23 45
+[NETWORK]
+N0=Bo 23 32)if 45 32
+N1=Bof 51 32)i 76 32
+N2=Io 23 34)if 45 34
+N3=Io 23 36)if 45 36
+N4=Bo 23 42)if 45 42
+N5=Bof 51 42)i 76 42
+N6=Io 23 44)if 45 44
+N7=Io 23 46)if 45 46
+[CONNS]
+Conn0=23 32 50 34 22
+Conn1=76 32 23 33 23
+Conn2=23 34 165 34 3
+Conn3=23 36 165 34 3
+Conn4=23 42 50 34 22
+Conn5=76 42 147 33 23
+Conn6=23 44 22 34 3
+Conn7=23 46 22 34 3
+[PAGEDEF]
+PageLen=2306
+[PAGE]
+Name=Schaltschrankhupe
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=1338
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_HEAALRT2 44629=
+_ICMPGT 44630=
+_BAND 44631=
+_HEAMANI3 44633=
+_BOR 44861=
+_BAND 45412=
+_BOR 45413=
+[_HEAALRT2 44629]
+Fam=heavac
+Face=AlarmT
+Width=7
+Init=y
+In=Ala_B Qit_EB 
+Out=s1_B s2_B 
+S=Fs_8F Rs_8R 
+av0=a op %s =2 {1,2} 
+av1=v Rs 0 %s 
+av2=v Rs 1 %0D 
+av3=v Rs 2 %0H 
+av4=v Rs 3 %0D 
+av5=v Rs 4 %0H 
+av6=v Rs 5 %0D 
+av7=v Rs 6 %0H 
+AcceptName=3
+Language=de
+Posi=49 29
+[_ICMPGT 44630]
+Fam=sfupinte
+Face=Cmp
+Width=4
+Init=n
+In=_I _I 
+Out=>_B 
+Language=de
+Posi=39 29
+[_BAND 44631]
+Fam=sfupbina
+Face=&&
+Width=2
+Init=n
+Stretch=1 9 1 1
+In=_NB 
+Out=_B 
+Language=de
+Posi=64 24
+[_HEAMANI3 44633]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_I 
+Out=_I 
+S=Fs_F Fsm_F Rsm_R LED_F 
+av0=a flw %s =0 {0,1} 
+av1=a Rsm 0 %1p =0 
+av2=bv Fs 0 %s =1 \v Fsm 0 %s 
+AcceptName=3
+Language=de
+Posi=30 29
+[_BOR 44861]
+Fam=sfupbina
+Face=>=1
+Width=3
+Init=n
+Stretch=1 9 1 1
+In=_NB 
+Out=_B 
+Language=de
+Posi=39 34
+[_BAND 45412]
+Fam=sfupbina
+Face=&&
+Width=2
+Init=n
+Stretch=1 9 1 1
+In=_NB 
+Out=_B 
+Language=de
+Posi=49 38
+[_BOR 45413]
+Fam=sfupbina
+Face=>=1
+Width=3
+Init=n
+Stretch=1 9 1 1
+In=_NB 
+Out=_B 
+Language=de
+Posi=64 33
+[HLINE]
+H0=22 47 69
+H1=25 26 64)66 69
+H2=26 57 64
+H3=30 26 30)36 39
+H4=31 37 39
+H5=32 26 37)43 49)56 57
+H6=34 48 49)56 64)67 70
+H7=35 26 39)42 48)63 64
+H8=36 37 39
+H9=37 26 37
+H10=39 47 49)51 63
+H11=40 26 49
+[VLINE]
+V0=37 31 32)36 37
+V1=47 22 32)32 39
+V2=48 34 35
+V3=57 26 32
+V4=63 35 39
+[NETWORK]
+N0=Bi 69 22)i-f 49 39)if 49 32)of 43 32
+N1=Bo 26 25)if 64 25
+N2=Bof 66 25)i 69 25
+N3=Bif 64 26)of 56 32
+N4=Io 26 30)if 30 30
+N5=Iof 36 30)if 39 30
+N6=Iif 39 31)o 26 32
+N7=Bif 49 34)of 42 35
+N8=Bof 56 34)if 64 34
+N9=Bof 67 34)i 70 34
+N10=Bo 26 35)if 39 35
+N11=Bif 64 35)of 51 39
+N12=Bif 39 36)o 26 37
+N13=Bo 26 40)if 49 40
+[CONNS]
+Conn0=69 22 128 33 29
+Conn1=26 25 147 34 23
+Conn2=69 25 164 33 28
+Conn3=26 30 2 34 25
+Conn4=26 32 56 34 3
+Conn5=70 34 39 33 25
+Conn6=26 35 121 34 25
+Conn7=26 37 32 34 18
+Conn8=26 40 82 34 18
+[PAGEDEF]
+PageLen=3770
+[PAGE]
+Name=DI, DO
+RemarkSize=0
+CountOfLabels=50
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=1337
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_HEAMANB3 30731=
+_HEAMANB3 30732=
+_HEAMANB3 30733=
+_HEAMANB3 30913=
+_HEAMANB3 30912=
+_HEAMANB3 30916=
+_HEAMANB3 30734=
+_BAND 37662=
+_HEAMANB3 37663=
+_HEAMANB3 44628=
+[_HEAMANB3 30731]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=44 5
+[_HEAMANB3 30732]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=44 9
+[_HEAMANB3 30733]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=44 13
+[_HEAMANB3 30913]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=44 36
+[_HEAMANB3 30912]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=44 32
+[_HEAMANB3 30916]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=44 28
+[_HEAMANB3 30734]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=44 20
+[_BAND 37662]
+Fam=sfupbina
+Face=&&
+Width=2
+Init=n
+Stretch=1 9 1 1
+In=_NB 
+Out=_B 
+Language=de
+Posi=40 13
+[_HEAMANB3 37663]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=44 40
+[_HEAMANB3 44628]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=de
+Posi=44 44
+[HLINE]
+H0=6 24 44)50 63
+H1=10 24 44)50 63
+H2=14 24 40)42 44)50 63
+H3=15 25 40
+H4=16 24 25
+H5=21 24 44)50 63
+H6=29 24 44)50 63
+H7=33 24 44)50 63
+H8=37 24 44)50 63
+H9=41 24 44)50 63
+H10=45 24 44)50 63
+[VLINE]
+V0=25 15 16
+[NETWORK]
+N0=Bo 24 6)if 44 6
+N1=Bof 50 6)i 63 6
+N2=Bo 24 10)if 44 10
+N3=Bof 50 10)i 63 10
+N4=Bo 24 14)if 40 14
+N5=Bof 42 14)if 44 14
+N6=Bof 50 14)i 63 14
+N7=Bif 40 15)o 24 16
+N8=Bo 24 21)if 44 21
+N9=Bof 50 21)i 63 21
+N10=Bo 24 29)if 44 29
+N11=Bof 50 29)i 63 29
+N12=Bo 24 33)if 44 33
+N13=Bof 50 33)i 63 33
+N14=Bo 24 37)if 44 37
+N15=Bof 50 37)i 63 37
+N16=Bo 24 41)if 44 41
+N17=Bof 50 41)i 63 41
+N18=Bo 24 45)if 44 45
+N19=Bof 50 45)i 63 45
+[CONNS]
+Conn0=24 6 63 34 11
+Conn1=63 6 152 33 27
+Conn2=24 10 74 34 11
+Conn3=63 10 30 33 23
+Conn4=24 14 62 34 11
+Conn5=63 14 45 33 25
+Conn6=24 16 177 34 11
+Conn7=24 21 132 34 11
+Conn8=63 21 52 33 25
+Conn9=24 29 177 34 11
+Conn10=63 29 7 33 23
+Conn11=24 33 121 34 23
+Conn12=63 33 163 33 12
+Conn13=24 37 39 34 23
+Conn14=63 37 146 33 12
+Conn15=24 41 57 34 11
+Conn16=63 41 15 33 23
+Conn17=24 45 164 34 23
+Conn18=63 45 118 33 12
+[PAGEDEF]
+PageLen=1393
+[PAGE]
+RemarkSize=0
+CountOfLabels=27
+CountOfGrids=82
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=0
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[CONNS]
+Conn0=13 1 0 34 12
+Conn1=69 1 0 33 12
+Conn2=13 3 0 34 12
+Conn3=69 3 0 33 12
+Conn4=13 5 0 34 12
+Conn5=69 5 0 33 12
+Conn6=13 7 0 34 12
+Conn7=69 7 0 33 12
+Conn8=13 9 0 34 12
+Conn9=69 9 0 33 12
+Conn10=13 11 0 34 12
+Conn11=69 11 0 33 12
+Conn12=13 13 0 34 12
+Conn13=69 13 0 33 12
+Conn14=13 15 0 34 12
+Conn15=69 15 0 33 12
+Conn16=13 17 0 34 12
+Conn17=69 17 0 33 12
+Conn18=13 19 0 34 12
+Conn19=69 19 0 33 12
+Conn20=13 21 0 34 12
+Conn21=69 21 0 33 12
+Conn22=13 23 0 34 12
+Conn23=69 23 0 33 12
+Conn24=13 25 0 34 12
+Conn25=69 25 0 33 12
+Conn26=13 27 0 34 12
+Conn27=69 27 0 33 12
+Conn28=13 29 0 34 12
+Conn29=69 29 0 33 12
+Conn30=13 31 0 34 12
+Conn31=69 31 0 33 12
+Conn32=13 33 0 34 12
+Conn33=69 33 0 33 12
+Conn34=13 35 0 34 12
+Conn35=69 35 0 33 12
+Conn36=13 37 0 34 12
+Conn37=69 37 0 33 12
+Conn38=13 39 0 34 12
+Conn39=69 39 0 33 12
+Conn40=13 41 0 34 12
+Conn41=69 41 0 33 12
+Conn42=13 43 0 34 12
+Conn43=69 43 0 33 12
+Conn44=13 45 0 34 12
+Conn45=69 45 0 33 12
+Conn46=13 47 0 34 12
+Conn47=69 47 0 33 12
+Conn48=13 49 0 34 12
+Conn49=69 49 0 33 12
+Conn50=13 51 0 34 12
+Conn51=69 51 0 33 12
+Conn52=13 53 0 34 12
+Conn53=69 53 0 33 12
+[BLOCK]
+BlockSym=197
+COBSupTime=0
+PageDisabled=0
+ConditinalFunction=0
+ConditionalSymbol=
+ConditionalValue=0
+PageColor=16777215
+PageBackColor=0
+[PAGEDEF]
+PageLen=1570
+[PAGE]
+Name=Dig_Input E165
+Comment=BA0
+RemarkSize=0
+CountOfLabels=40
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=1772
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_DDC_ALGENERAL04 30533=
+_INDIOI 30534=
+_INDIOI 47485=
+[_DDC_ALGENERAL04 30533]
+Fam=DDC Stoerungen
+Face=Ack
+Width=5
+Init=y
+Vers=105000
+S=Reset_F 
+av0=b Reset 0 %s =1 \nabs 
+av1=c cc =0 \nabs 
+Language=de
+Posi=1 1
+[_INDIOI 30534]
+Fam=sfupindi
+Width=6
+Init=n
+Stretch=0 7 1 7
+In=#_I 
+Out=I_NB 
+uName=E165_200_207
+Language=de
+Posi=23 14
+[_INDIOI 47485]
+Fam=sfupindi
+Width=6
+Init=n
+Stretch=0 7 1 7
+In=#_I 
+Out=I_NB 
+uName=E165_200_207
+Language=de
+Posi=23 35
+[HLINE]
+H0=15 19 23)29 73
+H1=17 29 73
+H2=19 29 73
+H3=21 29 73
+H4=23 29 73
+H5=25 29 73
+H6=27 29 73
+H7=29 29 73
+H8=36 21 23)29 30
+H9=38 29 30
+H10=40 29 30
+H11=42 29 30
+H12=44 29 30
+H13=46 29 30
+H14=48 29 30
+H15=50 29 30
+[NETWORK]
+N0=Io 19 15)if 23 15
+N1=Bof 29 15)i 73 15
+N2=Bof 29 17)i 73 17
+N3=Bof 29 19)i 73 19
+N4=Bof 29 21)i 73 21
+N5=Bof 29 23)i 73 23
+N6=Bof 29 25)i 73 25
+N7=Bof 29 27)i 73 27
+N8=Bof 29 29)i 73 29
+N9=Io 21 36)if 23 36
+N10=Bof 29 36
+N11=Bof 29 38
+N12=Bof 29 40
+N13=Bof 29 42
+N14=Bof 29 44
+N15=Bof 29 46
+N16=Bof 29 48
+N17=Bof 29 50
+[CONNS]
+Conn0=19 15 56 34 3
+Conn1=73 15 204 33 11
+Conn2=73 17 206 33 11
+Conn3=73 19 205 33 11
+Conn4=73 21 203 33 11
+Conn5=73 23 199 33 11
+Conn6=73 25 201 33 11
+Conn7=73 27 198 33 11
+Conn8=73 29 200 33 11
+Conn9=21 36 243 34 3
+[PAGEDEF]
+PageLen=2440
+[PAGE]
+Name=Dig_Output A810
+Comment=BA16
+RemarkSize=0
+CountOfLabels=40
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=1725
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_INDIOI 33474=
+_INDIOO 33488=
+_HEAMANB3 47482=
+_HEAMANB3 47483=
+_HEAMANB3 47484=
+_HEAMANB3 47481=
+[_INDIOI 33474]
+Fam=sfupindi
+Width=6
+Init=n
+Stretch=0 7 1 3
+In=#_I 
+Out=I_NB 
+uName=Zustand_Handschalter
+Language=de
+Posi=26 51
+[_INDIOO 33488]
+Fam=sfupindi
+Width=6
+Init=n
+Stretch=0 7 1 3
+In=#_I O_NB 
+uName=Schreiben_Ausgange
+Language=de
+Posi=71 4
+[_HEAMANB3 47482]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=en
+Posi=55 9
+[_HEAMANB3 47483]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=en
+Posi=55 12
+[_HEAMANB3 47484]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=en
+Posi=55 15
+[_HEAMANB3 47481]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_B 
+Out=_B 
+S=Fs_2F Fsm_2F LED_F 
+av0=a flw %s =0 {0,1} 
+av1=bv Fs 0 %s =1 \v Fsm 0 %s 
+av2=bv Fs 1 %s =1 \v Fsm 1 
+AcceptName=3
+Language=en
+Posi=55 6
+[HLINE]
+H0=3 42 43
+H1=5 43 71
+H2=7 42 55)61 71
+H3=9 70 71
+H4=10 42 55)61 70
+H5=11 69 71
+H6=13 42 55)61 69)70 71
+H7=16 42 55)61 70
+H8=52 24 26)32 70
+H9=54 32 41
+H10=55 41 70
+H11=56 32 41
+H12=58 32 40)41 70
+H13=61 40 70
+[VLINE]
+V0=40 58 61
+V1=41 54 55)56 58
+V2=43 3 5
+V3=69 11 13
+V4=70 9 10)13 16
+[NETWORK]
+N0=Io 42 3)if 71 5
+N1=Bo 42 7)if 55 7
+N2=Bof 61 7)if 71 7
+N3=Bif 71 9)of 61 10
+N4=Bo 42 10)if 55 10
+N5=Bif 71 11)of 61 13
+N6=Bo 42 13)if 55 13
+N7=Bif 71 13)of 61 16
+N8=Bo 42 16)if 55 16
+N9=Io 24 52)if 26 52
+N10=Bof 32 52)i 70 52
+N11=Bof 32 54)i 70 55
+N12=Bof 32 56)i 70 58
+N13=Bof 32 58)i 70 61
+[CONNS]
+Conn0=42 3 202 34 3
+Conn1=42 7 210 34 11
+Conn2=42 10 214 34 11
+Conn3=42 13 209 34 11
+Conn4=42 16 211 34 11
+Conn5=24 52 216 34 3
+Conn6=70 52 207 33 13
+Conn7=70 55 215 33 13
+Conn8=70 58 213 33 13
+Conn9=70 61 212 33 13
+[PAGEDEF]
+PageLen=1616
+[PAGE]
+Name=Ana_Input W340 Roh
+Comment=BA72
+RemarkSize=0
+CountOfLabels=42
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=1790
+PageColor=-1
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_ANAD2W34F 19597=
+[_ANAD2W34F 19597]
+Fam=sfupanlg
+Face=PCD2/3.W34
+Width=15
+Init=y
+Vers=101003
+Stretch=0 7 1 7
+GiveStretch=YES
+Out=i_NI Err_I 
+C=Add_Bio=234 
+S=Fs_F=221 LED_F 
+D=Rd_2R 
+av0=b Fs 0 %s =1 
+av1=a err %s =2 {0,1,2} 
+av2=c c11 =0 \nabs 
+av3=a Ch0 %s =10 {0,10,11,20,21,22,23} 
+av4=a Ch1 %s =10:22 {0,10,11,20,21,22,23} 
+av5=a Ch2 %s =10 {0,10,11,20,21,22,23} 
+av6=a Ch3 %s =10 {0,10,11,20,21,22,23} 
+av7=a Ch4 %s =10 {0,10,11,20,21,22,23} 
+av8=a Ch5 %s =10 {0,10,11,20,21,22,23} 
+av9=a Ch6 %s =10 {0,10,11,20,21,22,23} 
+av10=a Ch7 %s =10 {0,10,11,20,21,22,23} 
+Language=de
+Posi=6 28
+[HLINE]
+H0=27 29 66
+H1=31 21 29)30 66
+H2=33 21 30
+H3=35 21 66
+H4=37 21 31
+H5=39 21 30)31 66
+H6=41 21 29
+H7=43 21 28)30 66
+H8=45 21 27
+H9=47 21 24)29 66
+H10=51 28 66
+H11=55 27 66
+H12=59 24 66
+[VLINE]
+V0=24 47 59
+V1=27 45 55
+V2=28 43 51
+V3=29 27 31)41 47
+V4=30 31 33)39 43
+V5=31 37 39
+[NETWORK]
+N0=Ii 66 27)of 21 31
+N1=Ii 66 31)of 21 33
+N2=Iof 21 35)i 66 35
+N3=Iof 21 37)i 66 39
+N4=Iof 21 39)i 66 43
+N5=Iof 21 41)i 66 47
+N6=Iof 21 43)i 66 51
+N7=Iof 21 45)i 66 55
+N8=Iof 21 47)i 66 59
+[CONNS]
+Conn0=66 27 227 33 13
+Conn1=66 31 230 33 13
+Conn2=66 35 231 33 13
+Conn3=66 39 235 33 13
+Conn4=66 43 229 33 13
+Conn5=66 47 222 33 13
+Conn6=66 51 236 33 13
+Conn7=66 55 220 33 13
+Conn8=66 59 223 33 12
+[PAGEDEF]
+PageLen=2420
+[PAGE]
+Name=Error Detection
+Comment=BA72
+RemarkSize=0
+CountOfLabels=40
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=1792
+PageColor=-1
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_CONBITOM 19630=
+_DDC_ANGENERAL26 42265=
+_BOR 42266=
+_DDC_ANGENERAL26 42267=
+[_CONBITOM 19630]
+Fam=sfupconv
+Face=IntBin
+Width=8
+Init=n
+Stretch=0 23 1 7
+In=In_I 
+Out=O_NB 
+D=Reg_R 
+Language=de
+Posi=46 2
+[_DDC_ANGENERAL26 42265]
+Fam=DDC Analogwerte
+Face=A/D
+Width=5
+Init=y
+Vers=200000
+In=A_I 
+Out=D_B 
+S=Zustand_F GwOben_R GwUnten_R 
+av0=c cs =0 \nabs 
+av1=a BACnet %s =0 {0..2} 
+av2=c c0 =0 \nabs 
+av3=a GwOben 0 %1p =1000:1500 
+av4=a GwUnten 0 %1p =100:1000 
+av5=v Zustand 0 %s 
+av6=c cc =0 \nabs 
+AcceptName=1
+Folder=Analog.AnaDig?
+Variables0=Zustand Wert;(2) Zustand des digtalen Wertes
+Variables1=GwOben High;(5) Schwellwert fur Sigal High
+Variables2=GwUnten Low;(5) Schwellwert fur Sigal Low
+Language=de
+Posi=23 27
+[_BOR 42266]
+Fam=sfupbina
+Face=>=1
+Width=3
+Init=n
+Stretch=1 9 1 1
+In=_NB 
+Out=_B 
+Language=de
+Posi=32 24
+[_DDC_ANGENERAL26 42267]
+Fam=DDC Analogwerte
+Face=A/D
+Width=5
+Init=y
+Vers=200000
+In=A_I 
+Out=D_B 
+S=Zustand_F GwOben_R GwUnten_R 
+av0=c cs =0 \nabs 
+av1=a BACnet %s =0 {0..2} 
+av2=c c0 =0 \nabs 
+av3=a GwOben 0 %1p =1000:10000 
+av4=a GwUnten 0 %1p =100:9950 
+av5=v Zustand 0 %s 
+av6=c cc =0 \nabs 
+AcceptName=1
+Folder=Analog.AnaDig?
+Variables0=Zustand Wert;(2) Zustand des digtalen Wertes
+Variables1=GwOben High;(5) Schwellwert fur Sigal High
+Variables2=GwUnten Low;(5) Schwellwert fur Sigal Low
+Language=de
+Posi=23 22
+[HLINE]
+H0=5 35 46)54 66
+H1=7 54 66
+H2=9 54 66
+H3=11 54 66
+H4=13 54 66
+H5=15 54 66
+H6=17 54 66
+H7=19 54 66
+H8=25 16 23)28 32)35 40
+H9=26 29 32
+H10=30 20 23)28 29
+[VLINE]
+V0=20 25 30
+V1=29 26 30
+[NETWORK]
+N0=Io 35 5)if 46 5
+N1=Bof 54 5)i 66 5
+N2=Bof 54 7
+N3=Bof 54 9)i 66 9
+N4=Bof 54 11)i 66 11
+N5=Bof 54 13)i 66 13
+N6=Bof 54 15)i 66 15
+N7=Bof 54 17)i 66 17
+N8=Bof 54 19)i 66 19
+N9=Io 16 25)if 23 25)if 23 30
+N10=Bof 28 25)if 32 25
+N11=Bof 35 25)i 40 25
+N12=Bif 32 26)o-f 28 30
+[CONNS]
+Conn0=35 5 223 34 12
+Conn1=66 5 218 33 13
+Conn2=66 9 233 33 13
+Conn3=66 11 226 33 13
+Conn4=66 13 225 33 13
+Conn5=66 15 224 33 13
+Conn6=66 17 228 33 13
+Conn7=66 19 232 33 13
+Conn8=16 25 230 34 13
+Conn9=40 25 219 33 13
+[PAGEDEF]
+PageLen=3570
+[PAGE]
+Name=Ana_Output W800
+Comment=BA88
+RemarkSize=0
+CountOfLabels=42
+CountOfGrids=100
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=1739
+PageColor=-1
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_DDC_SPLINEAR21 14888=
+_DDC_SPLINEAR21 14889=
+_DDC_SPLINEAR21 14890=
+_DDC_SPLINEAR21 14891=
+_ANAD2W4 47487=
+[_DDC_SPLINEAR21 14888]
+Fam=DDC Sollwerte
+Face=Linear2
+Width=10
+Init=y
+Vers=200000
+In=X_I 
+Out=Y_I 
+S=X1_R Y1_R X2_R Y2_R Y_R 
+av0=c cs =0 \nabs 
+av1=a HDLogKB =0 {0..64} 
+av2=a BACnet %s =0 {0..2} 
+av3=c c0 =0 \nabs 
+av4=v Y 0 %1p 
+av5=a X1 0 %1p =260:0 
+av6=a Y1 0 %1p =210:500 
+av7=a X2 0 %1p =340:1000 
+av8=a Y2 0 %1p =280:1023 
+av9=c cc =0 \nabs 
+AcceptName=1
+Folder=Sollwerte.Gerade?
+Variables0=X1 KurveX1;(4) X1-Wert
+Variables1=Y1 KurveY1;(4) Y1-Wert
+Variables2=X2 KurveX2;(4) X2-Wert
+Variables3=Y2 KurveY2;(4) Y2-Wert
+Variables4=Y Errechnet;(3) Resultierender Wert aus der Umrechnung
+Language=de
+Posi=26 29
+[_DDC_SPLINEAR21 14889]
+Fam=DDC Sollwerte
+Face=Linear2
+Width=10
+Init=y
+Vers=200000
+In=X_I 
+Out=Y_I 
+S=X1_R Y1_R X2_R Y2_R Y_R 
+av0=c cs =0 \nabs 
+av1=a HDLogKB =0 {0..64} 
+av2=a BACnet %s =0 {0..2} 
+av3=c c0 =0 \nabs 
+av4=v Y 0 %1p 
+av5=a X1 0 %1p =260:0 
+av6=a Y1 0 %1p =210:0 
+av7=a X2 0 %1p =340:1000 
+av8=a Y2 0 %1p =280:1023 
+av9=c cc =0 \nabs 
+AcceptName=1
+Folder=Sollwerte.Gerade?
+Variables0=X1 KurveX1;(4) X1-Wert
+Variables1=Y1 KurveY1;(4) Y1-Wert
+Variables2=X2 KurveX2;(4) X2-Wert
+Variables3=Y2 KurveY2;(4) Y2-Wert
+Variables4=Y Errechnet;(3) Resultierender Wert aus der Umrechnung
+Language=de
+Posi=26 35
+[_DDC_SPLINEAR21 14890]
+Fam=DDC Sollwerte
+Face=Linear2
+Width=10
+Init=y
+Vers=200000
+In=X_I 
+Out=Y_I 
+S=X1_R Y1_R X2_R Y2_R Y_R 
+av0=c cs =0 \nabs 
+av1=a HDLogKB =0 {0..64} 
+av2=a BACnet %s =0 {0..2} 
+av3=c c0 =0 \nabs 
+av4=v Y 0 %1p 
+av5=a X1 0 %1p =260:0 
+av6=a Y1 0 %1p =210:0 
+av7=a X2 0 %1p =340:1000 
+av8=a Y2 0 %1p =280:1023 
+av9=c cc =0 \nabs 
+AcceptName=1
+Folder=Sollwerte.Gerade?
+Variables0=X1 KurveX1;(4) X1-Wert
+Variables1=Y1 KurveY1;(4) Y1-Wert
+Variables2=X2 KurveX2;(4) X2-Wert
+Variables3=Y2 KurveY2;(4) Y2-Wert
+Variables4=Y Errechnet;(3) Resultierender Wert aus der Umrechnung
+Language=de
+Posi=26 41
+[_DDC_SPLINEAR21 14891]
+Fam=DDC Sollwerte
+Face=Linear2
+Width=10
+Init=y
+Vers=200000
+In=X_I 
+Out=Y_I 
+S=X1_R Y1_R X2_R Y2_R Y_R 
+av0=c cs =0 \nabs 
+av1=a HDLogKB =0 {0..64} 
+av2=a BACnet %s =0 {0..2} 
+av3=c c0 =0 \nabs 
+av4=v Y 0 %1p 
+av5=a X1 0 %1p =260:0 
+av6=a Y1 0 %1p =210:0 
+av7=a X2 0 %1p =340:1000 
+av8=a Y2 0 %1p =280:1023 
+av9=c cc =0 \nabs 
+AcceptName=1
+Folder=Sollwerte.Gerade?
+Variables0=X1 KurveX1;(4) X1-Wert
+Variables1=Y1 KurveY1;(4) Y1-Wert
+Variables2=X2 KurveX2;(4) X2-Wert
+Variables3=Y2 KurveY2;(4) Y2-Wert
+Variables4=Y Errechnet;(3) Resultierender Wert aus der Umrechnung
+Language=de
+Posi=26 47
+[_ANAD2W4 47487]
+Fam=sfupanlg
+Face=PCD2/3.W4
+Width=15
+Init=n
+Stretch=0 3 1 3
+In=o_NI 
+C=Add_Bio=239 
+S=Rd_R 
+Language=en
+Posi=47 23
+[HLINE]
+H0=26 45 47
+H1=28 44 47
+H2=30 43 47
+H3=32 17 26)36 45)46 47
+H4=38 17 26)36 44
+H5=44 17 26)36 43
+H6=50 17 26)36 46
+[VLINE]
+V0=43 30 44
+V1=44 28 38
+V2=45 26 32
+V3=46 32 50
+[NETWORK]
+N0=Iif 47 26)of 36 32
+N1=Iif 47 28)of 36 38
+N2=Iif 47 30)of 36 44
+N3=Io 17 32)if 26 32
+N4=Iif 47 32)of 36 50
+N5=Io 17 38)if 26 38
+N6=Io 17 44)if 26 44
+N7=Io 17 50)if 26 50
+[CONNS]
+Conn0=17 32 237 34 12
+Conn1=17 38 241 34 12
+Conn2=17 44 238 34 12
+Conn3=17 50 240 34 12
+[BLOCK]
+BlockSym=245
+COBSupTime=0
+PageDisabled=0
+ConditinalFunction=0
+ConditionalSymbol=
+ConditionalValue=0
+PageColor=16777215
+PageBackColor=0
+[PAGEDEF]
+PageLen=2323
+[PAGE]
+RemarkSize=0
+CountOfLabels=27
+CountOfGrids=82
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=2
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_MODBUS_MASTERTCPEXT2 47492=
+_MODBUS_CLUNIT2 47493=
+_MODBUS_RXINT 47495=
+[_MODBUS_MASTERTCPEXT2 47492]
+Fam=sModMaster
+Face=Init Client TCP
+FacePosi=l
+Width=14
+Init=y
+Vers=2
+In=Clear_EB 
+Out=Active_SB Error_SB 
+S=Fsb_F Fse_2F Fsd_10F Rs_5R Rsd_R RsCy_R LED_F 
+D=Fd_32F 
+av0=a CAN %s =1 {1..10} 
+av1=a POR =502 {0..65535} 
+av2=a MOD %s =0 {0,1} 
+av3=a DIS =10 {0..3600} 
+av4=a TOT %1p =10 {1..100} 
+av5=a REP =1 {1..15} 
+av6=a MRD =0 {0..10000} 
+av7=c c1 =0 \nabs 
+av8=v Rs 0 %0i 
+av9=v Rs 1 
+av10=v Rs 2 %s 
+av11=v Rs 3 
+av12=v Rs 4 
+av13=v RsCy 0 %3p 
+av14=c c2 =0 \nabs 
+av15=v Fse 0 %s 
+av16=bv Fsb 0 %s =1 \v Fse 1 %s 
+av17=v Fsd 0 %s 
+av18=v Fsd 1 %s 
+av19=v Fsd 2 %s 
+av20=v Fsd 3 %s 
+av21=v Fsd 4 %s 
+av22=v Fsd 5 %s 
+av23=v Fsd 6 %s 
+av24=v Fsd 7 %s 
+av25=v Fsd 8 %s 
+av26=v Rsd 0 
+AcceptName=2
+uName=ModbusClient
+Language=en
+Posi=32 9
+[_MODBUS_CLUNIT2 47493]
+Fam=sModMaster
+Face=Def Unit Client
+FacePosi=l
+Width=14
+Init=y
+Vers=2
+In=Enable_B Clear_EB 
+Out=Active_B Error_B 
+S=Fs_2F Rs_6R LED_F 
+av0=a IPA %0i =-1062731519:-1062729970 
+av1=a UID =1 {0..255} 
+av2=a OFF %s =0 {0,1} 
+av3=bv Fs 0 %s =1 \v Rs 0 
+av4=bv Fs 1 %s =1 \v Rs 1 
+av5=v Rs 2 %s 
+av6=v Rs 3 
+av7=v Rs 4 
+av8=v Rs 5 
+AcceptName=2
+uName=Unit
+aRef=2
+Ref=ModbusClient
+Language=en
+Posi=32 19
+[_MODBUS_RXINT 47495]
+Fam=sModMaster
+Face=Read Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=248 #_Ik=144 
+S=Fs_F LED_F 
+av0=a FUN %s =3:4 {3,4} 
+av1=a PRO %s =1 {1,2,3,4} 
+av2=a ADD =0:12088 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=Unit
+Language=en
+Posi=33 35
+[HLINE]
+H0=12 27 32)46 47
+H1=14 46 47
+H2=22 30 32)46 47
+H3=24 31 32)46 47
+H4=27 28 30
+H5=30 28 31
+H6=38 28 33)47 48
+[VLINE]
+V0=30 22 27
+V1=31 24 30
+[NETWORK]
+N0=Bo 27 12)if 32 12
+N1=Bof 46 12
+N2=Bof 46 14
+N3=Bif 32 22)o 28 27
+N4=Bof 46 22
+N5=Bif 32 24)o 28 30
+N6=Bof 46 24
+N7=Bo 28 38)if 33 38
+N8=Bof 47 38
+N9=Io 39 48
+[CONNS]
+Conn0=27 12 56 34 3
+Conn1=28 27 144 34 3
+Conn2=28 30 56 34 3
+Conn3=28 38 144 34 3
+Conn4=39 48 248 34 6
+[RESOURCES]
+DBVersion=270340
+DBCount=245
+Format={ID}	{FullName}	{Type}	{Expression}	{ScopeID}	{Size}	{Comment}	{Override}	{Tags}	{BlockID}	{Hidden}
+HSYM0=1	COB_0	COB		3	-1				-1	0
+HSYM1=2	PCD01.A00.Mld.PCD01.Quitt.SSMRLT.iSSM	R		1	-1				-1	0
+HSYM2=3	RLT003.ZUL.Frost.Box.iQuit	F		1	-1				-1	0
+HSYM3=4	PCD01.A00.Mld.PCD01.Clock.iS	R		1	-1				-1	0
+HSYM4=5			100	3	-1				-1	1
+HSYM5=6	PCD01.A00.Mld.StSpg.Stoerg.DISteuerkreis	R		1	-1	(5) Meldung 5 - Digitale Eingangsadresse		S_ADJUST	-1	0
+HSYM6=7	PCD01.A00.Mld.StSpg.USV.irSM10	F		1	-1				-1	0
+HSYM7=8	Mail.To3	TEXT		1	-1				-1	0
+HSYM8=9	PCD01.A00.Mld.PCD01.SW.Antiblock.YWoUhrzeit	R		1	-1	(5) Uhrzeit des Tages an dem der Bewegungsbetrieb ausgeführt werden soll			-1	0
+HSYM9=10	PCD01.A00.Mld.PCD01.SW.Antiblock.UwpVorwahl	R		1	-1	(5) Betriebsvorwahl der Antiblockierschutzfunktion			-1	0
+HSYM10=11	NULL	R		1	-1				-1	0
+HSYM11=12	PCD01.A00.Mld.PCD01.Init.Box.iError	F		1	-1				-1	0
+HSYM12=13	PCD01.A00.Mld.PCD01.Quitt.SSMHZG.iSSM	R		1	-1				-1	0
+HSYM13=14	PCD01.A00.Mld.PCD01.A00.Mld.PCD01.Clock.iYMD	R		1	-1				-1	0
+HSYM14=15	PCD01.A00.Mld.StSpg.Spg.irSM10	F		1	-1				-1	0
+HSYM15=16	Mail.IP.iAddB2	R		1	-1				-1	0
+HSYM16=17	PCD01.A00.Mld.PCD01.SVz.iXP600	F		1	-1				-1	0
+HSYM17=18	PCD01.A00.Mld.PCD01.SW.Antiblock.YWoTag	R		1	-1	(5) Wochentag an dem der Bewegungsbetrieb ausgeführt werden soll			-1	0
+HSYM18=19	PCD01.A00.Mld.PCD01.SW.Antiblock.UwpWoUhrzeit	R		1	-1	(5) Uhrzeit des Tages an dem der Bewegungsbetrieb ausgeführt werden soll			-1	0
+HSYM19=20	PCD01.A00.Mld.PCD01.SW.Antiblock.YWoImpuls	F		1	-1	(2) Anzeige des Wöchenrlichen Impulses des Bewegungsbetriebes			-1	0
+HSYM20=21	PCD01.A00.Mld.PCD01.Init.Box.iInit_Batt	F		1	-1				-1	0
+HSYM21=22			4	3	-1				-1	1
+HSYM22=23	PCD01.A00.RLTStart.Takt.iSample4	F		1	-1				-1	0
+HSYM23=24	PCD01.A00.Mld.PCD01.Quitt.Tast.iBm	F		1	-1	(5) Auswahl des Normalzustands des Gebers			-1	0
+HSYM24=25			2000	3	-1				-1	1
+HSYM25=26	PCD01.A00.Mld.PCD01.Clock.iMD	R		1	-1				-1	0
+HSYM26=27	PCD01.A00.Mld.PCD01.Clock.iM	R		1	-1				-1	0
+HSYM27=28	PCD01.A00.Mld.PCD01.A00.Mld.PCD01.Clock.iHM	R		1	-1				-1	0
+HSYM28=29	PCD01.A00.Mld.StSpg.Stoerg.SpgOverride	F		1	-1	(5) Meldung 5 - Vorwahl ob intern parallel die Meldungen 230VC/24VAC/24VDC (Mel		S_ADJUST	-1	0
+HSYM29=30	PCD01.A00.Mld.StSpg.Phw.irSM10	F		1	-1				-1	0
+HSYM30=31	Mail.IP.iAddB1	R		1	-1				-1	0
+HSYM31=32	PCD01.SWeb.Alarme.iQuit	F		1	-1				-1	0
+HSYM32=33	PCD01.A00.Mld.PCD01.SW.Antiblock.UwpWoTag	R		1	-1	(5) Wochentag an dem der Bewegungsbetrieb ausgeführt werden soll			-1	0
+HSYM33=34	PCD01.A00.Mld.PCD01.SW.Antiblock.YErlaubt	F		1	-1	(2) Anzeige ob die Antiblockierschutzfunktion ausgeführt werden darf			-1	0
+HSYM34=35	PCD01.A00.Mld.PCD01.SW.Antiblock.UwpErlaubt	F		1	-1	(2) Anzeige ob die Antiblockierschutzfunktion ausgeführt werden darf			-1	0
+HSYM35=36	PCD01.A00.Mld.PCD01.Init.Box.HistCall2	R		1	-1	(3) Zeilennummer in Aufrufebene 2			-1	0
+HSYM36=37	PCD01.A00.Mld.PCD01.Init.Box.SmQuit	F		1	-1	(4) Quittieren von Störmeldungen in allen Störungs-FBoxenSteuerung			-1	0
+HSYM37=38	PCD01.A00.Mld.PCD01.Init.Box.iInit_WtReset	F		1	-1				-1	0
+HSYM38=39	PCD01.A00.Mld.PCD01.Quitt.LED.iDO	F		1	-1				-1	0
+HSYM39=40	PCD01.A00.Mld.PCD01.SWeb.Firmware	R		1	-1				-1	0
+HSYM40=41	RLT003.ZUL.Frost.Box.iFrostMX5	F		1	-1				-1	0
+HSYM41=42			10000	3	-1				-1	1
+HSYM42=43	PCD01.A00.Mld.StSpg.Stoerg.SmSpg	F		1	-1	(1) Meldung 5 - Alarmzustand			-1	0
+HSYM43=44	PCD01.A00.Mld.StSpg.Stoerg.PhasenOverride	F		1	-1	(5) Meldung 4 - Vorwahl ob intern parallel die Meldungen 230VC/24VAC/24VDC (Mel		S_ADJUST	-1	0
+HSYM44=45	PCD01.A00.Mld.StSpg.VDC24.irSM10	F		1	-1				-1	0
+HSYM45=46	Mail.IP.iAddB0	R		1	-1				-1	0
+HSYM46=47	PCD01.SWeb.Alarme.ListClear	F		1	-1	Löscht die gesamte Alarmliste			-1	0
+HSYM47=48	PCD01.A00.Mld.PCD01.SW.Antiblock.UwpWoImpuls	F		1	-1	(2) Anzeige des Wöchentlichen Impulses des Bewegungsbetriebes			-1	0
+HSYM48=49	PCD01.A00.Mld.PCD01.Init.Box.iInit_Bereit	F		1	-1				-1	0
+HSYM49=50	PCD01.A00.Mld.PCD01.SVz.iSVZ	F		1	-1				-1	0
+HSYM50=51	PCD01.A00.Mld.StSpg.Stoerg.DI230AC	R		1	-1	(5) Meldung 1 - Digitale Eingangsadresse		S_ADJUST	-1	0
+HSYM51=52	PCD01.A00.Mld.StSpg.VAC24.irSM10	F		1	-1				-1	0
+HSYM52=53	Mail.To1	TEXT RAM		1	0				-1	0
+HSYM53=54	PCD01.SWeb.Alarme.iNbr	R		1	-1				-1	0
+HSYM54=55	PCD01.A00.Mld.PCD01.Init.Box.HistCall3	R		1	-1	(3) Zeilennummer in Aufrufebene 3			-1	0
+HSYM55=56			0	3	-1				-1	1
+HSYM56=57	IOs.DI_401.iInp	F	:= 1	1	-1				-1	0
+HSYM57=58	PCD01.A00.Mld.StSpg.Stoerg.DI24AC	R		1	-1	(5) Meldung 2 - Digitale Eingangsadresse		S_ADJUST	-1	0
+HSYM58=59	PCD01.A00.Mld.StSpg.Stoerg.AC230NoNc	F		1	-1	(5) Meldung 1 - Auswahl des Normalzustands des Gebers		S_ADJUST	-1	0
+HSYM59=60	PCD01.A00.PSTA.ISP1.StSpg.iSSM	F		1	-1				-1	0
+HSYM60=61	HZE001.Aussen.Temp.iRW10	R		1	-1				-1	0
+HSYM61=62	IOs.DI_402.iInp	F	:= 1	1	-1				-1	0
+HSYM62=63	IOs.DI_403.iInp	F	:= 1	1	-1				-1	0
+HSYM63=64	HZE001.WE03.Anforderung.Stoerg.iSSm	F		1	-1	(1) Störmeldung Betriebsrückmeldung fehlt			-1	0
+HSYM64=65	uBT_Reboot	F		1	-1				-1	0
+HSYM65=66	PCD01.A00.Mld.PCD01.A00.Mld.PCD01.A00.Mld.PCD01.Clock.iHM	R		1	-1				-1	0
+HSYM66=67	PCD01.A00.Mld.StSpg.Stoerg.DI24DC	R		1	-1	(5) Meldung 3 - Digitale Eingangsadresse		S_ADJUST	-1	0
+HSYM67=68	PCD01.A00.Mld.StSpg.Stoerg.AC230QuitPflicht	F		1	-1	(5) Meldung 1 - Vorwahl ob die Störung dem Geber folgt oder gespeichert bleibt		S_ADJUST	-1	0
+HSYM68=69			600	3	-1				-1	1
+HSYM69=70	PIN.Level2	TEXT RAM		1	-1				-1	0
+HSYM70=71	PCD01.A00.Mld.PCD01.Init.Box.HistCobLine	R		1	-1	(3) Zeilennummer im COB			-1	0
+HSYM71=72	PCD01.A00.Mld.PCD01.Init.Box.HistFehler	F		1	-1	(1) Fehler in der Steuerung			-1	0
+HSYM72=73	PCD01.A00.Mld.PCD01.SW.iAntiblock_Uwp	F		1	-1				-1	0
+HSYM73=74	IOs.DI_400.iInp	F	:= 1	1	-1				-1	0
+HSYM74=75	PCD01.A00.Mld.PCD01.Quitt.WRNKLT.iSWM	R		1	-1				-1	0
+HSYM75=76	PCD01.A00.Mld.PCD01.SVz.iSVZ600	F		1	-1				-1	0
+HSYM76=77	PCD01.A00.Mld.PCD01.A00.Mld.PCD01.Clock.iHMS	R		1	-1				-1	0
+HSYM77=78	PCD01.A00.Mld.StSpg.Stoerg.SmAC230	F		1	-1	(1) Meldung 1 - Alarmzustand			-1	0
+HSYM78=79	PCD01.A00.Mld.StSpg.Stoerg.PhasenQuitPflicht	F		1	-1	(5) Meldung 4 - Vorwahl ob die Störung dem Geber folgt oder gespeichert bleibt		S_ADJUST	-1	0
+HSYM79=80			50	3	-1				-1	1
+HSYM80=81	PIN.Level1	TEXT RAM		1	0				-1	0
+HSYM81=82	PCD01.SWeb.Alarme.Aktiv	F		1	-1				-1	0
+HSYM82=83	PCD01.A00.Mld.PCD01.Init.Box.HistCall1	R		1	-1	(3) Zeilennummer in Aufrufebene 1			-1	0
+HSYM83=84	PCD01.A00.Mld.PCD01.Init.Box.SmQuitHwImp	R		1	-1	(5) Dauer der Ansteuerung des Quittierungsausganges			-1	0
+HSYM84=85	PCD01.A00.Mld.PCD01.SW.iAntiblock_Stetig	F		1	-1				-1	0
+HSYM85=86		K	20	3	-1				-1	1
+HSYM86=87	HIGH	F		1	-1				-1	0
+HSYM87=88	PCD01.A00.Mld.PCD01.SWeb.SBUS_Station	R		1	-1				-1	0
+HSYM88=89	PCD01.Panel.iWebRestart	F		1	-1				-1	0
+HSYM89=90		K	30	3	-1				-1	1
+HSYM90=91	PCD01.A00.Mld.PCD01.Clock.iMonth	R		1	-1				-1	0
+HSYM91=92	PCD01.A00.Mld.StSpg.Stoerg.SmAC24	F		1	-1	(1) Meldung 2 - Alarmzustand			-1	0
+HSYM92=93	PCD01.A00.Mld.StSpg.Stoerg.PhasenNoNc	F		1	-1	(5) Meldung 4 - Auswahl des Normalzustands des Gebers		S_ADJUST	-1	0
+HSYM93=94	PIN.Level4	TEXT RAM		1	0				-1	0
+HSYM94=95	PCD01.A00.Mld.PCD01.Init.Box.HistQuit	F		1	-1	(4) Löschen der History			-1	0
+HSYM95=96	LOW	F		1	-1				-1	0
+HSYM96=97	RLT003.AUL.Temp.iMW10	R		1	-1				-1	0
+HSYM97=98	PCD01.A00.Mld.PCD01.Init.Box.iInit_HwReset	F		1	-1				-1	0
+HSYM98=99	PCD01.A00.Mld.PCD01.SWeb.Geraetetyp	R		1	-1				-1	0
+HSYM99=100	PCD01.A00.Mld.StSpg.Stoerg.SmDC24	F		1	-1	(1) Meldung 3 - Alarmzustand			-1	0
+HSYM100=101	PCD01.A00.Mld.StSpg.Stoerg.SpgQuitPflicht	F		1	-1	(5) Meldung 5 - Vorwahl ob die Störung dem Geber folgt oder gespeichert bleibt		S_ADJUST	-1	0
+HSYM101=102	PCD01.A00.Mld.StSpg.USV.DIKontakt	R		1	-1	(5) Digitaler Eingang			-1	0
+HSYM102=103	Mail.Sender	TEXT		1	0				-1	0
+HSYM103=104	PCD01.SWeb.Alarme.ListAck	F		1	-1	Quittiert die gesamte Alarmliste			-1	0
+HSYM104=105	PIN.Level3	TEXT RAM		1	0				-1	0
+HSYM105=106	PCD01.A00.Mld.PCD01.Init.Box.HistCall6	R		1	-1	(3) Zeilennummer in Aufrufebene 6			-1	0
+HSYM106=107	PCD01.A00.Mld.PCD01.SWeb.CPUTyp	R		1	-1				-1	0
+HSYM107=108	PCD01.A00.Mld.PCD01.Quitt.SSMKLT.iSSM	R		1	-1				-1	0
+HSYM108=109	HZE001.WE01.UWP.Stoerg.iSSm	F		1	-1	(1) Störmeldung Betriebsrückmeldung fehlt			-1	0
+HSYM109=110	PCD01.A00.Mld.PCD01.Clock.iEnD	F		1	-1				-1	0
+HSYM110=111	PCD01.A00.Mld.StSpg.Stoerg.SmPhasen	F		1	-1	(1) Meldung 4 - Alarmzustand			-1	0
+HSYM111=112	PCD01.A00.Mld.StSpg.Stoerg.SpgNoNc	F		1	-1	(5) Meldung 5 - Auswahl des Normalzustands des Gebers		S_ADJUST	-1	0
+HSYM112=113	PCD01.A00.Mld.StSpg.USV.Sm	F		1	-1	(1) Zustand der Störmeldung			-1	0
+HSYM113=114	Mail.Pwd	TEXT		1	0				-1	0
+HSYM114=115	PCD01.A00.Mld.PCD01.Init.Box.HistCall7	R		1	-1	(3) Zeilennummer in Aufrufebene 7			-1	0
+HSYM115=116	PCD01.A00.Mld.PCD01.Init.Box.HistProgLine	R		1	-1	(3) Programmzeile in der der Fehler aufgetreten ist			-1	0
+HSYM116=117	PCD01.A00.Mld.PCD01.Init.Box.WartQuit	F		1	-1	(4) Rücksetzen der Wartungsmeldungen und - zähler in allen Steuerungs-FBoxen			-1	0
+HSYM117=118	IOs.DO_189.iOut	F		1	-1				-1	0
+HSYM118=119	PCD01.VER.IP	R		1	-1				-1	0
+HSYM119=120	HZE002.Weiche.UWP.Stoerg.iSSm	F		1	-1	(1) Störmeldung Betriebsrückmeldung fehlt			-1	0
+HSYM120=121	PCD01.A00.Mld.PCD01.Quitt.Tast.iDO	F		1	-1				-1	0
+HSYM121=122	PCD01.A00.Mld.PCD01.SVz.iSVZ2	F		1	-1				-1	0
+HSYM122=123	PCD01.A00.Mld.PCD01.Clock.iDay	R		1	-1				-1	0
+HSYM123=124	PCD01.A00.Mld.StSpg.Stoerg.AC24QuitPflicht	F		1	-1	(5) Meldung 2 - Vorwahl ob die Störung dem Geber folgt oder gespeichert bleibt		S_ADJUST	-1	0
+HSYM124=125	PCD01.A00.Mld.StSpg.USV.SpgGrp	R		1	-1	(5) zugehörige Spannungsgruppe zur Unterdrückung von Geistermeldungen bei fehle			-1	0
+HSYM125=126	FileDringend	TEXT		1	0				-1	0
+HSYM126=127	SubDringend	TEXT		1	0				-1	0
+HSYM127=128	PCD01.A00.Mld.PCD01.Quitt.SSMRLT.iAlarm	F		1	-1				-1	0
+HSYM128=129	PIN.Logouttime	R	:= 600	1	-1				-1	0
+HSYM129=130	PCD01.A00.Mld.PCD01.Init.Box.HistIndex	R		1	-1	(3) Inhalt des Indexregister bei auftreten des Fehlers			-1	0
+HSYM130=131	PCD01.A00.Mld.PCD01.Init.Box.iQSm	F		1	-1	(3) Zeilennummer im COB			-1	0
+HSYM131=132	IOs.DI_404.iInp	F	:= 1	1	-1				-1	0
+HSYM132=133		K	3000	3	-1				-1	1
+HSYM133=134		K	600	3	-1				-1	1
+HSYM134=135		K	2	3	-1				-1	1
+HSYM135=136	PCD01.A00.Mld.PCD01.Quitt.WRNHZG.iSWM	R		1	-1				-1	0
+HSYM136=137	PCD01.A00.Mld.PCD01.Clock.iH	R		1	-1				-1	0
+HSYM137=138	PCD01.A00.Mld.StSpg.Stoerg.AC24NoNc	F		1	-1	(5) Meldung 2 - Auswahl des Normalzustands des Gebers		S_ADJUST	-1	0
+HSYM138=139	PCD01.A00.Mld.StSpg.USV.QuitPflicht	F		1	-1	(5) Vorwahl ob die Störung dem Geber folgt oder gespeichert bleibt und quittier			-1	0
+HSYM139=140	FileNormal	TEXT		1	0				-1	0
+HSYM140=141	Mail.To4	TEXT		1	-1				-1	0
+HSYM141=142	PCD01.A00.Mld.PCD01.Init.Box.HistCall5	R		1	-1	(3) Zeilennummer in Aufrufebene 5			-1	0
+HSYM142=143	PCD01.A00.Mld.PCD01.Init.Box.HistCall4	R		1	-1	(3) Zeilennummer in Aufrufebene 4			-1	0
+HSYM143=144			1	3	-1				-1	1
+HSYM144=145	PCD01.A00.Mld.PCD01.Hevac.iError	F		1	-1				-1	0
+HSYM145=146	IOs.DO_193.iOut	F		1	-1				-1	0
+HSYM146=147	PCD01.A00.RLTStart.Takt.iSample5	F		1	-1				-1	0
+HSYM147=148		K	300	3	-1				-1	1
+HSYM148=149	PCD01.A00.Mld.PCD01.Quitt.WRNRLT.iSWM	R		1	-1				-1	0
+HSYM149=150	HZE001.WE01.Anforderung.Stoerg.iSSm	F		1	-1	(1) Störmeldung Betriebsrückmeldung fehlt			-1	0
+HSYM150=151	PCD01.Panel.iRestart	F		1	-1				-1	0
+HSYM151=152	PCD01.A00.Mld.PCD01.Quitt.Tast.irBM80	F		1	-1				-1	0
+HSYM152=153	PCD01.A00.Mld.PCD01.Clock.sHM	R		1	-1				-1	0
+HSYM153=154	PCD01.A00.Mld.StSpg.Stoerg.DC24QuitPflicht	F		1	-1	(5) Meldung 3 - Vorwahl ob die Störung dem Geber folgt oder gespeichert bleibt		S_ADJUST	-1	0
+HSYM154=155	PCD01.A00.Mld.StSpg.USV.NoNc	F		1	-1	(5) Auswahl des Normalzustands des Gebers			-1	0
+HSYM155=156	PCD01.A00.Mld.StSpg.USV.iSM10	F		1	-1				-1	0
+HSYM156=157	TexNormal	TEXT		1	0				-1	0
+HSYM157=158	Mail.IP.iAddB3	R		1	-1				-1	0
+HSYM158=159	PCD01.A00.Mld.PCD01.Clock.iEn	F		1	-1				-1	0
+HSYM159=160	Mail.Name	TEXT RAM		1	0				-1	0
+HSYM160=161	PCD01.A00.Mld.PCD01.Init.Box.QuitDI	R		1	-1	(5) Eingangsadresse Reset-Knopf			-1	0
+HSYM161=162	PCD01.A00.Mld.PCD01.Init.Box.HistMeldung	R		1	-1	(3) Ursache der Fehlermeldung			-1	0
+HSYM162=163	IOs.DO_192.iOut	F		1	-1				-1	0
+HSYM163=164	PCD01.A00.Mld.PCD01.Quitt.SSMRLT.Hupe	F		1	-1				-1	0
+HSYM164=165		K	10	3	-1				-1	1
+HSYM165=166		K	100	3	-1				-1	1
+HSYM166=167	PCD01.A00.Mld.PCD01.Clock.iEnt	F		1	-1				-1	0
+HSYM167=168	PCD01.A00.Mld.PCD01.Clock.iYear	R		1	-1				-1	0
+HSYM168=169	PCD01.A00.Mld.StSpg.Stoerg.Verzoeger	R		1	-1	(5) Verzögerung bis Normalzustand angezeigt wird		S_ADJUST	-1	0
+HSYM169=170	PCD01.A00.Mld.StSpg.Stoerg.DC24NoNc	F		1	-1	(5) Meldung 3 - Auswahl des Normalzustands des Gebers		S_ADJUST	-1	0
+HSYM170=171	SubNormal	TEXT		1	0				-1	0
+HSYM171=172	TexDringend	TEXT		1	0				-1	0
+HSYM172=173	Mail.SMTP	TEXT RAM		1	0				-1	0
+HSYM173=174	PCD01.A00.Mld.PCD01.SW.Antiblock.UwpStillDauer	R		1	-1	(5) Anzahl der Stunden nach der ein Bewegungslauf aktiviert werden soll			-1	0
+HSYM174=175	PCD01.A00.Mld.PCD01.Init.Box.QuitDO	R		1	-1	(5) Ausgangsadresse Hardware Reset			-1	0
+HSYM175=176		K	0	3	-1				-1	1
+HSYM176=177	IOs.DI_407.iInp	F	:= 1	1	-1				-1	0
+HSYM177=178	PCD01.A00.Mld.PCD01.Clock.sYMD	R		1	-1				-1	0
+HSYM178=179			10	3	-1				-1	1
+HSYM179=180	PCD01.A00.Mld.PCD01.Clock.iD	R		1	-1				-1	0
+HSYM180=181	Mail.IPText	TEXT RAM		1	0				-1	0
+HSYM181=182	Mail.To5	TEXT		1	-1				-1	0
+HSYM182=183	PCD01.A00.Mld.PCD01.SW.Antiblock.YVorwahl	R		1	-1	(5) Betriebsvorwahl für die Antiblockierschutzfunktion			-1	0
+HSYM183=184	PCD01.A00.Mld.PCD01.Init.Box.HistReserve	R		1	-1	(3) Vorhaltung für spätere Ergänzungen			-1	0
+HSYM184=185	PCD01.A00.Mld.PCD01.SVz.iSVZ3000	F		1	-1				-1	0
+HSYM185=186	RLT003.VE.VL.Sec.UWP.Stoerg.iSSm	F		1	-1				-1	0
+HSYM186=187	HZE001.WE02.Anforderung.Stoerg.iSSm	F		1	-1	(1) Störmeldung Betriebsrückmeldung fehlt			-1	0
+HSYM187=188	PCD01.A00.Mld.PCD01.Quitt.Tast.iMOD	F		1	-1				-1	0
+HSYM188=189	PCD01.A00.Mld.PCD01.Clock.sD	R		1	-1				-1	0
+HSYM189=190	PCD01.A00.Mld.PCD01.Clock.iMS	R		1	-1				-1	0
+HSYM190=191	PCD01.A00.Mld.StSpg.Stoerg.DIPhasen	R		1	-1	(5) Meldung 4 - Digitale Eingangsadresse		S_ADJUST	-1	0
+HSYM191=192	Mail.IPDec	R		1	-1				-1	0
+HSYM192=193	Mail.To2	TEXT		1	0				-1	0
+HSYM193=194	PCD01.A00.Mld.PCD01.SVz.iSVZ300	F		1	-1				-1	0
+HSYM194=195	PCD01.A00.Mld.PCD01.SW.Antiblock.YStillDauer	R		1	-1	(5) Anzahl der Stunden nach der ein Bewegungslauf aktiviert werden soll			-1	0
+HSYM195=196	PCD01.A00.Mld.PCD01.Init.Box.SmBatterie	F		1	-1	(1) Batterie schwach			-1	0
+HSYM196=197	COB_1	COB		3	-1				-1	0
+HSYM197=198	IOs.DI_390.iInp	F		1	-1				-1	0
+HSYM198=199	IOs.DI_388.iInp	F		1	-1				-1	0
+HSYM199=200	IOs.DI_391.iInp	F		1	-1				-1	0
+HSYM200=201	IOs.DI_389.iInp	F		1	-1				-1	0
+HSYM201=202			16	3	-1				-1	1
+HSYM202=203	IOs.DI_387.iInp	F		1	-1				-1	0
+HSYM203=204	IOs.DI_384.iInp	F		1	-1				-1	0
+HSYM204=205	IOs.DI_386.iInp	F		1	-1				-1	0
+HSYM205=206	IOs.DI_385.iInp	F		1	-1				-1	0
+HSYM206=207	IOs.DO_32.iMACT	F		1	-1				-1	0
+HSYM207=208			24	3	-1				-1	1
+HSYM208=209	IOs.DO_34.iOut	F		1	-1				-1	0
+HSYM209=210	IOs.DO_32.iOut	F		1	-1				-1	0
+HSYM210=211	IOs.DO_35.iOut	F		1	-1				-1	0
+HSYM211=212	IOs.DO_35.iMACT	F		1	-1				-1	0
+HSYM212=213	IOs.DO_34.iMACT	F		1	-1				-1	0
+HSYM213=214	IOs.DO_33.iOut	F		1	-1				-1	0
+HSYM214=215	IOs.DO_33.iMACT	F		1	-1				-1	0
+HSYM215=216		K	40	3	-1				-1	1
+HSYM216=218	IOs.AI_512.iDefekt	F		1	-1				-1	0
+HSYM217=219	IOs.AI_513.iDefekt	F		1	-1				-1	0
+HSYM218=220	IOs.AI_519.iIstwert	R		1	-1				-1	0
+HSYM219=221	IOs.AI512	F		3	-1				-1	0
+HSYM220=222	IOs.AI_517.iIstwert	R		1	-1				-1	0
+HSYM221=223	IOs.AI_40_Error	R		3	-1				-1	0
+HSYM222=224	IOs.AI_517.iDefekt	F		1	-1				-1	0
+HSYM223=225	IOs.AI_516.iDefekt	F		1	-1				-1	0
+HSYM224=226	IOs.AI_515.iDefekt	F		1	-1				-1	0
+HSYM225=227	IOs.AI_512.iIstwert	R		1	-1	(1) Physikalischer Wert des Sensors = Ausgang "Iw"			-1	0
+HSYM226=228	IOs.AI_518.iDefekt	F		1	-1				-1	0
+HSYM227=229	IOs.AI_516.iIstwert	R		1	-1	(1) Physikalischer Wert des Sensors = Ausgang "Iw"			-1	0
+HSYM228=230	IOs.AI_513.iIstwert	R		1	-1	(1) Physikalischer Wert des Sensors = Ausgang "Iw"			-1	0
+HSYM229=231	IOs.AI_514.iIstwert	R		1	-1	(1) Physikalischer Wert des Sensors = Ausgang "Iw"			-1	0
+HSYM230=232	IOs.AI_519.iDefekt	F		1	-1				-1	0
+HSYM231=233	IOs.AI_514.iDefekt	F		1	-1				-1	0
+HSYM232=234	IOs.AI_72	I	32	1	-1				-1	0
+HSYM233=235	IOs.AI_515.iIstwert	R		1	-1	(1) Physikalischer Wert des Sensors = Ausgang "Iw"			-1	0
+HSYM234=236	IOs.AI_518.iIstwert	R		1	-1				-1	0
+HSYM235=237	IOs.AO_208.iOut	R		1	-1				-1	0
+HSYM236=238	IOs.AO_210.iOut	R		1	-1				-1	0
+HSYM237=239	IOs.AO_88	O	48	1	-1				-1	0
+HSYM238=240	IOs.AO_211.iOut	R		1	-1				-1	0
+HSYM239=241	IOs.AO_209.iOut	R		1	-1				-1	0
+HSYM240=242			220	3	-1				-1	1
+HSYM241=243			8	3	-1				-1	1
+HSYM242=245	COB_2	COB		3	-1				-1	0
+HSYM243=247	try.mb	F		3	-1				-1	0
+HSYM244=248	try.mb2	R		3	-1				-1	0
+[FBOXLIST]
+Count=2
+FBOXNAME0=4	ModbusClient	1
+FBOXNAME1=5	Unit	1
+[TEXTCONTENTS]
+Count=57
+TEXT0=8 Mail.To3.[size]	-1
+TEXT1=8 Mail.To3.[format]	0
+TEXT2=53 Mail.To1.[size]	0
+TEXT3=53 Mail.To1.[format]	0
+TEXT4=53 Mail.To1.[0]	"stefan.gundacker"
+TEXT5=70 PIN.Level2.[size]	-1
+TEXT6=70 PIN.Level2.[format]	0
+TEXT7=70 PIN.Level2.[0]	""
+TEXT8=81 PIN.Level1.[size]	0
+TEXT9=81 PIN.Level1.[format]	0
+TEXT10=81 PIN.Level1.[0]	"1"
+TEXT11=94 PIN.Level4.[size]	0
+TEXT12=94 PIN.Level4.[format]	0
+TEXT13=94 PIN.Level4.[0]	"08154711"
+TEXT14=103 Mail.Sender.[size]	0
+TEXT15=103 Mail.Sender.[format]	0
+TEXT16=103 Mail.Sender.[0]	"ddcpaspe"
+TEXT17=105 PIN.Level3.[size]	0
+TEXT18=105 PIN.Level3.[format]	0
+TEXT19=105 PIN.Level3.[0]	"96346"
+TEXT20=114 Mail.Pwd.[size]	0
+TEXT21=114 Mail.Pwd.[format]	0
+TEXT22=114 Mail.Pwd.[0]	"ddcpaspe"
+TEXT23=126 FileDringend.[size]	0
+TEXT24=126 FileDringend.[format]	0
+TEXT25=126 FileDringend.[0]	""
+TEXT26=127 SubDringend.[size]	0
+TEXT27=127 SubDringend.[format]	0
+TEXT28=127 SubDringend.[0]	"Dringende Stoerung PASPE"
+TEXT29=140 FileNormal.[size]	0
+TEXT30=140 FileNormal.[format]	0
+TEXT31=140 FileNormal.[0]	""
+TEXT32=141 Mail.To4.[size]	-1
+TEXT33=141 Mail.To4.[format]	0
+TEXT34=157 TexNormal.[size]	0
+TEXT35=157 TexNormal.[format]	0
+TEXT36=157 TexNormal.[0]	""
+TEXT37=160 Mail.Name.[size]	0
+TEXT38=160 Mail.Name.[format]	0
+TEXT39=160 Mail.Name.[0]	"ddcpaspe"
+TEXT40=171 SubNormal.[size]	0
+TEXT41=171 SubNormal.[format]	0
+TEXT42=171 SubNormal.[0]	""
+TEXT43=172 TexDringend.[size]	0
+TEXT44=172 TexDringend.[format]	0
+TEXT45=172 TexDringend.[0]	"Die Stoerung liegt seit $D um $H an."
+TEXT46=173 Mail.SMTP.[size]	0
+TEXT47=173 Mail.SMTP.[format]	1
+TEXT48=173 Mail.SMTP.[0]	"192.168.187.165"
+TEXT49=181 Mail.IPText.[size]	0
+TEXT50=181 Mail.IPText.[format]	0
+TEXT51=181 Mail.IPText.[0]	"smtp.googlemail.com"
+TEXT52=182 Mail.To5.[size]	-1
+TEXT53=182 Mail.To5.[format]	0
+TEXT54=193 Mail.To2.[size]	0
+TEXT55=193 Mail.To2.[format]	0
+TEXT56=193 Mail.To2.[0]	"mario.bodem"

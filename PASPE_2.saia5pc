@@ -9,7 +9,7 @@ DeviceID=E2BFD662B9E69367
 NumberOfFiles=9
 DownloadOptions=0x102F1BDB
 SerialNumber=088F290F
-BackupToFlashOptions=0x00067020
+BackupToFlashOptions=0x00067000
 RestoreFromFlashOptions=0x00000000
 DeleteFlashOptions=0x00020000
 DocOptions=0x00000175
@@ -17,7 +17,7 @@ DocOptions=0x00000175
 [File1]
 Name=WEB-Server.wsp
 Description=
-Linked=1
+Linked=0
 Flags=0
 
 [File2]
@@ -27,44 +27,44 @@ Linked=0
 Flags=0
 
 [File3]
-Name=.\WEB\SWEBPanel.prj
-Description=
-Linked=0
-Flags=0
-
-[File4]
 Name=sIP.src
 Description=
 Linked=0
 Flags=0
 
-[File5]
+[File4]
 Name=sDNS.src
 Description=
 Linked=0
 Flags=0
 
-[File6]
+[File5]
 Name=SoKo3.src
 Description=
 Linked=0
 Flags=0
 
-[File7]
+[File6]
 Name=DDC_AddOn.ddc
 Description=
 Linked=0
 Flags=0
 
-[File8]
+[File7]
 Name=HKLS.fup
 Description=
-Linked=1
+Linked=0
 Flags=0
 
-[File9]
+[File8]
 Name=Alarming.ddc
 Description=
 Linked=0
+Flags=0
+
+[File9]
+Name=HKLS2.fup
+Description=
+Linked=1
 Flags=0
 

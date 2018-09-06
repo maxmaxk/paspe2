@@ -326,7 +326,7 @@
                 <Item name="enabledtcpip">1</Item>
                 <Item name="ethernetrionetwork">0</Item>
                 <Item name="ipaddress" section="TcpIp_0" attrib="Address" minfwver="1.20.00">192.168.7.212</Item>
-                <Item name="subnetmask" section="TcpIp_0" attrib="SubnetMask" minfwver="1.20.00">255.0.0.0</Item>
+                <Item name="subnetmask" section="TcpIp_0" attrib="SubnetMask" minfwver="1.20.00">255.255.255.0</Item>
                 <Item name="defaultrouter" section="TcpIp_0" attrib="Gateway" minfwver="1.20.00">192.168.7.1</Item>
                 <Item name="enableddhcp">0</Item>
                 <Item name="accesscontrollist">0</Item>

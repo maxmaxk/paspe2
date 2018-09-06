@@ -1,0 +1,2097 @@
+;;******************************************************************************
+;;File: HKLS2.fbd
+;;******************************************************************************
+;; Fupla compiler version: V2.1.410
+;;
+
+$ifndef __SFUPVERS__
+__SFUPVERS__  EQU 21410 ; Fupla version 2.1.410
+$endif
+
+
+$ifndef __SFUPCOMP__
+__SFUPCOMP__  EQU 21410 ; Fupla compiler version
+ $endif
+
+$include "HKLS2.inc"
+$include "HKLS2.sym"
+;;
+;; Block: COB COB_0
+;; Pages: 23
+;;
+__PAGE_ID__	DEF	STR	""
+$if 1							;; Block condition
+		COB	COB_0
+			0
+
+;;
+;; Block: COB COB_0
+;; Page: 1/23 Init
+__PAGE_ID__	DEF	STR	""
+;;
+$if 0
+__FBL_C000001_00___SG_COB_0			EQU		$;; Mark Page position
+$endif							;; Page condition
+;; Block: COB COB_0
+;; Page: 2/23 HEVAC /InitLib
+__PAGE_ID__	DEF	STR	""
+;;
+$if 1
+__FBL_C000001_01___SG_COB_0			EQU		$;; Mark Page position
+;; Position: Initialization HVC 8 -  - 45,1
+__fbl_C000001_01_6C80___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	27776	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_HEAINI8(      7,                                    ;;Version Indicator.
+               ___FlgDyn_C000001___SG_COB_0+0,              ;;Output #1 (REx)
+               PCD01.A00.Mld.PCD01.Hevac.iError,              ;;Output #2 (Err)
+               __stc_id_06C80_var_00___SG_COB_0,               ;;Static variable Fs[4].
+               __stc_id_06C80_var_01___SG_COB_0,               ;;Static variable Fsw[2].
+               __stc_id_06C80_var_02___SG_COB_0,               ;;Static variable Rs[2].
+               __stc_id_06C80_var_03___SG_COB_0,               ;;Static variable Clk[3].
+               __stc_id_06C80_var_04___SG_COB_0,               ;;Static variable Cs[1].
+               __stc_id_06C80_var_05___SG_COB_0,               ;;Static variable LED[1].
+               1,                                 ;;Init variable (Hardware clock present ).
+               1,                                 ;;Init variable (Automatic change ).
+               0,                                 ;;Init variable (Change for hemisphere ).
+               0,                                 ;;Init variable (Objects for HMI Editor ).
+               20,                                ;;Init variable (1st sampling [sec]).
+               10,                                ;;Init variable (Sampling time ).
+               1,                                 ;;Init variable (Overrun).
+               1,                                 ;;Init variable (Reset manual ).
+               1,                                 ;;Init variable (Automatic Reset ).
+               1,                                 ;;Init variable (Sampling ).
+               1,                                 ;;Init variable (Reset ).
+               1,                                 ;;Init variable (General alarm ).
+               )                                     ;;FBox user name.
+;; Position: Minimum -  - 35,30
+__fbl_C000001_01_B1D4___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	45524	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_IMIN2(		HZE001.Aussen.Temp.iRW10,	;;Input #1 ()
+		RLT003.AUL.Temp.iMW10,,,,,,,	;;Input #2 ()
+               ___RegDyn_C000001___SG_COB_0+0,              ;;Output #1 ()
+               ___RegDyn_C000001___SG_COB_0+4)              ;;Dynamic variable Lowest[1].
+;; Position: Initialisation - PCD - 44,22
+__fbl_C000001_01_6C7A___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	27770	;PCD
+__FBOX_LANG__	DEF	STR	"DE"	;PCD
+__AVI_C000001_01_6C7A___SG_COB_0_00 DEF STR "Init"
+__AVI_C000001_01_6C7A___SG_COB_0_01 DEF STR "Battery"
+__AVI_C000001_01_6C7A___SG_COB_0_02 DEF STR "INIT-BAT"
+__AVI_C000001_01_6C7A___SG_COB_0_03 DEF STR "Init Battery"
+__AVI_C000001_01_6C7A___SG_COB_0_04 DEF STR ""
+__AVI_C000001_01_6C7A___SG_COB_0_05 DEF STR "Error"
+__AVI_C000001_01_6C7A___SG_COB_0_06 DEF STR "INIT-ERR"
+__AVI_C000001_01_6C7A___SG_COB_0_07 DEF STR "Init Error"
+__AVI_C000001_01_6C7A___SG_COB_0_08 DEF STR ""
+_FUPBinMov(    PCD01.A00.Mld.PCD01.Init.Box.iInit_Bereit,             ;;Invert input label 'PCD01.A00.Mld.PCD01.Init.Box.iInit_Bereit' in
+                ___FlgDyn_C000001___SG_COB_0+1,-)		;;network variable.
+_DDC_INLIBRARY250(               205001,                               ;;Version Indicator.
+		PCD01.A00.Mld.PCD01.Init.Box.iQSm,	;;Input #1 (AckAla)
+		__low,                	;;Input #2 (AckMt)
+		___FlgDyn_C000001___SG_COB_0+1,	;;Input #3 (WD)
+		___RegDyn_C000001___SG_COB_0+0,	;;Input #4 (OutTemp)
+               PCD01.A00.Mld.PCD01.Init.Box.iInit_HwReset,              ;;Output #1 (ResAla)
+               PCD01.A00.Mld.PCD01.Init.Box.iInit_WtReset,              ;;Output #2 (ResMt)
+               PCD01.A00.Mld.PCD01.Init.Box.iError,              ;;Output #3 (Err)
+               PCD01.A00.Mld.PCD01.Init.Box.iInit_Batt,              ;;Output #4 (Bat)
+               ___FlgDyn_C000001___SG_COB_0+2,              ;;Output #5 (Pulse)
+               __stc_id_06C7A_var_00___SG_COB_0,               ;;Static variable SysFlag[20].
+               __stc_id_06C7A_var_01___SG_COB_0,               ;;Static variable SysReg[20].
+               __stc_id_06C7A_var_02___SG_COB_0,               ;;Static variable SysTmr[5].
+               __stc_id_06C7A_var_03___SG_COB_0,               ;;Static variable WrkFlag[22].
+               __stc_id_06C7A_var_04___SG_COB_0,               ;;Static variable WrkReg[31].
+               __stc_id_06C7A_var_05___SG_COB_0,               ;;Static variable WrkCnt[10].
+               PCD01.A00.Mld.PCD01.Init.Box.SmQuit,               ;; (4) Quittieren von Störmeldungen in allen Störungs-FBoxenSteuerung.
+               PCD01.A00.Mld.PCD01.Init.Box.WartQuit,               ;; (4) Rücksetzen der Wartungsmeldungen und - zähler in allen Steuerungs-FBoxen.
+               PCD01.A00.Mld.PCD01.Init.Box.HistQuit,               ;; (4) Löschen der History.
+               PCD01.A00.Mld.PCD01.Init.Box.HistFehler,               ;; (1) Fehler in der Steuerung.
+               PCD01.A00.Mld.PCD01.Init.Box.SmQuitHwImp,               ;; (5) Dauer der Ansteuerung des Quittierungsausganges.
+               PCD01.A00.Mld.PCD01.Init.Box.HistMeldung,               ;; (3) Ursache der Fehlermeldung.
+               PCD01.A00.Mld.PCD01.Init.Box.HistProgLine,               ;; (3) Programmzeile in der der Fehler aufgetreten ist.
+               PCD01.A00.Mld.PCD01.Init.Box.HistIndex,               ;; (3) Inhalt des Indexregister bei auftreten des Fehlers.
+               PCD01.A00.Mld.PCD01.Init.Box.HistCobLine,               ;; (3) Zeilennummer im COB.
+               PCD01.A00.Mld.PCD01.Init.Box.HistCall1,               ;; (3) Zeilennummer in Aufrufebene 1.
+               PCD01.A00.Mld.PCD01.Init.Box.HistCall2,               ;; (3) Zeilennummer in Aufrufebene 2.
+               PCD01.A00.Mld.PCD01.Init.Box.HistCall3,               ;; (3) Zeilennummer in Aufrufebene 3.
+               PCD01.A00.Mld.PCD01.Init.Box.HistCall4,               ;; (3) Zeilennummer in Aufrufebene 4.
+               PCD01.A00.Mld.PCD01.Init.Box.HistCall5,               ;; (3) Zeilennummer in Aufrufebene 5.
+               PCD01.A00.Mld.PCD01.Init.Box.HistCall6,               ;; (3) Zeilennummer in Aufrufebene 6.
+               PCD01.A00.Mld.PCD01.Init.Box.HistCall7,               ;; (3) Zeilennummer in Aufrufebene 7.
+               PCD01.A00.Mld.PCD01.Init.Box.HistReserve,               ;; (3) Vorhaltung für spätere Ergänzungen.
+               __stc_id_06C7A_var_17___SG_COB_0,               ;;Static variable LED[1].
+               __stc_id_06C7A_var_18___SG_COB_0,               ;;Static variable sDiag[12].
+               PCD01.A00.Mld.PCD01.Init.Box.SmBatterie,               ;; (1) Batterie schwach.
+               PCD01.A00.Mld.PCD01.Init.Box.QuitDI,               ;; (5) Eingangsadresse Reset-Knopf.
+               PCD01.A00.Mld.PCD01.Init.Box.QuitDO,               ;; (5) Ausgangsadresse Hardware Reset.
+               __AVI_C000001_01_6C7A___SG_COB_0_00,             ;;Init variable (Description).
+               -1,                                ;;Init variable (PCD Alarm administration (Idx)).
+               2,                                 ;;Init variable (BACnet).
+               1,                                 ;;Init variable (Working hours).
+               1,                                 ;;Init variable (SCADA acknowledgement).
+               20,                                ;;Init variable (Impulse duration (sec)).
+               -1,                                ;;Init variable (Digital input reset (QitAla)).
+               -1,                                ;;Init variable (Digital output reset (ResAla)).
+               1,                                 ;;Init variable (SCADA acknowledgement).
+               1,                                 ;;Init variable (Slot 15 occupied).
+               __AVI_C000001_01_6C7A___SG_COB_0_01,             ;;Init variable (Alarmtext).
+               __AVI_C000001_01_6C7A___SG_COB_0_02,             ;;Init variable (<--- BACnet Object-Name --->).
+               __AVI_C000001_01_6C7A___SG_COB_0_03,             ;;Init variable (- Description).
+               0,                                 ;;Init variable (- Notification-class).
+               __AVI_C000001_01_6C7A___SG_COB_0_04,             ;;Init variable (- Optional text).
+               __AVI_C000001_01_6C7A___SG_COB_0_05,             ;;Init variable (Alarmtext).
+               __AVI_C000001_01_6C7A___SG_COB_0_06,             ;;Init variable (<--- BACnet Object-Name --->).
+               __AVI_C000001_01_6C7A___SG_COB_0_07,             ;;Init variable (- Description).
+               0,                                 ;;Init variable (- Notification-class).
+               __AVI_C000001_01_6C7A___SG_COB_0_08,             ;;Init variable (- Optional text).
+               1,                                 ;;Init variable (Diagnostics history).
+               PCD)                                  ;;FBox user name.
+_FUPBinMov(     PCD01.A00.Mld.PCD01.Init.Box.iError,		;;Copy input label 'PCD01.A00.Mld.PCD01.Init.Box.iError' in
+                PCD01.A00.Mld.PCD01.Init.Box.iInit_Bereit,+)		;;OutputLabel PCD01.A00.Mld.PCD01.Init.Box.iInit_Bereit.
+;; Position: Move -  - 48,44
+__fbl_C000001_01_6C81___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	27777	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_FUPIntMov(     0,                    		;;Copy input label 'K 0' in 
+                ___RegDyn_C000001___SG_COB_0+1, K)		;;network variable.
+_IMOVE2(		___RegDyn_C000001___SG_COB_0+1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,	;;Input #1 ()
+               NULL,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,) ;;Output #1 ()
+;; Position: Move -  - 48,47
+__fbl_C000001_01_6C83___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	27779	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_BMOVE2(		__high,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,	;;Input #1 ()
+               HIGH,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,) ;;Output #1 ()
+;; Position: Move -  - 48,50
+__fbl_C000001_01_6C82___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	27778	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_BMOVE2(		__low,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,	;;Input #1 ()
+               LOW,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,) ;;Output #1 ()
+;; Position: Exclusive pulse -  - 45,55
+__fbl_C000001_01_6C7E___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	27774	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_FUPIntMov(     20,                   		;;Copy input label 'K 20' in 
+                ___RegDyn_C000001___SG_COB_0+2, K)		;;network variable.
+_XPULSE(		PCD01.A00.Mld.PCD01.Init.Box.SmQuit,	;;Input #1 (In)
+		___RegDyn_C000001___SG_COB_0+2,	;;Input #2 (TV)
+               PCD01.A00.Mld.PCD01.Init.Box.SmQuit,              ;;Output #1 (Q)
+               ___RegDyn_C000001___SG_COB_0+3,              ;;Output #2 (t)
+               __stc_id_06C7E_var_00___SG_COB_0,               ;;Static variable Tim[1].
+               __stc_id_06C7E_var_01___SG_COB_0)               ;;Static variable Sta[1].
+;; Position: High -  - 25,68
+__fbl_C000001_01_6C7C___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	27772	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_BHIGH(               ___FlgDyn_C000001___SG_COB_0+3)              ;;Output #1 ()
+;; Position: Anti-block protection 2.0 -  - 45,66
+__fbl_C000001_01_6C7D___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	27773	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_DDC_INANTIBLCK21(               200000,                               ;;Version Indicator.
+		___FlgDyn_C000001___SG_COB_0+3,	;;Input #1 (En2P)
+		___FlgDyn_C000001___SG_COB_0+3,	;;Input #2 (EnY)
+               PCD01.A00.Mld.PCD01.SW.iAntiblock_Uwp,              ;;Output #1 (2P)
+               PCD01.A00.Mld.PCD01.SW.iAntiblock_Stetig,              ;;Output #2 (Y)
+               PCD01.A00.Mld.PCD01.SW.Antiblock.UwpErlaubt,               ;; (2) Anzeige ob die Antiblockierschutzfunktion ausgeführt werden darf.
+               PCD01.A00.Mld.PCD01.SW.Antiblock.UwpWoImpuls,               ;; (2) Anzeige des Wöchentlichen Impulses des Bewegungsbetriebes.
+               PCD01.A00.Mld.PCD01.SW.Antiblock.YErlaubt,               ;; (2) Anzeige ob die Antiblockierschutzfunktion ausgeführt werden darf.
+               PCD01.A00.Mld.PCD01.SW.Antiblock.YWoImpuls,               ;; (2) Anzeige des Wöchenrlichen Impulses des Bewegungsbetriebes.
+               PCD01.A00.Mld.PCD01.SW.Antiblock.UwpVorwahl,               ;; (5) Betriebsvorwahl der Antiblockierschutzfunktion.
+               PCD01.A00.Mld.PCD01.SW.Antiblock.UwpStillDauer,               ;; (5) Anzahl der Stunden nach der ein Bewegungslauf aktiviert werden soll.
+               PCD01.A00.Mld.PCD01.SW.Antiblock.UwpWoTag,               ;; (5) Wochentag an dem der Bewegungsbetrieb ausgeführt werden soll.
+               PCD01.A00.Mld.PCD01.SW.Antiblock.UwpWoUhrzeit,               ;; (5) Uhrzeit des Tages an dem der Bewegungsbetrieb ausgeführt werden soll.
+               PCD01.A00.Mld.PCD01.SW.Antiblock.YVorwahl,               ;; (5) Betriebsvorwahl für die Antiblockierschutzfunktion.
+               PCD01.A00.Mld.PCD01.SW.Antiblock.YStillDauer,               ;; (5) Anzahl der Stunden nach der ein Bewegungslauf aktiviert werden soll.
+               PCD01.A00.Mld.PCD01.SW.Antiblock.YWoTag,               ;; (5) Wochentag an dem der Bewegungsbetrieb ausgeführt werden soll.
+               PCD01.A00.Mld.PCD01.SW.Antiblock.YWoUhrzeit,               ;; (5) Uhrzeit des Tages an dem der Bewegungsbetrieb ausgeführt werden soll.
+               0,                                 ;;Init variable (BACnet).
+               3,                                 ;;Init variable (Mode).
+               24,                                ;;Init variable (Downtime).
+               1,                                 ;;Init variable (Weekly).
+               900,                               ;;Init variable (... Clock time).
+               3,                                 ;;Init variable (Mode).
+               24,                                ;;Init variable (Downtime).
+               1,                                 ;;Init variable (Weekly).
+               1200,                              ;;Init variable (... Clock time).
+               GROUP__fbl_C000001_01_6C7D)                ;;FBox user name.
+$endif							;; Page condition
+__EOPP___SG_COB_0_01		EQU		$;Mark Page end position
+_PageProbe(		__EOP___SG_COB_0_01)			;;Mark end of page.
+;; Block: COB COB_0
+;; Page: 3/23 Init Alarming
+__PAGE_ID__	DEF	STR	""
+;;
+$if 1
+__FBL_C000001_02___SG_COB_0			EQU		$;; Mark Page position
+;; Position: Alarm2 SWeb init - PCD01_ALA - 43,4
+__fbl_C000001_02_B000___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	45056	;PCD01_ALA
+__FBOX_LANG__	DEF	STR	"DE"	;PCD01_ALA
+_SWA_ALARM2_SWEB_V30(               300000,                               ;;Version Indicator.
+		PCD01.A00.Mld.PCD01.SVz.iSVZ300,	;;Input #1 (En)
+		LOW,                  	;;Input #2 (Clr)
+		LOW,                  	;;Input #3 (Ack)
+		NULL,                 	;;Input #4 (ClrNum)
+		NULL,                 	;;Input #5 (AckNum)
+               PCD01.SWeb.Alarme.Aktiv,              ;;Output #1 (Alarm)
+               ___RegDyn_C000001___SG_COB_0+0,              ;;Output #2 (Num)
+               ___RegDyn_C000001___SG_COB_0+7,              ;;Dynamic variable dynReg[1].
+               __stc_id_0B000_var_00___SG_COB_0,               ;;Static variable LED[1].
+               PCD01.SWeb.Alarme.ListClear,               ;; Löscht die gesamte Alarmliste.
+               PCD01.SWeb.Alarme.ListAck,               ;; Quittiert die gesamte Alarmliste.
+               __stc_id_0B000_var_03___SG_COB_0,               ;;Static variable State[1].
+               __stc_id_0B000_var_04___SG_COB_0,               ;;Static variable LstHdl[1].
+               __stc_id_0B000_var_05___SG_COB_0,               ;;Static variable intF[2].
+               __stc_id_0B000_var_06___SG_COB_0,               ;;Static variable AlarmDB[1].
+               __stc_id_0B000_var_07___SG_COB_0,               ;;Static variable HistDB[1].
+               __stc_id_0B000_var_08___SG_COB_0,               ;;Static variable AlmStFl[1].
+               __stc_id_0B000_var_09___SG_COB_0,               ;;Static variable Diagn[1].
+               __stc_id_0B000_var_0A___SG_COB_0,               ;;Static variable sDB[1].
+               __stc_id_0B000_var_0B___SG_COB_0,               ;;Static variable sFlg[2].
+               600,                               ;;Init variable (Number of alarms).
+               1,                                 ;;Init variable (Clear the list after download).
+               3,                                 ;;Init variable (Remove alarms auto. when).
+               0,                                 ;;Init variable (System clear acceptance).
+               1,                                 ;;Init variable (Clear the entire list).
+               1,                                 ;;Init variable (Acknowledge the entire list).
+               0,                                 ;;Init variable (Usage of Clear/Ack flags).
+               3,                                 ;;Init variable (Path of the alarm config file).
+               1,                                 ;;Init variable (List is).
+               250,                               ;;Init variable (Number of history entries).
+               0,                                 ;;Init variable (Enable to create an event list).
+               250,                               ;;Init variable (Size of RAM buffer ).
+               50,                                ;;Init variable (Num. of events to write log ).
+               3,                                 ;;Init variable (Path of the created logfiles).
+               2,                                 ;;Init variable (Log file creation frequency).
+               50,                                ;;Init variable (Max. num. of created log files).
+               500,                               ;;Init variable (Max. size of space used in kB).
+               PCD01_ALA)                            ;;FBox user name.
+;; Position: Move when enabled -  - 63,2
+__fbl_C000001_02_B003___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	45059	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_IMOVEE(		PCD01.A00.Mld.PCD01.SVz.iSVZ300,	;;Input #1 (En)
+		___RegDyn_C000001___SG_COB_0+0,	;;Input #2 (In)
+               PCD01.SWeb.Alarme.iNbr)              ;;Output #1 (Out)
+;; Position: Is zero -  - 43,30
+__fbl_C000001_02_78C5___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	30917	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_IISZERO(		PCD01.SWeb.Alarme.iNbr,	;;Input #1 ()
+               ___FlgDyn_C000001___SG_COB_0+0)              ;;Output #1 ()
+;; Position: Exclusive pulse -  - 52,28
+__fbl_C000001_02_78C6___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	30918	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_FUPIntMov(     50,                   		;;Copy input label '50' in 
+                ___RegDyn_C000001___SG_COB_0+1, )		;;network variable.
+_XPULSE(		___FlgDyn_C000001___SG_COB_0+0,	;;Input #1 (In)
+		___RegDyn_C000001___SG_COB_0+1,	;;Input #2 (TV)
+               PCD01.SWeb.Alarme.iQuit,              ;;Output #1 (Q)
+               ___RegDyn_C000001___SG_COB_0+2,              ;;Output #2 (t)
+               __stc_id_078C6_var_00___SG_COB_0,               ;;Static variable Tim[1].
+               __stc_id_078C6_var_01___SG_COB_0)               ;;Static variable Sta[1].
+;; Position: Integer 2.0 -  - 20,36
+__fbl_C000001_02_ACFA___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	44282	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_DDC_SPGENERAL22(               200000,                               ;;Version Indicator.
+               ___RegDyn_C000001___SG_COB_0+3,              ;;Output #1 (Val)
+               __stc_id_0ACFA_var_00___SG_COB_0,               ;;Static variable Value[1].
+               0,                                 ;;Init variable (BACnet).
+               6000,                              ;;Init variable (Pre-selection).
+               GROUP__fbl_C000001_02_ACFA)                ;;FBox user name.
+;; Position: Override digital -  - 33,47
+__fbl_C000001_02_9282___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	37506	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_HEAMANB3(		PCD01.A00.Mld.PCD01.SVz.iSVZ300,	;;Input #1 ()
+               ___FlgDyn_C000001___SG_COB_0+1,              ;;Output #1 ()
+               __stc_id_09282_var_00___SG_COB_0,               ;;Static variable Fs[2].
+               __stc_id_09282_var_01___SG_COB_0,               ;;Static variable Fsm[2].
+               __stc_id_09282_var_02___SG_COB_0,               ;;Static variable LED[1].
+               0,                                 ;;Init variable (Manual state follows input ).
+               1,                                 ;;Init variable (Mode).
+               1,                                 ;;Init variable (Manual).
+               )                                     ;;FBox user name.
+;; Position: Override numeric -  - 33,50
+__fbl_C000001_02_9283___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	37507	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_FUPIntMov(     600,                  		;;Copy input label '600' in 
+                ___RegDyn_C000001___SG_COB_0+6, )		;;network variable.
+_HEAMANI3(		___RegDyn_C000001___SG_COB_0+6,	;;Input #1 ()
+               ___RegDyn_C000001___SG_COB_0+5,              ;;Output #1 ()
+               __stc_id_09283_var_00___SG_COB_0,               ;;Static variable Fs[1].
+               __stc_id_09283_var_01___SG_COB_0,               ;;Static variable Fsm[1].
+               __stc_id_09283_var_02___SG_COB_0,               ;;Static variable Rsm[1].
+               __stc_id_09283_var_03___SG_COB_0,               ;;Static variable LED[1].
+               0,                                 ;;Init variable (Manual value follows input ).
+               0,                                 ;;Init variable (Manual value).
+               1,                                 ;;Init variable (Mode).
+               )                                     ;;FBox user name.
+;; Position: Load when enabled -  - 48,47
+__fbl_C000001_02_9280___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	37504	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_ILOADE(		___FlgDyn_C000001___SG_COB_0+1,	;;Input #1 (En)
+		___RegDyn_C000001___SG_COB_0+5,	;;Input #2 (In)
+               ___RegDyn_C000001___SG_COB_0+4,              ;;Output #1 (Out)
+               PIN.Logouttime)                     ;;Constant #1
+;; Position: PCS define -  - 2,59
+__fbl_C000001_02_AFFD___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	45053	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+__AVI_C000001_02_AFFD___SG_COB_0_00 DEF STR ""
+__AVI_C000001_02_AFFD___SG_COB_0_01 DEF STR ""
+__AVI_C000001_02_AFFD___SG_COB_0_02 DEF STR ""
+__AVI_C000001_02_AFFD___SG_COB_0_03 DEF STR ""
+__AVI_C000001_02_AFFD___SG_COB_0_04 DEF STR ""
+__AVI_C000001_02_AFFD___SG_COB_0_05 DEF STR ""
+__AVI_C000001_02_AFFD___SG_COB_0_06 DEF STR ""
+__AVI_C000001_02_AFFD___SG_COB_0_07 DEF STR ""
+__AVI_C000001_02_AFFD___SG_COB_0_08 DEF STR ""
+__AVI_C000001_02_AFFD___SG_COB_0_09 DEF STR ""
+_DDC_INAKS250( 205001,                               ;;Version Indicator.
+               1,                                 ;;Init variable (Use for).
+               __AVI_C000001_02_AFFD___SG_COB_0_00,             ;;Init variable (Level 1).
+               __AVI_C000001_02_AFFD___SG_COB_0_01,             ;;Init variable (Level 2).
+               __AVI_C000001_02_AFFD___SG_COB_0_02,             ;;Init variable (Level 3).
+               __AVI_C000001_02_AFFD___SG_COB_0_03,             ;;Init variable (Level 4).
+               __AVI_C000001_02_AFFD___SG_COB_0_04,             ;;Init variable (Level 5).
+               __AVI_C000001_02_AFFD___SG_COB_0_05,             ;;Init variable (Level 6).
+               __AVI_C000001_02_AFFD___SG_COB_0_06,             ;;Init variable (Level 7).
+               __AVI_C000001_02_AFFD___SG_COB_0_07,             ;;Init variable (Level 8).
+               __AVI_C000001_02_AFFD___SG_COB_0_08,             ;;Init variable (Level 9).
+               __AVI_C000001_02_AFFD___SG_COB_0_09,             ;;Init variable (Level 10).
+               GROUP__fbl_C000001_02_AFFD)                ;;FBox user name.
+;; Position: Alarm Header -  - 2,63
+__fbl_C000001_02_B002___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	45058	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+__AVI_C000001_02_B002___SG_COB_0_00 DEF STR ""
+_DDC_INALMHDR250(               205000,                               ;;Version Indicator.
+               1,                                 ;;Init variable (Base alarm index).
+               __AVI_C000001_02_B002___SG_COB_0_00,             ;;Init variable (Description).
+               GROUP__fbl_C000001_02_B002,                ;;FBox user name.
+               PCD01_ALA)                            ;;FBox reference.
+$endif							;; Page condition
+__EOPP___SG_COB_0_02		EQU		$;Mark Page end position
+_PageProbe(		__EOP___SG_COB_0_02)			;;Mark end of page.
+;; Block: COB COB_0
+;; Page: 4/23 Init Email
+__PAGE_ID__	DEF	STR	""
+;;
+$if 1
+__FBL_C000001_03___SG_COB_0			EQU		$;; Mark Page position
+;; Position: Binary 2.0 -  - 20,7
+__fbl_C000001_03_5DF7___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	24055	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_DDC_SPGENERAL21(               200000,                               ;;Version Indicator.
+               ___FlgDyn_C000001___SG_COB_0+0,              ;;Output #1 (Val)
+               __stc_id_05DF7_var_00___SG_COB_0,               ;;Static variable Value[1].
+               0,                                 ;;Init variable (BACnet).
+               1,                                 ;;Init variable (Pre-selection).
+               GROUP__fbl_C000001_03_5DF7)                ;;FBox user name.
+;; Position: And -  - 39,7
+__fbl_C000001_03_9022___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	36898	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_FUPBinMov(    PCD01.A00.Mld.PCD01.Clock.iEn,             ;;Invert input label 'PCD01.A00.Mld.PCD01.Clock.iEn' in
+                ___FlgDyn_C000001___SG_COB_0+3,-)		;;network variable.
+_BAND(		___FlgDyn_C000001___SG_COB_0+0,	;;Input #1 ()
+		___FlgDyn_C000001___SG_COB_0+3,,,,,,,,,	;;Input #2 ()
+               ___FlgDyn_C000001___SG_COB_0+1)              ;;Output #1 ()
+;; Position: Adv. Text Mail Initialisation - WebCMail - 50,5
+__fbl_C000001_03_5DF8___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	24056	;WebCMail
+__FBOX_LANG__	DEF	STR	"DE"	;WebCMail
+_CWM_CINIT(    104300,                               ;;Version Indicator.
+		___FlgDyn_C000001___SG_COB_0+1,	;;Input #1 (En)
+               ___FlgDyn_C000001___SG_COB_0+2,              ;;Output #1 (Busy)
+               ___FlgDyn_C000001___SG_COB_0+4,              ;;Output #2 (Err)
+               ___RegDyn_C000001___SG_COB_0+0,              ;;Output #3 (ErrNum)
+               Mail.SMTP,                          ;;Constant #1
+               Mail.Name,                          ;;Constant #2
+               Mail.Pwd,                           ;;Constant #3
+               Mail.Sender,                        ;;Constant #4
+               Mail.To1,                           ;;Constant #5
+               Mail.To2,                           ;;Constant #6
+               Mail.To3,                           ;;Constant #7
+               Mail.To4,                           ;;Constant #8
+               Mail.To5,                           ;;Constant #9
+               ___RegDyn_C000001___SG_COB_0+2,              ;;Dynamic variable dReg[6].
+               __stc_id_05DF8_var_00___SG_COB_0,               ;;Static variable LED[1].
+               __stc_id_05DF8_var_01___SG_COB_0,               ;;Static variable Port[1].
+               __stc_id_05DF8_var_02___SG_COB_0,               ;;Static variable Flags[10].
+               __stc_id_05DF8_var_03___SG_COB_0,               ;;Static variable Register[7].
+               __stc_id_05DF8_var_04___SG_COB_0,               ;;Static variable Texts[2].
+               __stc_id_05DF8_var_05___SG_COB_0,               ;;Static variable InitDB[1].
+               __stc_id_05DF8_var_06___SG_COB_0,               ;;Static variable Retrys[1].
+               __stc_id_05DF8_var_07___SG_COB_0,               ;;Static variable Delay[1].
+               __stc_id_05DF8_var_08___SG_COB_0,               ;;Static variable Count[1].
+               __stc_id_05DF8_var_09___SG_COB_0,               ;;Static variable TimerDly[1].
+               __stc_id_05DF8_var_0A___SG_COB_0,               ;;Static variable UseAuth[1].
+               25,                                ;;Init variable (Port).
+               0,                                 ;;Init variable (Use authentication).
+               150,                               ;;Init variable (Subject).
+               300,                               ;;Init variable (Text).
+               3,                                 ;;Init variable (Send attempts).
+               200,                               ;;Init variable (Delay in seconds).
+               WebCMail)                             ;;FBox user name.
+;; Position: Binary 2.0 -  - 20,40
+__fbl_C000001_03_83C2___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	33730	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_DDC_SPGENERAL21(               200000,                               ;;Version Indicator.
+               ___FlgDyn_C000001___SG_COB_0+6,              ;;Output #1 (Val)
+               __stc_id_083C2_var_00___SG_COB_0,               ;;Static variable Value[1].
+               0,                                 ;;Init variable (BACnet).
+               0,                                 ;;Init variable (Pre-selection).
+               GROUP__fbl_C000001_03_83C2)                ;;FBox user name.
+;; Position: Or -  - 38,35
+__fbl_C000001_03_83C3___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	33731	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_BOR(		PCD01.A00.Mld.PCD01.Clock.iEn,	;;Input #1 ()
+		PCD01.A00.Mld.PCD01.SVz.iXP600,	;;Input #2 ()
+		___FlgDyn_C000001___SG_COB_0+6,,,,,,,,	;;Input #3 ()
+               ___FlgDyn_C000001___SG_COB_0+5)              ;;Output #1 ()
+;; Position: Query IP Name -  - 50,33
+__fbl_C000001_03_83C1___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	33729	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_COMQUERY_BY_NAME3(               3,                                    ;;Version Indicator.
+		___FlgDyn_C000001___SG_COB_0+5,	;;Input #1 (Query)
+               ___FlgSta_C000001___SG_COB_0+0,              ;;Output #1 (Con)
+               Mail.IPDec,                         ;;Output #2 (IPAddr)
+               ___FlgSta_C000001___SG_COB_0+1,              ;;Output #3 (Bsy)
+               ___FlgSta_C000001___SG_COB_0+2,              ;;Output #4 (Error)
+               ___RegSta_C000001___SG_COB_0+0,              ;;Output #5 (Status)
+               Mail.IPText,                        ;;Constant #1
+               __stc_id_083C1_var_00___SG_COB_0,               ;;Static variable LED[1].
+               4,                                 ;;Init variable (Use IP address from).
+               GROUP__fbl_C000001_03_83C1)                ;;FBox user name.
+;; Position: Move-Out Byte -  - 51,49
+__fbl_C000001_03_83C4___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	33732	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_MOVEBYT1(		Mail.IPDec,           	;;Input #1 (In)
+               ___RegDyn_C000001___SG_COB_0+1,              ;;Output #1 (Out)
+               Mail.IP.iAddB0,                     ;;Output #2 (B0)
+               Mail.IP.iAddB1,                     ;;Output #3 (B1)
+               Mail.IP.iAddB2,                     ;;Output #4 (B2)
+               Mail.IP.iAddB3,                     ;;Output #5 (B3)
+               0,                                  ;;Constant #1
+               1,                                 ;;Init variable (Byte 0 format).
+               1,                                 ;;Init variable (Byte 1 format).
+               1,                                 ;;Init variable (Byte 2 format).
+               1)                                 ;;Init variable (Byte 3 format).
+;; Position: Override digital -  - 38,78
+__fbl_C000001_03_5DFC___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	24060	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_HEAMANB3(		PCD01.A00.Mld.PCD01.Quitt.SSMRLT.iAlarm,	;;Input #1 ()
+               ___FlgDyn_C000001___SG_COB_0+7,              ;;Output #1 ()
+               __stc_id_05DFC_var_00___SG_COB_0,               ;;Static variable Fs[2].
+               __stc_id_05DFC_var_01___SG_COB_0,               ;;Static variable Fsm[2].
+               __stc_id_05DFC_var_02___SG_COB_0,               ;;Static variable LED[1].
+               0,                                 ;;Init variable (Manual state follows input ).
+               1,                                 ;;Init variable (Mode).
+               1,                                 ;;Init variable (Manual).
+               )                                     ;;FBox user name.
+;; Position: Adv. Text Mail Send -  - 50,76
+__fbl_C000001_03_5DF0___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	24048	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_CWM_SEND_CMAIL(               104300,                               ;;Version Indicator.
+		___FlgDyn_C000001___SG_COB_0+7,	;;Input #1 (Send)
+               ___FlgDyn_C000001___SG_COB_0+8,              ;;Output #1 (Busy)
+               SubDringend,                        ;;Constant #1
+               TexDringend,                        ;;Constant #2
+               FileDringend,                       ;;Constant #3
+               ___RegDyn_C000001___SG_COB_0+8,              ;;Dynamic variable Register[2].
+               __stc_id_05DF0_var_00___SG_COB_0,               ;;Static variable To[1].
+               __stc_id_05DF0_var_01___SG_COB_0,               ;;Static variable LED[1].
+               __stc_id_05DF0_var_02___SG_COB_0,               ;;Static variable Flags[3].
+               __stc_id_05DF0_var_03___SG_COB_0,               ;;Static variable Texts[2].
+               __stc_id_05DF0_var_04___SG_COB_0,               ;;Static variable Priority[1].
+               1,                                 ;;Init variable (Recipient).
+               1,                                 ;;Init variable (Priority).
+               0,                                 ;;Init variable (Mail format).
+               GROUP__fbl_C000001_03_5DF0,                ;;FBox user name.
+               WebCMail)                             ;;FBox reference.
+;; Position: Override digital -  - 38,90
+__fbl_C000001_03_5E01___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	24065	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_HEAMANB3(		LOW,                  	;;Input #1 ()
+               ___FlgDyn_C000001___SG_COB_0+9,              ;;Output #1 ()
+               __stc_id_05E01_var_00___SG_COB_0,               ;;Static variable Fs[2].
+               __stc_id_05E01_var_01___SG_COB_0,               ;;Static variable Fsm[2].
+               __stc_id_05E01_var_02___SG_COB_0,               ;;Static variable LED[1].
+               0,                                 ;;Init variable (Manual state follows input ).
+               1,                                 ;;Init variable (Mode).
+               1,                                 ;;Init variable (Manual).
+               )                                     ;;FBox user name.
+;; Position: Adv. Text Mail Send -  - 50,88
+__fbl_C000001_03_5E03___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	24067	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_CWM_SEND_CMAIL(               104300,                               ;;Version Indicator.
+		___FlgDyn_C000001___SG_COB_0+9,	;;Input #1 (Send)
+               ___FlgDyn_C000001___SG_COB_0+10,              ;;Output #1 (Busy)
+               SubNormal,                          ;;Constant #1
+               TexNormal,                          ;;Constant #2
+               FileNormal,                         ;;Constant #3
+               ___RegDyn_C000001___SG_COB_0+10,              ;;Dynamic variable Register[2].
+               __stc_id_05E03_var_00___SG_COB_0,               ;;Static variable To[1].
+               __stc_id_05E03_var_01___SG_COB_0,               ;;Static variable LED[1].
+               __stc_id_05E03_var_02___SG_COB_0,               ;;Static variable Flags[3].
+               __stc_id_05E03_var_03___SG_COB_0,               ;;Static variable Texts[2].
+               __stc_id_05E03_var_04___SG_COB_0,               ;;Static variable Priority[1].
+               2,                                 ;;Init variable (Recipient).
+               1,                                 ;;Init variable (Priority).
+               0,                                 ;;Init variable (Mail format).
+               GROUP__fbl_C000001_03_5E03,                ;;FBox user name.
+               WebCMail)                             ;;FBox reference.
+$endif							;; Page condition
+__EOPP___SG_COB_0_03		EQU		$;Mark Page end position
+_PageProbe(		__EOP___SG_COB_0_03)			;;Mark end of page.
+;; Block: COB COB_0
+;; Page: 5/23 Init StSpg
+__PAGE_ID__	DEF	STR	""
+;;
+$if 1
+__FBL_C000001_04___SG_COB_0			EQU		$;; Mark Page position
+;; Position: Control voltages - FuseGuard - 47,11
+__fbl_C000001_04_B009___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	45065	;FuseGuard
+__FBOX_LANG__	DEF	STR	"DE"	;FuseGuard
+__AVI_C000001_04_B009___SG_COB_0_00 DEF STR "Fuse Power Supply "
+__AVI_C000001_04_B009___SG_COB_0_01 DEF STR "not used"
+__AVI_C000001_04_B009___SG_COB_0_02 DEF STR "ALFUSE-230AC"
+__AVI_C000001_04_B009___SG_COB_0_03 DEF STR "not used"
+__AVI_C000001_04_B009___SG_COB_0_04 DEF STR ""
+__AVI_C000001_04_B009___SG_COB_0_05 DEF STR "2F5 in alarm"
+__AVI_C000001_04_B009___SG_COB_0_06 DEF STR "ALFUSE-24AC"
+__AVI_C000001_04_B009___SG_COB_0_07 DEF STR "2F5 in alarm"
+__AVI_C000001_04_B009___SG_COB_0_08 DEF STR ""
+__AVI_C000001_04_B009___SG_COB_0_09 DEF STR "2F1 /2F2 in alarm"
+__AVI_C000001_04_B009___SG_COB_0_0A DEF STR "ALFUSE-24DC"
+__AVI_C000001_04_B009___SG_COB_0_0B DEF STR "2F1 /2F2 in alarm"
+__AVI_C000001_04_B009___SG_COB_0_0C DEF STR "1K1 in alarm"
+__AVI_C000001_04_B009___SG_COB_0_0D DEF STR "ALFUSE-PHASE"
+__AVI_C000001_04_B009___SG_COB_0_0E DEF STR "1K1 in alarm"
+__AVI_C000001_04_B009___SG_COB_0_0F DEF STR ""
+__AVI_C000001_04_B009___SG_COB_0_10 DEF STR "1F2 in alarm"
+__AVI_C000001_04_B009___SG_COB_0_11 DEF STR "ALFUSE-MAIN"
+__AVI_C000001_04_B009___SG_COB_0_12 DEF STR "1F2 in alarm"
+__AVI_C000001_04_B009___SG_COB_0_13 DEF STR ""
+_DDC_ALFUSE250(205001,                               ;;Version Indicator.
+		HIGH,                 	;;Input #1 (230)
+		PCD01.A00.Mld.StSpg.VAC24.irSM10,	;;Input #2 (24~)
+		PCD01.A00.Mld.StSpg.VDC24.irSM10,	;;Input #3 (24=)
+		PCD01.A00.Mld.StSpg.Phw.irSM10,	;;Input #4 (Ph)
+		PCD01.A00.Mld.StSpg.Spg.irSM10,	;;Input #5 (vltg.)
+               PCD01.A00.PSTA.ISP1.StSpg.iSSM,              ;;Output #1 (GrpAla)
+               ___FlgDyn_C000001___SG_COB_0+0,              ;;Output #2 (StartUp)
+               ___FlgDyn_C000001___SG_COB_0+1,              ;;Output #3 ([230])
+               ___FlgDyn_C000001___SG_COB_0+2,              ;;Output #4 ([24~])
+               ___FlgDyn_C000001___SG_COB_0+3,              ;;Output #5 ([24=])
+               ___FlgDyn_C000001___SG_COB_0+4,              ;;Output #6 ([Ph])
+               ___FlgDyn_C000001___SG_COB_0+5,              ;;Output #7 ([Spg])
+               PCD01.A00.Mld.StSpg.Stoerg.AC230NoNc,               ;; (5) Meldung 1 - Auswahl des Normalzustands des Gebers.
+               PCD01.A00.Mld.StSpg.Stoerg.AC230QuitPflicht,               ;; (5) Meldung 1 - Vorwahl ob die Störung dem Geber folgt oder gespeichert bleibt.
+               PCD01.A00.Mld.StSpg.Stoerg.AC24NoNc,               ;; (5) Meldung 2 - Auswahl des Normalzustands des Gebers.
+               PCD01.A00.Mld.StSpg.Stoerg.AC24QuitPflicht,               ;; (5) Meldung 2 - Vorwahl ob die Störung dem Geber folgt oder gespeichert bleibt.
+               PCD01.A00.Mld.StSpg.Stoerg.DC24NoNc,               ;; (5) Meldung 3 - Auswahl des Normalzustands des Gebers.
+               PCD01.A00.Mld.StSpg.Stoerg.DC24QuitPflicht,               ;; (5) Meldung 3 - Vorwahl ob die Störung dem Geber folgt oder gespeichert bleibt.
+               PCD01.A00.Mld.StSpg.Stoerg.PhasenNoNc,               ;; (5) Meldung 4 - Auswahl des Normalzustands des Gebers.
+               PCD01.A00.Mld.StSpg.Stoerg.PhasenQuitPflicht,               ;; (5) Meldung 4 - Vorwahl ob die Störung dem Geber folgt oder gespeichert bleibt.
+               PCD01.A00.Mld.StSpg.Stoerg.SpgNoNc,               ;; (5) Meldung 5 - Auswahl des Normalzustands des Gebers.
+               PCD01.A00.Mld.StSpg.Stoerg.SpgQuitPflicht,               ;; (5) Meldung 5 - Vorwahl ob die Störung dem Geber folgt oder gespeichert bleibt.
+               PCD01.A00.Mld.StSpg.Stoerg.PhasenOverride,               ;; (5) Meldung 4 - Vorwahl ob intern parallel die Meldungen 230VC/24VAC/24VDC (Mel.
+               PCD01.A00.Mld.StSpg.Stoerg.SpgOverride,               ;; (5) Meldung 5 - Vorwahl ob intern parallel die Meldungen 230VC/24VAC/24VDC (Mel.
+               PCD01.A00.Mld.StSpg.Stoerg.SmAC230,               ;; (1) Meldung 1 - Alarmzustand.
+               PCD01.A00.Mld.StSpg.Stoerg.SmAC24,               ;; (1) Meldung 2 - Alarmzustand.
+               PCD01.A00.Mld.StSpg.Stoerg.SmDC24,               ;; (1) Meldung 3 - Alarmzustand.
+               PCD01.A00.Mld.StSpg.Stoerg.SmPhasen,               ;; (1) Meldung 4 - Alarmzustand.
+               PCD01.A00.Mld.StSpg.Stoerg.SmSpg,               ;; (1) Meldung 5 - Alarmzustand.
+               __stc_id_0B009_var_11___SG_COB_0,               ;;Static variable LED[1].
+               __stc_id_0B009_var_12___SG_COB_0,               ;;Static variable sFlag[13].
+               PCD01.A00.Mld.StSpg.Stoerg.DI230AC,               ;; (5) Meldung 1 - Digitale Eingangsadresse.
+               PCD01.A00.Mld.StSpg.Stoerg.DI24AC,               ;; (5) Meldung 2 - Digitale Eingangsadresse.
+               PCD01.A00.Mld.StSpg.Stoerg.DI24DC,               ;; (5) Meldung 3 - Digitale Eingangsadresse.
+               PCD01.A00.Mld.StSpg.Stoerg.DIPhasen,               ;; (5) Meldung 4 - Digitale Eingangsadresse.
+               PCD01.A00.Mld.StSpg.Stoerg.DISteuerkreis,               ;; (5) Meldung 5 - Digitale Eingangsadresse.
+               __stc_id_0B009_var_18___SG_COB_0,               ;;Static variable sTmr[1].
+               PCD01.A00.Mld.StSpg.Stoerg.Verzoeger,               ;; (5) Verzögerung bis Normalzustand angezeigt wird.
+               __AVI_C000001_04_B009___SG_COB_0_00,             ;;Init variable (Description).
+               -1,                                ;;Init variable (PCD Alarm administration (Inde).
+               4,                                 ;;Init variable (BACnet).
+               20,                                ;;Init variable (Start up delay (s)).
+               -1,                                ;;Init variable (Digital input).
+               1,                                 ;;Init variable (Normal input state).
+               0,                                 ;;Init variable (Acknowledgement mandatory).
+               __AVI_C000001_04_B009___SG_COB_0_01,             ;;Init variable (Alarmtext).
+               __AVI_C000001_04_B009___SG_COB_0_02,             ;;Init variable (<--- BACnet Object-Name --->).
+               __AVI_C000001_04_B009___SG_COB_0_03,             ;;Init variable (- Description).
+               0,                                 ;;Init variable (- Notification-class).
+               __AVI_C000001_04_B009___SG_COB_0_04,             ;;Init variable (- Optional text).
+               -1,                                ;;Init variable (Digital input).
+               1,                                 ;;Init variable (Normal input state).
+               0,                                 ;;Init variable (Acknowledgement mandatory).
+               __AVI_C000001_04_B009___SG_COB_0_05,             ;;Init variable (Alarmtext).
+               __AVI_C000001_04_B009___SG_COB_0_06,             ;;Init variable (<--- BACnet Object-Name --->).
+               __AVI_C000001_04_B009___SG_COB_0_07,             ;;Init variable (- Description).
+               0,                                 ;;Init variable (- Notification-class).
+               __AVI_C000001_04_B009___SG_COB_0_08,             ;;Init variable (- Optional text).
+               -1,                                ;;Init variable (Digital input).
+               1,                                 ;;Init variable (Normal input state).
+               0,                                 ;;Init variable (Acknowledgement mandatory).
+               __AVI_C000001_04_B009___SG_COB_0_09,             ;;Init variable (Alarmtext).
+               __AVI_C000001_04_B009___SG_COB_0_0A,             ;;Init variable (<--- BACnet Object-Name --->).
+               __AVI_C000001_04_B009___SG_COB_0_0B,             ;;Init variable (- Description).
+               0,                                 ;;Init variable (- Notification-class).
+               "",                                ;;Init variable (- Optional text).
+               -1,                                ;;Init variable (Digital input).
+               1,                                 ;;Init variable (Normal input state).
+               0,                                 ;;Init variable (Acknowledgement mandatory).
+               __AVI_C000001_04_B009___SG_COB_0_0C,             ;;Init variable (Alarmtext).
+               __AVI_C000001_04_B009___SG_COB_0_0D,             ;;Init variable (<--- BACnet Object-Name --->).
+               __AVI_C000001_04_B009___SG_COB_0_0E,             ;;Init variable (- Description).
+               0,                                 ;;Init variable (- Notification-class).
+               __AVI_C000001_04_B009___SG_COB_0_0F,             ;;Init variable (- Optional text).
+               1,                                 ;;Init variable (Alarm 230 VAC/24 VAC/24 VDC).
+               -1,                                ;;Init variable (Digital input).
+               1,                                 ;;Init variable (Normal input state).
+               0,                                 ;;Init variable (Acknowledgement mandatory).
+               __AVI_C000001_04_B009___SG_COB_0_10,             ;;Init variable (Alarmtext).
+               __AVI_C000001_04_B009___SG_COB_0_11,             ;;Init variable (<--- BACnet Object-Name --->).
+               __AVI_C000001_04_B009___SG_COB_0_12,             ;;Init variable (- Description).
+               0,                                 ;;Init variable (- Notification-class).
+               __AVI_C000001_04_B009___SG_COB_0_13,             ;;Init variable (- Optional text).
+               0,                                 ;;Init variable (Alarm 230 VAC/24 VAC/24 VDC).
+               FuseGuard)                            ;;FBox user name.
+;; Position: 1 Alarm -  - 47,31
+__fbl_C000001_04_B00A___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	45066	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+__AVI_C000001_04_B00A___SG_COB_0_00 DEF STR "Fuse Power Supply "
+__AVI_C000001_04_B00A___SG_COB_0_01 DEF STR "2F4 in alarm"
+__AVI_C000001_04_B00A___SG_COB_0_02 DEF STR "ALA"
+__AVI_C000001_04_B00A___SG_COB_0_03 DEF STR "2F4 in alarm"
+__AVI_C000001_04_B00A___SG_COB_0_04 DEF STR ""
+_DDC_AL1ALA250(205001,                               ;;Version Indicator.
+		PCD01.A00.Mld.StSpg.USV.irSM10,	;;Input #1 (Inp)
+               PCD01.A00.Mld.StSpg.USV.iSM10,              ;;Output #1 (Alarm)
+               ___FlgDyn_C000001___SG_COB_0+6,              ;;Output #2 ([Inp])
+               PCD01.A00.Mld.StSpg.USV.NoNc,               ;; (5) Auswahl des Normalzustands des Gebers.
+               PCD01.A00.Mld.StSpg.USV.QuitPflicht,               ;; (5) Vorwahl ob die Störung dem Geber folgt oder gespeichert bleibt und quittier.
+               PCD01.A00.Mld.StSpg.USV.SpgGrp,               ;; (5) zugehörige Spannungsgruppe zur Unterdrückung von Geistermeldungen bei fehle.
+               PCD01.A00.Mld.StSpg.USV.Sm,               ;; (1) Zustand der Störmeldung.
+               __stc_id_0B00A_var_04___SG_COB_0,               ;;Static variable LED[1].
+               PCD01.A00.Mld.StSpg.USV.DIKontakt,               ;; (5) Digitaler Eingang.
+               __AVI_C000001_04_B00A___SG_COB_0_00,             ;;Init variable (Description).
+               -1,                                ;;Init variable (PCD Alarm administration (Inde).
+               1,                                 ;;Init variable (BACnet).
+               -1,                                ;;Init variable (Digital input).
+               1,                                 ;;Init variable (Normal input state).
+               0,                                 ;;Init variable (Acknowledgement mandatory).
+               4,                                 ;;Init variable (Alarm suppression).
+               __AVI_C000001_04_B00A___SG_COB_0_01,             ;;Init variable (Alarmtext).
+               __AVI_C000001_04_B00A___SG_COB_0_02,             ;;Init variable (<--- BACnet Object-Name --->).
+               __AVI_C000001_04_B00A___SG_COB_0_03,             ;;Init variable (- Description).
+               0,                                 ;;Init variable (- Notification-class).
+               __AVI_C000001_04_B00A___SG_COB_0_04,             ;;Init variable (- Optional text).
+               GROUP__fbl_C000001_04_B00A,                ;;FBox user name.
+               FuseGuard)                            ;;FBox reference.
+$endif							;; Page condition
+__EOPP___SG_COB_0_04		EQU		$;Mark Page end position
+_PageProbe(		__EOP___SG_COB_0_04)			;;Mark end of page.
+;; Block: COB COB_0
+;; Page: 6/23 Init SBus
+__PAGE_ID__	DEF	STR	""
+;;
+$if 0
+__FBL_C000001_05___SG_COB_0			EQU		$;; Mark Page position
+$endif							;; Page condition
+;; Block: COB COB_0
+;; Page: 7/23 Init SL0_Flash
+__PAGE_ID__	DEF	STR	""
+;;
+$if 0
+__FBL_C000001_06___SG_COB_0			EQU		$;; Mark Page position
+$endif							;; Page condition
+;; Block: COB COB_0
+;; Page: 8/23 Clock
+__PAGE_ID__	DEF	STR	""
+;;
+$if 1
+__FBL_C000001_07___SG_COB_0			EQU		$;; Mark Page position
+;; Position: Clock read -  - 22,5
+__fbl_C000001_07_6CBB___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	27835	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_HEARCLK(      5,                                    ;;Version Indicator.
+               PCD01.A00.Mld.PCD01.A00.Mld.PCD01.Clock.iHMS,              ;;Output #1 (HMS)
+               PCD01.A00.Mld.PCD01.A00.Mld.PCD01.Clock.iYMD,              ;;Output #2 (YMD)
+               ___RegDyn_C000001___SG_COB_0+0,              ;;Output #3 (D)
+               ___FlgDyn_C000001___SG_COB_0+0,              ;;Output #4 (SW)
+               ___FlgDyn_C000001___SG_COB_0+1,              ;;Output #5 (Err)
+               __stc_id_06CBB_var_00___SG_COB_0,               ;;Static variable LED[1].
+               )                                     ;;FBox user name.
+;; Position: Limit -  - 49,11
+__fbl_C000001_07_6CB9___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	27833	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_HEALIMIT(		___RegDyn_C000001___SG_COB_0+0,	;;Input #1 ()
+               PCD01.A00.Mld.PCD01.Clock.iD,              ;;Output #1 ()
+               ___FlgDyn_C000001___SG_COB_0+2,              ;;Dynamic variable Fd[4].
+               __stc_id_06CB9_var_00___SG_COB_0,               ;;Static variable Rs[2].
+               __stc_id_06CB9_var_01___SG_COB_0,               ;;Static variable LED[1].
+               1,                                 ;;Init variable (Lower limit).
+               7,                                 ;;Init variable (Upper limit).
+               )                                     ;;FBox user name.
+;; Position: Divide -  - 50,14
+__fbl_C000001_07_6CB8___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	27832	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_FUPIntMov(     10000,                		;;Copy input label '10000' in 
+                ___RegDyn_C000001___SG_COB_0+1, )		;;network variable.
+_IDIV(		PCD01.A00.Mld.PCD01.A00.Mld.PCD01.Clock.iHMS,	;;Input #1 (A)
+		___RegDyn_C000001___SG_COB_0+1,	;;Input #2 (B)
+               PCD01.A00.Mld.PCD01.Clock.iH,              ;;Output #1 (A/B)
+               PCD01.A00.Mld.PCD01.Clock.iMS)              ;;Output #2 (A%B)
+;; Position: Divide -  - 50,21
+__fbl_C000001_07_8FFC___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	36860	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_FUPIntMov(     100,                  		;;Copy input label '100' in 
+                ___RegDyn_C000001___SG_COB_0+2, )		;;network variable.
+_IDIV(		PCD01.A00.Mld.PCD01.A00.Mld.PCD01.Clock.iHMS,	;;Input #1 (A)
+		___RegDyn_C000001___SG_COB_0+2,	;;Input #2 (B)
+               PCD01.A00.Mld.PCD01.A00.Mld.PCD01.Clock.iHM,              ;;Output #1 (A/B)
+               ___RegDyn_C000001___SG_COB_0+3)              ;;Output #2 (A%B)
+;; Position: Divide -  - 50,28
+__fbl_C000001_07_8F47___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	36679	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_FUPIntMov(     100,                  		;;Copy input label '100' in 
+                ___RegDyn_C000001___SG_COB_0+4, )		;;network variable.
+_IDIV(		PCD01.A00.Mld.PCD01.Clock.iMS,	;;Input #1 (A)
+		___RegDyn_C000001___SG_COB_0+4,	;;Input #2 (B)
+               PCD01.A00.Mld.PCD01.Clock.iM,              ;;Output #1 (A/B)
+               PCD01.A00.Mld.PCD01.Clock.iS)              ;;Output #2 (A%B)
+;; Position: Multiply -  - 61,34
+__fbl_C000001_07_6CC2___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	27842	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_FUPIntMov(     10,                   		;;Copy input label '10' in 
+                ___RegDyn_C000001___SG_COB_0+5, )		;;network variable.
+_IMUL(		PCD01.A00.Mld.PCD01.Clock.iH,	;;Input #1 ()
+		___RegDyn_C000001___SG_COB_0+5,	;;Input #2 ()
+               PCD01.A00.Mld.PCD01.A00.Mld.PCD01.A00.Mld.PCD01.Clock.iHM)              ;;Output #1 ()
+;; Position: Divide -  - 50,37
+__fbl_C000001_07_8F4C___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	36684	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_FUPIntMov(     10000,                		;;Copy input label '10000' in 
+                ___RegDyn_C000001___SG_COB_0+8, )		;;network variable.
+_IDIV(		PCD01.A00.Mld.PCD01.A00.Mld.PCD01.Clock.iYMD,	;;Input #1 (A)
+		___RegDyn_C000001___SG_COB_0+8,	;;Input #2 (B)
+               ___RegDyn_C000001___SG_COB_0+6,              ;;Output #1 (A/B)
+               PCD01.A00.Mld.PCD01.Clock.iMD)              ;;Output #2 (A%B)
+;; Position: Add -  - 61,39
+__fbl_C000001_07_8F4E___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	36686	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_FUPIntMov(     2000,                 		;;Copy input label '2000' in 
+                ___RegDyn_C000001___SG_COB_0+7, )		;;network variable.
+_IADD2(		___RegDyn_C000001___SG_COB_0+6,	;;Input #1 ()
+		___RegDyn_C000001___SG_COB_0+7,,,,,,,	;;Input #2 ()
+               PCD01.A00.Mld.PCD01.Clock.iYear,              ;;Output #1 ()
+               ___RegDyn_C000001___SG_COB_0+10)              ;;Dynamic variable AddReg[1].
+;; Position: Divide -  - 50,45
+__fbl_C000001_07_8F4D___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	36685	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_FUPIntMov(     100,                  		;;Copy input label '100' in 
+                ___RegDyn_C000001___SG_COB_0+9, )		;;network variable.
+_IDIV(		PCD01.A00.Mld.PCD01.Clock.iMD,	;;Input #1 (A)
+		___RegDyn_C000001___SG_COB_0+9,	;;Input #2 (B)
+               PCD01.A00.Mld.PCD01.Clock.iMonth,              ;;Output #1 (A/B)
+               PCD01.A00.Mld.PCD01.Clock.iDay)              ;;Output #2 (A%B)
+;; Position: Move -  - 52,54
+__fbl_C000001_07_902F___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	36911	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_IMOVE2(		PCD01.A00.Mld.PCD01.A00.Mld.PCD01.Clock.iYMD,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,	;;Input #1 ()
+               PCD01.A00.Mld.PCD01.A00.Mld.PCD01.Clock.iYMD,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,) ;;Output #1 ()
+;; Position: Move -  - 52,57
+__fbl_C000001_07_9030___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	36912	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_IMOVE2(		PCD01.A00.Mld.PCD01.A00.Mld.PCD01.Clock.iHM,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,	;;Input #1 ()
+               PCD01.A00.Mld.PCD01.A00.Mld.PCD01.Clock.iHM,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,) ;;Output #1 ()
+;; Position: Clock write - Uhrzeit - 49,83
+__fbl_C000001_07_6CBA___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	27834	;Uhrzeit
+__FBOX_LANG__	DEF	STR	"DE"	;Uhrzeit
+_HEAWCLK2(     5,                                    ;;Version Indicator.
+		PCD01.A00.Mld.PCD01.Clock.sHM,	;;Input #1 (HM)
+		PCD01.A00.Mld.PCD01.Clock.iEnt,	;;Input #2 (EnT)
+		PCD01.A00.Mld.PCD01.Clock.sYMD,	;;Input #3 (YMD)
+		PCD01.A00.Mld.PCD01.Clock.sD,	;;Input #4 (D)
+		PCD01.A00.Mld.PCD01.Clock.iEnD,	;;Input #5 (EnD)
+               ___RegDyn_C000001___SG_COB_0+11,              ;;Dynamic variable Rd[2].
+               __stc_id_06CBA_var_00___SG_COB_0,               ;;Static variable Fs[4].
+               __stc_id_06CBA_var_01___SG_COB_0,               ;;Static variable Rs[3].
+               __stc_id_06CBA_var_02___SG_COB_0,               ;;Static variable LED[1].
+               0,                                 ;;Init variable (Objects for HMI Editor ).
+               363,                               ;;Init variable (Hour and minute).
+               1,                                 ;;Init variable (Write time).
+               515,                               ;;Init variable (Day, month and year).
+               4,                                 ;;Init variable (Day of the week).
+               1,                                 ;;Init variable (Write date).
+               Uhrzeit)                              ;;FBox user name.
+$endif							;; Page condition
+__EOPP___SG_COB_0_07		EQU		$;Mark Page end position
+_PageProbe(		__EOP___SG_COB_0_07)			;;Mark end of page.
+;; Block: COB COB_0
+;; Page: 9/23 Tagesimpuls
+__PAGE_ID__	DEF	STR	""
+;;
+$if 1
+__FBL_C000001_08___SG_COB_0			EQU		$;; Mark Page position
+;; Position: Clock daily pulse -  - 52,8
+__fbl_C000001_08_6CC7___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	27847	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_HEACLKI2(     5,                                    ;;Version Indicator.
+		PCD01.A00.Mld.PCD01.SVz.iSVZ,	;;Input #1 (En)
+               PCD01.A00.Mld.PCD01.Clock.iEn,              ;;Output #1 (Ch)
+               ___RegDyn_C000001___SG_COB_0+0,              ;;Dynamic variable Rd[1].
+               __stc_id_06CC7_var_00___SG_COB_0,               ;;Static variable Fs[2].
+               __stc_id_06CC7_var_01___SG_COB_0,               ;;Static variable Rs[2].
+               __stc_id_06CC7_var_02___SG_COB_0,               ;;Static variable Ts[1].
+               __stc_id_06CC7_var_03___SG_COB_0,               ;;Static variable LED[1].
+               0,                                 ;;Init variable (Objects for HMI Editor ).
+               1,                                 ;;Init variable (Switch On).
+               600,                               ;;Init variable (Pulse length [sec]).
+               )                                     ;;FBox user name.
+$endif							;; Page condition
+__EOPP___SG_COB_0_08		EQU		$;Mark Page end position
+_PageProbe(		__EOP___SG_COB_0_08)			;;Mark end of page.
+;; Block: COB COB_0
+;; Page: 10/23 Zykluszeit
+__PAGE_ID__	DEF	STR	""
+;;
+$if 1
+__FBL_C000001_09___SG_COB_0			EQU		$;; Mark Page position
+;; Position: Binary 2.0 -  - 28,19
+__fbl_C000001_09_6CD0___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	27856	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_DDC_SPGENERAL21(               200000,                               ;;Version Indicator.
+               ___FlgDyn_C000001___SG_COB_0+0,              ;;Output #1 (Val)
+               __stc_id_06CD0_var_00___SG_COB_0,               ;;Static variable Value[1].
+               0,                                 ;;Init variable (BACnet).
+               0,                                 ;;Init variable (Pre-selection).
+               GROUP__fbl_C000001_09_6CD0)                ;;FBox user name.
+;; Position: Binary 2.0 -  - 28,22
+__fbl_C000001_09_6CD1___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	27857	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_DDC_SPGENERAL21(               200000,                               ;;Version Indicator.
+               ___FlgDyn_C000001___SG_COB_0+1,              ;;Output #1 (Val)
+               __stc_id_06CD1_var_00___SG_COB_0,               ;;Static variable Value[1].
+               0,                                 ;;Init variable (BACnet).
+               0,                                 ;;Init variable (Pre-selection).
+               GROUP__fbl_C000001_09_6CD1)                ;;FBox user name.
+;; Position: Cycle time -  - 50,17
+__fbl_C000001_09_6CD2___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	27858	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_TIMECYC(		___FlgDyn_C000001___SG_COB_0+0,	;;Input #1 (RM)
+		___FlgDyn_C000001___SG_COB_0+1,	;;Input #2 (RA)
+               ___RegDyn_C000001___SG_COB_0+0,              ;;Output #1 (CyT)
+               ___RegDyn_C000001___SG_COB_0+1,              ;;Output #2 (Max)
+               ___FlgDyn_C000001___SG_COB_0+2,              ;;Output #3 (Ala)
+               ___RegDyn_C000001___SG_COB_0+2,              ;;Dynamic variable Rd[2].
+               __stc_id_06CD2_var_00___SG_COB_0,               ;;Static variable Fs[2].
+               __stc_id_06CD2_var_01___SG_COB_0,               ;;Static variable LED[1].
+               10,                                ;;Init variable (Number of cycle).
+               100,                               ;;Init variable (Alarm level [ms]).
+               1,                                 ;;Init variable (Reset maximum ).
+               1)                                 ;;Init variable (Reset alarm ).
+$endif							;; Page condition
+__EOPP___SG_COB_0_09		EQU		$;Mark Page end position
+_PageProbe(		__EOP___SG_COB_0_09)			;;Mark end of page.
+;; Block: COB COB_0
+;; Page: 11/23 ResetTaster, LED
+__PAGE_ID__	DEF	STR	""
+;;
+$if 1
+__FBL_C000001_0A___SG_COB_0			EQU		$;; Mark Page position
+;; Position: 1 Alarm/Message 2.0 -  - 48,2
+__fbl_C000001_0A_6CFF___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	27903	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_DDC_ALGENERAL21(               200000,                               ;;Version Indicator.
+		PCD01.A00.Mld.PCD01.Quitt.Tast.irBM80,	;;Input #1 (Inp)
+               ___FlgDyn_C000001___SG_COB_0+0,              ;;Output #1 (Alarm)
+               ___FlgDyn_C000001___SG_COB_0+1,              ;;Output #2 (Message)
+               ___FlgDyn_C000001___SG_COB_0+3,              ;;Output #3 ([Inp])
+               __stc_id_06CFF_var_00___SG_COB_0,               ;;Static variable NoNc[1].
+               __stc_id_06CFF_var_01___SG_COB_0,               ;;Static variable QuitTyp[1].
+               __stc_id_06CFF_var_02___SG_COB_0,               ;;Static variable Sm[1].
+               __stc_id_06CFF_var_03___SG_COB_0,               ;;Static variable SpgGrp[1].
+               __stc_id_06CFF_var_04___SG_COB_0,               ;;Static variable SmTyp[1].
+               __stc_id_06CFF_var_05___SG_COB_0,               ;;Static variable AnVerz[1].
+               __stc_id_06CFF_var_06___SG_COB_0,               ;;Static variable AbVerz[1].
+               __stc_id_06CFF_var_07___SG_COB_0,               ;;Static variable sFlag[3].
+               __stc_id_06CFF_var_08___SG_COB_0,               ;;Static variable sTimer[1].
+               __stc_id_06CFF_var_09___SG_COB_0,               ;;Static variable LED[1].
+               __stc_id_06CFF_var_0A___SG_COB_0,               ;;Static variable DI[1].
+               0,                                 ;;Init variable (PCD Alarm administration (Inde).
+               2,                                 ;;Init variable (BACnet).
+               -1,                                ;;Init variable (Digital input).
+               1,                                 ;;Init variable (Normal input state).
+               0,                                 ;;Init variable (Acknowledgement mandatory).
+               0,                                 ;;Init variable (Alarm suppression).
+               2,                                 ;;Init variable (Output selection).
+               0,                                 ;;Init variable (On-delay).
+               10,                                ;;Init variable (Decay delay).
+               GROUP__fbl_C000001_0A_6CFF,                ;;FBox user name.
+               FuseGuard)                            ;;FBox reference.
+;; Position: Exclusive pulse -  - 50,12
+__fbl_C000001_0A_6D01___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	27905	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_FUPIntMov(     20,                   		;;Copy input label 'K 20' in 
+                ___RegDyn_C000001___SG_COB_0+0, K)		;;network variable.
+_XPULSE(		LOW,                  	;;Input #1 (In)
+		___RegDyn_C000001___SG_COB_0+0,	;;Input #2 (TV)
+               ___FlgDyn_C000001___SG_COB_0+2,              ;;Output #1 (Q)
+               ___RegDyn_C000001___SG_COB_0+1,              ;;Output #2 (t)
+               __stc_id_06D01_var_00___SG_COB_0,               ;;Static variable Tim[1].
+               __stc_id_06D01_var_01___SG_COB_0)               ;;Static variable Sta[1].
+;; Position: Dynamize -  - 33,20
+__fbl_C000001_0A_74D7___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	29911	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_BDYN2(		PCD01.A00.Mld.PCD01.SVz.iSVZ2,	;;Input #1 ()
+               ___FlgDyn_C000001___SG_COB_0+5,              ;;Output #1 ()
+               __stc_id_074D7_var_00___SG_COB_0,               ;;Static variable Edg[1].
+               0)                                 ;;Init variable (Accept power up edge ).
+;; Position: Dynamize -  - 38,22
+__fbl_C000001_0A_74D5___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	29909	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_BDYN2(		PCD01.A00.Mld.PCD01.SVz.iSVZ300,	;;Input #1 ()
+               ___FlgDyn_C000001___SG_COB_0+6,              ;;Output #1 ()
+               __stc_id_074D5_var_00___SG_COB_0,               ;;Static variable Edg[1].
+               0)                                 ;;Init variable (Accept power up edge ).
+;; Position: Dynamize -  - 33,24
+__fbl_C000001_0A_74D4___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	29908	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_BDYN2(		PCD01.A00.Mld.PCD01.SVz.iSVZ600,	;;Input #1 ()
+               ___FlgDyn_C000001___SG_COB_0+7,              ;;Output #1 ()
+               __stc_id_074D4_var_00___SG_COB_0,               ;;Static variable Edg[1].
+               0)                                 ;;Init variable (Accept power up edge ).
+;; Position: Dynamize -  - 38,26
+__fbl_C000001_0A_74D3___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	29907	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_BDYN2(		RLT003.ZUL.Frost.Box.iQuit,	;;Input #1 ()
+               ___FlgDyn_C000001___SG_COB_0+8,              ;;Output #1 ()
+               __stc_id_074D3_var_00___SG_COB_0,               ;;Static variable Edg[1].
+               0)                                 ;;Init variable (Accept power up edge ).
+;; Position: Dynamize -  - 33,28
+__fbl_C000001_0A_74D2___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	29906	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_BDYN2(		LOW,                  	;;Input #1 ()
+               ___FlgDyn_C000001___SG_COB_0+9,              ;;Output #1 ()
+               __stc_id_074D2_var_00___SG_COB_0,               ;;Static variable Edg[1].
+               0)                                 ;;Init variable (Accept power up edge ).
+;; Position: Dynamize -  - 38,30
+__fbl_C000001_0A_74D1___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	29905	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_BDYN2(		LOW,                  	;;Input #1 ()
+               ___FlgDyn_C000001___SG_COB_0+10,              ;;Output #1 ()
+               __stc_id_074D1_var_00___SG_COB_0,               ;;Static variable Edg[1].
+               0)                                 ;;Init variable (Accept power up edge ).
+;; Position: Dynamize -  - 32,32
+__fbl_C000001_0A_74D0___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	29904	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_BDYN2(		PCD01.A00.Mld.PCD01.Clock.iEn,	;;Input #1 ()
+               ___FlgDyn_C000001___SG_COB_0+11,              ;;Output #1 ()
+               __stc_id_074D0_var_00___SG_COB_0,               ;;Static variable Edg[1].
+               0)                                 ;;Init variable (Accept power up edge ).
+;; Position: Dynamize -  - 38,34
+__fbl_C000001_0A_7723___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	30499	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_BDYN2(		PCD01.SWeb.Alarme.iQuit,	;;Input #1 ()
+               ___FlgDyn_C000001___SG_COB_0+12,              ;;Output #1 ()
+               __stc_id_07723_var_00___SG_COB_0,               ;;Static variable Edg[1].
+               0)                                 ;;Init variable (Accept power up edge ).
+;; Position: Or -  - 53,20
+__fbl_C000001_0A_74D6___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	29910	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_BOR(		___FlgDyn_C000001___SG_COB_0+5,	;;Input #1 ()
+		___FlgDyn_C000001___SG_COB_0+6,	;;Input #2 ()
+		___FlgDyn_C000001___SG_COB_0+7,	;;Input #3 ()
+		___FlgDyn_C000001___SG_COB_0+8,	;;Input #4 ()
+		___FlgDyn_C000001___SG_COB_0+9,	;;Input #5 ()
+		___FlgDyn_C000001___SG_COB_0+10,	;;Input #6 ()
+		___FlgDyn_C000001___SG_COB_0+11,	;;Input #7 ()
+		___FlgDyn_C000001___SG_COB_0+12,,,	;;Input #8 ()
+               ___FlgDyn_C000001___SG_COB_0+4)              ;;Output #1 ()
+;; Position: Or -  - 69,6
+__fbl_C000001_0A_6D09___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	27913	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_BOR(		___FlgDyn_C000001___SG_COB_0+1,	;;Input #1 ()
+		___FlgDyn_C000001___SG_COB_0+2,	;;Input #2 ()
+		___FlgDyn_C000001___SG_COB_0+4,,,,,,,,	;;Input #3 ()
+               PCD01.A00.Mld.PCD01.Init.Box.iQSm)              ;;Output #1 ()
+;; Position: Or -  - 51,42
+__fbl_C000001_0A_6D0A___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	27914	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_BOR(		PCD01.A00.Mld.PCD01.Init.Box.iInit_HwReset,	;;Input #1 ()
+		PCD01.A00.Mld.PCD01.Init.Box.iInit_WtReset,,,,,,,,,	;;Input #2 ()
+               PCD01.A00.Mld.PCD01.Quitt.Tast.iBm)              ;;Output #1 ()
+_FUPBinMov(     PCD01.A00.Mld.PCD01.Quitt.Tast.iBm,		;;Copy input label 'PCD01.A00.Mld.PCD01.Quitt.Tast.iBm' in
+                PCD01.A00.Mld.PCD01.Quitt.Tast.iMOD,+)		;;OutputLabel PCD01.A00.Mld.PCD01.Quitt.Tast.iMOD.
+_FUPBinMov(     PCD01.A00.Mld.PCD01.Quitt.Tast.iBm,		;;Copy input label 'PCD01.A00.Mld.PCD01.Quitt.Tast.iBm' in
+                PCD01.A00.Mld.PCD01.Quitt.Tast.iDO,+)		;;OutputLabel PCD01.A00.Mld.PCD01.Quitt.Tast.iDO.
+;; Position: On delay -  - 49,48
+__fbl_C000001_0A_6D0D___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	27917	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_FUPIntMov(     30,                   		;;Copy input label 'K 30' in 
+                ___RegDyn_C000001___SG_COB_0+2, K)		;;network variable.
+_ONDEL(		PCD01.A00.Mld.PCD01.Init.Box.iQSm,	;;Input #1 (In)
+		___RegDyn_C000001___SG_COB_0+2,	;;Input #2 (TV)
+               ___FlgDyn_C000001___SG_COB_0+13,              ;;Output #1 (Q)
+               ___RegDyn_C000001___SG_COB_0+3,              ;;Output #2 (t)
+               __stc_id_06D0D_var_00___SG_COB_0,               ;;Static variable Tim[1].
+               __stc_id_06D0D_var_01___SG_COB_0)               ;;Static variable Sta[1].
+;; Position: Or -  - 37,57
+__fbl_C000001_0A_6D0F___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	27919	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_BOR(		PCD01.Panel.iWebRestart,	;;Input #1 ()
+		PCD01.Panel.iRestart,,,,,,,,,	;;Input #2 ()
+               ___FlgDyn_C000001___SG_COB_0+14)              ;;Output #1 ()
+;; Position: Exclusive pulse -  - 49,55
+__fbl_C000001_0A_6D0B___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	27915	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_FUPIntMov(     100,                  		;;Copy input label 'K 100' in 
+                ___RegDyn_C000001___SG_COB_0+4, K)		;;network variable.
+_XPULSE(		___FlgDyn_C000001___SG_COB_0+14,	;;Input #1 (In)
+		___RegDyn_C000001___SG_COB_0+4,	;;Input #2 (TV)
+               ___FlgDyn_C000001___SG_COB_0+15,              ;;Output #1 (Q)
+               ___RegDyn_C000001___SG_COB_0+5,              ;;Output #2 (t)
+               __stc_id_06D0B_var_00___SG_COB_0,               ;;Static variable Tim[1].
+               __stc_id_06D0B_var_01___SG_COB_0)               ;;Static variable Sta[1].
+;; Position: Exclusive pulse -  - 49,62
+__fbl_C000001_0A_6D0E___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	27918	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_FUPIntMov(     100,                  		;;Copy input label 'K 100' in 
+                ___RegDyn_C000001___SG_COB_0+6, K)		;;network variable.
+_XPULSE(		PCD01.A00.Mld.PCD01.SVz.iSVZ300,	;;Input #1 (In)
+		___RegDyn_C000001___SG_COB_0+6,	;;Input #2 (TV)
+               ___FlgDyn_C000001___SG_COB_0+16,              ;;Output #1 (Q)
+               ___RegDyn_C000001___SG_COB_0+7,              ;;Output #2 (t)
+               __stc_id_06D0E_var_00___SG_COB_0,               ;;Static variable Tim[1].
+               __stc_id_06D0E_var_01___SG_COB_0)               ;;Static variable Sta[1].
+;; Position: Or -  - 66,56
+__fbl_C000001_0A_6D0C___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	27916	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_BOR(		___FlgDyn_C000001___SG_COB_0+13,	;;Input #1 ()
+		___FlgDyn_C000001___SG_COB_0+15,	;;Input #2 ()
+		___FlgDyn_C000001___SG_COB_0+16,,,,,,,,	;;Input #3 ()
+               PCD01.Panel.iRestart)               ;;Output #1 ()
+_FUPBinMov(     PCD01.Panel.iRestart, 		;;Copy input label 'PCD01.Panel.iRestart' in
+                uBT_Reboot,+)         		;;OutputLabel uBT_Reboot.
+;; Position: Exclusive pulse -  - 49,70
+__fbl_C000001_0A_6D10___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	27920	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_FUPIntMov(     10,                   		;;Copy input label 'K 10' in 
+                ___RegDyn_C000001___SG_COB_0+8, K)		;;network variable.
+_XPULSE(		PCD01.Panel.iWebRestart,	;;Input #1 (In)
+		___RegDyn_C000001___SG_COB_0+8,	;;Input #2 (TV)
+               PCD01.Panel.iWebRestart,              ;;Output #1 (Q)
+               ___RegDyn_C000001___SG_COB_0+9,              ;;Output #2 (t)
+               __stc_id_06D10_var_00___SG_COB_0,               ;;Static variable Tim[1].
+               __stc_id_06D10_var_01___SG_COB_0)               ;;Static variable Sta[1].
+$endif							;; Page condition
+__EOPP___SG_COB_0_0A		EQU		$;Mark Page end position
+_PageProbe(		__EOP___SG_COB_0_0A)			;;Mark end of page.
+;; Block: COB COB_0
+;; Page: 12/23 SAMMELSTORMELDUNGEN
+__PAGE_ID__	DEF	STR	""
+;;
+$if 1
+__FBL_C000001_0B___SG_COB_0			EQU		$;; Mark Page position
+;; Position: 1-bit to int with shift -  - 37,5
+__fbl_C000001_0B_AEE4___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	44772	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_CONBINTOI(		PCD01.A00.PSTA.ISP1.StSpg.iSSM,	;;Input #1 ()
+               ___RegDyn_C000001___SG_COB_0+0,              ;;Output #1 ()
+               ___RegDyn_C000001___SG_COB_0+8,              ;;Dynamic variable Reg[1].
+               0)                                 ;;Init variable (Bit number).
+;; Position: 1-bit to int with shift -  - 37,8
+__fbl_C000001_0B_AF33___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	44851	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_CONBINTOI(		HZE001.WE01.Anforderung.Stoerg.iSSm,	;;Input #1 ()
+               ___RegDyn_C000001___SG_COB_0+1,              ;;Output #1 ()
+               ___RegDyn_C000001___SG_COB_0+9,              ;;Dynamic variable Reg[1].
+               1)                                 ;;Init variable (Bit number).
+;; Position: 1-bit to int with shift -  - 37,11
+__fbl_C000001_0B_AF34___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	44852	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_CONBINTOI(		HZE001.WE02.Anforderung.Stoerg.iSSm,	;;Input #1 ()
+               ___RegDyn_C000001___SG_COB_0+2,              ;;Output #1 ()
+               ___RegDyn_C000001___SG_COB_0+10,              ;;Dynamic variable Reg[1].
+               2)                                 ;;Init variable (Bit number).
+;; Position: 1-bit to int with shift -  - 37,14
+__fbl_C000001_0B_AF35___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	44853	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_CONBINTOI(		HZE001.WE03.Anforderung.Stoerg.iSSm,	;;Input #1 ()
+               ___RegDyn_C000001___SG_COB_0+3,              ;;Output #1 ()
+               ___RegDyn_C000001___SG_COB_0+11,              ;;Dynamic variable Reg[1].
+               3)                                 ;;Init variable (Bit number).
+;; Position: 1-bit to int with shift -  - 37,17
+__fbl_C000001_0B_AF38___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	44856	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_CONBINTOI(		HZE002.Weiche.UWP.Stoerg.iSSm,	;;Input #1 ()
+               ___RegDyn_C000001___SG_COB_0+4,              ;;Output #1 ()
+               ___RegDyn_C000001___SG_COB_0+12,              ;;Dynamic variable Reg[1].
+               4)                                 ;;Init variable (Bit number).
+;; Position: 1-bit to int with shift -  - 37,20
+__fbl_C000001_0B_AF37___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	44855	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_CONBINTOI(		HZE001.WE01.UWP.Stoerg.iSSm,	;;Input #1 ()
+               ___RegDyn_C000001___SG_COB_0+5,              ;;Output #1 ()
+               ___RegDyn_C000001___SG_COB_0+13,              ;;Dynamic variable Reg[1].
+               5)                                 ;;Init variable (Bit number).
+;; Position: 1-bit to int with shift -  - 37,23
+__fbl_C000001_0B_AF3A___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	44858	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_CONBINTOI(		RLT003.VE.VL.Sec.UWP.Stoerg.iSSm,	;;Input #1 ()
+               ___RegDyn_C000001___SG_COB_0+6,              ;;Output #1 ()
+               ___RegDyn_C000001___SG_COB_0+14,              ;;Dynamic variable Reg[1].
+               6)                                 ;;Init variable (Bit number).
+;; Position: 1-bit to int with shift -  - 37,26
+__fbl_C000001_0B_AF39___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	44857	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_CONBINTOI(		RLT003.ZUL.Frost.Box.iFrostMX5,	;;Input #1 ()
+               ___RegDyn_C000001___SG_COB_0+7,              ;;Output #1 ()
+               ___RegDyn_C000001___SG_COB_0+15,              ;;Dynamic variable Reg[1].
+               7)                                 ;;Init variable (Bit number).
+;; Position: Add -  - 59,5
+__fbl_C000001_0B_AF36___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	44854	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_IADD2(		___RegDyn_C000001___SG_COB_0+0,	;;Input #1 ()
+		___RegDyn_C000001___SG_COB_0+1,	;;Input #2 ()
+		___RegDyn_C000001___SG_COB_0+2,	;;Input #3 ()
+		___RegDyn_C000001___SG_COB_0+3,	;;Input #4 ()
+		___RegDyn_C000001___SG_COB_0+4,	;;Input #5 ()
+		___RegDyn_C000001___SG_COB_0+5,	;;Input #6 ()
+		___RegDyn_C000001___SG_COB_0+6,	;;Input #7 ()
+		___RegDyn_C000001___SG_COB_0+7,	;;Input #8 ()
+               PCD01.A00.Mld.PCD01.Quitt.SSMRLT.iSSM,              ;;Output #1 ()
+               ___RegDyn_C000001___SG_COB_0+16)              ;;Dynamic variable AddReg[1].
+_FUPIntMov(     PCD01.A00.Mld.PCD01.Quitt.SSMRLT.iSSM,		;;Copy input label 'PCD01.A00.Mld.PCD01.Quitt.SSMRLT.iSSM' in 
+                PCD01.A00.Mld.PCD01.Quitt.SSMHZG.iSSM, R)		;;Output label PCD01.A00.Mld.PCD01.Quitt.SSMHZG.iSSM.
+_FUPIntMov(     PCD01.A00.Mld.PCD01.Quitt.SSMRLT.iSSM,		;;Copy input label 'PCD01.A00.Mld.PCD01.Quitt.SSMRLT.iSSM' in 
+                PCD01.A00.Mld.PCD01.Quitt.SSMKLT.iSSM, R)		;;Output label PCD01.A00.Mld.PCD01.Quitt.SSMKLT.iSSM.
+$endif							;; Page condition
+__EOPP___SG_COB_0_0B		EQU		$;Mark Page end position
+_PageProbe(		__EOP___SG_COB_0_0B)			;;Mark end of page.
+;; Block: COB COB_0
+;; Page: 13/23 WARNMELDUNGEN
+__PAGE_ID__	DEF	STR	""
+;;
+$if 1
+__FBL_C000001_0C___SG_COB_0			EQU		$;; Mark Page position
+;; Position: Integer 2.0 -  - 25,6
+__fbl_C000001_0C_A8E7___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	43239	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_DDC_SPGENERAL22(               200000,                               ;;Version Indicator.
+               PCD01.A00.Mld.PCD01.Quitt.WRNRLT.iSWM,              ;;Output #1 (Val)
+               __stc_id_0A8E7_var_00___SG_COB_0,               ;;Static variable Value[1].
+               0,                                 ;;Init variable (BACnet).
+               0,                                 ;;Init variable (Pre-selection).
+               GROUP__fbl_C000001_0C_A8E7)                ;;FBox user name.
+_FUPIntMov(     PCD01.A00.Mld.PCD01.Quitt.WRNRLT.iSWM,		;;Copy input label 'PCD01.A00.Mld.PCD01.Quitt.WRNRLT.iSWM' in 
+                PCD01.A00.Mld.PCD01.Quitt.WRNHZG.iSWM, R)		;;Output label PCD01.A00.Mld.PCD01.Quitt.WRNHZG.iSWM.
+_FUPIntMov(     PCD01.A00.Mld.PCD01.Quitt.WRNRLT.iSWM,		;;Copy input label 'PCD01.A00.Mld.PCD01.Quitt.WRNRLT.iSWM' in 
+                PCD01.A00.Mld.PCD01.Quitt.WRNKLT.iSWM, R)		;;Output label PCD01.A00.Mld.PCD01.Quitt.WRNKLT.iSWM.
+$endif							;; Page condition
+__EOPP___SG_COB_0_0C		EQU		$;Mark Page end position
+_PageProbe(		__EOP___SG_COB_0_0C)			;;Mark end of page.
+;; Block: COB COB_0
+;; Page: 14/23 Systeminformationen
+__PAGE_ID__	DEF	STR	""
+;;
+$if 1
+__FBL_C000001_0D___SG_COB_0			EQU		$;; Mark Page position
+;; Position: Read S-Bus station -  - 24,3
+__fbl_C000001_0D_9D___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	157	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_SYSRSB(       PCD01.A00.Mld.PCD01.SWeb.SBUS_Station,              ;;Output #1 (Stn)
+               1)                                 ;;Init variable (Read option ).
+;; Position: Read device type -  - 24,9
+__fbl_C000001_0D_9E___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	158	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_SYSRDT(       PCD01.A00.Mld.PCD01.SWeb.Geraetetyp,              ;;Output #1 (DT)
+               1,                                 ;;Init variable (Read option ).
+               1)                                 ;;Init variable (Output format ).
+;; Position: Read CPU type -  - 24,15
+__fbl_C000001_0D_9F___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	159	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_SYSRCT(       PCD01.A00.Mld.PCD01.SWeb.CPUTyp,              ;;Output #1 (CT)
+               1,                                 ;;Init variable (Read option ).
+               1)                                 ;;Init variable (Output format ).
+;; Position: Read firmware version -  - 24,21
+__fbl_C000001_0D_A0___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	160	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_SYSRFW(       PCD01.A00.Mld.PCD01.SWeb.Firmware,              ;;Output #1 (FW)
+               1,                                 ;;Init variable (Read option ).
+               1)                                 ;;Init variable (Output format ).
+$endif							;; Page condition
+__EOPP___SG_COB_0_0D		EQU		$;Mark Page end position
+_PageProbe(		__EOP___SG_COB_0_0D)			;;Mark end of page.
+;; Block: COB COB_0
+;; Page: 15/23 XTnrl
+__PAGE_ID__	DEF	STR	""
+;;
+$if 1
+__FBL_C000001_0E___SG_COB_0			EQU		$;; Mark Page position
+$endif							;; Page condition
+;; Block: COB COB_0
+;; Page: 16/23 Vorlageversion
+__PAGE_ID__	DEF	STR	""
+;;
+$if 0
+__FBL_C000001_0F___SG_COB_0			EQU		$;; Mark Page position
+;; Position: Integer 2.0 -  - 10,6
+__fbl_C000001_0F_8C4E___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	35918	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_DDC_SPGENERAL22(               200000,                               ;;Version Indicator.
+               ___RegDyn_C000001___SG_COB_0+0,              ;;Output #1 (Val)
+               PCD01.VER.IP,                        ;; .
+               0,                                 ;;Init variable (BACnet).
+               966,                               ;;Init variable (Pre-selection).
+               GROUP__fbl_C000001_0F_8C4E)                ;;FBox user name.
+$endif							;; Page condition
+__EOPP___SG_COB_0_0F		EQU		$;Mark Page end position
+_PageProbe(		__EOP___SG_COB_0_0F)			;;Mark end of page.
+;; Block: COB COB_0
+;; Page: 17/23 IP-Adresse
+__PAGE_ID__	DEF	STR	""
+;;
+$if 0
+__FBL_C000001_10___SG_COB_0			EQU		$;; Mark Page position
+$endif							;; Page condition
+;; Block: COB COB_0
+;; Page: 18/23 IP-Adresse
+__PAGE_ID__	DEF	STR	""
+;;
+$if 0
+__FBL_C000001_11___SG_COB_0			EQU		$;; Mark Page position
+$endif							;; Page condition
+;; Block: COB COB_0
+;; Page: 19/23 Definierter Anlagenstart
+__PAGE_ID__	DEF	STR	""
+;;
+$if 1
+__FBL_C000001_12___SG_COB_0			EQU		$;; Mark Page position
+;; Position: Start delay -  - 9,4
+__fbl_C000001_12_6D7A___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	28026	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_STDEL(        ___FlgDyn_C000001___SG_COB_0+0,              ;;Output #1 (Q)
+               __stc_id_06D7A_var_00___SG_COB_0,               ;;Static variable Tim[1].
+               20)                                ;;Init variable (Start delay [sec]).
+;; Position: Override digital -  - 43,6
+__fbl_C000001_12_6D7B___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	28027	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_HEAMANB3(		___FlgDyn_C000001___SG_COB_0+0,	;;Input #1 ()
+               PCD01.A00.Mld.PCD01.SVz.iSVZ,              ;;Output #1 ()
+               __stc_id_06D7B_var_00___SG_COB_0,               ;;Static variable Fs[2].
+               __stc_id_06D7B_var_01___SG_COB_0,               ;;Static variable Fsm[2].
+               __stc_id_06D7B_var_02___SG_COB_0,               ;;Static variable LED[1].
+               0,                                 ;;Init variable (Manual state follows input ).
+               1,                                 ;;Init variable (Mode).
+               1,                                 ;;Init variable (Manual).
+               )                                     ;;FBox user name.
+;; Position: On delay -  - 43,12
+__fbl_C000001_12_6D7C___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	28028	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_FUPIntMov(     2,                    		;;Copy input label 'K 2' in 
+                ___RegDyn_C000001___SG_COB_0+0, K)		;;network variable.
+_ONDEL(		PCD01.A00.Mld.PCD01.SVz.iSVZ,	;;Input #1 (In)
+		___RegDyn_C000001___SG_COB_0+0,	;;Input #2 (TV)
+               PCD01.A00.Mld.PCD01.SVz.iSVZ2,              ;;Output #1 (Q)
+               ___RegDyn_C000001___SG_COB_0+1,              ;;Output #2 (t)
+               __stc_id_06D7C_var_00___SG_COB_0,               ;;Static variable Tim[1].
+               __stc_id_06D7C_var_01___SG_COB_0)               ;;Static variable Sta[1].
+;; Position: On delay -  - 43,56
+__fbl_C000001_12_6D81___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	28033	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_FUPIntMov(     300,                  		;;Copy input label 'K 300' in 
+                ___RegDyn_C000001___SG_COB_0+2, K)		;;network variable.
+_ONDEL(		PCD01.A00.Mld.PCD01.SVz.iSVZ,	;;Input #1 (In)
+		___RegDyn_C000001___SG_COB_0+2,	;;Input #2 (TV)
+               PCD01.A00.Mld.PCD01.SVz.iSVZ300,              ;;Output #1 (Q)
+               ___RegDyn_C000001___SG_COB_0+3,              ;;Output #2 (t)
+               __stc_id_06D81_var_00___SG_COB_0,               ;;Static variable Tim[1].
+               __stc_id_06D81_var_01___SG_COB_0)               ;;Static variable Sta[1].
+;; Position: On delay -  - 43,65
+__fbl_C000001_12_6D82___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	28034	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_FUPIntMov(     600,                  		;;Copy input label 'K 600' in 
+                ___RegDyn_C000001___SG_COB_0+4, K)		;;network variable.
+_ONDEL(		PCD01.A00.Mld.PCD01.SVz.iSVZ,	;;Input #1 (In)
+		___RegDyn_C000001___SG_COB_0+4,	;;Input #2 (TV)
+               PCD01.A00.Mld.PCD01.SVz.iSVZ600,              ;;Output #1 (Q)
+               ___RegDyn_C000001___SG_COB_0+5,              ;;Output #2 (t)
+               __stc_id_06D82_var_00___SG_COB_0,               ;;Static variable Tim[1].
+               __stc_id_06D82_var_01___SG_COB_0)               ;;Static variable Sta[1].
+;; Position: On delay -  - 43,74
+__fbl_C000001_12_6D83___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	28035	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_FUPIntMov(     3000,                 		;;Copy input label 'K 3000' in 
+                ___RegDyn_C000001___SG_COB_0+6, K)		;;network variable.
+_ONDEL(		PCD01.A00.Mld.PCD01.SVz.iSVZ600,	;;Input #1 (In)
+		___RegDyn_C000001___SG_COB_0+6,	;;Input #2 (TV)
+               PCD01.A00.Mld.PCD01.SVz.iSVZ3000,              ;;Output #1 (Q)
+               ___RegDyn_C000001___SG_COB_0+7,              ;;Output #2 (t)
+               __stc_id_06D83_var_00___SG_COB_0,               ;;Static variable Tim[1].
+               __stc_id_06D83_var_01___SG_COB_0)               ;;Static variable Sta[1].
+;; Position: Exclusive pulse -  - 43,83
+__fbl_C000001_12_6D84___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	28036	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_FUPIntMov(     600,                  		;;Copy input label '600' in 
+                ___RegDyn_C000001___SG_COB_0+8, )		;;network variable.
+_XPULSE(		PCD01.A00.Mld.PCD01.SVz.iSVZ,	;;Input #1 (In)
+		___RegDyn_C000001___SG_COB_0+8,	;;Input #2 (TV)
+               PCD01.A00.Mld.PCD01.SVz.iXP600,              ;;Output #1 (Q)
+               ___RegDyn_C000001___SG_COB_0+9,              ;;Output #2 (t)
+               __stc_id_06D84_var_00___SG_COB_0,               ;;Static variable Tim[1].
+               __stc_id_06D84_var_01___SG_COB_0)               ;;Static variable Sta[1].
+$endif							;; Page condition
+__EOPP___SG_COB_0_12		EQU		$;Mark Page end position
+_PageProbe(		__EOP___SG_COB_0_12)			;;Mark end of page.
+;; Block: COB COB_0
+;; Page: 20/23 Sampler /Blinker
+__PAGE_ID__	DEF	STR	""
+;;
+$if 1
+__FBL_C000001_13___SG_COB_0			EQU		$;; Mark Page position
+;; Position: Blink delay T0/T1 -  - 45,29
+__fbl_C000001_13_6D88___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	28040	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_FUPIntMov(     10,                   		;;Copy input label 'K 10' in 
+                ___RegDyn_C000001___SG_COB_0+0, K)		;;network variable.
+_FUPIntMov(     10,                   		;;Copy input label 'K 10' in 
+                ___RegDyn_C000001___SG_COB_0+1, K)		;;network variable.
+_BLINK2(		PCD01.A00.Mld.PCD01.SVz.iSVZ,	;;Input #1 (En)
+		___RegDyn_C000001___SG_COB_0+0,	;;Input #2 (T0)
+		___RegDyn_C000001___SG_COB_0+1,	;;Input #3 (T1)
+               PCD01.A00.RLTStart.Takt.iSample4,              ;;Output #1 (Q)
+               __stc_id_06D88_var_00___SG_COB_0,               ;;Static variable Tim[1].
+               __stc_id_06D88_var_01___SG_COB_0)               ;;Static variable Sta[1].
+;; Position: Blink delay T0/T1 -  - 45,39
+__fbl_C000001_13_AE58___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	44632	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_FUPIntMov(     4,                    		;;Copy input label '4' in 
+                ___RegDyn_C000001___SG_COB_0+2, )		;;network variable.
+_FUPIntMov(     4,                    		;;Copy input label '4' in 
+                ___RegDyn_C000001___SG_COB_0+3, )		;;network variable.
+_BLINK2(		PCD01.A00.Mld.PCD01.SVz.iSVZ,	;;Input #1 (En)
+		___RegDyn_C000001___SG_COB_0+2,	;;Input #2 (T0)
+		___RegDyn_C000001___SG_COB_0+3,	;;Input #3 (T1)
+               PCD01.A00.RLTStart.Takt.iSample5,              ;;Output #1 (Q)
+               __stc_id_0AE58_var_00___SG_COB_0,               ;;Static variable Tim[1].
+               __stc_id_0AE58_var_01___SG_COB_0)               ;;Static variable Sta[1].
+$endif							;; Page condition
+__EOPP___SG_COB_0_13		EQU		$;Mark Page end position
+_PageProbe(		__EOP___SG_COB_0_13)			;;Mark end of page.
+;; Block: COB COB_0
+;; Page: 21/23 Schaltschrankhupe
+__PAGE_ID__	DEF	STR	""
+;;
+$if 1
+__FBL_C000001_14___SG_COB_0			EQU		$;; Mark Page position
+;; Position: Override numeric -  - 30,29
+__fbl_C000001_14_AE59___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	44633	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_HEAMANI3(		PCD01.A00.Mld.PCD01.Quitt.SSMRLT.iSSM,	;;Input #1 ()
+               ___RegDyn_C000001___SG_COB_0+0,              ;;Output #1 ()
+               __stc_id_0AE59_var_00___SG_COB_0,               ;;Static variable Fs[1].
+               __stc_id_0AE59_var_01___SG_COB_0,               ;;Static variable Fsm[1].
+               __stc_id_0AE59_var_02___SG_COB_0,               ;;Static variable Rsm[1].
+               __stc_id_0AE59_var_03___SG_COB_0,               ;;Static variable LED[1].
+               0,                                 ;;Init variable (Manual value follows input ).
+               0,                                 ;;Init variable (Manual value).
+               1,                                 ;;Init variable (Mode).
+               )                                     ;;FBox user name.
+;; Position: Is greater than -  - 39,29
+__fbl_C000001_14_AE56___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	44630	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_FUPIntMov(     0,                    		;;Copy input label '0' in 
+                ___RegDyn_C000001___SG_COB_0+1, )		;;network variable.
+_ICMPGT(		___RegDyn_C000001___SG_COB_0+0,	;;Input #1 ()
+		___RegDyn_C000001___SG_COB_0+1,	;;Input #2 ()
+               PCD01.A00.Mld.PCD01.Quitt.SSMRLT.iAlarm)              ;;Output #1 (>)
+_FUPBinMov(     PCD01.A00.Mld.PCD01.Quitt.SSMRLT.iAlarm,		;;Invert 'PCD01.A00.Mld.PCD01.Quitt.SSMRLT.iAlarm' in
+                ___FlgDyn_C000001___SG_COB_0+0,-)		;;___FlgDyn_C000001___SG_COB_0+0.
+;; Position: Or -  - 39,34
+__fbl_C000001_14_AF3D___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	44861	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_BOR(		PCD01.A00.Mld.PCD01.Quitt.Tast.iDO,	;;Input #1 ()
+		PCD01.SWeb.Alarme.iQuit,,,,,,,,,	;;Input #2 ()
+               ___FlgDyn_C000001___SG_COB_0+2)              ;;Output #1 ()
+;; Position: Alarm + time stamp -  - 49,29
+__fbl_C000001_14_AE55___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	44629	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_HEAALRT2(		PCD01.A00.Mld.PCD01.Quitt.SSMRLT.iAlarm,	;;Input #1 (Ala)
+		___FlgDyn_C000001___SG_COB_0+2,	;;Input #2 (Qit)
+               ___FlgDyn_C000001___SG_COB_0+1,              ;;Output #1 (s1)
+               ___FlgDyn_C000001___SG_COB_0+3,              ;;Output #2 (s2)
+               __stc_id_0AE55_var_00___SG_COB_0,               ;;Static variable Fs[8].
+               __stc_id_0AE55_var_01___SG_COB_0,               ;;Static variable Rs[8].
+               2,                                 ;;Init variable (Blink option ).
+               )                                     ;;FBox user name.
+;; Position: And -  - 64,24
+__fbl_C000001_14_AE57___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	44631	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_BAND(		PCD01.A00.RLTStart.Takt.iSample5,	;;Input #1 ()
+		___FlgDyn_C000001___SG_COB_0+1,,,,,,,,,	;;Input #2 ()
+               PCD01.A00.Mld.PCD01.Quitt.SSMRLT.Hupe)              ;;Output #1 ()
+;; Position: And -  - 49,38
+__fbl_C000001_14_B164___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	45412	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_BAND(		___FlgDyn_C000001___SG_COB_0+0,	;;Input #1 ()
+		PCD01.SWeb.Alarme.Aktiv,,,,,,,,,	;;Input #2 ()
+               ___FlgDyn_C000001___SG_COB_0+4)              ;;Output #1 ()
+;; Position: Or -  - 64,33
+__fbl_C000001_14_B165___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	45413	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_BOR(		___FlgDyn_C000001___SG_COB_0+3,	;;Input #1 ()
+		___FlgDyn_C000001___SG_COB_0+4,,,,,,,,,	;;Input #2 ()
+               PCD01.A00.Mld.PCD01.Quitt.LED.iDO)              ;;Output #1 ()
+$endif							;; Page condition
+__EOPP___SG_COB_0_14		EQU		$;Mark Page end position
+_PageProbe(		__EOP___SG_COB_0_14)			;;Mark end of page.
+;; Block: COB COB_0
+;; Page: 22/23 DI, DO
+__PAGE_ID__	DEF	STR	""
+;;
+$if 1
+__FBL_C000001_15___SG_COB_0			EQU		$;; Mark Page position
+;; Position: Override digital -  - 44,5
+__fbl_C000001_15_780B___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	30731	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_HEAMANB3(		IOs.DI_403.iInp,      	;;Input #1 ()
+               PCD01.A00.Mld.PCD01.Quitt.Tast.irBM80,              ;;Output #1 ()
+               __stc_id_0780B_var_00___SG_COB_0,               ;;Static variable Fs[2].
+               __stc_id_0780B_var_01___SG_COB_0,               ;;Static variable Fsm[2].
+               __stc_id_0780B_var_02___SG_COB_0,               ;;Static variable LED[1].
+               0,                                 ;;Init variable (Manual state follows input ).
+               1,                                 ;;Init variable (Mode).
+               1,                                 ;;Init variable (Manual).
+               )                                     ;;FBox user name.
+;; Position: Override digital -  - 44,9
+__fbl_C000001_15_780C___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	30732	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_HEAMANB3(		IOs.DI_400.iInp,      	;;Input #1 ()
+               PCD01.A00.Mld.StSpg.Phw.irSM10,              ;;Output #1 ()
+               __stc_id_0780C_var_00___SG_COB_0,               ;;Static variable Fs[2].
+               __stc_id_0780C_var_01___SG_COB_0,               ;;Static variable Fsm[2].
+               __stc_id_0780C_var_02___SG_COB_0,               ;;Static variable LED[1].
+               0,                                 ;;Init variable (Manual state follows input ).
+               1,                                 ;;Init variable (Mode).
+               1,                                 ;;Init variable (Manual).
+               )                                     ;;FBox user name.
+;; Position: And -  - 40,13
+__fbl_C000001_15_931E___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	37662	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_BAND(		IOs.DI_402.iInp,      	;;Input #1 ()
+		IOs.DI_407.iInp,,,,,,,,,	;;Input #2 ()
+               ___FlgDyn_C000001___SG_COB_0+0)              ;;Output #1 ()
+;; Position: Override digital -  - 44,13
+__fbl_C000001_15_780D___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	30733	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_HEAMANB3(		___FlgDyn_C000001___SG_COB_0+0,	;;Input #1 ()
+               PCD01.A00.Mld.StSpg.VDC24.irSM10,              ;;Output #1 ()
+               __stc_id_0780D_var_00___SG_COB_0,               ;;Static variable Fs[2].
+               __stc_id_0780D_var_01___SG_COB_0,               ;;Static variable Fsm[2].
+               __stc_id_0780D_var_02___SG_COB_0,               ;;Static variable LED[1].
+               0,                                 ;;Init variable (Manual state follows input ).
+               1,                                 ;;Init variable (Mode).
+               1,                                 ;;Init variable (Manual).
+               )                                     ;;FBox user name.
+;; Position: Override digital -  - 44,20
+__fbl_C000001_15_780E___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	30734	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_HEAMANB3(		IOs.DI_404.iInp,      	;;Input #1 ()
+               PCD01.A00.Mld.StSpg.VAC24.irSM10,              ;;Output #1 ()
+               __stc_id_0780E_var_00___SG_COB_0,               ;;Static variable Fs[2].
+               __stc_id_0780E_var_01___SG_COB_0,               ;;Static variable Fsm[2].
+               __stc_id_0780E_var_02___SG_COB_0,               ;;Static variable LED[1].
+               0,                                 ;;Init variable (Manual state follows input ).
+               1,                                 ;;Init variable (Mode).
+               1,                                 ;;Init variable (Manual).
+               )                                     ;;FBox user name.
+;; Position: Override digital -  - 44,28
+__fbl_C000001_15_78C4___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	30916	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_HEAMANB3(		IOs.DI_407.iInp,      	;;Input #1 ()
+               PCD01.A00.Mld.StSpg.USV.irSM10,              ;;Output #1 ()
+               __stc_id_078C4_var_00___SG_COB_0,               ;;Static variable Fs[2].
+               __stc_id_078C4_var_01___SG_COB_0,               ;;Static variable Fsm[2].
+               __stc_id_078C4_var_02___SG_COB_0,               ;;Static variable LED[1].
+               0,                                 ;;Init variable (Manual state follows input ).
+               1,                                 ;;Init variable (Mode).
+               1,                                 ;;Init variable (Manual).
+               )                                     ;;FBox user name.
+;; Position: Override digital -  - 44,32
+__fbl_C000001_15_78C0___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	30912	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_HEAMANB3(		PCD01.A00.Mld.PCD01.Quitt.Tast.iDO,	;;Input #1 ()
+               IOs.DO_192.iOut,                    ;;Output #1 ()
+               __stc_id_078C0_var_00___SG_COB_0,               ;;Static variable Fs[2].
+               __stc_id_078C0_var_01___SG_COB_0,               ;;Static variable Fsm[2].
+               __stc_id_078C0_var_02___SG_COB_0,               ;;Static variable LED[1].
+               0,                                 ;;Init variable (Manual state follows input ).
+               1,                                 ;;Init variable (Mode).
+               1,                                 ;;Init variable (Manual).
+               )                                     ;;FBox user name.
+;; Position: Override digital -  - 44,36
+__fbl_C000001_15_78C1___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	30913	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_HEAMANB3(		PCD01.A00.Mld.PCD01.Quitt.LED.iDO,	;;Input #1 ()
+               IOs.DO_193.iOut,                    ;;Output #1 ()
+               __stc_id_078C1_var_00___SG_COB_0,               ;;Static variable Fs[2].
+               __stc_id_078C1_var_01___SG_COB_0,               ;;Static variable Fsm[2].
+               __stc_id_078C1_var_02___SG_COB_0,               ;;Static variable LED[1].
+               0,                                 ;;Init variable (Manual state follows input ).
+               1,                                 ;;Init variable (Mode).
+               1,                                 ;;Init variable (Manual).
+               )                                     ;;FBox user name.
+;; Position: Override digital -  - 44,40
+__fbl_C000001_15_931F___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	37663	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_HEAMANB3(		IOs.DI_401.iInp,      	;;Input #1 ()
+               PCD01.A00.Mld.StSpg.Spg.irSM10,              ;;Output #1 ()
+               __stc_id_0931F_var_00___SG_COB_0,               ;;Static variable Fs[2].
+               __stc_id_0931F_var_01___SG_COB_0,               ;;Static variable Fsm[2].
+               __stc_id_0931F_var_02___SG_COB_0,               ;;Static variable LED[1].
+               0,                                 ;;Init variable (Manual state follows input ).
+               1,                                 ;;Init variable (Mode).
+               1,                                 ;;Init variable (Manual).
+               )                                     ;;FBox user name.
+;; Position: Override digital -  - 44,44
+__fbl_C000001_15_AE54___SG_COB_0           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	44628	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_HEAMANB3(		PCD01.A00.Mld.PCD01.Quitt.SSMRLT.Hupe,	;;Input #1 ()
+               IOs.DO_189.iOut,                    ;;Output #1 ()
+               __stc_id_0AE54_var_00___SG_COB_0,               ;;Static variable Fs[2].
+               __stc_id_0AE54_var_01___SG_COB_0,               ;;Static variable Fsm[2].
+               __stc_id_0AE54_var_02___SG_COB_0,               ;;Static variable LED[1].
+               0,                                 ;;Init variable (Manual state follows input ).
+               1,                                 ;;Init variable (Mode).
+               1,                                 ;;Init variable (Manual).
+               )                                     ;;FBox user name.
+$endif							;; Page condition
+__EOPP___SG_COB_0_15		EQU		$;Mark Page end position
+_PageProbe(		__EOP___SG_COB_0_15)			;;Mark end of page.
+;; Block: COB COB_0
+;; Page: 23/23 
+__PAGE_ID__	DEF	STR	""
+;;
+$if 1
+__FBL_C000001_16___SG_COB_0			EQU		$;; Mark Page position
+$endif							;; Page condition
+               ECOB
+$endif							;; Block condition
+;;
+;; Block: COB COB_1
+;; Pages: 5
+;;
+__PAGE_ID__	DEF	STR	""
+$if 1							;; Block condition
+		COB	COB_1
+			0
+
+;;
+;; Block: COB COB_1
+;; Page: 1/5 Dig_Input E165
+__PAGE_ID__	DEF	STR	""
+;;
+$if 1
+__FBL_C0000C5_00___SG_COB_1			EQU		$;; Mark Page position
+;; Position: Acknowledge 1.5 -  - 1,1
+__fbl_C0000C5_00_7745___SG_COB_1           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	30533	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_DDC_ALGENERAL04(               105000,                               ;;Version Indicator.
+               __stc_id_07745_var_00___SG_COB_1,               ;;Static variable Reset[1].
+               1)                                 ;;Init variable (Acknowledge stored alarms).
+;; Position: Read from inputs - E165_200_207 - 23,14
+__fbl_C0000C5_00_7746___SG_COB_1           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	30534	;E165_200_207
+__FBOX_LANG__	DEF	STR	"DE"	;E165_200_207
+_FUPIntMov(     0,                    		;;Copy input label '0' in 
+                ___RegDyn_C0000C5___SG_COB_1+0, )		;;network variable.
+_INDIOI(		___RegDyn_C0000C5___SG_COB_1+0,	;;Input #1 (#)
+               IOs.DI_384.iInp,                    ;;Output #1 (I0)
+               IOs.DI_385.iInp,                    ;;Output #2 (I1)
+               IOs.DI_386.iInp,                    ;;Output #3 (I2)
+               IOs.DI_387.iInp,                    ;;Output #4 (I3)
+               IOs.DI_388.iInp,                    ;;Output #5 (I4)
+               IOs.DI_389.iInp,                    ;;Output #6 (I5)
+               IOs.DI_390.iInp,                    ;;Output #7 (I6)
+               IOs.DI_391.iInp)                    ;;Output #8 (I7)
+;; Position: Read from inputs - E165_200_207 - 23,35
+__fbl_C0000C5_00_B97D___SG_COB_1           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47485	;E165_200_207
+__FBOX_LANG__	DEF	STR	"DE"	;E165_200_207
+_FUPIntMov(     8,                    		;;Copy input label '8' in 
+                ___RegDyn_C0000C5___SG_COB_1+1, )		;;network variable.
+_INDIOI(		___RegDyn_C0000C5___SG_COB_1+1,	;;Input #1 (#)
+               ___FlgDyn_C0000C5___SG_COB_1+0,              ;;Output #1 (I0)
+               ___FlgDyn_C0000C5___SG_COB_1+1,              ;;Output #2 (I1)
+               ___FlgDyn_C0000C5___SG_COB_1+2,              ;;Output #3 (I2)
+               ___FlgDyn_C0000C5___SG_COB_1+3,              ;;Output #4 (I3)
+               ___FlgDyn_C0000C5___SG_COB_1+4,              ;;Output #5 (I4)
+               ___FlgDyn_C0000C5___SG_COB_1+5,              ;;Output #6 (I5)
+               ___FlgDyn_C0000C5___SG_COB_1+6,              ;;Output #7 (I6)
+               ___FlgDyn_C0000C5___SG_COB_1+7)              ;;Output #8 (I7)
+$endif							;; Page condition
+__EOPP___SG_COB_1_00		EQU		$;Mark Page end position
+_PageProbe(		__EOP___SG_COB_1_00)			;;Mark end of page.
+;; Block: COB COB_1
+;; Page: 2/5 Dig_Output A810
+__PAGE_ID__	DEF	STR	""
+;;
+$if 1
+__FBL_C0000C5_01___SG_COB_1			EQU		$;; Mark Page position
+;; Position: Override digital -  - 55,6
+__fbl_C0000C5_01_B979___SG_COB_1           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47481	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_HEAMANB3(		IOs.DO_32.iOut,       	;;Input #1 ()
+               ___FlgDyn_C0000C5___SG_COB_1+0,              ;;Output #1 ()
+               __stc_id_0B979_var_00___SG_COB_1,               ;;Static variable Fs[2].
+               __stc_id_0B979_var_01___SG_COB_1,               ;;Static variable Fsm[2].
+               __stc_id_0B979_var_02___SG_COB_1,               ;;Static variable LED[1].
+               0,                                 ;;Init variable (Manual state follows input ).
+               1,                                 ;;Init variable (Mode).
+               1,                                 ;;Init variable (Manual).
+               )                                     ;;FBox user name.
+;; Position: Override digital -  - 55,9
+__fbl_C0000C5_01_B97A___SG_COB_1           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47482	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_HEAMANB3(		IOs.DO_33.iOut,       	;;Input #1 ()
+               ___FlgDyn_C0000C5___SG_COB_1+1,              ;;Output #1 ()
+               __stc_id_0B97A_var_00___SG_COB_1,               ;;Static variable Fs[2].
+               __stc_id_0B97A_var_01___SG_COB_1,               ;;Static variable Fsm[2].
+               __stc_id_0B97A_var_02___SG_COB_1,               ;;Static variable LED[1].
+               0,                                 ;;Init variable (Manual state follows input ).
+               1,                                 ;;Init variable (Mode).
+               1,                                 ;;Init variable (Manual).
+               )                                     ;;FBox user name.
+;; Position: Override digital -  - 55,12
+__fbl_C0000C5_01_B97B___SG_COB_1           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47483	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_HEAMANB3(		IOs.DO_34.iOut,       	;;Input #1 ()
+               ___FlgDyn_C0000C5___SG_COB_1+2,              ;;Output #1 ()
+               __stc_id_0B97B_var_00___SG_COB_1,               ;;Static variable Fs[2].
+               __stc_id_0B97B_var_01___SG_COB_1,               ;;Static variable Fsm[2].
+               __stc_id_0B97B_var_02___SG_COB_1,               ;;Static variable LED[1].
+               0,                                 ;;Init variable (Manual state follows input ).
+               1,                                 ;;Init variable (Mode).
+               1,                                 ;;Init variable (Manual).
+               )                                     ;;FBox user name.
+;; Position: Override digital -  - 55,15
+__fbl_C0000C5_01_B97C___SG_COB_1           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47484	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_HEAMANB3(		IOs.DO_35.iOut,       	;;Input #1 ()
+               ___FlgDyn_C0000C5___SG_COB_1+3,              ;;Output #1 ()
+               __stc_id_0B97C_var_00___SG_COB_1,               ;;Static variable Fs[2].
+               __stc_id_0B97C_var_01___SG_COB_1,               ;;Static variable Fsm[2].
+               __stc_id_0B97C_var_02___SG_COB_1,               ;;Static variable LED[1].
+               0,                                 ;;Init variable (Manual state follows input ).
+               1,                                 ;;Init variable (Mode).
+               1,                                 ;;Init variable (Manual).
+               )                                     ;;FBox user name.
+;; Position: Copy to outputs - Schreiben_Ausgange - 71,4
+__fbl_C0000C5_01_82D0___SG_COB_1           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	33488	;Schreiben_Ausgange
+__FBOX_LANG__	DEF	STR	"DE"	;Schreiben_Ausgange
+_FUPIntMov(     16,                   		;;Copy input label '16' in 
+                ___RegDyn_C0000C5___SG_COB_1+0, )		;;network variable.
+_INDIOO(		___RegDyn_C0000C5___SG_COB_1+0,	;;Input #1 (#)
+		___FlgDyn_C0000C5___SG_COB_1+0,	;;Input #2 (O0)
+		___FlgDyn_C0000C5___SG_COB_1+1,	;;Input #3 (O1)
+		___FlgDyn_C0000C5___SG_COB_1+2,	;;Input #4 (O2)
+		___FlgDyn_C0000C5___SG_COB_1+3,,,,)	;;Input #5 (O3)
+;; Position: Read from inputs - Zustand_Handschalter - 26,51
+__fbl_C0000C5_01_82C2___SG_COB_1           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	33474	;Zustand_Handschalter
+__FBOX_LANG__	DEF	STR	"DE"	;Zustand_Handschalter
+_FUPIntMov(     40,                   		;;Copy input label 'K 40' in 
+                ___RegDyn_C0000C5___SG_COB_1+1, K)		;;network variable.
+_INDIOI(		___RegDyn_C0000C5___SG_COB_1+1,	;;Input #1 (#)
+               IOs.DO_32.iMACT,                    ;;Output #1 (I0)
+               IOs.DO_33.iMACT,                    ;;Output #2 (I1)
+               IOs.DO_34.iMACT,                    ;;Output #3 (I2)
+               IOs.DO_35.iMACT,,,,)                ;;Output #4 (I3)
+$endif							;; Page condition
+__EOPP___SG_COB_1_01		EQU		$;Mark Page end position
+_PageProbe(		__EOP___SG_COB_1_01)			;;Mark end of page.
+;; Block: COB COB_1
+;; Page: 3/5 Ana_Input W340 Roh
+__PAGE_ID__	DEF	STR	""
+;;
+$if 1
+__FBL_C0000C5_02___SG_COB_1			EQU		$;; Mark Page position
+;; Position: PCD2/3.W34   sensor error -  - 6,28
+__fbl_C0000C5_02_4C8D___SG_COB_1           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	19597	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_ANAD2W34F(    101003,                               ;;Version Indicator.
+               IOs.AI_512.iIstwert,                ;;Output #1 (i0)
+               IOs.AI_513.iIstwert,                ;;Output #2 (i1)
+               IOs.AI_514.iIstwert,                ;;Output #3 (i2)
+               IOs.AI_515.iIstwert,                ;;Output #4 (i3)
+               IOs.AI_516.iIstwert,                ;;Output #5 (i4)
+               IOs.AI_517.iIstwert,                ;;Output #6 (i5)
+               IOs.AI_518.iIstwert,                ;;Output #7 (i6)
+               IOs.AI_519.iIstwert,                ;;Output #8 (i7)
+               IOs.AI_40_Error,                    ;;Output #9 (Err)
+               IOs.AI_72,                          ;;Constant #1
+               ___RegDyn_C0000C5___SG_COB_1+0,              ;;Dynamic variable Rd[2].
+               IOs.AI512,                           ;; .
+               __stc_id_04C8D_var_01___SG_COB_1,               ;;Static variable LED[1].
+               1,                                 ;;Init variable (Error).
+               2,                                 ;;Init variable (Output when in error ).
+               10,                                ;;Init variable (Ch 0 / Mode or sensor type ).
+               22,                                ;;Init variable (Ch 1 / Mode or sensor type ).
+               10,                                ;;Init variable (Ch 2 / Mode or sensor type ).
+               10,                                ;;Init variable (Ch 3 / Mode or sensor type ).
+               10,                                ;;Init variable (Ch 4 / Mode or sensor type ).
+               10,                                ;;Init variable (Ch 5 / Mode or sensor type ).
+               10,                                ;;Init variable (Ch 6 / Mode or sensor type ).
+               10,                                ;;Init variable (Ch 7 / Mode or sensor type ).
+               7)                                    ;;FBox stretch index.
+$endif							;; Page condition
+__EOPP___SG_COB_1_02		EQU		$;Mark Page end position
+_PageProbe(		__EOP___SG_COB_1_02)			;;Mark end of page.
+;; Block: COB COB_1
+;; Page: 4/5 Error Detection
+__PAGE_ID__	DEF	STR	""
+;;
+$if 1
+__FBL_C0000C5_03___SG_COB_1			EQU		$;; Mark Page position
+;; Position: Int to bin 1-24 -  - 46,2
+__fbl_C0000C5_03_4CAE___SG_COB_1           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	19630	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_CONBITOM(		IOs.AI_40_Error,      	;;Input #1 (In)
+               IOs.AI_512.iDefekt,                 ;;Output #1 (O0)
+               ___FlgDyn_C0000C5___SG_COB_1+0,              ;;Output #2 (O1)
+               IOs.AI_514.iDefekt,                 ;;Output #3 (O2)
+               IOs.AI_515.iDefekt,                 ;;Output #4 (O3)
+               IOs.AI_516.iDefekt,                 ;;Output #5 (O4)
+               IOs.AI_517.iDefekt,                 ;;Output #6 (O5)
+               IOs.AI_518.iDefekt,                 ;;Output #7 (O6)
+               IOs.AI_519.iDefekt,,,,,,,,,,,,,,,,, ;;Output #8 (O7)
+               ___RegDyn_C0000C5___SG_COB_1+0)              ;;Dynamic variable Reg[1].
+;; Position: Analog as Digital 2.0 -  - 23,22
+__fbl_C0000C5_03_A51B___SG_COB_1           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	42267	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_DDC_ANGENERAL26(               200000,                               ;;Version Indicator.
+		IOs.AI_513.iIstwert,  	;;Input #1 (A)
+               ___FlgDyn_C0000C5___SG_COB_1+1,              ;;Output #1 (D)
+               __stc_id_0A51B_var_00___SG_COB_1,               ;;Static variable Zustand[1].
+               __stc_id_0A51B_var_01___SG_COB_1,               ;;Static variable GwOben[1].
+               __stc_id_0A51B_var_02___SG_COB_1,               ;;Static variable GwUnten[1].
+               0,                                 ;;Init variable (BACnet).
+               10000,                             ;;Init variable (Limit value High).
+               9950,                              ;;Init variable (Limit value Low).
+               GROUP__fbl_C0000C5_03_A51B)                ;;FBox user name.
+;; Position: Analog as Digital 2.0 -  - 23,27
+__fbl_C0000C5_03_A519___SG_COB_1           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	42265	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_DDC_ANGENERAL26(               200000,                               ;;Version Indicator.
+		IOs.AI_513.iIstwert,  	;;Input #1 (A)
+               ___FlgDyn_C0000C5___SG_COB_1+2,              ;;Output #1 (D)
+               __stc_id_0A519_var_00___SG_COB_1,               ;;Static variable Zustand[1].
+               __stc_id_0A519_var_01___SG_COB_1,               ;;Static variable GwOben[1].
+               __stc_id_0A519_var_02___SG_COB_1,               ;;Static variable GwUnten[1].
+               0,                                 ;;Init variable (BACnet).
+               1500,                              ;;Init variable (Limit value High).
+               1000,                              ;;Init variable (Limit value Low).
+               GROUP__fbl_C0000C5_03_A519)                ;;FBox user name.
+_FUPBinMov(    ___FlgDyn_C0000C5___SG_COB_1+2,             ;;Invert network variable  in
+                ___FlgDyn_C0000C5___SG_COB_1+3,-)		;;network variable.
+;; Position: Or -  - 32,24
+__fbl_C0000C5_03_A51A___SG_COB_1           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	42266	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_BOR(		___FlgDyn_C0000C5___SG_COB_1+1,	;;Input #1 ()
+		___FlgDyn_C0000C5___SG_COB_1+3,,,,,,,,,	;;Input #2 ()
+               IOs.AI_513.iDefekt)                 ;;Output #1 ()
+$endif							;; Page condition
+__EOPP___SG_COB_1_03		EQU		$;Mark Page end position
+_PageProbe(		__EOP___SG_COB_1_03)			;;Mark end of page.
+;; Block: COB COB_1
+;; Page: 5/5 Ana_Output W800
+__PAGE_ID__	DEF	STR	""
+;;
+$if 1
+__FBL_C0000C5_04___SG_COB_1			EQU		$;; Mark Page position
+;; Position: Linear 2-Points2.0 -  - 26,29
+__fbl_C0000C5_04_3A28___SG_COB_1           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	14888	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_DDC_SPLINEAR21(               200000,                               ;;Version Indicator.
+		IOs.AO_208.iOut,      	;;Input #1 (X)
+               ___RegDyn_C0000C5___SG_COB_1+0,              ;;Output #1 (Y)
+               __stc_id_03A28_var_00___SG_COB_1,               ;;Static variable X1[1].
+               __stc_id_03A28_var_01___SG_COB_1,               ;;Static variable Y1[1].
+               __stc_id_03A28_var_02___SG_COB_1,               ;;Static variable X2[1].
+               __stc_id_03A28_var_03___SG_COB_1,               ;;Static variable Y2[1].
+               __stc_id_03A28_var_04___SG_COB_1,               ;;Static variable Y[1].
+               0,                                 ;;Init variable (PCD Offline Trending (KB)).
+               0,                                 ;;Init variable (BACnet).
+               0,                                 ;;Init variable ((X1) Outside air temperature.).
+               500,                               ;;Init variable (... (Y1) associated Set point).
+               1000,                              ;;Init variable ((X2) Outside air temperature.).
+               1023,                              ;;Init variable (... (Y2) associated Set point).
+               GROUP__fbl_C0000C5_04_3A28)                ;;FBox user name.
+;; Position: Linear 2-Points2.0 -  - 26,35
+__fbl_C0000C5_04_3A29___SG_COB_1           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	14889	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_DDC_SPLINEAR21(               200000,                               ;;Version Indicator.
+		IOs.AO_209.iOut,      	;;Input #1 (X)
+               ___RegDyn_C0000C5___SG_COB_1+1,              ;;Output #1 (Y)
+               __stc_id_03A29_var_00___SG_COB_1,               ;;Static variable X1[1].
+               __stc_id_03A29_var_01___SG_COB_1,               ;;Static variable Y1[1].
+               __stc_id_03A29_var_02___SG_COB_1,               ;;Static variable X2[1].
+               __stc_id_03A29_var_03___SG_COB_1,               ;;Static variable Y2[1].
+               __stc_id_03A29_var_04___SG_COB_1,               ;;Static variable Y[1].
+               0,                                 ;;Init variable (PCD Offline Trending (KB)).
+               0,                                 ;;Init variable (BACnet).
+               0,                                 ;;Init variable ((X1) Outside air temperature.).
+               0,                                 ;;Init variable (... (Y1) associated Set point).
+               1000,                              ;;Init variable ((X2) Outside air temperature.).
+               1023,                              ;;Init variable (... (Y2) associated Set point).
+               GROUP__fbl_C0000C5_04_3A29)                ;;FBox user name.
+;; Position: Linear 2-Points2.0 -  - 26,41
+__fbl_C0000C5_04_3A2A___SG_COB_1           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	14890	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_DDC_SPLINEAR21(               200000,                               ;;Version Indicator.
+		IOs.AO_210.iOut,      	;;Input #1 (X)
+               ___RegDyn_C0000C5___SG_COB_1+2,              ;;Output #1 (Y)
+               __stc_id_03A2A_var_00___SG_COB_1,               ;;Static variable X1[1].
+               __stc_id_03A2A_var_01___SG_COB_1,               ;;Static variable Y1[1].
+               __stc_id_03A2A_var_02___SG_COB_1,               ;;Static variable X2[1].
+               __stc_id_03A2A_var_03___SG_COB_1,               ;;Static variable Y2[1].
+               __stc_id_03A2A_var_04___SG_COB_1,               ;;Static variable Y[1].
+               0,                                 ;;Init variable (PCD Offline Trending (KB)).
+               0,                                 ;;Init variable (BACnet).
+               0,                                 ;;Init variable ((X1) Outside air temperature.).
+               0,                                 ;;Init variable (... (Y1) associated Set point).
+               1000,                              ;;Init variable ((X2) Outside air temperature.).
+               1023,                              ;;Init variable (... (Y2) associated Set point).
+               GROUP__fbl_C0000C5_04_3A2A)                ;;FBox user name.
+;; Position: Linear 2-Points2.0 -  - 26,47
+__fbl_C0000C5_04_3A2B___SG_COB_1           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	14891	;
+__FBOX_LANG__	DEF	STR	"DE"	;
+_DDC_SPLINEAR21(               200000,                               ;;Version Indicator.
+		IOs.AO_211.iOut,      	;;Input #1 (X)
+               ___RegDyn_C0000C5___SG_COB_1+3,              ;;Output #1 (Y)
+               __stc_id_03A2B_var_00___SG_COB_1,               ;;Static variable X1[1].
+               __stc_id_03A2B_var_01___SG_COB_1,               ;;Static variable Y1[1].
+               __stc_id_03A2B_var_02___SG_COB_1,               ;;Static variable X2[1].
+               __stc_id_03A2B_var_03___SG_COB_1,               ;;Static variable Y2[1].
+               __stc_id_03A2B_var_04___SG_COB_1,               ;;Static variable Y[1].
+               0,                                 ;;Init variable (PCD Offline Trending (KB)).
+               0,                                 ;;Init variable (BACnet).
+               0,                                 ;;Init variable ((X1) Outside air temperature.).
+               0,                                 ;;Init variable (... (Y1) associated Set point).
+               1000,                              ;;Init variable ((X2) Outside air temperature.).
+               1023,                              ;;Init variable (... (Y2) associated Set point).
+               GROUP__fbl_C0000C5_04_3A2B)                ;;FBox user name.
+;; Position: PCD2/3.W4 -  - 47,23
+__fbl_C0000C5_04_B97F___SG_COB_1           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47487	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_ANAD2W4(		___RegDyn_C0000C5___SG_COB_1+0,	;;Input #1 (o0)
+		___RegDyn_C0000C5___SG_COB_1+1,	;;Input #2 (o1)
+		___RegDyn_C0000C5___SG_COB_1+2,	;;Input #3 (o2)
+		___RegDyn_C0000C5___SG_COB_1+3,	;;Input #4 (o3)
+               IOs.AO_88,                          ;;Constant #1
+               __stc_id_0B97F_var_00___SG_COB_1)               ;;Static variable Rd[1].
+$endif							;; Page condition
+__EOPP___SG_COB_1_04		EQU		$;Mark Page end position
+_PageProbe(		__EOP___SG_COB_1_04)			;;Mark end of page.
+               ECOB
+$endif							;; Block condition
+;;
+;; Block: COB COB_2
+;; Pages: 1
+;;
+__PAGE_ID__	DEF	STR	""
+$if 1							;; Block condition
+		COB	COB_2
+			0
+
+;;
+;; Block: COB COB_2
+;; Page: 1/1 
+__PAGE_ID__	DEF	STR	""
+;;
+$if 1
+__FBL_C0000F5_00___SG_COB_2			EQU		$;; Mark Page position
+;; Position: Init Client TCP Extended - ModbusClient - 32,9
+__fbl_C0000F5_00_B984___SG_COB_2           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47492	;ModbusClient
+__FBOX_LANG__	DEF	STR	"EN"	;ModbusClient
+_MODBUS_MASTERTCPEXT2(               2,                                    ;;Version Indicator.
+		__low,                	;;Input #1 (Clear)
+               ___FlgSta_C0000F5___SG_COB_2+0,              ;;Output #1 (Active)
+               ___FlgSta_C0000F5___SG_COB_2+1,              ;;Output #2 (Error)
+               ___FlgDyn_C0000F5___SG_COB_2+3,              ;;Dynamic variable Fd[32].
+               __stc_id_0B984_var_00___SG_COB_2,               ;;Static variable Fsb[1].
+               __stc_id_0B984_var_01___SG_COB_2,               ;;Static variable Fse[2].
+               __stc_id_0B984_var_02___SG_COB_2,               ;;Static variable Fsd[10].
+               __stc_id_0B984_var_03___SG_COB_2,               ;;Static variable Rs[5].
+               __stc_id_0B984_var_04___SG_COB_2,               ;;Static variable Rsd[1].
+               __stc_id_0B984_var_05___SG_COB_2,               ;;Static variable RsCy[1].
+               __stc_id_0B984_var_06___SG_COB_2,               ;;Static variable LED[1].
+               1,                                 ;;Init variable (Channel).
+               502,                               ;;Init variable (Remote port number).
+               0,                                 ;;Init variable (Protocol ).
+               10,                                ;;Init variable (Idle disconnect time [s]).
+               10,                                ;;Init variable (Timeout [s]).
+               1,                                 ;;Init variable (Repetitions ).
+               0,                                 ;;Init variable (Minimum request delay [ms]).
+               1,                                 ;;Init variable (Diagnostics ).
+               ModbusClient)                         ;;FBox user name.
+;; Position: Define Unit Client - Unit - 32,19
+__fbl_C0000F5_00_B985___SG_COB_2           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47493	;Unit
+__FBOX_LANG__	DEF	STR	"EN"	;Unit
+_MODBUS_CLUNIT2(               2,                                    ;;Version Indicator.
+		__high,               	;;Input #1 (Enable)
+		__low,                	;;Input #2 (Clear)
+               ___FlgDyn_C0000F5___SG_COB_2+0,              ;;Output #1 (Active)
+               ___FlgDyn_C0000F5___SG_COB_2+1,              ;;Output #2 (Error)
+               __stc_id_0B985_var_00___SG_COB_2,               ;;Static variable Fs[2].
+               __stc_id_0B985_var_01___SG_COB_2,               ;;Static variable Rs[6].
+               __stc_id_0B985_var_02___SG_COB_2,               ;;Static variable LED[1].
+               -1062729970,                       ;;Init variable (IP Address).
+               1,                                 ;;Init variable (Unit identifier).
+               0,                                 ;;Init variable (Offset 1->0 ).
+               1,                                 ;;Init variable (Request counter ).
+               1,                                 ;;Init variable (Error counter ).
+               Unit,                                 ;;FBox user name.
+               ModbusClient)                         ;;FBox reference.
+;; Position: Read Integer -  - 33,35
+__fbl_C0000F5_00_B987___SG_COB_2           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47495	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_MODBUS_RXINT( 1,                                    ;;Version Indicator.
+		__high,               	;;Input #1 (Enable)
+               ___FlgDyn_C0000F5___SG_COB_2+2,              ;;Output #1 (Error)
+               try.mb2,                            ;;Constant #1
+               1,                                  ;;Constant #2
+               __stc_id_0B987_var_00___SG_COB_2,               ;;Static variable Fs[1].
+               __stc_id_0B987_var_01___SG_COB_2,               ;;Static variable LED[1].
+               4,                                 ;;Init variable (Function code ).
+               1,                                 ;;Init variable (Processing ).
+               12088,                             ;;Init variable (Remote base address).
+               1,                                 ;;Init variable (Execute now ).
+               Unit)                                 ;;FBox reference.
+$endif							;; Page condition
+__EOPP___SG_COB_2_00		EQU		$;Mark Page end position
+_PageProbe(		__EOP___SG_COB_2_00)			;;Mark end of page.
+               ECOB
+$endif							;; Block condition
+
+;; ***** end of file: HKLS2.fbd *****

@@ -68,8 +68,8 @@ PriorityUsb=10
 Cookies=0
 
 [PCDAuth]
-UKey=c30a58656392483e5f156007f16d58d8ba9e71392eec7741d4b9ffb4062485cf
-Salt=8ab45c70ab57761995424dd881a8a0
+UKey=6fdb375b350be4e12dd86ad13c56933d699e91a919bd348587f7045a9f7ea78e
+Salt=959be88aaa9dad17ee9bb060b533a1
 
 [SBusSerial_0]
 Port=3
@@ -144,7 +144,7 @@ EnaDNSNeg=0
 
 [TcpIp_0]
 Address=192.168.7.212
-SubnetMask=255.0.0.0
+SubnetMask=255.255.255.0
 Gateway=192.168.7.1
 Node=212
 
