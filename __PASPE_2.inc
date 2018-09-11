@@ -87,6 +87,23 @@ Interrupt0XOB EQU 20 ;Fix Interrupt0 XOB number
 Interrupt1XOB EQU 21 ;Fix Interrupt1 XOB number
 $ENDGROUP	;S.CPU
 
+;System symbols from IO definition
+IO.Slot0.IOAccess.DIGITAL_INPUTS_0TO15	EQU	1024		;Address of digital inputs 0 to 15 in memory input range - used for direct access
+IO.Slot1.IOAccess.DIGITAL_OUTPUT_0TO3	EQU	1024		;Address of digital outputs 0 to 3 in memory output range - used for direct access
+IO.Slot1.IOAccess.SWITCH_STATUS	EQU	1026		;Address of switch status in memory input range - used for direct access
+IO.Slot2.IOAccess.ANALOGUE_INPUT_0	EQU	1028		;Address of analogue input 0 in memory input range - used for direct access
+IO.Slot2.IOAccess.ANALOGUE_INPUT_1	EQU	1030		;Address of analogue input 1 in memory input range - used for direct access
+IO.Slot2.IOAccess.ANALOGUE_INPUT_2	EQU	1032		;Address of analogue input 2 in memory input range - used for direct access
+IO.Slot2.IOAccess.ANALOGUE_INPUT_3	EQU	1034		;Address of analogue input 3 in memory input range - used for direct access
+IO.Slot2.IOAccess.ANALOGUE_INPUT_4	EQU	1036		;Address of analogue input 4 in memory input range - used for direct access
+IO.Slot2.IOAccess.ANALOGUE_INPUT_5	EQU	1038		;Address of analogue input 5 in memory input range - used for direct access
+IO.Slot2.IOAccess.ANALOGUE_INPUT_6	EQU	1040		;Address of analogue input 6 in memory input range - used for direct access
+IO.Slot2.IOAccess.ANALOGUE_INPUT_7	EQU	1042		;Address of analogue input 7 in memory input range - used for direct access
+IO.Slot3.IOAccess.ANALOGUE_OUTPUT_0	EQU	1025		;Address of analogue output 0 in memory output range - used for direct access
+IO.Slot3.IOAccess.ANALOGUE_OUTPUT_1	EQU	1027		;Address of analogue output 1 in memory output range - used for direct access
+IO.Slot3.IOAccess.ANALOGUE_OUTPUT_2	EQU	1029		;Address of analogue output 2 in memory output range - used for direct access
+IO.Slot3.IOAccess.ANALOGUE_OUTPUT_3	EQU	1031		;Address of analogue output 3 in memory output range - used for direct access
+
 ;System symbols for Open Data Mode
 $GROUP S.ODM
 Initialized EQU 1    ;ODM Init has been activated in SPM

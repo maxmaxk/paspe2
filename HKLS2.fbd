@@ -1936,9 +1936,9 @@ _DDC_SPLINEAR21(               200000,                               ;;Version I
                0,                                 ;;Init variable (PCD Offline Trending (KB)).
                0,                                 ;;Init variable (BACnet).
                0,                                 ;;Init variable ((X1) Outside air temperature.).
-               500,                               ;;Init variable (... (Y1) associated Set point).
+               0,                                 ;;Init variable (... (Y1) associated Set point).
                1000,                              ;;Init variable ((X2) Outside air temperature.).
-               1023,                              ;;Init variable (... (Y2) associated Set point).
+               250,                               ;;Init variable (... (Y2) associated Set point).
                GROUP__fbl_C0000C5_04_3A28)                ;;FBox user name.
 ;; Position: Linear 2-Points2.0 -  - 26,35
 __fbl_C0000C5_04_3A29___SG_COB_1           EQU                   $ ;Mark FBox position.
@@ -1995,7 +1995,7 @@ _DDC_SPLINEAR21(               200000,                               ;;Version I
                0,                                 ;;Init variable ((X1) Outside air temperature.).
                0,                                 ;;Init variable (... (Y1) associated Set point).
                1000,                              ;;Init variable ((X2) Outside air temperature.).
-               1023,                              ;;Init variable (... (Y2) associated Set point).
+               500,                               ;;Init variable (... (Y2) associated Set point).
                GROUP__fbl_C0000C5_04_3A2B)                ;;FBox user name.
 ;; Position: PCD2/3.W4 -  - 47,23
 __fbl_C0000C5_04_B97F___SG_COB_1           EQU                   $ ;Mark FBox position.
@@ -2045,7 +2045,7 @@ _MODBUS_MASTERTCPEXT2(               2,                                    ;;Ver
                __stc_id_0B984_var_05___SG_COB_2,               ;;Static variable RsCy[1].
                __stc_id_0B984_var_06___SG_COB_2,               ;;Static variable LED[1].
                1,                                 ;;Init variable (Channel).
-               502,                               ;;Init variable (Remote port number).
+               503,                               ;;Init variable (Remote port number).
                0,                                 ;;Init variable (Protocol ).
                10,                                ;;Init variable (Idle disconnect time [s]).
                10,                                ;;Init variable (Timeout [s]).
@@ -2065,7 +2065,7 @@ _MODBUS_CLUNIT2(               2,                                    ;;Version I
                __stc_id_0B985_var_00___SG_COB_2,               ;;Static variable Fs[2].
                __stc_id_0B985_var_01___SG_COB_2,               ;;Static variable Rs[6].
                __stc_id_0B985_var_02___SG_COB_2,               ;;Static variable LED[1].
-               -1062729970,                       ;;Init variable (IP Address).
+               -1062729773,                       ;;Init variable (IP Address).
                1,                                 ;;Init variable (Unit identifier).
                0,                                 ;;Init variable (Offset 1->0 ).
                1,                                 ;;Init variable (Request counter ).
@@ -2085,7 +2085,7 @@ _MODBUS_RXINT( 1,                                    ;;Version Indicator.
                __stc_id_0B987_var_01___SG_COB_2,               ;;Static variable LED[1].
                4,                                 ;;Init variable (Function code ).
                1,                                 ;;Init variable (Processing ).
-               12088,                             ;;Init variable (Remote base address).
+               12087,                             ;;Init variable (Remote base address).
                1,                                 ;;Init variable (Execute now ).
                Unit)                                 ;;FBox reference.
 $endif							;; Page condition

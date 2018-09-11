@@ -133,7 +133,7 @@ __Saia_Sfup__.MaxFlag	EQU		16383	;For Fupla probes
 __Saia_Sfup__.rTmpCalc	EQU	R	10813
 __Saia_Sfup__.rTmpCalcRemainder	EQU	R	10814
 __Saia_Sfup__.rTmpCalcResult	EQU	R	10815
-__SAIASystemBuildTime__	EQU		0FC7D3593H	;Build key
+__SAIASystemBuildTime__	EQU		0272756BFH	;Build key
 __SASMVERS__	EQU		21410	;Assembler/linker version, old format (abccc)
 __TIME_BASE__	EQU		100	;Timer timebase in ms
 __TIME_BASE_EXTN__	EQU		100
@@ -359,6 +359,21 @@ HZE001.WE01.UWP.Stoerg.iSSm	EQU	F	942	;(1) Störmeldung Betriebsrückmeldung fehlt
 HZE001.WE02.Anforderung.Stoerg.iSSm	EQU	F	943	;(1) Störmeldung Betriebsrückmeldung fehlt
 HZE001.WE03.Anforderung.Stoerg.iSSm	EQU	F	944	;(1) Störmeldung Betriebsrückmeldung fehlt
 HZE002.Weiche.UWP.Stoerg.iSSm	EQU	F	945	;(1) Störmeldung Betriebsrückmeldung fehlt
+IO.Slot0.IOAccess.DIGITAL_INPUTS_0TO15	EQU		1024	;Address of digital inputs 0 to 15 in memory input range - used for direct access
+IO.Slot1.IOAccess.DIGITAL_OUTPUT_0TO3	EQU		1024	;Address of digital outputs 0 to 3 in memory output range - used for direct acces
+IO.Slot1.IOAccess.SWITCH_STATUS	EQU		1026	;Address of switch status in memory input range - used for direct access
+IO.Slot2.IOAccess.ANALOGUE_INPUT_0	EQU		1028	;Address of analogue input 0 in memory input range - used for direct access
+IO.Slot2.IOAccess.ANALOGUE_INPUT_1	EQU		1030	;Address of analogue input 1 in memory input range - used for direct access
+IO.Slot2.IOAccess.ANALOGUE_INPUT_2	EQU		1032	;Address of analogue input 2 in memory input range - used for direct access
+IO.Slot2.IOAccess.ANALOGUE_INPUT_3	EQU		1034	;Address of analogue input 3 in memory input range - used for direct access
+IO.Slot2.IOAccess.ANALOGUE_INPUT_4	EQU		1036	;Address of analogue input 4 in memory input range - used for direct access
+IO.Slot2.IOAccess.ANALOGUE_INPUT_5	EQU		1038	;Address of analogue input 5 in memory input range - used for direct access
+IO.Slot2.IOAccess.ANALOGUE_INPUT_6	EQU		1040	;Address of analogue input 6 in memory input range - used for direct access
+IO.Slot2.IOAccess.ANALOGUE_INPUT_7	EQU		1042	;Address of analogue input 7 in memory input range - used for direct access
+IO.Slot3.IOAccess.ANALOGUE_OUTPUT_0	EQU		1025	;Address of analogue output 0 in memory output range - used for direct access
+IO.Slot3.IOAccess.ANALOGUE_OUTPUT_1	EQU		1027	;Address of analogue output 1 in memory output range - used for direct access
+IO.Slot3.IOAccess.ANALOGUE_OUTPUT_2	EQU		1029	;Address of analogue output 2 in memory output range - used for direct access
+IO.Slot3.IOAccess.ANALOGUE_OUTPUT_3	EQU		1031	;Address of analogue output 3 in memory output range - used for direct access
 IOs.AI_72	EQU	I	32
 IOs.AI_512.iDefekt	EQU	F	946
 IOs.AI_512.iIstwert	EQU	R	707	;(1) Physikalischer Wert des Sensors = Ausgang "Iw"

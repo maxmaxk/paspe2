@@ -12883,9 +12883,9 @@ r, __mac__16eb48v._gomin, __mac__16eb48v._gomax, __mac__16eb48v._err)
 0-1936                                                                 0,                                 ;;Init variable (PCD Offline Trending (KB)).
 0-1937                                                                 0,                                 ;;Init variable (BACnet).
 0-1938                                                                 0,                                 ;;Init variable ((X1) Outside air temperature.).
-0-1939                                                                 500,                               ;;Init variable (... (Y1) associated Set point).
+0-1939                                                                 0,                                 ;;Init variable (... (Y1) associated Set point).
 0-1940                                                                 1000,                              ;;Init variable ((X2) Outside air temperature.).
-0-1941                                                                 1023,                              ;;Init variable (... (Y2) associated Set point).
+0-1941                                                                 250,                               ;;Init variable (... (Y2) associated Set point).
 0-1942                                                                 GROUP__fbl_C0000C5_04_3A28)                ;;FBox user name.
 0-1942-1                                             2  
 0-1942-2                                             2  
@@ -12963,7 +12963,7 @@ r, __mac__16eb48v._gomin, __mac__16eb48v._gomax, __mac__16eb48v._err)
 0-1995                                                                 0,                                 ;;Init variable ((X1) Outside air temperature.).
 0-1996                                                                 0,                                 ;;Init variable (... (Y1) associated Set point).
 0-1997                                                                 1000,                              ;;Init variable ((X2) Outside air temperature.).
-0-1998                                                                 1023,                              ;;Init variable (... (Y2) associated Set point).
+0-1998                                                                 500,                               ;;Init variable (... (Y2) associated Set point).
 0-1999                                                                 GROUP__fbl_C0000C5_04_3A2B)                ;;FBox user name.
 0-1999-1                                             2  
 0-1999-2                                             2  
@@ -13226,7 +13226,7 @@ C5___SG_COB_1+3 , , , , , , , , , , , , , IOs.AO_88 , __stc_id_0B97F_var_00___SG
 0-2045                                                                 __stc_id_0B984_var_05___SG_COB_2,               ;;Static variable RsCy[1].
 0-2046                                                                 __stc_id_0B984_var_06___SG_COB_2,               ;;Static variable LED[1].
 0-2047                                                                 1,                                 ;;Init variable (Channel).
-0-2048                                                                 502,                               ;;Init variable (Remote port number).
+0-2048                                                                 503,                               ;;Init variable (Remote port number).
 0-2049                                                                 0,                                 ;;Init variable (Protocol ).
 0-2050                                                                 10,                                ;;Init variable (Idle disconnect time [s]).
 0-2051                                                                 10,                                ;;Init variable (Timeout [s]).
@@ -13244,7 +13244,7 @@ C5___SG_COB_1+3 , , , , , , , , , , , , , IOs.AO_88 , __stc_id_0B97F_var_00___SG
 0-2055-8                                             1                  __stc_id_0B984_var_03___SG_COB_2,__stc_id_0B984_var_04___SG_COB_2,__stc_id_0B984_var_05___SG_COB_2,__stc_id_0B984_var_06___SG_CO
 B_2,        
 0-2055-9                                             1                  1,                
-0-2055-10                                            1                  502,                   
+0-2055-10                                            1                  503,                   
 0-2055-11                                            1                  0,               
 0-2055-12                                            1                  10,                
 0-2055-13                                            1                  10,                
@@ -13356,7 +13356,7 @@ B_2,
 0-2055-103      ?5      CSF        13                2          CSF     Cnst.Library
 0-2055-104      ?6                 4                 2                  Cnst.OpenChannel
 0-2055-105      ?7                 1                 2                  1
-0-2055-106      ?8                 502               2                  502
+0-2055-106      ?8                 503               2                  503
 0-2055-107      ?9                 0                 2                  0                
 0-2055-108      ?10            X   0                A2                  __mac__1dns4ch.xdiag
 0-2055-109      ?11                10                2                  10
@@ -13517,7 +13517,7 @@ B_2,
 0-2065                                                                 __stc_id_0B985_var_00___SG_COB_2,               ;;Static variable Fs[2].
 0-2066                                                                 __stc_id_0B985_var_01___SG_COB_2,               ;;Static variable Rs[6].
 0-2067                                                                 __stc_id_0B985_var_02___SG_COB_2,               ;;Static variable LED[1].
-0-2068                                                                 -1062729970,                       ;;Init variable (IP Address).
+0-2068                                                                 -1062729773,                       ;;Init variable (IP Address).
 0-2069                                                                 1,                                 ;;Init variable (Unit identifier).
 0-2070                                                                 0,                                 ;;Init variable (Offset 1->0 ).
 0-2071                                                                 1,                                 ;;Init variable (Request counter ).
@@ -13528,7 +13528,7 @@ B_2,
 0-2074-2                                             1  _modbus_client_unit (2,D,
 0-2074-3                                             1                  __high,
 0-2074-4                                             1                  __low,                  
-0-2074-5                                             1                  -1062729970,                  
+0-2074-5                                             1                  -1062729773,                  
 0-2074-6                                             1                  1,                    
 0-2074-7                                             1                  ___FlgDyn_C0000F5___SG_COB_2+0,                
 0-2074-8                                             1                  ___FlgDyn_C0000F5___SG_COB_2+1,                
@@ -13606,11 +13606,11 @@ B_2,
 0-2074-68                                            2  
 0-2074-69                                            2  
 0-2074-70                                            2  
-0-2074-71                                            2  $iftype -1062729970=k
+0-2074-71                                            2  $iftype -1062729773=k
 0-2074-72        3692   LD     R   0                A2          ld      _IPADD          
-0-2074-73        3693              -1062729970       2                  -1062729970
+0-2074-73        3693              -1062729773       2                  -1062729773
 0-2074-74                                            2  $else
-0-2074-75                                            2*         copy    -1062729970
+0-2074-75                                            2*         copy    -1062729773
 0-2074-76                                            2*                 _IPADD          
 0-2074-77                                            2* $endif
 0-2074-78                                            2  
@@ -13696,7 +13696,7 @@ B_2,
 0-2085                                                                 __stc_id_0B987_var_01___SG_COB_2,               ;;Static variable LED[1].
 0-2086                                                                 4,                                 ;;Init variable (Function code ).
 0-2087                                                                 1,                                 ;;Init variable (Processing ).
-0-2088                                                                 12088,                             ;;Init variable (Remote base address).
+0-2088                                                                 12087,                             ;;Init variable (Remote base address).
 0-2089                                                                 1,                                 ;;Init variable (Execute now ).
 0-2090                                                                 Unit)                                 ;;FBox reference.
 0-2090-1                                             1  
@@ -13707,7 +13707,7 @@ B_2,
 0-2090-6                                             1                  __stc_id_0B987_var_00___SG_COB_2,__stc_id_0B987_var_01___SG_COB_2,                 
 0-2090-7                                             1                  4,
 0-2090-8                                             1                  1,
-0-2090-9                                             1                  12088,
+0-2090-9                                             1                  12087,
 0-2090-10                                            1                  1,                     
 0-2090-11                                            1                  Unit)
 0-2090-1                                             2  
@@ -13781,10 +13781,10 @@ B_2,
 0-2090-69                                            2          _modbus_load(_NODE,_IPADD)      
 0-2090-70                                            2          _modbus_load(_STATION,_UID)
 0-2090-71                                            2          _modbus_load(_FUNCTION,4)
-0-2090-72                                            2          _modbus_load(_ADDRESS,12088)
+0-2090-72                                            2          _modbus_load(_ADDRESS,12087)
 0-2090-73                                            2          _modbus_load(_NUMBER,__mac__1dns4gq.number)
 0-2090-74                                            2  
-0-2090-75                                            2          _modbus_load(_RADDOFF,12088)  
+0-2090-75                                            2          _modbus_load(_RADDOFF,12087)  
 0-2090-76        3775   SUB    R   0                A2          sub     _RADDOFF                
 0-2090-77        3776          K   0                 2                  k _OFFSET
 0-2090-78        3777          R   0                A2                  _RADDOFF

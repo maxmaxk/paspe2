@@ -3,8 +3,8 @@ Version=529
 Compiler=310
 Bues=1
 VisiPlus=0
-PrjID=112
-UpdateGlobals=0
+PrjID=24588
+UpdateGlobals=1
 DnldInRun=0
 FuplaVersion=V2.1.410
 CodePage=1251
@@ -3474,7 +3474,7 @@ Conn7=66 19 232 33 13
 Conn8=16 25 230 34 13
 Conn9=40 25 219 33 13
 [PAGEDEF]
-PageLen=3570
+PageLen=3566
 [PAGE]
 Name=Ana_Output W800
 Comment=BA88
@@ -3512,9 +3512,9 @@ av2=a BACnet %s =0 {0..2}
 av3=c c0 =0 \nabs 
 av4=v Y 0 %1p 
 av5=a X1 0 %1p =260:0 
-av6=a Y1 0 %1p =210:500 
+av6=a Y1 0 %1p =210:0 
 av7=a X2 0 %1p =340:1000 
-av8=a Y2 0 %1p =280:1023 
+av8=a Y2 0 %1p =280:250 
 av9=c cc =0 \nabs 
 AcceptName=1
 Folder=Sollwerte.Gerade?
@@ -3598,7 +3598,7 @@ av4=v Y 0 %1p
 av5=a X1 0 %1p =260:0 
 av6=a Y1 0 %1p =210:0 
 av7=a X2 0 %1p =340:1000 
-av8=a Y2 0 %1p =280:1023 
+av8=a Y2 0 %1p =280:500 
 av9=c cc =0 \nabs 
 AcceptName=1
 Folder=Sollwerte.Gerade?
@@ -3657,7 +3657,7 @@ ConditionalValue=0
 PageColor=16777215
 PageBackColor=0
 [PAGEDEF]
-PageLen=2323
+PageLen=2327
 [PAGE]
 RemarkSize=0
 CountOfLabels=27
@@ -3688,7 +3688,7 @@ Out=Active_SB Error_SB
 S=Fsb_F Fse_2F Fsd_10F Rs_5R Rsd_R RsCy_R LED_F 
 D=Fd_32F 
 av0=a CAN %s =1 {1..10} 
-av1=a POR =502 {0..65535} 
+av1=a POR =502:503 {0..65535} 
 av2=a MOD %s =0 {0,1} 
 av3=a DIS =10 {0..3600} 
 av4=a TOT %1p =10 {1..100} 
@@ -3728,7 +3728,7 @@ Vers=2
 In=Enable_B Clear_EB 
 Out=Active_B Error_B 
 S=Fs_2F Rs_6R LED_F 
-av0=a IPA %0i =-1062731519:-1062729970 
+av0=a IPA %0i =-1062731519:-1062729773 
 av1=a UID =1 {0..255} 
 av2=a OFF %s =0 {0,1} 
 av3=bv Fs 0 %s =1 \v Rs 0 
@@ -3756,7 +3756,7 @@ C=Add_Ir=248 #_Ik=144
 S=Fs_F LED_F 
 av0=a FUN %s =3:4 {3,4} 
 av1=a PRO %s =1 {1,2,3,4} 
-av2=a ADD =0:12088 {0..65535} 
+av2=a ADD =0:12087 {0..65535} 
 av3=b Fs 0 %s =1 
 aRef=2
 Ref=Unit

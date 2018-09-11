@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SaiaObjectData VersionStruct="2.0.101" VersionContent="2.0.111">
+<SaiaObjectData VersionStruct="2.0.101" VersionContent="2.0.111" idnextobject="6">
   <!--Copyright(C) 2009-2014, Saia-Burgess Controls AG-->
   <Object name="pcd3.controller.pcd3m5340">
     <SlotList>
@@ -68,8 +68,8 @@
                 <Item name="currentavailable5v">600</Item>
                 <Item name="currentavailable24v">100</Item>
                 <Item name="current24vfactors">100.0;0.0;150;0.067;260.0;0.208</Item>
-                <Item name="currentused5v">0</Item>
-                <Item name="currentused24v">0</Item>
+                <Item name="currentused5v">59</Item>
+                <Item name="currentused24v">50</Item>
               </Category>
               <Category name="serverfileaccess" minfwver="1.14.00" minfwacc="1.14.00">
                 <Item name="swebpage" section="SWeb" attrib="Page">start.htm</Item>
@@ -692,16 +692,595 @@
       </Category>
       <Category name="onboardslots">
         <Slot name="slot0" baseaddress="0" ioslotindex="0" visible="true">
-          <Object name="" />
+          <Object name="pcd3.digitalio.pcd3e165" idobject="2">
+            <PropertyList>
+              <Category name="general">
+                <Item name="baseaddress">0</Item>
+                <Item name="useonwatchdog">warning16di</Item>
+                <Item name="connectortype">C</Item>
+                <Item name="justinserted">0</Item>
+              </Category>
+              <Category name="powerconsumption">
+                <Item name="load5v">10</Item>
+              </Category>
+              <Category name="mediamapping0" visible="true">
+                <Item name="addressinputperipheral0">1024</Item>
+                <Item name="rangeinputperipheral0">2</Item>
+                <Item name="enabledmediamapping0">0</Item>
+                <Item name="directionmediamapping0">peripheraltomedia</Item>
+                <Item name="typemedia0">flag</Item>
+                <Item name="numbermedia0">16</Item>
+                <Item name="addressmedia0">
+                </Item>
+                <Item name="basesymbols0">S.IO.Slot0.DigitalInput</Item>
+                <Item name="flagsymbols0" xml:space="preserve">IO.Slot0.DigitalInput0	Digital input 0	S_IO	IO.Slot0.DigitalInput1	Digital input 1	S_IO	IO.Slot0.DigitalInput2	Digital input 2	S_IO	IO.Slot0.DigitalInput3	Digital input 3	S_IO	IO.Slot0.DigitalInput4	Digital input 4	S_IO	IO.Slot0.DigitalInput5	Digital input 5	S_IO	IO.Slot0.DigitalInput6	Digital input 6	S_IO	IO.Slot0.DigitalInput7	Digital input 7	S_IO	IO.Slot0.DigitalInput8	Digital input 8	S_IO	IO.Slot0.DigitalInput9	Digital input 9	S_IO	IO.Slot0.DigitalInput10	Digital input 10	S_IO	IO.Slot0.DigitalInput11	Digital input 11	S_IO	IO.Slot0.DigitalInput12	Digital input 12	S_IO	IO.Slot0.DigitalInput13	Digital input 13	S_IO	IO.Slot0.DigitalInput14	Digital input 14	S_IO	IO.Slot0.DigitalInput15	Digital input 15	S_IO</Item>
+                <Item name="flagaddress0" xml:space="preserve">S.IO.Slot0.DigitalInput + 0	1	Public	S.IO.Slot0.DigitalInput + 1	1	Public	S.IO.Slot0.DigitalInput + 2	1	Public	S.IO.Slot0.DigitalInput + 3	1	Public	S.IO.Slot0.DigitalInput + 4	1	Public	S.IO.Slot0.DigitalInput + 5	1	Public	S.IO.Slot0.DigitalInput + 6	1	Public	S.IO.Slot0.DigitalInput + 7	1	Public	S.IO.Slot0.DigitalInput + 8	1	Public	S.IO.Slot0.DigitalInput + 9	1	Public	S.IO.Slot0.DigitalInput + 10	1	Public	S.IO.Slot0.DigitalInput + 11	1	Public	S.IO.Slot0.DigitalInput + 12	1	Public	S.IO.Slot0.DigitalInput + 13	1	Public	S.IO.Slot0.DigitalInput + 14	1	Public	S.IO.Slot0.DigitalInput + 15	1	Public</Item>
+              </Category>
+            </PropertyList>
+            <Label>
+              <PropertyList>
+                <Category name="sizeandposition" visible="false" ro="true">
+                  <Item name="size">98,263</Item>
+                  <Item name="xyspace">30,50</Item>
+                </Category>
+                <Category name="print">
+                  <Item name="printenabled">1</Item>
+                </Category>
+                <Category name="common">
+                  <Item name="commonfont">Arial,7,normal</Item>
+                  <Item name="commontextheight">10</Item>
+                  <Item name="commontextcolor">Black</Item>
+                  <Item name="commonwidth">1</Item>
+                  <Item name="commonlinecolor">Black</Item>
+                  <Item name="commonlinevisible">1</Item>
+                </Category>
+                <Category name="border">
+                  <Item name="visibleborder">0</Item>
+                  <Item name="widthborder">1</Item>
+                </Category>
+                <Category name="hlinetop" visible="false" ro="true">
+                  <Item name="ypositionhlinetop">0</Item>
+                </Category>
+                <Category name="htextmoduletype" visible="false" ro="true">
+                  <Item name="texthtextmoduletype">E165</Item>
+                  <Item name="ypositionhtextmoduletype">4</Item>
+                  <Item name="heighthtextmoduletype">10</Item>
+                  <Item name="fonthtextmoduletype">Arial,7,normal</Item>
+                </Category>
+                <Category name="hline0" visible="false" ro="true">
+                  <Item name="ypositionhline0">16</Item>
+                </Category>
+                <Category name="htextinput0">
+                  <Item name="texthtextinput0">I0</Item>
+                  <Item name="ypositionhtextinput0">19</Item>
+                </Category>
+                <Category name="hline1" visible="false" ro="true">
+                  <Item name="ypositionhline1">30</Item>
+                </Category>
+                <Category name="htextinput1">
+                  <Item name="texthtextinput1">I1</Item>
+                  <Item name="ypositionhtextinput1">33</Item>
+                </Category>
+                <Category name="hline2" visible="false" ro="true">
+                  <Item name="ypositionhline2">45</Item>
+                </Category>
+                <Category name="htextinput2">
+                  <Item name="texthtextinput2">I2</Item>
+                  <Item name="ypositionhtextinput2">48</Item>
+                </Category>
+                <Category name="hline3" visible="false" ro="true">
+                  <Item name="ypositionhline3">59</Item>
+                </Category>
+                <Category name="htextinput3">
+                  <Item name="texthtextinput3">I3</Item>
+                  <Item name="ypositionhtextinput3">62</Item>
+                </Category>
+                <Category name="hline4" visible="false" ro="true">
+                  <Item name="ypositionhline4">74</Item>
+                </Category>
+                <Category name="htextinput4">
+                  <Item name="texthtextinput4">I4</Item>
+                  <Item name="ypositionhtextinput4">77</Item>
+                </Category>
+                <Category name="hline5" visible="false" ro="true">
+                  <Item name="ypositionhline5">88</Item>
+                </Category>
+                <Category name="htextinput5">
+                  <Item name="texthtextinput5">I5</Item>
+                  <Item name="ypositionhtextinput5">91</Item>
+                </Category>
+                <Category name="hline6" visible="false" ro="true">
+                  <Item name="ypositionhline6">103</Item>
+                </Category>
+                <Category name="htextinput6">
+                  <Item name="texthtextinput6">I6</Item>
+                  <Item name="ypositionhtextinput6">106</Item>
+                </Category>
+                <Category name="hline7" visible="false" ro="true">
+                  <Item name="ypositionhline7">117</Item>
+                </Category>
+                <Category name="htextinput7">
+                  <Item name="texthtextinput7">I7</Item>
+                  <Item name="ypositionhtextinput7">120</Item>
+                </Category>
+                <Category name="hline8" visible="false" ro="true">
+                  <Item name="ypositionhline8">132</Item>
+                </Category>
+                <Category name="htextinput8">
+                  <Item name="texthtextinput8">I8</Item>
+                  <Item name="ypositionhtextinput8">135</Item>
+                </Category>
+                <Category name="hline9" visible="false" ro="true">
+                  <Item name="ypositionhline1">146</Item>
+                </Category>
+                <Category name="htextinput9">
+                  <Item name="texthtextinput9">I9</Item>
+                  <Item name="ypositionhtextinput9">149</Item>
+                </Category>
+                <Category name="hline10" visible="false" ro="true">
+                  <Item name="ypositionhline10">161</Item>
+                </Category>
+                <Category name="htextinput10">
+                  <Item name="texthtextinput10">I10</Item>
+                  <Item name="ypositionhtextinput10">164</Item>
+                </Category>
+                <Category name="hline11" visible="false" ro="true">
+                  <Item name="ypositionhline11">175</Item>
+                </Category>
+                <Category name="htextinput11">
+                  <Item name="texthtextinput11">I11</Item>
+                  <Item name="ypositionhtextinput11">178</Item>
+                </Category>
+                <Category name="hline12" visible="false" ro="true">
+                  <Item name="ypositionhline12">190</Item>
+                </Category>
+                <Category name="htextinput12">
+                  <Item name="texthtextinput12">I12</Item>
+                  <Item name="ypositionhtextinput12">193</Item>
+                </Category>
+                <Category name="hline13" visible="false" ro="true">
+                  <Item name="ypositionhline13">204</Item>
+                </Category>
+                <Category name="htextinput13">
+                  <Item name="texthtextinput13">I13</Item>
+                  <Item name="ypositionhtextinput13">207</Item>
+                </Category>
+                <Category name="hline14" visible="false" ro="true">
+                  <Item name="ypositionhline14">219</Item>
+                </Category>
+                <Category name="htextinput14">
+                  <Item name="texthtextinput14">I14</Item>
+                  <Item name="ypositionhtextinput14">222</Item>
+                </Category>
+                <Category name="hline15" visible="false" ro="true">
+                  <Item name="ypositionhline15">233</Item>
+                </Category>
+                <Category name="htextinput15">
+                  <Item name="texthtextinput15">I15</Item>
+                  <Item name="ypositionhtextinput15">236</Item>
+                </Category>
+                <Category name="hline16" visible="false" ro="true">
+                  <Item name="ypositionhline16">248</Item>
+                </Category>
+                <Category name="htextslot">
+                  <Item name="texthtextslot">Slot#0</Item>
+                  <Item name="ypositionslot">250</Item>
+                  <Item name="heightslot">14</Item>
+                  <Item name="fontslot">Arial,7,normal</Item>
+                </Category>
+                <Category name="hlinebottom" visible="false" ro="true">
+                  <Item name="ypositionhlinebottom">263</Item>
+                </Category>
+              </PropertyList>
+            </Label>
+          </Object>
         </Slot>
         <Slot name="slot1" baseaddress="16" ioslotindex="1" visible="true">
-          <Object name="" />
+          <Object name="pcd3.digitalio.pcd3a810" idobject="3">
+            <PropertyList>
+              <Category name="general">
+                <Item name="baseaddress">16</Item>
+                <Item name="useonwatchdog">yes</Item>
+                <Item name="connectortype">F</Item>
+                <Item name="justinserted">0</Item>
+              </Category>
+              <Category name="powerconsumption">
+                <Item name="load5v">40</Item>
+              </Category>
+              <Category name="mediamapping0" visible="true">
+                <Item name="addressoutputperipheral0">1024</Item>
+                <Item name="rangeoutputperipheral0">1</Item>
+                <Item name="enabledmediamapping0">0</Item>
+                <Item name="directionmediamapping0">mediatoperipheral</Item>
+                <Item name="typemedia0">flag</Item>
+                <Item name="numbermedia0">8</Item>
+                <Item name="addressmedia0">
+                </Item>
+                <Item name="basesymbols0">S.IO.Slot1.DigitalOutput</Item>
+                <Item name="flagsymbols0" xml:space="preserve">IO.Slot1.DigitalOutput0	Digital output 0	S_IO	IO.Slot1.DigitalOutput1	Digital output 1	S_IO	IO.Slot1.DigitalOutput2	Digital output 2	S_IO	IO.Slot1.DigitalOutput3	Digital output 3	S_IO		not used	S_IO		not used	S_IO		not used	S_IO		not used	S_IO</Item>
+                <Item name="flagaddress0" xml:space="preserve">S.IO.Slot1.DigitalOutput + 0	1	Public	S.IO.Slot1.DigitalOutput + 1	1	Public	S.IO.Slot1.DigitalOutput + 2	1	Public	S.IO.Slot1.DigitalOutput + 3	1	Public		0	Public		0	Public		0	Public		0	Public</Item>
+              </Category>
+              <Category name="mediamapping1" export="false" visible="true">
+                <Item name="addressinputperipheral1">1026</Item>
+                <Item name="rangeinputperipheral1">2</Item>
+                <Item name="enabledmediamapping1">0</Item>
+                <Item name="directionmediamapping1">peripheraltomedia</Item>
+                <Item name="typemedia1">flag</Item>
+                <Item name="numbermedia1">16</Item>
+                <Item name="addressmedia1">
+                </Item>
+                <Item name="basesymbols1">S.IO.Slot1.StateOutput</Item>
+                <Item name="flagsymbols1" xml:space="preserve">IO.Slot1.StateOutput0	State of digital output 0	S_IO	IO.Slot1.StateOutput1	State of digital output 1	S_IO	IO.Slot1.StateOutput2	State of digital output2	S_IO	IO.Slot1.StateOutput3	State of digital output 3	S_IO		not used	S_IO		not used	S_IO		not used	S_IO		not used	S_IO	IO.Slot1.StateSwitch0	State of switch 0	S_IO	IO.Slot1.StateSwitch1	State of switch 1	S_IO	IO.Slot1.StateSwitch2	State of switch 2	S_IO	IO.Slot1.StateSwitch3	State of switch 3	S_IO		not used	S_IO		not used	S_IO		not used	S_IO		not used	S_IO</Item>
+                <Item name="flagaddress1" xml:space="preserve">S.IO.Slot1.StateOutput + 0	1	Public	S.IO.Slot1.StateOutput + 1	1	Public	S.IO.Slot1.StateOutput + 2	1	Public	S.IO.Slot1.StateOutput + 3	1	Public		0	Public		0	Public		0	Public		0	Public	S.IO.Slot1.StateOutput + 8	1	Public	S.IO.Slot1.StateOutput + 9	1	Public	S.IO.Slot1.StateOutput + 10	1	Public	S.IO.Slot1.StateOutput + 11	1	Public		0	Public		0	Public		0	Public		0	Public</Item>
+              </Category>
+            </PropertyList>
+            <Label>
+              <PropertyList>
+                <Category name="sizeandposition" visible="false" ro="true">
+                  <Item name="size">98,263</Item>
+                  <Item name="xyspace">30,50</Item>
+                </Category>
+                <Category name="print">
+                  <Item name="printenabled">1</Item>
+                </Category>
+                <Category name="common">
+                  <Item name="commonfont">Arial,8,normal</Item>
+                  <Item name="commontextheight">20</Item>
+                  <Item name="commontextcolor">Black</Item>
+                  <Item name="commonwidth">1</Item>
+                  <Item name="commonlinecolor">Black</Item>
+                  <Item name="commonlinevisible">1</Item>
+                </Category>
+                <Category name="border">
+                  <Item name="visibleborder">0</Item>
+                  <Item name="widthborder">1</Item>
+                </Category>
+                <Category name="hlinetop" visible="false" ro="true">
+                  <Item name="ypositionhlinetop">0</Item>
+                </Category>
+                <Category name="htextmoduletype" visible="false" ro="true">
+                  <Item name="texthtextmoduletype">A810</Item>
+                  <Item name="ypositionhtextmoduletype">4</Item>
+                  <Item name="heighthtextmoduletype">10</Item>
+                  <Item name="fonthtextmoduletype">Arial,7,normal</Item>
+                </Category>
+                <Category name="hline0" visible="false" ro="true">
+                  <Item name="ypositionhline0">22</Item>
+                </Category>
+                <Category name="htextoutput0">
+                  <Item name="texthtextoutput0">O16</Item>
+                  <Item name="ypositionhtextoutput0">32</Item>
+                </Category>
+                <Category name="hline1" visible="false" ro="true">
+                  <Item name="ypositionhline1">59</Item>
+                </Category>
+                <Category name="htextoutput1">
+                  <Item name="texthtextoutput1">O17</Item>
+                  <Item name="ypositionhtextoutput1">69</Item>
+                </Category>
+                <Category name="hline2" visible="false" ro="true">
+                  <Item name="ypositionhline2">103</Item>
+                </Category>
+                <Category name="htextoutput2">
+                  <Item name="texthtextoutput2">O18</Item>
+                  <Item name="ypositionhtextoutput2">113</Item>
+                </Category>
+                <Category name="hline3" visible="false" ro="true">
+                  <Item name="ypositionhline3">146</Item>
+                </Category>
+                <Category name="htextoutput3">
+                  <Item name="texthtextoutput3">O19</Item>
+                  <Item name="ypositionhtextoutput3">156</Item>
+                </Category>
+                <Category name="hline4" visible="false" ro="true">
+                  <Item name="ypositionhline4">190</Item>
+                </Category>
+                <Category name="hline5" visible="false" ro="true">
+                  <Item name="ypositionhline5">246</Item>
+                </Category>
+                <Category name="htextslot">
+                  <Item name="texthtextslot">Slot#1</Item>
+                  <Item name="ypositionslot">246</Item>
+                  <Item name="fontslot">Arial,7,normal</Item>
+                </Category>
+                <Category name="hlinebottom" visible="false" ro="true">
+                  <Item name="ypositionhlinebottom">263</Item>
+                </Category>
+              </PropertyList>
+            </Label>
+          </Object>
         </Slot>
         <Slot name="slot2" baseaddress="32" ioslotindex="2" visible="true">
-          <Object name="" />
+          <Object name="pcd3.analogio.pcd3w340" idobject="4">
+            <PropertyList>
+              <Category name="general">
+                <Item name="baseaddress">32</Item>
+                <Item name="useonwatchdog">no</Item>
+                <Item name="connectortype">A</Item>
+                <Item name="justinserted">0</Item>
+              </Category>
+              <Category name="powerconsumption">
+                <Item name="load5v">8</Item>
+                <Item name="load24v">20</Item>
+              </Category>
+              <Category name="mediamapping0" visible="true">
+                <Item name="addressinputperipheral0">1028</Item>
+                <Item name="rangeinputperipheral0">16</Item>
+                <Item name="enabledmediamapping0">0</Item>
+                <Item name="directionmediamapping0">peripheraltomedia</Item>
+                <Item name="typemedia0">register</Item>
+                <Item name="numbermedia0">8</Item>
+                <Item name="addressmedia0">
+                </Item>
+                <Item name="basesymbols0">S.IO.Slot2.AnalogueInput</Item>
+                <Item name="registersymbols0" xml:space="preserve">IO.Slot2.AnalogueInput0	Analogue input 0	S_IO	IO.Slot2.AnalogueInput1	Analogue input 1	S_IO	IO.Slot2.AnalogueInput2	Analogue input 2	S_IO	IO.Slot2.AnalogueInput3	Analogue input 3	S_IO	IO.Slot2.AnalogueInput4	Analogue input 4	S_IO	IO.Slot2.AnalogueInput5	Analogue input 5	S_IO	IO.Slot2.AnalogueInput6	Analogue input 6	S_IO	IO.Slot2.AnalogueInput7	Analogue input 7	S_IO</Item>
+                <Item name="registeraddress0" xml:space="preserve">S.IO.Slot2.AnalogueInput + 0	1	Public	S.IO.Slot2.AnalogueInput + 1	1	Public	S.IO.Slot2.AnalogueInput + 2	1	Public	S.IO.Slot2.AnalogueInput + 3	1	Public	S.IO.Slot2.AnalogueInput + 4	1	Public	S.IO.Slot2.AnalogueInput + 5	1	Public	S.IO.Slot2.AnalogueInput + 6	1	Public	S.IO.Slot2.AnalogueInput + 7	1	Public</Item>
+              </Category>
+              <Category name="analogueinput0" visible="true">
+                <Item name="rangeinput0">0..10000</Item>
+                <Item name="mininput0">0</Item>
+                <Item name="maxinput0">10000</Item>
+              </Category>
+              <Category name="analogueinput1" visible="true">
+                <Item name="rangeinput1">ni1000ls</Item>
+                <Item name="mininput1">-600</Item>
+                <Item name="maxinput1">2400</Item>
+              </Category>
+              <Category name="analogueinput2" visible="true">
+                <Item name="rangeinput2">0..10000</Item>
+                <Item name="mininput2">0</Item>
+                <Item name="maxinput2">10000</Item>
+              </Category>
+              <Category name="analogueinput3" visible="true">
+                <Item name="rangeinput3">0..10000</Item>
+                <Item name="mininput3">0</Item>
+                <Item name="maxinput3">10000</Item>
+              </Category>
+              <Category name="analogueinput4" visible="true">
+                <Item name="rangeinput4">0..10000</Item>
+                <Item name="mininput4">0</Item>
+                <Item name="maxinput4">10000</Item>
+              </Category>
+              <Category name="analogueinput5" visible="true">
+                <Item name="rangeinput5">0..10000</Item>
+                <Item name="mininput5">0</Item>
+                <Item name="maxinput5">10000</Item>
+              </Category>
+              <Category name="analogueinput6" visible="true">
+                <Item name="rangeinput6">0..10000</Item>
+                <Item name="mininput6">0</Item>
+                <Item name="maxinput6">10000</Item>
+              </Category>
+              <Category name="analogueinput7" visible="true">
+                <Item name="rangeinput7">0..10000</Item>
+                <Item name="mininput7">0</Item>
+                <Item name="maxinput7">10000</Item>
+              </Category>
+            </PropertyList>
+            <Label>
+              <PropertyList>
+                <Category name="sizeandposition" visible="false" ro="true">
+                  <Item name="size">98,263</Item>
+                  <Item name="xyspace">30,50</Item>
+                </Category>
+                <Category name="print">
+                  <Item name="printenabled">1</Item>
+                </Category>
+                <Category name="common">
+                  <Item name="commonfont">Arial,8,normal</Item>
+                  <Item name="commontextheight">20</Item>
+                  <Item name="commontextcolor">Black</Item>
+                  <Item name="commonwidth">1</Item>
+                  <Item name="commonlinecolor">Black</Item>
+                  <Item name="commonlinevisible">1</Item>
+                </Category>
+                <Category name="border">
+                  <Item name="visibleborder">0</Item>
+                  <Item name="widthborder">1</Item>
+                </Category>
+                <Category name="hlinetop" visible="false" ro="true">
+                  <Item name="ypositionhlinetop">0</Item>
+                </Category>
+                <Category name="htextmoduletype" visible="false" ro="true">
+                  <Item name="texthtextmoduletype">W340</Item>
+                  <Item name="ypositionhtextmoduletype">4</Item>
+                  <Item name="heighthtextmoduletype">10</Item>
+                  <Item name="fonthtextmoduletype">Arial,7,normal</Item>
+                </Category>
+                <Category name="hline0" visible="false" ro="true">
+                  <Item name="ypositionhline0">22</Item>
+                </Category>
+                <Category name="htextinput0">
+                  <Item name="texthtextinput0">I32</Item>
+                  <Item name="ypositionhtextinput0">26</Item>
+                </Category>
+                <Category name="hline1" visible="false" ro="true">
+                  <Item name="ypositionhline1">50</Item>
+                </Category>
+                <Category name="htextinput1">
+                  <Item name="texthtextinput1">I33</Item>
+                  <Item name="ypositionhtextinput1">54</Item>
+                </Category>
+                <Category name="hline2" visible="false" ro="true">
+                  <Item name="ypositionhline2">78</Item>
+                </Category>
+                <Category name="htextinput2">
+                  <Item name="texthtextinput2">I34</Item>
+                  <Item name="ypositionhtextinput2">82</Item>
+                </Category>
+                <Category name="hline3" visible="false" ro="true">
+                  <Item name="ypositionhline3">106</Item>
+                </Category>
+                <Category name="htextinput3">
+                  <Item name="texthtextinput3">I35</Item>
+                  <Item name="ypositionhtextinput3">110</Item>
+                </Category>
+                <Category name="hline4" visible="false" ro="true">
+                  <Item name="ypositionhline4">134</Item>
+                </Category>
+                <Category name="htextinput4">
+                  <Item name="texthtextinput4">I36</Item>
+                  <Item name="ypositionhtextinput4">138</Item>
+                </Category>
+                <Category name="hline5" visible="false" ro="true">
+                  <Item name="ypositionhline5">162</Item>
+                </Category>
+                <Category name="htextinput5">
+                  <Item name="texthtextinput5">I37</Item>
+                  <Item name="ypositionhtextinput5">166</Item>
+                </Category>
+                <Category name="hline6" visible="false" ro="true">
+                  <Item name="ypositionhline6">190</Item>
+                </Category>
+                <Category name="htextinput6">
+                  <Item name="texthtextinput6">I38</Item>
+                  <Item name="ypositionhtextinput6">194</Item>
+                </Category>
+                <Category name="hline7" visible="false" ro="true">
+                  <Item name="ypositionhline7">218</Item>
+                </Category>
+                <Category name="htextinput7">
+                  <Item name="texthtextinput7">I39</Item>
+                  <Item name="ypositionhtextinput7">222</Item>
+                </Category>
+                <Category name="hline8" visible="false" ro="true">
+                  <Item name="ypositionhline8">246</Item>
+                </Category>
+                <Category name="htextslot">
+                  <Item name="texthtextslot">Slot#2</Item>
+                  <Item name="ypositionslot">246</Item>
+                  <Item name="fontslot">Arial,7,normal</Item>
+                </Category>
+                <Category name="hlinebottom" visible="false" ro="true">
+                  <Item name="ypositionhlinebottom">263</Item>
+                </Category>
+              </PropertyList>
+            </Label>
+          </Object>
         </Slot>
         <Slot name="slot3" baseaddress="48" ioslotindex="3" visible="true">
-          <Object name="" />
+          <Object name="pcd3.analogio.pcd3w400" idobject="6">
+            <PropertyList>
+              <Category name="general">
+                <Item name="baseaddress">48</Item>
+                <Item name="useonwatchdog">no</Item>
+                <Item name="connectortype">A</Item>
+                <Item name="simatic">specific</Item>
+                <Item name="justinserted">0</Item>
+              </Category>
+              <Category name="powerconsumption">
+                <Item name="load5v">1</Item>
+                <Item name="load24v">30</Item>
+              </Category>
+              <Category name="mediamapping0" visible="true">
+                <Item name="addressoutputperipheral0">1025</Item>
+                <Item name="rangeoutputperipheral0">8</Item>
+                <Item name="enabledmediamapping0">0</Item>
+                <Item name="directionmediamapping0">mediatoperipheral</Item>
+                <Item name="typemedia0">register</Item>
+                <Item name="numbermedia0">4</Item>
+                <Item name="addressmedia0">
+                </Item>
+                <Item name="basesymbols0">S.IO.Slot3.AnalogueOutput</Item>
+                <Item name="registersymbols0" xml:space="preserve">IO.Slot3.AnalogueOutput0	Analogue output 0	S_IO	IO.Slot3.AnalogueOutput1	Analogue output 1	S_IO	IO.Slot3.AnalogueOutput2	Analogue output 2	S_IO	IO.Slot3.AnalogueOutput3	Analogue output 3	S_IO</Item>
+                <Item name="registeraddress0" xml:space="preserve">S.IO.Slot3.AnalogueOutput + 0	1	Public	S.IO.Slot3.AnalogueOutput + 1	1	Public	S.IO.Slot3.AnalogueOutput + 2	1	Public	S.IO.Slot3.AnalogueOutput + 3	1	Public</Item>
+              </Category>
+              <Category name="analogueoutput0" visible="true">
+                <Item name="rangeoutput0">0..10000</Item>
+                <Item name="minoutput0">0</Item>
+                <Item name="maxoutput0">10000</Item>
+              </Category>
+              <Category name="analogueoutput1" visible="true">
+                <Item name="rangeoutput1">0..10000</Item>
+                <Item name="minoutput1">0</Item>
+                <Item name="maxoutput1">10000</Item>
+              </Category>
+              <Category name="analogueoutput2" visible="true">
+                <Item name="rangeoutput2">0..10000</Item>
+                <Item name="minoutput2">0</Item>
+                <Item name="maxoutput2">10000</Item>
+              </Category>
+              <Category name="analogueoutput3" visible="true">
+                <Item name="rangeoutput3">0..10000</Item>
+                <Item name="minoutput3">0</Item>
+                <Item name="maxoutput3">10000</Item>
+              </Category>
+            </PropertyList>
+            <Label>
+              <PropertyList>
+                <Category name="sizeandposition" visible="false" ro="true">
+                  <Item name="size">98,263</Item>
+                  <Item name="xyspace">30,50</Item>
+                </Category>
+                <Category name="print">
+                  <Item name="printenabled">1</Item>
+                </Category>
+                <Category name="common">
+                  <Item name="commonfont">Arial,8,normal</Item>
+                  <Item name="commontextheight">20</Item>
+                  <Item name="commontextcolor">Black</Item>
+                  <Item name="commonwidth">1</Item>
+                  <Item name="commonlinecolor">Black</Item>
+                  <Item name="commonlinevisible">1</Item>
+                </Category>
+                <Category name="border">
+                  <Item name="visibleborder">0</Item>
+                  <Item name="widthborder">1</Item>
+                </Category>
+                <Category name="hlinetop" visible="false" ro="true">
+                  <Item name="ypositionhlinetop">0</Item>
+                </Category>
+                <Category name="htextmoduletype" visible="false" ro="true">
+                  <Item name="texthtextmoduletype">W400</Item>
+                  <Item name="ypositionhtextmoduletype">4</Item>
+                  <Item name="heighthtextmoduletype">10</Item>
+                  <Item name="fonthtextmoduletype">Arial,7,normal</Item>
+                </Category>
+                <Category name="hline0" visible="false" ro="true">
+                  <Item name="ypositionhline0">22</Item>
+                </Category>
+                <Category name="htextoutput0">
+                  <Item name="texthtextoutput0">O48</Item>
+                  <Item name="ypositionhtextoutput0">26</Item>
+                </Category>
+                <Category name="hline1" visible="false" ro="true">
+                  <Item name="ypositionhline1">50</Item>
+                </Category>
+                <Category name="htextoutput1">
+                  <Item name="texthtextoutput1">O49</Item>
+                  <Item name="ypositionhtextoutput1">54</Item>
+                </Category>
+                <Category name="hline2" visible="false" ro="true">
+                  <Item name="ypositionhline2">78</Item>
+                </Category>
+                <Category name="htextoutput2">
+                  <Item name="texthtextoutput2">O50</Item>
+                  <Item name="ypositionhtextoutput2">82</Item>
+                </Category>
+                <Category name="hline3" visible="false" ro="true">
+                  <Item name="ypositionhline3">106</Item>
+                </Category>
+                <Category name="htextoutput3">
+                  <Item name="texthtextoutput3">O51</Item>
+                  <Item name="ypositionhtextoutput3">110</Item>
+                </Category>
+                <Category name="hline4" visible="false" ro="true">
+                  <Item name="ypositionhline4">134</Item>
+                </Category>
+                <Category name="hline5" visible="false" ro="true">
+                  <Item name="ypositionhline5">246</Item>
+                </Category>
+                <Category name="htextslot">
+                  <Item name="texthtextslot">Slot#3</Item>
+                  <Item name="ypositionslot">246</Item>
+                  <Item name="fontslot">Arial,7,normal</Item>
+                </Category>
+                <Category name="hlinebottom" visible="false" ro="true">
+                  <Item name="ypositionhlinebottom">263</Item>
+                </Category>
+              </PropertyList>
+            </Label>
+          </Object>
         </Slot>
         <Slot name="expansion" visible="true">
           <Object name="" />

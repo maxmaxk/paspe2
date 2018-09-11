@@ -3782,7 +3782,7 @@ C,2055,4,       F   0,A,__mac__1dns4ch.fdiag,__mac__1dns4ch.fdiag,
 C,2055,5,CSF        13,L,_modbus_client.ModbusClient.Cnst.Library,,
 C,2055,6,           4,L,_modbus_client.ModbusClient.Cnst.OpenChannel,,
 C,2055,7,           1,L,__abs___1,,
-C,2055,8,           502,L,__abs___502,,
+C,2055,8,           503,L,__abs___503,,
 C,2055,9,           0,L,__abs___0,,
 C,2055,10,       X   0,A,__mac__1dns4ch.xdiag,__mac__1dns4ch.xdiag,
 C,2055,11,           10,L,__abs___10,,
@@ -3888,7 +3888,7 @@ U
 X+,2074,16
 X-,2074,16
 C,2074,3692,LD     R   0,A,_modbus_client.Unit._IPADD,_modbus_client.Unit._IPADD,
-C,2074,3693,           -1062729970,L,,,
+C,2074,3693,           -1062729773,L,,,
 C,2074,3695,LD     R   0,A,_modbus_client.Unit._UID,_modbus_client.Unit._UID,
 C,2074,3696,           1,L,__abs___1,,
 C,2074,3698,STH    F   0,E,__high,__high,

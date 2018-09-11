@@ -1,24 +1,24 @@
 SAIA PG5 LINKER V2.1.410                                               Page 1
 User: Renergie
-File: PASPE_2.pcd   Linked: 06/09/18 17:54 
+File: PASPE_2.pcd   Linked: 11/09/18 15:46 
 
         CODE    CODE    TXT/DB  EXTEN
 FILE    START   SEG     SEG     SEG     ASSEMBLY         FILE
 NUMBER  LINE    LINES   BYTES   BYTES   DATE AND TIME    NAME
 --------------------------------------------------------------------------------
-1       0       0       416     0       06/09/18 17:54   _PASPE_2.src
-2       0       3823    179     1144    06/09/18 17:54   HKLS2.fbd
-3       3823    0       0       0       06/09/18 17:54   InitODM.src
-4       3823    1010    200     0       06/09/18 17:54   heavac5.srx
-5       4833    240     2808    0       06/09/18 17:54   sfupanl5.srx
-6       5073    0       0       0       06/09/18 17:54   sModMaster.srx
+1       0       0       804     0       11/09/18 15:46   _PASPE_2.src
+2       0       3823    179     1144    11/09/18 15:46   HKLS2.fbd
+3       3823    0       0       0       11/09/18 15:46   InitODM.src
+4       3823    1010    200     0       11/09/18 15:46   heavac5.srx
+5       4833    240     2808    0       11/09/18 15:46   sfupanl5.srx
+6       5073    0       0       0       11/09/18 15:46   sModMaster.srx
 7       5073    78      12      0       14/10/14 11:02   sfuplib3.src
 --------------------------------------------------------------------------------
 
 CODE SEGMENT SIZE:      6076 LINES (24304 BYTES)
-TEXT/DB SEGMENT SIZE:   3615 BYTES
+TEXT/DB SEGMENT SIZE:   4003 BYTES
 EXTENSION MEM SIZE:     1144 BYTES
-PUBLIC SYMBOLS:         673
+PUBLIC SYMBOLS:         688
 
 PUBLIC SYMBOLS
 ___ETR___  F    16054         7#    7     
@@ -250,7 +250,7 @@ __Saia_Sfup__.rTmpCalcRemainder
 __Saia_Sfup__.rTmpCalcResult
            R    10815         7#    7     
 __SAIASystemBuildTime__
-                0FC7D3593H    1#    7     
+                0272756BFH    1#    7     
 __SASMVERS__    21410         1#    
 __TIME_BASE__   100           1#    
 __TIME_BASE_EXTN__
@@ -692,6 +692,36 @@ HZE001.WE03.Anforderung.Stoerg.iSSm
            F    944           2#    2     
 HZE002.Weiche.UWP.Stoerg.iSSm
            F    945           2#    2     
+IO.Slot0.IOAccess.DIGITAL_INPUTS_0TO15
+                1024          1#    
+IO.Slot1.IOAccess.DIGITAL_OUTPUT_0TO3
+                1024          1#    
+IO.Slot1.IOAccess.SWITCH_STATUS
+                1026          1#    
+IO.Slot2.IOAccess.ANALOGUE_INPUT_0
+                1028          1#    
+IO.Slot2.IOAccess.ANALOGUE_INPUT_1
+                1030          1#    
+IO.Slot2.IOAccess.ANALOGUE_INPUT_2
+                1032          1#    
+IO.Slot2.IOAccess.ANALOGUE_INPUT_3
+                1034          1#    
+IO.Slot2.IOAccess.ANALOGUE_INPUT_4
+                1036          1#    
+IO.Slot2.IOAccess.ANALOGUE_INPUT_5
+                1038          1#    
+IO.Slot2.IOAccess.ANALOGUE_INPUT_6
+                1040          1#    
+IO.Slot2.IOAccess.ANALOGUE_INPUT_7
+                1042          1#    
+IO.Slot3.IOAccess.ANALOGUE_OUTPUT_0
+                1025          1#    
+IO.Slot3.IOAccess.ANALOGUE_OUTPUT_1
+                1027          1#    
+IO.Slot3.IOAccess.ANALOGUE_OUTPUT_2
+                1029          1#    
+IO.Slot3.IOAccess.ANALOGUE_OUTPUT_3
+                1031          1#    
 IOs.AI_512.iDefekt
            F    946           2#    2     
 IOs.AI_512.iIstwert
