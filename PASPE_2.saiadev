@@ -196,7 +196,7 @@
                 <Item name="firststnserialsbus" section="SBusSerialMG_0" attrib="StartAddress" minfwver="1.20.00">0</Item>
                 <Item name="laststnserialsbus" section="SBusSerialMG_0" attrib="EndAddress" minfwver="1.20.00">253</Item>
               </Category>
-              <Category name="timingserialsbus">
+              <Category name="timingserialsbus" ro="true">
                 <Item name="mode" section="SBusSerial_0" section1="SBusSerialMG_0" section2="SBusModem" attrib="Mode" minfwver="1.20.00">data</Item>
                 <Item name="baudrateserialsbus" section="SBusSerial_0" section1="SBusSerialMG_0" section2="Modem" attrib="Baudrate" minfwver="1.20.00">9600</Item>
                 <Item name="timeoutserialsbus" section="SBusSerialMG_0" attrib="Timeout" minfwver="1.20.00">0</Item>
@@ -204,7 +204,7 @@
                 <Item name="tndelay" section="SBusSerial_0" section1="SBusSerialMG_0" section2="SBusModem" attrib="TnDelay" minfwver="1.20.00">0</Item>
               </Category>
               <Category name="ppp" minfwver="1.14.00" minfwacc="1.14.00">
-                <Item name="pppportid" section="PPP" attrib="PortID">0</Item>
+                <Item name="pppportid" section="PPP" attrib="PortID">-1</Item>
                 <Item name="pppenable" section="PPP" attrib="Enable">0</Item>
                 <Item name="pppmode" section="PPP" attrib="Mode">1</Item>
                 <Item name="ppplocaladdress" section="PPP" attrib="LocalAddress">0.0.0.0</Item>

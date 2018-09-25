@@ -133,7 +133,7 @@ __Saia_Sfup__.MaxFlag	EQU		16383	;For Fupla probes
 __Saia_Sfup__.rTmpCalc	EQU	R	10813
 __Saia_Sfup__.rTmpCalcRemainder	EQU	R	10814
 __Saia_Sfup__.rTmpCalcResult	EQU	R	10815
-__SAIASystemBuildTime__	EQU		0272756BFH	;Build key
+__SAIASystemBuildTime__	EQU		0DAF2EA8BH	;Build key
 __SASMVERS__	EQU		21410	;Assembler/linker version, old format (abccc)
 __TIME_BASE__	EQU		100	;Timer timebase in ms
 __TIME_BASE_EXTN__	EQU		100
@@ -141,17 +141,17 @@ __TIME_CONVERT__	EQU	F	10	;H=convert time, L=don't convert
 __TIME_DIVFACT__	EQU		1
 __TIME_MULFACT__	EQU		1
 __TIME_MULTIPLY__	EQU	F	11	;H=multiply time, L=divide
-_ALARM	EQU	F	78[5]
-_ALARMG	EQU	F	81
+_ALARM	EQU	F	160[5]
+_ALARMG	EQU	F	163
 _analogue._FB._LinBalco	EQU	FB	35
 _analogue._FB._LinearNi1000	EQU	FB	36
 _analogue._FB._LinearPt1000	EQU	FB	37
 _analogue._FB._LinNiLS	EQU	FB	38
-_HEAVAC._ALARM._ALARM	EQU	F	78[5]
-_HEAVAC._ALARM._ALARMG	EQU	F	81
-_HEAVAC._ALARM._QUIT	EQU	F	79
-_HEAVAC._ALARM._QUITALL	EQU	F	80
-_HEAVAC._ALARM._QUITG	EQU	F	82
+_HEAVAC._ALARM._ALARM	EQU	F	160[5]
+_HEAVAC._ALARM._ALARMG	EQU	F	163
+_HEAVAC._ALARM._QUIT	EQU	F	161
+_HEAVAC._ALARM._QUITALL	EQU	F	162
+_HEAVAC._ALARM._QUITG	EQU	F	164
 _HEAVAC._CLOCK._ALLPHDAY1	EQU	F	16016
 _HEAVAC._CLOCK._DAY	EQU	R	10682
 _HEAVAC._CLOCK._DAYINYEAR	EQU	R	10691
@@ -216,19 +216,19 @@ _HEAVAC._SAMPLING._INTERVALC	EQU		10
 _HEAVAC._SAMPLING._ONESEC	EQU	F	314
 _HEAVAC._SAMPLING._OVERRUN	EQU	F	315
 _HEAVAC._SAMPLING._SAMPLE	EQU	F	316
-_QUIT	EQU	F	79
-_QUITALL	EQU	F	80
-_QUITG	EQU	F	82
-_shmsr.system.AussenTemp	EQU	R	605	;Aussenluftemperatur
-_shmsr.system.DateDay	EQU	R	599	;Tag
-_shmsr.system.DateMonth	EQU	R	600	;Monat
-_shmsr.system.DateWDay	EQU	R	597	;Wochentag
-_shmsr.system.QuitSm	EQU	F	129	;Quittierung Störmeldungen
-_shmsr.system.QuitWart	EQU	F	130	;Quittierung Wartungsmeldungen
-_shmsr.system.SecPulse	EQU	F	128	;--- vorhaltung ---
-_shmsr.system.TimeHHMM	EQU	R	596[20]	;Uhrzeit Format HH:MM
-_shmsr.system.TimeSS	EQU	R	598	;Sekunden
-_shmsr.system.WatchDog	EQU	F	121[20]	;WatchDog
+_QUIT	EQU	F	161
+_QUITALL	EQU	F	162
+_QUITG	EQU	F	164
+_shmsr.system.AussenTemp	EQU	R	609	;Aussenluftemperatur
+_shmsr.system.DateDay	EQU	R	603	;Tag
+_shmsr.system.DateMonth	EQU	R	604	;Monat
+_shmsr.system.DateWDay	EQU	R	601	;Wochentag
+_shmsr.system.QuitSm	EQU	F	235	;Quittierung Störmeldungen
+_shmsr.system.QuitWart	EQU	F	236	;Quittierung Wartungsmeldungen
+_shmsr.system.SecPulse	EQU	F	234	;--- vorhaltung ---
+_shmsr.system.TimeHHMM	EQU	R	600[20]	;Uhrzeit Format HH:MM
+_shmsr.system.TimeSS	EQU	R	602	;Sekunden
+_shmsr.system.WatchDog	EQU	F	227[20]	;WatchDog
 _shmsr.work.C01	EQU	C	1000[10]	;Hilfscounter 1
 _shmsr.work.C02	EQU	C	1001	;Hilfscounter 2
 _shmsr.work.C03	EQU	C	1002	;Hilfscounter 3
@@ -239,64 +239,64 @@ _shmsr.work.C07	EQU	C	1006	;Hilfscounter 7
 _shmsr.work.C08	EQU	C	1007	;Hilfscounter 8
 _shmsr.work.C09	EQU	C	1008	;Hilfscounter 9
 _shmsr.work.C10	EQU	C	1009	;Hilfscounter 10
-_shmsr.work.F01	EQU	F	141[22]	;Hilfsflag 1
-_shmsr.work.F02	EQU	F	142	;Hilfsflag 2
-_shmsr.work.F03	EQU	F	143	;Hilfsflag 3
-_shmsr.work.F04	EQU	F	144	;Hilfsflag 4
-_shmsr.work.F05	EQU	F	145	;Hilfsflag 5
-_shmsr.work.F06	EQU	F	146	;Hilfsflag 6
-_shmsr.work.F07	EQU	F	147	;Hilfsflag 7
-_shmsr.work.F08	EQU	F	148	;Hilfsflag 8
-_shmsr.work.F09	EQU	F	149	;Hilfsflag 9
-_shmsr.work.F10	EQU	F	150	;Hilfsflag 10
-_shmsr.work.F11	EQU	F	151	;Hilfsflag 11
-_shmsr.work.F12	EQU	F	152	;Hilfsflag 12
-_shmsr.work.F13	EQU	F	153	;Hilfsflag 13
-_shmsr.work.F14	EQU	F	154	;Hilfsflag 14
-_shmsr.work.F15	EQU	F	155	;Hilfsflag 15
-_shmsr.work.F16	EQU	F	156	;Hilfsflag 16
-_shmsr.work.F17	EQU	F	157	;Hilfsflag 17
-_shmsr.work.F18	EQU	F	158	;Hilfsflag 18
-_shmsr.work.F19	EQU	F	159	;Hilfsflag 19
-_shmsr.work.F20	EQU	F	160	;Hilfsflag 20
-_shmsr.work.High	EQU	F	162	;High-Flag
-_shmsr.work.Low	EQU	F	161	;Low-Flag
-_shmsr.work.R01	EQU	R	616[31]	;Hilfsregister 1
-_shmsr.work.R02	EQU	R	617	;Hilfsregister 2
-_shmsr.work.R03	EQU	R	618	;Hilfsregister 3
-_shmsr.work.R04	EQU	R	619	;Hilfsregister 4
-_shmsr.work.R05	EQU	R	620	;Hilfsregister 5
-_shmsr.work.R06	EQU	R	621	;Hilfsregister 6
-_shmsr.work.R07	EQU	R	622	;Hilfsregister 7
-_shmsr.work.R08	EQU	R	623	;Hilfsregister 8
-_shmsr.work.R09	EQU	R	624	;Hilfsregister 9
-_shmsr.work.R10	EQU	R	625	;Hilfsregister 10
-_shmsr.work.R11	EQU	R	626	;Hilfsregister 11
-_shmsr.work.R12	EQU	R	627	;Hilfsregister 12
-_shmsr.work.R13	EQU	R	628	;Hilfsregister 13
-_shmsr.work.R14	EQU	R	629	;Hilfsregister 14
-_shmsr.work.R15	EQU	R	630	;Hilfsregister 15
-_shmsr.work.R16	EQU	R	631	;Hilfsregister 16
-_shmsr.work.R17	EQU	R	632	;Hilfsregister 17
-_shmsr.work.R18	EQU	R	633	;Hilfsregister 18
-_shmsr.work.R19	EQU	R	634	;Hilfsregister 19
-_shmsr.work.R20	EQU	R	635	;Hilfsregister 20
-_shmsr.work.tmpR01	EQU	R	637	;Hilfsregister 21
-_shmsr.work.tmpR02	EQU	R	638	;Hilfsregister 22
-_shmsr.work.tmpR03	EQU	R	639	;Hilfsregister 23
-_shmsr.work.tmpR04	EQU	R	640	;Hilfsregister 24
-_shmsr.work.tmpR05	EQU	R	641	;Hilfsregister 25
-_shmsr.work.tmpR06	EQU	R	642	;Hilfsregister 26
-_shmsr.work.tmpR07	EQU	R	643	;Hilfsregister 27
-_shmsr.work.tmpR08	EQU	R	644	;Hilfsregister 28
-_shmsr.work.tmpR09	EQU	R	645	;Hilfsregister 29
-_shmsr.work.tmpR10	EQU	R	646	;Hilfsregister 30
-_shmsr.work.Zero	EQU	R	636	;Register wert 0
+_shmsr.work.F01	EQU	F	247[22]	;Hilfsflag 1
+_shmsr.work.F02	EQU	F	248	;Hilfsflag 2
+_shmsr.work.F03	EQU	F	249	;Hilfsflag 3
+_shmsr.work.F04	EQU	F	250	;Hilfsflag 4
+_shmsr.work.F05	EQU	F	251	;Hilfsflag 5
+_shmsr.work.F06	EQU	F	252	;Hilfsflag 6
+_shmsr.work.F07	EQU	F	253	;Hilfsflag 7
+_shmsr.work.F08	EQU	F	254	;Hilfsflag 8
+_shmsr.work.F09	EQU	F	255	;Hilfsflag 9
+_shmsr.work.F10	EQU	F	256	;Hilfsflag 10
+_shmsr.work.F11	EQU	F	257	;Hilfsflag 11
+_shmsr.work.F12	EQU	F	258	;Hilfsflag 12
+_shmsr.work.F13	EQU	F	259	;Hilfsflag 13
+_shmsr.work.F14	EQU	F	260	;Hilfsflag 14
+_shmsr.work.F15	EQU	F	261	;Hilfsflag 15
+_shmsr.work.F16	EQU	F	262	;Hilfsflag 16
+_shmsr.work.F17	EQU	F	263	;Hilfsflag 17
+_shmsr.work.F18	EQU	F	264	;Hilfsflag 18
+_shmsr.work.F19	EQU	F	265	;Hilfsflag 19
+_shmsr.work.F20	EQU	F	266	;Hilfsflag 20
+_shmsr.work.High	EQU	F	268	;High-Flag
+_shmsr.work.Low	EQU	F	267	;Low-Flag
+_shmsr.work.R01	EQU	R	620[31]	;Hilfsregister 1
+_shmsr.work.R02	EQU	R	621	;Hilfsregister 2
+_shmsr.work.R03	EQU	R	622	;Hilfsregister 3
+_shmsr.work.R04	EQU	R	623	;Hilfsregister 4
+_shmsr.work.R05	EQU	R	624	;Hilfsregister 5
+_shmsr.work.R06	EQU	R	625	;Hilfsregister 6
+_shmsr.work.R07	EQU	R	626	;Hilfsregister 7
+_shmsr.work.R08	EQU	R	627	;Hilfsregister 8
+_shmsr.work.R09	EQU	R	628	;Hilfsregister 9
+_shmsr.work.R10	EQU	R	629	;Hilfsregister 10
+_shmsr.work.R11	EQU	R	630	;Hilfsregister 11
+_shmsr.work.R12	EQU	R	631	;Hilfsregister 12
+_shmsr.work.R13	EQU	R	632	;Hilfsregister 13
+_shmsr.work.R14	EQU	R	633	;Hilfsregister 14
+_shmsr.work.R15	EQU	R	634	;Hilfsregister 15
+_shmsr.work.R16	EQU	R	635	;Hilfsregister 16
+_shmsr.work.R17	EQU	R	636	;Hilfsregister 17
+_shmsr.work.R18	EQU	R	637	;Hilfsregister 18
+_shmsr.work.R19	EQU	R	638	;Hilfsregister 19
+_shmsr.work.R20	EQU	R	639	;Hilfsregister 20
+_shmsr.work.tmpR01	EQU	R	641	;Hilfsregister 21
+_shmsr.work.tmpR02	EQU	R	642	;Hilfsregister 22
+_shmsr.work.tmpR03	EQU	R	643	;Hilfsregister 23
+_shmsr.work.tmpR04	EQU	R	644	;Hilfsregister 24
+_shmsr.work.tmpR05	EQU	R	645	;Hilfsregister 25
+_shmsr.work.tmpR06	EQU	R	646	;Hilfsregister 26
+_shmsr.work.tmpR07	EQU	R	647	;Hilfsregister 27
+_shmsr.work.tmpR08	EQU	R	648	;Hilfsregister 28
+_shmsr.work.tmpR09	EQU	R	649	;Hilfsregister 29
+_shmsr.work.tmpR10	EQU	R	650	;Hilfsregister 30
+_shmsr.work.Zero	EQU	R	640	;Register wert 0
 A.Alarm.DDC_PCD01_ALA	EQU		1	;Alarmliste
 A.Alarm.PCD01_ALA.Flags	EQU	F	322[600]	;Alarmflags
 A.Alarm.PCD01_ALA.FlagsAck	EQU		-1	;Ack wird nicht verwendet
 A.Alarm.PCD01_ALA.FlagsDel	EQU		-1	;Clear wird nicht verwendet
-A.Alarm.PCD01_ALA.Handle	EQU	R	693	;Handle-ID
+A.Alarm.PCD01_ALA.Handle	EQU	R	787	;Handle-ID
 A.Alarm.PCD01_ALA.MaxAlarms	EQU		600	;max. numbers of alarms
 A.Alarm.PCD01_ALA.MaxHistory	EQU		250	;max. alarms in history
 A.Alarm.PCD01_ALA.MyName	EQU	TEXT	3301	;Name of list
@@ -317,48 +317,48 @@ A.BACnet.PCD.AlBattery.PCDInRef	EQU	F	935	;PCD Input Reference
 A.BACnet.PCD.AlXOB.OutOfService	EQU	F	936	;Out Of Service
 A.BACnet.PCD.AlXOB.PCDInRef	EQU	F	937	;PCD Input Reference
 A.ComplexMail.WebCMail.Body	EQU	TEXT	7803	;Text
-A.ComplexMail.WebCMail.Busy	EQU	F	100
-A.ComplexMail.WebCMail.Content	EQU	R	589	;Typ der Mail (Plain oder HTML)
-A.ComplexMail.WebCMail.DoInit	EQU	F	99
-A.ComplexMail.WebCMail.DREG	EQU	R	584[7]
-A.ComplexMail.WebCMail.IP_Port	EQU	R	583	;Portadresse des Mailproviders
+A.ComplexMail.WebCMail.Busy	EQU	F	206
+A.ComplexMail.WebCMail.Content	EQU	R	593	;Typ der Mail (Plain oder HTML)
+A.ComplexMail.WebCMail.DoInit	EQU	F	205
+A.ComplexMail.WebCMail.DREG	EQU	R	588[7]
+A.ComplexMail.WebCMail.IP_Port	EQU	R	587	;Portadresse des Mailproviders
 A.ComplexMail.WebCMail.LenSubject	EQU		150
 A.ComplexMail.WebCMail.LenText	EQU		300
-A.ComplexMail.WebCMail.MailerLocked	EQU	F	103
-A.ComplexMail.WebCMail.MailerWorks	EQU	F	101
-A.ComplexMail.WebCMail.MyBody	EQU	R	587
-A.ComplexMail.WebCMail.MyFile	EQU	R	590
-A.ComplexMail.WebCMail.MyPriority	EQU	R	585
-A.ComplexMail.WebCMail.MySubject	EQU	R	586
-A.ComplexMail.WebCMail.NEXE	EQU	F	98
+A.ComplexMail.WebCMail.MailerLocked	EQU	F	209
+A.ComplexMail.WebCMail.MailerWorks	EQU	F	207
+A.ComplexMail.WebCMail.MyBody	EQU	R	591
+A.ComplexMail.WebCMail.MyFile	EQU	R	594
+A.ComplexMail.WebCMail.MyPriority	EQU	R	589
+A.ComplexMail.WebCMail.MySubject	EQU	R	590
+A.ComplexMail.WebCMail.NEXE	EQU	F	204
 A.ComplexMail.WebCMail.Sender	EQU	TEXT	3305	;Mailadresse des Absendersender
 A.ComplexMail.WebCMail.Subject	EQU	TEXT	7802	;Betreff
-A.ComplexMail.WebCMail.TBSY	EQU	F	97
-A.ComplexMail.WebCMail.TDIA	EQU	F	96[10]
-A.ComplexMail.WebCMail.To	EQU	R	588	;Empfänger
+A.ComplexMail.WebCMail.TBSY	EQU	F	203
+A.ComplexMail.WebCMail.TDIA	EQU	F	202[10]
+A.ComplexMail.WebCMail.To	EQU	R	592	;Empfänger
 A.ComplexMail.WebCMail.To1	EQU	TEXT	7809	;Mailadresse des 1ten Empfängers
 A.ComplexMail.WebCMail.To2	EQU	TEXT	3306	;Mailadresse des 2ten Empfängers
 A.ComplexMail.WebCMail.To3	EQU	TEXT	3307	;Mailadresse des 3ten Empfängers
 A.ComplexMail.WebCMail.To4	EQU	TEXT	3308	;Mailadresse des 4ten Empfängers
 A.ComplexMail.WebCMail.To5	EQU	TEXT	3309	;Mailadresse des 5ten Empfängers
-A.DDCSuite.Init.AckAlarm	EQU	F	129	;Acknowledge all stored alarm. Try to set them to normal state
-A.DDCSuite.Init.ClrMaint	EQU	F	130	;Clear all maintenance messages and restart internal counter
-A.DDCSuite.Init.OutdoorTemp	EQU	R	605	;Outdoor temperature
-A.HVC.Uhrzeit.Date	EQU	R	667
-A.HVC.Uhrzeit.DateCmd	EQU	F	176
-A.HVC.Uhrzeit.DayOW	EQU	R	668
-A.HVC.Uhrzeit.Time	EQU	R	666[3]
-A.HVC.Uhrzeit.TimeCmd	EQU	F	175
+A.DDCSuite.Init.AckAlarm	EQU	F	235	;Acknowledge all stored alarm. Try to set them to normal state
+A.DDCSuite.Init.ClrMaint	EQU	F	236	;Clear all maintenance messages and restart internal counter
+A.DDCSuite.Init.OutdoorTemp	EQU	R	609	;Outdoor temperature
+A.HVC.Uhrzeit.Date	EQU	R	671
+A.HVC.Uhrzeit.DateCmd	EQU	F	282
+A.HVC.Uhrzeit.DayOW	EQU	R	672
+A.HVC.Uhrzeit.Time	EQU	R	670[3]
+A.HVC.Uhrzeit.TimeCmd	EQU	F	281
 A.Mail.MailerWorks	EQU	F	938
 FileDringend	EQU	TEXT	3302
 FileNormal	EQU	TEXT	3303
 HIGH	EQU	F	940
 HZE001.Aussen.Temp.iRW10	EQU	R	704
-HZE001.WE01.Anforderung.Stoerg.iSSm	EQU	F	941	;(1) Störmeldung Betriebsrückmeldung fehlt
-HZE001.WE01.UWP.Stoerg.iSSm	EQU	F	942	;(1) Störmeldung Betriebsrückmeldung fehlt
-HZE001.WE02.Anforderung.Stoerg.iSSm	EQU	F	943	;(1) Störmeldung Betriebsrückmeldung fehlt
-HZE001.WE03.Anforderung.Stoerg.iSSm	EQU	F	944	;(1) Störmeldung Betriebsrückmeldung fehlt
-HZE002.Weiche.UWP.Stoerg.iSSm	EQU	F	945	;(1) Störmeldung Betriebsrückmeldung fehlt
+HZE001.WE01.Anforderung.Stoerg.iSSm	EQU	F	941	;(1) St?rmeldung Betriebsr?ckmeldung fehlt
+HZE001.WE01.UWP.Stoerg.iSSm	EQU	F	942	;(1) St?rmeldung Betriebsr?ckmeldung fehlt
+HZE001.WE02.Anforderung.Stoerg.iSSm	EQU	F	943	;(1) St?rmeldung Betriebsr?ckmeldung fehlt
+HZE001.WE03.Anforderung.Stoerg.iSSm	EQU	F	944	;(1) St?rmeldung Betriebsr?ckmeldung fehlt
+HZE002.Weiche.UWP.Stoerg.iSSm	EQU	F	945	;(1) St?rmeldung Betriebsr?ckmeldung fehlt
 IO.Slot0.IOAccess.DIGITAL_INPUTS_0TO15	EQU		1024	;Address of digital inputs 0 to 15 in memory input range - used for direct access
 IO.Slot1.IOAccess.DIGITAL_OUTPUT_0TO3	EQU		1024	;Address of digital outputs 0 to 3 in memory output range - used for direct acces
 IO.Slot1.IOAccess.SWITCH_STATUS	EQU		1026	;Address of switch status in memory input range - used for direct access
@@ -374,36 +374,7 @@ IO.Slot3.IOAccess.ANALOGUE_OUTPUT_0	EQU		1025	;Address of analogue output 0 in m
 IO.Slot3.IOAccess.ANALOGUE_OUTPUT_1	EQU		1027	;Address of analogue output 1 in memory output range - used for direct access
 IO.Slot3.IOAccess.ANALOGUE_OUTPUT_2	EQU		1029	;Address of analogue output 2 in memory output range - used for direct access
 IO.Slot3.IOAccess.ANALOGUE_OUTPUT_3	EQU		1031	;Address of analogue output 3 in memory output range - used for direct access
-IOs.AI_72	EQU	I	32
-IOs.AI_512.iDefekt	EQU	F	946
-IOs.AI_512.iIstwert	EQU	R	707	;(1) Physikalischer Wert des Sensors = Ausgang "Iw"
-IOs.AI_513.iDefekt	EQU	F	947
-IOs.AI_513.iIstwert	EQU	R	708	;(1) Physikalischer Wert des Sensors = Ausgang "Iw"
-IOs.AI_514.iDefekt	EQU	F	948
-IOs.AI_514.iIstwert	EQU	R	709	;(1) Physikalischer Wert des Sensors = Ausgang "Iw"
-IOs.AI_515.iDefekt	EQU	F	949
-IOs.AI_515.iIstwert	EQU	R	710	;(1) Physikalischer Wert des Sensors = Ausgang "Iw"
-IOs.AI_516.iDefekt	EQU	F	950
-IOs.AI_516.iIstwert	EQU	R	711	;(1) Physikalischer Wert des Sensors = Ausgang "Iw"
-IOs.AI_517.iDefekt	EQU	F	951
-IOs.AI_517.iIstwert	EQU	R	712
-IOs.AI_518.iDefekt	EQU	F	952
-IOs.AI_518.iIstwert	EQU	R	713
-IOs.AI_519.iDefekt	EQU	F	953
-IOs.AI_519.iIstwert	EQU	R	714
-IOs.AO_88	EQU	O	48
-IOs.AO_208.iOut	EQU	R	715
-IOs.AO_209.iOut	EQU	R	716
-IOs.AO_210.iOut	EQU	R	717
-IOs.AO_211.iOut	EQU	R	718
-IOs.DI_384.iInp	EQU	F	955
-IOs.DI_385.iInp	EQU	F	956
-IOs.DI_386.iInp	EQU	F	957
-IOs.DI_387.iInp	EQU	F	958
-IOs.DI_388.iInp	EQU	F	959
-IOs.DI_389.iInp	EQU	F	960
-IOs.DI_390.iInp	EQU	F	961
-IOs.DI_391.iInp	EQU	F	962
+IOs.AI_32	EQU	I	32
 IOs.DI_400.iInp	EQU	F	963
 IOs.DI_401.iInp	EQU	F	964
 IOs.DI_402.iInp	EQU	F	965
@@ -411,13 +382,9 @@ IOs.DI_403.iInp	EQU	F	966
 IOs.DI_404.iInp	EQU	F	967
 IOs.DI_407.iInp	EQU	F	968
 IOs.DO_32.iMACT	EQU	F	972
-IOs.DO_32.iOut	EQU	F	973
 IOs.DO_33.iMACT	EQU	F	974
-IOs.DO_33.iOut	EQU	F	975
 IOs.DO_34.iMACT	EQU	F	976
-IOs.DO_34.iOut	EQU	F	977
 IOs.DO_35.iMACT	EQU	F	978
-IOs.DO_35.iOut	EQU	F	979
 IOs.DO_189.iOut	EQU	F	969
 IOs.DO_192.iOut	EQU	F	970
 IOs.DO_193.iOut	EQU	F	971
@@ -471,8 +438,8 @@ PCD01.A00.Mld.PCD01.Init.Box.HistIndex	EQU	R	749	;(3) Inhalt des Indexregister b
 PCD01.A00.Mld.PCD01.Init.Box.HistMeldung	EQU	R	750	;(3) Ursache der Fehlermeldung
 PCD01.A00.Mld.PCD01.Init.Box.HistProgLine	EQU	R	751	;(3) Programmzeile in der der Fehler aufgetreten ist
 $ATTR TAGS=S_ADJUST
-PCD01.A00.Mld.PCD01.Init.Box.HistQuit	EQU	F	986	;(4) Löschen der History
-PCD01.A00.Mld.PCD01.Init.Box.HistReserve	EQU	R	752	;(3) Vorhaltung für spätere Ergänzungen
+PCD01.A00.Mld.PCD01.Init.Box.HistQuit	EQU	F	986	;(4) L?schen der History
+PCD01.A00.Mld.PCD01.Init.Box.HistReserve	EQU	R	752	;(3) Vorhaltung f?r sp?tere Erg?nzungen
 PCD01.A00.Mld.PCD01.Init.Box.iError	EQU	F	987
 PCD01.A00.Mld.PCD01.Init.Box.iInit_Batt	EQU	F	988
 PCD01.A00.Mld.PCD01.Init.Box.iInit_Bereit	EQU	F	989
@@ -485,11 +452,11 @@ $ATTR TAGS=S_ADJUST
 PCD01.A00.Mld.PCD01.Init.Box.QuitDO	EQU	R	754	;(5) Ausgangsadresse Hardware Reset
 PCD01.A00.Mld.PCD01.Init.Box.SmBatterie	EQU	F	993	;(1) Batterie schwach
 $ATTR TAGS=S_ADJUST
-PCD01.A00.Mld.PCD01.Init.Box.SmQuit	EQU	F	994	;(4) Quittieren von Störmeldungen in allen Störungs-FBoxenSteuerung
+PCD01.A00.Mld.PCD01.Init.Box.SmQuit	EQU	F	994	;(4) Quittieren von St?rmeldungen in allen St?rungs-FBoxenSteuerung
 $ATTR TAGS=S_ADJUST
 PCD01.A00.Mld.PCD01.Init.Box.SmQuitHwImp	EQU	R	755	;(5) Dauer der Ansteuerung des Quittierungsausganges
 $ATTR TAGS=S_ADJUST
-PCD01.A00.Mld.PCD01.Init.Box.WartQuit	EQU	F	995	;(4) Rücksetzen der Wartungsmeldungen und - zähler in allen Steuerungs-FBoxen
+PCD01.A00.Mld.PCD01.Init.Box.WartQuit	EQU	F	995	;(4) R?cksetzen der Wartungsmeldungen und - z?hler in allen Steuerungs-FBoxen
 PCD01.A00.Mld.PCD01.Quitt.LED.iDO	EQU	F	996
 PCD01.A00.Mld.PCD01.Quitt.SSMHZG.iSSM	EQU	R	756
 PCD01.A00.Mld.PCD01.Quitt.SSMKLT.iSSM	EQU	R	757
@@ -509,26 +476,26 @@ PCD01.A00.Mld.PCD01.SVz.iSVZ300	EQU	F	1005
 PCD01.A00.Mld.PCD01.SVz.iSVZ600	EQU	F	1007
 PCD01.A00.Mld.PCD01.SVz.iSVZ3000	EQU	F	1006
 PCD01.A00.Mld.PCD01.SVz.iXP600	EQU	F	1008
-PCD01.A00.Mld.PCD01.SW.Antiblock.UwpErlaubt	EQU	F	1009	;(2) Anzeige ob die Antiblockierschutzfunktion ausgeführt werden darf
+PCD01.A00.Mld.PCD01.SW.Antiblock.UwpErlaubt	EQU	F	1009	;(2) Anzeige ob die Antiblockierschutzfunktion ausgef?hrt werden darf
 $ATTR TAGS=S_ADJUST
 PCD01.A00.Mld.PCD01.SW.Antiblock.UwpStillDauer	EQU	R	762	;(5) Anzahl der Stunden nach der ein Bewegungslauf aktiviert werden soll
 $ATTR TAGS=S_ADJUST
 PCD01.A00.Mld.PCD01.SW.Antiblock.UwpVorwahl	EQU	R	763	;(5) Betriebsvorwahl der Antiblockierschutzfunktion
-PCD01.A00.Mld.PCD01.SW.Antiblock.UwpWoImpuls	EQU	F	1010	;(2) Anzeige des Wöchentlichen Impulses des Bewegungsbetriebes
+PCD01.A00.Mld.PCD01.SW.Antiblock.UwpWoImpuls	EQU	F	1010	;(2) Anzeige des W?chentlichen Impulses des Bewegungsbetriebes
 $ATTR TAGS=S_ADJUST
-PCD01.A00.Mld.PCD01.SW.Antiblock.UwpWoTag	EQU	R	764	;(5) Wochentag an dem der Bewegungsbetrieb ausgeführt werden soll
+PCD01.A00.Mld.PCD01.SW.Antiblock.UwpWoTag	EQU	R	764	;(5) Wochentag an dem der Bewegungsbetrieb ausgef?hrt werden soll
 $ATTR TAGS=S_ADJUST
-PCD01.A00.Mld.PCD01.SW.Antiblock.UwpWoUhrzeit	EQU	R	765	;(5) Uhrzeit des Tages an dem der Bewegungsbetrieb ausgeführt werden soll
-PCD01.A00.Mld.PCD01.SW.Antiblock.YErlaubt	EQU	F	1011	;(2) Anzeige ob die Antiblockierschutzfunktion ausgeführt werden darf
+PCD01.A00.Mld.PCD01.SW.Antiblock.UwpWoUhrzeit	EQU	R	765	;(5) Uhrzeit des Tages an dem der Bewegungsbetrieb ausgef?hrt werden soll
+PCD01.A00.Mld.PCD01.SW.Antiblock.YErlaubt	EQU	F	1011	;(2) Anzeige ob die Antiblockierschutzfunktion ausgef?hrt werden darf
 $ATTR TAGS=S_ADJUST
 PCD01.A00.Mld.PCD01.SW.Antiblock.YStillDauer	EQU	R	766	;(5) Anzahl der Stunden nach der ein Bewegungslauf aktiviert werden soll
 $ATTR TAGS=S_ADJUST
-PCD01.A00.Mld.PCD01.SW.Antiblock.YVorwahl	EQU	R	767	;(5) Betriebsvorwahl für die Antiblockierschutzfunktion
-PCD01.A00.Mld.PCD01.SW.Antiblock.YWoImpuls	EQU	F	1012	;(2) Anzeige des Wöchenrlichen Impulses des Bewegungsbetriebes
+PCD01.A00.Mld.PCD01.SW.Antiblock.YVorwahl	EQU	R	767	;(5) Betriebsvorwahl f?r die Antiblockierschutzfunktion
+PCD01.A00.Mld.PCD01.SW.Antiblock.YWoImpuls	EQU	F	1012	;(2) Anzeige des W?chenrlichen Impulses des Bewegungsbetriebes
 $ATTR TAGS=S_ADJUST
-PCD01.A00.Mld.PCD01.SW.Antiblock.YWoTag	EQU	R	768	;(5) Wochentag an dem der Bewegungsbetrieb ausgeführt werden soll
+PCD01.A00.Mld.PCD01.SW.Antiblock.YWoTag	EQU	R	768	;(5) Wochentag an dem der Bewegungsbetrieb ausgef?hrt werden soll
 $ATTR TAGS=S_ADJUST
-PCD01.A00.Mld.PCD01.SW.Antiblock.YWoUhrzeit	EQU	R	769	;(5) Uhrzeit des Tages an dem der Bewegungsbetrieb ausgeführt werden soll
+PCD01.A00.Mld.PCD01.SW.Antiblock.YWoUhrzeit	EQU	R	769	;(5) Uhrzeit des Tages an dem der Bewegungsbetrieb ausgef?hrt werden soll
 PCD01.A00.Mld.PCD01.SW.iAntiblock_Stetig	EQU	F	1013
 PCD01.A00.Mld.PCD01.SW.iAntiblock_Uwp	EQU	F	1014
 PCD01.A00.Mld.PCD01.SWeb.CPUTyp	EQU	R	770
@@ -540,15 +507,15 @@ PCD01.A00.Mld.StSpg.Spg.irSM10	EQU	F	1016
 $ATTR TAGS=S_ADJUST
 PCD01.A00.Mld.StSpg.Stoerg.AC24NoNc	EQU	F	1019	;(5) Meldung 2 - Auswahl des Normalzustands des Gebers
 $ATTR TAGS=S_ADJUST
-PCD01.A00.Mld.StSpg.Stoerg.AC24QuitPflicht	EQU	F	1020	;(5) Meldung 2 - Vorwahl ob die Störung dem Geber folgt oder gespeichert bleibt
+PCD01.A00.Mld.StSpg.Stoerg.AC24QuitPflicht	EQU	F	1020	;(5) Meldung 2 - Vorwahl ob die St?rung dem Geber folgt oder gespeichert bleibt
 $ATTR TAGS=S_ADJUST
 PCD01.A00.Mld.StSpg.Stoerg.AC230NoNc	EQU	F	1017	;(5) Meldung 1 - Auswahl des Normalzustands des Gebers
 $ATTR TAGS=S_ADJUST
-PCD01.A00.Mld.StSpg.Stoerg.AC230QuitPflicht	EQU	F	1018	;(5) Meldung 1 - Vorwahl ob die Störung dem Geber folgt oder gespeichert bleibt
+PCD01.A00.Mld.StSpg.Stoerg.AC230QuitPflicht	EQU	F	1018	;(5) Meldung 1 - Vorwahl ob die St?rung dem Geber folgt oder gespeichert bleibt
 $ATTR TAGS=S_ADJUST
 PCD01.A00.Mld.StSpg.Stoerg.DC24NoNc	EQU	F	1021	;(5) Meldung 3 - Auswahl des Normalzustands des Gebers
 $ATTR TAGS=S_ADJUST
-PCD01.A00.Mld.StSpg.Stoerg.DC24QuitPflicht	EQU	F	1022	;(5) Meldung 3 - Vorwahl ob die Störung dem Geber folgt oder gespeichert bleibt
+PCD01.A00.Mld.StSpg.Stoerg.DC24QuitPflicht	EQU	F	1022	;(5) Meldung 3 - Vorwahl ob die St?rung dem Geber folgt oder gespeichert bleibt
 $ATTR TAGS=S_ADJUST
 PCD01.A00.Mld.StSpg.Stoerg.DI24AC	EQU	R	775	;(5) Meldung 2 - Digitale Eingangsadresse
 $ATTR TAGS=S_ADJUST
@@ -564,7 +531,7 @@ PCD01.A00.Mld.StSpg.Stoerg.PhasenNoNc	EQU	F	1023	;(5) Meldung 4 - Auswahl des No
 $ATTR TAGS=S_ADJUST
 PCD01.A00.Mld.StSpg.Stoerg.PhasenOverride	EQU	F	1024	;(5) Meldung 4 - Vorwahl ob intern parallel die Meldungen 230VC/24VAC/24VDC (Mel
 $ATTR TAGS=S_ADJUST
-PCD01.A00.Mld.StSpg.Stoerg.PhasenQuitPflicht	EQU	F	1025	;(5) Meldung 4 - Vorwahl ob die Störung dem Geber folgt oder gespeichert bleibt
+PCD01.A00.Mld.StSpg.Stoerg.PhasenQuitPflicht	EQU	F	1025	;(5) Meldung 4 - Vorwahl ob die St?rung dem Geber folgt oder gespeichert bleibt
 PCD01.A00.Mld.StSpg.Stoerg.SmAC24	EQU	F	1027	;(1) Meldung 2 - Alarmzustand
 PCD01.A00.Mld.StSpg.Stoerg.SmAC230	EQU	F	1026	;(1) Meldung 1 - Alarmzustand
 PCD01.A00.Mld.StSpg.Stoerg.SmDC24	EQU	F	1028	;(1) Meldung 3 - Alarmzustand
@@ -575,9 +542,9 @@ PCD01.A00.Mld.StSpg.Stoerg.SpgNoNc	EQU	F	1031	;(5) Meldung 5 - Auswahl des Norma
 $ATTR TAGS=S_ADJUST
 PCD01.A00.Mld.StSpg.Stoerg.SpgOverride	EQU	F	1032	;(5) Meldung 5 - Vorwahl ob intern parallel die Meldungen 230VC/24VAC/24VDC (Mel
 $ATTR TAGS=S_ADJUST
-PCD01.A00.Mld.StSpg.Stoerg.SpgQuitPflicht	EQU	F	1033	;(5) Meldung 5 - Vorwahl ob die Störung dem Geber folgt oder gespeichert bleibt
+PCD01.A00.Mld.StSpg.Stoerg.SpgQuitPflicht	EQU	F	1033	;(5) Meldung 5 - Vorwahl ob die St?rung dem Geber folgt oder gespeichert bleibt
 $ATTR TAGS=S_ADJUST
-PCD01.A00.Mld.StSpg.Stoerg.Verzoeger	EQU	R	779	;(5) Verzögerung bis Normalzustand angezeigt wird
+PCD01.A00.Mld.StSpg.Stoerg.Verzoeger	EQU	R	779	;(5) Verz?gerung bis Normalzustand angezeigt wird
 $ATTR TAGS=S_ADJUST
 PCD01.A00.Mld.StSpg.USV.DIKontakt	EQU	R	780	;(5) Digitaler Eingang
 PCD01.A00.Mld.StSpg.USV.irSM10	EQU	F	1034
@@ -585,10 +552,10 @@ PCD01.A00.Mld.StSpg.USV.iSM10	EQU	F	1035
 $ATTR TAGS=S_ADJUST
 PCD01.A00.Mld.StSpg.USV.NoNc	EQU	F	1036	;(5) Auswahl des Normalzustands des Gebers
 $ATTR TAGS=S_ADJUST
-PCD01.A00.Mld.StSpg.USV.QuitPflicht	EQU	F	1037	;(5) Vorwahl ob die Störung dem Geber folgt oder gespeichert bleibt und quittier
-PCD01.A00.Mld.StSpg.USV.Sm	EQU	F	1038	;(1) Zustand der Störmeldung
+PCD01.A00.Mld.StSpg.USV.QuitPflicht	EQU	F	1037	;(5) Vorwahl ob die St?rung dem Geber folgt oder gespeichert bleibt und quittier
+PCD01.A00.Mld.StSpg.USV.Sm	EQU	F	1038	;(1) Zustand der St?rmeldung
 $ATTR TAGS=S_ADJUST
-PCD01.A00.Mld.StSpg.USV.SpgGrp	EQU	R	781	;(5) zugehörige Spannungsgruppe zur Unterdrückung von Geistermeldungen bei fehle
+PCD01.A00.Mld.StSpg.USV.SpgGrp	EQU	R	781	;(5) zugeh?rige Spannungsgruppe zur Unterdr?ckung von Geistermeldungen bei fehle
 PCD01.A00.Mld.StSpg.VAC24.irSM10	EQU	F	1039
 PCD01.A00.Mld.StSpg.VDC24.irSM10	EQU	F	1040
 PCD01.A00.PSTA.ISP1.StSpg.iSSM	EQU	F	1041
@@ -602,7 +569,7 @@ PCD01.SWeb.Alarme.iQuit	EQU	F	1047
 $ATTR TAGS=S_ADJUST
 PCD01.SWeb.Alarme.ListAck	EQU	F	1048	;Quittiert die gesamte Alarmliste
 $ATTR TAGS=S_ADJUST
-PCD01.SWeb.Alarme.ListClear	EQU	F	1049	;Löscht die gesamte Alarmliste
+PCD01.SWeb.Alarme.ListClear	EQU	F	1049	;L?scht die gesamte Alarmliste
 $ATTR TAGS=S_ADJUST
 PCD01.VER.IP	EQU	R	783
 PIN.Level1	EQU	TEXT	7810
@@ -695,6 +662,7 @@ S.HVC.Clock.YYMMDD	EQU	R	10675[16]	;Year 00..99, Month, Day
 S.HVC.Clock.YYYYear	EQU	R	10680	;Year 2000..2099
 S.HVC.Clock.YYYYMMDD	EQU	R	10671	;Year 2000..2099, Month, Day
 s.modc.ModbusClient.fboxerror	EQU	R	801
+s.modc.ModbusRTU.fboxerror	EQU	R	799
 s.odm.FlagDiag	EQU	F	16000[8]
 s.odm.InitError	EQU	F	16008
 s.odm.InitExec	EQU	F	16009
@@ -705,6 +673,18 @@ S.PRJ.AppLanguage	EQU		'en'	;Preferred language for applications
 S.PRJ.LibLanguage	EQU		'en'	;Preferred language for libraries
 S.PRJ.PASPE_2.SbusStation	EQU		212	;S-Bus station number
 S.SYS.SASMVERS	EQU		2001410	;Assembler/linker version, new format (abbbccc)
+$ATTR TAGS=S_ADJUST
+SetPoints.Binary_0.Flag	EQU	F	1199	;(4) Binary value
+SetPoints.Integer_0.Register	EQU	R	841	;(4) Integer value
+SetPoints.Integer_1.Register	EQU	R	842	;(4) Integer value
+$ATTR TAGS=S_ADJUST
+SetPoints.Integer_2.Register	EQU	R	810	;(4) Integer value
+$ATTR TAGS=S_ADJUST
+SetPoints.Integer_3.Register	EQU	R	811	;(4) Integer value
+$ATTR TAGS=S_ADJUST
+SetPoints.Integer_4.Register	EQU	R	560	;(4) Integer value
+$ATTR TAGS=S_ADJUST
+SetPoints.Integer_5.Register	EQU	R	561	;(4) Integer value
 SubDringend	EQU	TEXT	3310
 SubNormal	EQU	TEXT	3311
 TexDringend	EQU	TEXT	3312

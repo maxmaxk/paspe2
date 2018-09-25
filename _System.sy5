@@ -65,9 +65,9 @@ A.BACnet.PCD.AlBattery.OutOfService EQU F 934 ;Out Of Service
 A.BACnet.PCD.AlBattery.PCDInRef EQU F 935 ;PCD Input Reference
 A.BACnet.PCD.AlXOB.OutOfService EQU F 936 ;Out Of Service
 A.BACnet.PCD.AlXOB.PCDInRef EQU F 937 ;PCD Input Reference
-A.DDCSuite.Init.AckAlarm EQU F 129 ;Acknowledge all stored alarm. Try to set them to normal state
-A.DDCSuite.Init.ClrMaint EQU F 130 ;Clear all maintenance messages and restart internal counter
-A.DDCSuite.Init.OutdoorTemp EQU R 605 ;Outdoor temperature
+A.DDCSuite.Init.AckAlarm EQU F 235 ;Acknowledge all stored alarm. Try to set them to normal state
+A.DDCSuite.Init.ClrMaint EQU F 236 ;Clear all maintenance messages and restart internal counter
+A.DDCSuite.Init.OutdoorTemp EQU R 609 ;Outdoor temperature
 S.Alarm.Library EQU 10 ;
 S.Alarm.Create EQU 0 ;
 S.Alarm.Update EQU 1 ;
@@ -105,10 +105,10 @@ A.Alarm.PCD01_ALA.FlagsAck EQU -1 ;Ack wird nicht verwendet
 A.Alarm.PCD01_ALA.FlagsDel EQU -1 ;Clear wird nicht verwendet
 A.Alarm.PCD01_ALA.MaxAlarms EQU 600 ;max. numbers of alarms
 A.Alarm.PCD01_ALA.MaxHistory EQU 250 ;max. alarms in history
-A.Alarm.PCD01_ALA.Handle EQU R 693 ;Handle-ID
+A.Alarm.PCD01_ALA.Handle EQU R 787 ;Handle-ID
 A.Alarm.PCD01_ALA.MyName EQU TEXT 3301 ;Name of list
 A.Alarm.PCD01_ALA.FilePath EQU TEXT 3300 ;Path of the config file
-A.Alarm.PCD01_ALA.Diagnose EQU R 694 ;Diagnose (  >=0  success  <0  error  )  -----
+A.Alarm.PCD01_ALA.Diagnose EQU R 788 ;Diagnose (  >=0  success  <0  error  )  -----
 A.Alarm.DDC_PCD01_ALA EQU 1 ;Alarmliste
 A.Mail.MailerWorks EQU F 938 ;
 S.Application.Library EQU 6 ;
@@ -120,7 +120,7 @@ S.IPS.SendMail_nParams EQU 14 ;
 S.IPS.Format.Plain EQU K 00H ;
 S.IPS.Format.HTML EQU K 01H ;
 S.IPS.Unused EQU -1 ;
-A.ComplexMail.WebCMail.IP_Port EQU R 583 ;Portadresse des Mailproviders
+A.ComplexMail.WebCMail.IP_Port EQU R 587 ;Portadresse des Mailproviders
 A.ComplexMail.WebCMail.Sender EQU TEXT 3305 ;Mailadresse des Absendersender
 A.ComplexMail.WebCMail.To1 EQU TEXT 7809 ;Mailadresse des 1ten Empfängers
 A.ComplexMail.WebCMail.To2 EQU TEXT 3306 ;Mailadresse des 2ten Empfängers
@@ -129,20 +129,20 @@ A.ComplexMail.WebCMail.To4 EQU TEXT 3308 ;Mailadresse des 4ten Empfängers
 A.ComplexMail.WebCMail.To5 EQU TEXT 3309 ;Mailadresse des 5ten Empfängers
 A.ComplexMail.WebCMail.Subject EQU TEXT 7802 ;Betreff
 A.ComplexMail.WebCMail.Body EQU TEXT 7803 ;Text
-A.ComplexMail.WebCMail.To EQU R 588 ;Empfänger
-A.ComplexMail.WebCMail.Content EQU R 589 ;Typ der Mail (Plain oder HTML)
-A.ComplexMail.WebCMail.TDIA EQU F 96[10] ;
-A.ComplexMail.WebCMail.TBSY EQU F 97 ;
-A.ComplexMail.WebCMail.NEXE EQU F 98 ;
-A.ComplexMail.WebCMail.DREG EQU R 584[7] ;
-A.ComplexMail.WebCMail.Busy EQU F 100 ;
-A.ComplexMail.WebCMail.MailerWorks EQU F 101 ;
-A.ComplexMail.WebCMail.DoInit EQU F 99 ;
-A.ComplexMail.WebCMail.MailerLocked EQU F 103 ;
-A.ComplexMail.WebCMail.MyPriority EQU R 585 ;
-A.ComplexMail.WebCMail.MySubject EQU R 586 ;
-A.ComplexMail.WebCMail.MyBody EQU R 587 ;
-A.ComplexMail.WebCMail.MyFile EQU R 590 ;
+A.ComplexMail.WebCMail.To EQU R 592 ;Empfänger
+A.ComplexMail.WebCMail.Content EQU R 593 ;Typ der Mail (Plain oder HTML)
+A.ComplexMail.WebCMail.TDIA EQU F 202[10] ;
+A.ComplexMail.WebCMail.TBSY EQU F 203 ;
+A.ComplexMail.WebCMail.NEXE EQU F 204 ;
+A.ComplexMail.WebCMail.DREG EQU R 588[7] ;
+A.ComplexMail.WebCMail.Busy EQU F 206 ;
+A.ComplexMail.WebCMail.MailerWorks EQU F 207 ;
+A.ComplexMail.WebCMail.DoInit EQU F 205 ;
+A.ComplexMail.WebCMail.MailerLocked EQU F 209 ;
+A.ComplexMail.WebCMail.MyPriority EQU R 589 ;
+A.ComplexMail.WebCMail.MySubject EQU R 590 ;
+A.ComplexMail.WebCMail.MyBody EQU R 591 ;
+A.ComplexMail.WebCMail.MyFile EQU R 594 ;
 A.ComplexMail.WebCMail.LenSubject EQU 150 ;
 A.ComplexMail.WebCMail.LenText EQU 300 ;
 A.BACnet.FuseGuard.Al230AC.OutOfService EQU F 922 ;Out Of Service
@@ -157,12 +157,13 @@ A.BACnet.FuseGuard.AlMain.OutOfService EQU F 928 ;Out Of Service
 A.BACnet.FuseGuard.AlMain.PCDInRef EQU F 929 ;PCD Input Reference
 A.BACnet.GROUP__fbl_C000001_04_B00A.Alarm.OutOfService EQU F 932 ;Out Of Service
 A.BACnet.GROUP__fbl_C000001_04_B00A.Alarm.PCDInRef EQU F 933 ;PCD Input Reference
-A.HVC.Uhrzeit.TimeCmd EQU F 175 ;
-A.HVC.Uhrzeit.DateCmd EQU F 176 ;
-A.HVC.Uhrzeit.Time EQU R 666[3] ;
-A.HVC.Uhrzeit.Date EQU R 667 ;
-A.HVC.Uhrzeit.DayOW EQU R 668 ;
+A.HVC.Uhrzeit.TimeCmd EQU F 281 ;
+A.HVC.Uhrzeit.DateCmd EQU F 282 ;
+A.HVC.Uhrzeit.Time EQU R 670[3] ;
+A.HVC.Uhrzeit.Date EQU R 671 ;
+A.HVC.Uhrzeit.DayOW EQU R 672 ;
 s.modc.ModbusClient.fboxerror EQU R 801 ;
+s.modc.ModbusRTU.fboxerror EQU R 799 ;
 ;File "InitODM.obj"
 s.odm.FlagDiag EQU F 16000[8] ;
 s.odm.RegChannel EQU R 10669 ;

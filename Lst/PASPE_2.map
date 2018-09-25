@@ -1,24 +1,24 @@
 SAIA PG5 LINKER V2.1.410                                               Page 1
 User: Renergie
-File: PASPE_2.pcd   Linked: 11/09/18 15:46 
+File: PASPE_2.pcd   Linked: 25/09/18 17:47 
 
         CODE    CODE    TXT/DB  EXTEN
 FILE    START   SEG     SEG     SEG     ASSEMBLY         FILE
 NUMBER  LINE    LINES   BYTES   BYTES   DATE AND TIME    NAME
 --------------------------------------------------------------------------------
-1       0       0       804     0       11/09/18 15:46   _PASPE_2.src
-2       0       3823    179     1144    11/09/18 15:46   HKLS2.fbd
-3       3823    0       0       0       11/09/18 15:46   InitODM.src
-4       3823    1010    200     0       11/09/18 15:46   heavac5.srx
-5       4833    240     2808    0       11/09/18 15:46   sfupanl5.srx
-6       5073    0       0       0       11/09/18 15:46   sModMaster.srx
-7       5073    78      12      0       14/10/14 11:02   sfuplib3.src
+1       0       0       804     0       25/09/18 17:47   _PASPE_2.src
+2       0       4367    239     1144    25/09/18 17:47   HKLS2.fbd
+3       4367    0       0       0       25/09/18 17:47   InitODM.src
+4       4367    1010    200     0       25/09/18 17:47   heavac5.srx
+5       5377    240     2808    0       25/09/18 17:47   sfupanl5.srx
+6       5617    0       0       0       25/09/18 17:47   sModMaster.srx
+7       5617    78      12      0       14/10/14 11:02   sfuplib3.src
 --------------------------------------------------------------------------------
 
-CODE SEGMENT SIZE:      6076 LINES (24304 BYTES)
-TEXT/DB SEGMENT SIZE:   4003 BYTES
+CODE SEGMENT SIZE:      6767 LINES (27068 BYTES)
+TEXT/DB SEGMENT SIZE:   4063 BYTES
 EXTENSION MEM SIZE:     1144 BYTES
-PUBLIC SYMBOLS:         688
+PUBLIC SYMBOLS:         663
 
 PUBLIC SYMBOLS
 ___ETR___  F    16054         7#    7     
@@ -250,7 +250,7 @@ __Saia_Sfup__.rTmpCalcRemainder
 __Saia_Sfup__.rTmpCalcResult
            R    10815         7#    7     
 __SAIASystemBuildTime__
-                0272756BFH    1#    7     
+                0DAF2EA8BH    1#    7     
 __SASMVERS__    21410         1#    
 __TIME_BASE__   100           1#    
 __TIME_BASE_EXTN__
@@ -263,8 +263,8 @@ __TIME_MULFACT__
                 1             1#    4     
 __TIME_MULTIPLY__
            F    11            1#    1     4     
-_ALARM     F    78..82        2#    2     
-_ALARMG    F    81            2#    2     
+_ALARM     F    160..164      2#    2     
+_ALARMG    F    163           2#    2     
 _analogue._FB._LinBalco
            FB   35            5#    2     5     
 _analogue._FB._LinearNi1000
@@ -274,15 +274,15 @@ _analogue._FB._LinearPt1000
 _analogue._FB._LinNiLS
            FB   38            5#    2     5     
 _HEAVAC._ALARM._ALARM
-           F    78..82        2#    2     
+           F    160..164      2#    2     
 _HEAVAC._ALARM._ALARMG
-           F    81            2#    2     
+           F    163           2#    2     
 _HEAVAC._ALARM._QUIT
-           F    79            2#    2     
+           F    161           2#    2     
 _HEAVAC._ALARM._QUITALL
-           F    80            2#    2     
+           F    162           2#    2     
 _HEAVAC._ALARM._QUITG
-           F    82            2#    2     
+           F    164           2#    2     
 _HEAVAC._CLOCK._ALLPHDAY1
            F    16016         4#    2     4     
 _HEAVAC._CLOCK._DAY
@@ -411,29 +411,29 @@ _HEAVAC._SAMPLING._OVERRUN
            F    315           2#    2     
 _HEAVAC._SAMPLING._SAMPLE
            F    316           2#    2     
-_QUIT      F    79            2#    2     
-_QUITALL   F    80            2#    2     
-_QUITG     F    82            2#    2     
+_QUIT      F    161           2#    2     
+_QUITALL   F    162           2#    2     
+_QUITG     F    164           2#    2     
 _shmsr.system.AussenTemp
-           R    605           2#    2     
+           R    609           2#    2     
 _shmsr.system.DateDay
-           R    599           2#    2     
+           R    603           2#    2     
 _shmsr.system.DateMonth
-           R    600           2#    2     
+           R    604           2#    2     
 _shmsr.system.DateWDay
-           R    597           2#    2     
+           R    601           2#    2     
 _shmsr.system.QuitSm
-           F    129           2#    2     
+           F    235           2#    2     
 _shmsr.system.QuitWart
-           F    130           2#    2     
+           F    236           2#    2     
 _shmsr.system.SecPulse
-           F    128           2#    2     
+           F    234           2#    2     
 _shmsr.system.TimeHHMM
-           R    596..615      2#    2     
+           R    600..619      2#    2     
 _shmsr.system.TimeSS
-           R    598           2#    2     
+           R    602           2#    2     
 _shmsr.system.WatchDog
-           F    121..140      2#    2     
+           F    227..246      2#    2     
 _shmsr.work.C01
            C    1000..1009    2#    2     
 _shmsr.work.C02
@@ -455,111 +455,111 @@ _shmsr.work.C09
 _shmsr.work.C10
            C    1009          2#    2     
 _shmsr.work.F01
-           F    141..162      2#    2     
+           F    247..268      2#    2     
 _shmsr.work.F02
-           F    142           2#    2     
+           F    248           2#    2     
 _shmsr.work.F03
-           F    143           2#    2     
+           F    249           2#    2     
 _shmsr.work.F04
-           F    144           2#    2     
+           F    250           2#    2     
 _shmsr.work.F05
-           F    145           2#    2     
+           F    251           2#    2     
 _shmsr.work.F06
-           F    146           2#    2     
+           F    252           2#    2     
 _shmsr.work.F07
-           F    147           2#    2     
+           F    253           2#    2     
 _shmsr.work.F08
-           F    148           2#    2     
+           F    254           2#    2     
 _shmsr.work.F09
-           F    149           2#    2     
+           F    255           2#    2     
 _shmsr.work.F10
-           F    150           2#    2     
+           F    256           2#    2     
 _shmsr.work.F11
-           F    151           2#    2     
+           F    257           2#    2     
 _shmsr.work.F12
-           F    152           2#    2     
+           F    258           2#    2     
 _shmsr.work.F13
-           F    153           2#    2     
+           F    259           2#    2     
 _shmsr.work.F14
-           F    154           2#    2     
+           F    260           2#    2     
 _shmsr.work.F15
-           F    155           2#    2     
+           F    261           2#    2     
 _shmsr.work.F16
-           F    156           2#    2     
+           F    262           2#    2     
 _shmsr.work.F17
-           F    157           2#    2     
+           F    263           2#    2     
 _shmsr.work.F18
-           F    158           2#    2     
+           F    264           2#    2     
 _shmsr.work.F19
-           F    159           2#    2     
+           F    265           2#    2     
 _shmsr.work.F20
-           F    160           2#    2     
+           F    266           2#    2     
 _shmsr.work.High
-           F    162           2#    2     
+           F    268           2#    2     
 _shmsr.work.Low
-           F    161           2#    2     
+           F    267           2#    2     
 _shmsr.work.R01
-           R    616..646      2#    2     
+           R    620..650      2#    2     
 _shmsr.work.R02
-           R    617           2#    2     
-_shmsr.work.R03
-           R    618           2#    2     
-_shmsr.work.R04
-           R    619           2#    2     
-_shmsr.work.R05
-           R    620           2#    2     
-_shmsr.work.R06
            R    621           2#    2     
-_shmsr.work.R07
+_shmsr.work.R03
            R    622           2#    2     
-_shmsr.work.R08
+_shmsr.work.R04
            R    623           2#    2     
-_shmsr.work.R09
+_shmsr.work.R05
            R    624           2#    2     
-_shmsr.work.R10
+_shmsr.work.R06
            R    625           2#    2     
-_shmsr.work.R11
+_shmsr.work.R07
            R    626           2#    2     
-_shmsr.work.R12
+_shmsr.work.R08
            R    627           2#    2     
-_shmsr.work.R13
+_shmsr.work.R09
            R    628           2#    2     
-_shmsr.work.R14
+_shmsr.work.R10
            R    629           2#    2     
-_shmsr.work.R15
+_shmsr.work.R11
            R    630           2#    2     
-_shmsr.work.R16
+_shmsr.work.R12
            R    631           2#    2     
-_shmsr.work.R17
+_shmsr.work.R13
            R    632           2#    2     
-_shmsr.work.R18
+_shmsr.work.R14
            R    633           2#    2     
-_shmsr.work.R19
+_shmsr.work.R15
            R    634           2#    2     
-_shmsr.work.R20
+_shmsr.work.R16
            R    635           2#    2     
-_shmsr.work.tmpR01
-           R    637           2#    2     
-_shmsr.work.tmpR02
-           R    638           2#    2     
-_shmsr.work.tmpR03
-           R    639           2#    2     
-_shmsr.work.tmpR04
-           R    640           2#    2     
-_shmsr.work.tmpR05
-           R    641           2#    2     
-_shmsr.work.tmpR06
-           R    642           2#    2     
-_shmsr.work.tmpR07
-           R    643           2#    2     
-_shmsr.work.tmpR08
-           R    644           2#    2     
-_shmsr.work.tmpR09
-           R    645           2#    2     
-_shmsr.work.tmpR10
-           R    646           2#    2     
-_shmsr.work.Zero
+_shmsr.work.R17
            R    636           2#    2     
+_shmsr.work.R18
+           R    637           2#    2     
+_shmsr.work.R19
+           R    638           2#    2     
+_shmsr.work.R20
+           R    639           2#    2     
+_shmsr.work.tmpR01
+           R    641           2#    2     
+_shmsr.work.tmpR02
+           R    642           2#    2     
+_shmsr.work.tmpR03
+           R    643           2#    2     
+_shmsr.work.tmpR04
+           R    644           2#    2     
+_shmsr.work.tmpR05
+           R    645           2#    2     
+_shmsr.work.tmpR06
+           R    646           2#    2     
+_shmsr.work.tmpR07
+           R    647           2#    2     
+_shmsr.work.tmpR08
+           R    648           2#    2     
+_shmsr.work.tmpR09
+           R    649           2#    2     
+_shmsr.work.tmpR10
+           R    650           2#    2     
+_shmsr.work.Zero
+           R    640           2#    2     
 A.Alarm.DDC_PCD01_ALA
                 1             2#    
 A.Alarm.PCD01_ALA.Flags
@@ -569,7 +569,7 @@ A.Alarm.PCD01_ALA.FlagsAck
 A.Alarm.PCD01_ALA.FlagsDel
                 -1            2#    
 A.Alarm.PCD01_ALA.Handle
-           R    693           2#    2     
+           R    787           2#    2     
 A.Alarm.PCD01_ALA.MaxAlarms
                 600           2#    
 A.Alarm.PCD01_ALA.MaxHistory
@@ -611,43 +611,43 @@ A.BACnet.PCD.AlXOB.PCDInRef
 A.ComplexMail.WebCMail.Body
            TEXT 7803          2#    2     
 A.ComplexMail.WebCMail.Busy
-           F    100           2#    2     
+           F    206           2#    2     
 A.ComplexMail.WebCMail.Content
-           R    589           2#    2     
+           R    593           2#    2     
 A.ComplexMail.WebCMail.DoInit
-           F    99            2#    2     
+           F    205           2#    2     
 A.ComplexMail.WebCMail.DREG
-           R    584..590      2#    2     
+           R    588..594      2#    2     
 A.ComplexMail.WebCMail.IP_Port
-           R    583           2#    2     
+           R    587           2#    2     
 A.ComplexMail.WebCMail.LenSubject
                 150           2#    
 A.ComplexMail.WebCMail.LenText
                 300           2#    
 A.ComplexMail.WebCMail.MailerLocked
-           F    103           2#    2     
+           F    209           2#    2     
 A.ComplexMail.WebCMail.MailerWorks
-           F    101           2#    2     
+           F    207           2#    2     
 A.ComplexMail.WebCMail.MyBody
-           R    587           2#    2     
+           R    591           2#    2     
 A.ComplexMail.WebCMail.MyFile
-           R    590           2#    2     
+           R    594           2#    2     
 A.ComplexMail.WebCMail.MyPriority
-           R    585           2#    2     
+           R    589           2#    2     
 A.ComplexMail.WebCMail.MySubject
-           R    586           2#    2     
+           R    590           2#    2     
 A.ComplexMail.WebCMail.NEXE
-           F    98            2#    2     
+           F    204           2#    2     
 A.ComplexMail.WebCMail.Sender
            TEXT 3305          2#    2     
 A.ComplexMail.WebCMail.Subject
            TEXT 7802          2#    2     
 A.ComplexMail.WebCMail.TBSY
-           F    97            2#    2     
+           F    203           2#    2     
 A.ComplexMail.WebCMail.TDIA
-           F    96..105       2#    2     
+           F    202..211      2#    2     
 A.ComplexMail.WebCMail.To
-           R    588           2#    2     
+           R    592           2#    2     
 A.ComplexMail.WebCMail.To1
            TEXT 7809          2#    2     
 A.ComplexMail.WebCMail.To2
@@ -659,21 +659,21 @@ A.ComplexMail.WebCMail.To4
 A.ComplexMail.WebCMail.To5
            TEXT 3309          2#    2     
 A.DDCSuite.Init.AckAlarm
-           F    129           2#    2     
+           F    235           2#    2     
 A.DDCSuite.Init.ClrMaint
-           F    130           2#    2     
+           F    236           2#    2     
 A.DDCSuite.Init.OutdoorTemp
-           R    605           2#    2     
+           R    609           2#    2     
 A.HVC.Uhrzeit.Date
-           R    667           2#    2     
+           R    671           2#    2     
 A.HVC.Uhrzeit.DateCmd
-           F    176           2#    2     
+           F    282           2#    2     
 A.HVC.Uhrzeit.DayOW
-           R    668           2#    2     
+           R    672           2#    2     
 A.HVC.Uhrzeit.Time
-           R    666..668      2#    2     
+           R    670..672      2#    2     
 A.HVC.Uhrzeit.TimeCmd
-           F    175           2#    2     
+           F    281           2#    2     
 A.Mail.MailerWorks
            F    938           2#    2     
 FileDringend
@@ -722,64 +722,7 @@ IO.Slot3.IOAccess.ANALOGUE_OUTPUT_2
                 1029          1#    
 IO.Slot3.IOAccess.ANALOGUE_OUTPUT_3
                 1031          1#    
-IOs.AI_512.iDefekt
-           F    946           2#    2     
-IOs.AI_512.iIstwert
-           R    707           2#    2     
-IOs.AI_513.iDefekt
-           F    947           2#    2     
-IOs.AI_513.iIstwert
-           R    708           2#    2     
-IOs.AI_514.iDefekt
-           F    948           2#    2     
-IOs.AI_514.iIstwert
-           R    709           2#    2     
-IOs.AI_515.iDefekt
-           F    949           2#    2     
-IOs.AI_515.iIstwert
-           R    710           2#    2     
-IOs.AI_516.iDefekt
-           F    950           2#    2     
-IOs.AI_516.iIstwert
-           R    711           2#    2     
-IOs.AI_517.iDefekt
-           F    951           2#    2     
-IOs.AI_517.iIstwert
-           R    712           2#    2     
-IOs.AI_518.iDefekt
-           F    952           2#    2     
-IOs.AI_518.iIstwert
-           R    713           2#    2     
-IOs.AI_519.iDefekt
-           F    953           2#    2     
-IOs.AI_519.iIstwert
-           R    714           2#    2     
-IOs.AI_72  I    32            2#    
-IOs.AO_208.iOut
-           R    715           2#    2     
-IOs.AO_209.iOut
-           R    716           2#    2     
-IOs.AO_210.iOut
-           R    717           2#    2     
-IOs.AO_211.iOut
-           R    718           2#    2     
-IOs.AO_88  O    48            2#    
-IOs.DI_384.iInp
-           F    955           2#    2     
-IOs.DI_385.iInp
-           F    956           2#    2     
-IOs.DI_386.iInp
-           F    957           2#    2     
-IOs.DI_387.iInp
-           F    958           2#    2     
-IOs.DI_388.iInp
-           F    959           2#    2     
-IOs.DI_389.iInp
-           F    960           2#    2     
-IOs.DI_390.iInp
-           F    961           2#    2     
-IOs.DI_391.iInp
-           F    962           2#    2     
+IOs.AI_32  I    32            2#    
 IOs.DI_400.iInp
            F    963           2#    2     
 IOs.DI_401.iInp
@@ -800,20 +743,12 @@ IOs.DO_193.iOut
            F    971           2#    2     
 IOs.DO_32.iMACT
            F    972           2#    2     
-IOs.DO_32.iOut
-           F    973           2#    2     
 IOs.DO_33.iMACT
            F    974           2#    2     
-IOs.DO_33.iOut
-           F    975           2#    2     
 IOs.DO_34.iMACT
            F    976           2#    2     
-IOs.DO_34.iOut
-           F    977           2#    2     
 IOs.DO_35.iMACT
            F    978           2#    2     
-IOs.DO_35.iOut
-           F    979           2#    2     
 LOW        F    980           2#    2     
 Mail.IP.iAddB0
            R    719           2#    2     
@@ -1260,6 +1195,8 @@ S.HVC.Clock.YYYYMMDD
            R    10671         4#    4     
 s.modc.ModbusClient.fboxerror
            R    801           2#    2     
+s.modc.ModbusRTU.fboxerror
+           R    799           2#    2     
 s.odm.FlagDiag
            F    16000..16007  3#    3     
 s.odm.InitError
@@ -1279,6 +1216,20 @@ S.PRJ.LibLanguage
 S.PRJ.PASPE_2.SbusStation
                 212           1#    
 S.SYS.SASMVERS  2001410       1#    
+SetPoints.Binary_0.Flag
+           F    1199          2#    2     
+SetPoints.Integer_0.Register
+           R    841           2#    
+SetPoints.Integer_1.Register
+           R    842           2#    
+SetPoints.Integer_2.Register
+           R    810           2#    2     
+SetPoints.Integer_3.Register
+           R    811           2#    2     
+SetPoints.Integer_4.Register
+           R    560           2#    2     
+SetPoints.Integer_5.Register
+           R    561           2#    2     
 SubDringend
            TEXT 3310          2#    2     
 SubNormal  TEXT 3311          2#    2     

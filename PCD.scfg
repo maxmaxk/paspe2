@@ -68,8 +68,8 @@ PriorityUsb=10
 Cookies=0
 
 [PCDAuth]
-UKey=45288b9f950ee5fd4841d8ad73457368856da0ade6d6e9d930543964e42d3dce
-Salt=a4950ab2c2e34c7b29e6d33dd77988
+UKey=d20399491dc29efaa2b1334e3c7eb803bc21bdfd1ca16e11ee6ec95ceed40f32
+Salt=e9ce7b1504b73482b5050bbeab6dd6
 
 [SBusSerial_0]
 Port=3
@@ -108,7 +108,7 @@ Reset=
 Baudrate=9600
 
 [PPP]
-PortID=0
+PortID=-1
 Enable=0
 Mode=1
 LocalAddress=0.0.0.0

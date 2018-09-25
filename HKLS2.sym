@@ -1,5 +1,5 @@
 ;;Start of Module symbols
-COB_0	EQU	COB		
+Init	EQU	COB		
 $GROUP PCD01.A00.Mld.PCD01.Quitt.SSMRLT
 iSSM	PEQU	R		
 $ENDGROUP PCD01.A00.Mld.PCD01.Quitt.SSMRLT
@@ -21,7 +21,7 @@ To3	PEQU	TEXT
 $ENDGROUP Mail
 $GROUP PCD01.A00.Mld.PCD01.SW.Antiblock
 $ATTR TAGS=S_ADJUST
-YWoUhrzeit	PEQU	R		;(5) Uhrzeit des Tages an dem der Bewegungsbetrieb ausgeführt werden soll
+YWoUhrzeit	PEQU	R		;(5) Uhrzeit des Tages an dem der Bewegungsbetrieb ausgef?hrt werden soll
 $ATTR TAGS=S_ADJUST
 UwpVorwahl	PEQU	R		;(5) Betriebsvorwahl der Antiblockierschutzfunktion
 $ENDGROUP PCD01.A00.Mld.PCD01.SW.Antiblock
@@ -46,10 +46,10 @@ iXP600	PEQU	F
 $ENDGROUP PCD01.A00.Mld.PCD01.SVz
 $GROUP PCD01.A00.Mld.PCD01.SW.Antiblock
 $ATTR TAGS=S_ADJUST
-YWoTag	PEQU	R		;(5) Wochentag an dem der Bewegungsbetrieb ausgeführt werden soll
+YWoTag	PEQU	R		;(5) Wochentag an dem der Bewegungsbetrieb ausgef?hrt werden soll
 $ATTR TAGS=S_ADJUST
-UwpWoUhrzeit	PEQU	R		;(5) Uhrzeit des Tages an dem der Bewegungsbetrieb ausgeführt werden soll
-YWoImpuls	PEQU	F		;(2) Anzeige des Wöchenrlichen Impulses des Bewegungsbetriebes
+UwpWoUhrzeit	PEQU	R		;(5) Uhrzeit des Tages an dem der Bewegungsbetrieb ausgef?hrt werden soll
+YWoImpuls	PEQU	F		;(2) Anzeige des W?chenrlichen Impulses des Bewegungsbetriebes
 $ENDGROUP PCD01.A00.Mld.PCD01.SW.Antiblock
 $GROUP PCD01.A00.Mld.PCD01.Init.Box
 iInit_Batt	PEQU	F		
@@ -82,14 +82,14 @@ iQuit	PEQU	F
 $ENDGROUP PCD01.SWeb.Alarme
 $GROUP PCD01.A00.Mld.PCD01.SW.Antiblock
 $ATTR TAGS=S_ADJUST
-UwpWoTag	PEQU	R		;(5) Wochentag an dem der Bewegungsbetrieb ausgeführt werden soll
-YErlaubt	PEQU	F		;(2) Anzeige ob die Antiblockierschutzfunktion ausgeführt werden darf
-UwpErlaubt	PEQU	F		;(2) Anzeige ob die Antiblockierschutzfunktion ausgeführt werden darf
+UwpWoTag	PEQU	R		;(5) Wochentag an dem der Bewegungsbetrieb ausgef?hrt werden soll
+YErlaubt	PEQU	F		;(2) Anzeige ob die Antiblockierschutzfunktion ausgef?hrt werden darf
+UwpErlaubt	PEQU	F		;(2) Anzeige ob die Antiblockierschutzfunktion ausgef?hrt werden darf
 $ENDGROUP PCD01.A00.Mld.PCD01.SW.Antiblock
 $GROUP PCD01.A00.Mld.PCD01.Init.Box
 HistCall2	PEQU	R		;(3) Zeilennummer in Aufrufebene 2
 $ATTR TAGS=S_ADJUST
-SmQuit	PEQU	F		;(4) Quittieren von Störmeldungen in allen Störungs-FBoxenSteuerung
+SmQuit	PEQU	F		;(4) Quittieren von St?rmeldungen in allen St?rungs-FBoxenSteuerung
 iInit_WtReset	PEQU	F		
 $ENDGROUP PCD01.A00.Mld.PCD01.Init.Box
 $GROUP PCD01.A00.Mld.PCD01.Quitt.LED
@@ -114,10 +114,10 @@ iAddB0	PEQU	R
 $ENDGROUP Mail.IP
 $GROUP PCD01.SWeb.Alarme
 $ATTR TAGS=S_ADJUST
-ListClear	PEQU	F		;Löscht die gesamte Alarmliste
+ListClear	PEQU	F		;L?scht die gesamte Alarmliste
 $ENDGROUP PCD01.SWeb.Alarme
 $GROUP PCD01.A00.Mld.PCD01.SW.Antiblock
-UwpWoImpuls	PEQU	F		;(2) Anzeige des Wöchentlichen Impulses des Bewegungsbetriebes
+UwpWoImpuls	PEQU	F		;(2) Anzeige des W?chentlichen Impulses des Bewegungsbetriebes
 $ENDGROUP PCD01.A00.Mld.PCD01.SW.Antiblock
 $GROUP PCD01.A00.Mld.PCD01.Init.Box
 iInit_Bereit	PEQU	F		
@@ -166,7 +166,7 @@ $GROUP IOs.DI_403
 iInp	PEQU	F	:= 1	
 $ENDGROUP IOs.DI_403
 $GROUP HZE001.WE03.Anforderung.Stoerg
-iSSm	PEQU	F		;(1) Störmeldung Betriebsrückmeldung fehlt
+iSSm	PEQU	F		;(1) St?rmeldung Betriebsr?ckmeldung fehlt
 $ENDGROUP HZE001.WE03.Anforderung.Stoerg
 uBT_Reboot	PEQU	F		
 $GROUP PCD01.A00.Mld.PCD01.A00.Mld.PCD01.A00.Mld.PCD01.Clock
@@ -176,7 +176,7 @@ $GROUP PCD01.A00.Mld.StSpg.Stoerg
 $ATTR TAGS=S_ADJUST,S_ADJUST
 DI24DC	PEQU	R		;(5) Meldung 3 - Digitale Eingangsadresse
 $ATTR TAGS=S_ADJUST,S_ADJUST
-AC230QuitPflicht	PEQU	F		;(5) Meldung 1 - Vorwahl ob die Störung dem Geber folgt oder gespeichert bleibt
+AC230QuitPflicht	PEQU	F		;(5) Meldung 1 - Vorwahl ob die St?rung dem Geber folgt oder gespeichert bleibt
 $ENDGROUP PCD01.A00.Mld.StSpg.Stoerg
 $GROUP PIN
 Level2	PEQU	RAM TEXT		
@@ -203,7 +203,7 @@ $ENDGROUP PCD01.A00.Mld.PCD01.A00.Mld.PCD01.Clock
 $GROUP PCD01.A00.Mld.StSpg.Stoerg
 SmAC230	PEQU	F		;(1) Meldung 1 - Alarmzustand
 $ATTR TAGS=S_ADJUST,S_ADJUST
-PhasenQuitPflicht	PEQU	F		;(5) Meldung 4 - Vorwahl ob die Störung dem Geber folgt oder gespeichert bleibt
+PhasenQuitPflicht	PEQU	F		;(5) Meldung 4 - Vorwahl ob die St?rung dem Geber folgt oder gespeichert bleibt
 $ENDGROUP PCD01.A00.Mld.StSpg.Stoerg
 $GROUP PIN
 Level1	PEQU	RAM TEXT		
@@ -245,7 +245,7 @@ TEXT	Level4		"",
 $ENDGROUP PIN
 $GROUP PCD01.A00.Mld.PCD01.Init.Box
 $ATTR TAGS=S_ADJUST
-HistQuit	PEQU	F		;(4) Löschen der History
+HistQuit	PEQU	F		;(4) L?schen der History
 $ENDGROUP PCD01.A00.Mld.PCD01.Init.Box
 LOW	PEQU	F		
 $GROUP RLT003.AUL.Temp
@@ -260,7 +260,7 @@ $ENDGROUP PCD01.A00.Mld.PCD01.SWeb
 $GROUP PCD01.A00.Mld.StSpg.Stoerg
 SmDC24	PEQU	F		;(1) Meldung 3 - Alarmzustand
 $ATTR TAGS=S_ADJUST,S_ADJUST
-SpgQuitPflicht	PEQU	F		;(5) Meldung 5 - Vorwahl ob die Störung dem Geber folgt oder gespeichert bleibt
+SpgQuitPflicht	PEQU	F		;(5) Meldung 5 - Vorwahl ob die St?rung dem Geber folgt oder gespeichert bleibt
 $ENDGROUP PCD01.A00.Mld.StSpg.Stoerg
 $GROUP PCD01.A00.Mld.StSpg.USV
 $ATTR TAGS=S_ADJUST
@@ -292,7 +292,7 @@ $GROUP PCD01.A00.Mld.PCD01.Quitt.SSMKLT
 iSSM	PEQU	R		
 $ENDGROUP PCD01.A00.Mld.PCD01.Quitt.SSMKLT
 $GROUP HZE001.WE01.UWP.Stoerg
-iSSm	PEQU	F		;(1) Störmeldung Betriebsrückmeldung fehlt
+iSSm	PEQU	F		;(1) St?rmeldung Betriebsr?ckmeldung fehlt
 $ENDGROUP HZE001.WE01.UWP.Stoerg
 $GROUP PCD01.A00.Mld.PCD01.Clock
 iEnD	PEQU	F		
@@ -303,7 +303,7 @@ $ATTR TAGS=S_ADJUST,S_ADJUST
 SpgNoNc	PEQU	F		;(5) Meldung 5 - Auswahl des Normalzustands des Gebers
 $ENDGROUP PCD01.A00.Mld.StSpg.Stoerg
 $GROUP PCD01.A00.Mld.StSpg.USV
-Sm	PEQU	F		;(1) Zustand der Störmeldung
+Sm	PEQU	F		;(1) Zustand der St?rmeldung
 $ENDGROUP PCD01.A00.Mld.StSpg.USV
 $GROUP Mail
 Pwd	PEQU	TEXT		
@@ -315,7 +315,7 @@ $GROUP PCD01.A00.Mld.PCD01.Init.Box
 HistCall7	PEQU	R		;(3) Zeilennummer in Aufrufebene 7
 HistProgLine	PEQU	R		;(3) Programmzeile in der der Fehler aufgetreten ist
 $ATTR TAGS=S_ADJUST
-WartQuit	PEQU	F		;(4) Rücksetzen der Wartungsmeldungen und - zähler in allen Steuerungs-FBoxen
+WartQuit	PEQU	F		;(4) R?cksetzen der Wartungsmeldungen und - z?hler in allen Steuerungs-FBoxen
 $ENDGROUP PCD01.A00.Mld.PCD01.Init.Box
 $GROUP IOs.DO_189
 iOut	PEQU	F		
@@ -325,7 +325,7 @@ $ATTR TAGS=S_ADJUST
 IP	PEQU	R		
 $ENDGROUP PCD01.VER
 $GROUP HZE002.Weiche.UWP.Stoerg
-iSSm	PEQU	F		;(1) Störmeldung Betriebsrückmeldung fehlt
+iSSm	PEQU	F		;(1) St?rmeldung Betriebsr?ckmeldung fehlt
 $ENDGROUP HZE002.Weiche.UWP.Stoerg
 $GROUP PCD01.A00.Mld.PCD01.Quitt.Tast
 iDO	PEQU	F		
@@ -338,11 +338,11 @@ iDay	PEQU	R
 $ENDGROUP PCD01.A00.Mld.PCD01.Clock
 $GROUP PCD01.A00.Mld.StSpg.Stoerg
 $ATTR TAGS=S_ADJUST,S_ADJUST
-AC24QuitPflicht	PEQU	F		;(5) Meldung 2 - Vorwahl ob die Störung dem Geber folgt oder gespeichert bleibt
+AC24QuitPflicht	PEQU	F		;(5) Meldung 2 - Vorwahl ob die St?rung dem Geber folgt oder gespeichert bleibt
 $ENDGROUP PCD01.A00.Mld.StSpg.Stoerg
 $GROUP PCD01.A00.Mld.StSpg.USV
 $ATTR TAGS=S_ADJUST
-SpgGrp	PEQU	R		;(5) zugehörige Spannungsgruppe zur Unterdrückung von Geistermeldungen bei fehle
+SpgGrp	PEQU	R		;(5) zugeh?rige Spannungsgruppe zur Unterdr?ckung von Geistermeldungen bei fehle
 $ENDGROUP PCD01.A00.Mld.StSpg.USV
 FileDringend	PEQU	TEXT		
 TEXT	FileDringend		"",
@@ -377,7 +377,7 @@ AC24NoNc	PEQU	F		;(5) Meldung 2 - Auswahl des Normalzustands des Gebers
 $ENDGROUP PCD01.A00.Mld.StSpg.Stoerg
 $GROUP PCD01.A00.Mld.StSpg.USV
 $ATTR TAGS=S_ADJUST
-QuitPflicht	PEQU	F		;(5) Vorwahl ob die Störung dem Geber folgt oder gespeichert bleibt und quittier
+QuitPflicht	PEQU	F		;(5) Vorwahl ob die St?rung dem Geber folgt oder gespeichert bleibt und quittier
 $ENDGROUP PCD01.A00.Mld.StSpg.USV
 FileNormal	PEQU	TEXT		
 TEXT	FileNormal		"",
@@ -403,7 +403,7 @@ $GROUP PCD01.A00.Mld.PCD01.Quitt.WRNRLT
 iSWM	PEQU	R		
 $ENDGROUP PCD01.A00.Mld.PCD01.Quitt.WRNRLT
 $GROUP HZE001.WE01.Anforderung.Stoerg
-iSSm	PEQU	F		;(1) Störmeldung Betriebsrückmeldung fehlt
+iSSm	PEQU	F		;(1) St?rmeldung Betriebsr?ckmeldung fehlt
 $ENDGROUP HZE001.WE01.Anforderung.Stoerg
 $GROUP PCD01.Panel
 iRestart	PEQU	F		
@@ -416,7 +416,7 @@ sHM	PEQU	R
 $ENDGROUP PCD01.A00.Mld.PCD01.Clock
 $GROUP PCD01.A00.Mld.StSpg.Stoerg
 $ATTR TAGS=S_ADJUST,S_ADJUST
-DC24QuitPflicht	PEQU	F		;(5) Meldung 3 - Vorwahl ob die Störung dem Geber folgt oder gespeichert bleibt
+DC24QuitPflicht	PEQU	F		;(5) Meldung 3 - Vorwahl ob die St?rung dem Geber folgt oder gespeichert bleibt
 $ENDGROUP PCD01.A00.Mld.StSpg.Stoerg
 $GROUP PCD01.A00.Mld.StSpg.USV
 $ATTR TAGS=S_ADJUST
@@ -456,7 +456,7 @@ iYear	PEQU	R
 $ENDGROUP PCD01.A00.Mld.PCD01.Clock
 $GROUP PCD01.A00.Mld.StSpg.Stoerg
 $ATTR TAGS=S_ADJUST,S_ADJUST
-Verzoeger	PEQU	R		;(5) Verzögerung bis Normalzustand angezeigt wird
+Verzoeger	PEQU	R		;(5) Verz?gerung bis Normalzustand angezeigt wird
 $ATTR TAGS=S_ADJUST,S_ADJUST
 DC24NoNc	PEQU	F		;(5) Meldung 3 - Auswahl des Normalzustands des Gebers
 $ENDGROUP PCD01.A00.Mld.StSpg.Stoerg
@@ -498,10 +498,10 @@ To5	PEQU	TEXT
 $ENDGROUP Mail
 $GROUP PCD01.A00.Mld.PCD01.SW.Antiblock
 $ATTR TAGS=S_ADJUST
-YVorwahl	PEQU	R		;(5) Betriebsvorwahl für die Antiblockierschutzfunktion
+YVorwahl	PEQU	R		;(5) Betriebsvorwahl f?r die Antiblockierschutzfunktion
 $ENDGROUP PCD01.A00.Mld.PCD01.SW.Antiblock
 $GROUP PCD01.A00.Mld.PCD01.Init.Box
-HistReserve	PEQU	R		;(3) Vorhaltung für spätere Ergänzungen
+HistReserve	PEQU	R		;(3) Vorhaltung f?r sp?tere Erg?nzungen
 $ENDGROUP PCD01.A00.Mld.PCD01.Init.Box
 $GROUP PCD01.A00.Mld.PCD01.SVz
 iSVZ3000	PEQU	F		
@@ -510,7 +510,7 @@ $GROUP RLT003.VE.VL.Sec.UWP.Stoerg
 iSSm	PEQU	F		
 $ENDGROUP RLT003.VE.VL.Sec.UWP.Stoerg
 $GROUP HZE001.WE02.Anforderung.Stoerg
-iSSm	PEQU	F		;(1) Störmeldung Betriebsrückmeldung fehlt
+iSSm	PEQU	F		;(1) St?rmeldung Betriebsr?ckmeldung fehlt
 $ENDGROUP HZE001.WE02.Anforderung.Stoerg
 $GROUP PCD01.A00.Mld.PCD01.Quitt.Tast
 iMOD	PEQU	F		
@@ -540,127 +540,113 @@ $ENDGROUP PCD01.A00.Mld.PCD01.SW.Antiblock
 $GROUP PCD01.A00.Mld.PCD01.Init.Box
 SmBatterie	PEQU	F		;(1) Batterie schwach
 $ENDGROUP PCD01.A00.Mld.PCD01.Init.Box
-COB_1	EQU	COB		
-$GROUP IOs.DI_390
-iInp	PEQU	F		
-$ENDGROUP IOs.DI_390
-$GROUP IOs.DI_388
-iInp	PEQU	F		
-$ENDGROUP IOs.DI_388
-$GROUP IOs.DI_391
-iInp	PEQU	F		
-$ENDGROUP IOs.DI_391
-$GROUP IOs.DI_389
-iInp	PEQU	F		
-$ENDGROUP IOs.DI_389
-$GROUP IOs.DI_387
-iInp	PEQU	F		
-$ENDGROUP IOs.DI_387
-$GROUP IOs.DI_384
-iInp	PEQU	F		
-$ENDGROUP IOs.DI_384
-$GROUP IOs.DI_386
-iInp	PEQU	F		
-$ENDGROUP IOs.DI_386
-$GROUP IOs.DI_385
-iInp	PEQU	F		
-$ENDGROUP IOs.DI_385
+I_O	EQU	COB		
 $GROUP IOs.DO_32
 iMACT	PEQU	F		
 $ENDGROUP IOs.DO_32
-$GROUP IOs.DO_34
-iOut	PEQU	F		
-$ENDGROUP IOs.DO_34
-$GROUP IOs.DO_32
-iOut	PEQU	F		
-$ENDGROUP IOs.DO_32
 $GROUP IOs.DO_35
-iOut	PEQU	F		
 iMACT	PEQU	F		
 $ENDGROUP IOs.DO_35
 $GROUP IOs.DO_34
 iMACT	PEQU	F		
 $ENDGROUP IOs.DO_34
 $GROUP IOs.DO_33
-iOut	PEQU	F		
 iMACT	PEQU	F		
 $ENDGROUP IOs.DO_33
-$GROUP IOs.AI_512
-iDefekt	PEQU	F		
-$ENDGROUP IOs.AI_512
-$GROUP IOs.AI_513
-iDefekt	PEQU	F		
-$ENDGROUP IOs.AI_513
-$GROUP IOs.AI_519
-iIstwert	PEQU	R		
-$ENDGROUP IOs.AI_519
 $GROUP IOs
 $ATTR TAGS=S_ADJUST
 AI512	EQU	F		
+AI_32	PEQU	I	32	
 $ENDGROUP IOs
-$GROUP IOs.AI_517
-iIstwert	PEQU	R		
-$ENDGROUP IOs.AI_517
-$GROUP IOs
-AI_40_Error	EQU	R		
-$ENDGROUP IOs
-$GROUP IOs.AI_517
-iDefekt	PEQU	F		
-$ENDGROUP IOs.AI_517
-$GROUP IOs.AI_516
-iDefekt	PEQU	F		
-$ENDGROUP IOs.AI_516
-$GROUP IOs.AI_515
-iDefekt	PEQU	F		
-$ENDGROUP IOs.AI_515
-$GROUP IOs.AI_512
-iIstwert	PEQU	R		;(1) Physikalischer Wert des Sensors = Ausgang "Iw"
-$ENDGROUP IOs.AI_512
-$GROUP IOs.AI_518
-iDefekt	PEQU	F		
-$ENDGROUP IOs.AI_518
-$GROUP IOs.AI_516
-iIstwert	PEQU	R		;(1) Physikalischer Wert des Sensors = Ausgang "Iw"
-$ENDGROUP IOs.AI_516
-$GROUP IOs.AI_513
-iIstwert	PEQU	R		;(1) Physikalischer Wert des Sensors = Ausgang "Iw"
-$ENDGROUP IOs.AI_513
-$GROUP IOs.AI_514
-iIstwert	PEQU	R		;(1) Physikalischer Wert des Sensors = Ausgang "Iw"
-$ENDGROUP IOs.AI_514
-$GROUP IOs.AI_519
-iDefekt	PEQU	F		
-$ENDGROUP IOs.AI_519
-$GROUP IOs.AI_514
-iDefekt	PEQU	F		
-$ENDGROUP IOs.AI_514
-$GROUP IOs
-AI_72	PEQU	I	32	
-$ENDGROUP IOs
-$GROUP IOs.AI_515
-iIstwert	PEQU	R		;(1) Physikalischer Wert des Sensors = Ausgang "Iw"
-$ENDGROUP IOs.AI_515
-$GROUP IOs.AI_518
-iIstwert	PEQU	R		
-$ENDGROUP IOs.AI_518
-$GROUP IOs.AO_208
-iOut	PEQU	R		
-$ENDGROUP IOs.AO_208
-$GROUP IOs.AO_210
-iOut	PEQU	R		
-$ENDGROUP IOs.AO_210
-$GROUP IOs
-AO_88	PEQU	O	48	
-$ENDGROUP IOs
-$GROUP IOs.AO_211
-iOut	PEQU	R		
-$ENDGROUP IOs.AO_211
-$GROUP IOs.AO_209
-iOut	PEQU	R		
-$ENDGROUP IOs.AO_209
-COB_2	EQU	COB		
+ModbusTCPClient	EQU	COB		
 $GROUP try
-mb	EQU	F		
 mb2	EQU	R		
 $ENDGROUP try
+ModbusRTU	EQU	COB		
+$GROUP rtu
+tst	EQU	R		
+$ENDGROUP rtu
+RecPV	EQU	COB		
+$GROUP RecPV
+Freq	EQU	R		
+$ENDGROUP RecPV
+$GROUP SetPoints.Integer_0
+Register	PEQU	R		;(4) Integer value
+$ENDGROUP SetPoints.Integer_0
+Pulse	EQU	F		
+$GROUP RecPV
+Mode	EQU	R		
+$ENDGROUP RecPV
+$GROUP SetPoints.Integer_1
+Register	PEQU	R		;(4) Integer value
+$ENDGROUP SetPoints.Integer_1
+$GROUP IOs
+AO_48	EQU	O	48	
+$ENDGROUP IOs
+HiLowPressure	EQU	F		
+leak1	EQU	F		
+leak2	EQU	F		
+leak3	EQU	F		
+leak4	EQU	F		
+leak5	EQU	F		
+leak6	EQU	F		
+leak7	EQU	F		
+leak8	EQU	F		
+leak9	EQU	F		
+leak10	EQU	F		
+CompressStart	EQU	F		
+HeatRoofStart	EQU	F		
+BlowRotorStart	EQU	F		
+Hum	EQU	R		
+Temp	EQU	R		
+AnalogError	EQU	R		
+TempError	EQU	F		
+RecircAO	EQU	R		
+ValveAO	EQU	R		
+$GROUP RecPV
+ModeFb	EQU	R		
+$ENDGROUP RecPV
+PulseTCP	EQU	F		
+$GROUP Pool
+$ATTR INFO=FLOAT
+Hum	EQU	R		
+$ENDGROUP Pool
+$GROUP PV1
+State	EQU	R		
+$ENDGROUP PV1
+$GROUP Pool
+$ATTR INFO=FLOAT
+Hum_	EQU	R		
+$ENDGROUP Pool
+$GROUP PV1
+ExtRec	EQU	R		
+$ENDGROUP PV1
+$GROUP SetPoints.Binary_0
+$ATTR TAGS=S_ADJUST
+Flag	PEQU	F		;(4) Binary value
+$ENDGROUP SetPoints.Binary_0
+$GROUP SetPoints.Integer_2
+$ATTR TAGS=S_ADJUST
+Register	PEQU	R		;(4) Integer value
+$ENDGROUP SetPoints.Integer_2
+$GROUP SetPoints.Integer_3
+$ATTR TAGS=S_ADJUST
+Register	PEQU	R		;(4) Integer value
+$ENDGROUP SetPoints.Integer_3
+$GROUP PV1
+StateBit	EQU	F		
+$ENDGROUP PV1
+$GROUP RecPV
+FreqCmd	EQU	R		
+ModeCmd	EQU	R		
+WrkState	EQU	F		
+$ENDGROUP RecPV
+$GROUP SetPoints.Integer_4
+$ATTR TAGS=S_ADJUST
+Register	PEQU	R		;(4) Integer value
+$ENDGROUP SetPoints.Integer_4
+$GROUP SetPoints.Integer_5
+$ATTR TAGS=S_ADJUST
+Register	PEQU	R		;(4) Integer value
+$ENDGROUP SetPoints.Integer_5
 ;;End of Module symbols

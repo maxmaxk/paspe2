@@ -160,3 +160,4 @@ A.HVC.Uhrzeit.Time EQU R [3] ;
 A.HVC.Uhrzeit.Date EQU R  ;
 A.HVC.Uhrzeit.DayOW EQU R  ;
 s.modc.ModbusClient.fboxerror EQU R  ;
+s.modc.ModbusRTU.fboxerror EQU R  ;
