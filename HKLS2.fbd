@@ -2081,6 +2081,130 @@ _PageProbe(		__EOP___SG_ModbusTCPClient_00)			;;Mark end of page.
                ECOB
 $endif							;; Block condition
 ;;
+;; Block: COB 5 [ModbusTCPServer]
+;; Pages: 2
+;;
+__PAGE_ID__	DEF	STR	""
+$if 1							;; Block condition
+		COB	ModbusTCPServer
+			0
+
+;;
+;; Block: COB 5 [ModbusTCPServer]
+;; Page: 1/2 Init
+__PAGE_ID__	DEF	STR	""
+;;
+$if 1
+__FBL_C00013C_00___SG_ModbusTCPServer			EQU		$;; Mark Page position
+;; Position: Init Server TCP -  - 25,1
+__fbl_C00013C_00_B9AC___SG_ModbusTCPServer           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47532	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_MODBUS_INITSRV(               2,                                    ;;Version Indicator.
+               ___FlgSta_C00013C___SG_ModbusTCPServer+0,              ;;Output #1 (Error)
+               __stc_id_0B9AC_var_00___SG_ModbusTCPServer,               ;;Static variable LED[1].
+               502,                               ;;Init variable (Port number).
+               0,                                 ;;Init variable (Protocol ).
+               GROUP__fbl_C00013C_00_B9AC)                ;;FBox user name.
+;; Position: Define Unit Server -  - 25,6
+__fbl_C00013C_00_B9AD___SG_ModbusTCPServer           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47533	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_MODBUS_UNITSRV2(               2,                                    ;;Version Indicator.
+		__low,                	;;Input #1 (Clear)
+               ___FlgDyn_C00013C___SG_ModbusTCPServer+0,              ;;Output #1 (Active)
+               ___FlgDyn_C00013C___SG_ModbusTCPServer+1,              ;;Output #2 (Error)
+               ___FlgDyn_C00013C___SG_ModbusTCPServer+4,              ;;Dynamic variable Fd[32].
+               __stc_id_0B9AD_var_00___SG_ModbusTCPServer,               ;;Static variable Fs[3].
+               __stc_id_0B9AD_var_01___SG_ModbusTCPServer,               ;;Static variable Fsd[10].
+               __stc_id_0B9AD_var_02___SG_ModbusTCPServer,               ;;Static variable Rs[1].
+               __stc_id_0B9AD_var_03___SG_ModbusTCPServer,               ;;Static variable LED[1].
+               0,                                 ;;Init variable (Define Unit identifier).
+               2,                                 ;;Init variable (Fix Unit identifier).
+               0,                                 ;;Init variable (Offset 0->1 ).
+               0,                                 ;;Init variable (32 Bits, swap words ).
+               0,                                 ;;Init variable (32 Bits, holes ).
+               1,                                 ;;Init variable (Active default mapping ).
+               1)                                 ;;Init variable (Diagnostic ).
+;; Position: Define Mapping Integer -  - 25,16
+__fbl_C00013C_00_B9AF___SG_ModbusTCPServer           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47535	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_MODBUS_MAPPINT(               1,                                    ;;Version Indicator.
+               ___FlgDyn_C00013C___SG_ModbusTCPServer+2,              ;;Output #1 (Error)
+               __stc_id_0B9AF_var_00___SG_ModbusTCPServer,               ;;Static variable LED[1].
+               2,                                 ;;Init variable (Unit identifier).
+               4,                                 ;;Init variable (Partner media type ).
+               12000,                             ;;Init variable (Partner start address).
+               500,                               ;;Init variable (Partner range).
+               6,                                 ;;Init variable (Map to PCD media type ).
+               12000,                             ;;Init variable (Map to PCD start address).
+               500,                               ;;Init variable (Map to PCD range).
+               1,                                 ;;Init variable (Area type ).
+               0)                                 ;;Init variable (Access type ).
+;; Position: Define Mapping Integer -  - 47,16
+__fbl_C00013C_00_B9AE___SG_ModbusTCPServer           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47534	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_MODBUS_MAPPINT(               1,                                    ;;Version Indicator.
+               ___FlgDyn_C00013C___SG_ModbusTCPServer+3,              ;;Output #1 (Error)
+               __stc_id_0B9AE_var_00___SG_ModbusTCPServer,               ;;Static variable LED[1].
+               2,                                 ;;Init variable (Unit identifier).
+               3,                                 ;;Init variable (Partner media type ).
+               13000,                             ;;Init variable (Partner start address).
+               500,                               ;;Init variable (Partner range).
+               6,                                 ;;Init variable (Map to PCD media type ).
+               13000,                             ;;Init variable (Map to PCD start address).
+               500,                               ;;Init variable (Map to PCD range).
+               1,                                 ;;Init variable (Area type ).
+               0)                                 ;;Init variable (Access type ).
+$endif							;; Page condition
+__EOPP___SG_ModbusTCPServer_00		EQU		$;Mark Page end position
+_PageProbe(		__EOP___SG_ModbusTCPServer_00)			;;Mark end of page.
+;; Block: COB 5 [ModbusTCPServer]
+;; Page: 2/2 PVRecManage
+__PAGE_ID__	DEF	STR	""
+;;
+$if 1
+__FBL_C00013C_01___SG_ModbusTCPServer			EQU		$;; Mark Page position
+;; Position: Read from reg. integer -  - 24,15
+__fbl_C00013C_01_B9B1___SG_ModbusTCPServer           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47537	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_FUPIntMov(     13000,                		;;Copy input label '13000' in 
+                ___RegDyn_C00013C___SG_ModbusTCPServer+1, )		;;network variable.
+_INDREGI(		___RegDyn_C00013C___SG_ModbusTCPServer+1,	;;Input #1 (#)
+               RecPV.On,                           ;;Output #1 (R0)
+               RecPV.LowSpeed,                     ;;Output #2 (R1)
+               RecPV.HiSpeed,                      ;;Output #3 (R2)
+               RecPV.HumOnDryer,                   ;;Output #4 (R3)
+               RecPV.HumOffDryer,,,)               ;;Output #5 (R4)
+;; Position: 1-bit to int LSB -  - 65,31
+__fbl_C00013C_01_B9B7___SG_ModbusTCPServer           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47543	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_CONBIMOVE(		HiLowPressure,        	;;Input #1 ()
+               ___RegDyn_C00013C___SG_ModbusTCPServer+2)              ;;Output #1 ()
+;; Position: Copy to reg. integer -  - 73,14
+__fbl_C00013C_01_B9B0___SG_ModbusTCPServer           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47536	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_FUPIntMov(     12000,                		;;Copy input label '12000' in 
+                ___RegDyn_C00013C___SG_ModbusTCPServer+0, )		;;network variable.
+_INDREGO(		___RegDyn_C00013C___SG_ModbusTCPServer+0,	;;Input #1 (#)
+		RecPV.State,          	;;Input #2 (R0)
+		RecPV.FreqCmd,        	;;Input #3 (R1)
+		Temp,                 	;;Input #4 (R2)
+		Hum,                  	;;Input #5 (R3)
+		RecPV.CompState,      	;;Input #6 (R4)
+		RecPV.ModeFb,         	;;Input #7 (R5)
+		___RegDyn_C00013C___SG_ModbusTCPServer+2,)	;;Input #8 (R6)
+$endif							;; Page condition
+__EOPP___SG_ModbusTCPServer_01		EQU		$;Mark Page end position
+_PageProbe(		__EOP___SG_ModbusTCPServer_01)			;;Mark end of page.
+               ECOB
+$endif							;; Block condition
+;;
 ;; Block: COB ModbusRTU
 ;; Pages: 1
 ;;
@@ -2343,36 +2467,28 @@ _IMUX(		___RegDyn_C0000FD___SG_RecPV+0,	;;Input #1 (I0)
 		___FlgDyn_C0000FD___SG_RecPV+0,	;;Input #3 (E0)
 		PV1.StateBit,,,,,,,   	;;Input #4 (E1)
                RecircAO)                           ;;Output #1 (Out)
-;; Position: Integer 2.0 -  - 12,23
-__fbl_C0000FD_02_B99D___SG_RecPV           EQU                   $ ;Mark FBox position.
-__FBOX_ID__	DEF	47517	;
+;; Position: Multiply -  - 19,20
+__fbl_C0000FD_02_B9B4___SG_RecPV           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47540	;
 __FBOX_LANG__	DEF	STR	"EN"	;
-_DDC_SPGENERAL22(               200000,                               ;;Version Indicator.
-               ___RegDyn_C0000FD___SG_RecPV+4,              ;;Output #1 (Val)
-               SetPoints.Integer_2.Register,               ;; (4) Integer value.
-               0,                                 ;;Init variable (BACnet).
-               1500,                              ;;Init variable (Pre-selection).
-               GROUP__fbl_C0000FD_02_B99D)                ;;FBox user name.
-;; Position: Integer 2.0 -  - 12,26
-__fbl_C0000FD_02_B99E___SG_RecPV           EQU                   $ ;Mark FBox position.
-__FBOX_ID__	DEF	47518	;
+_FUPIntMov(     50,                   		;;Copy input label '50' in 
+                ___RegDyn_C0000FD___SG_RecPV+4, )		;;network variable.
+_IMUL(		RecPV.LowSpeed,       	;;Input #1 ()
+		___RegDyn_C0000FD___SG_RecPV+4,	;;Input #2 ()
+               ___RegDyn_C0000FD___SG_RecPV+3)              ;;Output #1 ()
+;; Position: Multiply -  - 19,24
+__fbl_C0000FD_02_B9B5___SG_RecPV           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47541	;
 __FBOX_LANG__	DEF	STR	"EN"	;
-_DDC_SPGENERAL22(               200000,                               ;;Version Indicator.
-               ___RegDyn_C0000FD___SG_RecPV+5,              ;;Output #1 (Val)
-               SetPoints.Integer_3.Register,               ;; (4) Integer value.
-               0,                                 ;;Init variable (BACnet).
-               5000,                              ;;Init variable (Pre-selection).
-               GROUP__fbl_C0000FD_02_B99E)                ;;FBox user name.
-;; Position: Binary 2.0 -  - 12,29
-__fbl_C0000FD_02_B997___SG_RecPV           EQU                   $ ;Mark FBox position.
-__FBOX_ID__	DEF	47511	;
+_IMUL(		RecPV.HiSpeed,        	;;Input #1 ()
+		___RegDyn_C0000FD___SG_RecPV+4,	;;Input #2 ()
+               ___RegDyn_C0000FD___SG_RecPV+6)              ;;Output #1 ()
+;; Position: Int LSB to 1-bit -  - 22,29
+__fbl_C0000FD_02_B9B3___SG_RecPV           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47539	;
 __FBOX_LANG__	DEF	STR	"EN"	;
-_DDC_SPGENERAL21(               200000,                               ;;Version Indicator.
-               ___FlgDyn_C0000FD___SG_RecPV+1,              ;;Output #1 (Val)
-               SetPoints.Binary_0.Flag,               ;; (4) Binary value.
-               0,                                 ;;Init variable (BACnet).
-               0,                                 ;;Init variable (Pre-selection).
-               GROUP__fbl_C0000FD_02_B997)                ;;FBox user name.
+_CONIBMOVE(		RecPV.On,             	;;Input #1 ()
+               ___FlgDyn_C0000FD___SG_RecPV+1)              ;;Output #1 ()
 _FUPBinMov(    ___FlgDyn_C0000FD___SG_RecPV+1,             ;;Invert network variable  in
                 ___FlgDyn_C0000FD___SG_RecPV+2,-)		;;network variable.
 ;; Position: Mux bin. selection -  - 32,21
@@ -2380,12 +2496,12 @@ __fbl_C0000FD_02_B99C___SG_RecPV           EQU                   $ ;Mark FBox po
 __FBOX_ID__	DEF	47516	;
 __FBOX_LANG__	DEF	STR	"EN"	;
 _FUPIntMov(     0,                    		;;Copy input label '0' in 
-                ___RegDyn_C0000FD___SG_RecPV+3, )		;;network variable.
+                ___RegDyn_C0000FD___SG_RecPV+5, )		;;network variable.
 _FUPBinMov(    PV1.StateBit,                      ;;Invert input label 'PV1.StateBit' in
                 ___FlgDyn_C0000FD___SG_RecPV+3,-)		;;network variable.
-_IMUX(		___RegDyn_C0000FD___SG_RecPV+3,	;;Input #1 (I0)
-		___RegDyn_C0000FD___SG_RecPV+4,	;;Input #2 (I1)
-		___RegDyn_C0000FD___SG_RecPV+5,,,,,,	;;Input #3 (I2)
+_IMUX(		___RegDyn_C0000FD___SG_RecPV+5,	;;Input #1 (I0)
+		___RegDyn_C0000FD___SG_RecPV+3,	;;Input #2 (I1)
+		___RegDyn_C0000FD___SG_RecPV+6,,,,,,	;;Input #3 (I2)
 		___FlgDyn_C0000FD___SG_RecPV+2,	;;Input #4 (E0)
 		___FlgDyn_C0000FD___SG_RecPV+3,	;;Input #5 (E1)
 		PV1.StateBit,,,,,,    	;;Input #6 (E2)
@@ -2395,20 +2511,20 @@ __fbl_C0000FD_02_B99F___SG_RecPV           EQU                   $ ;Mark FBox po
 __FBOX_ID__	DEF	47519	;
 __FBOX_LANG__	DEF	STR	"EN"	;
 _FUPIntMov(     1400,                 		;;Copy input label '1400' in 
-                ___RegDyn_C0000FD___SG_RecPV+9, )		;;network variable.
+                ___RegDyn_C0000FD___SG_RecPV+10, )		;;network variable.
 _ICMPGT(		RecPV.FreqCmd,        	;;Input #1 ()
-		___RegDyn_C0000FD___SG_RecPV+9,	;;Input #2 ()
+		___RegDyn_C0000FD___SG_RecPV+10,	;;Input #2 ()
                RecPV.WrkState)                     ;;Output #1 (>)
 ;; Position: Off delay -  - 30,45
 __fbl_C0000FD_02_B9AB___SG_RecPV           EQU                   $ ;Mark FBox position.
 __FBOX_ID__	DEF	47531	;
 __FBOX_LANG__	DEF	STR	"EN"	;
 _FUPIntMov(     600,                  		;;Copy input label '600' in 
-                ___RegDyn_C0000FD___SG_RecPV+10, )		;;network variable.
+                ___RegDyn_C0000FD___SG_RecPV+11, )		;;network variable.
 _OFFDEL(		RecPV.WrkState,       	;;Input #1 (In)
-		___RegDyn_C0000FD___SG_RecPV+10,	;;Input #2 (TV)
+		___RegDyn_C0000FD___SG_RecPV+11,	;;Input #2 (TV)
                ___FlgDyn_C0000FD___SG_RecPV+4,              ;;Output #1 (Q)
-               ___RegDyn_C0000FD___SG_RecPV+11,              ;;Output #2 (t)
+               ___RegDyn_C0000FD___SG_RecPV+12,              ;;Output #2 (t)
                __stc_id_0B9AB_var_00___SG_RecPV,               ;;Static variable Tim[1].
                __stc_id_0B9AB_var_01___SG_RecPV)               ;;Static variable Sta[1].
 ;; Position: Mux bin. selection -  - 51,31
@@ -2416,18 +2532,24 @@ __fbl_C0000FD_02_B9A0___SG_RecPV           EQU                   $ ;Mark FBox po
 __FBOX_ID__	DEF	47520	;
 __FBOX_LANG__	DEF	STR	"EN"	;
 _FUPIntMov(     0,                    		;;Copy input label '0' in 
-                ___RegDyn_C0000FD___SG_RecPV+6, )		;;network variable.
-_FUPIntMov(     2,                    		;;Copy input label '2' in 
                 ___RegDyn_C0000FD___SG_RecPV+7, )		;;network variable.
-_FUPIntMov(     18,                   		;;Copy input label '18' in 
+_FUPIntMov(     2,                    		;;Copy input label '2' in 
                 ___RegDyn_C0000FD___SG_RecPV+8, )		;;network variable.
-_IMUX(		___RegDyn_C0000FD___SG_RecPV+6,	;;Input #1 (I0)
-		___RegDyn_C0000FD___SG_RecPV+7,	;;Input #2 (I1)
-		___RegDyn_C0000FD___SG_RecPV+8,,,,,,	;;Input #3 (I2)
+_FUPIntMov(     18,                   		;;Copy input label '18' in 
+                ___RegDyn_C0000FD___SG_RecPV+9, )		;;network variable.
+_IMUX(		___RegDyn_C0000FD___SG_RecPV+7,	;;Input #1 (I0)
+		___RegDyn_C0000FD___SG_RecPV+8,	;;Input #2 (I1)
+		___RegDyn_C0000FD___SG_RecPV+9,,,,,,	;;Input #3 (I2)
 		__low,                	;;Input #4 (E0)
 		RecPV.WrkState,       	;;Input #5 (E1)
 		___FlgDyn_C0000FD___SG_RecPV+4,,,,,,	;;Input #6 (E2)
                RecPV.ModeCmd)                      ;;Output #1 (Out)
+;; Position: 1-bit to int LSB -  - 53,57
+__fbl_C0000FD_02_B9B2___SG_RecPV           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47538	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_CONBIMOVE(		RecPV.WrkState,       	;;Input #1 ()
+               RecPV.State)                        ;;Output #1 ()
 $endif							;; Page condition
 __EOPP___SG_RecPV_02		EQU		$;Mark Page end position
 _PageProbe(		__EOP___SG_RecPV_02)			;;Mark end of page.
@@ -2437,24 +2559,14 @@ __PAGE_ID__	DEF	STR	""
 ;;
 $if 1
 __FBL_C0000FD_03___SG_RecPV			EQU		$;; Mark Page position
-;; Position: Integer 2.0 -  - 5,23
-__fbl_C0000FD_03_B9A3___SG_RecPV           EQU                   $ ;Mark FBox position.
-__FBOX_ID__	DEF	47523	;
-__FBOX_LANG__	DEF	STR	"EN"	;
-_DDC_SPGENERAL22(               200000,                               ;;Version Indicator.
-               ___RegDyn_C0000FD___SG_RecPV+1,              ;;Output #1 (Val)
-               SetPoints.Integer_4.Register,               ;; (4) Integer value.
-               0,                                 ;;Init variable (BACnet).
-               65,                                ;;Init variable (Pre-selection).
-               GROUP__fbl_C0000FD_03_B9A3)                ;;FBox user name.
 ;; Position: Int to float -  - 14,23
 __fbl_C0000FD_03_B9A5___SG_RecPV           EQU                   $ ;Mark FBox position.
 __FBOX_ID__	DEF	47525	;
 __FBOX_LANG__	DEF	STR	"EN"	;
-_CONIFP2(		___RegDyn_C0000FD___SG_RecPV+1,	;;Input #1 (Int)
+_CONIFP2(		RecPV.HumOnDryer,     	;;Input #1 (Int)
                ___RegDyn_C0000FD___SG_RecPV+0,              ;;Output #1 (Fp)
                ___FlgDyn_C0000FD___SG_RecPV+4,              ;;Output #2 (Err)
-               ___RegDyn_C0000FD___SG_RecPV+8,              ;;Dynamic variable RegTemp[1].
+               ___RegDyn_C0000FD___SG_RecPV+6,              ;;Dynamic variable RegTemp[1].
                0)                                 ;;Init variable (Power of ten [-20.. 18]).
 ;; Position: Is greater than -  - 28,18
 __fbl_C0000FD_03_B9A1___SG_RecPV           EQU                   $ ;Mark FBox position.
@@ -2463,31 +2575,21 @@ __FBOX_LANG__	DEF	STR	"EN"	;
 _FCMPGT(		Pool.Hum,             	;;Input #1 ()
 		___RegDyn_C0000FD___SG_RecPV+0,	;;Input #2 ()
                ___FlgDyn_C0000FD___SG_RecPV+2)              ;;Output #1 (>)
-;; Position: Integer 2.0 -  - 5,29
-__fbl_C0000FD_03_B9A4___SG_RecPV           EQU                   $ ;Mark FBox position.
-__FBOX_ID__	DEF	47524	;
-__FBOX_LANG__	DEF	STR	"EN"	;
-_DDC_SPGENERAL22(               200000,                               ;;Version Indicator.
-               ___RegDyn_C0000FD___SG_RecPV+5,              ;;Output #1 (Val)
-               SetPoints.Integer_5.Register,               ;; (4) Integer value.
-               0,                                 ;;Init variable (BACnet).
-               40,                                ;;Init variable (Pre-selection).
-               GROUP__fbl_C0000FD_03_B9A4)                ;;FBox user name.
 ;; Position: Int to float -  - 14,29
 __fbl_C0000FD_03_B9A6___SG_RecPV           EQU                   $ ;Mark FBox position.
 __FBOX_ID__	DEF	47526	;
 __FBOX_LANG__	DEF	STR	"EN"	;
-_CONIFP2(		___RegDyn_C0000FD___SG_RecPV+5,	;;Input #1 (Int)
-               ___RegDyn_C0000FD___SG_RecPV+4,              ;;Output #1 (Fp)
+_CONIFP2(		RecPV.HumOffDryer,    	;;Input #1 (Int)
+               ___RegDyn_C0000FD___SG_RecPV+3,              ;;Output #1 (Fp)
                ___FlgDyn_C0000FD___SG_RecPV+5,              ;;Output #2 (Err)
-               ___RegDyn_C0000FD___SG_RecPV+9,              ;;Dynamic variable RegTemp[1].
+               ___RegDyn_C0000FD___SG_RecPV+7,              ;;Dynamic variable RegTemp[1].
                0)                                 ;;Init variable (Power of ten [-20.. 18]).
 ;; Position: Is smaller than -  - 28,26
 __fbl_C0000FD_03_B9A2___SG_RecPV           EQU                   $ ;Mark FBox position.
 __FBOX_ID__	DEF	47522	;
 __FBOX_LANG__	DEF	STR	"EN"	;
 _FCMPST(		Pool.Hum,             	;;Input #1 ()
-		___RegDyn_C0000FD___SG_RecPV+4,	;;Input #2 ()
+		___RegDyn_C0000FD___SG_RecPV+3,	;;Input #2 ()
                ___FlgDyn_C0000FD___SG_RecPV+3)              ;;Output #1 (<)
 ;; Position: Type SR -  - 39,22
 __fbl_C0000FD_03_B9A7___SG_RecPV           EQU                   $ ;Mark FBox position.
@@ -2513,11 +2615,11 @@ __fbl_C0000FD_03_B9A8___SG_RecPV           EQU                   $ ;Mark FBox po
 __FBOX_ID__	DEF	47528	;
 __FBOX_LANG__	DEF	STR	"EN"	;
 _FUPIntMov(     300,                  		;;Copy input label '300' in 
-                ___RegDyn_C0000FD___SG_RecPV+2, )		;;network variable.
+                ___RegDyn_C0000FD___SG_RecPV+1, )		;;network variable.
 _ONDEL(		___FlgDyn_C0000FD___SG_RecPV+0,	;;Input #1 (In)
-		___RegDyn_C0000FD___SG_RecPV+2,	;;Input #2 (TV)
+		___RegDyn_C0000FD___SG_RecPV+1,	;;Input #2 (TV)
                CompressStart,                      ;;Output #1 (Q)
-               ___RegDyn_C0000FD___SG_RecPV+3,              ;;Output #2 (t)
+               ___RegDyn_C0000FD___SG_RecPV+2,              ;;Output #2 (t)
                __stc_id_0B9A8_var_00___SG_RecPV,               ;;Static variable Tim[1].
                __stc_id_0B9A8_var_01___SG_RecPV)               ;;Static variable Sta[1].
 ;; Position: Mux bin. selection -  - 54,34
@@ -2525,16 +2627,22 @@ __fbl_C0000FD_03_B9AA___SG_RecPV           EQU                   $ ;Mark FBox po
 __FBOX_ID__	DEF	47530	;
 __FBOX_LANG__	DEF	STR	"EN"	;
 _FUPIntMov(     1000,                 		;;Copy input label '1000' in 
-                ___RegDyn_C0000FD___SG_RecPV+6, )		;;network variable.
+                ___RegDyn_C0000FD___SG_RecPV+4, )		;;network variable.
 _FUPIntMov(     0,                    		;;Copy input label '0' in 
-                ___RegDyn_C0000FD___SG_RecPV+7, )		;;network variable.
+                ___RegDyn_C0000FD___SG_RecPV+5, )		;;network variable.
 _FUPBinMov(    CompressStart,                     ;;Invert input label 'CompressStart' in
                 ___FlgDyn_C0000FD___SG_RecPV+6,-)		;;network variable.
-_IMUX(		___RegDyn_C0000FD___SG_RecPV+6,	;;Input #1 (I0)
-		___RegDyn_C0000FD___SG_RecPV+7,,,,,,,	;;Input #2 (I1)
+_IMUX(		___RegDyn_C0000FD___SG_RecPV+4,	;;Input #1 (I0)
+		___RegDyn_C0000FD___SG_RecPV+5,,,,,,,	;;Input #2 (I1)
 		___FlgDyn_C0000FD___SG_RecPV+6,	;;Input #3 (E0)
 		CompressStart,,,,,,,  	;;Input #4 (E1)
                PV1.ExtRec)                         ;;Output #1 (Out)
+;; Position: 1-bit to int LSB -  - 57,48
+__fbl_C0000FD_03_B9B6___SG_RecPV           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47542	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_CONBIMOVE(		CompressStart,        	;;Input #1 ()
+               RecPV.CompState)                    ;;Output #1 ()
 $endif							;; Page condition
 __EOPP___SG_RecPV_03		EQU		$;Mark Page end position
 _PageProbe(		__EOP___SG_RecPV_03)			;;Mark end of page.

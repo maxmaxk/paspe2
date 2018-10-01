@@ -620,20 +620,6 @@ Hum_	EQU	R
 $ENDGROUP Pool
 $GROUP PV1
 ExtRec	EQU	R		
-$ENDGROUP PV1
-$GROUP SetPoints.Binary_0
-$ATTR TAGS=S_ADJUST
-Flag	PEQU	F		;(4) Binary value
-$ENDGROUP SetPoints.Binary_0
-$GROUP SetPoints.Integer_2
-$ATTR TAGS=S_ADJUST
-Register	PEQU	R		;(4) Integer value
-$ENDGROUP SetPoints.Integer_2
-$GROUP SetPoints.Integer_3
-$ATTR TAGS=S_ADJUST
-Register	PEQU	R		;(4) Integer value
-$ENDGROUP SetPoints.Integer_3
-$GROUP PV1
 StateBit	EQU	F		
 $ENDGROUP PV1
 $GROUP RecPV
@@ -641,12 +627,16 @@ FreqCmd	EQU	R
 ModeCmd	EQU	R		
 WrkState	EQU	F		
 $ENDGROUP RecPV
-$GROUP SetPoints.Integer_4
-$ATTR TAGS=S_ADJUST
-Register	PEQU	R		;(4) Integer value
-$ENDGROUP SetPoints.Integer_4
-$GROUP SetPoints.Integer_5
-$ATTR TAGS=S_ADJUST
-Register	PEQU	R		;(4) Integer value
-$ENDGROUP SetPoints.Integer_5
+ModbusTCPServer	EQU	COB	5	
+$GROUP RecPV
+On	EQU	R		
+LowSpeed	EQU	R		
+HiSpeed	EQU	R		
+HumOnDryer	EQU	R		
+HumOffDryer	EQU	R		
+State	EQU	R		
+TempCanal	EQU	R		
+HumCanal	EQU	R		
+CompState	EQU	R		
+$ENDGROUP RecPV
 ;;End of Module symbols

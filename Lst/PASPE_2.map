@@ -1,29 +1,30 @@
 SAIA PG5 LINKER V2.1.410                                               Page 1
 User: Renergie
-File: PASPE_2.pcd   Linked: 25/09/18 17:47 
+File: PASPE_2.pcd   Linked: 01/10/18 17:44 
 
         CODE    CODE    TXT/DB  EXTEN
 FILE    START   SEG     SEG     SEG     ASSEMBLY         FILE
 NUMBER  LINE    LINES   BYTES   BYTES   DATE AND TIME    NAME
 --------------------------------------------------------------------------------
-1       0       0       804     0       25/09/18 17:47   _PASPE_2.src
-2       0       4367    239     1144    25/09/18 17:47   HKLS2.fbd
-3       4367    0       0       0       25/09/18 17:47   InitODM.src
-4       4367    1010    200     0       25/09/18 17:47   heavac5.srx
-5       5377    240     2808    0       25/09/18 17:47   sfupanl5.srx
-6       5617    0       0       0       25/09/18 17:47   sModMaster.srx
-7       5617    78      12      0       14/10/14 11:02   sfuplib3.src
+1       0       0       804     0       01/10/18 17:44   _PASPE_2.src
+2       0       4460    292     1144    01/10/18 17:44   HKLS2.fbd
+3       4460    0       0       0       01/10/18 17:44   InitODM.src
+4       4460    1010    200     0       01/10/18 17:44   heavac5.srx
+5       5470    240     2808    0       01/10/18 17:44   sfupanl5.srx
+6       5710    0       0       0       01/10/18 17:44   sModMaster.srx
+7       5710    0       0       0       01/10/18 17:44   sModSlave.srx
+8       5710    78      12      0       14/10/14 11:02   sfuplib3.src
 --------------------------------------------------------------------------------
 
-CODE SEGMENT SIZE:      6767 LINES (27068 BYTES)
-TEXT/DB SEGMENT SIZE:   4063 BYTES
+CODE SEGMENT SIZE:      6954 LINES (27816 BYTES)
+TEXT/DB SEGMENT SIZE:   4116 BYTES
 EXTENSION MEM SIZE:     1144 BYTES
-PUBLIC SYMBOLS:         663
+PUBLIC SYMBOLS:         721
 
 PUBLIC SYMBOLS
-___ETR___  F    16054         7#    7     
-___REFR    PB   0             7#    2     7     
-__DBSTRC__ R    10710..10812  7#    2     7     
+___ETR___  F    16054         8#    8     
+___REFR    PB   0             8#    2     8     
+__DBSTRC__ R    10710..10812  8#    2     8     
 __DYNAMICS__.__FIRST_COUNTER__
                 1000          1#    
 __DYNAMICS__.__FIRST_DB__
@@ -58,7 +59,7 @@ __DYNAMICS__.__LAST_TIMER__
                 999           1#    
 __FIRST_NON_VOLATILE_FLAG__
                 0             1#    
-__high     F    16055         7#    2     7     
+__high     F    16055         8#    2     8     
 __LAST_TIMER__  999           1#    
 __LAST_VOLATILE_FLAG__
                 -1            1#    
@@ -164,11 +165,11 @@ __LIBVERS__._SWA_Alarming
                 2006300       1#    
 __LIBVERS__._UID_JCI_N2_Bus
                 2006153       1#    
-__low      F    16056         7#    2     7     
+__low      F    16056         8#    2     8     
 __PageProbeExtTypes
-                1             7#    
+                1             8#    
 __PCD_CURRENT_BUILD_KEY__
-           DB   3511          7#    2     7     
+           DB   3511          8#    2     8     
 __PCD_UID__
            DB   3500          1#    1     
 __PCD1_F2611__  55            1#    
@@ -240,17 +241,17 @@ __PCD7_D90VEM010__
                 40            1#    
 __PCS1_C8xx__   8             1#    
 __Saia_Sfup__._Watchdog
-           F    16057         7#    7     
+           F    16057         8#    8     
 __Saia_Sfup__.MaxFlag
-                16383         1#    7     
+                16383         1#    8     
 __Saia_Sfup__.rTmpCalc
-           R    10813         7#    7     
+           R    10813         8#    8     
 __Saia_Sfup__.rTmpCalcRemainder
-           R    10814         7#    7     
+           R    10814         8#    8     
 __Saia_Sfup__.rTmpCalcResult
-           R    10815         7#    7     
+           R    10815         8#    8     
 __SAIASystemBuildTime__
-                0DAF2EA8BH    1#    7     
+                0C955016H     1#    8     
 __SASMVERS__    21410         1#    
 __TIME_BASE__   100           1#    
 __TIME_BASE_EXTN__
@@ -411,6 +412,130 @@ _HEAVAC._SAMPLING._OVERRUN
            F    315           2#    2     
 _HEAVAC._SAMPLING._SAMPLE
            F    316           2#    2     
+_modbus_server._RD0
+           R    11061         7#    2     7     
+_modbus_server.Cnst.AreaAccess.NoAccess
+                3             7#    
+_modbus_server.Cnst.AreaAccess.ReadOnly
+                1             7#    
+_modbus_server.Cnst.AreaAccess.ReadWrite
+                0             7#    
+_modbus_server.Cnst.AreaAccess.WriteOnly
+                2             7#    
+_modbus_server.Cnst.AreaType.Coils
+                0             7#    
+_modbus_server.Cnst.AreaType.Reg_16bits_signed
+                1             7#    
+_modbus_server.Cnst.AreaType.Reg_16bits_unsigned
+                2             7#    
+_modbus_server.Cnst.AreaType.Reg_32bits
+                3             7#    
+_modbus_server.Cnst.AreaType.Reg_32bits_IEEE
+                4             7#    
+_modbus_server.Cnst.ClientProcessing.NoProcessing
+                0             7#    
+_modbus_server.Cnst.ClientProcessing.R_16bits_signed
+                1             7#    
+_modbus_server.Cnst.ClientProcessing.R_32bits_IEEE2FFP
+                5             7#    
+_modbus_server.Cnst.ClientProcessing.R_32bits_swap_IEEE2FFP
+                6             7#    
+_modbus_server.Cnst.ClientProcessing.RW_16bits_unsigned
+                2             7#    
+_modbus_server.Cnst.ClientProcessing.RW_32bits_binary
+                3             7#    
+_modbus_server.Cnst.ClientProcessing.RW_32bits_swap
+                4             7#    
+_modbus_server.Cnst.ClientProcessing.W_32bits_FFP2IEEE
+                7             7#    
+_modbus_server.Cnst.ClientProcessing.W_32bits_swap_FFP2IEEE
+                8             7#    
+_modbus_server.Cnst.FunctionCode.GetCommEventCount
+                0BH           7#    
+_modbus_server.Cnst.FunctionCode.GetCommEventLog
+                0CH           7#    
+_modbus_server.Cnst.FunctionCode.ReadCoils
+                01H           7#    
+_modbus_server.Cnst.FunctionCode.ReadDiagnostic
+                08H           7#    
+_modbus_server.Cnst.FunctionCode.ReadDiscreteInput
+                02H           7#    
+_modbus_server.Cnst.FunctionCode.ReadExceptStatus
+                07H           7#    
+_modbus_server.Cnst.FunctionCode.ReadHoldingReg
+                03H           7#    
+_modbus_server.Cnst.FunctionCode.ReadInputReg
+                04H           7#    
+_modbus_server.Cnst.FunctionCode.ReadWriteMultRegs
+                017H          7#    
+_modbus_server.Cnst.FunctionCode.ReportSlaveID
+                011H          7#    
+_modbus_server.Cnst.FunctionCode.WriteMultipleCoils
+                0FH           7#    
+_modbus_server.Cnst.FunctionCode.WriteMultipleRegs
+                010H          7#    
+_modbus_server.Cnst.FunctionCode.WriteSingleCoil
+                05H           7#    
+_modbus_server.Cnst.FunctionCode.WriteSingleReg
+                06H           7#    
+_modbus_server.Cnst.InitMap
+                2             7#    2     
+_modbus_server.Cnst.InitSerialPort
+                3             7#    
+_modbus_server.Cnst.InitServer
+                0             7#    2     
+_modbus_server.Cnst.InitSlave
+                0             7#    
+_modbus_server.Cnst.InitUID
+                1             7#    2     
+_modbus_server.Cnst.Library
+                13            7#    2     
+_modbus_server.Cnst.MBMedia.Coils
+                1             7#    
+_modbus_server.Cnst.MBMedia.DiscrInput
+                2             7#    
+_modbus_server.Cnst.MBMedia.HoldingReg
+                3             7#    
+_modbus_server.Cnst.MBMedia.InputReg
+                4             7#    
+_modbus_server.Cnst.MBMedia.NoMedia
+                0             7#    
+_modbus_server.Cnst.NO_ERROR
+           K    0             7#    
+_modbus_server.Cnst.OpenChannel
+                4             7#    
+_modbus_server.Cnst.PCDMedia.Counter
+                5             7#    
+_modbus_server.Cnst.PCDMedia.DataBlock
+                9             7#    
+_modbus_server.Cnst.PCDMedia.Flag
+                4             7#    
+_modbus_server.Cnst.PCDMedia.Input
+                2             7#    
+_modbus_server.Cnst.PCDMedia.IO
+                1             7#    
+_modbus_server.Cnst.PCDMedia.NoMedia
+                0             7#    
+_modbus_server.Cnst.PCDMedia.Output
+                3             7#    
+_modbus_server.Cnst.PCDMedia.Register
+                6             7#    
+_modbus_server.Cnst.Protocol.ASCII
+                3             7#    
+_modbus_server.Cnst.Protocol.RTU
+                2             7#    
+_modbus_server.Cnst.Protocol.TCP
+                0             7#    
+_modbus_server.Cnst.Protocol.UDP
+                1             7#    
+_modbus_server.Cnst.SendReadRequest
+                5             7#    
+_modbus_server.Cnst.SendWriteRequest
+                6             7#    
+_modbus_server.Cnst.ServerMode.Auto
+                0             7#    
+_modbus_server.Cnst.ServerMode.User
+                1             7#    
 _QUIT      F    161           2#    2     
 _QUITALL   F    162           2#    2     
 _QUITG     F    164           2#    2     
@@ -1197,6 +1322,8 @@ s.modc.ModbusClient.fboxerror
            R    801           2#    2     
 s.modc.ModbusRTU.fboxerror
            R    799           2#    2     
+s.mods.fboxerror
+           R    11063         7#    2     7     
 s.odm.FlagDiag
            F    16000..16007  3#    3     
 s.odm.InitError
@@ -1216,20 +1343,10 @@ S.PRJ.LibLanguage
 S.PRJ.PASPE_2.SbusStation
                 212           1#    
 S.SYS.SASMVERS  2001410       1#    
-SetPoints.Binary_0.Flag
-           F    1199          2#    2     
 SetPoints.Integer_0.Register
            R    841           2#    
 SetPoints.Integer_1.Register
            R    842           2#    
-SetPoints.Integer_2.Register
-           R    810           2#    2     
-SetPoints.Integer_3.Register
-           R    811           2#    2     
-SetPoints.Integer_4.Register
-           R    560           2#    2     
-SetPoints.Integer_5.Register
-           R    561           2#    2     
 SubDringend
            TEXT 3310          2#    2     
 SubNormal  TEXT 3311          2#    2     

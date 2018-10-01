@@ -133,7 +133,7 @@ __Saia_Sfup__.MaxFlag	EQU		16383	;For Fupla probes
 __Saia_Sfup__.rTmpCalc	EQU	R	10813
 __Saia_Sfup__.rTmpCalcRemainder	EQU	R	10814
 __Saia_Sfup__.rTmpCalcResult	EQU	R	10815
-__SAIASystemBuildTime__	EQU		0DAF2EA8BH	;Build key
+__SAIASystemBuildTime__	EQU		0C955016H	;Build key
 __SASMVERS__	EQU		21410	;Assembler/linker version, old format (abccc)
 __TIME_BASE__	EQU		100	;Timer timebase in ms
 __TIME_BASE_EXTN__	EQU		100
@@ -216,6 +216,68 @@ _HEAVAC._SAMPLING._INTERVALC	EQU		10
 _HEAVAC._SAMPLING._ONESEC	EQU	F	314
 _HEAVAC._SAMPLING._OVERRUN	EQU	F	315
 _HEAVAC._SAMPLING._SAMPLE	EQU	F	316
+_modbus_server._RD0	EQU	R	11061
+_modbus_server.Cnst.AreaAccess.NoAccess	EQU		3
+_modbus_server.Cnst.AreaAccess.ReadOnly	EQU		1
+_modbus_server.Cnst.AreaAccess.ReadWrite	EQU		0
+_modbus_server.Cnst.AreaAccess.WriteOnly	EQU		2
+_modbus_server.Cnst.AreaType.Coils	EQU		0
+_modbus_server.Cnst.AreaType.Reg_16bits_signed	EQU		1
+_modbus_server.Cnst.AreaType.Reg_16bits_unsigned	EQU		2
+_modbus_server.Cnst.AreaType.Reg_32bits	EQU		3
+_modbus_server.Cnst.AreaType.Reg_32bits_IEEE	EQU		4
+_modbus_server.Cnst.ClientProcessing.NoProcessing	EQU		0
+_modbus_server.Cnst.ClientProcessing.R_16bits_signed	EQU		1
+_modbus_server.Cnst.ClientProcessing.R_32bits_IEEE2FFP	EQU		5
+_modbus_server.Cnst.ClientProcessing.R_32bits_swap_IEEE2FFP	EQU		6
+_modbus_server.Cnst.ClientProcessing.RW_16bits_unsigned	EQU		2
+_modbus_server.Cnst.ClientProcessing.RW_32bits_binary	EQU		3
+_modbus_server.Cnst.ClientProcessing.RW_32bits_swap	EQU		4
+_modbus_server.Cnst.ClientProcessing.W_32bits_FFP2IEEE	EQU		7
+_modbus_server.Cnst.ClientProcessing.W_32bits_swap_FFP2IEEE	EQU		8
+_modbus_server.Cnst.FunctionCode.GetCommEventCount	EQU		0BH
+_modbus_server.Cnst.FunctionCode.GetCommEventLog	EQU		0CH
+_modbus_server.Cnst.FunctionCode.ReadCoils	EQU		01H
+_modbus_server.Cnst.FunctionCode.ReadDiagnostic	EQU		08H
+_modbus_server.Cnst.FunctionCode.ReadDiscreteInput	EQU		02H
+_modbus_server.Cnst.FunctionCode.ReadExceptStatus	EQU		07H
+_modbus_server.Cnst.FunctionCode.ReadHoldingReg	EQU		03H
+_modbus_server.Cnst.FunctionCode.ReadInputReg	EQU		04H
+_modbus_server.Cnst.FunctionCode.ReadWriteMultRegs	EQU		017H
+_modbus_server.Cnst.FunctionCode.ReportSlaveID	EQU		011H
+_modbus_server.Cnst.FunctionCode.WriteMultipleCoils	EQU		0FH
+_modbus_server.Cnst.FunctionCode.WriteMultipleRegs	EQU		010H
+_modbus_server.Cnst.FunctionCode.WriteSingleCoil	EQU		05H
+_modbus_server.Cnst.FunctionCode.WriteSingleReg	EQU		06H
+_modbus_server.Cnst.InitMap	EQU		2
+_modbus_server.Cnst.InitSerialPort	EQU		3
+_modbus_server.Cnst.InitServer	EQU		0
+_modbus_server.Cnst.InitSlave	EQU		0
+_modbus_server.Cnst.InitUID	EQU		1
+_modbus_server.Cnst.Library	EQU		13
+_modbus_server.Cnst.MBMedia.Coils	EQU		1
+_modbus_server.Cnst.MBMedia.DiscrInput	EQU		2
+_modbus_server.Cnst.MBMedia.HoldingReg	EQU		3
+_modbus_server.Cnst.MBMedia.InputReg	EQU		4
+_modbus_server.Cnst.MBMedia.NoMedia	EQU		0
+_modbus_server.Cnst.NO_ERROR	EQU	K	0
+_modbus_server.Cnst.OpenChannel	EQU		4
+_modbus_server.Cnst.PCDMedia.Counter	EQU		5
+_modbus_server.Cnst.PCDMedia.DataBlock	EQU		9
+_modbus_server.Cnst.PCDMedia.Flag	EQU		4
+_modbus_server.Cnst.PCDMedia.Input	EQU		2
+_modbus_server.Cnst.PCDMedia.IO	EQU		1
+_modbus_server.Cnst.PCDMedia.NoMedia	EQU		0
+_modbus_server.Cnst.PCDMedia.Output	EQU		3
+_modbus_server.Cnst.PCDMedia.Register	EQU		6
+_modbus_server.Cnst.Protocol.ASCII	EQU		3
+_modbus_server.Cnst.Protocol.RTU	EQU		2
+_modbus_server.Cnst.Protocol.TCP	EQU		0
+_modbus_server.Cnst.Protocol.UDP	EQU		1
+_modbus_server.Cnst.SendReadRequest	EQU		5
+_modbus_server.Cnst.SendWriteRequest	EQU		6
+_modbus_server.Cnst.ServerMode.Auto	EQU		0
+_modbus_server.Cnst.ServerMode.User	EQU		1
 _QUIT	EQU	F	161
 _QUITALL	EQU	F	162
 _QUITG	EQU	F	164
@@ -663,6 +725,7 @@ S.HVC.Clock.YYYYear	EQU	R	10680	;Year 2000..2099
 S.HVC.Clock.YYYYMMDD	EQU	R	10671	;Year 2000..2099, Month, Day
 s.modc.ModbusClient.fboxerror	EQU	R	801
 s.modc.ModbusRTU.fboxerror	EQU	R	799
+s.mods.fboxerror	EQU	R	11063
 s.odm.FlagDiag	EQU	F	16000[8]
 s.odm.InitError	EQU	F	16008
 s.odm.InitExec	EQU	F	16009
@@ -673,18 +736,8 @@ S.PRJ.AppLanguage	EQU		'en'	;Preferred language for applications
 S.PRJ.LibLanguage	EQU		'en'	;Preferred language for libraries
 S.PRJ.PASPE_2.SbusStation	EQU		212	;S-Bus station number
 S.SYS.SASMVERS	EQU		2001410	;Assembler/linker version, new format (abbbccc)
-$ATTR TAGS=S_ADJUST
-SetPoints.Binary_0.Flag	EQU	F	1199	;(4) Binary value
 SetPoints.Integer_0.Register	EQU	R	841	;(4) Integer value
 SetPoints.Integer_1.Register	EQU	R	842	;(4) Integer value
-$ATTR TAGS=S_ADJUST
-SetPoints.Integer_2.Register	EQU	R	810	;(4) Integer value
-$ATTR TAGS=S_ADJUST
-SetPoints.Integer_3.Register	EQU	R	811	;(4) Integer value
-$ATTR TAGS=S_ADJUST
-SetPoints.Integer_4.Register	EQU	R	560	;(4) Integer value
-$ATTR TAGS=S_ADJUST
-SetPoints.Integer_5.Register	EQU	R	561	;(4) Integer value
 SubDringend	EQU	TEXT	3310
 SubNormal	EQU	TEXT	3311
 TexDringend	EQU	TEXT	3312

@@ -197,4 +197,6 @@ S.HVC.Clock.PHDay1 EQU F 16020 ;Day following public holiday(s)
 S.HVC.Clock.AllPHDay EQU F 16016 ;Day following all public holiday
 S.HVC.Clock.DayInYear EQU R 10691 ;No of day in the year (1..366)
 S.HVC.Clock.SecTick EQU F 16022 ;One second tick based on HW-Clock
+;File "sModSlave.obj"
+s.mods.fboxerror EQU R 11063 ;
 

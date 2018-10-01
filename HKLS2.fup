@@ -8,12 +8,12 @@ UpdateGlobals=1
 DnldInRun=0
 FuplaVersion=V2.1.410
 CodePage=1251
-MacroID=47531
+MacroID=47543
 ModuleVersion=
 AdjustLog=0
 Author=
 Comment=
-LastPageID=8
+LastPageID=10
 [BLOCK]
 BlockSym=1
 COBSupTime=0
@@ -3701,6 +3701,227 @@ Conn4=46 40 292 33 8
 Conn5=24 42 289 34 3
 Conn6=23 44 290 34 3
 [BLOCK]
+BlockSym=316
+COBSupTime=0
+PageDisabled=0
+ConditinalFunction=0
+ConditionalSymbol=
+ConditionalValue=0
+PageColor=16777215
+PageBackColor=0
+[PAGEDEF]
+PageLen=2130
+[PAGE]
+Name=Init
+RemarkSize=0
+CountOfLabels=27
+CountOfGrids=82
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=8
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_MODBUS_INITSRV 47532=
+_MODBUS_UNITSRV2 47533=
+_MODBUS_MAPPINT 47534=
+_MODBUS_MAPPINT 47535=
+[_MODBUS_INITSRV 47532]
+Fam=sModSlave
+Face=Init Server TCP
+FacePosi=l
+Width=14
+Init=y
+Vers=2
+Out=Error_SB 
+S=LED_F 
+av0=a POR =502 {0..65535} 
+av1=a MOD %s =0 {0,1} 
+AcceptName=1
+Language=en
+Posi=25 1
+[_MODBUS_UNITSRV2 47533]
+Fam=sModSlave
+Face=Def Unit Server
+FacePosi=l
+Width=14
+Init=y
+Vers=2
+In=Clear_EB 
+Out=Active_B Error_B 
+S=Fs_3F Fsd_10F Rs_R LED_F 
+D=Fd_32F 
+av0=a DID %s =0 {0,1,2,3} 
+av1=a UID =1:2 {0..255} 
+av2=a OFF %s =0 {0,1} 
+av3=a SWP %s =0 {0,1} 
+av4=a HOL %s =0 {0,1} 
+av5=a MAP %s =1 {0,1} 
+av6=c c0 =0 \nabs 
+av7=v Fs 0 %s 
+av8=bv Fs 1 %s =1 \v Fs 2 %s 
+av9=v Fsd 0 %s 
+av10=v Fsd 1 %s 
+av11=v Fsd 2 %s 
+av12=v Fsd 3 %s 
+av13=v Fsd 4 %s 
+av14=v Fsd 5 %s 
+Language=en
+Posi=25 6
+[_MODBUS_MAPPINT 47534]
+Fam=sModSlave
+Face=Def Mapp Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+Out=Error_B 
+S=LED_F 
+av0=a UID =1:2 {0..255} 
+av1=a ParTyp %s =3 {3,4} 
+av2=a ParStr =0:13000 {0..65535} 
+av3=a ParRan =0:500 {0..65536} 
+av4=a PcdTyp %s =0:6 {0,5,6,9} 
+av5=a PcdStr =0:13000 {0..65535} 
+av6=a PcdRan =0:500 {0..65536} 
+av7=a PcdAre %s =1 {1,2,3} 
+av8=a PcdAcc %s =0 {0,1,2,3} 
+Language=en
+Posi=47 16
+[_MODBUS_MAPPINT 47535]
+Fam=sModSlave
+Face=Def Mapp Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+Out=Error_B 
+S=LED_F 
+av0=a UID =1:2 {0..255} 
+av1=a ParTyp %s =3:4 {3,4} 
+av2=a ParStr =0:12000 {0..65535} 
+av3=a ParRan =0:500 {0..65536} 
+av4=a PcdTyp %s =0:6 {0,5,6,9} 
+av5=a PcdStr =0:12000 {0..65535} 
+av6=a PcdRan =0:500 {0..65536} 
+av7=a PcdAre %s =1 {1,2,3} 
+av8=a PcdAcc %s =0 {0,1,2,3} 
+Language=en
+Posi=25 16
+[HLINE]
+H0=4 39 40
+H1=9 23 25)39 40
+H2=11 39 40
+H3=19 39 40)61 62
+[NETWORK]
+N0=Bof 39 4
+N1=Bo 23 9)if 25 9
+N2=Bof 39 9
+N3=Bof 39 11
+N4=Bof 39 19
+N5=Bof 61 19
+[CONNS]
+Conn0=23 9 56 34 3
+[PAGEDEF]
+PageLen=1509
+[PAGE]
+Name=PVRecManage
+RemarkSize=0
+CountOfLabels=27
+CountOfGrids=82
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=9
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_INDREGO 47536=
+_INDREGI 47537=
+_CONBIMOVE 47543=
+[_INDREGO 47536]
+Fam=sfupindi
+Width=6
+Init=n
+Stretch=0 7 1 6
+In=#_I R_NI 
+Language=en
+Posi=73 14
+[_INDREGI 47537]
+Fam=sfupindi
+Width=6
+Init=n
+Stretch=0 7 1 4
+In=#_I 
+Out=R_NI 
+Language=en
+Posi=24 15
+[_CONBIMOVE 47543]
+Fam=sfupconv
+Width=2
+Init=n
+In=_B 
+Out=_I 
+Language=en
+Posi=65 31
+[HLINE]
+H0=15 71 73
+H1=16 22 24)30 32
+H2=17 71 73
+H3=18 30 32
+H4=19 71 73
+H5=20 30 32
+H6=21 71 73
+H7=22 30 32
+H8=23 71 73
+H9=24 30 32
+H10=25 71 73
+H11=27 71 73
+H12=29 72 73
+H13=32 63 65)67 72
+[VLINE]
+V0=72 29 32
+[NETWORK]
+N0=Io 71 15)if 73 15
+N1=Io 22 16)if 24 16
+N2=Iof 30 16)i 32 16
+N3=Io 71 17)if 73 17
+N4=Iof 30 18)i 32 18
+N5=Io 71 19)if 73 19
+N6=Iof 30 20)i 32 20
+N7=Io 71 21)if 73 21
+N8=Iof 30 22)i 32 22
+N9=Io 71 23)if 73 23
+N10=Iof 30 24)i 32 24
+N11=Io 71 25)if 73 25
+N12=Io 71 27)if 73 27
+N13=Iif 73 29)of 67 32
+N14=Bo 63 32)if 65 32
+[CONNS]
+Conn0=71 15 323 34 5
+Conn1=22 16 317 34 5
+Conn2=32 16 318 33 8
+Conn3=71 17 324 34 9
+Conn4=32 18 319 33 12
+Conn5=71 19 302 34 12
+Conn6=32 20 320 33 11
+Conn7=71 21 280 34 5
+Conn8=32 22 321 33 14
+Conn9=71 23 279 34 4
+Conn10=32 24 322 33 14
+Conn11=71 25 327 34 13
+Conn12=71 27 286 34 11
+Conn13=63 32 265 34 11
+[BLOCK]
 BlockSym=249
 COBSupTime=0
 PageDisabled=0
@@ -4084,7 +4305,7 @@ Conn2=18 14 294 34 8
 Conn3=11 21 292 34 12
 Conn4=16 29 293 34 7
 [PAGEDEF]
-PageLen=3715
+PageLen=3485
 [PAGE]
 Name=WorkFan
 RemarkSize=0
@@ -4101,32 +4322,16 @@ PageDisabled=0
 ConditinalFunction=0
 ConditionalValue=0
 [FBOX]
-_DDC_SPGENERAL21 47511=
 _ICMPEQ 47514=
 _IMUX 47515=
 _IMUX 47516=
-_DDC_SPGENERAL22 47517=
-_DDC_SPGENERAL22 47518=
 _ICMPGT 47519=
 _IMUX 47520=
 _OFFDEL 47531=
-[_DDC_SPGENERAL21 47511]
-Fam=DDC Sollwerte
-Width=5
-Init=y
-Vers=200000
-Out=Val_B 
-S=Value_F=297 
-av0=c cs =0 \nabs 
-av1=a BACnet %s =0 {0..1} 
-av2=c c0 =0 \nabs 
-av3=a Value 0 %s =0 {0..1} 
-av4=c cc =0 \nabs 
-AcceptName=1
-Folder=SetPoints.Binary_?
-Variables0=Value Flag;(4) Binary value
-Language=en
-Posi=12 29
+_CONBIMOVE 47538=
+_CONIBMOVE 47539=
+_IMUL 47540=
+_IMUL 47541=
 [_ICMPEQ 47514]
 Fam=sfupinte
 Face=Cmp
@@ -4156,40 +4361,6 @@ In=I_NI E_NB
 Out=Out_I 
 Language=en
 Posi=32 21
-[_DDC_SPGENERAL22 47517]
-Fam=DDC Sollwerte
-Width=5
-Init=y
-Vers=200000
-Out=Val_I 
-S=Value_R=299 
-av0=c cs =0 \nabs 
-av1=a BACnet %s =0 {0..1} 
-av2=c c0 =0 \nabs 
-av3=a Value 0 %1p =210:1500 
-av4=c cc =0 \nabs 
-AcceptName=1
-Folder=SetPoints.Integer_?
-Variables0=Value Register;(4) Integer value
-Language=en
-Posi=12 23
-[_DDC_SPGENERAL22 47518]
-Fam=DDC Sollwerte
-Width=5
-Init=y
-Vers=200000
-Out=Val_I 
-S=Value_R=300 
-av0=c cs =0 \nabs 
-av1=a BACnet %s =0 {0..1} 
-av2=c c0 =0 \nabs 
-av3=a Value 0 %1p =210:5000 
-av4=c cc =0 \nabs 
-AcceptName=1
-Folder=SetPoints.Integer_?
-Variables0=Value Register;(4) Integer value
-Language=en
-Posi=12 26
 [_ICMPGT 47519]
 Fam=sfupinte
 Face=Cmp
@@ -4219,6 +4390,40 @@ Out=Q_B t_I
 S=Tim_T Sta_F 
 Language=en
 Posi=30 45
+[_CONBIMOVE 47538]
+Fam=sfupconv
+Width=2
+Init=n
+In=_B 
+Out=_I 
+Language=en
+Posi=53 57
+[_CONIBMOVE 47539]
+Fam=sfupconv
+Width=2
+Init=n
+In=_I 
+Out=_B 
+Language=en
+Posi=22 29
+[_IMUL 47540]
+Fam=sfupinte
+Face=x
+Width=2
+Init=n
+In=_I _I 
+Out=_I 
+Language=en
+Posi=19 20
+[_IMUL 47541]
+Fam=sfupinte
+Face=x
+Width=2
+Init=n
+In=_I _I 
+Out=_I 
+Language=en
+Posi=19 24
 [HLINE]
 H0=8 30 32)39 41
 H1=10 30 32
@@ -4227,34 +4432,40 @@ H3=13 18 19
 H4=14 23 32
 H5=16 15 18
 H6=19 24 30
-H7=22 27 31
-H8=24 17 26)31 32)39 41
-H9=26 26 32
-H10=27 17 31
-H11=28 31 32
-H12=30 17 32
-H13=32 29 32
-H14=34 22 32)49 51)58 60
-H15=36 49 51
-H16=38 30 33)49 51
-H17=39 32 33
-H18=40 37 38)49 51
-H19=41 28 32)38 41
-H20=42 49 51
-H21=44 50 51
-H22=48 28 30)36 50
-H23=50 28 30)36 37
-H24=53 41 63
+H7=20 15 16
+H8=21 16 19)21 26
+H9=22 17 19)30 31
+H10=24 15 18)31 32)39 41
+H11=25 18 19)21 25
+H12=26 17 19)26 32
+H13=28 11 17)25 32
+H14=30 20 22)24 32
+H15=32 29 32
+H16=34 22 32)49 51)58 60
+H17=36 49 51
+H18=38 30 33)49 51
+H19=39 32 33
+H20=40 37 38)49 51
+H21=41 28 32)38 41
+H22=42 49 51
+H23=44 50 51
+H24=48 28 30)36 50
+H25=50 28 30)36 37
+H26=53 41 63
+H27=58 41 53)55 57
 [VLINE]
-V0=18 13 16
-V1=24 12 14)14 19
-V2=26 24 26
-V3=29 32 34
-V4=31 22 24)27 28
-V5=32 39 41
-V6=38 40 41
-V7=41 41 53
-V8=50 44 48
+V0=16 20 21
+V1=17 22 26)26 28
+V2=18 13 16)24 25
+V3=24 12 14)14 19
+V4=25 25 28
+V5=26 21 26
+V6=29 32 34
+V7=31 22 24
+V8=32 39 41
+V9=38 40 41
+V10=41 41 53)53 58
+V11=50 44 48
 [NETWORK]
 N0=Io 30 8)if 32 8
 N1=Iof 39 8)i 41 8
@@ -4262,25 +4473,30 @@ N2=Io 30 10)if 32 10
 N3=Io 15 12)if 19 12
 N4=Bi-f 32 12)i 30 19)if 32 14)of 23 14
 N5=Iif 19 13)o 15 16
-N6=Io 27 22)if 32 24
-N7=Iof 17 24)if 32 26
-N8=Iof 39 24)i 41 24
-N9=Iof 17 27)if 32 28
-N10=Bof 17 30)i-f 32 30
-N11=Bi-f 32 32)if 32 34)o 22 34
-N12=Io 49 34)if 51 34
-N13=Iof 58 34)i 60 34
-N14=Io 49 36)if 51 36
-N15=Io 30 38)if 33 38
-N16=Io 49 38)if 51 38
-N17=Iif 33 39)o 28 41
-N18=Bof 37 40)i 63 53
-N19=Bo 49 40)if 51 40
-N20=Bo 49 42)if 51 42
-N21=Bif 51 44)of 36 48
-N22=Bo 28 48)if 30 48
-N23=Io 28 50)if 30 50
-N24=Iof 36 50
+N6=Io 15 20)if 19 21
+N7=Iof 21 21)if 32 26
+N8=Iif 19 22)o 11 28)if 19 26
+N9=Io 30 22)if 32 24
+N10=Io 15 24)if 19 25
+N11=Iof 39 24)i 41 24
+N12=Iof 21 25)if 32 28
+N13=Io 20 30)if 22 30
+N14=Bof 24 30)i-f 32 30
+N15=Bi-f 32 32)if 32 34)o 22 34
+N16=Io 49 34)if 51 34
+N17=Iof 58 34)i 60 34
+N18=Io 49 36)if 51 36
+N19=Io 30 38)if 33 38
+N20=Io 49 38)if 51 38
+N21=Iif 33 39)o 28 41
+N22=Bof 37 40)if 53 58)i 63 53
+N23=Bo 49 40)if 51 40
+N24=Bo 49 42)if 51 42
+N25=Bif 51 44)of 36 48
+N26=Bo 28 48)if 30 48
+N27=Io 28 50)if 30 50
+N28=Iof 36 50
+N29=Iof 55 58)i 57 58
 [CONNS]
 Conn0=30 8 56 34 3
 Conn1=41 8 283 33 7
@@ -4288,22 +4504,27 @@ Conn2=30 10 298 34 5
 Conn3=15 12 294 34 8
 Conn4=15 16 56 34 3
 Conn5=30 19 301 33 9
-Conn6=27 22 56 34 3
-Conn7=41 24 302 33 12
-Conn8=22 34 301 34 9
-Conn9=49 34 56 34 3
-Conn10=60 34 303 33 12
-Conn11=49 36 309 34 3
-Conn12=30 38 302 34 12
-Conn13=49 38 315 34 3
-Conn14=49 40 56 34 3
-Conn15=28 41 311 34 5
-Conn16=49 42 312 34 7
-Conn17=28 48 312 34 12
-Conn18=28 50 69 34 4
-Conn19=63 53 312 33 12
+Conn6=15 20 319 34 12
+Conn7=30 22 56 34 3
+Conn8=15 24 320 34 11
+Conn9=41 24 302 33 12
+Conn10=11 28 80 34 12
+Conn11=20 30 318 34 8
+Conn12=22 34 301 34 9
+Conn13=49 34 56 34 3
+Conn14=60 34 303 33 12
+Conn15=49 36 309 34 3
+Conn16=30 38 302 34 12
+Conn17=49 38 315 34 3
+Conn18=49 40 56 34 3
+Conn19=28 41 311 34 5
+Conn20=49 42 312 34 7
+Conn21=28 48 312 34 12
+Conn22=28 50 69 34 4
+Conn23=63 53 312 33 12
+Conn24=57 58 324 33 9
 [PAGEDEF]
-PageLen=3232
+PageLen=2761
 [PAGE]
 Name=WorkDehum
 RemarkSize=0
@@ -4322,14 +4543,13 @@ ConditionalValue=0
 [FBOX]
 _FCMPGT 47521=
 _FCMPST 47522=
-_DDC_SPGENERAL22 47523=
-_DDC_SPGENERAL22 47524=
 _CONIFP2 47525=
 _CONIFP2 47526=
 _FLISRNDY2 47527=
 _ONDEL 47528=
 _BAND 47529=
 _IMUX 47530=
+_CONBIMOVE 47542=
 [_FCMPGT 47521]
 Fam=sfupfloa
 Face=Cmp
@@ -4348,40 +4568,6 @@ In=_F _F
 Out=<_B 
 Language=en
 Posi=28 26
-[_DDC_SPGENERAL22 47523]
-Fam=DDC Sollwerte
-Width=5
-Init=y
-Vers=200000
-Out=Val_I 
-S=Value_R=313 
-av0=c cs =0 \nabs 
-av1=a BACnet %s =0 {0..1} 
-av2=c c0 =0 \nabs 
-av3=a Value 0 %1p =210:65 
-av4=c cc =0 \nabs 
-AcceptName=1
-Folder=SetPoints.Integer_?
-Variables0=Value Register;(4) Integer value
-Language=en
-Posi=5 23
-[_DDC_SPGENERAL22 47524]
-Fam=DDC Sollwerte
-Width=5
-Init=y
-Vers=200000
-Out=Val_I 
-S=Value_R=314 
-av0=c cs =0 \nabs 
-av1=a BACnet %s =0 {0..1} 
-av2=c c0 =0 \nabs 
-av3=a Value 0 %1p =210:40 
-av4=c cc =0 \nabs 
-AcceptName=1
-Folder=SetPoints.Integer_?
-Variables0=Value Register;(4) Integer value
-Language=en
-Posi=5 29
 [_CONIFP2 47525]
 Fam=sfupconv
 Width=6
@@ -4444,6 +4630,14 @@ In=I_NI E_NB
 Out=Out_I 
 Language=en
 Posi=54 34
+[_CONBIMOVE 47542]
+Fam=sfupconv
+Width=2
+Init=n
+In=_B 
+Out=_I 
+Language=en
+Posi=57 48
 [HLINE]
 H0=11 23 47)49 53
 H1=12 45 47
@@ -4453,25 +4647,26 @@ H4=19 23 28
 H5=20 27 28
 H6=21 32 38
 H7=23 38 39)43 46)53 54)60 62
-H8=24 10 14)20 27
+H8=24 11 14)20 27
 H9=25 38 39)52 54)60 61
 H10=26 20 21
 H11=27 24 28
 H12=28 27 28
 H13=29 32 38
-H14=30 10 14)20 27
+H14=30 11 14)20 27
 H15=32 20 21
 H16=37 52 54)61 63
 H17=39 52 54
 H18=41 47 54
 H19=43 51 54
+H20=49 51 57)59 61
 [VLINE]
 V0=24 19 27
 V1=27 20 24)28 30
 V2=38 21 23)25 29
 V3=45 12 14
 V4=46 13 23
-V5=51 41 43
+V5=51 41 43)43 49
 V6=53 11 23
 [NETWORK]
 N0=Bo 23 11)if 47 11
@@ -4482,31 +4677,35 @@ N4=Fo 23 19)if 28 19)if 28 27
 N5=Fif 28 20)of 20 24
 N6=Bof 32 21)if 39 23
 N7=Bof 60 23)i 62 23
-N8=Iof 10 24)if 14 24
+N8=Io 11 24)if 14 24
 N9=Bif 39 25)of 32 29
 N10=Io 52 25)if 54 25
 N11=Iof 60 25
 N12=Bof 20 26
 N13=Fif 28 28)of 20 30
-N14=Iof 10 30)if 14 30
+N14=Io 11 30)if 14 30
 N15=Bof 20 32
 N16=Io 52 37)if 54 37
 N17=Iof 61 37)i 63 37
 N18=Io 52 39)if 54 39
-N19=Bo 47 41)i-f 54 41)if 54 43
+N19=Bo 47 41)i-f 54 41)if 57 49)if 54 43
+N20=Iof 59 49)i 61 49
 [CONNS]
 Conn0=23 11 312 34 12
 Conn1=23 14 265 34 11
 Conn2=23 19 293 34 7
 Conn3=62 23 276 33 11
-Conn4=52 25 304 34 4
-Conn5=52 37 298 34 5
-Conn6=63 37 296 33 9
-Conn7=52 39 56 34 3
-Conn8=47 41 276 34 11
+Conn4=11 24 321 34 12
+Conn5=52 25 304 34 4
+Conn6=11 30 322 34 12
+Conn7=52 37 298 34 5
+Conn8=63 37 296 33 9
+Conn9=52 39 56 34 3
+Conn10=47 41 276 34 11
+Conn11=61 49 327 33 13
 [RESOURCES]
 DBVersion=270340
-DBCount=276
+DBCount=283
 Format={ID}	{FullName}	{Type}	{Expression}	{ScopeID}	{Size}	{Comment}	{Override}	{Tags}	{BlockID}	{Hidden}
 HSYM0=1	Init	COB		3	-1				-1	0
 HSYM1=2	PCD01.A00.Mld.PCD01.Quitt.SSMRLT.iSSM	R		1	-1				-1	0
@@ -4765,25 +4964,32 @@ HSYM253=293	Pool.Hum	R FLOAT		3	-1				-1	0
 HSYM254=294	PV1.State	R		3	-1				-1	0
 HSYM255=295	Pool.Hum_	R FLOAT		3	-1				-1	0
 HSYM256=296	PV1.ExtRec	R		3	-1				-1	0
-HSYM257=297	SetPoints.Binary_0.Flag	F		1	-1	(4) Binary value			-1	0
-HSYM258=298			1000	3	-1				-1	1
-HSYM259=299	SetPoints.Integer_2.Register	R		1	-1	(4) Integer value			-1	0
-HSYM260=300	SetPoints.Integer_3.Register	R		1	-1	(4) Integer value			-1	0
-HSYM261=301	PV1.StateBit	F		3	-1				-1	0
-HSYM262=302	RecPV.FreqCmd	R		3	-1				-1	0
-HSYM263=303	RecPV.ModeCmd	R		3	-1				-1	0
-HSYM264=304			300	3	-1				-1	1
-HSYM265=305			20	3	-1				-1	1
-HSYM266=306			290	3	-1				-1	1
-HSYM267=307		K	0.2	3	-1				-1	1
-HSYM268=308			140	3	-1				-1	1
-HSYM269=309			2	3	-1				-1	1
-HSYM270=310			14	3	-1				-1	1
-HSYM271=311			1400	3	-1				-1	1
-HSYM272=312	RecPV.WrkState	F		3	-1				-1	0
-HSYM273=313	SetPoints.Integer_4.Register	R		1	-1	(4) Integer value			-1	0
-HSYM274=314	SetPoints.Integer_5.Register	R		1	-1	(4) Integer value			-1	0
-HSYM275=315			18	3	-1				-1	1
+HSYM257=298			1000	3	-1				-1	1
+HSYM258=301	PV1.StateBit	F		3	-1				-1	0
+HSYM259=302	RecPV.FreqCmd	R		3	-1				-1	0
+HSYM260=303	RecPV.ModeCmd	R		3	-1				-1	0
+HSYM261=304			300	3	-1				-1	1
+HSYM262=305			20	3	-1				-1	1
+HSYM263=306			290	3	-1				-1	1
+HSYM264=307		K	0.2	3	-1				-1	1
+HSYM265=308			140	3	-1				-1	1
+HSYM266=309			2	3	-1				-1	1
+HSYM267=310			14	3	-1				-1	1
+HSYM268=311			1400	3	-1				-1	1
+HSYM269=312	RecPV.WrkState	F		3	-1				-1	0
+HSYM270=315			18	3	-1				-1	1
+HSYM271=316	ModbusTCPServer	COB	5	3	-1				-1	0
+HSYM272=317			13000	3	-1				-1	1
+HSYM273=318	RecPV.On	R		3	-1				-1	0
+HSYM274=319	RecPV.LowSpeed	R		3	-1				-1	0
+HSYM275=320	RecPV.HiSpeed	R		3	-1				-1	0
+HSYM276=321	RecPV.HumOnDryer	R		3	-1				-1	0
+HSYM277=322	RecPV.HumOffDryer	R		3	-1				-1	0
+HSYM278=323			12000	3	-1				-1	1
+HSYM279=324	RecPV.State	R		3	-1				-1	0
+HSYM280=325	RecPV.TempCanal	R		3	-1				-1	0
+HSYM281=326	RecPV.HumCanal	R		3	-1				-1	0
+HSYM282=327	RecPV.CompState	R		3	-1				-1	0
 [FBOXLIST]
 Count=3
 FBOXNAME0=4	ModbusClient	1

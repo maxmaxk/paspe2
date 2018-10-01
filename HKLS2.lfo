@@ -141,5 +141,6 @@ Address=Bahnhofstrasse 18, CH-3280 Murten, Switzerland
 Email=info@sbc-support.ch
 Website=http://www.sbc-support.ch
 Phone=+41(0)26 6727111
-FamCount=1
+FamCount=2
 Fam0=sModMaster
+Fam1=sModSlave
