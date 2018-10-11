@@ -1709,29 +1709,15 @@ _FUPIntMov(     0,                    		;;Copy input label '0' in
                 ___RegDyn_C0000C5___SG_I_O+0, )		;;network variable.
 _INDIOI(		___RegDyn_C0000C5___SG_I_O+0,	;;Input #1 (#)
                ___FlgDyn_C0000C5___SG_I_O+0,              ;;Output #1 (I0)
-               ___FlgDyn_C0000C5___SG_I_O+1,              ;;Output #2 (I1)
-               ___FlgDyn_C0000C5___SG_I_O+2,              ;;Output #3 (I2)
-               ___FlgDyn_C0000C5___SG_I_O+3,              ;;Output #4 (I3)
-               ___FlgDyn_C0000C5___SG_I_O+4,              ;;Output #5 (I4)
-               ___FlgDyn_C0000C5___SG_I_O+5,              ;;Output #6 (I5)
-               ___FlgDyn_C0000C5___SG_I_O+6,              ;;Output #7 (I6)
-               ___FlgDyn_C0000C5___SG_I_O+7)              ;;Output #8 (I7)
+               leak1,                              ;;Output #2 (I1)
+               leak2,                              ;;Output #3 (I2)
+               leak3,                              ;;Output #4 (I3)
+               leak4,                              ;;Output #5 (I4)
+               leak5,                              ;;Output #6 (I5)
+               leak6,                              ;;Output #7 (I6)
+               leak7)                              ;;Output #8 (I7)
 _FUPBinMov(     ___FlgDyn_C0000C5___SG_I_O+0,		;;Invert '___FlgDyn_C0000C5___SG_I_O+0' in
                 HiLowPressure,-)      		;;HiLowPressure.
-_FUPBinMov(     ___FlgDyn_C0000C5___SG_I_O+1,		;;Invert '___FlgDyn_C0000C5___SG_I_O+1' in
-                leak1,-)              		;;leak1.
-_FUPBinMov(     ___FlgDyn_C0000C5___SG_I_O+2,		;;Invert '___FlgDyn_C0000C5___SG_I_O+2' in
-                leak2,-)              		;;leak2.
-_FUPBinMov(     ___FlgDyn_C0000C5___SG_I_O+3,		;;Invert '___FlgDyn_C0000C5___SG_I_O+3' in
-                leak3,-)              		;;leak3.
-_FUPBinMov(     ___FlgDyn_C0000C5___SG_I_O+4,		;;Invert '___FlgDyn_C0000C5___SG_I_O+4' in
-                leak4,-)              		;;leak4.
-_FUPBinMov(     ___FlgDyn_C0000C5___SG_I_O+5,		;;Invert '___FlgDyn_C0000C5___SG_I_O+5' in
-                leak5,-)              		;;leak5.
-_FUPBinMov(     ___FlgDyn_C0000C5___SG_I_O+6,		;;Invert '___FlgDyn_C0000C5___SG_I_O+6' in
-                leak6,-)              		;;leak6.
-_FUPBinMov(     ___FlgDyn_C0000C5___SG_I_O+7,		;;Invert '___FlgDyn_C0000C5___SG_I_O+7' in
-                leak7,-)              		;;leak7.
 ;; Position: Read from inputs - E165_200_207 - 23,35
 __fbl_C0000C5_00_B97D___SG_I_O           EQU                   $ ;Mark FBox position.
 __FBOX_ID__	DEF	47485	;E165_200_207
@@ -1739,20 +1725,14 @@ __FBOX_LANG__	DEF	STR	"DE"	;E165_200_207
 _FUPIntMov(     8,                    		;;Copy input label '8' in 
                 ___RegDyn_C0000C5___SG_I_O+1, )		;;network variable.
 _INDIOI(		___RegDyn_C0000C5___SG_I_O+1,	;;Input #1 (#)
-               ___FlgDyn_C0000C5___SG_I_O+8,              ;;Output #1 (I0)
-               ___FlgDyn_C0000C5___SG_I_O+9,              ;;Output #2 (I1)
-               ___FlgDyn_C0000C5___SG_I_O+10,              ;;Output #3 (I2)
-               ___FlgDyn_C0000C5___SG_I_O+11,              ;;Output #4 (I3)
-               ___FlgDyn_C0000C5___SG_I_O+12,              ;;Output #5 (I4)
-               ___FlgDyn_C0000C5___SG_I_O+13,              ;;Output #6 (I5)
-               ___FlgDyn_C0000C5___SG_I_O+14,              ;;Output #7 (I6)
-               ___FlgDyn_C0000C5___SG_I_O+15)              ;;Output #8 (I7)
-_FUPBinMov(     ___FlgDyn_C0000C5___SG_I_O+8,		;;Invert '___FlgDyn_C0000C5___SG_I_O+8' in
-                leak8,-)              		;;leak8.
-_FUPBinMov(     ___FlgDyn_C0000C5___SG_I_O+9,		;;Invert '___FlgDyn_C0000C5___SG_I_O+9' in
-                leak9,-)              		;;leak9.
-_FUPBinMov(     ___FlgDyn_C0000C5___SG_I_O+10,		;;Invert '___FlgDyn_C0000C5___SG_I_O+10' in
-                leak10,-)             		;;leak10.
+               leak8,                              ;;Output #1 (I0)
+               leak9,                              ;;Output #2 (I1)
+               leak10,                             ;;Output #3 (I2)
+               ___FlgDyn_C0000C5___SG_I_O+1,              ;;Output #4 (I3)
+               ___FlgDyn_C0000C5___SG_I_O+2,              ;;Output #5 (I4)
+               ___FlgDyn_C0000C5___SG_I_O+3,              ;;Output #6 (I5)
+               ___FlgDyn_C0000C5___SG_I_O+4,              ;;Output #7 (I6)
+               ___FlgDyn_C0000C5___SG_I_O+5)              ;;Output #8 (I7)
 $endif							;; Page condition
 __EOPP___SG_I_O_00		EQU		$;Mark Page end position
 _PageProbe(		__EOP___SG_I_O_00)			;;Mark end of page.
@@ -1852,15 +1832,15 @@ __FBOX_LANG__	DEF	STR	"DE"	;
 _ANAD2W34F(    101003,                               ;;Version Indicator.
                Hum,                                ;;Output #1 (i0)
                Temp,                               ;;Output #2 (i1)
-               ___RegDyn_C0000C5___SG_I_O+0,              ;;Output #3 (i2)
-               ___RegDyn_C0000C5___SG_I_O+1,              ;;Output #4 (i3)
-               ___RegDyn_C0000C5___SG_I_O+2,              ;;Output #5 (i4)
-               ___RegDyn_C0000C5___SG_I_O+3,              ;;Output #6 (i5)
-               ___RegDyn_C0000C5___SG_I_O+4,              ;;Output #7 (i6)
-               ___RegDyn_C0000C5___SG_I_O+5,              ;;Output #8 (i7)
+               Ph,                                 ;;Output #3 (i2)
+               ___RegDyn_C0000C5___SG_I_O+0,              ;;Output #4 (i3)
+               ___RegDyn_C0000C5___SG_I_O+1,              ;;Output #5 (i4)
+               ___RegDyn_C0000C5___SG_I_O+2,              ;;Output #6 (i5)
+               ___RegDyn_C0000C5___SG_I_O+3,              ;;Output #7 (i6)
+               ___RegDyn_C0000C5___SG_I_O+4,              ;;Output #8 (i7)
                AnalogError,                        ;;Output #9 (Err)
                IOs.AI_32,                          ;;Constant #1
-               ___RegDyn_C0000C5___SG_I_O+6,              ;;Dynamic variable Rd[2].
+               ___RegDyn_C0000C5___SG_I_O+5,              ;;Dynamic variable Rd[2].
                IOs.AI512,                           ;; .
                __stc_id_04C8D_var_01___SG_I_O,               ;;Static variable LED[1].
                1,                                 ;;Init variable (Error).
@@ -2082,7 +2062,7 @@ _PageProbe(		__EOP___SG_ModbusTCPClient_00)			;;Mark end of page.
 $endif							;; Block condition
 ;;
 ;; Block: COB 5 [ModbusTCPServer]
-;; Pages: 2
+;; Pages: 3
 ;;
 __PAGE_ID__	DEF	STR	""
 $if 1							;; Block condition
@@ -2091,7 +2071,7 @@ $if 1							;; Block condition
 
 ;;
 ;; Block: COB 5 [ModbusTCPServer]
-;; Page: 1/2 Init
+;; Page: 1/3 Init
 __PAGE_ID__	DEF	STR	""
 ;;
 $if 1
@@ -2162,7 +2142,7 @@ $endif							;; Page condition
 __EOPP___SG_ModbusTCPServer_00		EQU		$;Mark Page end position
 _PageProbe(		__EOP___SG_ModbusTCPServer_00)			;;Mark end of page.
 ;; Block: COB 5 [ModbusTCPServer]
-;; Page: 2/2 PVRecManage
+;; Page: 2/3 PVRecManage
 __PAGE_ID__	DEF	STR	""
 ;;
 $if 1
@@ -2202,6 +2182,40 @@ _INDREGO(		___RegDyn_C00013C___SG_ModbusTCPServer+0,	;;Input #1 (#)
 $endif							;; Page condition
 __EOPP___SG_ModbusTCPServer_01		EQU		$;Mark Page end position
 _PageProbe(		__EOP___SG_ModbusTCPServer_01)			;;Mark end of page.
+;; Block: COB 5 [ModbusTCPServer]
+;; Page: 3/3 Leaking
+__PAGE_ID__	DEF	STR	""
+;;
+$if 1
+__FBL_C00013C_02___SG_ModbusTCPServer			EQU		$;; Mark Page position
+;; Position: Bin to int 1-24 -  - 47,12
+__fbl_C00013C_02_B9C3___SG_ModbusTCPServer           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47555	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_CONBITIM(		__low,                	;;Input #1 (I0)
+		leak1,                	;;Input #2 (I1)
+		leak2,                	;;Input #3 (I2)
+		leak3,                	;;Input #4 (I3)
+		leak4,                	;;Input #5 (I4)
+		leak5,                	;;Input #6 (I5)
+		leak6,                	;;Input #7 (I6)
+		leak7,                	;;Input #8 (I7)
+		leak8,                	;;Input #9 (I8)
+		leak9,                	;;Input #10 (I9)
+		leak10,,,,,,,,,,,,,,  	;;Input #11 (I10)
+               ___RegDyn_C00013C___SG_ModbusTCPServer+1,              ;;Output #1 (Out)
+               ___RegDyn_C00013C___SG_ModbusTCPServer+2)              ;;Dynamic variable TMP[1].
+;; Position: Copy to reg. integer -  - 70,12
+__fbl_C00013C_02_B9C2___SG_ModbusTCPServer           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47554	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_FUPIntMov(     12008,                		;;Copy input label '12008' in 
+                ___RegDyn_C00013C___SG_ModbusTCPServer+0, )		;;network variable.
+_INDREGO(		___RegDyn_C00013C___SG_ModbusTCPServer+0,	;;Input #1 (#)
+		___RegDyn_C00013C___SG_ModbusTCPServer+1,,,,,,,)	;;Input #2 (R0)
+$endif							;; Page condition
+__EOPP___SG_ModbusTCPServer_02		EQU		$;Mark Page end position
+_PageProbe(		__EOP___SG_ModbusTCPServer_02)			;;Mark end of page.
                ECOB
 $endif							;; Block condition
 ;;
@@ -2646,6 +2660,63 @@ _CONBIMOVE(		CompressStart,        	;;Input #1 ()
 $endif							;; Page condition
 __EOPP___SG_RecPV_03		EQU		$;Mark Page end position
 _PageProbe(		__EOP___SG_RecPV_03)			;;Mark end of page.
+               ECOB
+$endif							;; Block condition
+;;
+;; Block: COB PoolPump
+;; Pages: 1
+;;
+__PAGE_ID__	DEF	STR	""
+$if 1							;; Block condition
+		COB	PoolPump
+			0
+
+;;
+;; Block: COB PoolPump
+;; Page: 1/1 Ph
+__PAGE_ID__	DEF	STR	""
+;;
+$if 1
+__FBL_C000149_00___SG_PoolPump			EQU		$;; Mark Page position
+;; Position: Int to float -  - 17,24
+__fbl_C000149_00_B9BF___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47551	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_CONIFP2(		Ph,                   	;;Input #1 (Int)
+               ___RegDyn_C000149___SG_PoolPump+0,              ;;Output #1 (Fp)
+               ___FlgDyn_C000149___SG_PoolPump+0,              ;;Output #2 (Err)
+               ___RegDyn_C000149___SG_PoolPump+6,              ;;Dynamic variable RegTemp[1].
+               0)                                 ;;Init variable (Power of ten [-20.. 18]).
+;; Position: Divide -  - 28,24
+__fbl_C000149_00_B9C0___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47552	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_FUPIntMov(     500.0,                		;;Copy input label 'K 500.0' in 
+                ___RegDyn_C000149___SG_PoolPump+3, K)		;;network variable.
+_FDIV(		___RegDyn_C000149___SG_PoolPump+0,	;;Input #1 ()
+		___RegDyn_C000149___SG_PoolPump+3,	;;Input #2 ()
+               ___RegDyn_C000149___SG_PoolPump+1)              ;;Output #1 ()
+;; Position: Subtract -  - 36,24
+__fbl_C000149_00_B9C1___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47553	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_FUPIntMov(     4.0,                  		;;Copy input label 'K 4.0' in 
+                ___RegDyn_C000149___SG_PoolPump+4, K)		;;network variable.
+_FSUB(		___RegDyn_C000149___SG_PoolPump+1,	;;Input #1 ()
+		___RegDyn_C000149___SG_PoolPump+4,	;;Input #2 ()
+               ___RegDyn_C000149___SG_PoolPump+2)              ;;Output #1 ()
+;; Position: Divide -  - 52,24
+__fbl_C000149_00_B9BD___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47549	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_FUPIntMov(     1.02854,              		;;Copy input label 'K 1.02854' in 
+                ___RegDyn_C000149___SG_PoolPump+5, K)		;;network variable.
+_FDIV(		___RegDyn_C000149___SG_PoolPump+2,	;;Input #1 ()
+		___RegDyn_C000149___SG_PoolPump+5,	;;Input #2 ()
+               PhReal)                             ;;Output #1 ()
+$endif							;; Page condition
+__EOPP___SG_PoolPump_00		EQU		$;Mark Page end position
+_PageProbe(		__EOP___SG_PoolPump_00)			;;Mark end of page.
                ECOB
 $endif							;; Block condition
 

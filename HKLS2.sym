@@ -639,4 +639,8 @@ TempCanal	EQU	R
 HumCanal	EQU	R		
 CompState	EQU	R		
 $ENDGROUP RecPV
+Ph	EQU	R		
+PoolPump	EQU	COB		
+$ATTR INFO=FLOAT
+PhReal	EQU	R		
 ;;End of Module symbols

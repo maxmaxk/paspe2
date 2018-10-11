@@ -8,12 +8,12 @@ UpdateGlobals=1
 DnldInRun=0
 FuplaVersion=V2.1.410
 CodePage=1251
-MacroID=47543
+MacroID=47555
 ModuleVersion=
 AdjustLog=0
 Author=
 Comment=
-LastPageID=10
+LastPageID=12
 [BLOCK]
 BlockSym=1
 COBSupTime=0
@@ -3007,7 +3007,7 @@ ConditionalValue=0
 PageColor=16777215
 PageBackColor=0
 [PAGEDEF]
-PageLen=1667
+PageLen=1657
 [PAGE]
 Name=Dig_Input E165
 Comment=BA0
@@ -3079,17 +3079,17 @@ H15=50 29 30
 [NETWORK]
 N0=Io 19 15)if 23 15
 N1=Bof 29 15)i- 73 15
-N2=Bof 29 17)i- 73 17
-N3=Bof 29 19)i- 73 19
-N4=Bof 29 21)i- 73 21
-N5=Bof 29 23)i- 73 23
-N6=Bof 29 25)i- 73 25
-N7=Bof 29 27)i- 73 27
-N8=Bof 29 29)i- 73 29
+N2=Bof 29 17)i 73 17
+N3=Bof 29 19)i 73 19
+N4=Bof 29 21)i 73 21
+N5=Bof 29 23)i 73 23
+N6=Bof 29 25)i 73 25
+N7=Bof 29 27)i 73 27
+N8=Bof 29 29)i 73 29
 N9=Io 21 36)if 23 36
-N10=Bof 29 36)i- 31 36
-N11=Bof 29 38)i- 31 38
-N12=Bof 29 40)i- 31 40
+N10=Bof 29 36)i 31 36
+N11=Bof 29 38)i 31 38
+N12=Bof 29 40)i 31 40
 N13=Bof 29 42
 N14=Bof 29 44
 N15=Bof 29 46
@@ -3261,7 +3261,7 @@ Conn7=70 55 215 33 13
 Conn8=70 58 213 33 13
 Conn9=70 61 212 33 13
 [PAGEDEF]
-PageLen=1303
+PageLen=1333
 [PAGE]
 Name=Ana_Input W340 Roh
 Comment=BA32
@@ -3309,7 +3309,7 @@ Posi=6 28
 H0=27 29 66
 H1=31 21 29)30 66
 H2=33 21 30
-H3=35 21 22
+H3=35 21 66
 H4=37 21 22
 H5=39 21 22
 H6=41 21 22
@@ -3322,7 +3322,7 @@ V1=30 31 33
 [NETWORK]
 N0=Ii 66 27)of 21 31
 N1=Ii 66 31)of 21 33
-N2=Iof 21 35
+N2=Iof 21 35)i 66 35
 N3=Iof 21 37
 N4=Iof 21 39
 N5=Iof 21 41
@@ -3332,7 +3332,8 @@ N8=Iof 21 47)i 23 47
 [CONNS]
 Conn0=66 27 279 33 4
 Conn1=66 31 280 33 5
-Conn2=23 47 281 33 9
+Conn2=66 35 328 33 3
+Conn3=23 47 281 33 9
 [PAGEDEF]
 PageLen=733
 [PAGE]
@@ -3921,6 +3922,85 @@ Conn10=32 24 322 33 14
 Conn11=71 25 327 34 13
 Conn12=71 27 286 34 11
 Conn13=63 32 265 34 11
+[PAGEDEF]
+PageLen=1266
+[PAGE]
+Name=Leaking
+RemarkSize=0
+CountOfLabels=27
+CountOfGrids=82
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=11
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_INDREGO 47554=
+_CONBITIM 47555=
+[_INDREGO 47554]
+Fam=sfupindi
+Width=6
+Init=n
+Stretch=0 7 1 0
+In=#_I R_NI 
+Language=en
+Posi=70 12
+[_CONBITIM 47555]
+Fam=sfupconv
+Face=BinInt
+Width=8
+Init=n
+Stretch=0 23 1 10
+In=I_NB 
+Out=Out_I 
+D=TMP_R 
+Language=en
+Posi=47 12
+[HLINE]
+H0=13 68 70
+H1=15 44 47)55 70
+H2=17 44 47
+H3=19 44 47
+H4=21 44 47
+H5=23 44 47
+H6=25 44 47
+H7=27 44 47
+H8=29 44 47
+H9=31 44 47
+H10=33 44 47
+H11=35 44 47
+[NETWORK]
+N0=Io 68 13)if 70 13
+N1=Bo 44 15)if 47 15
+N2=Iof 55 15)if 70 15
+N3=Bo 44 17)if 47 17
+N4=Bo 44 19)if 47 19
+N5=Bo 44 21)if 47 21
+N6=Bo 44 23)if 47 23
+N7=Bo 44 25)if 47 25
+N8=Bo 44 27)if 47 27
+N9=Bo 44 29)if 47 29
+N10=Bo 44 31)if 47 31
+N11=Bo 44 33)if 47 33
+N12=Bo 44 35)if 47 35
+[CONNS]
+Conn0=68 13 340 34 5
+Conn1=44 15 56 34 3
+Conn2=44 17 266 34 5
+Conn3=44 19 267 34 5
+Conn4=44 21 268 34 5
+Conn5=44 23 269 34 5
+Conn6=44 25 270 34 5
+Conn7=44 27 271 34 5
+Conn8=44 29 272 34 5
+Conn9=44 31 273 34 5
+Conn10=44 33 274 34 5
+Conn11=44 35 275 34 5
 [BLOCK]
 BlockSym=249
 COBSupTime=0
@@ -4703,9 +4783,103 @@ Conn8=63 37 296 33 9
 Conn9=52 39 56 34 3
 Conn10=47 41 276 34 11
 Conn11=61 49 327 33 13
+[BLOCK]
+BlockSym=329
+COBSupTime=0
+PageDisabled=0
+ConditinalFunction=0
+ConditionalSymbol=
+ConditionalValue=0
+PageColor=16777215
+PageBackColor=0
+[PAGEDEF]
+PageLen=1223
+[PAGE]
+Name=Ph
+RemarkSize=0
+CountOfLabels=27
+CountOfGrids=82
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=10
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_CONIFP2 47551=
+_FDIV 47549=
+_FSUB 47553=
+_FDIV 47552=
+[_CONIFP2 47551]
+Fam=sfupconv
+Width=6
+Init=n
+In=Int_I 
+Out=Fp_F Err_B 
+D=RegTemp_R 
+av0=a fac =0 {-20..18} 
+Language=en
+Posi=17 24
+[_FDIV 47549]
+Fam=sfupfloa
+Face=Div
+Width=3
+Init=n
+In=_F _F 
+Out=_F 
+Language=en
+Posi=52 24
+[_FSUB 47553]
+Fam=sfupfloa
+Face=-
+Width=2
+Init=n
+In=_F _F 
+Out=_F 
+Language=en
+Posi=36 24
+[_FDIV 47552]
+Fam=sfupfloa
+Face=Div
+Width=3
+Init=n
+In=_F _F 
+Out=_F 
+Language=en
+Posi=28 24
+[HLINE]
+H0=25 13 17)23 28)31 36)38 52)55 57
+H1=26 27 28)35 36)51 52
+H2=27 23 24
+H3=30 20 27
+H4=32 32 35)47 51
+[VLINE]
+V0=27 26 30
+V1=35 26 32
+V2=51 26 32
+[NETWORK]
+N0=Io 13 25)if 17 25
+N1=Fof 23 25)if 28 25
+N2=Fof 31 25)if 36 25
+N3=Fof 38 25)if 52 25
+N4=Fof 55 25)i 57 25
+N5=Fif 28 26)o 20 30
+N6=Fif 36 26)o 32 32
+N7=Fif 52 26)o 47 32
+N8=Bof 23 27
+[CONNS]
+Conn0=13 25 328 34 12
+Conn1=57 25 338 33 6
+Conn2=20 30 337 34 5
+Conn3=32 32 335 34 4
+Conn4=47 32 334 34 7
 [RESOURCES]
 DBVersion=270340
-DBCount=283
+DBCount=296
 Format={ID}	{FullName}	{Type}	{Expression}	{ScopeID}	{Size}	{Comment}	{Override}	{Tags}	{BlockID}	{Hidden}
 HSYM0=1	Init	COB		3	-1				-1	0
 HSYM1=2	PCD01.A00.Mld.PCD01.Quitt.SSMRLT.iSSM	R		1	-1				-1	0
@@ -4990,6 +5164,19 @@ HSYM279=324	RecPV.State	R		3	-1				-1	0
 HSYM280=325	RecPV.TempCanal	R		3	-1				-1	0
 HSYM281=326	RecPV.HumCanal	R		3	-1				-1	0
 HSYM282=327	RecPV.CompState	R		3	-1				-1	0
+HSYM283=328	Ph	R		3	-1				-1	0
+HSYM284=329	PoolPump	COB		3	-1				-1	0
+HSYM285=330		K	0.02	3	-1				-1	1
+HSYM286=331			40	3	-1				-1	1
+HSYM287=332		K	10.2854	3	-1				-1	1
+HSYM288=333			500	3	-1				-1	1
+HSYM289=334		K	1.02854	3	-1				-1	1
+HSYM290=335		K	4.0	3	-1				-1	1
+HSYM291=336		K	50.0	3	-1				-1	1
+HSYM292=337		K	500.0	3	-1				-1	1
+HSYM293=338	PhReal	R FLOAT		3	-1				-1	0
+HSYM294=339			 12000	3	-1				-1	1
+HSYM295=340			12008	3	-1				-1	1
 [FBOXLIST]
 Count=3
 FBOXNAME0=4	ModbusClient	1
