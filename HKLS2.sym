@@ -559,13 +559,7 @@ AI512	EQU	F
 AI_32	PEQU	I	32	
 $ENDGROUP IOs
 ModbusTCPClient	EQU	COB		
-$GROUP try
-mb2	EQU	R		
-$ENDGROUP try
 ModbusRTU	EQU	COB		
-$GROUP rtu
-tst	EQU	R		
-$ENDGROUP rtu
 RecPV	EQU	COB		
 $GROUP RecPV
 Freq	EQU	R		
@@ -613,12 +607,6 @@ Hum	EQU	R
 $ENDGROUP Pool
 $GROUP PV1
 State	EQU	R		
-$ENDGROUP PV1
-$GROUP Pool
-$ATTR INFO=FLOAT
-Hum_	EQU	R		
-$ENDGROUP Pool
-$GROUP PV1
 ExtRec	EQU	R		
 StateBit	EQU	F		
 $ENDGROUP PV1
@@ -635,12 +623,39 @@ HiSpeed	EQU	R
 HumOnDryer	EQU	R		
 HumOffDryer	EQU	R		
 State	EQU	R		
-TempCanal	EQU	R		
-HumCanal	EQU	R		
 CompState	EQU	R		
 $ENDGROUP RecPV
 Ph	EQU	R		
 PoolPump	EQU	COB		
 $ATTR INFO=FLOAT
 PhReal	EQU	R		
+$GROUP Pump1
+Freq	EQU	R		
+Mode	EQU	R		
+ModeFb	EQU	R		
+$ENDGROUP Pump1
+$GROUP Pump2
+Mode	EQU	R		
+ModeFb	EQU	R		
+Freq	EQU	R		
+$ENDGROUP Pump2
+$GROUP Pump1
+ModeCmd	EQU	R		
+$ENDGROUP Pump1
+$GROUP Pump2
+ModeCmd	EQU	R		
+$ENDGROUP Pump2
+$GROUP Pump1
+Alarm	EQU	F		
+$ENDGROUP Pump1
+$GROUP Pump2
+Alarm	EQU	F		
+Order	EQU	F		
+$ENDGROUP Pump2
+$GROUP Pump1
+Work	EQU	F		
+$ENDGROUP Pump1
+$GROUP Pump2
+Work	EQU	F		
+$ENDGROUP Pump2
 ;;End of Module symbols

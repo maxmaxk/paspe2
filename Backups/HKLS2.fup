@@ -8,12 +8,12 @@ UpdateGlobals=1
 DnldInRun=0
 FuplaVersion=V2.1.410
 CodePage=1251
-MacroID=47553
+MacroID=47580
 ModuleVersion=
 AdjustLog=0
 Author=
 Comment=
-LastPageID=11
+LastPageID=17
 [BLOCK]
 BlockSym=1
 COBSupTime=0
@@ -3922,6 +3922,85 @@ Conn10=32 24 322 33 14
 Conn11=71 25 327 34 13
 Conn12=71 27 286 34 11
 Conn13=63 32 265 34 11
+[PAGEDEF]
+PageLen=1266
+[PAGE]
+Name=Leaking
+RemarkSize=0
+CountOfLabels=27
+CountOfGrids=82
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=11
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_INDREGO 47554=
+_CONBITIM 47555=
+[_INDREGO 47554]
+Fam=sfupindi
+Width=6
+Init=n
+Stretch=0 7 1 0
+In=#_I R_NI 
+Language=en
+Posi=70 12
+[_CONBITIM 47555]
+Fam=sfupconv
+Face=BinInt
+Width=8
+Init=n
+Stretch=0 23 1 10
+In=I_NB 
+Out=Out_I 
+D=TMP_R 
+Language=en
+Posi=47 12
+[HLINE]
+H0=13 68 70
+H1=15 44 47)55 70
+H2=17 44 47
+H3=19 44 47
+H4=21 44 47
+H5=23 44 47
+H6=25 44 47
+H7=27 44 47
+H8=29 44 47
+H9=31 44 47
+H10=33 44 47
+H11=35 44 47
+[NETWORK]
+N0=Io 68 13)if 70 13
+N1=Bo 44 15)if 47 15
+N2=Iof 55 15)if 70 15
+N3=Bo 44 17)if 47 17
+N4=Bo 44 19)if 47 19
+N5=Bo 44 21)if 47 21
+N6=Bo 44 23)if 47 23
+N7=Bo 44 25)if 47 25
+N8=Bo 44 27)if 47 27
+N9=Bo 44 29)if 47 29
+N10=Bo 44 31)if 47 31
+N11=Bo 44 33)if 47 33
+N12=Bo 44 35)if 47 35
+[CONNS]
+Conn0=68 13 340 34 5
+Conn1=44 15 56 34 3
+Conn2=44 17 266 34 5
+Conn3=44 19 267 34 5
+Conn4=44 21 268 34 5
+Conn5=44 23 269 34 5
+Conn6=44 25 270 34 5
+Conn7=44 27 271 34 5
+Conn8=44 29 272 34 5
+Conn9=44 31 273 34 5
+Conn10=44 33 274 34 5
+Conn11=44 35 275 34 5
 [BLOCK]
 BlockSym=249
 COBSupTime=0
@@ -3932,7 +4011,7 @@ ConditionalValue=0
 PageColor=16777215
 PageBackColor=0
 [PAGEDEF]
-PageLen=2424
+PageLen=3666
 [PAGE]
 Name=Init
 RemarkSize=0
@@ -3952,6 +4031,8 @@ ConditionalValue=0
 _MODBUS_MASTERRS5 47496=
 _MODBUS_CLUNIT2 47499=
 _BLINK2 47503=
+_MODBUS_CLUNIT2 47557=
+_MODBUS_CLUNIT2 47563=
 [_MODBUS_MASTERRS5 47496]
 Fam=sModMaster
 Face=Init Client RS
@@ -4034,15 +4115,69 @@ In=En_B T0_I T1_I
 Out=Q_B 
 S=Tim_T Sta_F 
 Language=de
-Posi=29 31
+Posi=29 45
+[_MODBUS_CLUNIT2 47557]
+Fam=sModMaster
+Face=Def Unit Client
+FacePosi=l
+Width=14
+Init=y
+Vers=2
+In=Enable_B Clear_EB 
+Out=Active_B Error_B 
+S=Fs_2F Rs_6R LED_F 
+av0=a IPA %0i =-1062731519:0 
+av1=a UID =1:2 {0..255} 
+av2=a OFF %s =0 {0,1} 
+av3=bv Fs 0 %s =1 \v Rs 0 
+av4=bv Fs 1 %s =1 \v Rs 1 
+av5=v Rs 2 %s 
+av6=v Rs 3 
+av7=v Rs 4 
+av8=v Rs 5 
+AcceptName=2
+uName=UnitRTU2
+aRef=2
+Ref=ModbusRTU
+Language=en
+Posi=25 26
+[_MODBUS_CLUNIT2 47563]
+Fam=sModMaster
+Face=Def Unit Client
+FacePosi=l
+Width=14
+Init=y
+Vers=2
+In=Enable_B Clear_EB 
+Out=Active_B Error_B 
+S=Fs_2F Rs_6R LED_F 
+av0=a IPA %0i =-1062731519:0 
+av1=a UID =1:3 {0..255} 
+av2=a OFF %s =0 {0,1} 
+av3=bv Fs 0 %s =1 \v Rs 0 
+av4=bv Fs 1 %s =1 \v Rs 1 
+av5=v Rs 2 %s 
+av6=v Rs 3 
+av7=v Rs 4 
+av8=v Rs 5 
+AcceptName=2
+uName=UnitRTU3
+aRef=2
+Ref=ModbusRTU
+Language=en
+Posi=25 36
 [HLINE]
 H0=9 23 25)39 40
 H1=11 39 40
 H2=19 23 25)39 40
 H3=21 23 25)39 40
-H4=34 27 29)35 37
-H5=36 15 29
-H6=38 14 29
+H4=29 23 25)39 40
+H5=31 23 25)39 40
+H6=39 23 25)39 40
+H7=41 23 25)39 40
+H8=48 14 29)35 37
+H9=50 14 29
+H10=52 14 29
 [NETWORK]
 N0=Bo 23 9)if 25 9
 N1=Bof 39 9
@@ -4051,18 +4186,30 @@ N3=Bo 23 19)if 25 19
 N4=Bof 39 19
 N5=Bo 23 21)if 25 21
 N6=Bof 39 21
-N7=Bo 27 34)if 29 34
-N8=Bof 35 34)i 37 34
-N9=Io 15 36)if 29 36
-N10=Io 14 38)if 29 38
+N7=Bo 23 29)if 25 29
+N8=Bof 39 29
+N9=Bo 23 31)if 25 31
+N10=Bof 39 31
+N11=Bo 23 39)if 25 39
+N12=Bof 39 39
+N13=Bo 23 41)if 25 41
+N14=Bof 39 41
+N15=Bo 14 48)if 29 48
+N16=Bof 35 48)i 37 48
+N17=Io 14 50)if 29 50
+N18=Io 14 52)if 29 52
 [CONNS]
 Conn0=23 9 56 34 3
 Conn1=23 19 144 34 3
 Conn2=23 21 56 34 3
-Conn3=27 34 144 34 3
-Conn4=37 34 259 33 5
-Conn5=15 36 179 34 3
-Conn6=14 38 263 34 3
+Conn3=23 29 144 34 3
+Conn4=23 31 56 34 3
+Conn5=23 39 144 34 3
+Conn6=23 41 56 34 3
+Conn7=14 48 144 34 3
+Conn8=37 48 259 33 5
+Conn9=14 50 179 34 3
+Conn10=14 52 263 34 3
 [BLOCK]
 BlockSym=253
 COBSupTime=0
@@ -4798,9 +4945,522 @@ Conn1=57 25 338 33 6
 Conn2=20 30 337 34 5
 Conn3=32 32 335 34 4
 Conn4=47 32 334 34 7
+[PAGEDEF]
+PageLen=2244
+[PAGE]
+Name=Pump1
+RemarkSize=0
+CountOfLabels=27
+CountOfGrids=82
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=14
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_MODBUS_RXINT 47558=
+_HEAMANI3 47559=
+_MODBUS_TXINT 47560=
+_HEAMANI3 47561=
+_MODBUS_TXINT 47562=
+[_MODBUS_RXINT 47558]
+Fam=sModMaster
+Face=Read Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=347 #_Ik=342 
+S=Fs_F LED_F 
+av0=a FUN %s =3 {3,4} 
+av1=a PRO %s =1 {1,2,3,4} 
+av2=a ADD =0:4097 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=UnitRTU2
+Language=en
+Posi=23 40
+[_HEAMANI3 47559]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_I 
+Out=_I 
+S=Fs_F Fsm_F Rsm_R LED_F 
+av0=a flw %s =0 {0,1} 
+av1=a Rsm 0 %1p =0:100 
+av2=bv Fs 0 %s =1 \v Fsm 0 %s 
+AcceptName=3
+Language=en
+Posi=29 33
+[_MODBUS_TXINT 47560]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=346 #_Ik=343 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:4097 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=UnitRTU2
+Language=en
+Posi=27 21
+[_HEAMANI3 47561]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_I 
+Out=_I 
+S=Fs_F Fsm_F Rsm_R LED_F 
+av0=a flw %s =0 {0,1} 
+av1=a Rsm 0 %1p =0:5000 
+av2=bv Fs 0 %s =1 \v Fsm 0 %s 
+AcceptName=3
+Language=en
+Posi=26 14
+[_MODBUS_TXINT 47562]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=345 #_Ik=344 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:4098 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=UnitRTU2
+Language=en
+Posi=27 3
+[HLINE]
+H0=6 25 27)41 42
+H1=15 24 26)32 42
+H2=24 25 27)41 42
+H3=34 27 29)35 42
+H4=43 21 23)37 38
+[NETWORK]
+N0=Bo 25 6)if 27 6
+N1=Bof 41 6
+N2=Io 24 15)if 26 15
+N3=Iof 32 15)i 42 15
+N4=Bo 25 24)if 27 24
+N5=Bof 41 24
+N6=Io 27 34)if 29 34
+N7=Iof 35 34)i 42 34
+N8=Bo 21 43)if 23 43
+N9=Bof 37 43
+N10=Io 36 51
+[CONNS]
+Conn0=25 6 259 34 5
+Conn1=24 15 56 34 3
+Conn2=42 15 345 33 9
+Conn3=25 24 259 34 5
+Conn4=27 34 355 34 12
+Conn5=42 34 346 33 10
+Conn6=21 43 259 34 5
+Conn7=36 51 347 34 11
+[PAGEDEF]
+PageLen=2245
+[PAGE]
+Name=Pump2
+RemarkSize=0
+CountOfLabels=27
+CountOfGrids=82
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=15
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_MODBUS_RXINT 47564=
+_HEAMANI3 47565=
+_MODBUS_TXINT 47566=
+_HEAMANI3 47567=
+_MODBUS_TXINT 47568=
+[_MODBUS_RXINT 47564]
+Fam=sModMaster
+Face=Read Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=353 #_Ik=348 
+S=Fs_F LED_F 
+av0=a FUN %s =3 {3,4} 
+av1=a PRO %s =1 {1,2,3,4} 
+av2=a ADD =0:4097 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=UnitRTU3
+Language=en
+Posi=25 42
+[_HEAMANI3 47565]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_I 
+Out=_I 
+S=Fs_F Fsm_F Rsm_R LED_F 
+av0=a flw %s =0 {0,1} 
+av1=a Rsm 0 %1p =0:100 
+av2=bv Fs 0 %s =1 \v Fsm 0 %s 
+AcceptName=3
+Language=en
+Posi=31 35
+[_MODBUS_TXINT 47566]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=352 #_Ik=349 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:4097 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=UnitRTU3
+Language=en
+Posi=29 23
+[_HEAMANI3 47567]
+Fam=heavac
+Face=Man
+FacePosi=l
+Width=6
+Init=y
+In=_I 
+Out=_I 
+S=Fs_F Fsm_F Rsm_R LED_F 
+av0=a flw %s =0 {0,1} 
+av1=a Rsm 0 %1p =0:5000 
+av2=bv Fs 0 %s =1 \v Fsm 0 %s 
+AcceptName=3
+Language=en
+Posi=28 16
+[_MODBUS_TXINT 47568]
+Fam=sModMaster
+Face=Write Int
+FacePosi=l
+Width=14
+Init=y
+Vers=1
+In=Enable_B 
+Out=Error_B 
+C=Add_Ir=354 #_Ik=351 
+S=Fs_F LED_F 
+av0=a FUN %s =16:6 {6,16} 
+av1=a PRO %s =2 {2,3,4} 
+av2=a ADD =0:4098 {0..65535} 
+av3=b Fs 0 %s =1 
+aRef=2
+Ref=UnitRTU3
+Language=en
+Posi=29 5
+[HLINE]
+H0=8 27 29)43 44
+H1=17 26 28)34 44
+H2=26 27 29)43 44
+H3=36 29 31)37 44
+H4=45 23 25)39 40
+[NETWORK]
+N0=Bo 27 8)if 29 8
+N1=Bof 43 8
+N2=Io 26 17)if 28 17
+N3=Iof 34 17)i 44 17
+N4=Bo 27 26)if 29 26
+N5=Bof 43 26
+N6=Io 29 36)if 31 36
+N7=Iof 37 36)i 44 36
+N8=Bo 23 45)if 25 45
+N9=Bof 39 45
+N10=Io 38 53
+[CONNS]
+Conn0=27 8 259 34 5
+Conn1=26 17 350 34 3
+Conn2=44 17 354 33 9
+Conn3=27 26 259 34 5
+Conn4=29 36 356 34 12
+Conn5=44 36 352 33 10
+Conn6=23 45 259 34 5
+Conn7=38 53 353 34 11
+[PAGEDEF]
+PageLen=3756
+[PAGE]
+Name=PumpManage
+RemarkSize=0
+CountOfLabels=27
+CountOfGrids=82
+UpdatedLayout=1
+BeginGroup=0
+GroupTitle=
+GroupID=
+PageID=16
+PageColor=0
+PageBackColor=16777215
+PageDisabled=0
+ConditinalFunction=0
+ConditionalValue=0
+[FBOX]
+_ICMPEQ 47569=
+_FLITOG2 47570=
+_IAND 47571=
+_IAND 47572=
+_BOR 47573=
+_BAND 47574=
+_ICMPGT 47575=
+_ICMPGT 47576=
+_IMUX 47577=
+_IMUX 47578=
+_BAND 47579=
+_BOR 47580=
+[_ICMPEQ 47569]
+Fam=sfupinte
+Face=Cmp
+Width=4
+Init=n
+In=_I _I 
+Out==_B 
+Language=en
+Posi=31 5
+[_FLITOG2 47570]
+Fam=sfupflip
+Face=Toggle
+Width=7
+Init=y
+In=_EB 
+Out=_B 
+S=Sta_F Edg_F 
+av0=a opt %s =2 {0,1,2} 
+av1=b Sta 0 %s =0 
+av2=b Sta 0 %s =1 
+Language=en
+Posi=41 7
+[_IAND 47571]
+Fam=sfupinte
+Face=And
+Width=4
+Init=n
+In=_I _I 
+Out=_I 
+Language=en
+Posi=17 14
+[_IAND 47572]
+Fam=sfupinte
+Face=And
+Width=4
+Init=n
+In=_I _I 
+Out=_I 
+Language=en
+Posi=59 14
+[_BOR 47573]
+Fam=sfupbina
+Face=>=1
+Width=3
+Init=n
+Stretch=1 9 1 1
+In=_NB 
+Out=_B 
+Language=en
+Posi=25 23
+[_BAND 47574]
+Fam=sfupbina
+Face=&&
+Width=2
+Init=n
+Stretch=1 9 1 2
+In=_NB 
+Out=_B 
+Language=en
+Posi=38 23
+[_ICMPGT 47575]
+Fam=sfupinte
+Face=Cmp
+Width=4
+Init=n
+In=_I _I 
+Out=>_B 
+Language=en
+Posi=26 14
+[_ICMPGT 47576]
+Fam=sfupinte
+Face=Cmp
+Width=4
+Init=n
+In=_I _I 
+Out=>_B 
+Language=en
+Posi=69 14
+[_IMUX 47577]
+Fam=sfupinte
+Face=Mux
+Width=7
+Init=n
+Stretch=1 7 1 1
+In=I_NI E_NB 
+Out=Out_I 
+Language=en
+Posi=49 23
+[_IMUX 47578]
+Fam=sfupinte
+Face=Mux
+Width=7
+Init=n
+Stretch=1 7 1 1
+In=I_NI E_NB 
+Out=Out_I 
+Language=en
+Posi=49 37
+[_BAND 47579]
+Fam=sfupbina
+Face=&&
+Width=2
+Init=n
+Stretch=1 9 1 2
+In=_NB 
+Out=_B 
+Language=en
+Posi=38 37
+[_BOR 47580]
+Fam=sfupbina
+Face=>=1
+Width=3
+Init=n
+Stretch=1 9 1 1
+In=_NB 
+Out=_B 
+Language=en
+Posi=25 37
+[HLINE]
+H0=6 22 31
+H1=7 30 31
+H2=8 35 41)48 50
+H3=9 27 30
+H4=15 15 17)21 26)57 59)63 69
+H5=16 16 17)24 26)58 59)68 69
+H6=17 30 33)73 74
+H7=18 15 16)57 58
+H8=19 23 24)64 68
+H9=22 66 74
+H10=24 14 25)28 38)40 42)66 67
+H11=25 24 25)36 38
+H12=26 14 24)37 38)47 49)56 58
+H13=28 35 36)47 49
+H14=30 42 49
+H15=32 35 49
+H16=34 37 42
+H17=38 14 25)28 38)40 42
+H18=39 24 25)36 38
+H19=40 14 24)35 38)47 49)56 58
+H20=42 35 36)47 49
+H21=44 42 49
+H22=46 42 49
+[VLINE]
+V0=16 16 18
+V1=24 16 19)25 26)39 40
+V2=30 7 9
+V3=35 32 40
+V4=36 25 28)39 42
+V5=37 26 34
+V6=42 24 30)30 32)34 38)38 44)44 46
+V7=58 16 18
+V8=66 22 24
+V9=68 16 19
+V10=74 17 22
+[NETWORK]
+N0=Io 22 6)if 31 6
+N1=Iif 31 7)o 27 9
+N2=Bof 35 8)if 41 8
+N3=Bof 48 8)i 50 8
+N4=Io 15 15)if 17 15
+N5=Iof 21 15)if 26 15
+N6=Io 57 15)if 59 15
+N7=Iof 63 15)if 69 15
+N8=Iif 17 16)o 15 18
+N9=Iif 26 16)o 23 19
+N10=Iif 59 16)o 57 18
+N11=Iif 69 16)o 64 19
+N12=Bof 30 17)i 33 17
+N13=Bof 73 17)i 67 24
+N14=Bo 14 24)i-f 25 24
+N15=Bof 28 24)if 38 24
+N16=Bof 40 24)if 49 32)i-f 38 40)i-f 49 30
+N17=Bif 25 25)o 14 26
+N18=Bi-f 38 25)o 35 28
+N19=Bi-f 38 26)if 49 46)i-f 49 44)of 40 38
+N20=Io 47 26)if 49 26
+N21=Iof 56 26)i 58 26
+N22=Io 47 28)if 49 28
+N23=Bo 14 38)if 25 38
+N24=Bof 28 38)if 38 38
+N25=Bif 25 39)o 14 40
+N26=Bi-f 38 39)o 35 42
+N27=Io 47 40)if 49 40
+N28=Iof 56 40)i 58 40
+N29=Io 47 42)if 49 42
+[CONNS]
+Conn0=22 6 137 34 21
+Conn1=50 8 361 33 10
+Conn2=27 9 56 34 3
+Conn3=15 15 347 34 11
+Conn4=57 15 353 34 11
+Conn5=33 17 358 33 10
+Conn6=15 18 357 34 4
+Conn7=57 18 359 34 4
+Conn8=23 19 362 34 3
+Conn9=64 19 363 34 3
+Conn10=14 24 361 34 10
+Conn11=67 24 360 33 10
+Conn12=14 26 360 34 10
+Conn13=47 26 56 34 3
+Conn14=58 26 355 33 12
+Conn15=35 28 358 34 10
+Conn16=47 28 309 34 3
+Conn17=14 38 361 34 10
+Conn18=14 40 358 34 10
+Conn19=47 40 365 34 3
+Conn20=58 40 356 33 12
+Conn21=35 42 360 34 10
+Conn22=47 42 364 34 3
 [RESOURCES]
 DBVersion=270340
-DBCount=294
+DBCount=297
 Format={ID}	{FullName}	{Type}	{Expression}	{ScopeID}	{Size}	{Comment}	{Override}	{Tags}	{BlockID}	{Hidden}
 HSYM0=1	Init	COB		3	-1				-1	0
 HSYM1=2	PCD01.A00.Mld.PCD01.Quitt.SSMRLT.iSSM	R		1	-1				-1	0
@@ -5001,106 +5661,110 @@ HSYM195=196	PCD01.A00.Mld.PCD01.Init.Box.SmBatterie	F		1	-1	(1) Batterie schwach
 HSYM196=197	I_O	COB		3	-1				-1	0
 HSYM197=202			16	3	-1				-1	1
 HSYM198=207	IOs.DO_32.iMACT	F		1	-1				-1	0
-HSYM199=208			24	3	-1				-1	1
-HSYM200=212	IOs.DO_35.iMACT	F		1	-1				-1	0
-HSYM201=213	IOs.DO_34.iMACT	F		1	-1				-1	0
-HSYM202=215	IOs.DO_33.iMACT	F		1	-1				-1	0
-HSYM203=216		K	40	3	-1				-1	1
-HSYM204=221	IOs.AI512	F		3	-1				-1	0
-HSYM205=234	IOs.AI_32	I	32	1	-1				-1	0
-HSYM206=242			220	3	-1				-1	1
-HSYM207=243			8	3	-1				-1	1
-HSYM208=245	ModbusTCPClient	COB		3	-1				-1	0
-HSYM209=248	try.mb2	R		3	-1				-1	0
-HSYM210=249	ModbusRTU	COB		3	-1				-1	0
-HSYM211=250			 1	3	-1				-1	1
-HSYM212=252	rtu.tst	R		3	-1				-1	0
-HSYM213=253	RecPV	COB		3	-1				-1	0
-HSYM214=254	RecPV.Freq	R		3	-1				-1	0
-HSYM215=255	SetPoints.Integer_0.Register	R		1	-1	(4) Integer value			-1	0
-HSYM216=256			 100	3	-1				-1	1
-HSYM217=257			 50	3	-1				-1	1
-HSYM218=258			 1	3	-1				-1	1
-HSYM219=259	Pulse	F		3	-1				-1	0
-HSYM220=260			 1	3	-1				-1	1
-HSYM221=261	RecPV.Mode	R		3	-1				-1	0
-HSYM222=262	SetPoints.Integer_1.Register	R		1	-1	(4) Integer value			-1	0
-HSYM223=263			5	3	-1				-1	1
-HSYM224=264	IOs.AO_48	O	48	3	-1				-1	0
-HSYM225=265	HiLowPressure	F		3	-1				-1	0
-HSYM226=266	leak1	F		3	-1				-1	0
-HSYM227=267	leak2	F		3	-1				-1	0
-HSYM228=268	leak3	F		3	-1				-1	0
-HSYM229=269	leak4	F		3	-1				-1	0
-HSYM230=270	leak5	F		3	-1				-1	0
-HSYM231=271	leak6	F		3	-1				-1	0
-HSYM232=272	leak7	F		3	-1				-1	0
-HSYM233=273	leak8	F		3	-1				-1	0
-HSYM234=274	leak9	F		3	-1				-1	0
-HSYM235=275	leak10	F		3	-1				-1	0
-HSYM236=276	CompressStart	F		3	-1				-1	0
-HSYM237=277	HeatRoofStart	F		3	-1				-1	0
-HSYM238=278	BlowRotorStart	F		3	-1				-1	0
-HSYM239=279	Hum	R		3	-1				-1	0
-HSYM240=280	Temp	R		3	-1				-1	0
-HSYM241=281	AnalogError	R		3	-1				-1	0
-HSYM242=282	TempError	F		3	-1				-1	0
-HSYM243=283	RecircAO	R		3	-1				-1	0
-HSYM244=284	ValveAO	R		3	-1				-1	0
-HSYM245=285			 1	3	-1				-1	1
-HSYM246=286	RecPV.ModeFb	R		3	-1				-1	0
-HSYM247=287			  1	3	-1				-1	1
-HSYM248=288			 1	3	-1				-1	1
-HSYM249=289			 10	3	-1				-1	1
-HSYM250=290			 5	3	-1				-1	1
-HSYM251=291			 1	3	-1				-1	1
-HSYM252=292	PulseTCP	F		3	-1				-1	0
-HSYM253=293	Pool.Hum	R FLOAT		3	-1				-1	0
-HSYM254=294	PV1.State	R		3	-1				-1	0
-HSYM255=295	Pool.Hum_	R FLOAT		3	-1				-1	0
-HSYM256=296	PV1.ExtRec	R		3	-1				-1	0
-HSYM257=298			1000	3	-1				-1	1
-HSYM258=301	PV1.StateBit	F		3	-1				-1	0
-HSYM259=302	RecPV.FreqCmd	R		3	-1				-1	0
-HSYM260=303	RecPV.ModeCmd	R		3	-1				-1	0
-HSYM261=304			300	3	-1				-1	1
-HSYM262=305			20	3	-1				-1	1
-HSYM263=306			290	3	-1				-1	1
-HSYM264=307		K	0.2	3	-1				-1	1
-HSYM265=308			140	3	-1				-1	1
-HSYM266=309			2	3	-1				-1	1
-HSYM267=310			14	3	-1				-1	1
-HSYM268=311			1400	3	-1				-1	1
-HSYM269=312	RecPV.WrkState	F		3	-1				-1	0
-HSYM270=315			18	3	-1				-1	1
-HSYM271=316	ModbusTCPServer	COB	5	3	-1				-1	0
-HSYM272=317			13000	3	-1				-1	1
-HSYM273=318	RecPV.On	R		3	-1				-1	0
-HSYM274=319	RecPV.LowSpeed	R		3	-1				-1	0
-HSYM275=320	RecPV.HiSpeed	R		3	-1				-1	0
-HSYM276=321	RecPV.HumOnDryer	R		3	-1				-1	0
-HSYM277=322	RecPV.HumOffDryer	R		3	-1				-1	0
-HSYM278=323			12000	3	-1				-1	1
-HSYM279=324	RecPV.State	R		3	-1				-1	0
-HSYM280=325	RecPV.TempCanal	R		3	-1				-1	0
-HSYM281=326	RecPV.HumCanal	R		3	-1				-1	0
-HSYM282=327	RecPV.CompState	R		3	-1				-1	0
-HSYM283=328	Ph	R		3	-1				-1	0
-HSYM284=329	PoolPump	COB		3	-1				-1	0
-HSYM285=330		K	0.02	3	-1				-1	1
-HSYM286=331			40	3	-1				-1	1
-HSYM287=332		K	10.2854	3	-1				-1	1
-HSYM288=333			500	3	-1				-1	1
-HSYM289=334		K	1.02854	3	-1				-1	1
-HSYM290=335		K	4.0	3	-1				-1	1
-HSYM291=336		K	50.0	3	-1				-1	1
-HSYM292=337		K	500.0	3	-1				-1	1
-HSYM293=338	PhReal	R FLOAT		3	-1				-1	0
+HSYM199=212	IOs.DO_35.iMACT	F		1	-1				-1	0
+HSYM200=213	IOs.DO_34.iMACT	F		1	-1				-1	0
+HSYM201=215	IOs.DO_33.iMACT	F		1	-1				-1	0
+HSYM202=216		K	40	3	-1				-1	1
+HSYM203=221	IOs.AI512	F		3	-1				-1	0
+HSYM204=234	IOs.AI_32	I	32	1	-1				-1	0
+HSYM205=243			8	3	-1				-1	1
+HSYM206=245	ModbusTCPClient	COB		3	-1				-1	0
+HSYM207=249	ModbusRTU	COB		3	-1				-1	0
+HSYM208=253	RecPV	COB		3	-1				-1	0
+HSYM209=254	RecPV.Freq	R		3	-1				-1	0
+HSYM210=255	SetPoints.Integer_0.Register	R		1	-1	(4) Integer value			-1	0
+HSYM211=258			 1	3	-1				-1	1
+HSYM212=259	Pulse	F		3	-1				-1	0
+HSYM213=260			 1	3	-1				-1	1
+HSYM214=261	RecPV.Mode	R		3	-1				-1	0
+HSYM215=262	SetPoints.Integer_1.Register	R		1	-1	(4) Integer value			-1	0
+HSYM216=263			5	3	-1				-1	1
+HSYM217=264	IOs.AO_48	O	48	3	-1				-1	0
+HSYM218=265	HiLowPressure	F		3	-1				-1	0
+HSYM219=266	leak1	F		3	-1				-1	0
+HSYM220=267	leak2	F		3	-1				-1	0
+HSYM221=268	leak3	F		3	-1				-1	0
+HSYM222=269	leak4	F		3	-1				-1	0
+HSYM223=270	leak5	F		3	-1				-1	0
+HSYM224=271	leak6	F		3	-1				-1	0
+HSYM225=272	leak7	F		3	-1				-1	0
+HSYM226=273	leak8	F		3	-1				-1	0
+HSYM227=274	leak9	F		3	-1				-1	0
+HSYM228=275	leak10	F		3	-1				-1	0
+HSYM229=276	CompressStart	F		3	-1				-1	0
+HSYM230=277	HeatRoofStart	F		3	-1				-1	0
+HSYM231=278	BlowRotorStart	F		3	-1				-1	0
+HSYM232=279	Hum	R		3	-1				-1	0
+HSYM233=280	Temp	R		3	-1				-1	0
+HSYM234=281	AnalogError	R		3	-1				-1	0
+HSYM235=282	TempError	F		3	-1				-1	0
+HSYM236=283	RecircAO	R		3	-1				-1	0
+HSYM237=284	ValveAO	R		3	-1				-1	0
+HSYM238=286	RecPV.ModeFb	R		3	-1				-1	0
+HSYM239=287			  1	3	-1				-1	1
+HSYM240=289			 10	3	-1				-1	1
+HSYM241=290			 5	3	-1				-1	1
+HSYM242=291			 1	3	-1				-1	1
+HSYM243=292	PulseTCP	F		3	-1				-1	0
+HSYM244=293	Pool.Hum	R FLOAT		3	-1				-1	0
+HSYM245=294	PV1.State	R		3	-1				-1	0
+HSYM246=296	PV1.ExtRec	R		3	-1				-1	0
+HSYM247=298			1000	3	-1				-1	1
+HSYM248=301	PV1.StateBit	F		3	-1				-1	0
+HSYM249=302	RecPV.FreqCmd	R		3	-1				-1	0
+HSYM250=303	RecPV.ModeCmd	R		3	-1				-1	0
+HSYM251=304			300	3	-1				-1	1
+HSYM252=309			2	3	-1				-1	1
+HSYM253=311			1400	3	-1				-1	1
+HSYM254=312	RecPV.WrkState	F		3	-1				-1	0
+HSYM255=315			18	3	-1				-1	1
+HSYM256=316	ModbusTCPServer	COB	5	3	-1				-1	0
+HSYM257=317			13000	3	-1				-1	1
+HSYM258=318	RecPV.On	R		3	-1				-1	0
+HSYM259=319	RecPV.LowSpeed	R		3	-1				-1	0
+HSYM260=320	RecPV.HiSpeed	R		3	-1				-1	0
+HSYM261=321	RecPV.HumOnDryer	R		3	-1				-1	0
+HSYM262=322	RecPV.HumOffDryer	R		3	-1				-1	0
+HSYM263=323			12000	3	-1				-1	1
+HSYM264=324	RecPV.State	R		3	-1				-1	0
+HSYM265=327	RecPV.CompState	R		3	-1				-1	0
+HSYM266=328	Ph	R		3	-1				-1	0
+HSYM267=329	PoolPump	COB		3	-1				-1	0
+HSYM268=334		K	1.02854	3	-1				-1	1
+HSYM269=335		K	4.0	3	-1				-1	1
+HSYM270=337		K	500.0	3	-1				-1	1
+HSYM271=338	PhReal	R FLOAT		3	-1				-1	0
+HSYM272=340			12008	3	-1				-1	1
+HSYM273=342			  1	3	-1				-1	1
+HSYM274=343			  1	3	-1				-1	1
+HSYM275=344			 1	3	-1				-1	1
+HSYM276=345	Pump1.Freq	R		3	-1				-1	0
+HSYM277=346	Pump1.Mode	R		3	-1				-1	0
+HSYM278=347	Pump1.ModeFb	R		3	-1				-1	0
+HSYM279=348			   1	3	-1				-1	1
+HSYM280=349			   1	3	-1				-1	1
+HSYM281=350			 0	3	-1				-1	1
+HSYM282=351			  1	3	-1				-1	1
+HSYM283=352	Pump2.Mode	R		3	-1				-1	0
+HSYM284=353	Pump2.ModeFb	R		3	-1				-1	0
+HSYM285=354	Pump2.Freq	R		3	-1				-1	0
+HSYM286=355	Pump1.ModeCmd	R		3	-1				-1	0
+HSYM287=356	Pump2.ModeCmd	R		3	-1				-1	0
+HSYM288=357			128	3	-1				-1	1
+HSYM289=358	Pump1.Alarm	F		3	-1				-1	0
+HSYM290=359			 128	3	-1				-1	1
+HSYM291=360	Pump2.Alarm	F		3	-1				-1	0
+HSYM292=361	Pump2.Order	F		3	-1				-1	0
+HSYM293=362			 0	3	-1				-1	1
+HSYM294=363			 0	3	-1				-1	1
+HSYM295=364			 2	3	-1				-1	1
+HSYM296=365			 0	3	-1				-1	1
 [FBOXLIST]
-Count=3
+Count=4
 FBOXNAME0=4	ModbusClient	1
 FBOXNAME1=5	UnitTCPClient	1
-FBOXNAME2=1	UnitRTU	1
+FBOXNAME2=1	UnitRTU2	1
+FBOXNAME3=2	UnitRTU3	1
 [TEXTCONTENTS]
 Count=57
 TEXT0=8 Mail.To3.[size]	-1

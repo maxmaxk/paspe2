@@ -2242,7 +2242,7 @@ _MODBUS_MASTERRS5(               2,                                    ;;Version
 		__low,                	;;Input #1 (Clear)
                ___FlgSta_C0000F9___SG_ModbusRTU+0,              ;;Output #1 (Active)
                ___FlgSta_C0000F9___SG_ModbusRTU+1,              ;;Output #2 (Error)
-               ___FlgDyn_C0000F9___SG_ModbusRTU+2,              ;;Dynamic variable Fd[32].
+               ___FlgDyn_C0000F9___SG_ModbusRTU+6,              ;;Dynamic variable Fd[32].
                __stc_id_0B988_var_00___SG_ModbusRTU,               ;;Static variable Fsb[1].
                __stc_id_0B988_var_01___SG_ModbusRTU,               ;;Static variable Fse[2].
                __stc_id_0B988_var_02___SG_ModbusRTU,               ;;Static variable Fss[6].
@@ -2280,7 +2280,45 @@ _MODBUS_CLUNIT2(               2,                                    ;;Version I
                1,                                 ;;Init variable (Error counter ).
                UnitRTU,                              ;;FBox user name.
                ModbusRTU)                            ;;FBox reference.
-;; Position: Blink delay T0/T1 -  - 29,31
+;; Position: Define Unit Client - UnitRTU2 - 25,26
+__fbl_C0000F9_00_B9C5___SG_ModbusRTU           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47557	;UnitRTU2
+__FBOX_LANG__	DEF	STR	"EN"	;UnitRTU2
+_MODBUS_CLUNIT2(               2,                                    ;;Version Indicator.
+		__high,               	;;Input #1 (Enable)
+		__low,                	;;Input #2 (Clear)
+               ___FlgDyn_C0000F9___SG_ModbusRTU+2,              ;;Output #1 (Active)
+               ___FlgDyn_C0000F9___SG_ModbusRTU+3,              ;;Output #2 (Error)
+               __stc_id_0B9C5_var_00___SG_ModbusRTU,               ;;Static variable Fs[2].
+               __stc_id_0B9C5_var_01___SG_ModbusRTU,               ;;Static variable Rs[6].
+               __stc_id_0B9C5_var_02___SG_ModbusRTU,               ;;Static variable LED[1].
+               0,                                 ;;Init variable (IP Address).
+               2,                                 ;;Init variable (Unit identifier).
+               0,                                 ;;Init variable (Offset 1->0 ).
+               1,                                 ;;Init variable (Request counter ).
+               1,                                 ;;Init variable (Error counter ).
+               UnitRTU2,                             ;;FBox user name.
+               ModbusRTU)                            ;;FBox reference.
+;; Position: Define Unit Client - UnitRTU3 - 25,36
+__fbl_C0000F9_00_B9CB___SG_ModbusRTU           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47563	;UnitRTU3
+__FBOX_LANG__	DEF	STR	"EN"	;UnitRTU3
+_MODBUS_CLUNIT2(               2,                                    ;;Version Indicator.
+		__high,               	;;Input #1 (Enable)
+		__low,                	;;Input #2 (Clear)
+               ___FlgDyn_C0000F9___SG_ModbusRTU+4,              ;;Output #1 (Active)
+               ___FlgDyn_C0000F9___SG_ModbusRTU+5,              ;;Output #2 (Error)
+               __stc_id_0B9CB_var_00___SG_ModbusRTU,               ;;Static variable Fs[2].
+               __stc_id_0B9CB_var_01___SG_ModbusRTU,               ;;Static variable Rs[6].
+               __stc_id_0B9CB_var_02___SG_ModbusRTU,               ;;Static variable LED[1].
+               0,                                 ;;Init variable (IP Address).
+               3,                                 ;;Init variable (Unit identifier).
+               0,                                 ;;Init variable (Offset 1->0 ).
+               1,                                 ;;Init variable (Request counter ).
+               1,                                 ;;Init variable (Error counter ).
+               UnitRTU3,                             ;;FBox user name.
+               ModbusRTU)                            ;;FBox reference.
+;; Position: Blink delay T0/T1 -  - 29,45
 __fbl_C0000F9_00_B98F___SG_ModbusRTU           EQU                   $ ;Mark FBox position.
 __FBOX_ID__	DEF	47503	;
 __FBOX_LANG__	DEF	STR	"DE"	;
@@ -2664,7 +2702,7 @@ _PageProbe(		__EOP___SG_RecPV_03)			;;Mark end of page.
 $endif							;; Block condition
 ;;
 ;; Block: COB PoolPump
-;; Pages: 1
+;; Pages: 4
 ;;
 __PAGE_ID__	DEF	STR	""
 $if 1							;; Block condition
@@ -2673,7 +2711,7 @@ $if 1							;; Block condition
 
 ;;
 ;; Block: COB PoolPump
-;; Page: 1/1 Ph
+;; Page: 1/4 Ph
 __PAGE_ID__	DEF	STR	""
 ;;
 $if 1
@@ -2717,6 +2755,327 @@ _FDIV(		___RegDyn_C000149___SG_PoolPump+2,	;;Input #1 ()
 $endif							;; Page condition
 __EOPP___SG_PoolPump_00		EQU		$;Mark Page end position
 _PageProbe(		__EOP___SG_PoolPump_00)			;;Mark end of page.
+;; Block: COB PoolPump
+;; Page: 2/4 Pump1
+__PAGE_ID__	DEF	STR	""
+;;
+$if 1
+__FBL_C000149_01___SG_PoolPump			EQU		$;; Mark Page position
+;; Position: Write Integer -  - 27,3
+__fbl_C000149_01_B9CA___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47562	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_MODBUS_TXINT( 1,                                    ;;Version Indicator.
+		Pulse,                	;;Input #1 (Enable)
+               ___FlgDyn_C000149___SG_PoolPump+0,              ;;Output #1 (Error)
+               Pump1.Freq,                         ;;Constant #1
+                1,                                 ;;Constant #2
+               __stc_id_0B9CA_var_00___SG_PoolPump,               ;;Static variable Fs[1].
+               __stc_id_0B9CA_var_01___SG_PoolPump,               ;;Static variable LED[1].
+               6,                                 ;;Init variable (Function code ).
+               2,                                 ;;Init variable (Processing ).
+               4098,                              ;;Init variable (Remote base address).
+               1,                                 ;;Init variable (Execute now ).
+               UnitRTU2)                             ;;FBox reference.
+;; Position: Override numeric -  - 26,14
+__fbl_C000149_01_B9C9___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47561	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_FUPIntMov(     0,                    		;;Copy input label '0' in 
+                ___RegDyn_C000149___SG_PoolPump+0, )		;;network variable.
+_HEAMANI3(		___RegDyn_C000149___SG_PoolPump+0,	;;Input #1 ()
+               Pump1.Freq,                         ;;Output #1 ()
+               __stc_id_0B9C9_var_00___SG_PoolPump,               ;;Static variable Fs[1].
+               __stc_id_0B9C9_var_01___SG_PoolPump,               ;;Static variable Fsm[1].
+               __stc_id_0B9C9_var_02___SG_PoolPump,               ;;Static variable Rsm[1].
+               __stc_id_0B9C9_var_03___SG_PoolPump,               ;;Static variable LED[1].
+               0,                                 ;;Init variable (Manual value follows input ).
+               5000,                              ;;Init variable (Manual value).
+               1,                                 ;;Init variable (Mode).
+               )                                     ;;FBox user name.
+;; Position: Write Integer -  - 27,21
+__fbl_C000149_01_B9C8___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47560	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_MODBUS_TXINT( 1,                                    ;;Version Indicator.
+		Pulse,                	;;Input #1 (Enable)
+               ___FlgDyn_C000149___SG_PoolPump+1,              ;;Output #1 (Error)
+               Pump1.Mode,                         ;;Constant #1
+                 1,                                ;;Constant #2
+               __stc_id_0B9C8_var_00___SG_PoolPump,               ;;Static variable Fs[1].
+               __stc_id_0B9C8_var_01___SG_PoolPump,               ;;Static variable LED[1].
+               6,                                 ;;Init variable (Function code ).
+               2,                                 ;;Init variable (Processing ).
+               4097,                              ;;Init variable (Remote base address).
+               1,                                 ;;Init variable (Execute now ).
+               UnitRTU2)                             ;;FBox reference.
+;; Position: Override numeric -  - 29,33
+__fbl_C000149_01_B9C7___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47559	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_HEAMANI3(		Pump1.ModeCmd,        	;;Input #1 ()
+               Pump1.Mode,                         ;;Output #1 ()
+               __stc_id_0B9C7_var_00___SG_PoolPump,               ;;Static variable Fs[1].
+               __stc_id_0B9C7_var_01___SG_PoolPump,               ;;Static variable Fsm[1].
+               __stc_id_0B9C7_var_02___SG_PoolPump,               ;;Static variable Rsm[1].
+               __stc_id_0B9C7_var_03___SG_PoolPump,               ;;Static variable LED[1].
+               0,                                 ;;Init variable (Manual value follows input ).
+               100,                               ;;Init variable (Manual value).
+               1,                                 ;;Init variable (Mode).
+               )                                     ;;FBox user name.
+;; Position: Read Integer -  - 23,40
+__fbl_C000149_01_B9C6___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47558	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_MODBUS_RXINT( 1,                                    ;;Version Indicator.
+		Pulse,                	;;Input #1 (Enable)
+               ___FlgDyn_C000149___SG_PoolPump+2,              ;;Output #1 (Error)
+               Pump1.ModeFb,                       ;;Constant #1
+                 1,                                ;;Constant #2
+               __stc_id_0B9C6_var_00___SG_PoolPump,               ;;Static variable Fs[1].
+               __stc_id_0B9C6_var_01___SG_PoolPump,               ;;Static variable LED[1].
+               3,                                 ;;Init variable (Function code ).
+               1,                                 ;;Init variable (Processing ).
+               4097,                              ;;Init variable (Remote base address).
+               1,                                 ;;Init variable (Execute now ).
+               UnitRTU2)                             ;;FBox reference.
+$endif							;; Page condition
+__EOPP___SG_PoolPump_01		EQU		$;Mark Page end position
+_PageProbe(		__EOP___SG_PoolPump_01)			;;Mark end of page.
+;; Block: COB PoolPump
+;; Page: 3/4 Pump2
+__PAGE_ID__	DEF	STR	""
+;;
+$if 1
+__FBL_C000149_02___SG_PoolPump			EQU		$;; Mark Page position
+;; Position: Write Integer -  - 29,5
+__fbl_C000149_02_B9D0___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47568	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_MODBUS_TXINT( 1,                                    ;;Version Indicator.
+		Pulse,                	;;Input #1 (Enable)
+               ___FlgDyn_C000149___SG_PoolPump+0,              ;;Output #1 (Error)
+               Pump2.Freq,                         ;;Constant #1
+                 1,                                ;;Constant #2
+               __stc_id_0B9D0_var_00___SG_PoolPump,               ;;Static variable Fs[1].
+               __stc_id_0B9D0_var_01___SG_PoolPump,               ;;Static variable LED[1].
+               6,                                 ;;Init variable (Function code ).
+               2,                                 ;;Init variable (Processing ).
+               4098,                              ;;Init variable (Remote base address).
+               1,                                 ;;Init variable (Execute now ).
+               UnitRTU3)                             ;;FBox reference.
+;; Position: Override numeric -  - 28,16
+__fbl_C000149_02_B9CF___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47567	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_FUPIntMov(      0,                   		;;Copy input label ' 0' in 
+                ___RegDyn_C000149___SG_PoolPump+0, )		;;network variable.
+_HEAMANI3(		___RegDyn_C000149___SG_PoolPump+0,	;;Input #1 ()
+               Pump2.Freq,                         ;;Output #1 ()
+               __stc_id_0B9CF_var_00___SG_PoolPump,               ;;Static variable Fs[1].
+               __stc_id_0B9CF_var_01___SG_PoolPump,               ;;Static variable Fsm[1].
+               __stc_id_0B9CF_var_02___SG_PoolPump,               ;;Static variable Rsm[1].
+               __stc_id_0B9CF_var_03___SG_PoolPump,               ;;Static variable LED[1].
+               0,                                 ;;Init variable (Manual value follows input ).
+               5000,                              ;;Init variable (Manual value).
+               1,                                 ;;Init variable (Mode).
+               )                                     ;;FBox user name.
+;; Position: Write Integer -  - 29,23
+__fbl_C000149_02_B9CE___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47566	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_MODBUS_TXINT( 1,                                    ;;Version Indicator.
+		Pulse,                	;;Input #1 (Enable)
+               ___FlgDyn_C000149___SG_PoolPump+1,              ;;Output #1 (Error)
+               Pump2.Mode,                         ;;Constant #1
+                  1,                               ;;Constant #2
+               __stc_id_0B9CE_var_00___SG_PoolPump,               ;;Static variable Fs[1].
+               __stc_id_0B9CE_var_01___SG_PoolPump,               ;;Static variable LED[1].
+               6,                                 ;;Init variable (Function code ).
+               2,                                 ;;Init variable (Processing ).
+               4097,                              ;;Init variable (Remote base address).
+               1,                                 ;;Init variable (Execute now ).
+               UnitRTU3)                             ;;FBox reference.
+;; Position: Override numeric -  - 31,35
+__fbl_C000149_02_B9CD___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47565	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_HEAMANI3(		Pump2.ModeCmd,        	;;Input #1 ()
+               Pump2.Mode,                         ;;Output #1 ()
+               __stc_id_0B9CD_var_00___SG_PoolPump,               ;;Static variable Fs[1].
+               __stc_id_0B9CD_var_01___SG_PoolPump,               ;;Static variable Fsm[1].
+               __stc_id_0B9CD_var_02___SG_PoolPump,               ;;Static variable Rsm[1].
+               __stc_id_0B9CD_var_03___SG_PoolPump,               ;;Static variable LED[1].
+               0,                                 ;;Init variable (Manual value follows input ).
+               100,                               ;;Init variable (Manual value).
+               1,                                 ;;Init variable (Mode).
+               )                                     ;;FBox user name.
+;; Position: Read Integer -  - 25,42
+__fbl_C000149_02_B9CC___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47564	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_MODBUS_RXINT( 1,                                    ;;Version Indicator.
+		Pulse,                	;;Input #1 (Enable)
+               ___FlgDyn_C000149___SG_PoolPump+2,              ;;Output #1 (Error)
+               Pump2.ModeFb,                       ;;Constant #1
+                  1,                               ;;Constant #2
+               __stc_id_0B9CC_var_00___SG_PoolPump,               ;;Static variable Fs[1].
+               __stc_id_0B9CC_var_01___SG_PoolPump,               ;;Static variable LED[1].
+               3,                                 ;;Init variable (Function code ).
+               1,                                 ;;Init variable (Processing ).
+               4097,                              ;;Init variable (Remote base address).
+               1,                                 ;;Init variable (Execute now ).
+               UnitRTU3)                             ;;FBox reference.
+$endif							;; Page condition
+__EOPP___SG_PoolPump_02		EQU		$;Mark Page end position
+_PageProbe(		__EOP___SG_PoolPump_02)			;;Mark end of page.
+;; Block: COB PoolPump
+;; Page: 4/4 PumpManage
+__PAGE_ID__	DEF	STR	""
+;;
+$if 1
+__FBL_C000149_03___SG_PoolPump			EQU		$;; Mark Page position
+;; Position: Is equal to -  - 31,5
+__fbl_C000149_03_B9D1___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47569	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_FUPIntMov(     0,                    		;;Copy input label '0' in 
+                ___RegDyn_C000149___SG_PoolPump+0, )		;;network variable.
+_ICMPEQ(		PCD01.A00.Mld.PCD01.Clock.iH,	;;Input #1 ()
+		___RegDyn_C000149___SG_PoolPump+0,	;;Input #2 ()
+               ___FlgDyn_C000149___SG_PoolPump+0)              ;;Output #1 (=)
+;; Position: Toggle -  - 41,7
+__fbl_C000149_03_B9D2___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47570	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_FLITOG2(		___FlgDyn_C000149___SG_PoolPump+0,	;;Input #1 ()
+               Pump2.Order,                        ;;Output #1 ()
+               __stc_id_0B9D2_var_00___SG_PoolPump,               ;;Static variable Sta[1].
+               __stc_id_0B9D2_var_01___SG_PoolPump,               ;;Static variable Edg[1].
+               2,                                 ;;Init variable (Init option ).
+               0,                                 ;;Init variable (State ).
+               1)                                 ;;Init variable (State ).
+;; Position: Bitwise and -  - 17,14
+__fbl_C000149_03_B9D3___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47571	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_FUPIntMov(     128,                  		;;Copy input label '128' in 
+                ___RegDyn_C000149___SG_PoolPump+3, )		;;network variable.
+_IAND(		Pump1.ModeFb,         	;;Input #1 ()
+		___RegDyn_C000149___SG_PoolPump+3,	;;Input #2 ()
+               ___RegDyn_C000149___SG_PoolPump+1)              ;;Output #1 ()
+;; Position: Is greater than -  - 26,14
+__fbl_C000149_03_B9D7___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47575	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_FUPIntMov(      0,                   		;;Copy input label ' 0' in 
+                ___RegDyn_C000149___SG_PoolPump+4, )		;;network variable.
+_ICMPGT(		___RegDyn_C000149___SG_PoolPump+1,	;;Input #1 ()
+		___RegDyn_C000149___SG_PoolPump+4,	;;Input #2 ()
+               Pump1.Alarm)                        ;;Output #1 (>)
+;; Position: Bitwise and -  - 59,14
+__fbl_C000149_03_B9D4___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47572	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_FUPIntMov(      128,                 		;;Copy input label ' 128' in 
+                ___RegDyn_C000149___SG_PoolPump+5, )		;;network variable.
+_IAND(		Pump2.ModeFb,         	;;Input #1 ()
+		___RegDyn_C000149___SG_PoolPump+5,	;;Input #2 ()
+               ___RegDyn_C000149___SG_PoolPump+2)              ;;Output #1 ()
+;; Position: Is greater than -  - 69,14
+__fbl_C000149_03_B9D8___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47576	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_FUPIntMov(      0,                   		;;Copy input label ' 0' in 
+                ___RegDyn_C000149___SG_PoolPump+6, )		;;network variable.
+_ICMPGT(		___RegDyn_C000149___SG_PoolPump+2,	;;Input #1 ()
+		___RegDyn_C000149___SG_PoolPump+6,	;;Input #2 ()
+               Pump2.Alarm)                        ;;Output #1 (>)
+;; Position: Or -  - 25,23
+__fbl_C000149_03_B9D5___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47573	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_FUPBinMov(    Pump2.Order,                       ;;Invert input label 'Pump2.Order' in
+                ___FlgDyn_C000149___SG_PoolPump+1,-)		;;network variable.
+_BOR(		___FlgDyn_C000149___SG_PoolPump+1,	;;Input #1 ()
+		Pump2.Alarm,,,,,,,,,  	;;Input #2 ()
+               ___FlgDyn_C000149___SG_PoolPump+2)              ;;Output #1 ()
+;; Position: And -  - 38,23
+__fbl_C000149_03_B9D6___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47574	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_FUPBinMov(    Pump1.Alarm,                       ;;Invert input label 'Pump1.Alarm' in
+                ___FlgDyn_C000149___SG_PoolPump+5,-)		;;network variable.
+_FUPBinMov(    Pump2.Work,                        ;;Invert input label 'Pump2.Work' in
+                ___FlgDyn_C000149___SG_PoolPump+6,-)		;;network variable.
+_BAND(		___FlgDyn_C000149___SG_PoolPump+2,	;;Input #1 ()
+		___FlgDyn_C000149___SG_PoolPump+5,	;;Input #2 ()
+		___FlgDyn_C000149___SG_PoolPump+6,,,,,,,,	;;Input #3 ()
+               ___FlgDyn_C000149___SG_PoolPump+3)              ;;Output #1 ()
+_FUPBinMov(    ___FlgDyn_C000149___SG_PoolPump+3,             ;;Invert network variable  in
+                ___FlgDyn_C000149___SG_PoolPump+4,-)		;;network variable.
+;; Position: Mux bin. selection -  - 49,23
+__fbl_C000149_03_B9D9___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47577	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_FUPIntMov(     0,                    		;;Copy input label '0' in 
+                ___RegDyn_C000149___SG_PoolPump+7, )		;;network variable.
+_FUPIntMov(     2,                    		;;Copy input label '2' in 
+                ___RegDyn_C000149___SG_PoolPump+8, )		;;network variable.
+_IMUX(		___RegDyn_C000149___SG_PoolPump+7,	;;Input #1 (I0)
+		___RegDyn_C000149___SG_PoolPump+8,,,,,,,	;;Input #2 (I1)
+		___FlgDyn_C000149___SG_PoolPump+4,	;;Input #3 (E0)
+		___FlgDyn_C000149___SG_PoolPump+3,,,,,,,	;;Input #4 (E1)
+               Pump1.ModeCmd)                      ;;Output #1 (Out)
+;; Position: Move -  - 43,34
+__fbl_C000149_03_B9DD___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47581	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_BMOVE2(		___FlgDyn_C000149___SG_PoolPump+3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,	;;Input #1 ()
+               Pump1.Work,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,) ;;Output #1 ()
+;; Position: Or -  - 25,37
+__fbl_C000149_03_B9DC___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47580	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_BOR(		Pump2.Order,          	;;Input #1 ()
+		Pump1.Alarm,,,,,,,,,  	;;Input #2 ()
+               ___FlgDyn_C000149___SG_PoolPump+7)              ;;Output #1 ()
+;; Position: And -  - 38,37
+__fbl_C000149_03_B9DB___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47579	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_FUPBinMov(    Pump2.Alarm,                       ;;Invert input label 'Pump2.Alarm' in
+                ___FlgDyn_C000149___SG_PoolPump+10,-)		;;network variable.
+_FUPBinMov(    Pump1.Work,                        ;;Invert input label 'Pump1.Work' in
+                ___FlgDyn_C000149___SG_PoolPump+11,-)		;;network variable.
+_BAND(		___FlgDyn_C000149___SG_PoolPump+7,	;;Input #1 ()
+		___FlgDyn_C000149___SG_PoolPump+10,	;;Input #2 ()
+		___FlgDyn_C000149___SG_PoolPump+11,,,,,,,,	;;Input #3 ()
+               ___FlgDyn_C000149___SG_PoolPump+8)              ;;Output #1 ()
+_FUPBinMov(    ___FlgDyn_C000149___SG_PoolPump+8,             ;;Invert network variable  in
+                ___FlgDyn_C000149___SG_PoolPump+9,-)		;;network variable.
+;; Position: Mux bin. selection -  - 49,37
+__fbl_C000149_03_B9DA___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47578	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_FUPIntMov(      0,                   		;;Copy input label ' 0' in 
+                ___RegDyn_C000149___SG_PoolPump+9, )		;;network variable.
+_FUPIntMov(      2,                   		;;Copy input label ' 2' in 
+                ___RegDyn_C000149___SG_PoolPump+10, )		;;network variable.
+_IMUX(		___RegDyn_C000149___SG_PoolPump+9,	;;Input #1 (I0)
+		___RegDyn_C000149___SG_PoolPump+10,,,,,,,	;;Input #2 (I1)
+		___FlgDyn_C000149___SG_PoolPump+9,	;;Input #3 (E0)
+		___FlgDyn_C000149___SG_PoolPump+8,,,,,,,	;;Input #4 (E1)
+               Pump2.ModeCmd)                      ;;Output #1 (Out)
+;; Position: Move -  - 43,50
+__fbl_C000149_03_B9DE___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47582	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_BMOVE2(		___FlgDyn_C000149___SG_PoolPump+8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,	;;Input #1 ()
+               Pump2.Work,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,) ;;Output #1 ()
+$endif							;; Page condition
+__EOPP___SG_PoolPump_03		EQU		$;Mark Page end position
+_PageProbe(		__EOP___SG_PoolPump_03)			;;Mark end of page.
                ECOB
 $endif							;; Block condition
 

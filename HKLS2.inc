@@ -496,7 +496,7 @@ __fup_C00013C_02_37_0f___SG_ModbusTCPServer       EQU                        ___
 ;;End Dynamic symbol aliases allocated for this BLOCK
 ;;dynamic symbols allocated for this BLOCK
 ___FlgSta_C0000F9___SG_ModbusRTU		EQU		F [2]		;	Define 2 registers for dynamic usage.
-___FlgDyn_C0000F9___SG_ModbusRTU		EQU		F [34]		;	Define 34 registers for dynamic usage.
+___FlgDyn_C0000F9___SG_ModbusRTU		EQU		F [38]		;	Define 38 registers for dynamic usage.
 ___RegDyn_C0000F9___SG_ModbusRTU		EQU		R [2]		;	Define 2 registers for dynamic usage.
 ;;end of dynamic symbols allocated for this BLOCK
 
@@ -516,12 +516,24 @@ __stc_id_0B98B_var_01___SG_ModbusRTU       EQU     R         [6]       ;static v
 __stc_id_0B98B_var_02___SG_ModbusRTU       EQU     F                    ;static variable LED[1]
 __stc_id_0B98F_var_00___SG_ModbusRTU       EQU     T                    ;static variable Tim[1]
 __stc_id_0B98F_var_01___SG_ModbusRTU       EQU     F                    ;static variable Sta[1]
+$ATTR TAGS=S_ADJUST
+__stc_id_0B9C5_var_00___SG_ModbusRTU       EQU     F         [2]       ;static variable Fs[2]
+__stc_id_0B9C5_var_01___SG_ModbusRTU       EQU     R         [6]       ;static variable Rs[6]
+__stc_id_0B9C5_var_02___SG_ModbusRTU       EQU     F                    ;static variable LED[1]
+$ATTR TAGS=S_ADJUST
+__stc_id_0B9CB_var_00___SG_ModbusRTU       EQU     F         [2]       ;static variable Fs[2]
+__stc_id_0B9CB_var_01___SG_ModbusRTU       EQU     R         [6]       ;static variable Rs[6]
+__stc_id_0B9CB_var_02___SG_ModbusRTU       EQU     F                    ;static variable LED[1]
 ;;End Static symbols allocated for this BLOCK
 ;;Start Dynamic symbol aliases allocated for this BLOCK
 __fup_C0000F9_00_27_09___SG_ModbusRTU       EQU                        ___FlgSta_C0000F9___SG_ModbusRTU+0 ;Export name of network.
 __fup_C0000F9_00_27_0b___SG_ModbusRTU       EQU                        ___FlgSta_C0000F9___SG_ModbusRTU+1 ;Export name of network.
 __fup_C0000F9_00_27_13___SG_ModbusRTU       EQU                        ___FlgDyn_C0000F9___SG_ModbusRTU+0 ;Export name of network.
 __fup_C0000F9_00_27_15___SG_ModbusRTU       EQU                        ___FlgDyn_C0000F9___SG_ModbusRTU+1 ;Export name of network.
+__fup_C0000F9_00_27_1d___SG_ModbusRTU       EQU                        ___FlgDyn_C0000F9___SG_ModbusRTU+2 ;Export name of network.
+__fup_C0000F9_00_27_1f___SG_ModbusRTU       EQU                        ___FlgDyn_C0000F9___SG_ModbusRTU+3 ;Export name of network.
+__fup_C0000F9_00_27_27___SG_ModbusRTU       EQU                        ___FlgDyn_C0000F9___SG_ModbusRTU+4 ;Export name of network.
+__fup_C0000F9_00_27_29___SG_ModbusRTU       EQU                        ___FlgDyn_C0000F9___SG_ModbusRTU+5 ;Export name of network.
 ;;End Dynamic symbol aliases allocated for this BLOCK
 ;;dynamic symbols allocated for this BLOCK
 ___FlgDyn_C0000FD___SG_RecPV		EQU		F [7]		;	Define 7 registers for dynamic usage.
@@ -589,15 +601,73 @@ __fup_C0000FD_03_14_1e___SG_RecPV       EQU                        ___RegDyn_C00
 __fup_C0000FD_03_14_20___SG_RecPV       EQU                        ___FlgDyn_C0000FD___SG_RecPV+5 ;Export name of network.
 ;;End Dynamic symbol aliases allocated for this BLOCK
 ;;dynamic symbols allocated for this BLOCK
-___RegDyn_C000149___SG_PoolPump		EQU		R [7]		;	Define 7 registers for dynamic usage.
-___FlgDyn_C000149___SG_PoolPump		EQU		F [1]		;	Define 1 registers for dynamic usage.
+___RegDyn_C000149___SG_PoolPump		EQU		R [11]		;	Define 11 registers for dynamic usage.
+___FlgDyn_C000149___SG_PoolPump		EQU		F [12]		;	Define 12 registers for dynamic usage.
 ;;end of dynamic symbols allocated for this BLOCK
 
 ;;Start Static symbols allocated for this BLOCK
+$ATTR TAGS=S_ADJUST
+__stc_id_0B9C6_var_00___SG_PoolPump       EQU     F                    ;static variable Fs[1]
+__stc_id_0B9C6_var_01___SG_PoolPump       EQU     F                    ;static variable LED[1]
+$ATTR TAGS=S_ADJUST
+__stc_id_0B9C7_var_00___SG_PoolPump       EQU     F                    ;static variable Fs[1]
+__stc_id_0B9C7_var_01___SG_PoolPump       EQU     F                    ;static variable Fsm[1]
+$ATTR TAGS=S_ADJUST
+__stc_id_0B9C7_var_02___SG_PoolPump       EQU     R                    ;static variable Rsm[1]
+__stc_id_0B9C7_var_03___SG_PoolPump       EQU     F                    ;static variable LED[1]
+$ATTR TAGS=S_ADJUST
+__stc_id_0B9C8_var_00___SG_PoolPump       EQU     F                    ;static variable Fs[1]
+__stc_id_0B9C8_var_01___SG_PoolPump       EQU     F                    ;static variable LED[1]
+$ATTR TAGS=S_ADJUST
+__stc_id_0B9C9_var_00___SG_PoolPump       EQU     F                    ;static variable Fs[1]
+__stc_id_0B9C9_var_01___SG_PoolPump       EQU     F                    ;static variable Fsm[1]
+$ATTR TAGS=S_ADJUST
+__stc_id_0B9C9_var_02___SG_PoolPump       EQU     R                    ;static variable Rsm[1]
+__stc_id_0B9C9_var_03___SG_PoolPump       EQU     F                    ;static variable LED[1]
+$ATTR TAGS=S_ADJUST
+__stc_id_0B9CA_var_00___SG_PoolPump       EQU     F                    ;static variable Fs[1]
+__stc_id_0B9CA_var_01___SG_PoolPump       EQU     F                    ;static variable LED[1]
+$ATTR TAGS=S_ADJUST
+__stc_id_0B9CC_var_00___SG_PoolPump       EQU     F                    ;static variable Fs[1]
+__stc_id_0B9CC_var_01___SG_PoolPump       EQU     F                    ;static variable LED[1]
+$ATTR TAGS=S_ADJUST
+__stc_id_0B9CD_var_00___SG_PoolPump       EQU     F                    ;static variable Fs[1]
+__stc_id_0B9CD_var_01___SG_PoolPump       EQU     F                    ;static variable Fsm[1]
+$ATTR TAGS=S_ADJUST
+__stc_id_0B9CD_var_02___SG_PoolPump       EQU     R                    ;static variable Rsm[1]
+__stc_id_0B9CD_var_03___SG_PoolPump       EQU     F                    ;static variable LED[1]
+$ATTR TAGS=S_ADJUST
+__stc_id_0B9CE_var_00___SG_PoolPump       EQU     F                    ;static variable Fs[1]
+__stc_id_0B9CE_var_01___SG_PoolPump       EQU     F                    ;static variable LED[1]
+$ATTR TAGS=S_ADJUST
+__stc_id_0B9CF_var_00___SG_PoolPump       EQU     F                    ;static variable Fs[1]
+__stc_id_0B9CF_var_01___SG_PoolPump       EQU     F                    ;static variable Fsm[1]
+$ATTR TAGS=S_ADJUST
+__stc_id_0B9CF_var_02___SG_PoolPump       EQU     R                    ;static variable Rsm[1]
+__stc_id_0B9CF_var_03___SG_PoolPump       EQU     F                    ;static variable LED[1]
+$ATTR TAGS=S_ADJUST
+__stc_id_0B9D0_var_00___SG_PoolPump       EQU     F                    ;static variable Fs[1]
+__stc_id_0B9D0_var_01___SG_PoolPump       EQU     F                    ;static variable LED[1]
+$ATTR TAGS=S_ADJUST
+__stc_id_0B9D2_var_00___SG_PoolPump       EQU     F                    ;static variable Sta[1]
+__stc_id_0B9D2_var_01___SG_PoolPump       EQU     F                    ;static variable Edg[1]
 ;;End Static symbols allocated for this BLOCK
 ;;Start Dynamic symbol aliases allocated for this BLOCK
 __fup_C000149_00_17_19___SG_PoolPump       EQU                        ___RegDyn_C000149___SG_PoolPump+0 ;Export name of network.
 __fup_C000149_00_1f_19___SG_PoolPump       EQU                        ___RegDyn_C000149___SG_PoolPump+1 ;Export name of network.
 __fup_C000149_00_26_19___SG_PoolPump       EQU                        ___RegDyn_C000149___SG_PoolPump+2 ;Export name of network.
 __fup_C000149_00_17_1b___SG_PoolPump       EQU                        ___FlgDyn_C000149___SG_PoolPump+0 ;Export name of network.
+__fup_C000149_01_29_06___SG_PoolPump       EQU                        ___FlgDyn_C000149___SG_PoolPump+0 ;Export name of network.
+__fup_C000149_01_29_18___SG_PoolPump       EQU                        ___FlgDyn_C000149___SG_PoolPump+1 ;Export name of network.
+__fup_C000149_01_25_2b___SG_PoolPump       EQU                        ___FlgDyn_C000149___SG_PoolPump+2 ;Export name of network.
+__fup_C000149_02_2b_08___SG_PoolPump       EQU                        ___FlgDyn_C000149___SG_PoolPump+0 ;Export name of network.
+__fup_C000149_02_2b_1a___SG_PoolPump       EQU                        ___FlgDyn_C000149___SG_PoolPump+1 ;Export name of network.
+__fup_C000149_02_27_2d___SG_PoolPump       EQU                        ___FlgDyn_C000149___SG_PoolPump+2 ;Export name of network.
+__fup_C000149_03_23_08___SG_PoolPump       EQU                        ___FlgDyn_C000149___SG_PoolPump+0 ;Export name of network.
+__fup_C000149_03_15_0f___SG_PoolPump       EQU                        ___RegDyn_C000149___SG_PoolPump+1 ;Export name of network.
+__fup_C000149_03_3f_0f___SG_PoolPump       EQU                        ___RegDyn_C000149___SG_PoolPump+2 ;Export name of network.
+__fup_C000149_03_1c_18___SG_PoolPump       EQU                        ___FlgDyn_C000149___SG_PoolPump+2 ;Export name of network.
+__fup_C000149_03_28_18___SG_PoolPump       EQU                        ___FlgDyn_C000149___SG_PoolPump+3 ;Export name of network.
+__fup_C000149_03_1c_26___SG_PoolPump       EQU                        ___FlgDyn_C000149___SG_PoolPump+7 ;Export name of network.
+__fup_C000149_03_28_26___SG_PoolPump       EQU                        ___FlgDyn_C000149___SG_PoolPump+8 ;Export name of network.
 ;;End Dynamic symbol aliases allocated for this BLOCK

@@ -133,7 +133,7 @@ __Saia_Sfup__.MaxFlag	EQU		16383	;For Fupla probes
 __Saia_Sfup__.rTmpCalc	EQU	R	10813
 __Saia_Sfup__.rTmpCalcRemainder	EQU	R	10814
 __Saia_Sfup__.rTmpCalcResult	EQU	R	10815
-__SAIASystemBuildTime__	EQU		0C955016H	;Build key
+__SAIASystemBuildTime__	EQU		0776A8CF8H	;Build key
 __SASMVERS__	EQU		21410	;Assembler/linker version, old format (abccc)
 __TIME_BASE__	EQU		100	;Timer timebase in ms
 __TIME_BASE_EXTN__	EQU		100
