@@ -34,7 +34,6 @@ __LIBVERS__._L6x_RoomController_PCD7_L60x	EQU		2006610	;RoomController PCD7_L60x
 __LIBVERS__._L79x_RoomController_PCD7_L79x	EQU		2006134	;RoomController_PCD7_L79x, V2.6.134
 __LIBVERS__._PEHA_PHC	EQU		1000100	;PEHA PHC, V1.0.100
 __LIBVERS__._SAIA_BELIMO	EQU		2007310	;Belimo MP-Bus Library, V2.7.310
-__LIBVERS__._SAIA_BUES1	EQU		2007100	;BuES1++ Library, V2.7.100
 __LIBVERS__._SAIA_D2H110	EQU		2002000	;PCD2.H110 Counting Module, V2.02.0
 __LIBVERS__._SAIA_D2H150	EQU		2002000	;PCD2.H150 SSI Encoder Module, V2.02.0
 __LIBVERS__._SAIA_D2H210	EQU		2002000	;PCD2.H210 Stepper Motor Positioning Module, V2.02.0
@@ -133,7 +132,7 @@ __Saia_Sfup__.MaxFlag	EQU		16383	;For Fupla probes
 __Saia_Sfup__.rTmpCalc	EQU	R	10813
 __Saia_Sfup__.rTmpCalcRemainder	EQU	R	10814
 __Saia_Sfup__.rTmpCalcResult	EQU	R	10815
-__SAIASystemBuildTime__	EQU		0776A8CF8H	;Build key
+__SAIASystemBuildTime__	EQU		0F144B56FH	;Build key
 __SASMVERS__	EQU		21410	;Assembler/linker version, old format (abccc)
 __TIME_BASE__	EQU		100	;Timer timebase in ms
 __TIME_BASE_EXTN__	EQU		100
@@ -412,6 +411,8 @@ A.HVC.Uhrzeit.DayOW	EQU	R	672
 A.HVC.Uhrzeit.Time	EQU	R	670[3]
 A.HVC.Uhrzeit.TimeCmd	EQU	F	281
 A.Mail.MailerWorks	EQU	F	938
+CellerOccup	EQU	F	1266
+CellerOcup	EQU	F	1267
 FileDringend	EQU	TEXT	3302
 FileNormal	EQU	TEXT	3303
 HIGH	EQU	F	940
@@ -639,6 +640,10 @@ PIN.Level2	EQU	TEXT	7811
 PIN.Level3	EQU	TEXT	7812
 PIN.Level4	EQU	TEXT	7813
 PIN.Logouttime	EQU	R	784
+Pool.HiSpeed	EQU	F	1404
+Pool.SetSpeed	EQU	R	562
+Pool.Speed	EQU	F	1405
+Pum12.Freq	EQU	R	561
 RLT003.AUL.Temp.iMW10	EQU	R	785
 RLT003.VE.VL.Sec.UWP.Stoerg.iSSm	EQU	F	1050
 RLT003.ZUL.Frost.Box.iFrostMX5	EQU	F	1051
@@ -738,6 +743,7 @@ S.PRJ.PASPE_2.SbusStation	EQU		212	;S-Bus station number
 S.SYS.SASMVERS	EQU		2001410	;Assembler/linker version, new format (abbbccc)
 SetPoints.Integer_0.Register	EQU	R	841	;(4) Integer value
 SetPoints.Integer_1.Register	EQU	R	842	;(4) Integer value
+StartVX	EQU	F	1268
 SubDringend	EQU	TEXT	3310
 SubNormal	EQU	TEXT	3311
 TexDringend	EQU	TEXT	3312

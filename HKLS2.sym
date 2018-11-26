@@ -658,4 +658,16 @@ $ENDGROUP Pump1
 $GROUP Pump2
 Work	EQU	F		
 $ENDGROUP Pump2
+$GROUP Pum12
+Freq	PEQU	R		
+$ENDGROUP Pum12
+$GROUP Pool
+HiSpeed	PEQU	F		
+Speed	PEQU	F		
+SetSpeed	PEQU	R		
+$ENDGROUP Pool
+VX	EQU	COB	7	
+CellerOcup	PEQU	F		
+CellerOccup	PEQU	F		
+StartVX	PEQU	F		
 ;;End of Module symbols

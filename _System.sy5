@@ -162,8 +162,8 @@ A.HVC.Uhrzeit.DateCmd EQU F 282 ;
 A.HVC.Uhrzeit.Time EQU R 670[3] ;
 A.HVC.Uhrzeit.Date EQU R 671 ;
 A.HVC.Uhrzeit.DayOW EQU R 672 ;
-s.modc.ModbusClient.fboxerror EQU R 801 ;
 s.modc.ModbusRTU.fboxerror EQU R 799 ;
+s.modc.ModbusClient.fboxerror EQU R 801 ;
 ;File "InitODM.obj"
 s.odm.FlagDiag EQU F 16000[8] ;
 s.odm.RegChannel EQU R 10669 ;

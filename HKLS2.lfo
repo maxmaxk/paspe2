@@ -9,8 +9,8 @@ LIB3=C:\Users\Public\SBC\PG5_21\Libs\App\Heavac.saialin
 LIB4=C:\Users\Public\SBC\PG5_21\Libs\App\Alarming.saialin
 LIB5=C:\Users\Public\SBC\PG5_21\Libs\App\Email.saialin
 LIB6=C:\Users\Public\SBC\PG5_21\Libs\Std\sfupcomm.saialin
-LIB7=C:\Users\Public\SBC\PG5_21\Libs\Std\sfupanlg.saialin
-LIB8=C:\Users\Public\SBC\PG5_21\Libs\App\sModbus.saialin
+LIB7=C:\Users\Public\SBC\PG5_21\Libs\App\sModbus.saialin
+LIB8=C:\Users\Public\SBC\PG5_21\Libs\Std\sfupanlg.saialin
 [LIB0]
 Name=DDC Suite 2.5
 ID=_DDC_Suite_25
@@ -118,19 +118,6 @@ Phone=http://www.saia-pcd.com/contact
 FamCount=1
 Fam0=IP Protocols
 [LIB7]
-Name=S-Fup Analog Module Library
-ID=_SAIA_SFUPANLG
-Type=FBOX
-Version=V2.7.310
-Author=Saia-Burgess Controls AG
-Distributor=Saia-Burgess Controls AG
-Address=Bahnhofstrasse 18, CH-3280 Murten, Switzerland
-Email=http://www.saia-pcd.com/contact
-Website=http://www.sbc-support.ch
-Phone=http://www.saia-pcd.com/contact
-FamCount=1
-Fam0=sfupanlg
-[LIB8]
 Name=Saia PCD Modbus library
 ID=_SAIA_MODBUS
 Type=Fbox
@@ -144,3 +131,16 @@ Phone=+41(0)26 6727111
 FamCount=2
 Fam0=sModMaster
 Fam1=sModSlave
+[LIB8]
+Name=S-Fup Analog Module Library
+ID=_SAIA_SFUPANLG
+Type=FBOX
+Version=V2.7.310
+Author=Saia-Burgess Controls AG
+Distributor=Saia-Burgess Controls AG
+Address=Bahnhofstrasse 18, CH-3280 Murten, Switzerland
+Email=http://www.saia-pcd.com/contact
+Website=http://www.sbc-support.ch
+Phone=http://www.saia-pcd.com/contact
+FamCount=1
+Fam0=sfupanlg

@@ -1,25 +1,25 @@
 SAIA PG5 LINKER V2.1.410                                               Page 1
 User: Renergie
-File: PASPE_2.pcd   Linked: 16/10/18 17:28 
+File: PASPE_2.pcd   Linked: 09/11/18 18:13 
 
         CODE    CODE    TXT/DB  EXTEN
 FILE    START   SEG     SEG     SEG     ASSEMBLY         FILE
 NUMBER  LINE    LINES   BYTES   BYTES   DATE AND TIME    NAME
 --------------------------------------------------------------------------------
-1       0       0       804     0       16/10/18 17:28   _PASPE_2.src
-2       0       5299    292     1144    16/10/18 17:28   HKLS2.fbd
-3       5299    0       0       0       16/10/18 17:28   InitODM.src
-4       5299    1010    200     0       16/10/18 17:28   heavac5.srx
-5       6309    240     2808    0       16/10/18 17:28   sfupanl5.srx
-6       6549    0       0       0       16/10/18 17:28   sModMaster.srx
-7       6549    0       0       0       16/10/18 17:28   sModSlave.srx
-8       6549    78      12      0       14/10/14 11:02   sfuplib3.src
+1       0       0       804     0       09/11/18 18:13   _PASPE_2.src
+2       0       5549    292     1144    09/11/18 18:13   HKLS2.fbd
+3       5549    0       0       0       09/11/18 18:13   InitODM.src
+4       5549    1010    200     0       09/11/18 18:13   heavac5.srx
+5       6559    0       0       0       09/11/18 18:13   sModMaster.srx
+6       6559    240     2808    0       09/11/18 18:13   sfupanl5.srx
+7       6799    0       0       0       09/11/18 18:13   sModSlave.srx
+8       6799    78      12      0       14/10/14 11:02   sfuplib3.src
 --------------------------------------------------------------------------------
 
-CODE SEGMENT SIZE:      7904 LINES (31616 BYTES)
+CODE SEGMENT SIZE:      8156 LINES (32624 BYTES)
 TEXT/DB SEGMENT SIZE:   4116 BYTES
 EXTENSION MEM SIZE:     1144 BYTES
-PUBLIC SYMBOLS:         721
+PUBLIC SYMBOLS:         727
 
 PUBLIC SYMBOLS
 ___ETR___  F    16054         8#    8     
@@ -72,9 +72,9 @@ __LIBRARY__._SAIA_DDCSUITE
 __LIBRARY__._SAIA_HEAVAC
                 1             4#    
 __LIBRARY__._SAIA_MODBUS
-                1             6#    
-__LIBRARY__._SAIA_SFUPANLG
                 1             5#    
+__LIBRARY__._SAIA_SFUPANLG
+                1             6#    
 __LIBVERS__._BLI_
                 2007100       1#    
 __LIBVERS__._CWM_Email
@@ -93,8 +93,6 @@ __LIBVERS__._PEHA_PHC
                 1000100       1#    
 __LIBVERS__._SAIA_BELIMO
                 2007310       1#    
-__LIBVERS__._SAIA_BUES1
-                2007100       1#    
 __LIBVERS__._SAIA_D2H110
                 2002000       1#    
 __LIBVERS__._SAIA_D2H150
@@ -251,7 +249,7 @@ __Saia_Sfup__.rTmpCalcRemainder
 __Saia_Sfup__.rTmpCalcResult
            R    10815         8#    8     
 __SAIASystemBuildTime__
-                0776A8CF8H    1#    8     
+                0F144B56FH    1#    8     
 __SASMVERS__    21410         1#    
 __TIME_BASE__   100           1#    
 __TIME_BASE_EXTN__
@@ -267,13 +265,13 @@ __TIME_MULTIPLY__
 _ALARM     F    160..164      2#    2     
 _ALARMG    F    163           2#    2     
 _analogue._FB._LinBalco
-           FB   35            5#    2     5     
+           FB   35            6#    2     6     
 _analogue._FB._LinearNi1000
-           FB   36            5#    2     5     
+           FB   36            6#    2     6     
 _analogue._FB._LinearPt1000
-           FB   37            5#    2     5     
+           FB   37            6#    2     6     
 _analogue._FB._LinNiLS
-           FB   38            5#    2     5     
+           FB   38            6#    2     6     
 _HEAVAC._ALARM._ALARM
            F    160..164      2#    2     
 _HEAVAC._ALARM._ALARMG
@@ -801,6 +799,9 @@ A.HVC.Uhrzeit.TimeCmd
            F    281           2#    2     
 A.Mail.MailerWorks
            F    938           2#    2     
+CellerOccup
+           F    1266          2#    2     
+CellerOcup F    1267          2#    
 FileDringend
            TEXT 3302          2#    2     
 FileNormal TEXT 3303          2#    2     
@@ -1159,6 +1160,12 @@ PIN.Level3 TEXT 7812          2#    2
 PIN.Level4 TEXT 7813          2#    2     
 PIN.Logouttime
            R    784           2#    2     
+Pool.HiSpeed
+           F    1404          2#    
+Pool.SetSpeed
+           R    562           2#    2     
+Pool.Speed F    1405          2#    2     
+Pum12.Freq R    561           2#    
 RLT003.AUL.Temp.iMW10
            R    785           2#    2     
 RLT003.VE.VL.Sec.UWP.Stoerg.iSSm
@@ -1347,6 +1354,7 @@ SetPoints.Integer_0.Register
            R    841           2#    
 SetPoints.Integer_1.Register
            R    842           2#    
+StartVX    F    1268          2#    2     
 SubDringend
            TEXT 3310          2#    2     
 SubNormal  TEXT 3311          2#    2     
