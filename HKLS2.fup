@@ -3,7 +3,7 @@ Version=529
 Compiler=310
 Bues=1
 VisiPlus=0
-PrjID=52522
+PrjID=24588
 UpdateGlobals=1
 DnldInRun=0
 FuplaVersion=V2.1.410
@@ -4039,7 +4039,7 @@ N5=Bof 61 19
 [CONNS]
 Conn0=23 9 56 34 3
 [PAGEDEF]
-PageLen=1509
+PageLen=1596
 [PAGE]
 Name=PVRecManage
 RemarkSize=0
@@ -4063,7 +4063,7 @@ _CONBIMOVE 47543=
 Fam=sfupindi
 Width=6
 Init=n
-Stretch=0 7 1 6
+Stretch=0 7 1 7
 In=#_I R_NI 
 Language=en
 Posi=73 14
@@ -4097,10 +4097,13 @@ H8=23 71 73
 H9=24 30 32
 H10=25 71 73
 H11=27 71 73
-H12=29 72 73
-H13=32 63 65)67 72
+H12=29 69 73
+H13=31 72 73
+H14=32 63 65)67 69
+H15=35 67 72
 [VLINE]
-V0=72 29 32
+V0=69 29 32
+V1=72 31 35
 [NETWORK]
 N0=Io 71 15)if 73 15
 N1=Io 22 16)if 24 16
@@ -4116,7 +4119,8 @@ N10=Iof 30 24)i 32 24
 N11=Io 71 25)if 73 25
 N12=Io 71 27)if 73 27
 N13=Iif 73 29)of 67 32
-N14=Bo 63 32)if 65 32
+N14=Iif 73 31)o 67 35
+N15=Bo 63 32)if 65 32
 [CONNS]
 Conn0=71 15 323 34 5
 Conn1=22 16 317 34 5
@@ -4132,6 +4136,7 @@ Conn10=32 24 322 33 14
 Conn11=71 25 327 34 13
 Conn12=71 27 286 34 11
 Conn13=63 32 265 34 11
+Conn14=67 35 283 34 7
 [PAGEDEF]
 PageLen=1266
 [PAGE]

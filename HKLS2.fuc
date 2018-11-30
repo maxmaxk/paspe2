@@ -1,9 +1,9 @@
 [Navigator]
 TopRow=0
-Selected=14
-Count=5
-NUM0=COB :ModbusTCPClient
-NUM1=COB 5 :ModbusTCPServer
+Selected=-1
+Count=2
+NUM0=COB 5 :ModbusTCPServer
+NUM1=COB 7 :VX
 NUM2=COB :RecPV
 NUM3=COB :PoolPump
 NUM4=COB 7 :VX

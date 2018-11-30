@@ -2299,7 +2299,8 @@ _INDREGO(		___RegDyn_C00013C___SG_ModbusTCPServer+0,	;;Input #1 (#)
 		Hum,                  	;;Input #5 (R3)
 		RecPV.CompState,      	;;Input #6 (R4)
 		RecPV.ModeFb,         	;;Input #7 (R5)
-		___RegDyn_C00013C___SG_ModbusTCPServer+2,)	;;Input #8 (R6)
+		___RegDyn_C00013C___SG_ModbusTCPServer+2,	;;Input #8 (R6)
+		RecircAO)             	;;Input #9 (R7)
 $endif							;; Page condition
 __EOPP___SG_ModbusTCPServer_01		EQU		$;Mark Page end position
 _PageProbe(		__EOP___SG_ModbusTCPServer_01)			;;Mark end of page.
