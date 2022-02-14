@@ -616,8 +616,8 @@ __fup_C0000FD_03_14_1e___SG_RecPV       EQU                        ___RegDyn_C00
 __fup_C0000FD_03_14_20___SG_RecPV       EQU                        ___FlgDyn_C0000FD___SG_RecPV+5 ;Export name of network.
 ;;End Dynamic symbol aliases allocated for this BLOCK
 ;;dynamic symbols allocated for this BLOCK
-___RegDyn_C000149___SG_PoolPump		EQU		R [7]		;	Define 7 registers for dynamic usage.
-___FlgDyn_C000149___SG_PoolPump		EQU		F [10]		;	Define 10 registers for dynamic usage.
+___RegDyn_C000149___SG_PoolPump		EQU		R [12]		;	Define 12 registers for dynamic usage.
+___FlgDyn_C000149___SG_PoolPump		EQU		F [15]		;	Define 15 registers for dynamic usage.
 ;;end of dynamic symbols allocated for this BLOCK
 
 ;;Start Static symbols allocated for this BLOCK
@@ -681,15 +681,33 @@ __fup_C000149_02_27_2d___SG_PoolPump       EQU                        ___FlgDyn_
 __fup_C000149_03_23_08___SG_PoolPump       EQU                        ___FlgDyn_C000149___SG_PoolPump+0 ;Export name of network.
 __fup_C000149_03_15_0f___SG_PoolPump       EQU                        ___RegDyn_C000149___SG_PoolPump+1 ;Export name of network.
 __fup_C000149_03_3f_0f___SG_PoolPump       EQU                        ___RegDyn_C000149___SG_PoolPump+2 ;Export name of network.
-__fup_C000149_03_1c_18___SG_PoolPump       EQU                        ___FlgDyn_C000149___SG_PoolPump+2 ;Export name of network.
-__fup_C000149_03_28_18___SG_PoolPump       EQU                        ___FlgDyn_C000149___SG_PoolPump+3 ;Export name of network.
+__fup_C000149_03_1c_18___SG_PoolPump       EQU                        ___FlgDyn_C000149___SG_PoolPump+1 ;Export name of network.
+__fup_C000149_03_28_18___SG_PoolPump       EQU                        ___FlgDyn_C000149___SG_PoolPump+2 ;Export name of network.
+__fup_C000149_03_14_1d___SG_PoolPump       EQU                        ___FlgDyn_C000149___SG_PoolPump+3 ;Export name of network.
 __fup_C000149_03_1c_26___SG_PoolPump       EQU                        ___FlgDyn_C000149___SG_PoolPump+6 ;Export name of network.
 __fup_C000149_03_28_26___SG_PoolPump       EQU                        ___FlgDyn_C000149___SG_PoolPump+7 ;Export name of network.
-__fup_C000149_04_24_0d___SG_PoolPump       EQU                        ___FlgDyn_C000149___SG_PoolPump+0 ;Export name of network.
-__fup_C000149_04_2f_0f___SG_PoolPump       EQU                        ___FlgDyn_C000149___SG_PoolPump+1 ;Export name of network.
-__fup_C000149_04_24_15___SG_PoolPump       EQU                        ___FlgDyn_C000149___SG_PoolPump+3 ;Export name of network.
-__fup_C000149_04_25_21___SG_PoolPump       EQU                        ___FlgDyn_C000149___SG_PoolPump+4 ;Export name of network.
-__fup_C000149_04_25_29___SG_PoolPump       EQU                        ___FlgDyn_C000149___SG_PoolPump+5 ;Export name of network.
+__fup_C000149_03_13_2b___SG_PoolPump       EQU                        ___FlgDyn_C000149___SG_PoolPump+8 ;Export name of network.
+__fup_C000149_04_14_0f___SG_PoolPump       EQU                        ___RegDyn_C000149___SG_PoolPump+0 ;Export name of network.
+__fup_C000149_04_14_11___SG_PoolPump       EQU                        ___RegDyn_C000149___SG_PoolPump+1 ;Export name of network.
+__fup_C000149_04_20_06___SG_PoolPump       EQU                        ___FlgDyn_C000149___SG_PoolPump+0 ;Export name of network.
+__fup_C000149_04_2a_0d___SG_PoolPump       EQU                        ___FlgDyn_C000149___SG_PoolPump+2 ;Export name of network.
+__fup_C000149_04_2f_0f___SG_PoolPump       EQU                        ___FlgDyn_C000149___SG_PoolPump+3 ;Export name of network.
+__fup_C000149_04_2a_15___SG_PoolPump       EQU                        ___FlgDyn_C000149___SG_PoolPump+5 ;Export name of network.
+__fup_C000149_04_14_13___SG_PoolPump       EQU                        ___RegDyn_C000149___SG_PoolPump+3 ;Export name of network.
+__fup_C000149_04_39_14___SG_PoolPump       EQU                        ___FlgDyn_C000149___SG_PoolPump+6 ;Export name of network.
+__fup_C000149_04_14_15___SG_PoolPump       EQU                        ___RegDyn_C000149___SG_PoolPump+4 ;Export name of network.
+__fup_C000149_04_25_2d___SG_PoolPump       EQU                        ___FlgDyn_C000149___SG_PoolPump+7 ;Export name of network.
+__fup_C000149_04_25_33___SG_PoolPump       EQU                        ___FlgDyn_C000149___SG_PoolPump+8 ;Export name of network.
+__fup_C000149_04_39_24___SG_PoolPump       EQU                        ___FlgDyn_C000149___SG_PoolPump+9 ;Export name of network.
+__fup_C000149_04_0a_19___SG_PoolPump       EQU                        ___RegDyn_C000149___SG_PoolPump+5 ;Export name of network.
+__fup_C000149_04_1c_19___SG_PoolPump       EQU                        ___RegDyn_C000149___SG_PoolPump+6 ;Export name of network.
+__fup_C000149_04_0a_1b___SG_PoolPump       EQU                        ___FlgDyn_C000149___SG_PoolPump+10 ;Export name of network.
+__fup_C000149_04_2a_1d___SG_PoolPump       EQU                        ___FlgDyn_C000149___SG_PoolPump+11 ;Export name of network.
+__fup_C000149_04_30_1f___SG_PoolPump       EQU                        ___FlgDyn_C000149___SG_PoolPump+12 ;Export name of network.
+__fup_C000149_04_0a_21___SG_PoolPump       EQU                        ___RegDyn_C000149___SG_PoolPump+8 ;Export name of network.
+__fup_C000149_04_1c_20___SG_PoolPump       EQU                        ___RegDyn_C000149___SG_PoolPump+9 ;Export name of network.
+__fup_C000149_04_2a_25___SG_PoolPump       EQU                        ___FlgDyn_C000149___SG_PoolPump+13 ;Export name of network.
+__fup_C000149_04_0a_23___SG_PoolPump       EQU                        ___FlgDyn_C000149___SG_PoolPump+14 ;Export name of network.
 ;;End Dynamic symbol aliases allocated for this BLOCK
 ;;dynamic symbols allocated for this BLOCK
 ___RegDyn_C000186___SG_VX		EQU		R [2]		;	Define 2 registers for dynamic usage.

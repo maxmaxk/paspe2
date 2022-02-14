@@ -643,6 +643,8 @@ PIN.Logouttime	EQU	R	784
 Pool.HiSpeed	EQU	F	1404
 Pool.SetSpeed	EQU	R	562
 Pool.Speed	EQU	F	1405
+PoolPump1Start	EQU	F	1269
+PoolPump2Start	EQU	F	1270
 Pum12.Freq	EQU	R	561
 RLT003.AUL.Temp.iMW10	EQU	R	785
 RLT003.VE.VL.Sec.UWP.Stoerg.iSSm	EQU	F	1050

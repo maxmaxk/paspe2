@@ -1,0 +1,16 @@
+[GoOnline]
+Version=1
+Channel=S-Bus USB
+Cpu=0
+Station=0
+AutoStation=0
+Retry=3
+DontClose=0
+PguMode=1
+PhoneNumber=
+CountryCode=0
+AreaCode=0
+Location=
+UseDialing=0
+DeviceName=
+FdlStation=0

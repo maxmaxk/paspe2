@@ -68,8 +68,8 @@ PriorityUsb=10
 Cookies=0
 
 [PCDAuth]
-UKey=7932cb7f43d758fb77f913e746b4c5995e3efc1e550a59d91de3f36aae3cb7b5
-Salt=81ba9647a98d37e32286ee38a7906d
+UKey=c4ce87dc01584158db9b728e9c8c0fdfba3fe534bf6d76acfde6ed0b448db5a1
+Salt=94ced1ebb35260e088e5864b392b54
 
 [SBusSerial_0]
 Port=3

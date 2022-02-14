@@ -670,4 +670,6 @@ VX	EQU	COB	7
 CellerOcup	PEQU	F		
 CellerOccup	PEQU	F		
 StartVX	PEQU	F		
+PoolPump1Start	PEQU	F		
+PoolPump2Start	PEQU	F		
 ;;End of Module symbols

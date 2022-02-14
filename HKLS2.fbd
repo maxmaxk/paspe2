@@ -1854,6 +1854,10 @@ _INDIOI(		___RegDyn_C0000C5___SG_I_O+1,	;;Input #1 (#)
                ___FlgDyn_C0000C5___SG_I_O+5)              ;;Output #8 (I7)
 _FUPBinMov(     ___FlgDyn_C0000C5___SG_I_O+1,		;;Invert '___FlgDyn_C0000C5___SG_I_O+1' in
                 CellerOccup,-)        		;;CellerOccup.
+_FUPBinMov(     ___FlgDyn_C0000C5___SG_I_O+3,		;;Invert '___FlgDyn_C0000C5___SG_I_O+3' in
+                PoolPump1Start,-)     		;;PoolPump1Start.
+_FUPBinMov(     ___FlgDyn_C0000C5___SG_I_O+5,		;;Invert '___FlgDyn_C0000C5___SG_I_O+5' in
+                PoolPump2Start,-)     		;;PoolPump2Start.
 $endif							;; Page condition
 __EOPP___SG_I_O_00		EQU		$;Mark Page end position
 _PageProbe(		__EOP___SG_I_O_00)			;;Mark end of page.
@@ -3163,15 +3167,20 @@ _FUPIntMov(      0,                   		;;Copy input label ' 0' in
 _ICMPGT(		___RegDyn_C000149___SG_PoolPump+2,	;;Input #1 ()
 		___RegDyn_C000149___SG_PoolPump+6,	;;Input #2 ()
                Pump2.Alarm)                        ;;Output #1 (>)
+;; Position: And -  - 18,28
+__fbl_C000149_03_B9F5___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47605	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_BAND(		Pump2.Alarm,          	;;Input #1 ()
+		PoolPump2Start,,,,,,,,,	;;Input #2 ()
+               ___FlgDyn_C000149___SG_PoolPump+3)              ;;Output #1 ()
 ;; Position: Or -  - 25,23
 __fbl_C000149_03_B9D5___SG_PoolPump           EQU                   $ ;Mark FBox position.
 __FBOX_ID__	DEF	47573	;
 __FBOX_LANG__	DEF	STR	"EN"	;
-_FUPBinMov(    Pump2.Order,                       ;;Invert input label 'Pump2.Order' in
-                ___FlgDyn_C000149___SG_PoolPump+1,-)		;;network variable.
-_BOR(		___FlgDyn_C000149___SG_PoolPump+1,	;;Input #1 ()
-		Pump2.Alarm,,,,,,,,,  	;;Input #2 ()
-               ___FlgDyn_C000149___SG_PoolPump+2)              ;;Output #1 ()
+_BOR(		PoolPump1Start,       	;;Input #1 ()
+		___FlgDyn_C000149___SG_PoolPump+3,,,,,,,,,	;;Input #2 ()
+               ___FlgDyn_C000149___SG_PoolPump+1)              ;;Output #1 ()
 ;; Position: And -  - 38,23
 __fbl_C000149_03_B9D6___SG_PoolPump           EQU                   $ ;Mark FBox position.
 __FBOX_ID__	DEF	47574	;
@@ -3180,34 +3189,41 @@ _FUPBinMov(    Pump1.Alarm,                       ;;Invert input label 'Pump1.Al
                 ___FlgDyn_C000149___SG_PoolPump+4,-)		;;network variable.
 _FUPBinMov(    Pump2.Work,                        ;;Invert input label 'Pump2.Work' in
                 ___FlgDyn_C000149___SG_PoolPump+5,-)		;;network variable.
-_BAND(		___FlgDyn_C000149___SG_PoolPump+2,	;;Input #1 ()
+_BAND(		___FlgDyn_C000149___SG_PoolPump+1,	;;Input #1 ()
 		___FlgDyn_C000149___SG_PoolPump+4,	;;Input #2 ()
 		___FlgDyn_C000149___SG_PoolPump+5,,,,,,,,	;;Input #3 ()
-               ___FlgDyn_C000149___SG_PoolPump+3)              ;;Output #1 ()
+               ___FlgDyn_C000149___SG_PoolPump+2)              ;;Output #1 ()
 ;; Position: Move -  - 43,23
 __fbl_C000149_03_B9DD___SG_PoolPump           EQU                   $ ;Mark FBox position.
 __FBOX_ID__	DEF	47581	;
 __FBOX_LANG__	DEF	STR	"EN"	;
-_BMOVE2(		___FlgDyn_C000149___SG_PoolPump+3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,	;;Input #1 ()
+_BMOVE2(		___FlgDyn_C000149___SG_PoolPump+2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,	;;Input #1 ()
                Pump1.Work,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,) ;;Output #1 ()
+;; Position: And -  - 17,42
+__fbl_C000149_03_B9F6___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47606	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_BAND(		PoolPump1Start,       	;;Input #1 ()
+		Pump1.Alarm,,,,,,,,,  	;;Input #2 ()
+               ___FlgDyn_C000149___SG_PoolPump+8)              ;;Output #1 ()
 ;; Position: Or -  - 25,37
 __fbl_C000149_03_B9DC___SG_PoolPump           EQU                   $ ;Mark FBox position.
 __FBOX_ID__	DEF	47580	;
 __FBOX_LANG__	DEF	STR	"EN"	;
-_BOR(		Pump2.Order,          	;;Input #1 ()
-		Pump1.Alarm,,,,,,,,,  	;;Input #2 ()
+_BOR(		PoolPump2Start,       	;;Input #1 ()
+		___FlgDyn_C000149___SG_PoolPump+8,,,,,,,,,	;;Input #2 ()
                ___FlgDyn_C000149___SG_PoolPump+6)              ;;Output #1 ()
 ;; Position: And -  - 38,37
 __fbl_C000149_03_B9DB___SG_PoolPump           EQU                   $ ;Mark FBox position.
 __FBOX_ID__	DEF	47579	;
 __FBOX_LANG__	DEF	STR	"EN"	;
 _FUPBinMov(    Pump2.Alarm,                       ;;Invert input label 'Pump2.Alarm' in
-                ___FlgDyn_C000149___SG_PoolPump+8,-)		;;network variable.
-_FUPBinMov(    Pump1.Work,                        ;;Invert input label 'Pump1.Work' in
                 ___FlgDyn_C000149___SG_PoolPump+9,-)		;;network variable.
+_FUPBinMov(    Pump1.Work,                        ;;Invert input label 'Pump1.Work' in
+                ___FlgDyn_C000149___SG_PoolPump+10,-)		;;network variable.
 _BAND(		___FlgDyn_C000149___SG_PoolPump+6,	;;Input #1 ()
-		___FlgDyn_C000149___SG_PoolPump+8,	;;Input #2 ()
-		___FlgDyn_C000149___SG_PoolPump+9,,,,,,,,	;;Input #3 ()
+		___FlgDyn_C000149___SG_PoolPump+9,	;;Input #2 ()
+		___FlgDyn_C000149___SG_PoolPump+10,,,,,,,,	;;Input #3 ()
                ___FlgDyn_C000149___SG_PoolPump+7)              ;;Output #1 ()
 ;; Position: Move -  - 43,37
 __fbl_C000149_03_B9DE___SG_PoolPump           EQU                   $ ;Mark FBox position.
@@ -3224,58 +3240,140 @@ __PAGE_ID__	DEF	STR	""
 ;;
 $if 1
 __FBL_C000149_04___SG_PoolPump			EQU		$;; Mark Page position
-;; Position: Is greater or equal to -  - 32,10
+;; Position: Read from reg. integer -  - 14,14
+__fbl_C000149_04_B9F7___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47607	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_FUPIntMov(     13010,                		;;Copy input label '13010' in 
+                ___RegDyn_C000149___SG_PoolPump+2, )		;;network variable.
+_INDREGI(		___RegDyn_C000149___SG_PoolPump+2,	;;Input #1 (#)
+               ___RegDyn_C000149___SG_PoolPump+0,              ;;Output #1 (R0)
+               ___RegDyn_C000149___SG_PoolPump+1,              ;;Output #2 (R1)
+               ___RegDyn_C000149___SG_PoolPump+3,              ;;Output #3 (R2)
+               ___RegDyn_C000149___SG_PoolPump+4,,,,)          ;;Output #4 (R3)
+;; Position: Is smaller than -  - 28,3
+__fbl_C000149_04_B9F9___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47609	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_ICMPST(		___RegDyn_C000149___SG_PoolPump+0,	;;Input #1 ()
+		___RegDyn_C000149___SG_PoolPump+1,	;;Input #2 ()
+               ___FlgDyn_C000149___SG_PoolPump+0)              ;;Output #1 (<)
+_FUPBinMov(    ___FlgDyn_C000149___SG_PoolPump+0,             ;;Invert network variable  in
+                ___FlgDyn_C000149___SG_PoolPump+1,-)		;;network variable.
+;; Position: Is greater or equal to -  - 38,10
 __fbl_C000149_04_B9EB___SG_PoolPump           EQU                   $ ;Mark FBox position.
 __FBOX_ID__	DEF	47595	;
 __FBOX_LANG__	DEF	STR	"EN"	;
-_FUPIntMov(     7,                    		;;Copy input label '7' in 
-                ___RegDyn_C000149___SG_PoolPump+0, )		;;network variable.
 _ICMPGE(		PCD01.A00.Mld.PCD01.Clock.iH,	;;Input #1 ()
 		___RegDyn_C000149___SG_PoolPump+0,	;;Input #2 ()
-               ___FlgDyn_C000149___SG_PoolPump+0)              ;;Output #1 (>=)
-;; Position: Is smaller than -  - 32,18
+               ___FlgDyn_C000149___SG_PoolPump+2)              ;;Output #1 (>=)
+;; Position: Is smaller than -  - 38,18
 __fbl_C000149_04_B9EC___SG_PoolPump           EQU                   $ ;Mark FBox position.
 __FBOX_ID__	DEF	47596	;
 __FBOX_LANG__	DEF	STR	"EN"	;
-_FUPIntMov(     22,                   		;;Copy input label '22' in 
-                ___RegDyn_C000149___SG_PoolPump+1, )		;;network variable.
 _ICMPST(		PCD01.A00.Mld.PCD01.Clock.iH,	;;Input #1 ()
 		___RegDyn_C000149___SG_PoolPump+1,	;;Input #2 ()
-               ___FlgDyn_C000149___SG_PoolPump+3)              ;;Output #1 (<)
+               ___FlgDyn_C000149___SG_PoolPump+5)              ;;Output #1 (<)
 ;; Position: And -  - 45,14
 __fbl_C000149_04_B9ED___SG_PoolPump           EQU                   $ ;Mark FBox position.
 __FBOX_ID__	DEF	47597	;
 __FBOX_LANG__	DEF	STR	"EN"	;
-_BAND(		___FlgDyn_C000149___SG_PoolPump+0,	;;Input #1 ()
-		___FlgDyn_C000149___SG_PoolPump+3,,,,,,,,,	;;Input #2 ()
-               ___FlgDyn_C000149___SG_PoolPump+1)              ;;Output #1 ()
-_FUPBinMov(    ___FlgDyn_C000149___SG_PoolPump+1,             ;;Invert network variable  in
-                ___FlgDyn_C000149___SG_PoolPump+2,-)		;;network variable.
-;; Position: Is smaller than -  - 33,30
+_BAND(		___FlgDyn_C000149___SG_PoolPump+2,	;;Input #1 ()
+		___FlgDyn_C000149___SG_PoolPump+5,,,,,,,,,	;;Input #2 ()
+               ___FlgDyn_C000149___SG_PoolPump+3)              ;;Output #1 ()
+_FUPBinMov(    ___FlgDyn_C000149___SG_PoolPump+3,             ;;Invert network variable  in
+                ___FlgDyn_C000149___SG_PoolPump+4,-)		;;network variable.
+;; Position: And -  - 55,19
+__fbl_C000149_04_B9F8___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47608	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_BAND(		___FlgDyn_C000149___SG_PoolPump+4,	;;Input #1 ()
+		___FlgDyn_C000149___SG_PoolPump+0,,,,,,,,,	;;Input #2 ()
+               ___FlgDyn_C000149___SG_PoolPump+6)              ;;Output #1 ()
+;; Position: Int to float -  - 4,24
+__fbl_C000149_04_BA02___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47618	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_CONIFP2(		___RegDyn_C000149___SG_PoolPump+3,	;;Input #1 (Int)
+               ___RegDyn_C000149___SG_PoolPump+5,              ;;Output #1 (Fp)
+               ___FlgDyn_C000149___SG_PoolPump+10,              ;;Output #2 (Err)
+               ___RegDyn_C000149___SG_PoolPump+10,              ;;Dynamic variable RegTemp[1].
+               0)                                 ;;Init variable (Power of ten [-20.. 18]).
+;; Position: Divide -  - 25,24
+__fbl_C000149_04_BA04___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47620	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_FUPIntMov(     10.0,                 		;;Copy input label 'K 10.0' in 
+                ___RegDyn_C000149___SG_PoolPump+7, K)		;;network variable.
+_FDIV(		___RegDyn_C000149___SG_PoolPump+5,	;;Input #1 ()
+		___RegDyn_C000149___SG_PoolPump+7,	;;Input #2 ()
+               ___RegDyn_C000149___SG_PoolPump+6)              ;;Output #1 ()
+;; Position: Is greater or equal to -  - 38,26
+__fbl_C000149_04_B9FD___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47613	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_ICMPGE(		PCD01.A00.Mld.PCD01.Clock.iH,	;;Input #1 ()
+		___RegDyn_C000149___SG_PoolPump+1,	;;Input #2 ()
+               ___FlgDyn_C000149___SG_PoolPump+11)              ;;Output #1 (>=)
+;; Position: Int to float -  - 4,32
+__fbl_C000149_04_BA03___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47619	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_CONIFP2(		___RegDyn_C000149___SG_PoolPump+4,	;;Input #1 (Int)
+               ___RegDyn_C000149___SG_PoolPump+8,              ;;Output #1 (Fp)
+               ___FlgDyn_C000149___SG_PoolPump+14,              ;;Output #2 (Err)
+               ___RegDyn_C000149___SG_PoolPump+11,              ;;Dynamic variable RegTemp[1].
+               0)                                 ;;Init variable (Power of ten [-20.. 18]).
+;; Position: Divide -  - 25,31
+__fbl_C000149_04_BA05___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47621	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_FDIV(		___RegDyn_C000149___SG_PoolPump+8,	;;Input #1 ()
+		___RegDyn_C000149___SG_PoolPump+7,	;;Input #2 ()
+               ___RegDyn_C000149___SG_PoolPump+9)              ;;Output #1 ()
+;; Position: Is smaller than -  - 38,34
+__fbl_C000149_04_B9FB___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47611	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_ICMPST(		PCD01.A00.Mld.PCD01.Clock.iH,	;;Input #1 ()
+		___RegDyn_C000149___SG_PoolPump+0,	;;Input #2 ()
+               ___FlgDyn_C000149___SG_PoolPump+13)              ;;Output #1 (<)
+;; Position: And -  - 46,30
+__fbl_C000149_04_BA06___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47622	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_BAND(		___FlgDyn_C000149___SG_PoolPump+11,	;;Input #1 ()
+		___FlgDyn_C000149___SG_PoolPump+13,,,,,,,,,	;;Input #2 ()
+               ___FlgDyn_C000149___SG_PoolPump+12)              ;;Output #1 ()
+;; Position: And -  - 55,35
+__fbl_C000149_04_B9FA___SG_PoolPump           EQU                   $ ;Mark FBox position.
+__FBOX_ID__	DEF	47610	;
+__FBOX_LANG__	DEF	STR	"EN"	;
+_BAND(		___FlgDyn_C000149___SG_PoolPump+1,	;;Input #1 ()
+		___FlgDyn_C000149___SG_PoolPump+12,,,,,,,,,	;;Input #2 ()
+               ___FlgDyn_C000149___SG_PoolPump+9)              ;;Output #1 ()
+;; Position: Is smaller than -  - 33,42
 __fbl_C000149_04_B9EE___SG_PoolPump           EQU                   $ ;Mark FBox position.
 __FBOX_ID__	DEF	47598	;
 __FBOX_LANG__	DEF	STR	"EN"	;
-_FUPIntMov(     7.2,                  		;;Copy input label 'K 7.2' in 
-                ___RegDyn_C000149___SG_PoolPump+2, K)		;;network variable.
 _FCMPST(		PhReal,               	;;Input #1 ()
-		___RegDyn_C000149___SG_PoolPump+2,	;;Input #2 ()
-               ___FlgDyn_C000149___SG_PoolPump+4)              ;;Output #1 (<)
-;; Position: Is greater than -  - 33,38
+		___RegDyn_C000149___SG_PoolPump+6,	;;Input #2 ()
+               ___FlgDyn_C000149___SG_PoolPump+7)              ;;Output #1 (<)
+;; Position: Is greater than -  - 33,48
 __fbl_C000149_04_B9EF___SG_PoolPump           EQU                   $ ;Mark FBox position.
 __FBOX_ID__	DEF	47599	;
 __FBOX_LANG__	DEF	STR	"EN"	;
-_FUPIntMov(     7.6,                  		;;Copy input label 'K 7.6' in 
-                ___RegDyn_C000149___SG_PoolPump+3, K)		;;network variable.
 _FCMPGT(		PhReal,               	;;Input #1 ()
-		___RegDyn_C000149___SG_PoolPump+3,	;;Input #2 ()
-               ___FlgDyn_C000149___SG_PoolPump+5)              ;;Output #1 (>)
-;; Position: Or -  - 55,19
+		___RegDyn_C000149___SG_PoolPump+9,	;;Input #2 ()
+               ___FlgDyn_C000149___SG_PoolPump+8)              ;;Output #1 (>)
+;; Position: Or -  - 66,19
 __fbl_C000149_04_B9F0___SG_PoolPump           EQU                   $ ;Mark FBox position.
 __FBOX_ID__	DEF	47600	;
 __FBOX_LANG__	DEF	STR	"EN"	;
-_BOR(		___FlgDyn_C000149___SG_PoolPump+2,	;;Input #1 ()
-		___FlgDyn_C000149___SG_PoolPump+4,	;;Input #2 ()
-		___FlgDyn_C000149___SG_PoolPump+5,,,,,,,,	;;Input #3 ()
+_BOR(		___FlgDyn_C000149___SG_PoolPump+6,	;;Input #1 ()
+		___FlgDyn_C000149___SG_PoolPump+7,	;;Input #2 ()
+		___FlgDyn_C000149___SG_PoolPump+8,	;;Input #3 ()
+		___FlgDyn_C000149___SG_PoolPump+9,,,,,,,	;;Input #4 ()
                Pool.Speed)                         ;;Output #1 ()
 $endif							;; Page condition
 __EOPP___SG_PoolPump_04		EQU		$;Mark Page end position
